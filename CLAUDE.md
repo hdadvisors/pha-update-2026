@@ -90,7 +90,7 @@ chore: bump renv lockfile after hdatools 0.1.8
 - **Model by session type:** **Sonnet** for mechanical data pulls, geography swaps, QA sweeps; **Opus** for task planning, PUMS methodology, gap analysis, chapter builds. **Fable only for meta-level investigation/critique** — never core output (sole exception: Task 5 gap-methodology design if Opus stalls).
 - **Jonathan runs long jobs** (PUMS/CHAS/tigris pulls, full renders > ~2 min). Claude writes the script; Jonathan runs it and pastes back errors/validation. **Never babysit a long `Rscript` run.**
 - **Manual data drops** (MLS, CoStar) go straight into `data/raw/` — Jonathan provides them.
-- **Skills carry the boilerplate** (`/new-data-script`, `/new-chapter`, from Task 2) — never regenerate it from scratch in context.
+- **Skills carry the boilerplate** — invoke `/new-data-script` before writing a new `r/*.R` pull/prep script and `/new-chapter` before a new section `.qmd`; never regenerate the anatomy from scratch in context. They live in-repo at `.claude/skills/{new-data-script,new-chapter}/` (built Task 2). Each reads a **project-config block** from this file + PLAN.md + `_common.R` at invocation and emits a pha-shaped scaffold; full exemplars + a conventions digest are in each skill's `references/`. **Project-level for now**; elevate to user-level (`~/.claude/skills/`) once proven on Tasks 3–11.
 
 ## Quick start (run commands)
 
@@ -169,4 +169,5 @@ group** (Hypothesis annotations are public by default).
 
 See PLAN.md §2. Key: `r/` (committed pipeline, incl. `r/pums/`), `data/` (gitignored except
 `data/raw/README.md`), `data-out/` (public CSVs committed), `docs/` (committed site), `_freeze/`
-(committed), `plans/` (per-task plans), `archive/soh-2026/` (retained SOH deliverables).
+(committed), `plans/` (per-task plans), `archive/soh-2026/` (retained SOH deliverables),
+`.claude/skills/` (committed; the two scaffolding skills — see below).

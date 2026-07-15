@@ -21,6 +21,7 @@ https://hdadvisors.github.io/pha-update-2026/
 | `data-out/` | Tidy CSV exports for Azure/PowerBI (public-source data only) |
 | `docs/` | The rendered website (this is what GitHub Pages serves) |
 | `_common.R` | Shared settings: colors, geographies, caption text, helpers |
+| `.claude/skills/` | Two in-repo scaffolding skills — `/new-data-script` and `/new-chapter` — that a Claude Code session can invoke to start a new `r/` script or `.qmd` chapter in the project's house style |
 | `PLAN.md` | The full build plan and running log — the source of truth |
 | `CLAUDE.md` | How work sessions are run |
 | `archive/soh-2026/` | The earlier State of Housing slide work, kept for reference |
