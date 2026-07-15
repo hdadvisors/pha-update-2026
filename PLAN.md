@@ -164,7 +164,7 @@ paragraphs** — bullets specific enough that a human expands them to prose with
 ### Session hygiene
 
 - Start: read CLAUDE.md + your §9 block + the task's `plans/` file + the recent §11 log. Verify prerequisite raw files exist; if missing, do what doesn't need them and list blockers in §11.
-- End: tick §9 checkboxes, add a dated §11 entry (deviations, data surprises, 2022 % changes, open questions), update README/CLAUDE.md if conventions changed, commit (concise message, no Claude/Anthropic co-author).
+- End: tick §9 checkboxes, add a dated §11 entry (deviations, data surprises, 2022 % changes, open questions), update README/CLAUDE.md if conventions changed, commit per **CLAUDE.md's commit style guide** (no Claude/Anthropic co-author).
 
 ---
 

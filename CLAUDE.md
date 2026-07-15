@@ -13,7 +13,76 @@ this file is the quick-reference for running a session.
 
 1. Tick your §9 checkboxes; add a dated §11 log entry (deviations, data surprises, **2022 % changes**, open questions).
 2. Update README.md / this file if a convention changed (docs are first-class — same session).
-3. Commit with a concise message. **No Claude/Anthropic co-author or contributor lines.**
+3. Commit per the **Commit style guide** below. **No Claude/Anthropic co-author or contributor lines.**
+
+## Commit style guide
+
+Canonical for this project — PLAN.md §3 (Session hygiene) points here rather than restating.
+
+**Format:** `type(scope): subject`
+
+### Types
+
+| Type | Use for |
+|---|---|
+| `data` | New/changed data-collection or prep scripts (`r/`), new data outputs, validation-block changes |
+| `content` | New or edited book content — chapters, local summaries, tracker, exec summary |
+| `infra` | Shared plumbing: `_common.R`, `_quarto.yml`, renv/build config, skills boilerplate |
+| `fix` | Correcting a bug or wrong output in existing data or content work |
+| `docs` | README/CLAUDE.md/PLAN.md meta-doc edits, setup guides |
+| `chore` | Repo housekeeping with no data/content change: `.gitignore`, lockfile bump, file moves |
+| `plan` | Planning artifacts: `plans/` task plans, PLAN.md scope/methodology amendments |
+
+Add or drop types if the project's layers shift — don't pad for symmetry.
+
+### Scope
+
+`task-N` for a numbered task (PLAN.md §9); `task-N-sN` for a specific session within a
+multi-session task (matches the "Session 1"/"Session 2" language used in §11 log entries), e.g.
+`task-1-s2`. Optional on `docs`/`chore`/`plan` commits outside the task cadence.
+
+### Choosing the type on mixed commits
+
+Tag by the dominant/point-of-the-commit type; disclose the rest in the body. Don't split a
+commit to keep types pure — an ad hoc fix mid-task folds into that task's commit (including its
+§11 log update), rather than becoming a dangling unlabeled commit.
+
+### Subject line
+
+Imperative mood (`Add`, not `Added`/`Adding`); no trailing period; ≤50 chars if possible, hard
+cap ~72. States the *what* — the body carries the *why*.
+
+### Body
+
+Blank line between subject and body — always. Bullet list of specifics: what changed, key
+validated numbers (incl. **2022 % changes**), files/modules touched. `fix` commits state what was
+wrong and how it was confirmed fixed. Explain *why*, not *what*, for anything non-obvious. Omit
+the body entirely for trivial, self-explanatory commits.
+
+### Non-negotiables
+
+- No bare, unlabeled commits ("misc changes", "updates") — every commit gets a type, even `chore`.
+- **No Claude/Anthropic co-author or contributor lines, ever** (project + global convention).
+- Ad hoc fixes made mid-task fold into that task's commit, not left dangling.
+- One task-part per commit; don't bundle unrelated tasks together.
+
+### Examples
+
+```
+data(task-3): pull ACS demographics + PEP components
+
+- age/pop/race/HH-type tables via tidycensus; PEP vintage 2025 (FTP fallback tested)
+- validated pop totals against SOH deck; 2022 baseline +3.1% pop (logged, plausible)
+
+content(task-8): homeownership market chapter
+
+- sales volume, price trend, racial homeownership (B25003A-I) figures
+- "Since 2022" callout; reliability flags on secondary/Ashland figures
+
+docs: cross-reference commit style guide from PLAN.md
+
+chore: bump renv lockfile after hdatools 0.1.8
+```
 
 ## Token-efficiency rules (EXECUTION-PLAN §6 — this project's second goal)
 
