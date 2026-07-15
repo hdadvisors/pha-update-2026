@@ -1,0 +1,13 @@
+# Homeownership market {#sec-ownership}
+
+<!-- Purpose: for-sale market conditions and homeownership access — sales prices, listings,
+     production, homeownership rate by race/ethnicity (B25003A-I). Theme-based takeaway H2s;
+     static ggplot only; "Since 2022" callout per section; fig-alt throughout. Built in Task 8. -->
+
+```{r}
+#| label: setup
+#| include: false
+source("_common.R")
+```
+
+*Section stub — content built in Phase C, Task 8 (see PLAN.md §9).*

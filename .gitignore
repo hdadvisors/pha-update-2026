@@ -1,0 +1,33 @@
+# R
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+.Renviron
+
+# RStudio
+.Rproj.user/
+
+# Quarto
+/.quarto/
+
+# Data — .rds outputs, API pulls, and licensed MLS/CoStar raw drops. Never committed.
+# Exception: the raw-data export spec (data/raw/README.md) IS committed so teammates and
+# PHA know exactly what exports to drop in.
+/data/*
+!/data/raw/
+/data/raw/*
+!/data/raw/README.md
+
+# Processed data exports (Azure/PowerBI-ready CSVs written by export_csv()).
+# Public-source CSVs ARE committed to this public repo. MLS/CoStar-derived exports are
+# delivered to PHA privately (Drive/Azure) and must stay out — matched here by prefix.
+/data-out/mls_*
+/data-out/costar_*
+
+# OS
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb

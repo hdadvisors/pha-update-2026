@@ -1,0 +1,15 @@
+{
+  "hash": "aebea7f3f097d9dc5be847f47067133a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Cost burden and instability {#sec-burden}\n\n<!-- Purpose: cost burden trends and housing instability — burden by tenure/race-ethnicity/\n     income (ACS + CHAS + PUMS), wage affordability (OEWS), evictions, delinquency, and PIT\n     homelessness counts. Theme-based takeaway H2s; static ggplot only; \"Since 2022\" callout\n     per section; fig-alt throughout. Built in Task 11. -->\n\n\n\n*Section stub — content built in Phase C, Task 11 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

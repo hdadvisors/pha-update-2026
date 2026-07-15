@@ -1,0 +1,15 @@
+{
+  "hash": "c32c75fa53ca234075d30109c0de53df",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Homeownership market {#sec-ownership}\n\n<!-- Purpose: for-sale market conditions and homeownership access — sales prices, listings,\n     production, homeownership rate by race/ethnicity (B25003A-I). Theme-based takeaway H2s;\n     static ggplot only; \"Since 2022\" callout per section; fig-alt throughout. Built in Task 8. -->\n\n\n\n*Section stub — content built in Phase C, Task 8 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

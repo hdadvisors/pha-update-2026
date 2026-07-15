@@ -1,0 +1,15 @@
+{
+  "hash": "5531fa469c714beba06e9b24dbca3d66",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Housing demand {#sec-demand}\n\n<!-- Purpose: who lives in the region and how demand is changing — population, components\n     of change, households by type/size/age, projections. Theme-based takeaway H2s; static\n     ggplot only; \"Since 2022\" callout per section; fig-alt throughout. Built in Task 7. -->\n\n\n\n*Section stub — content built in Phase C, Task 7 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

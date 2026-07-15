@@ -1,0 +1,15 @@
+{
+  "hash": "c3168b3e698318a6c7c8a553ac97f590",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n\n# About this update {.unnumbered}\n\n\n\nThis is the 2026 Data Update to the Richmond Regional Housing Framework, produced by\nHDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022\nFramework with the latest available data and reorganizes the findings around the region's\nmost pressing housing themes.\n\n**The update covers the PlanRVA region** — Charles City, Chesterfield, Goochland, Hanover,\nHenrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland.\nRegional analysis centers on the four primary jurisdictions (Chesterfield, Hanover,\nHenrico, and Richmond); the five secondary localities receive individual local summaries.\n\n**Five preliminary-findings sections anchor the update:**\n\n- Housing demand\n- Homeownership market\n- Rental market\n- Housing gap\n- Cost burden and instability\n\nEach section leads with what changed since the 2022 Framework and organizes its findings\nby takeaway rather than by data source.\n\n::: {.callout-note}\nThis is a **preliminary draft for PHA review**. Content is under active development and\nthe site is not yet indexed for search. Reviewers can comment inline using Hypothesis.\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

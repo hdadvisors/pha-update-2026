@@ -1,0 +1,15 @@
+{
+  "hash": "48868aa445eea1a630b2b1ada5351df1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Data notes {#sec-data-notes}\n\n<!-- Purpose: data sources, vintages, methodology, and reliability notes. Doubles as PHA\n     capacity-building documentation (EXECUTION-PLAN §3). Built in Phase E, Task 14. -->\n\n\n\n*Appendix stub — content built in Phase E, Task 14 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

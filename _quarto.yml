@@ -1,0 +1,57 @@
+project:
+  type: book
+  execute-dir: project   # fhfh setting; scripts + chapters resolve paths from repo root
+  output-dir: docs        # GitHub Pages serves from docs/
+
+execute:
+  freeze: auto
+
+book:
+  title: "Richmond Regional Housing Framework"
+  subtitle: "2026 Data Update"
+  repo-url: https://github.com/hdadvisors/pha-update-2026
+  output-file: "rrhf-2026-data-update"
+  author:
+    - name: HDAdvisors
+      url: https://www.hdadvisors.net
+  date: today
+  date-format: long
+  sidebar:
+    logo: "img/pha_logo.jpg"
+    search: true
+  chapters:
+    - index.qmd
+    - demand.qmd
+    - ownership.qmd
+    - rental.qmd
+    - gaps.qmd
+    - burden.qmd
+  appendices:
+    - data-notes.qmd
+
+knitr:
+  opts_chunk:
+    echo: false
+    warning: false
+    message: false
+
+format:
+  html:
+    theme:
+      - lumen
+      - rrh-framework.scss
+    mainfont: "Noto Sans"
+    fontsize: "100%"
+    toc-title: "On this page"
+    number-depth: 2
+    # Preliminary-review commenting: PHA reviewers annotate in a PRIVATE Hypothesis group
+    # (Hypothesis annotations are public by default). Removed when the report is final (Task 14).
+    comments:
+      hypothesis: true
+    # Keep the live-from-the-start site out of search indexes until final (removed in Task 14).
+    include-in-header:
+      text: |
+        <meta name="robots" content="noindex, nofollow">
+
+# PDF route (downloads: pdf + scrreprt, per rrh-framework) deferred to Task 14 — Assembly.
+# HTML-only here guarantees a clean skeleton render without a LaTeX/typst toolchain.

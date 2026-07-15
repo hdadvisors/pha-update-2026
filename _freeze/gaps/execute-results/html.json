@@ -1,0 +1,15 @@
+{
+  "hash": "acc40fbe769e2593d18385511d8e2813",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Housing gap {#sec-gaps}\n\n<!-- Purpose: the affordable-and-available rental gap by AMI (PUMS, NLIHC-style), the\n     starter-home gap (renters who could buy), and minimum income for homeownership by\n     price/size/type vs household income profiles. Theme-based takeaway H2s; static ggplot\n     only; \"Since 2022\" callout per section; fig-alt throughout. Built in Task 10. -->\n\n\n\n*Section stub — content built in Phase C, Task 10 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "85ae7c4df4f0048981a1784140e9bf86",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Rental market {#sec-rental}\n\n<!-- Purpose: rental market conditions and the assisted-housing picture — CoStar rents and\n     vacancy, production, NHPD preservation risk, consolidated rental assistance (PoSH/HCV,\n     LIHTC, project-based). Theme-based takeaway H2s; static ggplot only; \"Since 2022\"\n     callout per section; fig-alt throughout. Built in Task 9. -->\n\n\n\n*Section stub — content built in Phase C, Task 9 (see PLAN.md §9).*\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

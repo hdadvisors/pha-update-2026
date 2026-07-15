@@ -1,0 +1,12 @@
+# Data notes {#sec-data-notes}
+
+<!-- Purpose: data sources, vintages, methodology, and reliability notes. Doubles as PHA
+     capacity-building documentation (EXECUTION-PLAN §3). Built in Phase E, Task 14. -->
+
+```{r}
+#| label: setup
+#| include: false
+source("_common.R")
+```
+
+*Appendix stub — content built in Phase E, Task 14 (see PLAN.md §9).*
