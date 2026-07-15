@@ -37,7 +37,8 @@ can't be shared publicly). To recreate the data files, run the scripts in `r/`. 
 
 ## Running the report yourself
 
-**You need:** R (4.5.1), Quarto, and the `renv` package.
+**You need:** R 4.6.0, Quarto, and the `renv` package. (The project's packages are locked to R
+4.6.x — older R versions won't load them.)
 
 1. **Restore the R packages** (first time only — see the plain-language guide below):
    ```r
@@ -45,12 +46,12 @@ can't be shared publicly). To recreate the data files, run the scripts in `r/`. 
    ```
 2. **Render the report.** R isn't on the Windows PATH by default, so point to it first:
    ```bash
-   export PATH="/c/Program Files/R/R-4.5.1/bin:$PATH"
+   export PATH="/c/R/R-4.6.0/bin:$PATH"
    quarto render
    ```
 3. Open `docs/index.html` in a browser.
 
-   > Tip: to avoid step 2's PATH line every time, add `C:\Program Files\R\R-4.5.1\bin` to your
+   > Tip: to avoid step 2's PATH line every time, add `C:\R\R-4.6.0\bin` to your
    > Windows PATH permanently (System → Environment Variables → Path → New).
 
 ---

@@ -28,14 +28,16 @@ this file is the quick-reference for running a session.
 R is **not** on PATH. Prepend it first (bash):
 
 ```bash
-export PATH="/c/Program Files/R/R-4.5.1/bin:$PATH"
+export PATH="/c/R/R-4.6.0/bin:$PATH"
 ```
 
 **Render the book:** `quarto render`  (one section: `quarto render demand.qmd`)
 **Run a script:** `Rscript r/<name>.R`  (from project root; `.Rprofile` activates renv)
 **Restore the env (first time after cloning):** `renv::restore()`
 
-Installed R: 4.4.2 / 4.4.3 / 4.5.0 / 4.5.1 — **4.5.1 is the render target**.
+**R 4.6.0** (at `C:\R\R-4.6.0`) is the render target — renv.lock is pinned to it and the renv
+library is built for R-4.6, so the packages only load under 4.6.x. (Program Files also has
+4.4.2 / 4.4.3 / 4.5.0 / 4.5.1, but those won't see the renv library.)
 
 ## Data flow rule
 
