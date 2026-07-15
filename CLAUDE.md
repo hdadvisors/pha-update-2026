@@ -118,7 +118,7 @@ library is built for R-4.6, so the packages only load under 4.6.x. (Program File
 Header comment (what/source/output) → `## 1. Setup ----` numbered sections → `.Renviron` fallback
 for keys → `write_rds()` + `export_csv()` → **validation block**. Idempotent; no inline
 `install.packages()`. Native pipe `|>`; `janitor::clean_names()` on raw data; dplyr ≥ 1.2 idioms;
-`case_when()` (not `case_match()`); `map_dfr()` over loops.
+`recode_values()` for value→label recodes / `case_when()` for conditional logic (dplyr 1.2.1 — `case_match()` soft-deprecated); `map()` + `list_rbind()` over loops (purrr 1.2.2 supersedes `map_dfr()`).
 
 ## Validation semantics (locked — PLAN.md §3)
 

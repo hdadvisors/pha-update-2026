@@ -2,19 +2,28 @@
 
 Condensed from the HDA project conventions (PLAN.md §3 / CLAUDE.md). Read this when you
 need the full idiom; the SKILL.md body covers the common path. `references/exemplar-script.R`
-is a complete real fhfh script demonstrating all of it.
+is the canonical best-practice reference script demonstrating all of it — it reads as a
+filled-in instance of the SKILL.md skeleton, so treat it as a copy source, not just an anatomy.
 
 ## Code style
 
 - **Native pipe `|>`**; tidyverse style. `janitor::clean_names()` on all imported raw data.
-- **dplyr ≥ 1.2 idioms:** `.by=` over `group_by()` for one-off grouping; `across()`;
-  `join_by()`; `reframe()` for multi-row summaries.
-- **Variable→label recoding uses `case_when()`** — the pinned dplyr is 1.2.1, where
-  `recode_values()` is unavailable and `case_match()` is soft-deprecated. (The exemplar
-  script predates this standardization and still uses `case_match()`; **new scripts use
-  `case_when()`**.)
-- `purrr::map()`/`map_dfr()` over `for` loops. Year-trend pattern:
-  `map_dfr(years, \(yr) get_acs(..., year = yr) |> mutate(year = yr))`.
+- **dplyr 1.2.0 idioms** (pinned **1.2.1**, so all of these are available): `.by=` over
+  `group_by()` for one-off grouping (now stable); `across()`; `join_by()`; `reframe()` for
+  multi-row summaries (now stable). Also new in 1.2.0 and fair game: `when_any()` / `when_all()`
+  (elementwise OR / AND inside a condition), `replace_values()` (update *some* values, keep the
+  rest), `filter_out()` (companion to `filter()` naming rows to drop).
+- **Variable→label recoding uses `recode_values()`** — dplyr 1.2.0's value-mapping function and
+  the named replacement for the soft-deprecated `case_match()`. Formula interface `old ~ new`
+  (group values with `c()`, e.g. `c(3:6, 27:30) ~ "Under 18"`), unmatched handled by `default =`
+  (note: `default`/`unmatched`, no dot prefix). Reserve **`case_when()`** for genuine conditional
+  logic (comparisons, compound predicates) — not value lookups.
+- `purrr::map()` / `imap()` over `for` loops, combined with **`list_rbind()` / `list_cbind()`**
+  to bind the results. The pinned purrr is **1.2.2**, where `map_dfr()` / `map_dfc()` are
+  **superseded** — use the split form. Year-trend pattern:
+  `map(years, \(yr) get_acs(..., year = yr) |> mutate(year = yr)) |> list_rbind()`.
+  Multi-geography pull: an `imap()` helper keyed by geography level, then `list_rbind()`
+  (see `pull_acs()` in the exemplar).
 - **tidycensus:** `get_acs(geography, state = "VA", table = "BXXXXX", year, survey =
   "acs5", cache_table = TRUE)`. Pull whole tables; build label lookups from
   `load_variables()` + `separate_wider_delim(label, "!!")`.

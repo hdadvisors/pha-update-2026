@@ -26,8 +26,9 @@ hardcoded here — that is what keeps the skill portable across HDA data project
 3. **Write it to `r/<name>.R`** and remind the user of the run/validation workflow.
 
 Keep `references/conventions.md` (R-standards + validation-semantics digest) and
-`references/exemplar-script.R` (a complete real fhfh script) on hand — read them if you
-need the full idiom, but you usually won't need to re-read them each time.
+`references/exemplar-script.R` (the canonical best-practice reference — a filled-in instance
+of the skeleton below, safe to copy from) on hand. Read them if you need the full idiom, but
+you usually won't need to re-read them each time.
 
 ## Step 1 — Populate the project-config block
 
@@ -91,26 +92,39 @@ if (Sys.getenv("<KEY_NAME>") == "") {
 
 dir.create("data", showWarnings = FALSE, recursive = TRUE)
 
-## 2. <First pull — e.g. B01003 total population> ----
-# Pull whole tables; bind county + place + state; carry a 0-100 CV for reliability.
+## 2. <ACS pull helper — factor out repeated multi-geography binds> ----
+# One helper pulls a table across geography levels, tags geo_type, adds a 0-100 CV.
+# imap() + list_rbind() is the purrr 1.2.2 idiom (map_dfr() is superseded — avoid it).
+# See pull_acs() in exemplar-script.R for the worked version.
+pull_acs <- function(table, geos, yr = <year>) {
+  geos |>
+    imap(\(ids, level) {
+      d <- get_acs(geography = level, state = "VA", table = table,
+                   year = yr, survey = "acs5", cache_table = TRUE) |>
+        clean_names() |>                  # janitor on raw imports: GEOID -> geoid
+        mutate(geo_type = level)
+      if (is.null(ids)) d else filter(d, geoid %in% ids)
+    }) |>
+    list_rbind() |>
+    mutate(
+      year = yr,
+      cv   = if_else(estimate > 0, (moe / 1.645) / estimate * 100, NA_real_)  # 0-100 for flag_reliability()
+    )
+}
+
+## 3. <First pull — e.g. B01003 total population> ----
 message("Pulling <table>...")
-<obj> <- bind_rows(
-  get_acs(geography = "county", state = "VA", table = "<TABLE>",
-          year = <year>, survey = "acs5", cache_table = TRUE) |>
-    filter(GEOID %in% <geo constant>) |>
-    mutate(geo_type = "county"),
-  # + place (Ashland sumlev 160) and state rows as the inventory row requires
-) |>
-  clean_names() |>                      # janitor on raw imports
-  mutate(
-    year = <year>L,
-    cv   = if_else(estimate > 0, (moe / 1.645) / estimate * 100, NA_real_)  # 0-100 for flag_reliability()
-  )
+<obj> <- pull_acs("<TABLE>", list(
+  county = <geo constant>,        # e.g. Ashland place (sumlev 160) as `place = ...`
+  state  = NULL                   # NULL keeps all rows (e.g. the whole-state row)
+))
 message("<table> pulled: ", nrow(<obj>), " rows")
 
-## 3. <Additional pull sections as needed> ----
-# For variable→label recoding use case_when() (NOT case_match — dplyr 1.2.1 standard).
-# map_dfr() over year loops; .by = for one-off grouping; separate_wider_delim(label, "!!").
+## 4. <Additional pull / recode sections as needed> ----
+# For variable→label recoding use recode_values() (dplyr 1.2.0's value-map idiom;
+# replaces soft-deprecated case_match — c(...) ~ label, default = NA). Reserve
+# case_when() for genuine conditional logic. map() + list_rbind() over year loops
+# (never map_dfr()); .by = for one-off grouping; separate_wider_delim(label, "!!").
 
 ## N. Write output ----
 write_rds(
@@ -125,7 +139,7 @@ d <- read_rds("data/<name>.rds")
 # stopifnot() ONLY on structure + same-vintage benchmarks:
 stopifnot(
   nrow(d$<obj1>) > 0,
-  all(<expected geographies> %in% d$<obj1>$GEOID),
+  all(<expected geographies> %in% d$<obj1>$geoid),   # geoid: clean_names() lowercases GEOID
   !anyNA(d$<obj1>$estimate)              # no all-NA columns
 )
 # stopifnot(between(<current benchmark>, <lo>, <hi>))   # e.g. vs SOH deck (same vintage)
