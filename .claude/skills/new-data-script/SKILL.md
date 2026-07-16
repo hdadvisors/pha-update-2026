@@ -45,11 +45,11 @@ Read these sources in the target project root and fill the block:
 
 ```
 ### PROJECT CONFIG (fill from CLAUDE.md / PLAN.md / _common.R before scaffolding)
-Project root        : <e.g. R:\hda\pha-update-2026>
-R version + bin path: <e.g. R 4.6.0 — C:\R\R-4.6.0\bin ; NOT on PATH — prepend first>
+Project root        : <local clone path, e.g. C:\repos\hda\pha-update-2026>
+R version + bin path: <R 4.6.x — your local bin, e.g. C:\Program Files\R\R-4.6.1\bin ; NOT on PATH — prepend first>
 Run a script        : <e.g. Rscript r/<name>.R  (from project root; .Rprofile activates renv)>
-API keys            : <env vars + .Renviron fallback path, e.g. CENSUS_API_KEY/FRED_API_KEY
-                       in C:\Users\JTK\Documents\.Renviron ; HOME gotcha → include fallback>
+API keys            : <env vars CENSUS_API_KEY/FRED_API_KEY + user-derived .Renviron fallback:
+                       readRenviron(file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron")) ; HOME gotcha → include fallback>
 Geography constants : <names + where defined, e.g. rr(8)/pha(4)/secondary(4)/ashland(160)/
                        virginia + PUMS puma_core3/puma_region/puma_locality, in _common.R>
 _common.R provides  : <palettes, caption helpers, flag_reliability(cv 0-100), export_csv()>

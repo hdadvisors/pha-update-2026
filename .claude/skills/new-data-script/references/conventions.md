@@ -62,10 +62,11 @@ get reliability treatment downstream, so always emit the `cv` column for them.
 
 ## API keys
 
-Env vars (`CENSUS_API_KEY`, `FRED_API_KEY`) live in a `.Renviron` outside the project.
-**HOME gotcha:** R's HOME may be `C:\Users\JTK`, so `~/Documents/.Renviron` isn't
-auto-loaded — every script includes the fallback:
-`if (Sys.getenv("KEY") == "") readRenviron("C:/Users/JTK/Documents/.Renviron")`.
+Env vars (`CENSUS_API_KEY`, `FRED_API_KEY`) live in a `.Renviron` outside the project,
+under the current user's `Documents`. **HOME gotcha:** R's HOME may be `C:\Users\<you>`
+rather than `…\Documents`, so `~/Documents/.Renviron` isn't always auto-loaded — every
+script includes a user-derived fallback (never a hard-coded username):
+`if (Sys.getenv("KEY") == "") readRenviron(file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron"))`.
 Never print or commit key values; verify visibility with a TRUE/FALSE check only.
 
 ## Data-fetch rule

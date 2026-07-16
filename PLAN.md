@@ -23,18 +23,21 @@ to. At session end: tick your checkboxes, add a dated §11 entry, commit.
 | Client | Partnership for Housing Affordability (PHA) |
 | Study area | PlanRVA region — 8 localities + Town of Ashland (see §4) |
 | Consultant | HDAdvisors (Jonathan Knopf) |
-| Predecessor | 2022 Richmond Regional Housing Framework (`R:\hda\rrh-framework`) — this is its data update |
+| Predecessor | 2022 Richmond Regional Housing Framework (`<hda>\rrh-framework`; see §2 for `<hda>`) — this is its data update |
 | This repo's deliverables | **Public Quarto book** → website (GitHub Pages) + PDF (Task 14); 5 regional sections; 9 local summaries (web + Canva print); regional progress tracker; exec summary; complete public repo; Azure/PowerBI-ready CSV exports |
 | Already delivered | State of Housing presentation (Jan 2026 pptx, archived) — seeds the exec summary |
 | Explicitly out of scope | See §10 |
 
 ### Key references (local only — never fetch from the live web)
 
+Sibling HDA repos live **alongside this one** under the same parent (`<hda>` = `C:\repos\hda` on
+this laptop; `R:\hda` on the desktop). Paths below use `<hda>` — resolve to your local parent.
+
 - `EXECUTION-PLAN.md` — origin plan; §1 investigation findings, §2 reuse inventory, §7 locked decisions.
-- `R:\hda\fhfh` — methodology + scaffolding donor: `PLAN.md`/`CLAUDE.md` structure, `_common.R`, `r/` script template (header → `.Renviron` fallback → numbered sections → `write_rds()` → validation block), chapter template, `.gitignore`/`.renvignore`/`.Rprofile`.
-- `R:\hda\rrh-framework` — 2022 content predecessor: part/chapter organization, `rr`/`pha` FIPS sets, `rrh-framework.scss` + PHA logo, book config. Its **rendered site** (`docs/`) is the source for the 2022 baseline transcription (Task 2). Its ggiraph interactivity is **not** carried forward (static ggplot only).
-- `R:\hda\faar` — PUMS prior art: `r/pums/` pipeline (`pums_collect`/`pums_prep`/`pums_ami`/`pums_gap`/`pums_labels`/`gwrc_puma`) + `gaps-current.qmd` (affordable-and-available rental gap) and parameterized `local-*.qmd` fact-sheet chapters.
-- `R:\hda\hdatools` — `theme_pha()`, `scale_fill_pha()`/`scale_color_pha()`, `add_zero_line()` (confirmed in local source).
+- `<hda>\fhfh` — methodology + scaffolding donor: `PLAN.md`/`CLAUDE.md` structure, `_common.R`, `r/` script template (header → `.Renviron` fallback → numbered sections → `write_rds()` → validation block), chapter template, `.gitignore`/`.renvignore`/`.Rprofile`.
+- `<hda>\rrh-framework` — 2022 content predecessor: part/chapter organization, `rr`/`pha` FIPS sets, `rrh-framework.scss` + PHA logo, book config. Its **rendered site** (`docs/`) is the source for the 2022 baseline transcription (Task 2). Its ggiraph interactivity is **not** carried forward (static ggplot only).
+- `<hda>\faar` — PUMS prior art: `r/pums/` pipeline (`pums_collect`/`pums_prep`/`pums_ami`/`pums_gap`/`pums_labels`/`gwrc_puma`) + `gaps-current.qmd` (affordable-and-available rental gap) and parameterized `local-*.qmd` fact-sheet chapters.
+- `<hda>\hdatools` — `theme_pha()`, `scale_fill_pha()`/`scale_color_pha()`, `add_zero_line()` (confirmed in local source).
 - `archive/soh-2026/` — the delivered SOH deck + its 3 R scripts + stale data drops. Logic folds into `r/` scripts; deck seeds the exec summary. **Data files here are NOT canon.**
 
 ### Decisions locked (EXECUTION-PLAN §7 — do not re-litigate)
@@ -88,7 +91,7 @@ pha-update-2026/
 ├── data-out/              # tidy CSV exports; public-source committed, mls_*/costar_* gitignored
 ├── docs/                  # rendered site — committed; GitHub Pages serves this
 ├── _freeze/               # committed (keeps renders fast + reproducible)
-├── plans/                 # per-task plan-mode outputs (format ref: R:\hda\fhfh\plans\)
+├── plans/                 # per-task plan-mode outputs (format ref: <hda>\fhfh\plans\)
 └── archive/soh-2026/      # archived SOH deliverables (committed; retained)
 ```
 
@@ -117,17 +120,19 @@ pha-update-2026/
 ### Execution (Windows — critical for Claude sessions)
 
 - **Never run R inline.** Write `r/<name>.R`, run `Rscript r/<name>.R` from project root. Ad-hoc checks → temp script in the **scratchpad**, run via Rscript — not in the repo.
-- **R is not on PATH.** Prepend: `export PATH="/c/R/R-4.6.0/bin:$PATH"` (bash) before `Rscript`/`quarto render`. **R 4.6.0** (`C:\R\R-4.6.0`) is the render target — renv.lock is pinned to it and the renv library is built for R-4.6, so packages load only under 4.6.x. (Program Files also has 4.4.2/4.4.3/4.5.0/4.5.1, but those don't see the renv library.)
+- **R (and usually Quarto) not on PATH.** Prepend your local bin dirs (bash) before `Rscript`/`quarto render` — paths are machine-specific, e.g. `export PATH="/c/Program Files/R/R-4.6.1/bin:/c/Program Files/Quarto/bin:$PATH"` (this laptop) or `export PATH="/c/R/R-4.6.0/bin:$PATH"` (desktop). **R 4.6.x** is the render target — renv.lock pins 4.6.0 and the renv library is built for the `R-4.6` series, so any 4.6.x patch loads it (a "requested 4.6.0, using 4.6.x" warning on restore is harmless). Other installed majors (4.4.x/4.5.x) don't see the renv library.
 - Render: `quarto render` (whole book) or `quarto render <file>.qmd` (one section) from project root.
 - **Jonathan runs long jobs** (PUMS downloads, CHAS zips, tigris geometries, full renders > ~2 min). Claude writes the script; Jonathan runs it and pastes back errors/validation output. Claude never babysits long `Rscript` runs.
 - Forward slashes in R paths; all paths relative to project root.
 
 ### API keys
 
-`CENSUS_API_KEY` and `FRED_API_KEY` live in `C:\Users\JTK\Documents\.Renviron`. Never print or
-commit values. **Known gotcha (from fhfh):** R's HOME may be `C:\Users\JTK`, so `~/Documents/.Renviron`
-isn't auto-loaded — scripts include an `.Renviron` fallback (`readRenviron("C:/Users/JTK/Documents/.Renviron")`
-when the key is empty). Verify key visibility with a TRUE/FALSE check only.
+`CENSUS_API_KEY` and `FRED_API_KEY` (both required) live in your user `.Renviron` at
+`%USERPROFILE%\Documents\.Renviron` (`C:\Users\<you>\Documents\.Renviron`). Never print or commit
+values. **Known gotcha (from fhfh):** R's HOME may be `C:\Users\<you>` rather than `…\Documents`, so
+`~/Documents/.Renviron` isn't always auto-loaded — scripts include an `.Renviron` fallback derived
+from the current user (`readRenviron(file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron"))`
+when the key is empty), never a hard-coded username. Verify key visibility with a TRUE/FALSE check only.
 
 ### Data-fetch rule
 
@@ -213,7 +218,7 @@ locality labels for PUMS recoding.
 | Evictions / delinquency | latest available |
 | PIT counts | Greater Richmond CoC, latest trend |
 | FRED CPI + PMMS (`MORTGAGE30US`) | through current |
-| **2022 baseline** | rrh-framework rendered site (`R:\hda\rrh-framework\docs\`) — transcribed, Task 2 |
+| **2022 baseline** | rrh-framework rendered site (`<hda>\rrh-framework\docs\`) — transcribed, Task 2 |
 
 ---
 
@@ -274,7 +279,7 @@ LODES/commuting; QCEW; ggiraph interactivity; per-chapter re-declared geographie
 The signature analytical convention this cycle (EXECUTION-PLAN §3): every section leads with **what
 changed since 2022** and organizes findings by **takeaway theme**, not by data-topic heading.
 
-- **`baseline_2022`** (Task 2) is transcribed from the 2022 rrh-framework **rendered site** (`R:\hda\rrh-framework\docs\`) — a tidy frame of the 2022 report's headline numbers (population, tenure, median rent/value, burden rates, gap figures, etc.), keyed by metric × geography, with the 2022 source figure/table noted.
+- **`baseline_2022`** (Task 2) is transcribed from the 2022 rrh-framework **rendered site** (`<hda>\rrh-framework\docs\`) — a tidy frame of the 2022 report's headline numbers (population, tenure, median rent/value, burden rates, gap figures, etc.), keyed by metric × geography, with the 2022 source figure/table noted.
 - Each chapter's setup chunk loads `baseline_2022` and computes the 2020-2024-vs-2022 delta inline; a per-section **`::: {.callout-note}` "Since 2022"** box states the change in plain terms.
 - Baseline deltas are **narrative + logged**, never a `stopifnot()` gate (§3 validation semantics): differing vintages make some movement structural, not real-world change. Data-notes documents which comparisons are apples-to-apples vs vintage-shifted.
 - This callout **replaces** fhfh's interview-crosswalk callout (there are no stakeholder interviews in this engagement).
@@ -391,7 +396,7 @@ no `@`-refs in captions; §11 entry; committed.
 
 #### Task 2 — Skills + baselines  *(+ planning session)*
 - [x] Build `/new-data-script` + `/new-chapter` universal (user-level) skills, parameterized on a project-config block; exemplars in the skills' reference files *(Session 2A)*
-- [ ] `baseline_2022` transcribed from `R:\hda\rrh-framework\docs\` → `data/baseline_2022.rds` (+ CSV)
+- [ ] `baseline_2022` transcribed from `<hda>\rrh-framework\docs\` → `data/baseline_2022.rds` (+ CSV)
 - [ ] Export the §5 dataset inventory to a Google Doc for PHA (streamlined data plan)
 - **DoD:** both skills invocable + documented; baseline frame validated (spot-check ≥10 headline numbers against the rendered pages); data plan doc shared.
 - **Don't:** gate Phase B on PHA sign-off; pull live data; build chapter content.
@@ -491,3 +496,5 @@ it's scope creep.
 - **2026-07-15** — **Task 2 Session 2A (Skills) complete** (Opus 4.8). Built two in-repo, project-level skills at `.claude/skills/{new-data-script,new-chapter}/`, each = `SKILL.md` (lean body, YAML `name`+`description` frontmatter for triggering) + `references/` (a verbatim real fhfh exemplar + a `conventions.md` digest of PLAN.md §3/§6/§7). **Universal design:** both are project-agnostic and carry a **project-config block** the skill populates by reading the target project's `CLAUDE.md` + `PLAN.md` + `_common.R` at invocation — no pha paths/geographies hardcoded, so the later user-level lift is clean. `/new-data-script` emits the header→numbered-pulls→`write_rds`+`export_csv`→validation-block anatomy (0–100 CV, `case_when`, `.Renviron` fallback, structural-only `stopifnot` + 2022-logged-not-failed); exemplar = fhfh `acs_demographics.R`. `/new-chapter` emits `#sec-slug`→setup(`read_rds` only)→takeaway-H2s→figure/table+bullet blocks→per-section "Since 2022" callout; exemplar = fhfh `demographics.qmd`. **Git-tracking confirmed:** Task 1's `.gitignore` never touched `.claude/` (`git check-ignore` exit 1); no un-ignore rule needed. **Smoke-tested** both in throwaway subagent contexts (scaffolded `r/acs_tenure.R` and `ownership.qmd` to scratchpad, repo untouched) — both emitted correctly pha-shaped scaffolds (right `_common.R` sourcing, pha geo constants, `theme_pha`/`pha_pal`, `flag_reliability`, `case_when`, fig-alt, no `@`-refs in captions). **Iterated once** on tester findings: added "adapt, don't copy" banners to both exemplars (they're real fhfh donors — `case_match`/`theme_hda`/`hda_pal`/Fauquier geo are copy-traps), plus guidance for the no-same-vintage-benchmark case, the data-script/chapter reliability boundary, derived-data caption helpers, and change-callout placement (not every H2 has a 2022 analogue). Docs: updated CLAUDE.md ("Skills carry the boilerplate" note + repo map) and README ("What's in here" table). **Skills are project-level for now** (in-repo → a fresh clone has them); **elevation path:** once they prove out across the data (Tasks 3–6) and chapter (7–11) work, lift to `~/.claude/skills/` with any evidence-based revisions. Commit: `infra(task-2-s2a)`. **Open for Task 2:** Session 2B (Sonnet) — transcribe `baseline_2022` + export the §5 data plan to a Google Doc.
 
 - **2026-07-15** — **Task 2 `/new-data-script` revision** (Opus 4.8; unplanned mid-task session, skill-creator-driven upgrade of the 2A build). Re-evaluated `/new-data-script` via the official `skill-creator` skill (its structural + triggering lens, not a smoke test) and applied three changes. **(1) purrr 1.2.2 migration:** renv pins **purrr 1.2.2** (renv.lock:3817) where `map_dfr()`/`map_dfc()` are *superseded* by `map()`/`imap()` + `list_rbind()`/`list_cbind()` — migrated the SKILL.md skeleton comment + `conventions.md` year-trend pattern off `map_dfr()`, and propagated the corrected idiom to **CLAUDE.md** (Script anatomy line) and **PLAN.md §3** (R-standards) so the first-class docs match the skill. Not a hard failure (superseded ≠ defunct), but off-standard for the project's "current best-practice" ethos. **(2) Exemplar is now canonical (decision changed from 2A):** rewrote `references/exemplar-script.R` from a verbatim fhfh donor (with an "adapt, don't copy" banner + `case_match` throughout + no `export_csv`) into a fully best-practice reference that *is* what the skill should emit — an `acs_demographics` pull using an `imap()`+`list_rbind()` `pull_acs()` helper (factoring fhfh's 6× repeated county+place+state bind), `case_when()` recodes with `%in%` ranges, `source("_common.R")`, `write_rds`+`export_csv` pairing, 0–100 CV, `.Renviron` fallback, and structural-only `stopifnot` + 2022-logged-not-failed (behind a `file.exists` guard). Dropped the now-obsolete `case_match` caveat in `conventions.md`; aligned the SKILL.md skeleton so the exemplar reads as a filled-in instance (added the `pull_acs()` helper to the skeleton; fixed `GEOID`→`geoid` post-`clean_names()`). **What skill-creator surfaced (ranked):** the exemplar *contradicting* the stated standard (case_match vs the case_when rule; missing export_csv/2022-logging) was the highest-value defect — a fresh run copying the reference would emit off-standard code; the `map_dfr` staleness and skeleton↔exemplar drift followed. Description/triggering judged already solid (pushy, concrete trigger phrases) — no change; a `run_loop.py` triggering-optimization pass remains available but deferred (long job, low marginal value). **(3) Verified:** re-swept the skill dir (no `map_dfr`/`case_match` usages remain — only "avoid this" guidance), and ran a fresh-context subagent that invoked the revised skill to scaffold `r/acs_income.R` (B19013/B19001/B25074) to **scratchpad** (repo untouched). Output was a faithful filled-in instance of the new exemplar: `pull_acs()` via `imap`+`list_rbind`, zero `map_dfr`/`case_match`, `load_variables()`+`separate_wider_delim` label joins, `write_rds`+`export_csv`, structural `stopifnot` with same-vintage benchmark left commented, 2022 logged-not-failed. The tester also flagged a real **PLAN.md §5 inventory** discrepancy (row for `acs_income.R` lists S1701, not the B25074 I named it in the test prompt) — noted, not resolved here. **(4) dplyr 1.2.0 compliance (follow-up ask):** checked the skill against the dplyr **1.2.0** release notes. Verdict: *compliant* (no deprecated calls — `.by`/`reframe()` now stable, `if_else()` CV pattern unaffected) but *not taking advantage*, on a **factual error**: PLAN.md claimed "`recode_values()` is unavailable" in the pinned dplyr, so the project standardized on `case_when()`. Verified against the installed library (`renv/library/.../dplyr` — **DESCRIPTION 1.2.1**; NAMESPACE **exports `recode_values`, `replace_values`, `replace_when`, `when_any`, `when_all`, `filter_out`**): `recode_values()` *is* available. It's the dplyr 1.2.0 value-mapping function and the named replacement for the soft-deprecated `case_match()` — exactly the value→label recodes the skill performs. Per Jonathan's call, **adopted `recode_values()`** for value maps (exemplar age-band + race recodes; SKILL.md skeleton; conventions.md) with `case_when()` reserved for conditional logic; corrected the false "unavailable" premise in **PLAN.md §3 (line 106) + §8 gotchas (line 156)** and **CLAUDE.md**; noted `replace_values()`/`when_any()`/`when_all()`/`filter_out()` as available. `recode_values()` interface (`old ~ new`, `c()` grouping, `default =`/`unmatched =`) confirmed against the dplyr 1.2.0 source — **not** executed (Windows R rule; runtime behavior unverified). **No 2022 % changes** this session (no live data pulled). **Follow-up:** `/new-chapter` carries the same 2A "verbatim donor (adapt, don't copy)" exemplar banner (`references/exemplar-chapter.qmd:2`) — apply the same exemplar-is-canonical treatment in a later session (no `map_dfr` in it, so no purrr migration needed there). Commit: `infra(task-2-s2a)`.
+
+- **2026-07-16** — **Laptop onboarding + doc portability** (Opus 4.8). Cloned the repo to a second machine (`C:\repos\hda\pha-update-2026`, user **jonat**) and audited every desktop hard-code. **Env audit (this laptop):** R **4.6.1** installed at `C:\Program Files\R\R-4.6.1` (plus 4.4.2/4.5.0) — **no 4.6.0, none at `C:\R\`**; R and Quarto both installed but **not on PATH** (Quarto at `C:\Program Files\Quarto\bin`); **renv library absent** (fresh clone → `renv::restore()` needed); `CENSUS_API_KEY` + `GITHUB_PAT` present in both `~/.Renviron` and `~/Documents/.Renviron`, but **`FRED_API_KEY` is MISSING from both** (blocks FRED pulls — Jonathan to add the value); sibling repos (fhfh, rrh-framework, faar, hdatools) present at `C:\repos\hda\`, **no `R:\` drive**. No committed `r/*.R` yet, so all JTK/`C:\R`/`R:\` hard-codes lived only in docs + the `new-data-script` skill. **Decisions:** run under installed **R 4.6.1** (same `R-4.6` renv library, patch-compatible; renv.lock R pin left at 4.6.0 — a restore version warning is expected/harmless); rewrote references **machine-portable** rather than swapping one hard-code for another. **Edits:** `.Renviron` fallback → user-derived `file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron")` (CLAUDE.md, PLAN.md, and the skill's `exemplar-script.R`/`conventions.md`/`SKILL.md` so newly-scaffolded scripts don't re-introduce `JTK`); PATH guidance → dual-machine examples + **added Quarto** to the prepend (CLAUDE.md, README.md, PLAN.md); "R 4.6.0 render target" → "R **4.6.x**, install path machine-specific"; introduced an `<hda>` convention (= local parent of the sibling repos) and converted the live `R:\hda\…` reference/provenance pointers in PLAN.md §2/§5/§9 and EXECUTION-PLAN.md §1. **Left verbatim (historical records):** the dated §11 entries above (incl. the desktop's `C:\R\R-4.6.0`) and `plans/task-2-skills-baselines.md`. **Not run this session (plan/doc only):** `renv::restore()`, key-visibility check, and a smoke render — handed to Jonathan (see the onboarding checklist). **No data pulled → no 2022 % changes.** Commit: `docs: make setup docs machine-portable`.

@@ -94,19 +94,25 @@ chore: bump renv lockfile after hdatools 0.1.8
 
 ## Quick start (run commands)
 
-R is **not** on PATH. Prepend it first (bash):
+R **and** Quarto are typically not on PATH. Prepend your local bin dirs first (bash) — the exact
+paths are machine-specific:
 
 ```bash
-export PATH="/c/R/R-4.6.0/bin:$PATH"
+# This laptop (jonat): R 4.6.1 + Quarto in Program Files
+export PATH="/c/Program Files/R/R-4.6.1/bin:/c/Program Files/Quarto/bin:$PATH"
+# Desktop (JTK): R 4.6.0 at a custom location
+# export PATH="/c/R/R-4.6.0/bin:$PATH"
 ```
 
 **Render the book:** `quarto render`  (one section: `quarto render demand.qmd`)
 **Run a script:** `Rscript r/<name>.R`  (from project root; `.Rprofile` activates renv)
 **Restore the env (first time after cloning):** `renv::restore()`
 
-**R 4.6.0** (at `C:\R\R-4.6.0`) is the render target — renv.lock is pinned to it and the renv
-library is built for R-4.6, so the packages only load under 4.6.x. (Program Files also has
-4.4.2 / 4.4.3 / 4.5.0 / 4.5.1, but those won't see the renv library.)
+**R 4.6.x** is the render target — renv.lock pins 4.6.0 and the renv library is built for the
+`R-4.6` series, so any 4.6.x patch release loads it (a "requested 4.6.0, using 4.6.x" restore
+warning is harmless). The install path varies by machine (`C:\R\R-4.6.0` on the desktop;
+`C:\Program Files\R\R-4.6.1` on this laptop). Other installed majors (4.4.x, 4.5.x) won't see the
+renv library.
 
 ## Data flow rule
 
@@ -149,9 +155,12 @@ Reliability treatment on secondary/Ashland figures. `#| fig-alt:` on every figur
 
 ## API keys
 
-`CENSUS_API_KEY` / `FRED_API_KEY` live in `C:\Users\JTK\Documents\.Renviron`. Never print or commit.
-**HOME gotcha:** R's HOME may be `C:\Users\JTK`, so that file isn't auto-loaded — scripts include an
-`.Renviron` fallback. Verify visibility with a TRUE/FALSE check only.
+`CENSUS_API_KEY` **and** `FRED_API_KEY` (both required) live in your user `.Renviron` —
+`%USERPROFILE%\Documents\.Renviron` (i.e. `C:\Users\<you>\Documents\.Renviron`). Never print or commit.
+**HOME gotcha:** R's HOME on Windows may be `C:\Users\<you>` rather than `…\Documents`, so that file
+isn't always auto-loaded — scripts include an `.Renviron` fallback derived from the current user
+(`file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron")`), never a hard-coded username.
+Verify visibility with a TRUE/FALSE check only.
 
 ## Publishing status
 

@@ -27,7 +27,7 @@ source("_common.R")   # export_csv(), flag_reliability(), caption + palette help
 # .Renviron fallback — R's HOME may not be ~/Documents, so the key file isn't
 # always auto-loaded (CLAUDE.md API-keys gotcha). Load it only if the key is unset.
 if (Sys.getenv("CENSUS_API_KEY") == "") {
-  renviron_path <- "C:/Users/JTK/Documents/.Renviron"
+  renviron_path <- file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron")
   if (file.exists(renviron_path)) readRenviron(renviron_path)
 }
 

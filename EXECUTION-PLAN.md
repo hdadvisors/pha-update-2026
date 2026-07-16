@@ -16,7 +16,10 @@ New engagement: the 2026 Data Update to the Richmond Regional Housing Framework 
 
 ## 1. Investigation findings
 
-### FHFH (`R:\hda\fhfh`) — methodology + scaffolding donor
+> Sibling HDA repos live alongside this one under the same parent, written `<hda>` below
+> (`C:\repos\hda` on this laptop; `<hda>` on the desktop) — resolve to your local parent.
+
+### FHFH (`<hda>\fhfh`) — methodology + scaffolding donor
 Mature Quarto **book** HNA (11 of 12 planned work blocks complete). Key reusable assets:
 - **PLAN.md as source of truth** (11 sections: context, architecture, R conventions, geography/vintages, dataset inventory, chapter plans, methodology specs, task blocks with Definition-of-Done + "Don't" lists, MVP guardrails, dated progress log §11).
 - **One-way data flow**: `r/` scripts → `data/*.rds` → chapters `read_rds()` only; chapters never call APIs.
@@ -24,12 +27,12 @@ Mature Quarto **book** HNA (11 of 12 planned work blocks complete). Key reusable
 - **`r/` script template**: header comment → numbered sections → `.Renviron` fallback → `write_rds()` → **validation block** (`stopifnot()` against published benchmarks).
 - **Chapter template**: setup chunk with inline scalars for prose, takeaway-sentence fig titles, ggtext color-span subtitles instead of legends, `fig-alt` everywhere, reliability suppression/footnoting, callout conventions, "narrative rule" (bullets + callouts, no drafted prose).
 - **Work sequencing**: scaffold → data-only tasks → chapter tasks → assembly/QA; every session logs to §11. Model assignment per task type (Sonnet for pulls, Opus-class for methodology/chapters).
-- Gotchas captured in memory (`C:\Users\JTK\.claude\projects\R--hda-fhfh\memory\project-fhfh.md`): PEP `vintage=` API change, huduser.gov User-Agent requirement, CHAS-vs-ACS cost-burden discrepancy, cross-refs-in-captions gridtext error, ggplot2 4.0 S7 `strip.text` clash, dplyr 1.2.1 `case_when()` standardization.
+- Gotchas captured in the fhfh project's Claude memory (per-user `.claude\projects\<repo-slug>\memory\project-fhfh.md`; the slug encodes the repo's local path, e.g. `C--repos-hda-fhfh` on this laptop): PEP `vintage=` API change, huduser.gov User-Agent requirement, CHAS-vs-ACS cost-burden discrepancy, cross-refs-in-captions gridtext error, ggplot2 4.0 S7 `strip.text` clash, dplyr 1.2.1 `case_when()` standardization.
 
-### rrh-framework (`R:\hda\rrh-framework`) — content predecessor
+### rrh-framework (`<hda>\rrh-framework`, sibling of this repo) — content predecessor
 Published 2022 Quarto **book** for PHA: 4 parts, 19 chapters (Part 1 demographics ×4, Part 2 supply/market ×4, Part 3 gap analysis ×2, Part 4 locality summaries ×9). Reusable: chapter/part organization, `rr` (8-locality) / `pha` (4-locality) FIPS sets, `rrh-framework.scss` + PHA logo, dual HTML+PDF (`scrreprt`) config, GitHub Pages from `docs/`. Weaknesses to fix this time: **no `_common.R`** (geos/libraries re-declared per chapter), **no `r/` scripts** (data prep buried in `#| eval: false` chunks inside chapters). Its ggiraph interactivity is **not** carried forward — this project is static-ggplot only (decision locked below).
 
-### FAAR (`R:\hda\faar`) — upstream template + PUMS prior art
+### FAAR (`<hda>\faar`, sibling of this repo) — upstream template + PUMS prior art
 Two directly reusable assets found here:
 - **PUMS gap pipeline**: `r/pums/` (`pums_collect.R`, `pums_prep.R`, `pums_ami.R`, `pums_gap.R`, `pums_labels.R`, `gwrc_puma.R`, `naics_soc_lookup.R`) + `gaps-current.qmd`, which implements the affordable-and-available rental deficit by AMI band × bedroom count (demand vs supply join), AMI assignment to PUMS households, and cost-burden-from-PUMS charts. This is the starting point for the new PUMS work.
 - **Parameterized locality fact-sheet chapters** (`local-*.qmd`): set `local_var`/`mls_var`/`costar_var` at top, rest reads shared `.rds` — the template for the 9 local summaries. (FAAR's print fact sheets were made in Canva; same route planned here.)
@@ -41,8 +44,8 @@ Two directly reusable assets found here:
 - **Technical**: standalone public GitHub repo, Quarto → GitHub Pages, extra script commentary for PHA capacity-building, processed datasets exportable for Azure/PowerBI (tidy CSVs alongside `.rds`).
 - **Data vintages** (all available as of July 2026): 2020–2024 ACS 5-year tables + PUMS, CHAS 2018–2022, PEP **Vintage 2025** (confirmed on Census FTP; API availability checked at build time), Weldon Cooper 2024 projections. MLS/CoStar: **Jonathan provides fresh exports** — the CSVs/xlsx currently in `data/` are NOT canon and will be archived.
 
-### Current repo (`R:\hda\pha-update-2026`)
-Contains only the Jan 2026 SOH slide work: 3 standalone R scripts → 7 PNGs → the delivered pptx, plus now-stale data drops. All of it gets archived (scripts' logic folds into proper `r/` scripts; pptx retained as exec-summary source). Bonus: `market-rental.R` documents the **`pha_pal` brand hexes inline** (#5bab8e, #a6cccc, #f39152, #be451c, #a5add0, #2b6b9c). `R:\hda\hdatools` confirms `theme_pha()` + `scale_fill_pha()` exist.
+### Current repo (`<hda>\pha-update-2026`)
+Contains only the Jan 2026 SOH slide work: 3 standalone R scripts → 7 PNGs → the delivered pptx, plus now-stale data drops. All of it gets archived (scripts' logic folds into proper `r/` scripts; pptx retained as exec-summary source). Bonus: `market-rental.R` documents the **`pha_pal` brand hexes inline** (#5bab8e, #a6cccc, #f39152, #be451c, #a5add0, #2b6b9c). `<hda>\hdatools` confirms `theme_pha()` + `scale_fill_pha()` exist.
 
 ### Files actually examined
 - **fhfh** (full reads): `PLAN.md`, `CLAUDE.md`, `README.md`, `_quarto.yml`, `_common.R` (verified directly), `.gitignore`/`.renvignore`/`.Rprofile`, `r/acs_demographics.R`, `r/chas.R`, `r/hud_ami.R`, `r/affordcalc.R`, `demographics.qmd`, `gaps.qmd`, `index.qmd`, `exec-sum.qmd`, `conclusions.qmd`, `data-notes.qmd`; header lines of all 25 `r/` scripts; memory files `MEMORY.md` + `project-fhfh.md`.
@@ -86,7 +89,7 @@ Contains only the Jan 2026 SOH slide work: 3 standalone R scripts → 7 PNGs →
 | Existing `data/` files (MLS/CoStar/HU xlsx+csv) | pha-update-2026 | **Archive** | NOT canon — fresh exports to be provided |
 | SOH pptx | pha-update-2026 | **Archive (keep)** | Delivered; exec-summary source material |
 | Task workflow (data-first → chapters → assembly) + memory practice | fhfh | **Reuse as-is** | The proven process |
-| 2022-baseline benchmark file | — | **Net-new** | Transcribed from the **local** rendered site (`R:\hda\rrh-framework\docs\`), not live-site fetches; feeds change-based narrative + logged variance checks |
+| 2022-baseline benchmark file | — | **Net-new** | Transcribed from the **local** rendered site (`<hda>\rrh-framework\docs\`), not live-site fetches; feeds change-based narrative + logged variance checks |
 | Regional progress tracker | — | **Net-new** | No prior art; needs PHA metric/target input |
 | Streamlined data plan (client doc) | — | **Net-new** | Generated from PLAN.md §5 inventory; exported to Google Doc |
 | Azure/PowerBI CSV exports | — | **Net-new (trivial)** | Export helper writes `data-out/` CSV alongside every `write_rds()`; public-source CSVs committed, MLS/CoStar-derived gitignored (see §4) |
@@ -118,7 +121,7 @@ Contains only the Jan 2026 SOH slide work: 3 standalone R scripts → 7 PNGs →
 
 ## 4. Repo strategy
 
-Build in **`R:\hda\pha-update-2026`**:
+Build in **`<hda>\pha-update-2026`**:
 
 1. **Archive everything currently here** → `archive/soh-2026/`: the 3 R scripts, `img/`, the pptx, **and all current `data/` files** (stale — fresh MLS/CoStar exports to be provided by Jonathan; Census data pulled fresh via API/scripts).
 2. **Initialize**: `git init`; **public** GitHub repo `hdadvisors/pha-update-2026`; `.gitignore` from fhfh (commit `r/`, `docs/`, `_freeze/`, and **public-source `data-out/` CSVs**; gitignore `data/` with small-raw-drop exceptions and **all MLS/CoStar-derived `data-out/` files** — those are delivered to PHA privately via Drive/Azure); renv; `.Rprofile`.
@@ -145,7 +148,7 @@ Universal-skill design notes (both): parameterize on a small project-config bloc
 
 Hierarchy: **Phase → Task → Session(s)**. Data tasks produce only scripts + `.rds`; chapter tasks only consume. Every session ends with a §11 log entry. **Reviewable preliminary draft lands at end of Phase C.**
 
-**Per-task planning workflow (fhfh ad hoc practice, now formalized):** every Task begins with a discrete **plan-mode session (Opus)** that produces a task-specific plan md in `plans/` (format reference: `R:\hda\fhfh\plans\`) and does **no other work**. Each task plan must at minimum:
+**Per-task planning workflow (fhfh ad hoc practice, now formalized):** every Task begins with a discrete **plan-mode session (Opus)** that produces a task-specific plan md in `plans/` (format reference: `<hda>\fhfh\plans\`) and does **no other work**. Each task plan must at minimum:
 1. Outline the specific work session(s) to execute the task.
 2. Draft starter prompts for those sessions using the **prompt-helper** skill.
 3. Recommend model choice and settings per work session.
@@ -162,7 +165,7 @@ Hierarchy: **Phase → Task → Session(s)**. Data tasks produce only scripts + 
 
 ### Phase A — Setup
 - **Task 1 — Scaffold** (1–2 sessions; no planning session — this doc is its plan): **Session 1** = archive per §4; git init + public repo; Quarto book skeleton (index + 5 chapter stubs + data-notes appendix) renders clean with noindex meta; `_common.R` (pha_pal, cb_pal, `rr`/`pha`/secondary/Ashland/PUMA constants, caption helpers, `flag_reliability()`, CSV-export helper); `_quarto.yml` (rrh config + Hypothesis comments + fhfh execute settings); scss + logo; `data/raw/README.md` = **MLS/CoStar export spec** (fields, date ranges, geographies, format — derived from fhfh `mls.R`/`costar.R` input expectations + 2022 report coverage) so Jonathan can pull exports any time before Task 4. **Session 2** (split here if session 1 runs long; otherwise same session) = **PLAN.md drafted in full** (incl. §5 dataset inventory = streamlined-data-plan content, §9 task blocks, and its own first §11 log entry covering Task 1); CLAUDE.md; README (incl. plain-language renv quick guide for teammates); renv.
-- **Task 2 — Skills + baselines** (1 session + planning session): build the two universal skills; `baseline_2022.rds` transcribed from the **local** rendered rrh-framework site (`R:\hda\rrh-framework\docs\`); streamlined data plan exported to Google Doc for PHA. **Phase B does not wait for PHA sign-off** — their feedback trims/adds at the margins later.
+- **Task 2 — Skills + baselines** (1 session + planning session): build the two universal skills; `baseline_2022.rds` transcribed from the **local** rendered rrh-framework site (`<hda>\rrh-framework\docs\`); streamlined data plan exported to Google Doc for PHA. **Phase B does not wait for PHA sign-off** — their feedback trims/adds at the margins later.
 - *Phase deliverable:* rendered empty book on Pages (noindexed); PLAN.md + data plan ready for review.
 
 ### Phase B — Data collection (scripts + validation only, no figures)
@@ -206,7 +209,7 @@ Hierarchy: **Phase → Task → Session(s)**. Data tasks produce only scripts + 
 - **Validation semantics**: `stopifnot()` only on structure + same-vintage published benchmarks (SOH deck numbers count — they're current); 2022 baselines produce logged % changes in §11, flagged if implausible, never hard-failed.
 - **`data-out/` commit policy**: public-source CSVs committed to the public repo; MLS/CoStar-derived CSVs gitignored and delivered to PHA privately (Drive/Azure).
 - **MLS/CoStar export spec written in Task 1** (`data/raw/README.md`), so exports can be pulled any time before Task 4.
-- **`baseline_2022.rds` transcribed from the local rendered site** (`R:\hda\rrh-framework\docs\`), not live-site fetches.
+- **`baseline_2022.rds` transcribed from the local rendered site** (`<hda>\rrh-framework\docs\`), not live-site fetches.
 - **Ashland keeps place-level (sumlev 160) handling** in ACS scripts; only fhfh's zip-code logic is dropped.
 - **renv: yes** — including a for-dummies renv quick guide in the README for teammates (restore/snapshot in plain terms, what to do when a package error appears).
 - **LODES/commuting dropped entirely.**
