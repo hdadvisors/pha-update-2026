@@ -1,101 +1,89 @@
 # Richmond Regional Housing Framework — 2026 Data Update
 
-The 2026 data update to the Richmond Regional Housing Framework, produced by HDAdvisors for the
-Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest data
-and reorganizes the findings around the region's main housing themes.
+The 2026 data update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest data and reorganizes the findings around the region's main housing themes.
 
-The report is a Quarto book that renders to a website (and, later, a PDF). It covers the PlanRVA
-region: Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties;
-the City of Richmond; and the Town of Ashland.
+The report is a Quarto book that renders to a website, and later to a PDF. It covers the PlanRVA region: Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland.
 
-**Live preview (work in progress, not yet public-facing):**
-https://hdadvisors.github.io/pha-update-2026/
+**Live preview (work in progress, not yet public-facing):** https://hdadvisors.github.io/pha-update-2026/
+
+## Status
+
+The build runs in seven phases. Phase 1 is complete: the repo is scaffolded and renders, the environment is locked, the two scaffolding skills are built, and the 2022 baseline frame is transcribed. Phase 2, the first data-collection phase, is next.
+
+Phase status lives in [.planning/PLAN.md](.planning/PLAN.md) Section 9, and the session-by-session history is in [.planning/LOG.md](.planning/LOG.md).
 
 ## What's in here
 
 | Path | What it is |
 |---|---|
-| `*.qmd` | The report pages (one per section) |
+| `*.qmd` | The report pages, one per section |
 | `r/` | Scripts that pull and prepare the data |
 | `data/` | Prepared data files (not shared — see the data note below) |
-| `data-out/` | Tidy CSV exports for Azure/PowerBI (public-source data only) |
-| `docs/` | The rendered website (this is what GitHub Pages serves) |
+| `data-out/` | Tidy CSV exports for Azure and PowerBI (public-source data only) |
+| `docs/` | The rendered website, which is what GitHub Pages serves |
 | `_common.R` | Shared settings: colors, geographies, caption text, helpers |
-| `.claude/skills/` | Two in-repo scaffolding skills — `/new-data-script` and `/new-chapter` — that a Claude Code session can invoke to start a new `r/` script or `.qmd` chapter in the project's house style |
-| `PLAN.md` | The full build plan and running log — the source of truth |
-| `CLAUDE.md` | How work sessions are run |
+| `.claude/skills/` | Two in-repo scaffolding skills, `/new-data-script` and `/new-chapter`, that a Claude Code session invokes to start a new `r/` script or `.qmd` chapter in the project's house style |
+| `.planning/` | The build plan, the per-phase files, and the session log |
+| `CLAUDE.md` | How work sessions are run, and every project convention |
 | `archive/soh-2026/` | The earlier State of Housing slide work, kept for reference |
 
 ## How the data works
 
-Data flows one way: the scripts in `r/` do all the data pulling and cleaning and save the results
-into `data/`. The report pages only *read* those saved files — they never pull data themselves.
-This keeps renders fast and the numbers reproducible.
+Data flows one way. The scripts in `r/` do all the data pulling and cleaning and save the results into `data/`. The report pages only read those saved files; they never pull data themselves. This keeps renders fast and the numbers reproducible.
 
-`data/` is not committed to the repo (Census pulls are large; MLS and CoStar data are licensed and
-can't be shared publicly). To recreate the data files, run the scripts in `r/`. The one exception is
-`data/raw/README.md`, which tells you exactly what MLS and CoStar exports to drop in.
+`data/` is not committed. Census pulls are large, and the MLS and CoStar data are licensed and cannot be shared publicly. To recreate the data files, run the scripts in `r/`. The one exception is [data/raw/README.md](data/raw/README.md), which states exactly which MLS and CoStar exports to drop in.
 
 ## Running the report yourself
 
-**You need:** R 4.6.x, Quarto, and the `renv` package. (The project's packages are locked to the R
-4.6 series — older R majors won't load them; any 4.6.x patch release works.)
+You need R 4.6.x, Quarto, and the `renv` package. The project's packages are locked to the R 4.6 series, so older R majors will not load them; any 4.6.x patch release works.
 
-1. **Restore the R packages** (first time only — see the plain-language guide below):
+1. **Restore the R packages.** First time only — see the plain-language guide below.
    ```r
    renv::restore()
    ```
-2. **Render the report.** R and Quarto usually aren't on the Windows PATH, so point to them first.
-   The exact bin paths are machine-specific — use your own R 4.6.x and Quarto install locations:
+2. **Render the report.** R and Quarto are usually not on the Windows PATH, so point to them first. The exact bin paths are machine-specific; use your own R 4.6.x and Quarto install locations.
    ```bash
-   # Example (a laptop with R 4.6.1 + Quarto in Program Files):
+   # Example (a laptop with R 4.6.1 and Quarto in Program Files):
    export PATH="/c/Program Files/R/R-4.6.1/bin:/c/Program Files/Quarto/bin:$PATH"
    quarto render
    ```
 3. Open `docs/index.html` in a browser.
 
-   > Tip: to avoid step 2's PATH line every time, add your R 4.6.x `\bin` and Quarto `\bin`
-   > folders to your Windows PATH permanently (System → Environment Variables → Path → New).
+To render one section rather than the whole book, name it: `quarto render demand.qmd`. To run a data script, use `Rscript r/<name>.R` from the project root, where `.Rprofile` activates renv.
 
----
+> Tip: to avoid step 2's PATH line every time, add your R 4.6.x `\bin` and Quarto `\bin` folders to your Windows PATH permanently, through System, then Environment Variables, then Path, then New.
 
-## renv, in plain terms (for teammates)
+## renv, in plain terms
 
-This project uses **renv** to make sure everyone runs the exact same versions of every R package.
-Think of it as a shared, project-specific package list so the report builds the same on your machine
-as on anyone else's. You mostly don't have to think about it. Here's all you need:
+This project uses **renv** to make sure everyone runs the exact same versions of every R package. Think of it as a shared, project-specific package list, so the report builds the same on your machine as on anyone else's. You mostly do not have to think about it. Here is all you need.
 
-**When you first open the project (or after someone adds a package):**
+**When you first open the project, or after someone adds a package:**
+
 ```r
 renv::restore()
 ```
-This reads the shared package list (`renv.lock`) and installs the right versions into a private
-library just for this project. Run it and wait — it can take a while the first time. That's it;
-you're ready to render.
 
-**If you add or update a package** (e.g. you wrote a new script that needs one):
+This reads the shared package list in `renv.lock` and installs the right versions into a private library just for this project. Run it and wait — it can take a while the first time. After that you are ready to render.
+
+**If you add or update a package**, for example because you wrote a new script that needs one:
+
 ```r
 renv::snapshot()
 ```
-This updates the shared list so the next person gets your package too. Commit the changed
-`renv.lock` along with your work.
 
-**If you see a package error** — something like *"there is no package called ..."* or a version
-complaint when you render:
-1. Run `renv::restore()` first. Nine times out of ten that fixes it (your library drifted from the
-   shared list).
-2. Still stuck? Run `renv::status()` — it tells you what's out of sync in plain-ish language.
-3. If a script genuinely needs a new package, `install.packages("thepackage")`, then
-   `renv::snapshot()` to record it, then commit `renv.lock`.
+This updates the shared list so the next person gets your package too. Commit the changed `renv.lock` along with your work.
 
-**What not to worry about:** the `renv/` folder and `renv.lock` file are managed automatically —
-don't hand-edit them. The private package library lives inside the project and is ignored by git, so
-it never bloats the repo.
+**If you see a package error** — something like *"there is no package called ..."* or a version complaint when you render:
 
----
+1. Run `renv::restore()` first. Nine times out of ten that fixes it, because your library drifted from the shared list.
+2. Still stuck? Run `renv::status()`, which reports what is out of sync.
+3. If a script genuinely needs a new package, run `install.packages("thepackage")`, then `renv::snapshot()` to record it, then commit `renv.lock`.
+
+**What not to worry about:** the `renv/` folder and the `renv.lock` file are managed automatically, so do not hand-edit them. The private package library lives inside the project and is ignored by git, so it never bloats the repo.
 
 ## More detail
 
-- **[PLAN.md](PLAN.md)** — the build plan, dataset inventory, methodology, and dated progress log.
-- **[CLAUDE.md](CLAUDE.md)** — session conventions and run commands.
-- **[data/raw/README.md](data/raw/README.md)** — exactly what MLS and CoStar exports to provide.
+- **[.planning/PLAN.md](.planning/PLAN.md)** — the build plan, dataset inventory, methodology, and phase table.
+- **[.planning/LOG.md](.planning/LOG.md)** — the dated session history.
+- **[CLAUDE.md](CLAUDE.md)** — session conventions and project standards.
+- **[data/raw/README.md](data/raw/README.md)** — exactly which MLS and CoStar exports to provide.

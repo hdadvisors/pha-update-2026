@@ -1,6 +1,6 @@
 # R-standards & validation digest (data scripts)
 
-Condensed from the HDA project conventions (PLAN.md §3 / CLAUDE.md). Read this when you
+Condensed from the HDA project conventions (CLAUDE.md, plus the PLAN). Read this when you
 need the full idiom; the SKILL.md body covers the common path. `references/exemplar-script.R`
 is the canonical best-practice reference script demonstrating all of it — it reads as a
 filled-in instance of the SKILL.md skeleton, so treat it as a copy source, not just an anatomy.
@@ -58,7 +58,7 @@ get reliability treatment downstream, so always emit the `cv` column for them.
   **logged % change** in the progress log — **never** a `stopifnot()` gate. 2020-2024 ACS
   vs 2016-2020 ACS differ by construction; implausible swings get flagged for human review,
   not a failed build.
-- Every data task logs its benchmark results (pass + variance + 2022 deltas) to the §11 log.
+- Every data task logs its benchmark results (pass + variance + 2022 deltas) to the session log.
 
 ## API keys
 
