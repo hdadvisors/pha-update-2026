@@ -37,7 +37,7 @@ pha-update-2026/
 ├── _quarto.yml            # book config: freeze auto, execute-dir project, output-dir docs, noindex meta, Hypothesis
 ├── _common.R              # sourced by every chapter: libs, pha_pal/cb_pal, geo+PUMA constants, caption helpers, flag_reliability(), export_csv()
 ├── .Rprofile              # source("renv/activate.R")
-├── renv.lock / renv/      # R pinned 4.6.0; dplyr 1.2.1; hdatools 0.1.7 from GitHub hdadvisors/hdatools
+├── renv.lock / renv/      # R pinned 4.6.1; dplyr 1.2.1; hdatools 0.1.7 from GitHub hdadvisors/hdatools
 ├── CLAUDE.md              # repo type, session checklists, and every domain convention
 ├── README.md              # purpose, quick start, plain-language renv guide, status
 ├── .planning/             # build scaffolding — PLAN.md (this file), phases/, LOG.md
