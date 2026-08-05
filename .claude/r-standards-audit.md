@@ -2,7 +2,9 @@
 
 **Tracking Issue:** [#9](https://github.com/hdadvisors/pha-update-2026/issues/9) in this repo. The wider body of work is [hdadvisors/hda-claude#32](https://github.com/hdadvisors/hda-claude/issues/32), where this audit is Phase 7.
 
-**What this document is.** A frozen snapshot of every R convention this repo had written down as of 2026-08-05, each given a permanent ID, plus every defect found by auditing the repo against that snapshot. It is **evidence, not a ruling.** No rule in it is proposed, changed, or decided here; where the audit found a genuine ambiguity it is written up as an open question rather than resolved.
+**What this document is.** A frozen snapshot of every R convention this repo had written down as of 2026-08-05, each given a permanent ID, plus every defect found by auditing the repo against that snapshot. It is **evidence, not a ruling.** The audit proposed, changed, and settled no rule; where it found a genuine ambiguity it wrote an open question rather than resolving it.
+
+**Two of those open questions have since been ruled on by the maintainer** (2026-08-05, after this document was written), and their `Ruling` fields in Section 8 are filled in. The rulings are recorded here, not made here — the distinction matters, because everything in Sections 1 through 7 was written without knowing them. **The headline one: `hdatools` 0.5.0 is the version floor, and this repo upgrades first.** See Q2 for what that changes, including one naming trap that will silently break `cb_pal` if the upgrade is done carelessly.
 
 **Why it runs before the standard exists.** HDA has no org-wide R standard yet. This repo has the most complete written conventions of any HDA repo, so it can be audited *against itself* before that standard exists — and a finding that this repo contradicts its own documented rule stays valid no matter what the later rulings sitting decides. The audit produces the evidence that sitting reads.
 
@@ -366,6 +368,8 @@ Written in the rulings-sitting decision template rather than as narrative. **Nei
 
 **Not recorded as a finding.** Reading (a) is available on the rule's existing text, and this audit does not resolve toward the reading that creates work.
 
+**Ruling — (a), with (c)'s clarification. Ruled by the maintainer, 2026-08-05, after this audit was written.** The requirement applies only to sections that **fetch or read external data**, not to every numbered section. `r/baseline.R` and scripts like it comply as written and need no change. A section holding transcribed literals has no source to report progress against and no fetch whose row count could surprise anyone. The rulings sitting writes the rule with that trigger named explicitly, so the question cannot recur.
+
 ### Q2 — Should the standard carry an `hdatools` version floor?
 
 **Layer:** universal for the floor itself; project for each repo's pin.
@@ -379,7 +383,17 @@ Written in the rulings-sitting decision template rather than as narrative. **Nei
 
 **Blast:** (a) forces an upgrade plus a full re-render in every active R repo before the standard applies anywhere. (b) roughly doubles the hdatools rule text and has to be maintained against two APIs. (c) needs a new config key and makes a rule's applicability repo-dependent, which the checker then has to model.
 
-**Not resolved here.** This is a ruling, and this phase produces evidence.
+**Ruling — (a). `hdatools` 0.5.0 is the version floor. Ruled by the maintainer, 2026-08-05, after this audit was written.** The standard is written against 0.5.0 and assumes its exported API. Rollout is staged rather than a one-time sweep: **this repo upgrades first**, and every other repo carrying R or Quarto code adopts the floor the next time it sees substantial work, new or existing. Repos not under active work are not chased.
+
+**What that means for this repo, concretely.** The upgrade is the prerequisite for three of this audit's own fixes reaching their intended form, and each is already commented in place:
+
+- `_common.R` — `pha_pal <- pha_pal_discrete()(6)` becomes `pha_pal <- pha_colors`. **Watch the naming:** `pha_colors` is a *named* vector, and `cb_pal` builds its keys from `pha_pal`'s values, so a bare swap renames `cb_pal`'s keys from `Severely cost-burdened` to `Severely cost-burdened.Red` and silently breaks any manual scale keyed on them. `unname()` it, or rebuild `cb_pal` from `pha_color("Red")`/`pha_color("Orange")`.
+- `_quarto.yml` — `dev: "ragg_png"` starts actually delivering brand fonts, because 0.5.0 registers through systemfonts, which is what ragg reads. No change to the setting itself.
+- PHA-E10's corrected strip-text rule becomes live rather than forward-looking, since 0.5.0 is where `theme_pha()`'s strip element is a ggtext markdown element.
+
+Gap findings **G2** and **G6** also unblock: `pha_colors`, `pha_span()`, and `pha_focus_pal()` all become callable, which is what finding 4's eventual replacement chapter will need.
+
+**Not attempted in this audit.** The upgrade changes the font mechanism, the accessor surface, and the scale surface together, and needs a full re-render to confirm — a long job, which PHA-A07 assigns to the maintainer.
 
 ---
 
