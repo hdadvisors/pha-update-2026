@@ -28,9 +28,18 @@ If the data a section needs isn't in `data/` yet, that's a data-script task firs
    user named (its data sources, its takeaway themes from the section plan).
 3. **Write it to `<section>.qmd`** and remind the user of the narrative + render workflow.
 
-`references/exemplar-chapter.qmd` is a complete real fhfh chapter (figures, inline scalars,
-callouts). `references/conventions.md` digests the chart/table + narrative rules. Read them
-for the full idiom when needed.
+`references/conventions.md` digests the chart/table + narrative rules. Read it for the full
+idiom when needed.
+
+> **Do not scaffold from `references/exemplar-chapter.qmd`.** It is a donor chapter from
+> another project in another brand and is **not compliant with any HDA R standard**: twelve
+> `theme_hda()` calls where this project uses `theme_pha()`, an `hda_pal` object that exists
+> neither in this repo nor in hdatools at any version, hand-written ggtext spans where
+> `pha_span()` exists, and hand-built focus palettes where `pha_focus_pal()` exists. Copying
+> it errors out on the first chart. Use the **Step 2 skeleton below** as the copy source; read
+> the exemplar only to see the anatomy filled in at full length. It is replaced once this
+> project has its own compliant chapter. Full detail in that file's own header banner and in
+> `.claude/r-standards-audit.md` (finding 4).
 
 ## Step 1 — Populate the project-config block
 
@@ -162,8 +171,9 @@ State these back to the user:
 - **Every figure** gets `#| fig-alt:`. **No `@fig`/`@tbl`/`@sec` cross-refs inside
   `labs(caption=)` or kbl `footnote()`** — gridtext throws an `<a>`-tag error; keep
   cross-refs in markdown bullets.
-- **ggplot2 4.0 (S7):** avoid raw `strip.text = element_text()` overrides with `theme_pha`
-  (class clash) — de-facet if needed.
+- **ggplot2 4.0 (S7):** override strip text with `strip.text = ggtext::element_markdown()`,
+  never a raw `element_text()` — `theme_pha`'s strip element is a ggtext markdown element and
+  ggplot2 4.0 only merges elements of the same class. Facet freely; match the class.
 - **Render:** prepend the R bin path, then `quarto render <section>.qmd` (one section) or
   `quarto render` (whole book) from project root. Full renders > ~2 min are Jonathan's.
 - **Commit** per the project's style guide (e.g. `content(task-N): <subject>`).

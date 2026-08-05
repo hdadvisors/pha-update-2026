@@ -1,3 +1,43 @@
+<!-- #########################################################################
+     ###  DO NOT SCAFFOLD A NEW CHAPTER FROM THIS FILE.                  ###
+     #########################################################################
+
+     THIS FILE IS NOT COMPLIANT WITH ANY HDA R STANDARD. It is a donor chapter
+     from a different project in a different brand, and copying from it produces
+     a chapter that is wrong in at least four specific, checkable ways:
+
+       1. WRONG BRAND FAMILY. Twelve theme_hda() calls. This project is PHA and
+          uses theme_pha(). Every chart below is themed for the wrong client.
+
+       2. hda_pal DOES NOT EXIST ANYWHERE. Lines 39-42 read hda_pal[1..4].
+          There is no `hda_pal` object in this repo (_common.R defines
+          `pha_pal`) and none in hdatools at any version -- 0.1.7 exports
+          `pha_pal_discrete()`, a function; 0.5.0 exports the `pha_colors`
+          vector. Copied as-is this is an immediate "object not found" error.
+
+       3. HAND-WRITTEN ggtext SPANS where a helper exists. Three literal
+          <span style='color:#hex'> strings in subtitles (lines 178, 302, 417),
+          carrying the wrong brand's hexes. hdatools 0.5.0 exports pha_span()
+          for exactly this and produces equivalent output.
+
+       4. HAND-BUILT FOCUS PALETTES. Two scale_fill_manual(values = c(`TRUE` =
+          blue, `FALSE` = "grey75")) calls (lines 266, 490) where hdatools
+          0.5.0's pha_focus_pal() is the intended helper.
+
+     WHAT IT IS STILL GOOD FOR: the ANATOMY only -- the order and shape of a
+     chapter. new-chapter's SKILL.md carries a complete inline skeleton and is
+     the better starting point; read this only to see that anatomy filled in at
+     full length.
+
+     WHEN IT GOES AWAY: it is replaced by this project's own first compliant
+     chapter, once one exists. Until then there is deliberately no compliant
+     chapter exemplar here -- shipping none beats shipping a wrong one.
+
+     Recorded as finding 4 in .claude/r-standards-audit.md. Do not "fix" this
+     file into something that looks compliant. A patched donor is not an
+     exemplar; its replacement has to be a real chapter that passed the checker.
+     ========================================================================= -->
+
 <!-- =========================================================================
      EXEMPLAR — real fhfh donor chapter (verbatim, UNADAPTED). This is a
      deliberate exception to the exemplar-is-canonical rule that new-data-script

@@ -34,6 +34,13 @@ knitr:
     echo: false
     warning: false
     message: false
+    # ragg is required for hdatools' bundled brand fonts to reach a figure: the default
+    # devices (png for HTML, pdf for LaTeX) never consult the font registry, so brand type
+    # silently substitutes in HTML and hard-fails the render in PDF. See
+    # .claude/r-standards-audit.md finding 1 -- necessary but not yet sufficient here,
+    # because the pinned hdatools 0.1.7 registers its fonts through showtext rather than
+    # systemfonts, which is what ragg reads (gap finding G1).
+    dev: "ragg_png"
 
 format:
   html:

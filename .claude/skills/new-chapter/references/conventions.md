@@ -84,8 +84,11 @@ callout; the skill's config block flexes this per project.)
 
 - **No `@fig`/`@tbl`/`@sec` cross-refs inside `labs(caption=)` or kbl `footnote()`** —
   gridtext `<a>`-tag error. Keep all cross-refs in **markdown bullets**.
-- **ggplot2 4.0 (S7):** a raw `strip.text = element_text()` override clashes with
-  `theme_pha`'s strip element — avoid it, or de-facet.
+- **ggplot2 4.0 (S7):** override strip text with `strip.text = ggtext::element_markdown()`,
+  never a raw `element_text()`. `theme_pha`'s strip element is a ggtext markdown element;
+  ggplot2 4.0 only merges elements of the same class, so `element_text()` is what clashes.
+  Faceting is not the problem and does not need avoiding — the override must match the class.
+  Per `hdatools/R/themes.R`, `theme_pha`'s `@details`.
 - **fig-alt on every figure** (`#| fig-alt:`) — full sentence(s) describing content + trend.
 
 ## Render

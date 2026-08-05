@@ -112,7 +112,7 @@ Public repo, with GitHub Pages live from the start on `main`/`docs` at `https://
 - **PEP** — the post-2020 API requires an explicit `vintage=` argument; `year=` alone misbehaves silently. Use Vintage 2025 and fall back to the FTP tables if the API lags.
 - **huduser.gov** — send a browser User-Agent and Referer or the server returns 202 or an empty body. The CHAS data dictionary is a separate download from the table zips.
 - **gridtext and `theme_pha`** — an `@fig`, `@tbl`, or `@sec` cross-reference inside `labs(caption=)` or a kbl `footnote()` throws a gridtext `<a>`-tag error. Keep cross-references in markdown bullets.
-- **ggplot2 4.0 (S7)** — a raw `strip.text = element_text()` override can clash with `theme_pha`'s strip element. Avoid overriding it, or de-facet.
+- **ggplot2 4.0 (S7)** — override strip text with `ggtext::element_markdown()`, never a raw `element_text()`. `theme_pha`'s strip element is a ggtext markdown element and ggplot2 4.0 only merges theme elements of the same class, so an `element_text()` override is the thing that clashes. Faceting is fine; the override just has to match the class. Documented at `hdatools/R/themes.R`, `theme_pha`'s `@details`.
 
 ## Repo map
 
