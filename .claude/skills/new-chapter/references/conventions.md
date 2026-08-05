@@ -1,9 +1,10 @@
 # Chart, table & narrative digest (chapters)
 
-Condensed from the HDA project conventions (PLAN.md §3/§6/§7 / CLAUDE.md). Read this when
-you need the full idiom; the SKILL.md body covers the common path.
+Condensed from the HDA project conventions (CLAUDE.md, plus the PLAN's section-content plan).
+Read this when you need the full idiom; the SKILL.md body covers the common path.
 `references/exemplar-chapter.qmd` is a complete real fhfh chapter demonstrating figures,
-inline scalars, and callouts.
+inline scalars, and callouts. Unlike `new-data-script`'s exemplar, it is an unadapted donor —
+read it for anatomy, not as a copy source.
 
 ## Chapter anatomy (mandatory order)
 

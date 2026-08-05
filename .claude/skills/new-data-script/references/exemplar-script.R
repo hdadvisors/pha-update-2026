@@ -178,14 +178,14 @@ stopifnot(between(pop, 70000, 82000))
 
 # 2022 baseline: LOG the % change, NEVER stopifnot() it — the 2016-2020 baseline
 # and the 2020-2024 estimate differ by construction. Flag implausible swings for
-# human review in the §11 log; don't fail the build.
+# human review in the session log; don't fail the build.
 baseline_path <- "data/baseline_2022.rds"
 if (file.exists(baseline_path)) {
   pop_2022 <- read_rds(baseline_path) |>
     filter(geography == fauquier, metric == "total_pop") |>
     pull(value)
   if (length(pop_2022) == 1) {
-    message(sprintf("Fauquier pop vs 2022 baseline: %+.1f%% (log to §11; flag if implausible)",
+    message(sprintf("Fauquier pop vs 2022 baseline: %+.1f%% (log it; flag if implausible)",
                     (pop - pop_2022) / pop_2022 * 100))
   }
 }

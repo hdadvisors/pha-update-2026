@@ -37,9 +37,10 @@ Read these sources in the target project root and fill the block:
 - **`CLAUDE.md`** — quick-start run commands, R version + bin path, data-flow rule,
   script anatomy, validation semantics, `_common.R` provisions, API-key handling,
   Windows R rule, commit style.
-- **`PLAN.md`** (or equivalent) — §R-standards / code-style, geography constants, the
-  dataset inventory row for this script (tables, geography, output name, task), vintages,
-  validation semantics, `data-out/` commit policy.
+- **`PLAN.md`** (`.planning/PLAN.md`, or equivalent) — geography constants, the dataset
+  inventory row for this script (tables, geography, output name, phase), vintages,
+  `data-out/` commit policy. Code style and validation semantics may live in `CLAUDE.md`
+  instead; take whichever file states them.
 - **`_common.R`** — the actual names of palettes, geography constants, caption helpers,
   `flag_reliability()`, `export_csv()` (source these; don't redefine them).
 
@@ -147,7 +148,7 @@ stopifnot(
 # (above) are sufficient — don't invent a threshold.
 
 # 2022 baseline: LOG the % change; never stopifnot() it (vintages differ by construction).
-# Compute vs baseline_2022 and print for the §11 log; flag implausible swings for review.
+# Compute vs baseline_2022 and print it for the session log; flag implausible swings for review.
 message("<name>.R validation passed.")
 ```
 

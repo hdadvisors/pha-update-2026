@@ -56,7 +56,8 @@ Table style           : <kbl() |> kable_styling(c("condensed","striped")) ; form
 Cross-ref rule        : <NO @fig/@tbl/@sec inside labs(caption=) or kbl footnote() — gridtext
                         <a>-tag error; keep cross-refs in markdown bullets only>
 fig-alt               : <every figure gets #| fig-alt: (posit-dev alt-text skill)>
-Section plan          : <the section's scope + takeaway themes from PLAN.md §7 / the task plan>
+Section plan          : <the section's scope + takeaway themes from the PLAN's section-content
+                        plan and the current phase file>
 Section data sources  : <which data/*.rds this section reads>
 Commit style          : <type(scope): subject — content(task-N) for a new chapter>
 ```

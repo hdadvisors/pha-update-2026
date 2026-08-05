@@ -1,5 +1,9 @@
 <!-- =========================================================================
-     EXEMPLAR — real fhfh donor chapter (verbatim). Read it for the ANATOMY
+     EXEMPLAR — real fhfh donor chapter (verbatim, UNADAPTED). This is a
+     deliberate exception to the exemplar-is-canonical rule that new-data-script
+     follows: no chapter has been built in this project yet, so a canonical
+     exemplar would encode untested conventions. Promote it once the regional
+     chapters are built. Until then, read it for the ANATOMY
      (title + {#sec-slug} → setup chunk reading .rds + inline scalars → takeaway
      H2s → figure/table + bullet blocks → callouts), NOT as a copy source.
      Adapt to the target project before use — known deltas:
@@ -13,7 +17,7 @@
 
 # Demographic Shifts & Socioeconomic Factors {#sec-demographics}
 
-<!-- Purpose: demographic shifts and socioeconomic context for housing demand (PLAN.md §7 Ch 2).
+<!-- Purpose: demographic shifts and socioeconomic context for housing demand (donor project's Ch 2).
      Narrative rule: takeaway titles + bullet findings + callouts only — no drafted prose. -->
 
 ```{r}
