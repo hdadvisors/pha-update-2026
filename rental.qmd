@@ -161,7 +161,7 @@ chg_since2022    <- costar_latest$ask_rent / costar_2022q1$ask_rent - 1
 costar_since2020 |>
   ggplot(aes(x = quarter, y = ask_rent)) +
   annotate("rect", xmin = as.Date("2022-01-01"), xmax = max(costar_since2020$quarter),
-           ymin = 0, ymax = Inf, fill = green, alpha = 0.06) +
+           ymin = 0, ymax = Inf, fill = green, alpha = 0.15) +
   annotate("text", x = as.Date("2022-02-15"), y = 1000, label = "Since 2022",
            color = green, fontface = "bold", hjust = 0, size = 3.2) +
   geom_line(color = green, linewidth = 1.1) +
@@ -222,7 +222,7 @@ ggplot(risk, aes(x = expire_window, y = units, fill = expire_window)) +
   labs(
     title = "Nearly 30 percent of the region's assisted units expire within a decade",
     subtitle = paste0(
-      "Active federally assisted rental units by subsidy-expiration window, rr region<br>",
+      "Active federally assisted rental units by subsidy-expiration window, Richmond region<br>",
       "Richmond city, Henrico, Chesterfield, Hanover, and Charles City properties only"
     ),
     caption = nhpd_cap(),
@@ -264,7 +264,7 @@ ggplot(psh_mix, aes(x = year, y = units, color = program_label)) +
     title = "Housing Choice Vouchers grew as public housing kept shrinking",
     subtitle = paste0(
       "<span style='color:", dblue, "'>**Housing Choice Vouchers**</span> and ",
-      "<span style='color:", red, "'>**public housing**</span> units, rr region, 2020-2024"
+      "<span style='color:", red, "'>**public housing**</span> units, Richmond region, 2020-2024"
     ),
     caption = posh_cap(),
     x = NULL, y = NULL
@@ -276,8 +276,8 @@ ggplot(psh_mix, aes(x = year, y = units, color = program_label)) +
 - **Housing Choice Vouchers grew `r label_percent(accuracy = 1)(hcv_2024/hcv_2020 - 1)` since 2020, from `r label_comma()(hcv_2020)` to `r label_comma()(hcv_2024)` units, while public housing fell `r label_percent(accuracy = 1)(1 - ph_2024/ph_2020)`, from `r label_comma()(ph_2020)` to `r label_comma()(ph_2024)` — a policy-relevant shift from project-based to tenant-based assistance.**
 - Regional voucher utilization slipped from 91 percent occupied in 2020 to 87 percent in 2024, even as the voucher supply grew — more vouchers issued, a slightly larger share sitting unused at any given time.
 - Project-based Section 8 (5,763 units in 2024) and the small 202/PRAC and 811/PRAC senior- and disability-designated programs (222 and 69 units) have stayed essentially flat since 2020.
-- Richmond city and Henrico hold the large majority of the region's assisted units; Charles City, Goochland, New Kent, and Powhatan combined account for fewer than 40 units across all programs. LIHTC production, tracked separately from this HUD administrative extract, remains a future-draft addition.
+- Richmond city and Henrico hold the large majority of the region's assisted units; Charles City, Goochland, New Kent, and Powhatan combined account for fewer than 40 units across all programs.
 
-::: {.callout-note title="Coming in a future draft"}
+::: {.callout-note title="To be added"}
 **Submarket rents and vacancy.** Submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above.
 :::

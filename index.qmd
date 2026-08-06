@@ -37,6 +37,7 @@ Henrico, and Richmond); the five secondary localities receive individual local s
 Each section leads with what changed since the 2022 Framework and organizes its findings
 by takeaway rather than by data source.
 
+::: {.content-hidden}
 ## Status of this update
 
 As of August 6, 2026:
@@ -49,3 +50,4 @@ As of August 6, 2026:
 | Housing gap | Structure outlined; analysis pending |
 | Cost burden and instability | First figures loaded |
 | Data notes | Drafted |
+:::

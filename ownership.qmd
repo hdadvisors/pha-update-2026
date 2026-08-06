@@ -167,7 +167,7 @@ ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
 ```{r}
 #| label: fig-bps-permits
 #| fig-cap: "Multifamily permits have outpaced single-family in three of the last four years"
-#| fig-alt: "Two-panel line chart of annual building permits by structure type (single-family and multifamily) for the Richmond region, 2000 through 2025, with 2000-2019 shown in muted grey and 2020-2025 shown in color. Single-family permits fell from about 4,825 units in 2020 to 3,792 in 2025. Multifamily permits rose from about 2,770 units in 2020 to 4,677 in 2025, exceeding single-family in 2022, 2023, and 2025."
+#| fig-alt: "Overlapping line chart of annual building permits by structure type (single-family and multifamily) for the Richmond region, 2000 through 2025, with 2000-2019 shown in muted grey and 2020-2025 shown in color. Single-family permits fell from about 4,825 units in 2020 to 3,792 in 2025. Multifamily permits rose from about 2,770 units in 2020 to 4,677 in 2025, exceeding single-family in 2022, 2023, and 2025."
 
 bps_reg <- bps |>
   filter(geoid %in% rr) |>
@@ -181,12 +181,11 @@ mf_2020 <- bps_reg |> filter(structure == "Multifamily", year == 2020) |> pull(u
 mf_2025 <- bps_reg |> filter(structure == "Multifamily", year == max(year)) |> pull(units)
 bps_latest_yr <- max(bps_reg$year)
 
-ggplot(bps_reg, aes(x = year, y = units)) +
+ggplot(bps_reg, aes(x = year, y = units, group = structure)) +
   geom_line(color = "grey70", linewidth = 0.7) +
   geom_line(data = bps_recent, aes(color = structure), linewidth = 1.1) +
   scale_color_manual(values = c("Single-family" = dblue, "Multifamily" = orange), guide = "none") +
   scale_y_continuous(labels = label_comma()) +
-  facet_wrap(~structure) +
   labs(
     title = "Multifamily permits have outpaced single-family in three of the last four years",
     subtitle = paste0(
@@ -251,6 +250,6 @@ ggplot(rate_price, aes(x = month)) +
 - Higher rates and higher prices are compounding rather than offsetting — a fixed monthly housing budget buys much less home today than it did when rates sat near 3 percent.
 - The mortgage rate is Freddie Mac's national PMMS survey, not Richmond-specific; both series here are nominal, unadjusted for inflation.
 
-::: {.callout-note title="Coming in a future draft"}
+::: {.callout-note title="To be added"}
 **Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from the regional MLS.
 :::

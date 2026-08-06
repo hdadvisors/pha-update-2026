@@ -213,7 +213,7 @@ ggplot(chas_plot, aes(x = income_band, y = share, fill = burden)) +
 - **`r label_percent(accuracy = 0)(chas_low_renter)` of renters and `r label_percent(accuracy = 0)(chas_low_owner)` of owners below 30 percent of area median income are cost-burdened, and most of them severely: `r label_percent(accuracy = 0)(chas_low_renter_sev)` of renters and `r label_percent(accuracy = 0)(chas_low_owner_sev)` of owners in this band pay half or more of income toward housing.**
 - Burden falls sharply as income rises: by 50-80% AMI, `r label_percent(accuracy = 0)(chas_mid_renter)` of renters and `r label_percent(accuracy = 0)(chas_mid_owner)` of owners are burdened; above 100% AMI, fewer than `r label_percent(accuracy = 0)(chas_high_renter)` of renters and `r label_percent(accuracy = 0)(chas_high_owner)` of owners are.
 - Renters are more burdened than owners at every income band below 100% AMI, widest at the bottom of the scale.
-- These are regional totals pooled across all 8 rr localities, so every income band here is measured at a reliable scale — including for Charles City, Goochland, New Kent, and Powhatan, whose renter counts are too small for the locality-level ACS cut above.
+- These are regional totals pooled across all 8 Richmond region localities, so every income band here is measured at a reliable scale — including for Charles City, Goochland, New Kent, and Powhatan, whose renter counts are too small for the locality-level ACS cut above.
 
 ## Severe burden is rising in the counties, easing in Richmond
 
@@ -280,10 +280,10 @@ ggplot(sev_df, aes(x = period, y = share, color = locality, group = locality)) +
 **Cost burden by race and ethnicity (CHAS).** HUD's CHAS tables will further break burden down by race and ethnicity, complementing the income-band cut above.
 :::
 
-::: {.callout-note title="Coming in a future draft"}
+::: {.callout-note title="To be added"}
 **Evictions.** Eviction filings and judgments for the region's general district courts, trended against the 2022 Framework's pre-pandemic baseline.
 :::
 
-::: {.callout-note title="Coming in a future draft"}
+::: {.callout-note title="To be added"}
 **Homelessness.** Greater Richmond CoC Point-in-Time counts, sheltered and unsheltered, updating the 2022 Framework's 2019–2021 series.
 :::
