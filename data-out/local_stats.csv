@@ -1,0 +1,107 @@
+geoid,short_name,group,metric,value_current,value_2022,metric_label,fmt,change_type,comparison_label,change_raw,value_current_fmt,value_2022_fmt,change_fmt
+51041,Chesterfield,primary,pop_current,397148,378739,Population,count,pct,2022 vs. 2025,0.048606032122385075,"397,148","378,739",+5%
+51041,Chesterfield,primary,net_migration,27138,NA,Net migration (2020–2025),count,none,(cumulative),NA,"27,138",NA,NA
+51041,Chesterfield,primary,median_hh_income,101931,95757,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.06447570412606911,$102k,$96k,+6%
+51041,Chesterfield,primary,owner_rate,0.7672790838714281,0.774026419370229,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,-0.0067473354988009104,77%,77%,-0.7 pp
+51041,Chesterfield,primary,med_home_value,366000,306500,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.19412724306688417,$366k,$306k,+19%
+51041,Chesterfield,primary,med_gross_rent,1629,1460,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.11575342465753424,"$1,629","$1,460",+12%
+51041,Chesterfield,primary,burdened_renters,0.52241626482471,0.49464765159175705,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,0.027768613232952988,52%,49%,+2.8 pp
+51041,Chesterfield,primary,burdened_owners,0.19731381785554059,0.19023974757300346,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.0070740702825371204,20%,19%,+0.7 pp
+51041,Chesterfield,primary,permits_sf,1845,1385,Single-family permits,count,pct,2022 vs. 2024,0.33212996389891697,"1,845","1,385",+33%
+51041,Chesterfield,primary,permits_mf,462,1848,Multifamily permits,count,pct,2022 vs. 2024,-0.75,462,"1,848",-75%
+51041,Chesterfield,primary,hud_units,1424,1429,HUD-assisted housing units,count,pct,2022 vs. 2024,-0.0034989503149055285,"1,424","1,429",0%
+51041,Chesterfield,primary,sev_burdened_renters,6430,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,"6,430",NA,NA
+51041,Chesterfield,primary,pop_2050,520157.51832915226,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"520,158",NA,NA
+51085,Hanover,primary,pop_current,116423,112955,Population,count,pct,2022 vs. 2025,0.03070249214288876,"116,423","112,955",+3%
+51085,Hanover,primary,net_migration,6864,NA,Net migration (2020–2025),count,none,(cumulative),NA,"6,864",NA,NA
+51085,Hanover,primary,median_hh_income,112805,104678,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.07763809014310552,$113k,$105k,+8%
+51085,Hanover,primary,owner_rate,0.8211909670164917,0.8302926322402919,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,-0.009101665223800182,82%,83%,-0.9 pp
+51085,Hanover,primary,med_home_value,400400,347900,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.15090543259557343,$400k,$348k,+15%
+51085,Hanover,primary,med_gross_rent,1591,1392,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.14295977011494254,"$1,591","$1,392",+14%
+51085,Hanover,primary,burdened_renters,0.44492943401716867,0.4548831450239901,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,-0.009953711006821409,44%,45%,-1 pp
+51085,Hanover,primary,burdened_owners,0.1622908955266707,0.1543512519698827,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.007939643556788,16%,15%,+0.8 pp
+51085,Hanover,primary,permits_sf,443,474,Single-family permits,count,pct,2022 vs. 2024,-0.06540084388185655,443,474,-7%
+51085,Hanover,primary,permits_mf,4,90,Multifamily permits,count,pct,2022 vs. 2024,-0.9555555555555556,4,90,-96%
+51085,Hanover,primary,hud_units,449,460,HUD-assisted housing units,count,pct,2022 vs. 2024,-0.02391304347826087,449,460,-2%
+51085,Hanover,primary,sev_burdened_renters,1555,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,"1,555",NA,NA
+51085,Hanover,primary,pop_2050,139440.86171898592,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"139,441",NA,NA
+51087,Henrico,primary,pop_current,342775,335033,Population,count,pct,2022 vs. 2025,0.023108171433858755,"342,775","335,033",+2%
+51087,Henrico,primary,net_migration,6457,NA,Net migration (2020–2025),count,none,(cumulative),NA,"6,457",NA,NA
+51087,Henrico,primary,median_hh_income,88783,82424,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.07714985926429195,$89k,$82k,+8%
+51087,Henrico,primary,owner_rate,0.6447857896844175,0.6455918982206512,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,-8.061085362337517e-4,64%,65%,-0.1 pp
+51087,Henrico,primary,med_home_value,359200,309700,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.1598320955763642,$359k,$310k,+16%
+51087,Henrico,primary,med_gross_rent,1541,1380,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.11666666666666667,"$1,541","$1,380",+12%
+51087,Henrico,primary,burdened_renters,0.5161897429316908,0.5077037393185742,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,0.008486003613116688,52%,51%,+0.8 pp
+51087,Henrico,primary,burdened_owners,0.18834417208604304,0.1865372318781608,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.001806940207882246,19%,19%,+0.2 pp
+51087,Henrico,primary,permits_sf,921,712,Single-family permits,count,pct,2022 vs. 2024,0.29353932584269665,921,712,+29%
+51087,Henrico,primary,permits_mf,905,1674,Multifamily permits,count,pct,2022 vs. 2024,-0.459378733572282,905,"1,674",-46%
+51087,Henrico,primary,hud_units,4094,4113,HUD-assisted housing units,count,pct,2022 vs. 2024,-0.0046194991490396305,"4,094","4,113",0%
+51087,Henrico,primary,sev_burdened_renters,10330,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,"10,330",NA,NA
+51087,Henrico,primary,pop_2050,416467.1026552909,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"416,467",NA,NA
+51760,Richmond,primary,pop_current,237257,228936,Population,count,pct,2022 vs. 2025,0.03634640248803159,"237,257","228,936",+4%
+51760,Richmond,primary,net_migration,6590,NA,Net migration (2020–2025),count,none,(cumulative),NA,"6,590",NA,NA
+51760,Richmond,primary,median_hh_income,64587,59606,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.0835654128778982,$65k,$60k,+8%
+51760,Richmond,primary,owner_rate,0.4352623153535721,0.43232774379699807,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,0.0029345715565740615,44%,43%,+0.3 pp
+51760,Richmond,primary,med_home_value,353000,308300,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.14498864742134285,$353k,$308k,+14%
+51760,Richmond,primary,med_gross_rent,1372,1227,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.11817440912795436,"$1,372","$1,227",+12%
+51760,Richmond,primary,burdened_renters,0.5204769402232562,0.5323364077934836,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,-0.011859467570227378,52%,53%,-1.2 pp
+51760,Richmond,primary,burdened_owners,0.2621009039497707,0.26089164915845126,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.0012092547913194474,26%,26%,+0.1 pp
+51760,Richmond,primary,permits_sf,380,457,Single-family permits,count,pct,2022 vs. 2024,-0.16849015317286653,380,457,-17%
+51760,Richmond,primary,permits_mf,2160,2192,Multifamily permits,count,pct,2022 vs. 2024,-0.014598540145985401,"2,160","2,192",-1%
+51760,Richmond,primary,hud_units,10107,9801,HUD-assisted housing units,count,pct,2022 vs. 2024,0.031221303948576674,"10,107","9,801",+3%
+51760,Richmond,primary,sev_burdened_renters,14655,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,"14,655",NA,NA
+51760,Richmond,primary,pop_2050,275753.81164533965,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"275,754",NA,NA
+51036,Charles City,secondary,pop_current,6623,6582,Population,count,pct,2022 vs. 2025,0.0062291096931024,"6,623","6,582",+1%
+51036,Charles City,secondary,net_migration,167,NA,Net migration (2020–2025),count,none,(cumulative),NA,167,NA,NA
+51036,Charles City,secondary,median_hh_income,75417,65573,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.1501227639424763,$75k,$66k,+15%
+51036,Charles City,secondary,owner_rate,0.8625901751975267,0.8464716006884682,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,0.016118574509058514,86%,85%,+1.6 pp
+51036,Charles City,secondary,med_home_value,241400,198800,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.21428571428571427,$241k,$199k,+21%
+51036,Charles City,secondary,med_gross_rent,1099,927,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.1855447680690399,"$1,099",$927,+19%
+51036,Charles City,secondary,burdened_renters,0.4397163120567376,0.4622093023255814,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,-0.02249299026884377,44%,46%,-2.2 pp
+51036,Charles City,secondary,burdened_owners,0.19742661841576198,0.18930041152263374,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.008126206893128235,20%,19%,+0.8 pp
+51036,Charles City,secondary,permits_sf,30,21,Single-family permits,count,pct,2022 vs. 2024,0.42857142857142855,30,21,+43%
+51036,Charles City,secondary,permits_mf,0,0,Multifamily permits,count,pct,2022 vs. 2024,NA,0,0,NA
+51036,Charles City,secondary,sev_burdened_renters,98,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,98,NA,NA
+51036,Charles City,secondary,pop_2050,5484.9559622175775,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"5,485",NA,NA
+51075,Goochland,secondary,pop_current,29187,26212,Population,count,pct,2022 vs. 2025,0.11349763467114299,"29,187","26,212",+11%
+51075,Goochland,secondary,net_migration,4731,NA,Net migration (2020–2025),count,none,(cumulative),NA,"4,731",NA,NA
+51075,Goochland,secondary,median_hh_income,118931,105600,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.1262405303030303,$119k,$106k,+13%
+51075,Goochland,secondary,owner_rate,0.8493521562560433,0.8451164691458929,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,0.004235687110150432,85%,85%,+0.4 pp
+51075,Goochland,secondary,med_home_value,500600,433600,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.15452029520295202,$501k,$434k,+15%
+51075,Goochland,secondary,med_gross_rent,1614,1407,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.14712153518123666,"$1,614","$1,407",+15%
+51075,Goochland,secondary,burdened_renters,0.3373493975903614,0.4133545310015898,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,-0.07600513341122839,34%,41%,-7.6 pp
+51075,Goochland,secondary,burdened_owners,0.16546762589928057,0.17446653734238604,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,-0.008998911443105467,17%,17%,-0.9 pp
+51075,Goochland,secondary,permits_sf,322,325,Single-family permits,count,pct,2022 vs. 2024,-0.009230769230769232,322,325,-1%
+51075,Goochland,secondary,permits_mf,0,0,Multifamily permits,count,pct,2022 vs. 2024,NA,0,0,NA
+51075,Goochland,secondary,hud_units,18,20,HUD-assisted housing units,count,pct,2022 vs. 2024,-0.1,18,20,-10%
+51075,Goochland,secondary,sev_burdened_renters,180,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,180,NA,NA
+51075,Goochland,secondary,pop_2050,36311.374050082224,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"36,311",NA,NA
+51127,New Kent,secondary,pop_current,28022,24972,Population,count,pct,2022 vs. 2025,0.12213679320839341,"28,022","24,972",+12%
+51127,New Kent,secondary,net_migration,4678,NA,Net migration (2020–2025),count,none,(cumulative),NA,"4,678",NA,NA
+51127,New Kent,secondary,median_hh_income,123314,113120,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.09011669024045262,$123k,$113k,+9%
+51127,New Kent,secondary,owner_rate,0.9264817013926374,0.9234582132564841,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,0.003023488136153274,93%,92%,+0.3 pp
+51127,New Kent,secondary,med_home_value,393600,354200,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.11123658949745906,$394k,$354k,+11%
+51127,New Kent,secondary,med_gross_rent,1721,1391,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,0.2372393961179008,"$1,721","$1,391",+24%
+51127,New Kent,secondary,burdened_renters,0.3890675241157556,0.5044091710758377,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,-0.11534164696008209,39%,50%,-11.5 pp
+51127,New Kent,secondary,burdened_owners,0.16623650868137024,0.19565488825071795,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,-0.029418379569347702,17%,20%,-2.9 pp
+51127,New Kent,secondary,permits_sf,453,356,Single-family permits,count,pct,2022 vs. 2024,0.27247191011235955,453,356,+27%
+51127,New Kent,secondary,permits_mf,0,0,Multifamily permits,count,pct,2022 vs. 2024,NA,0,0,NA
+51127,New Kent,secondary,hud_units,3,3,HUD-assisted housing units,count,pct,2022 vs. 2024,0,3,3,+0%
+51127,New Kent,secondary,sev_burdened_renters,115,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,115,NA,NA
+51127,New Kent,secondary,pop_2050,39535.90076652587,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"39,536",NA,NA
+51145,Powhatan,secondary,pop_current,32591,31592,Population,count,pct,2022 vs. 2025,0.031621929602430994,"32,591","31,592",+3%
+51145,Powhatan,secondary,net_migration,2316,NA,Net migration (2020–2025),count,none,(cumulative),NA,"2,316",NA,NA
+51145,Powhatan,secondary,median_hh_income,110537,108089,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.022648003034536353,$111k,$108k,+2%
+51145,Powhatan,secondary,owner_rate,0.9323620309050773,0.9117089464656496,Homeownership rate,percent,pp,2018–22 vs. 2020–24 ACS,0.020653084439427705,93%,91%,+2.1 pp
+51145,Powhatan,secondary,med_home_value,416000,356500,Median home value,dollars,pct,2018–22 vs. 2020–24 ACS,0.16690042075736325,$416k,$356k,+17%
+51145,Powhatan,secondary,med_gross_rent,1168,1170,Median gross rent,dollars,pct,2018–22 vs. 2020–24 ACS,-0.0017094017094017094,"$1,168","$1,170",0%
+51145,Powhatan,secondary,burdened_renters,0.4425036390101892,0.3948019801980198,Cost-burdened renters,percent,pp,2018–22 vs. 2020–24 ACS,0.04770165881216937,44%,39%,+4.8 pp
+51145,Powhatan,secondary,burdened_owners,0.17176983600341267,0.1395789683727427,Cost-burdened homeowners,percent,pp,2018–22 vs. 2020–24 ACS,0.03219086763066997,17%,14%,+3.2 pp
+51145,Powhatan,secondary,permits_sf,115,216,Single-family permits,count,pct,2022 vs. 2024,-0.4675925925925926,115,216,-47%
+51145,Powhatan,secondary,permits_mf,0,0,Multifamily permits,count,pct,2022 vs. 2024,NA,0,0,NA
+51145,Powhatan,secondary,hud_units,6,8,HUD-assisted housing units,count,pct,2022 vs. 2024,-0.25,6,8,-25%
+51145,Powhatan,secondary,sev_burdened_renters,130,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,130,NA,NA
+51145,Powhatan,secondary,pop_2050,38889.32791370341,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"38,889",NA,NA
+5103368,Ashland,ashland,median_hh_income,61164,58904,Median household income,dollars,pct,2018–22 vs. 2020–24 ACS,0.0383675132418851,$61k,$59k,+4%
+5103368,Ashland,ashland,sev_burdened_renters,219,NA,Severely burdened renters (CHAS),count,none,(2018–2022 vintage),NA,219,NA,NA
+5103368,Ashland,ashland,pop_2050,9591.559469572665,NA,Population projection (2050),count,none,(Weldon Cooper),NA,"9,592",NA,NA

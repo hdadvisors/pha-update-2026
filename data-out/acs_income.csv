@@ -19,6 +19,16 @@ geoid,name,year,table,variable,label,estimate,moe,cv,reliability
 51760,"Richmond city, Virginia",2019,B19013,B19013_001,Median household income in the past 12 months (in 2019 inflation-adjusted dollars),47250,1316,1.6931216931216932,High
 51,Virginia,2019,B19013,B19013_001,Median household income in the past 12 months (in 2019 inflation-adjusted dollars),74222,341,0.2792902816237069,High
 5103368,"Ashland town, Virginia",2019,B19013,B19013_001,Median household income in the past 12 months (in 2019 inflation-adjusted dollars),55000,6041,6.676982591876208,High
+51036,"Charles City County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),65573,3448,3.1965117231464855,High
+51041,"Chesterfield County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),95757,2126,1.3496676126084475,High
+51075,"Goochland County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),105600,8544,4.9184857695496,High
+51085,"Hanover County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),104678,3515,2.041286722617474,High
+51087,"Henrico County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),82424,1734,1.2788791413484488,High
+51127,"New Kent County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),113120,6953,3.736516725923569,High
+51145,"Powhatan County, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),108089,4924,2.7693040641589937,High
+51760,"Richmond city, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),59606,2362,2.4089290698892327,High
+51,Virginia,2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),87249,428,0.29820670818080286,High
+5103368,"Ashland town, Virginia",2022,B19013,B19013_001,Median household income in the past 12 months (in 2022 inflation-adjusted dollars),58904,13621,14.057183147314653,High
 51036,"Charles City County, Virginia",2024,B19013,B19013_001,Median household income in the past 12 months (in 2024 inflation-adjusted dollars),75417,9739,7.850172695335717,High
 51041,"Chesterfield County, Virginia",2024,B19013,B19013_001,Median household income in the past 12 months (in 2024 inflation-adjusted dollars),101931,1923,1.1468512626054117,High
 51075,"Goochland County, Virginia",2024,B19013,B19013_001,Median household income in the past 12 months (in 2024 inflation-adjusted dollars),118931,7243,3.7021798468673532,High

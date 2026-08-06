@@ -28,7 +28,7 @@ message("CENSUS_API_KEY present: ", Sys.getenv("CENSUS_API_KEY") != "")
 
 dir.create("data", showWarnings = FALSE, recursive = TRUE)
 
-years <- c(2014, 2019, 2024)
+years <- c(2014, 2019, 2022, 2024)
 
 ## 2. Pull helper ----
 

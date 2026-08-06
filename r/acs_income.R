@@ -104,8 +104,8 @@ pull_table <- function(table, yr = 2024, dataset = "acs5") {
 # phase-file decision: overlapping 5-year ACS samples are not independent, so
 # every available endpoint would overstate how much of a 15-point series is
 # real movement versus shared sample.
-message("Pulling B19013 (2014, 2019, 2024)...")
-b19013 <- map(c(2014, 2019, 2024), \(yr) pull_table("B19013", yr)) |>
+message("Pulling B19013 (2014, 2019, 2022, 2024)...")
+b19013 <- map(c(2014, 2019, 2022, 2024), \(yr) pull_table("B19013", yr)) |>
   list_rbind()
 message("B19013 pulled: ", nrow(b19013), " rows across ",
         n_distinct(b19013$year), " years")
@@ -151,7 +151,7 @@ stopifnot(
   no_all_na(inc$cv),
   no_all_na(inc$reliability),
   setequal(unique(inc$table), c("B19013", "B19001", "S1701")),
-  setequal(inc$year[inc$table == "B19013"], c(2014, 2019, 2024))
+  setequal(inc$year[inc$table == "B19013"], c(2014, 2019, 2022, 2024))
 )
 
 # No numeric same-vintage benchmark is asserted here. I do not have a

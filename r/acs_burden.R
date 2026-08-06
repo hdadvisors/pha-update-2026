@@ -95,7 +95,7 @@ collapse_bands <- function(df, tenure) {
 ## 3. Pull B25070 (renters) and B25091 (owners), 2014/2019/2024 ----
 # Three non-overlapping 5-year windows, matching r/acs_income.R: overlapping
 # 5-year ACS samples are not independent.
-years <- c(2014, 2019, 2024)
+years <- c(2014, 2019, 2022, 2024)
 
 message("Pulling B25070 (renters)...")
 b25070_raw <- map(years, \(yr) {
@@ -168,7 +168,7 @@ check <- d |>
   left_join(totals, by = c("geoid", "year", "tenure"))
 
 stopifnot(
-  nrow(d) == 9 * 3 * 2 * 4,
+  nrow(d) == 9 * 4 * 2 * 4,
   setequal(d$geoid, c(unname(rr), virginia)),
   setequal(d$year, years),
   setequal(d$tenure, c("Renter", "Owner")),
