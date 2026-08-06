@@ -11,34 +11,34 @@
 source("_common.R")
 ```
 
-This section quantifies the region's housing shortfall three ways: rental units affordable and available by income band, renters positioned to become owners, and the income required to buy at today's prices. All findings below are pending the Phase 4 PUMS engine and gap methodology — headings pose the questions the data will answer.
+This section quantifies the region's housing shortfall three ways: rental units affordable and available by income band, renters positioned to become owners, and the income required to buy at today's prices. All findings below are coming in a future draft of this update — headings pose the questions the data will answer.
 
 ## How large is the affordable-and-available rental gap by income band?
 
-::: {.callout-note title="Planned content"}
-An NLIHC-style bar chart of the surplus or deficit of rental units that are both affordable to and available to each AMI band (30/50/80/100/120% AMI), for the core-3 PUMS region (Chesterfield, Henrico, Richmond city). Built from the 2020–2024 ACS PUMS via `r/pums/pums_gap.R`, with AMI bands assigned from HUD FY2026 Income Limits by household size. Pending Phase 4 (PUMS engine and gap methodology).
+::: {.callout-note title="Coming in a future draft"}
+An NLIHC-style bar chart of the surplus or deficit of rental units that are both affordable to and available to each AMI band (30/50/80/100/120% AMI), for the region's core three localities (Chesterfield, Henrico, Richmond city). Built from detailed Census microdata, with AMI bands assigned from HUD's FY2026 Income Limits by household size.
 :::
 
 ## Where along the income spectrum do renters compete for the same units?
 
-::: {.callout-note title="Planned content"}
-A table of renter households versus affordable units versus affordable-and-available units by AMI band, showing how higher-income occupancy of low-cost units compounds the shortage at the bottom. Source: 2020–2024 ACS PUMS (`r/pums/pums_gap.R`) with HUD FY2026 Income Limits. Pending Phase 4 (PUMS engine and gap methodology).
+::: {.callout-note title="Coming in a future draft"}
+A table of renter households versus affordable units versus affordable-and-available units by AMI band, showing how higher-income occupancy of low-cost units compounds the shortage at the bottom. Source: detailed Census microdata with HUD's FY2026 Income Limits.
 :::
 
 ## How many renter households could afford to buy a starter home?
 
-::: {.callout-note title="Planned content"}
-The starter-home gap: renter households whose income supports a mortgage on an entry-level home (via `r/affordcalc.R`, payment at or below 28% of monthly income) against the supply of entry-level for-sale units. Sources: 2020–2024 ACS PUMS income distribution, MLS entry-level inventory, and current PMMS mortgage rates. Pending Phase 4 (PUMS engine and gap methodology).
+::: {.callout-note title="Coming in a future draft"}
+The starter-home gap: renter households whose income supports a mortgage on an entry-level home (payment at or below 28% of monthly income) against the supply of entry-level for-sale units. Sources: Census microdata income distribution, MLS entry-level inventory, and current mortgage rates.
 :::
 
 ## What income does homeownership require by price point, unit size, and type?
 
-::: {.callout-note title="Planned content"}
-A minimum-income table (or heat-style chart) by representative price point, unit size, and structure type — down-payment, rate, tax, and insurance assumptions documented in @sec-data-notes — set against the PUMS household-income distribution to show how many households can afford each segment. Sources: `r/affordcalc.R`, `r/gaps.R`, 2020–2024 ACS PUMS, Freddie Mac PMMS. Pending Phase 4 (PUMS engine and gap methodology).
+::: {.callout-note title="Coming in a future draft"}
+A minimum-income table (or heat-style chart) by representative price point, unit size, and structure type — down-payment, rate, tax, and insurance assumptions documented in @sec-data-notes — set against the region's household-income distribution to show how many households can afford each segment. Sources: Census microdata and Freddie Mac mortgage rates.
 :::
 
 ## How has the housing gap changed since 2022?
 
-::: {.callout-note title="Planned content"}
-The per-section "Since 2022" comparison: this cycle's gap counts against the 2022 Framework's published gap figures from `baseline_2022`, with the vintage-shift caveat (2020–2024 PUMS versus the 2022 report's inputs) stated alongside. Deltas are narrative, never a validation gate. Pending Phase 4 (PUMS engine and gap methodology).
+::: {.callout-note title="Coming in a future draft"}
+The per-section "Since 2022" comparison: this cycle's gap counts against the 2022 Framework's published gap figures, with the vintage-shift caveat stated alongside. Deltas are narrative, never a validation gate.
 :::

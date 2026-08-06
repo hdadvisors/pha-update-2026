@@ -50,46 +50,50 @@ of the 2050 figure. The region's growth outlook has strengthened, not softened, 
 the Framework was published.
 :::
 
-## The region keeps growing steadily, adding residents every single year
+## The region has added nearly 70,000 residents since the 2020 census
 
 ```{r}
 #| label: fig-pop-trend
-#| fig-cap: "The Richmond region has added more than 320,000 residents since 2000"
-#| fig-alt: "Line chart of total population in the 8-locality Richmond region from 2000 to 2025. Decennial census counts rise from about 866,000 in 2000 to 1,003,000 in 2010 and 1,120,000 in 2020; annual estimates continue upward each year to 1,190,000 in 2025."
+#| fig-cap: "The region has added nearly 70,000 residents since the 2020 census"
+#| fig-alt: "Line chart of total population in the 8-locality Richmond region. Annual population estimates from 2020 to 2025 are highlighted in green, rising from about 1,122,600 to 1,190,000. Decennial census counts for 2000, 2010, and 2020 are shown muted in the background, rising from about 866,000 to 1,120,300."
 
-pop_trend <- bind_rows(
-  decennial |>
-    filter(label == "Total population", geoid %in% rr) |>
-    summarise(pop = sum(value), .by = year) |>
-    mutate(series = "Decennial census"),
-  pep |>
-    filter(variable == "POPESTIMATE") |>
-    summarise(pop = sum(value), .by = year) |>
-    mutate(series = "Population estimates")
-)
+pop_hist <- decennial |>
+  filter(label == "Total population", geoid %in% rr) |>
+  summarise(pop = sum(value), .by = year)
 
-ggplot(pop_trend, aes(year, pop, color = series)) +
-  geom_line(linewidth = 1) +
-  geom_point(size = 2.5) +
-  scale_color_manual(values = c("Decennial census" = dblue, "Population estimates" = green)) +
+pop_recent <- pep |>
+  filter(variable == "POPESTIMATE") |>
+  summarise(pop = sum(value), .by = year)
+
+pop_latest <- pop_recent |> slice_max(year, n = 1)
+
+ggplot() +
+  geom_line(data = pop_hist, aes(year, pop), color = dblue, linewidth = 0.6, alpha = 0.45) +
+  geom_point(data = pop_hist, aes(year, pop), color = dblue, size = 1.8, alpha = 0.45) +
+  geom_line(data = pop_recent, aes(year, pop), color = green, linewidth = 1.4) +
+  geom_point(data = pop_recent, aes(year, pop), color = green, size = 3) +
+  geom_text(
+    data = pop_latest, aes(year, pop, label = label_comma()(pop)),
+    color = green, fontface = "bold", hjust = 0, nudge_x = 0.4, size = 3.4
+  ) +
   scale_y_continuous(labels = label_comma(), limits = c(0, NA)) +
-  scale_x_continuous(breaks = c(2000, 2010, 2020, 2025)) +
+  scale_x_continuous(breaks = c(2000, 2010, 2020, 2025), limits = c(2000, 2027.5)) +
   labs(
-    title = "The Richmond region has added more than 320,000 residents since 2000",
+    title = "The region has added nearly 70,000 residents since the 2020 census",
     subtitle = paste0(
-      "Total population, 8-locality region, 2000-2025 · ",
-      "<span style='color:", dblue, "'>**Decennial census counts**</span> and ",
-      "<span style='color:", green, "'>**annual estimates**</span>"
+      "Total population, 8-locality region, 2000-2025<br>",
+      "<span style='color:", green, "'>**2020-2025 annual estimates**</span> highlighted; ",
+      "<span style='color:", dblue, "'>**2000-2020 census counts**</span> shown for context"
     ),
-    caption = paste(dec_cap(), str_remove(pep_cap(), fixed("**Source:** "))),
+    caption = paste(pep_cap(), str_remove(dec_cap(), fixed("**Source:** "))),
     x = NULL, y = NULL
   ) +
   theme_pha()
 ```
 
-- **The 8-locality region grew from 865,941 residents in 2000 to 1,120,304 in the 2020 census, a gain of 254,363 (+29%).**
-- Growth has not slowed since the census: Vintage 2025 estimates put the region at 1,190,026 as of July 2025, roughly 70,000 more residents in just five years.
+- **The region added nearly 70,000 residents between the 2020 census and the 2025 population estimate, growth of 6.2 percent in five years.**
 - Every year from 2020 to 2025 added population, with the largest single-year gains in 2024 (+17,600) and 2025 (+14,000).
+- Longer term, the 8-locality region has grown steadily since 2000, from 865,941 residents to 1,120,304 at the 2020 census (+29%) — context for the recent estimates above.
 
 ## Migration, not natural increase, now powers the region's growth
 
@@ -109,7 +113,7 @@ ggplot(components, aes(factor(year), value, fill = label)) +
   labs(
     title = "Migration, not births, is driving the region's population growth",
     subtitle = paste0(
-      "Annual components of population change, 8-locality region, 2021-2025 · ",
+      "Annual components of population change, 8-locality region, 2021-2025<br>",
       "<span style='color:", green, "'>**Net migration**</span> vs. ",
       "<span style='color:", dblue, "'>**natural change** (births minus deaths)</span>"
     ),
@@ -158,7 +162,7 @@ ggplot(proj, aes(year, pop, color = locality)) +
   scale_x_continuous(breaks = c(2020, 2030, 2040, 2050), limits = c(2020, 2058)) +
   labs(
     title = "Chesterfield is projected to pass 500,000 residents by 2050",
-    subtitle = "Projected total population, four primary localities, 2020 census count to 2050",
+    subtitle = "Projected total population, four primary localities<br>2020 census count to 2050",
     caption = paste(dec_cap("2020"), str_remove(wc_cap(), fixed("**Source:** "))),
     x = NULL, y = NULL
   ) +
@@ -208,7 +212,7 @@ ggplot(age_sex, aes(x = if_else(sex == "Male", -pop, pop), y = age_group, fill =
   labs(
     title = "Nearly one in three residents is now 55 or older",
     subtitle = paste0(
-      "Population by age group, 8-locality region, 2020-2024 average · ",
+      "Population by age group, 8-locality region, 2020-2024 average<br>",
       "<span style='color:", dblue, "'>**Male**</span> and ",
       "<span style='color:", green, "'>**female**</span>"
     ),
@@ -224,12 +228,12 @@ ggplot(age_sex, aes(x = if_else(sex == "Male", -pop, pop), y = age_group, fill =
 - 53,585 households — 12% of all households regionwide — are seniors 65+ living alone, a group with distinct needs for smaller, accessible, and lower-maintenance homes.
 - Women outnumber men in the 75+ group, so older single-person households are disproportionately older women.
 
-## Incomes have risen sharply everywhere, but the gap between localities remains wide
+## Median household income has kept climbing since 2019, in every locality
 
 ```{r}
 #| label: fig-income
-#| fig-cap: "Median household incomes have climbed sharply in every locality since 2014"
-#| fig-alt: "Dot plot of median household income for the eight localities at three ACS vintages: 2014, 2019, and 2024. Every locality's dots move right over time. In 2024, New Kent is highest at about $123,000 and Richmond city lowest at about $65,000. Richmond city rose from about $41,000 in 2014."
+#| fig-cap: "Median household income has kept climbing since 2019, in every locality"
+#| fig-alt: "Dot plot of median household income for the eight localities at three ACS vintages: 2014, 2019, and 2024. The 2014 point is muted grey; the 2019-to-2024 segment is highlighted. In 2024, New Kent is highest at about $123,000 and Richmond city lowest at about $65,000. New Kent rose the fastest since 2019, up 40 percent."
 
 mhi <- income |>
   filter(table == "B19013", geoid %in% rr) |>
@@ -238,18 +242,30 @@ mhi <- income |>
     locality = fct_reorder(locality, estimate, .fun = max)
   )
 
-ggplot(mhi, aes(estimate, locality, color = factor(year))) +
-  geom_line(aes(group = locality), color = "grey80", linewidth = 1) +
-  geom_point(size = 3) +
-  scale_color_manual(values = c("2014" = lblue, "2019" = orange, "2024" = dblue)) +
+mhi_wide <- mhi |>
+  select(locality, year, estimate) |>
+  pivot_wider(names_from = year, values_from = estimate, names_prefix = "y")
+
+ggplot(mhi, aes(estimate, locality)) +
+  geom_segment(
+    data = mhi_wide, aes(x = y2014, xend = y2019, y = locality, yend = locality),
+    color = "grey85", linewidth = 0.8
+  ) +
+  geom_segment(
+    data = mhi_wide, aes(x = y2019, xend = y2024, y = locality, yend = locality),
+    color = green, linewidth = 1.3
+  ) +
+  geom_point(aes(color = factor(year), size = factor(year))) +
+  scale_color_manual(values = c("2014" = "grey65", "2019" = orange, "2024" = dblue)) +
+  scale_size_manual(values = c("2014" = 2, "2019" = 2.8, "2024" = 3.2), guide = "none") +
   scale_x_continuous(labels = label_dollar()) +
   labs(
-    title = "Median household incomes have climbed sharply in every locality since 2014",
+    title = "Median household income has kept climbing since 2019, in every locality",
     subtitle = paste0(
-      "Median household income by locality, nominal dollars · ",
-      "<span style='color:", lblue, "'>**2014**</span>, ",
-      "<span style='color:", orange, "'>**2019**</span>, and ",
-      "<span style='color:", dblue, "'>**2024**</span> ACS 5-year vintages"
+      "Median household income by locality, nominal dollars<br>",
+      "<span style='color:", orange, "'>**2019**</span> to ",
+      "<span style='color:", dblue, "'>**2024**</span> change highlighted; ",
+      "2014 shown muted for context"
     ),
     caption = acs_cap("B19013", "2010-2014, 2015-2019, and 2020-2024"),
     x = NULL, y = NULL
@@ -258,10 +274,11 @@ ggplot(mhi, aes(estimate, locality, color = factor(year))) +
   theme(legend.position = "none")
 ```
 
-- **Every locality's median household income rose at least 40% in nominal terms between the 2014 and 2024 ACS vintages.**
-- Richmond city's median rose 56% — from $41,331 to $64,587 — yet it remains the lowest in the region, at roughly half of New Kent's $123,314.
-- The fastest nominal growth was in New Kent (+69%); the slowest was in Chesterfield (+41%).
-- Each vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation over the decade.
+- **Every locality's median household income rose at least 23 percent since 2019, and New Kent's rose 40 percent.**
+- Richmond city's median rose 37 percent since 2019 — from $47,250 to $64,587 — yet it remains the lowest in the region, at roughly half of New Kent's $123,314.
+- The fastest growth since 2019 was in New Kent (+40%); the slowest was in Chesterfield (+23%).
+- Going back to 2014, every locality's median has risen at least 40% in nominal terms — a full decade of income growth that predates this recent acceleration.
+- Each vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation.
 
 ::: {.callout-note}
 ## Data caveats

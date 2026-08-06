@@ -13,28 +13,28 @@ This appendix records every data source and vintage used in the update, defines 
 
 ## Sources and vintages
 
-The table below lists each source, the vintage used this cycle, and its current status in the build pipeline.
+The table below lists each source, the vintage used this cycle, and its current status in this update.
 
 | Source | Vintage | Access | Status |
 |---|---|---|---|
-| ACS 5-year estimates (anchor) | 2020–2024, trend tables back to ~2010 | tidycensus API | Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending Phases 3 and 5 |
-| ACS PUMS | 2020–2024 5-year | tidycensus `get_pums()` | Pending Phase 4 |
-| Population Estimates Program (PEP) | Vintage 2025 | Census API (FTP fallback) | Loaded (Phase 2) |
-| Decennial Census | 2000 / 2010 / 2020 | tidycensus API | Loaded (Phase 2) |
-| Weldon Cooper population projections | 2025 official release (2030–2050 series) | UVA published xlsx | Loaded (Phase 2) |
-| CHAS | 2018–2022 | huduser.gov download | Raw tables staged (county and place levels); processing pending Phase 5 |
-| HUD Fair Market Rents and Small Area FMRs | FY2026 | huduser.gov download | Raw files staged; processing pending Phase 3 |
-| HUD Income Limits | FY2026 | huduser.gov download | Raw file staged; processing pending Phase 4 |
-| BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending Phase 5 |
-| Bright MLS for-sale market | Monthly summary exports, nominal dollars | Manual export by HDAdvisors | Monthly median price series loaded; transaction-level detail pending Phase 3 |
-| CoStar multifamily market | Quarterly, Richmond market | Manual export by HDAdvisors | Regional asking rent and vacancy loaded; submarket detail pending Phase 3 |
-| National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Raw file staged; processing pending Phase 3 |
-| Point-in-Time homelessness counts | Greater Richmond CoC (VA-500), 2020–2025 | HUD CoC reports | Raw reports staged; processing pending Phase 5 |
+| ACS 5-year estimates (anchor) | 2020–2024, trend tables back to ~2010 | tidycensus API | Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending |
+| ACS PUMS | 2020–2024 5-year | tidycensus `get_pums()` | Pending |
+| Population Estimates Program (PEP) | Vintage 2025 | Census API (FTP fallback) | Loaded |
+| Decennial Census | 2000 / 2010 / 2020 | tidycensus API | Loaded |
+| Weldon Cooper population projections | 2025 official release (2030–2050 series) | UVA published xlsx | Loaded |
+| CHAS | 2018–2022 | huduser.gov download | Cost burden by income band loaded; race and unit-affordability tables pending |
+| HUD Fair Market Rents and Small Area FMRs | FY2026 | huduser.gov download | Raw files staged; processing pending |
+| HUD Income Limits | FY2026 | huduser.gov download | Raw file staged; processing pending |
+| BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending |
+| Bright MLS for-sale market | Monthly summary exports, nominal dollars | Manual export by HDAdvisors | Monthly median price series loaded; transaction-level detail pending |
+| CoStar multifamily market | Quarterly, Richmond market | Manual export by HDAdvisors | Regional asking rent and vacancy loaded; submarket detail pending |
+| National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Raw file staged; processing pending |
+| Point-in-Time homelessness counts | Greater Richmond CoC (VA-500), 2020–2025 | HUD CoC reports | Raw reports staged; processing pending |
 
 Notes on status:
 
-- **Loaded** means an `r/` script has produced the tidy `data/*.rds` file chapters read.
-- **Raw files staged** means the source download sits in `data/raw/` awaiting its processing script.
+- **Loaded** means the source has been processed into the tidy data this update's figures read from.
+- **Raw files staged** means the source download is on hand awaiting processing.
 - MLS and CoStar are licensed sources: their derived exports are delivered to PHA privately and are excluded from this public repository.
 
 ## Geography definitions

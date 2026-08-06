@@ -36,15 +36,15 @@ mls_latest <- sale |> slice_max(month, n = 1) |> pull(price)
 mls_first  <- sale |> slice_min(month, n = 1) |> pull(price)
 ```
 
-## Homeownership rates held steady or rose across most of the region
+## Homeownership rates rose almost everywhere since 2019
 
 ```{r}
 #| label: fig-owner-share
-#| fig-cap: "Homeownership rates held steady or rose across most of the region"
-#| fig-alt: "Dumbbell chart comparing the owner-occupied share of households in 2014 and 2024 for the eight Richmond region localities and Virginia. Powhatan, New Kent, and Charles City rose about five percentage points to over 85 percent; Goochland slipped from 88 to 85 percent; Hanover, Chesterfield, Henrico, and Richmond were nearly unchanged. Richmond city is lowest at about 44 percent."
+#| fig-cap: "Homeownership rates rose almost everywhere since 2019"
+#| fig-alt: "Dumbbell chart comparing the owner-occupied share of households in 2019 and 2024 for the eight Richmond region localities and Virginia. New Kent rose nearly six percentage points to 93 percent, and Powhatan and Charles City each gained more than two points. Hanover dipped slightly, the only decline. Richmond city is lowest at about 44 percent."
 
 own <- tenure |>
-  filter(tenure == "Owner", year %in% c(2014, 2024)) |>
+  filter(tenure == "Owner", year %in% c(2019, 2024)) |>
   mutate(
     locality = clean_name(name),
     locality = fct_reorder(locality, share, .fun = max)
@@ -57,71 +57,80 @@ own_wide <- own |>
 ggplot(own, aes(x = share, y = locality)) +
   geom_segment(
     data = own_wide,
-    aes(x = y2014, xend = y2024, y = locality, yend = locality),
+    aes(x = y2019, xend = y2024, y = locality, yend = locality),
     color = "grey70", linewidth = 1
   ) +
   geom_point(aes(color = factor(year)), size = 3) +
-  scale_color_manual(values = c("2014" = lblue, "2024" = dblue), guide = "none") +
+  scale_color_manual(values = c("2019" = lblue, "2024" = dblue), guide = "none") +
   scale_x_continuous(labels = label_percent(accuracy = 1)) +
   labs(
-    title = "Homeownership rates held steady or rose across most of the region",
+    title = "Homeownership rates rose almost everywhere since 2019",
     subtitle = paste0(
-      "Owner-occupied share of households, Richmond region localities and Virginia, ",
-      "<span style='color:", lblue, "'>**2014**</span> vs ",
+      "Owner-occupied share of households, Richmond region localities and Virginia<br>",
+      "<span style='color:", lblue, "'>**2019**</span> vs ",
       "<span style='color:", dblue, "'>**2024**</span>"
     ),
-    caption = acs_cap("B25003"),
+    caption = acs_cap("B25003", year = "2015-2019 & 2020-2024"),
     x = NULL, y = NULL
   ) +
   theme_pha()
 ```
 
 - **The region as a whole is `r label_percent(accuracy = 0.1)(owner_share_24)` owner-occupied in 2024, just above the statewide rate of 67.3 percent.**
-- The three smallest counties posted the largest gains: Charles City (+5.8 points), Powhatan (+5.4), and New Kent (+4.7) all now exceed 86 percent owner occupancy.
-- Goochland is the only locality where the owner share fell, from 87.6 to 84.9 percent.
-- The four core localities barely moved over the decade — Richmond city (43.5 percent) remains the region's only majority-renter jurisdiction, and Hanover (82.1 percent) the highest among them.
-- All plotted owner-household estimates are High reliability (CV at or below 15); the dataset's few Medium cells are renter counts in New Kent and Powhatan and do not appear in this figure.
+- The three smallest counties posted the largest gains since 2019: New Kent (+6.2 points, to 92.6 percent), Powhatan (+3.1, to 93.2 percent), and Charles City (+2.4, to 86.3 percent).
+- Hanover is the only locality where the owner share fell since 2019, dipping slightly from 82.5 to 82.1 percent.
+- The four core localities barely moved since 2019 — Richmond city (43.5 percent) remains the region's only majority-renter jurisdiction, and Hanover (82.1 percent) the highest among them.
+- All plotted owner-household estimates are High reliability (CV at or below 15); the dataset's only Medium cells are 2024 renter counts in New Kent and Powhatan, and do not appear in this figure.
 
-## The region's typical sale price has more than doubled since 2016
+## Home prices are up 65 percent since the start of 2020
 
 ```{r}
 #| label: fig-mls-price
-#| fig-cap: "The region's typical sale price has more than doubled since 2016"
-#| fig-alt: "Line chart of the PHA region's monthly median home sale price from January 2016 through July 2026 in nominal dollars, with a 12-month rolling average. The trend climbs steadily from about 212,500 dollars in early 2016 to roughly 435,000 dollars by mid-2026, with the steepest run-up between 2020 and 2022 and a flatter plateau from 2025 onward."
+#| fig-cap: "Home prices are up 65 percent since the start of 2020"
+#| fig-alt: "Line chart of the PHA region's monthly median home sale price from January 2020 through July 2026 in nominal dollars, with a 12-month rolling average and a shaded band marking 2022 onward. The trend climbs from about 264,000 dollars in January 2020 to roughly 435,000 dollars by mid-2026, with continued gains after 2022 though at roughly half the pace of 2020-2022."
 
-ggplot(sale, aes(x = month)) +
+sale_recent <- sale |> filter(month >= as.Date("2020-01-01"))
+since_2022  <- sale_recent |> filter(month == as.Date("2022-01-01"))
+mls_2020    <- sale_recent |> slice_min(month, n = 1)
+mls_latest_r <- sale_recent |> slice_max(month, n = 1)
+
+ggplot(sale_recent, aes(x = month)) +
+  annotate("rect", xmin = as.Date("2022-01-01"), xmax = max(sale_recent$month),
+           ymin = 0, ymax = Inf, fill = green, alpha = 0.06) +
+  annotate("text", x = as.Date("2022-02-01"), y = 60000, label = "Since 2022",
+           color = green, fontface = "bold", hjust = 0, size = 3.2) +
   geom_line(aes(y = price), color = lblue, linewidth = 0.4, alpha = 0.8) +
   geom_line(aes(y = roll12), color = green, linewidth = 1.1, na.rm = TRUE) +
   scale_y_continuous(labels = label_dollar(), limits = c(0, NA)) +
-  scale_x_date(date_breaks = "2 years", date_labels = "%Y") +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
   labs(
-    title = "The region's typical sale price has more than doubled since 2016",
+    title = "Home prices are up 65 percent since the start of 2020",
     subtitle = paste0(
       "PHA region <span style='color:", lblue, "'>**monthly median sale price**</span> and ",
-      "<span style='color:", green, "'>**12-month average**</span>, nominal dollars, ",
-      "January 2016 through July 2026"
+      "<span style='color:", green, "'>**12-month average**</span>, nominal dollars<br>",
+      "January 2020 through July 2026 · shaded band marks the period since 2022"
     ),
-    caption = mls_cap("2016-2026"),
+    caption = mls_cap("2020-2026"),
     x = NULL, y = NULL
   ) +
   theme_pha() +
   add_zero_line("y")
 ```
 
-- **The median sale price reached `r label_dollar()(mls_latest)` in July 2026, up `r label_percent(accuracy = 1)(mls_latest / mls_first - 1)` from `r label_dollar()(mls_first)` in January 2016 (nominal dollars).**
-- The steepest appreciation came in 2020-2022, when the 12-month average rose from roughly $270,000 to over $360,000.
-- Price growth has flattened since 2025 — the 12-month average has held near $415,000 while monthly medians oscillate around it.
-- Monthly medians are seasonal and noisy; the 12-month average is the better read on trend.
+- **The median sale price reached `r label_dollar()(mls_latest_r$price)` in July 2026, up `r label_percent(accuracy = 1)(mls_latest_r$price / mls_2020$price - 1)` from `r label_dollar()(mls_2020$price)` in January 2020 (nominal dollars).**
+- Prices kept climbing after 2022: the 12-month average is up `r label_percent(accuracy = 1)(mls_latest_r$roll12 / since_2022$roll12 - 1)` since January 2022, from about `r label_dollar()(round(since_2022$roll12))` to `r label_dollar()(round(mls_latest_r$roll12))`.
+- The steepest appreciation came in 2020-2022, when the 12-month average rose from roughly `r label_dollar()(round(mls_2020$roll12))` to `r label_dollar()(round(since_2022$roll12))` — growth has continued since, but at roughly half that pace.
+- Monthly medians are seasonal and noisy; the 12-month average, shown here since 2020, is the better read on trend.
 
-## Home values are up more than 50 percent in every locality since 2014
+## Home values are up at least a third in every locality since 2019
 
 ```{r}
 #| label: fig-home-value
-#| fig-cap: "Home values are up more than 50 percent in every locality since 2014"
-#| fig-alt: "Horizontal grouped bar chart of median owner-occupied home values in 2014 and 2024 for the eight Richmond region localities and Virginia, in nominal dollars. Goochland is highest in 2024 at 500,600 dollars and Charles City lowest at 241,400 dollars. Every locality shows a large increase, with Richmond city rising the most in percentage terms, from 195,000 to 353,000 dollars."
+#| fig-cap: "Home values are up at least a third in every locality since 2019"
+#| fig-alt: "Horizontal grouped bar chart of median owner-occupied home values in 2019 and 2024 for the eight Richmond region localities and Virginia, in nominal dollars. Goochland is highest in 2024 at 500,600 dollars and Charles City lowest at 241,400 dollars. Every locality shows a large increase since 2019, with Richmond city rising the most in percentage terms, from 230,500 to 353,000 dollars."
 
 val <- value_rent |>
-  filter(measure == "Median home value", year %in% c(2014, 2024)) |>
+  filter(measure == "Median home value", year %in% c(2019, 2024)) |>
   mutate(
     locality = clean_name(name),
     locality = fct_reorder(locality, estimate, .fun = max)
@@ -129,16 +138,16 @@ val <- value_rent |>
 
 ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
   geom_col(position = position_dodge2(reverse = TRUE), width = 0.7) +
-  scale_fill_manual(values = c("2014" = lblue, "2024" = dblue), guide = "none") +
+  scale_fill_manual(values = c("2019" = lblue, "2024" = dblue), guide = "none") +
   scale_x_continuous(labels = label_dollar(), expand = expansion(mult = c(0, 0.05))) +
   labs(
-    title = "Home values are up more than 50 percent in every locality since 2014",
+    title = "Home values are up at least a third in every locality since 2019",
     subtitle = paste0(
-      "Median value of owner-occupied homes, Richmond region localities and Virginia, ",
-      "<span style='color:", lblue, "'>**2014**</span> vs ",
+      "Median value of owner-occupied homes, Richmond region localities and Virginia<br>",
+      "<span style='color:", lblue, "'>**2019**</span> vs ",
       "<span style='color:", dblue, "'>**2024**</span>, nominal dollars"
     ),
-    caption = acs_cap("B25077"),
+    caption = acs_cap("B25077", year = "2015-2019 & 2020-2024"),
     x = NULL, y = NULL
   ) +
   theme_pha() +
@@ -146,19 +155,19 @@ ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
 ```
 
 - **2024 median home values span more than a two-to-one range across the region, from $241,400 in Charles City to $500,600 in Goochland.**
-- Richmond city posted the fastest growth — up 81 percent, from $195,000 to $353,000 — eroding its historical role as the region's lower-cost ownership market.
-- Every locality gained at least 54 percent over the decade, and the four core localities all now exceed the $350,000 mark.
+- Richmond city posted the fastest growth since 2019 — up 53 percent, from $230,500 to $353,000 — continuing to erode its historical role as the region's lower-cost ownership market.
+- Every locality gained at least 33 percent since 2019, and the four core localities all now exceed the $350,000 mark.
 - Four of the eight localities sit above the statewide median of $383,700: Goochland, Powhatan, Hanover, and New Kent.
 - Medians are locality-level ACS estimates and do not sum or average to a regional figure; all plotted values are High reliability.
 
-::: {.callout-note title="Planned content"}
-**Building permits (BPS).** Single-family and multifamily permitting trends by locality — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Building permits.** Single-family and multifamily permitting trends by locality.
 :::
 
-::: {.callout-note title="Planned content"}
-**Mortgage rates (FRED).** 30-year fixed rate trend (Freddie Mac PMMS) and its interaction with sale prices and affordability — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Mortgage rates.** The 30-year fixed mortgage rate trend and its interaction with sale prices and affordability.
 :::
 
-::: {.callout-note title="Planned content"}
-**Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from MLS — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from the regional MLS.
 :::

@@ -35,11 +35,17 @@ rva_rent_chg <- with(rent_rva, estimate[year == 2024] / estimate[year == 2014] -
 renter_reg <- tenure |>
   filter(tenure == "Renter", geoid %in% rr) |>
   summarise(renters = sum(estimate), .by = year)
+reg_add_5yr   <- diff(renter_reg$renters[renter_reg$year %in% c(2019, 2024)])
+reg_chg_5yr   <- reg_add_5yr / renter_reg$renters[renter_reg$year == 2019]
 reg_add_10yr  <- diff(renter_reg$renters[renter_reg$year %in% c(2014, 2024)])
 reg_chg_10yr  <- reg_add_10yr / renter_reg$renters[renter_reg$year == 2014]
+rva_add_5yr   <- tenure |>
+  filter(geoid == "51760", tenure == "Renter") |>
+  summarise(chg = estimate[year == 2024] - estimate[year == 2019]) |> pull(chg)
 rva_add_10yr  <- tenure |>
   filter(geoid == "51760", tenure == "Renter") |>
   summarise(chg = estimate[year == 2024] - estimate[year == 2014]) |> pull(chg)
+rva_share_of_gain <- rva_add_5yr / reg_add_5yr
 
 costar_reg    <- costar |> filter(locality == "Richmond region")
 costar_latest <- costar_reg |> slice_max(quarter, n = 1)
@@ -53,12 +59,12 @@ base_vacancy   <- baseline |>
   filter(metric == "rental_vacancy_rate", geography == "region") |> pull(value)
 ```
 
-## Rents climbed in every locality, with the sharpest gains since 2019
+## Median rent has climbed fastest since 2019, in every locality
 
 ```{r}
 #| label: fig-median-rent
-#| fig-cap: "Median gross rent rose in every Richmond-area locality between 2014 and 2024."
-#| fig-alt: "Grouped horizontal bar chart of median gross rent for eight Richmond-area localities and Virginia in 2014, 2019, and 2024, in nominal dollars. Every locality's 2024 bar is well above its 2014 bar. New Kent has the highest 2024 median rent at $1,721 and Charles City the lowest at $1,099. Most of the increase occurs between 2019 and 2024."
+#| fig-cap: "Median rent has climbed fastest since 2019, in every locality"
+#| fig-alt: "Grouped horizontal bar chart of median gross rent for eight Richmond-area localities and Virginia in 2014, 2019, and 2024, in nominal dollars. The 2014 bars are muted grey. Every locality's 2024 bar is well above its 2019 bar. New Kent has the highest 2024 median rent at $1,721, up 70 percent since 2019 alone, the sharpest increase in the region. Charles City has the lowest 2024 median rent at $1,099."
 
 rent_order <- rents |> filter(year == 2024) |> arrange(estimate) |> pull(locality)
 
@@ -70,38 +76,38 @@ rents |>
   ggplot(aes(x = estimate, y = locality, fill = year)) +
   geom_col(position = position_dodge2(reverse = TRUE), width = 0.75) +
   scale_x_continuous(labels = label_dollar(), expand = expansion(mult = c(0, 0.05))) +
-  scale_fill_manual(values = c("2014" = lblue, "2019" = dblue, "2024" = orange),
+  scale_fill_manual(values = c("2014" = "grey80", "2019" = dblue, "2024" = orange),
                     guide = "none") +
   labs(
-    title = "Median gross rent rose in every locality over the past decade",
+    title = "Median rent has climbed fastest since 2019, in every locality",
     subtitle = paste0(
-      "Median gross rent in nominal dollars, Richmond-area localities and Virginia, ",
-      "<span style='color:", lblue, "'>**2014**</span>, ",
-      "<span style='color:", dblue, "'>**2019**</span>, and ",
-      "<span style='color:", orange, "'>**2024**</span>"
+      "Median gross rent in nominal dollars, Richmond-area localities and Virginia<br>",
+      "2014 shown muted for context · ",
+      "<span style='color:", dblue, "'>**2019**</span> to ",
+      "<span style='color:", orange, "'>**2024**</span> change is the focus"
     ),
-    caption = acs_cap("B25064"),
+    caption = acs_cap("B25064", year = "2010-2014, 2015-2019, and 2020-2024"),
     x = NULL, y = NULL
   ) +
   theme_pha() +
   add_zero_line("x")
 ```
 
-- **Every locality posted a higher median gross rent in 2024 than in 2014, and in all eight the 2019-to-2024 increase outpaced the 2014-to-2019 increase.**
-- New Kent had the region's highest 2024 median rent at `r label_dollar()(rent_hi_24$estimate)`; Charles City had the lowest at `r label_dollar()(rent_lo_24$estimate)`.
-- Richmond city's median rent rose `r label_percent(accuracy = 1)(rva_rent_chg)` over the decade, from `r label_dollar()(rent_rva$estimate[rent_rva$year == 2014])` to `r label_dollar()(rent_rva$estimate[rent_rva$year == 2024])` — yet stayed below the statewide median of `r label_dollar()(rent_va_24)`.
-- Small-county medians (New Kent, Powhatan, Goochland, Charles City) carry wide margins of error and describe small renter stocks; New Kent's 2014 estimate is Medium reliability (CV 15–30).
+- **Every locality posted a higher median gross rent in 2024 than in 2019, and in all eight the 2019-to-2024 increase outpaced the full 2014-to-2019 span.**
+- New Kent had the region's highest 2024 median rent at `r label_dollar()(rent_hi_24$estimate)`, up 70 percent since 2019 alone — the sharpest increase in the region.
+- Richmond city's median rent rose 34 percent since 2019, from `r label_dollar()(rent_rva$estimate[rent_rva$year == 2019])` to `r label_dollar()(rent_rva$estimate[rent_rva$year == 2024])` — yet stayed below the statewide median of `r label_dollar()(rent_va_24)`.
+- Powhatan had the slowest rent growth since 2019, at 19 percent; small-county medians (New Kent, Powhatan, Goochland, Charles City) carry wide margins of error and describe small renter stocks.
 - All figures are nominal dollars; inflation-adjusted comparisons come with the cost-burden analysis.
 
-## Renter households are growing again, led by Richmond city
+## Renter shares held steady since 2019, except in the smallest counties
 
 ```{r}
 #| label: fig-renter-share
-#| fig-cap: "Renter shares held steady in the urban core while shrinking in most outer counties."
-#| fig-alt: "Dumbbell chart comparing the renter share of households in 2014 and 2024 for eight Richmond-area localities and Virginia. Richmond city has by far the highest renter share, near 57 percent in both years. Henrico is near 36 percent in both years, and Virginia near 33 percent. The six remaining counties are all below 25 percent, and the smallest counties are lowest in 2024: New Kent and Powhatan each fell to about 7 percent."
+#| fig-cap: "Renter shares held steady since 2019, except in the smallest counties"
+#| fig-alt: "Dumbbell chart comparing the renter share of households in 2019 and 2024 for eight Richmond-area localities and Virginia. Richmond city has by far the highest renter share, near 57 percent in both years. Henrico is near 36 percent in both years, and Virginia near 33 percent. The six remaining counties are all below 25 percent, and the smallest counties are lowest in 2024: New Kent and Powhatan each fell to about 7 percent."
 
 renter_share <- tenure |>
-  filter(tenure == "Renter", year %in% c(2014, 2024)) |>
+  filter(tenure == "Renter", year %in% c(2019, 2024)) |>
   mutate(year = factor(year))
 
 share_order <- renter_share |> filter(year == "2024") |>
@@ -114,44 +120,55 @@ renter_share |>
   geom_point(aes(color = year), size = 3.5) +
   scale_x_continuous(labels = label_percent(accuracy = 1),
                      expand = expansion(mult = c(0.02, 0.05))) +
-  scale_color_manual(values = c("2014" = lblue, "2024" = dblue), guide = "none") +
+  scale_color_manual(values = c("2019" = lblue, "2024" = dblue), guide = "none") +
   labs(
-    title = "Renting stayed concentrated in Richmond city and Henrico",
+    title = "Renter shares held steady since 2019, except in the smallest counties",
     subtitle = paste0(
-      "Renter share of all households, Richmond-area localities and Virginia, ",
-      "<span style='color:", lblue, "'>**2014**</span> vs. ",
+      "Renter share of all households, Richmond-area localities and Virginia<br>",
+      "<span style='color:", lblue, "'>**2019**</span> vs. ",
       "<span style='color:", dblue, "'>**2024**</span>"
     ),
-    caption = acs_cap("B25003"),
+    caption = acs_cap("B25003", year = "2015-2019 & 2020-2024"),
     x = NULL, y = NULL
   ) +
   theme_pha()
 ```
 
-- **The region added roughly `r label_comma()(reg_add_10yr)` renter households between 2014 and 2024, a `r label_percent(accuracy = 1)(reg_chg_10yr)` increase.**
-- Richmond city drove the gain, adding about `r label_comma()(rva_add_10yr)` renter households — nearly half the regional increase — though its renter share held near `r label_percent(accuracy = 1)(tenure |> filter(geoid == "51760", tenure == "Renter", year == 2024) |> pull(share))` because total households grew just as fast.
-- Chesterfield and Hanover renter counts grew steadily, but both counties remain more than three-quarters owner-occupied.
-- The three smallest counties — Charles City, New Kent, and Powhatan — each had fewer renter households in 2024 than in 2014, deepening the ownership tilt of the outer region.
-- Small-county renter counts are less precise: New Kent (2014 and 2024) and Powhatan (2024) estimates are Medium reliability (CV 15–30).
+- **The region added roughly `r label_comma()(reg_add_5yr)` renter households between 2019 and 2024, a `r label_percent(accuracy = 1)(reg_chg_5yr)` increase — faster growth than the full prior five years.**
+- Richmond city drove the gain, adding about `r label_comma()(rva_add_5yr)` renter households since 2019 — roughly `r label_percent(accuracy = 0)(rva_share_of_gain)` of the regional increase — though its renter share held near `r label_percent(accuracy = 1)(tenure |> filter(geoid == "51760", tenure == "Renter", year == 2024) |> pull(share))` because total households grew just as fast.
+- Chesterfield and Hanover renter counts grew steadily since 2019, but both counties remain more than three-quarters owner-occupied.
+- The three smallest counties — Charles City, New Kent, and Powhatan — each lost renter households since 2019, deepening the ownership tilt of the outer region; New Kent's renter count fell 37 percent.
+- Over the full decade, the region added `r label_comma()(reg_add_10yr)` renter households (`r label_percent(accuracy = 1)(reg_chg_10yr)`) — most of that growth came in the last five years.
 
-## Market asking rents surged after 2020 and are still rising, but at a third of the pandemic-era pace
+## Asking rents are up 28 percent since 2020, even as the market has loosened
 
 ```{r}
 #| label: fig-costar-rent
-#| fig-cap: "Regional average asking rent surged from 2020 through 2023 and has kept rising more slowly since."
-#| fig-alt: "Line chart of the average multifamily asking rent per unit in the eight-locality Richmond region, quarterly from 2016 through mid-2026, in nominal dollars. The line rises gradually from about $1,100 in 2016 to $1,235 in early 2020, climbs steeply to roughly $1,480 by early 2023, and then keeps rising at a visibly flatter slope, ending at $1,583 in the second quarter of 2026."
+#| fig-cap: "Asking rents are up 28 percent since 2020, even as the market has loosened"
+#| fig-alt: "Line chart of the average multifamily asking rent per unit in the eight-locality Richmond region, quarterly from 2020 through mid-2026, in nominal dollars, with a shaded band marking 2022 onward. The line rises from about $1,235 in early 2020 to $1,422 by early 2022 — the market's tightest point, with vacancy near 5.6 percent — then keeps climbing to $1,583 by the second quarter of 2026, even as vacancy rises to 8.5 percent."
 
-costar_reg |>
+costar_since2020 <- costar_reg |> filter(quarter >= as.Date("2020-01-01"))
+costar_2020q1    <- costar_since2020 |> slice_min(quarter, n = 1)
+costar_2022q1    <- costar_since2020 |> filter(period == "2022 Q1")
+chg_since2020    <- costar_latest$ask_rent / costar_2020q1$ask_rent - 1
+chg_since2022    <- costar_latest$ask_rent / costar_2022q1$ask_rent - 1
+
+costar_since2020 |>
   ggplot(aes(x = quarter, y = ask_rent)) +
+  annotate("rect", xmin = as.Date("2022-01-01"), xmax = max(costar_since2020$quarter),
+           ymin = 0, ymax = Inf, fill = green, alpha = 0.06) +
+  annotate("text", x = as.Date("2022-02-15"), y = 1000, label = "Since 2022",
+           color = green, fontface = "bold", hjust = 0, size = 3.2) +
   geom_line(color = green, linewidth = 1.1) +
-  scale_x_date(date_breaks = "2 years", date_labels = "%Y") +
-  scale_y_continuous(labels = label_dollar()) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  scale_y_continuous(labels = label_dollar(), limits = c(950, NA)) +
   labs(
-    title = "Asking rents surged after 2020 and are still climbing, more slowly",
+    title = "Asking rents are up 28 percent since 2020, even as the market has loosened",
     subtitle = paste0(
       "Average multifamily <span style='color:", green,
-      "'>**asking rent per unit**</span>, nominal dollars, ",
-      "8-locality Richmond region, quarterly, 2016–2026 Q2"
+      "'>**asking rent per unit**</span>, nominal dollars<br>",
+      "8-locality Richmond region, quarterly, 2020 through 2026 Q2<br>",
+      "Shaded band marks the period since 2022"
     ),
     caption = costar_cap(),
     x = NULL, y = NULL
@@ -159,9 +176,9 @@ costar_reg |>
   theme_pha()
 ```
 
-- **Regional average asking rent reached `r label_dollar()(round(costar_latest$ask_rent))` in `r costar_latest$period`, up `r label_percent(accuracy = 1)(costar_chg)` from `r label_dollar()(round(costar_first$ask_rent))` in `r costar_first$period`.**
-- Rent growth ran about 6% per year from 2020 to 2023, then slowed to roughly 2% per year — still rising, but at a third of the pandemic-era pace.
-- Multifamily vacancy stood at `r label_percent(accuracy = 0.1)(costar_latest$vac_pct)` in `r costar_latest$period`, up from a low near 5% in late 2021 as new deliveries caught up with demand.
+- **Regional average asking rent reached `r label_dollar()(round(costar_latest$ask_rent))` in `r costar_latest$period`, up `r label_percent(accuracy = 1)(chg_since2020)` from `r label_dollar()(round(costar_2020q1$ask_rent))` in early 2020.**
+- The market was tightest in early 2022 — vacancy near `r label_percent(accuracy = 1)(costar_2022q1$vac_pct)`, the low point of the period — and rents have risen another `r label_percent(accuracy = 1)(chg_since2022)` since then, to `r label_dollar()(round(costar_latest$ask_rent))`.
+- Vacancy has since climbed to `r label_percent(accuracy = 0.1)(costar_latest$vac_pct)` in `r costar_latest$period`, above where it stood at the start of 2020, as new deliveries caught up with and then outpaced demand.
 - CoStar coverage is professionally managed multifamily; New Kent and Charles City have only a handful of tracked properties, so locality-level trends there are not meaningful.
 
 ::: {.callout-note}
@@ -169,14 +186,14 @@ costar_reg |>
 The 2022 Framework flagged a regional average asking rent of `r label_dollar()(base_peak_rent)` in early 2022 as a two-decade high with vacancy near `r label_percent(accuracy = 1)(base_vacancy / 100)`. Rents have since risen another `r label_percent(accuracy = 1)(costar_latest$ask_rent / rent_2022q1 - 1)` to `r label_dollar()(round(costar_latest$ask_rent))`, but the market has loosened: vacancy is now `r label_percent(accuracy = 0.1)(costar_latest$vac_pct)`, and rent growth has slowed sharply. The 2022 Framework also reported a net *loss* of renter households from 2016 to 2020 (with a COVID-era data caveat); the 2020–2024 ACS instead shows renter households growing across the region.
 :::
 
-::: {.callout-note title="Planned content"}
-**Assisted rental stock (NHPD).** Inventory of dedicated affordable rental properties and units, subsidy expirations, and preservation risk from the National Housing Preservation Database — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Assisted rental stock.** Inventory of dedicated affordable rental properties and units, subsidy expirations, and preservation risk from the National Housing Preservation Database.
 :::
 
-::: {.callout-note title="Planned content"}
-**Rental assistance.** Housing Choice Voucher utilization, project-based assistance, and LIHTC production from HUD Picture of Subsidized Households and the LIHTC database — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Rental assistance.** Housing Choice Voucher utilization, project-based assistance, and LIHTC production from HUD's subsidized-housing and LIHTC databases.
 :::
 
-::: {.callout-note title="Planned content"}
-**Submarket rents and vacancy.** CoStar submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above — pending Phase 3 (market data).
+::: {.callout-note title="Coming in a future draft"}
+**Submarket rents and vacancy.** Submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above.
 :::

@@ -226,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This appendix records every data source and vintage used in the update, defines the geographies, and explains the reliability and comparison rules applied throughout the report.</p>
 <section id="sources-and-vintages" class="level2" data-number="A.1">
 <h2 data-number="A.1" class="anchored" data-anchor-id="sources-and-vintages"><span class="header-section-number">A.1</span> Sources and vintages</h2>
-<p>The table below lists each source, the vintage used this cycle, and its current status in the build pipeline.</p>
+<p>The table below lists each source, the vintage used this cycle, and its current status in this update.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -247,86 +247,86 @@ ul.task-list li input[type="checkbox"] {
 <td>ACS 5-year estimates (anchor)</td>
 <td>2020–2024, trend tables back to ~2010</td>
 <td>tidycensus API</td>
-<td>Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending Phases 3 and 5</td>
+<td>Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending</td>
 </tr>
 <tr class="even">
 <td>ACS PUMS</td>
 <td>2020–2024 5-year</td>
 <td>tidycensus <code>get_pums()</code></td>
-<td>Pending Phase 4</td>
+<td>Pending</td>
 </tr>
 <tr class="odd">
 <td>Population Estimates Program (PEP)</td>
 <td>Vintage 2025</td>
 <td>Census API (FTP fallback)</td>
-<td>Loaded (Phase 2)</td>
+<td>Loaded</td>
 </tr>
 <tr class="even">
 <td>Decennial Census</td>
 <td>2000 / 2010 / 2020</td>
 <td>tidycensus API</td>
-<td>Loaded (Phase 2)</td>
+<td>Loaded</td>
 </tr>
 <tr class="odd">
 <td>Weldon Cooper population projections</td>
 <td>2025 official release (2030–2050 series)</td>
 <td>UVA published xlsx</td>
-<td>Loaded (Phase 2)</td>
+<td>Loaded</td>
 </tr>
 <tr class="even">
 <td>CHAS</td>
 <td>2018–2022</td>
 <td>huduser.gov download</td>
-<td>Raw tables staged (county and place levels); processing pending Phase 5</td>
+<td>Cost burden by income band loaded; race and unit-affordability tables pending</td>
 </tr>
 <tr class="odd">
 <td>HUD Fair Market Rents and Small Area FMRs</td>
 <td>FY2026</td>
 <td>huduser.gov download</td>
-<td>Raw files staged; processing pending Phase 3</td>
+<td>Raw files staged; processing pending</td>
 </tr>
 <tr class="even">
 <td>HUD Income Limits</td>
 <td>FY2026</td>
 <td>huduser.gov download</td>
-<td>Raw file staged; processing pending Phase 4</td>
+<td>Raw file staged; processing pending</td>
 </tr>
 <tr class="odd">
 <td>BLS OEWS wages</td>
 <td>Latest release (May 2025 files), Richmond MSA</td>
 <td>Manual download</td>
-<td>Raw files staged; processing pending Phase 5</td>
+<td>Raw files staged; processing pending</td>
 </tr>
 <tr class="even">
 <td>Bright MLS for-sale market</td>
 <td>Monthly summary exports, nominal dollars</td>
 <td>Manual export by HDAdvisors</td>
-<td>Monthly median price series loaded; transaction-level detail pending Phase 3</td>
+<td>Monthly median price series loaded; transaction-level detail pending</td>
 </tr>
 <tr class="odd">
 <td>CoStar multifamily market</td>
 <td>Quarterly, Richmond market</td>
 <td>Manual export by HDAdvisors</td>
-<td>Regional asking rent and vacancy loaded; submarket detail pending Phase 3</td>
+<td>Regional asking rent and vacancy loaded; submarket detail pending</td>
 </tr>
 <tr class="even">
 <td>National Housing Preservation Database (NHPD)</td>
 <td>Latest Virginia extract</td>
 <td>NHPD account download</td>
-<td>Raw file staged; processing pending Phase 3</td>
+<td>Raw file staged; processing pending</td>
 </tr>
 <tr class="odd">
 <td>Point-in-Time homelessness counts</td>
 <td>Greater Richmond CoC (VA-500), 2020–2025</td>
 <td>HUD CoC reports</td>
-<td>Raw reports staged; processing pending Phase 5</td>
+<td>Raw reports staged; processing pending</td>
 </tr>
 </tbody>
 </table>
 <p>Notes on status:</p>
 <ul>
-<li><strong>Loaded</strong> means an <code>r/</code> script has produced the tidy <code>data/*.rds</code> file chapters read.</li>
-<li><strong>Raw files staged</strong> means the source download sits in <code>data/raw/</code> awaiting its processing script.</li>
+<li><strong>Loaded</strong> means the source has been processed into the tidy data this update’s figures read from.</li>
+<li><strong>Raw files staged</strong> means the source download is on hand awaiting processing.</li>
 <li>MLS and CoStar are licensed sources: their derived exports are delivered to PHA privately and are excluded from this public repository.</li>
 </ul>
 </section>
