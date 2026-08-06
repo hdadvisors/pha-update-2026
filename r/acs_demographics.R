@@ -84,8 +84,17 @@ pull_table <- function(table, yr = 2024, dataset = "acs5") {
     left_join(labels, by = "variable") |>
     mutate(
       table = table,
-      cv = if_else(!is.na(estimate) & estimate > 0,
-                   (moe / 1.645) / estimate * 100, NA_real_)
+      # A missing or zero MOE on a positive estimate is not missing data. ACS controls
+      # table totals to independent population estimates, so they carry no sampling
+      # error and Census publishes no MOE for them -- the CV is 0, which tiers to High.
+      # Treating those as NA flagged the four secondary counties' total population as
+      # unrated, which is backwards: they are the most reliable cells in the frame.
+      # Only an absent or zero estimate leaves the CV genuinely undefined.
+      cv = case_when(
+        is.na(estimate) | estimate <= 0 ~ NA_real_,
+        is.na(moe) | moe == 0           ~ 0,
+        .default = (moe / 1.645) / estimate * 100
+      )
     ) |>
     flag_reliability() |>
     select(geoid, name, year, table, variable, label, estimate, moe, cv, reliability)
@@ -164,7 +173,15 @@ secondary_ashland_geoids <- c(unname(secondary), unname(ashland))
 sa_rel <- dem |> filter(geoid %in% secondary_ashland_geoids)
 message("Secondary/Ashland rows: ", nrow(sa_rel),
         " | Low: ", sum(sa_rel$reliability == "Low", na.rm = TRUE),
-        " | NA reliability (estimate == 0): ", sum(is.na(sa_rel$reliability)))
+        " | NA reliability: ", sum(is.na(sa_rel$reliability)),
+        " (estimate absent: ", sum(is.na(sa_rel$estimate)),
+        ", estimate zero: ", sum(!is.na(sa_rel$estimate) & sa_rel$estimate <= 0), ")")
+
+# No row should be NA for any reason other than an absent or zero estimate. A NA that
+# survives this check means the CV guard above missed a case -- most likely a new
+# no-MOE condition -- and the tier would silently drop cells from every chart.
+stopifnot(all(!is.na(sa_rel$reliability) |
+                is.na(sa_rel$estimate) | sa_rel$estimate <= 0))
 
 # 2022 baseline: baseline_2022's section == "demand" rows are net changes,
 # projections, and derived counts (population_change_net, subfamilies_count,
