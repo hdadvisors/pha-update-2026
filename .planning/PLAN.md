@@ -234,7 +234,7 @@ Cost burden trend and by AMI band from ACS and CHAS; burden by race, ethnicity, 
 | Phase | Delivers | Status | Issue | Plan |
 |---|---|---|---|---|
 | 1 | Scaffold, scaffolding skills, and the transcribed 2022 baseline | complete | | [phases/01-setup-baselines.md](phases/01-setup-baselines.md) |
-| 2 | Demand data scripts: geo, ACS demographics, ACS income, PEP, decennial, Weldon Cooper | not planned | [#2](https://github.com/hdadvisors/pha-update-2026/issues/2) | |
+| 2 | Demand data scripts: geo, ACS demographics, ACS income, PEP, decennial, Weldon Cooper | planned | [#2](https://github.com/hdadvisors/pha-update-2026/issues/2) | [phases/02-demand-data.md](phases/02-demand-data.md) |
 | 3 | Market data scripts: MLS, CoStar, BPS, ACS stock and tenure, FMR, FRED, NHPD, assistance | not planned | [#3](https://github.com/hdadvisors/pha-update-2026/issues/3) | |
 | 4 | PUMS engine, AMI and affordability calculators, and the gap methodology | not planned | [#4](https://github.com/hdadvisors/pha-update-2026/issues/4) | |
 | 5 | Burden and instability data: CHAS, burden trend, OEWS, evictions, PIT | not planned | [#5](https://github.com/hdadvisors/pha-update-2026/issues/5) | |
