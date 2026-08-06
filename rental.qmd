@@ -14,7 +14,12 @@ tenure   <- read_rds("data/acs_tenure.rds")
 rents    <- read_rds("data/acs_value_rent.rds") |>
   filter(measure == "Median gross rent")
 costar   <- read_rds("data/costar_rental.rds")
+nhpd     <- read_rds("data/nhpd.rds")
+psh      <- read_rds("data/psh.rds")
 baseline <- read_rds("data/baseline_2022.rds")
+
+# Palette anchor for the PSH figure, added alongside the others below
+red <- pha_pal[4]
 
 # Short locality labels shared by both ACS frames
 short_name <- function(x) str_remove(x, " County, Virginia|, Virginia")
@@ -186,13 +191,92 @@ costar_since2020 |>
 The 2022 Framework flagged a regional average asking rent of `r label_dollar()(base_peak_rent)` in early 2022 as a two-decade high with vacancy near `r label_percent(accuracy = 1)(base_vacancy / 100)`. Rents have since risen another `r label_percent(accuracy = 1)(costar_latest$ask_rent / rent_2022q1 - 1)` to `r label_dollar()(round(costar_latest$ask_rent))`, but the market has loosened: vacancy is now `r label_percent(accuracy = 0.1)(costar_latest$vac_pct)`, and rent growth has slowed sharply. The 2022 Framework also reported a net *loss* of renter households from 2016 to 2020 (with a COVID-era data caveat); the 2020–2024 ACS instead shows renter households growing across the region.
 :::
 
-::: {.callout-note title="Coming in a future draft"}
-**Assisted rental stock.** Inventory of dedicated affordable rental properties and units, subsidy expirations, and preservation risk from the National Housing Preservation Database.
-:::
+## Nearly 30 percent of the region's assisted units expire within a decade
 
-::: {.callout-note title="Coming in a future draft"}
-**Rental assistance.** Housing Choice Voucher utilization, project-based assistance, and LIHTC production from HUD's subsidized-housing and LIHTC databases.
-:::
+```{r}
+#| label: fig-nhpd-risk
+#| fig-cap: "Nearly 30 percent of the region's assisted units expire within a decade"
+#| fig-alt: "Column chart of active federally assisted rental units in the Richmond region by subsidy-expiration window. About 2,142 units expire 2026-2030, 4,349 expire 2031-2035, 3,982 expire 2036-2040, 8,972 expire 2041 or later, and 3,336 carry no listed expiration date, mostly public housing and HOME-assisted properties."
+
+risk_order <- levels(nhpd$expire_window)
+risk_pal <- c(
+  "2026-2030"             = pha_pal[4],  # Red -- nearest-term risk
+  "2031-2035"              = pha_pal[3],  # Orange
+  "2036-2040"              = pha_pal[2],  # Light blue
+  "2041 and later"         = pha_pal[6],  # Dark blue
+  "No listed expiration"   = "grey70"
+)
+
+risk <- nhpd |>
+  summarise(units = sum(total_units, na.rm = TRUE), .by = expire_window) |>
+  mutate(expire_window = factor(expire_window, levels = risk_order))
+
+risk_decade  <- risk |> filter(expire_window %in% c("2026-2030", "2031-2035")) |> pull(units) |> sum()
+risk_total   <- sum(risk$units)
+risk_share   <- risk_decade / risk_total
+
+ggplot(risk, aes(x = expire_window, y = units, fill = expire_window)) +
+  geom_col(width = 0.7) +
+  scale_fill_manual(values = risk_pal, guide = "none") +
+  scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    title = "Nearly 30 percent of the region's assisted units expire within a decade",
+    subtitle = paste0(
+      "Active federally assisted rental units by subsidy-expiration window, rr region<br>",
+      "Richmond city, Henrico, Chesterfield, Hanover, and Charles City properties only"
+    ),
+    caption = nhpd_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  add_zero_line("y")
+```
+
+- **About `r label_comma()(risk_decade)` of the region's `r label_comma()(risk_total)` active assisted units — `r label_percent(accuracy = 1)(risk_share)` — carry subsidies expiring by 2035, the window preservation funders typically prioritize.**
+- Three-quarters of tracked properties (152 of 201) are LIHTC-financed, holding 17,465 units; LIHTC's own affordability period can lapse independently of the subsidy end date tracked here, a second layer of risk this figure does not fully capture.
+- Richmond city and Henrico account for the large majority of tracked properties (117 and 47 of 201); Goochland, New Kent, and Powhatan have no NHPD-tracked assisted multifamily properties at all.
+- About 3,336 units carry no listed subsidy end date, mostly public housing and HOME-assisted properties whose affordability commitments do not lapse the same way project-based subsidies do.
+
+## Housing Choice Vouchers grew as public housing kept shrinking
+
+```{r}
+#| label: fig-psh-mix
+#| fig-cap: "Housing Choice Vouchers grew as public housing kept shrinking"
+#| fig-alt: "Line chart of regional federal rental-assistance units, 2020 through 2024, for two programs. Housing Choice Vouchers rose from 5,910 to 6,822 units. Public housing fell from 3,706 to 3,226 units. Project-based Section 8 held near 5,770 units and is not plotted here."
+
+psh_mix <- psh |>
+  filter(program_label %in% c("Housing Choice Vouchers", "Public Housing")) |>
+  summarise(units = sum(total_units, na.rm = TRUE), .by = c(year, program_label))
+
+hcv_2020 <- psh_mix |> filter(program_label == "Housing Choice Vouchers", year == 2020) |> pull(units)
+hcv_2024 <- psh_mix |> filter(program_label == "Housing Choice Vouchers", year == 2024) |> pull(units)
+ph_2020  <- psh_mix |> filter(program_label == "Public Housing", year == 2020) |> pull(units)
+ph_2024  <- psh_mix |> filter(program_label == "Public Housing", year == 2024) |> pull(units)
+
+ggplot(psh_mix, aes(x = year, y = units, color = program_label)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2.5) +
+  scale_color_manual(values = c("Housing Choice Vouchers" = dblue, "Public Housing" = red),
+                     guide = "none") +
+  scale_x_continuous(breaks = 2020:2024) +
+  scale_y_continuous(labels = label_comma(), limits = c(0, NA)) +
+  labs(
+    title = "Housing Choice Vouchers grew as public housing kept shrinking",
+    subtitle = paste0(
+      "<span style='color:", dblue, "'>**Housing Choice Vouchers**</span> and ",
+      "<span style='color:", red, "'>**public housing**</span> units, rr region, 2020-2024"
+    ),
+    caption = posh_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  add_zero_line("y")
+```
+
+- **Housing Choice Vouchers grew `r label_percent(accuracy = 1)(hcv_2024/hcv_2020 - 1)` since 2020, from `r label_comma()(hcv_2020)` to `r label_comma()(hcv_2024)` units, while public housing fell `r label_percent(accuracy = 1)(1 - ph_2024/ph_2020)`, from `r label_comma()(ph_2020)` to `r label_comma()(ph_2024)` — a policy-relevant shift from project-based to tenant-based assistance.**
+- Regional voucher utilization slipped from 91 percent occupied in 2020 to 87 percent in 2024, even as the voucher supply grew — more vouchers issued, a slightly larger share sitting unused at any given time.
+- Project-based Section 8 (5,763 units in 2024) and the small 202/PRAC and 811/PRAC senior- and disability-designated programs (222 and 69 units) have stayed essentially flat since 2020.
+- Richmond city and Henrico hold the large majority of the region's assisted units; Charles City, Goochland, New Kent, and Powhatan combined account for fewer than 40 units across all programs. LIHTC production, tracked separately from this HUD administrative extract, remains a future-draft addition.
 
 ::: {.callout-note title="Coming in a future draft"}
 **Submarket rents and vacancy.** Submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above.

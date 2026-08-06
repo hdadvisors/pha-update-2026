@@ -28,7 +28,10 @@ The table below lists each source, the vintage used this cycle, and its current 
 | BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending |
 | Bright MLS for-sale market | Monthly summary exports, nominal dollars | Manual export by HDAdvisors | Monthly median price series loaded; transaction-level detail pending |
 | CoStar multifamily market | Quarterly, Richmond market | Manual export by HDAdvisors | Regional asking rent and vacancy loaded; submarket detail pending |
-| National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Raw file staged; processing pending |
+| Building Permits Survey (BPS) | 2000–2025 annual | census.gov file server | Loaded |
+| FRED 30-year mortgage rate (PMMS) | Weekly, resampled to monthly, 2000–present | FRED API (`fredr`) | Loaded |
+| National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Loaded |
+| HUD Picture of Subsidized Households (PSH) | County extracts, 2020–2024 | Manual download | Program-mix and voucher/public-housing unit counts loaded; LIHTC production not covered by this source — net-new scope, see `.planning/PLAN.md` Decisions |
 | Point-in-Time homelessness counts | Greater Richmond CoC (VA-500), 2020–2025 | HUD CoC reports | Raw reports staged; processing pending |
 
 Notes on status:

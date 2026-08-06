@@ -13,9 +13,11 @@ source("_common.R")
 tenure     <- read_rds("data/acs_tenure.rds")
 value_rent <- read_rds("data/acs_value_rent.rds")
 mls        <- read_rds("data/mls_monthly.rds")
+bps        <- read_rds("data/bps.rds")
+fred       <- read_rds("data/fred.rds")
 
 # Palette anchors — match ggtext subtitle spans to point/line colors
-lblue <- pha_pal[2]; dblue <- pha_pal[6]; green <- pha_pal[1]
+lblue <- pha_pal[2]; dblue <- pha_pal[6]; green <- pha_pal[1]; orange <- pha_pal[3]
 
 clean_name <- function(x) str_remove(x, " County, Virginia| city, Virginia|, Virginia")
 
@@ -160,13 +162,94 @@ ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
 - Four of the eight localities sit above the statewide median of $383,700: Goochland, Powhatan, Hanover, and New Kent.
 - Medians are locality-level ACS estimates and do not sum or average to a regional figure; all plotted values are High reliability.
 
-::: {.callout-note title="Coming in a future draft"}
-**Building permits.** Single-family and multifamily permitting trends by locality.
-:::
+## Multifamily permits have outpaced single-family in three of the last four years
 
-::: {.callout-note title="Coming in a future draft"}
-**Mortgage rates.** The 30-year fixed mortgage rate trend and its interaction with sale prices and affordability.
-:::
+```{r}
+#| label: fig-bps-permits
+#| fig-cap: "Multifamily permits have outpaced single-family in three of the last four years"
+#| fig-alt: "Two-panel line chart of annual building permits by structure type (single-family and multifamily) for the Richmond region, 2000 through 2025, with 2000-2019 shown in muted grey and 2020-2025 shown in color. Single-family permits fell from about 4,825 units in 2020 to 3,792 in 2025. Multifamily permits rose from about 2,770 units in 2020 to 4,677 in 2025, exceeding single-family in 2022, 2023, and 2025."
+
+bps_reg <- bps |>
+  filter(geoid %in% rr) |>
+  summarise(units = sum(units), .by = c(year, structure))
+
+bps_recent <- bps_reg |> filter(year >= 2020)
+
+sf_2020 <- bps_reg |> filter(structure == "Single-family", year == 2020) |> pull(units)
+sf_2025 <- bps_reg |> filter(structure == "Single-family", year == max(year)) |> pull(units)
+mf_2020 <- bps_reg |> filter(structure == "Multifamily", year == 2020) |> pull(units)
+mf_2025 <- bps_reg |> filter(structure == "Multifamily", year == max(year)) |> pull(units)
+bps_latest_yr <- max(bps_reg$year)
+
+ggplot(bps_reg, aes(x = year, y = units)) +
+  geom_line(color = "grey70", linewidth = 0.7) +
+  geom_line(data = bps_recent, aes(color = structure), linewidth = 1.1) +
+  scale_color_manual(values = c("Single-family" = dblue, "Multifamily" = orange), guide = "none") +
+  scale_y_continuous(labels = label_comma()) +
+  facet_wrap(~structure) +
+  labs(
+    title = "Multifamily permits have outpaced single-family in three of the last four years",
+    subtitle = paste0(
+      "Annual building permits, Richmond region (8 localities)<br>",
+      "2000-2019 shown muted for context · ",
+      "<span style='color:", dblue, "'>**single-family**</span> and ",
+      "<span style='color:", orange, "'>**multifamily**</span> emphasized since 2020"
+    ),
+    caption = bps_cap("2000-2025"),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  add_zero_line("y")
+```
+
+- **Since 2020, multifamily permits are up `r label_percent(accuracy = 1)(mf_2025/mf_2020 - 1)`, from `r label_comma()(mf_2020)` to `r label_comma()(mf_2025)` units, while single-family permits fell `r label_percent(accuracy = 1)(1 - sf_2025/sf_2020)`, from `r label_comma()(sf_2020)` to `r label_comma()(sf_2025)`.**
+- 2022 was the first year in the 2000-2025 record that regional multifamily volume exceeded single-family (5,804 vs 3,946 units) — a pattern that repeated in 2023 and again in `r bps_latest_yr`.
+- Total regional permitting peaked in 2022 at 9,750 units, more than double the post-recession low of 2,186 in 2009, and has eased only modestly since.
+- The 2022 Framework's Fig 5.4 baseline for Chesterfield single-family permits — 545 in 2010, 2,202 in 2020 — matches this pull exactly; same metric, same years, no vintage shift.
+
+## Mortgage rates have more than doubled since their 2020-2021 low
+
+```{r}
+#| label: fig-pmms-price
+#| fig-cap: "Mortgage rates have more than doubled since their 2020-2021 low"
+#| fig-alt: "Dual-axis line chart of the 30-year fixed mortgage rate and the PHA region's monthly median home sale price, January 2020 through July 2026. The mortgage rate fell to a low of 2.68 percent in December 2020, rose to a peak of 7.62 percent in October 2023, and stands at 6.54 percent in July 2026. The median sale price rose from 264,000 dollars in January 2020 to 435,000 dollars in July 2026, with no pause during the rate run-up."
+
+rate_price <- fred |>
+  filter(month >= as.Date("2020-01-01")) |>
+  inner_join(sale |> select(month, price), by = "month")
+
+scale_factor <- 55000   # maps the rate (%) onto the price-dollar axis for the overlay
+
+rate_lo <- rate_price |> slice_min(rate, n = 1)
+rate_hi <- rate_price |> slice_max(rate, n = 1)
+rate_latest <- rate_price |> slice_max(month, n = 1)
+
+ggplot(rate_price, aes(x = month)) +
+  geom_line(aes(y = price), color = dblue, linewidth = 1.1) +
+  geom_line(aes(y = rate * scale_factor), color = orange, linewidth = 1.1) +
+  scale_y_continuous(
+    labels = label_dollar(), limits = c(0, NA),
+    sec.axis = sec_axis(~ . / scale_factor, labels = label_percent(scale = 1))
+  ) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(
+    title = "Mortgage rates have more than doubled since their 2020-2021 low",
+    subtitle = paste0(
+      "PHA region <span style='color:", dblue, "'>**median sale price**</span> and ",
+      "<span style='color:", orange, "'>**30-year fixed mortgage rate**</span><br>",
+      "January 2020 through July 2026, nominal dollars"
+    ),
+    caption = pmms_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  add_zero_line("y")
+```
+
+- **The 30-year fixed rate fell to a low of `r label_percent(accuracy = 0.01, scale = 1)(rate_lo$rate)` in `r format(rate_lo$month, "%B %Y")`, peaked at `r label_percent(accuracy = 0.01, scale = 1)(rate_hi$rate)` in `r format(rate_hi$month, "%B %Y")`, and stands at `r label_percent(accuracy = 0.01, scale = 1)(rate_latest$rate)` as of `r format(rate_latest$month, "%B %Y")` — more than double the 2020-2021 low.**
+- Home prices did not pause for the rate run-up: the median sale price rose from `r label_dollar()(mls_2020$price)` in January 2020 to `r label_dollar()(mls_latest_r$price)` by July 2026, the 65 percent gain covered above.
+- Higher rates and higher prices are compounding rather than offsetting — a fixed monthly housing budget buys much less home today than it did when rates sat near 3 percent.
+- The mortgage rate is Freddie Mac's national PMMS survey, not Richmond-specific; both series here are nominal, unadjusted for inflation.
 
 ::: {.callout-note title="Coming in a future draft"}
 **Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from the regional MLS.
