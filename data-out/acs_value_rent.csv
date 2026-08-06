@@ -1,0 +1,55 @@
+geoid,name,year,table,variable,measure,estimate,moe,cv,reliability
+51036,"Charles City County, Virginia",2014,B25077,B25077_001,Median home value,154600,7859,3.0902377741165554,High
+51041,"Chesterfield County, Virginia",2014,B25077,B25077_001,Median home value,219800,2123,0.587159921564506,High
+51075,"Goochland County, Virginia",2014,B25077,B25077_001,Median home value,324800,20649,3.864711695389821,High
+51085,"Hanover County, Virginia",2014,B25077,B25077_001,Median home value,257600,4165,0.9828862164662351,High
+51087,"Henrico County, Virginia",2014,B25077,B25077_001,Median home value,217300,2297,0.6425920771222394,High
+51127,"New Kent County, Virginia",2014,B25077,B25077_001,Median home value,247800,10216,2.5061881947153184,High
+51145,"Powhatan County, Virginia",2014,B25077,B25077_001,Median home value,259500,9618,2.253105399089903,High
+51760,"Richmond city, Virginia",2014,B25077,B25077_001,Median home value,195000,4941,1.5403320084171148,High
+51,Virginia,2014,B25077,B25077_001,Median home value,243500,674,0.16826547998726774,High
+51036,"Charles City County, Virginia",2019,B25077,B25077_001,Median home value,167900,5681,2.056876379231378,High
+51041,"Chesterfield County, Virginia",2019,B25077,B25077_001,Median home value,241200,2152,0.5423742483126415,High
+51075,"Goochland County, Virginia",2019,B25077,B25077_001,Median home value,375200,21977,3.5607351864213452,High
+51085,"Hanover County, Virginia",2019,B25077,B25077_001,Median home value,282900,3197,0.6869795141720414,High
+51087,"Henrico County, Virginia",2019,B25077,B25077_001,Median home value,242600,3168,0.7938317668018955,High
+51127,"New Kent County, Virginia",2019,B25077,B25077_001,Median home value,281100,11242,2.4311784251837385,High
+51145,"Powhatan County, Virginia",2019,B25077,B25077_001,Median home value,279200,7515,1.6362424991943982,High
+51760,"Richmond city, Virginia",2019,B25077,B25077_001,Median home value,230500,4508,1.1889047860802142,High
+51,Virginia,2019,B25077,B25077_001,Median home value,273100,819,0.1823040426310992,High
+51036,"Charles City County, Virginia",2024,B25077,B25077_001,Median home value,241400,18325,4.614671760223418,High
+51041,"Chesterfield County, Virginia",2024,B25077,B25077_001,Median home value,366000,3564,0.59195774577706906,High
+51075,"Goochland County, Virginia",2024,B25077,B25077_001,Median home value,500600,32408,3.935459819037823,High
+51085,"Hanover County, Virginia",2024,B25077,B25077_001,Median home value,400400,7997,1.214135408664284,High
+51087,"Henrico County, Virginia",2024,B25077,B25077_001,Median home value,359200,4237,0.7170612167532037,High
+51127,"New Kent County, Virginia",2024,B25077,B25077_001,Median home value,393600,15738,2.4306842612499073,High
+51145,"Powhatan County, Virginia",2024,B25077,B25077_001,Median home value,416000,14470,2.1145078325929387,High
+51760,"Richmond city, Virginia",2024,B25077,B25077_001,Median home value,353000,7576,1.3046660409688557,High
+51,Virginia,2024,B25077,B25077_001,Median home value,383700,1024,0.1622341415730533,High
+51036,"Charles City County, Virginia",2014,B25064,B25064_001,Median gross rent,861,111,7.8370735943573075,High
+51041,"Chesterfield County, Virginia",2014,B25064,B25064_001,Median gross rent,1107,17,0.9335453030315511,High
+51075,"Goochland County, Virginia",2014,B25064,B25064_001,Median gross rent,947,185,11.87560782249497,High
+51085,"Hanover County, Virginia",2014,B25064,B25064_001,Median gross rent,1049,34,1.9703234517748847,High
+51087,"Henrico County, Virginia",2014,B25064,B25064_001,Median gross rent,1029,16,0.9452326306119495,High
+51127,"New Kent County, Virginia",2014,B25064,B25064_001,Median gross rent,892,263,17.923589624763174,Medium
+51145,"Powhatan County, Virginia",2014,B25064,B25064_001,Median gross rent,1040,63,3.682487725040917,High
+51760,"Richmond city, Virginia",2014,B25064,B25064_001,Median gross rent,893,11,0.7488163595952307,High
+51,Virginia,2014,B25064,B25064_001,Median gross rent,1108,5,0.27432433915266696,High
+51036,"Charles City County, Virginia",2019,B25064,B25064_001,Median gross rent,813,123,9.197052456846757,High
+51041,"Chesterfield County, Virginia",2019,B25064,B25064_001,Median gross rent,1251,18,0.8746801950536836,High
+51075,"Goochland County, Virginia",2019,B25064,B25064_001,Median gross rent,1208,115,5.787153525634574,High
+51085,"Hanover County, Virginia",2019,B25064,B25064_001,Median gross rent,1159,30,1.5735187288066697,High
+51087,"Henrico County, Virginia",2019,B25064,B25064_001,Median gross rent,1170,13,0.6754474839581223,High
+51127,"New Kent County, Virginia",2019,B25064,B25064_001,Median gross rent,1010,154,9.269012007583738,High
+51145,"Powhatan County, Virginia",2019,B25064,B25064_001,Median gross rent,980,84,5.210594876248371,High
+51760,"Richmond city, Virginia",2019,B25064,B25064_001,Median gross rent,1025,15,0.8896137593594781,High
+51,Virginia,2019,B25064,B25064_001,Median gross rent,1234,5,0.24631391230239466,High
+51036,"Charles City County, Virginia",2024,B25064,B25064_001,Median gross rent,1099,121,6.6930146499581,High
+51041,"Chesterfield County, Virginia",2024,B25064,B25064_001,Median gross rent,1629,25,0.9329385137543125,High
+51075,"Goochland County, Virginia",2024,B25064,B25064_001,Median gross rent,1614,178,6.704255695792514,High
+51085,"Hanover County, Virginia",2024,B25064,B25064_001,Median gross rent,1591,63,2.4071572809821205,High
+51087,"Henrico County, Virginia",2024,B25064,B25064_001,Median gross rent,1541,29,1.1440090416162876,High
+51127,"New Kent County, Virginia",2024,B25064,B25064_001,Median gross rent,1721,291,10.278889950530633,High
+51145,"Powhatan County, Virginia",2024,B25064,B25064_001,Median gross rent,1168,261,13.584127909397509,High
+51760,"Richmond city, Virginia",2024,B25064,B25064_001,Median gross rent,1372,20,0.8861555911987026,High
+51,Virginia,2024,B25064,B25064_001,Median gross rent,1579,8,0.3079937862253629,High
