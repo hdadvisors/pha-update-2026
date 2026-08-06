@@ -1,0 +1,941 @@
+geoid,name,year,table,variable,label,estimate,moe,cv,reliability
+51036,"Charles City County, Virginia",2024,B01001,B01001_001,Total:,6627,NA,NA,NA
+51036,"Charles City County, Virginia",2024,B01001,B01001_002,Total:!!Male:,3288,39,0.7210525148093093,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,135,21,9.456264775413711,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,115,30,15.858332232060263,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,152,32,12.797952327627579,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,97,26,16.29430012847429,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,32,14,26.595744680851062,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,17,11,39.33488288932595,Low
+51036,"Charles City County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,59,31,31.940652207511206,Low
+51036,"Charles City County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,119,34,17.368649587494573,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,172,11,3.8877500530147735,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,216,44,12.383203872565575,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,221,53,14.578662889050872,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,85,35,25.03128911138924,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,157,13,5.033589530133777,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,239,10,2.5435260902188706,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,313,55,10.681996950775414,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,123,36,17.79227518718956,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,201,53,16.029276111842005,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,122,38,18.93467536997359,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,177,40,13.737914927961809,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,223,42,11.44928918996279,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,170,36,12.873234400143035,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,108,33,18.57480580884836,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,35,18,31.263569257490225,Low
+51036,"Charles City County, Virginia",2024,B01001,B01001_026,Total:!!Female:,3339,39,0.7100391340799668,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,101,25,15.047097414908665,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,137,40,17.74898497992146,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,123,42,20.75765438505449,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,81,20,15.00994408795827,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,117,38,19.743849531083573,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,27,21,47.28132387706856,Low
+51036,"Charles City County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,18,15,50.658561296859176,Low
+51036,"Charles City County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,54,25,28.14364516492176,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,141,21,9.053870529651425,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,159,11,4.205616409550573,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,152,39,15.597504399296112,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,175,39,13.547546678245768,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,196,14,4.342162396873643,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,228,10,2.6662400682557452,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,330,44,8.105369807497468,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,162,38,14.25944688356036,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,191,39,12.412673658078582,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,140,37,16.066000868432482,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,139,41,17.93094399860051,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,275,38,8.400110527770103,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,199,38,11.60819294038582,High
+51036,"Charles City County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,94,27,17.46103602147061,Medium
+51036,"Charles City County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,100,29,17.62917933130699,Medium
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_001,Total:,377869,NA,NA,NA
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_002,Total:!!Male:,182696,146,0.04858004520739221,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,11301,31,0.16675501993125927,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,12986,633,2.9632098537728493,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,13078,631,2.9330679472382446,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,8466,42,0.3015817965227619,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,4906,4,0.049564022467371384,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,1897,326,10.446826135651715,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,2702,486,10.93414986984762,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,6383,503,4.790460222275449,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,10400,60,0.3507131166705635,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,11600,54,0.282989204485903,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,12468,749,3.65190206076492,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,13203,747,3.4393951637131384,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,11801,39,0.2008999803993737,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,11999,49,0.24824763765774804,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,11399,612,3.263764138644914,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,4705,521,6.731505318341413,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,6501,544,5.086895679832282,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,4027,497,7.502549281710158,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,5075,474,5.677751658256846,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,8029,499,3.778097708875236,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,4922,422,5.2120063877955065,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,2726,354,7.894261496297056,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,2122,298,8.5369941186413,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_026,Total:!!Female:,195173,146,0.04547442494202439,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,10863,17,0.09513344844480595,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,11336,773,4.1452788866413695,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,13500,767,3.4537881346391983,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,8010,35,0.265625415039711,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,5021,34,0.41164495138654733,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,1583,288,11.059759181424212,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,1987,470,14.379178948882018,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,7477,507,4.122063487094973,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,11050,54,0.2970746400033008,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,12790,45,0.21388290148791206,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,13597,714,3.192193522037871,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,13886,704,3.081978437533244,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,12507,37,0.1798385001663506,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,12673,36,0.1726860134162642,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,12331,624,3.076241237457477,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,5122,514,6.100390591156332,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,7510,589,4.767705875448743,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,4338,411,5.759521076904321,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,6108,498,4.956377902914708,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,10108,511,3.07319249972636,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,6201,471,4.617355079017062,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,3807,437,6.978027198338048,High
+51041,"Chesterfield County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,3368,385,6.949006923737808,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_001,Total:,26410,NA,NA,NA
+51075,"Goochland County, Virginia",2024,B01001,B01001_002,Total:!!Male:,13240,142,0.651980275300967,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,614,90,8.910626417037118,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,523,108,12.553249606258026,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,701,152,13.181343196215566,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,538,79,8.926452808442843,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,262,105,24.362514211466625,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,81,66,49.532815490262294,Low
+51075,"Goochland County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,96,95,60.15704154002026,Low
+51075,"Goochland County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,521,183,21.3524377366416,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,537,89,10.075110514906068,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,658,89,8.222392623867112,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,695,177,15.481839452450197,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,751,189,15.298750602034167,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,629,72,6.958505081158398,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,1286,225,10.635934331377896,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,1215,165,8.25546924837705,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,238,92,23.498761206610304,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,769,154,12.173864925435078,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,559,195,21.205909380080584,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,611,151,15.023455494256762,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,774,193,15.158298186502044,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,515,139,16.40747189187594,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,468,140,18.18512456810329,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,199,109,33.29718501321196,Low
+51075,"Goochland County, Virginia",2024,B01001,B01001_026,Total:!!Female:,13170,142,0.6554456222463784,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,421,71,10.252041383592402,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,437,165,22.952849283245115,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,646,165,15.526927456312873,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,392,54,8.37417033682774,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,323,120,22.584621754636906,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,75,58,47.01114488348531,Low
+51075,"Goochland County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,41,45,66.72103195196085,Low
+51075,"Goochland County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,468,134,17.405762086613148,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,556,77,8.418796877391705,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,841,192,13.878397767891027,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,608,167,16.69732842745161,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,742,160,13.108414783014771,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,780,69,5.377601122281972,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,980,102,6.327150921158737,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,1293,134,6.299997414180165,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,384,110,17.41388044579534,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,674,153,13.799572483832852,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,476,115,14.686725754131439,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,670,197,17.874155060563442,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,879,199,13.762530645836144,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,640,139,13.20288753799392,High
+51075,"Goochland County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,475,131,16.76531754919213,Medium
+51075,"Goochland County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,369,116,19.110221497351752,Medium
+51085,"Hanover County, Virginia",2024,B01001,B01001_001,Total:,112879,NA,NA,NA
+51085,"Hanover County, Virginia",2024,B01001,B01001_002,Total:!!Male:,55887,108,0.11747543335789985,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,3002,92,1.8629930603508502,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,3170,349,6.692683113919438,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,4116,349,5.154471688805787,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,2463,61,1.505565037324438,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,1402,55,2.3847824861574214,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,783,170,13.19839911182538,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,699,167,14.52357036321971,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,1834,250,8.286569459682525,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,2866,77,1.6332348443230245,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,3080,34,0.6710614613350175,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,3710,330,5.4072210979935935,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,3508,331,5.735912356645513,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,3595,160,2.705547640889279,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,3788,103,1.6529562239418674,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,3810,333,5.313165641528852,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,1837,293,9.695998993998739,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,2313,283,7.437806924519401,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,1654,301,11.062800689495484,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,2109,307,8.849034604913664,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,2431,264,6.601658666740018,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,1791,225,7.636969039727512,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,1006,203,12.266824584408443,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,920,227,14.999339236157,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_026,Total:!!Female:,56992,108,0.11519773905237488,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,2606,91,2.1227608954785193,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,2928,335,6.955171325593369,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,3783,338,5.431433376158097,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,2293,62,1.6436968863874062,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,1336,105,4.777678685182826,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,767,232,18.387670749733495,Medium
+51085,"Hanover County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,676,179,16.096832790777146,Medium
+51085,"Hanover County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,1760,292,10.085659021829233,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,2573,115,2.7170157244331774,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,3227,13,0.2448941915807261,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,3916,318,4.936493102880863,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,3368,325,5.866044805752694,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,3459,113,1.9859210499722761,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,3994,92,1.4002767068535935,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,4301,345,4.876225151569331,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,1701,302,10.79286455848428,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,2543,283,6.765099259305299,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,1428,181,7.7052097434718565,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,2004,245,7.431944621395506,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,3199,307,5.833889959913384,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,2362,250,6.434194914927074,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,1545,226,8.892298915021492,High
+51085,"Hanover County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,1223,236,11.730584267596496,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_001,Total:,335744,NA,NA,NA
+51087,"Henrico County, Virginia",2024,B01001,B01001_002,Total:!!Male:,159988,38,0.01443877287757068,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,9802,13,0.08062370498173874,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,10281,720,4.257270397868527,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,10847,716,4.012707280009349,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,6792,20,0.1790055169500324,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,3831,31,0.49190772128508514,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,1665,275,10.040435572350466,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,1834,337,11.170295631652042,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,5843,411,4.276023007292648,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,10645,39,0.22271683125345315,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,11963,24,0.12195657990048851,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,12170,628,3.13691797808653,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,10821,637,3.5785421176711165,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,9791,27,0.16763735941356725,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,10385,30,0.17560984176089842,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,10553,646,3.7212656796479893,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,3566,453,7.722376309863332,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,5572,510,5.564077443230045,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,3918,414,6.423474541163767,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,4628,421,5.529970865854203,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,6092,405,4.0413757042471365,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,4051,363,5.447264700299149,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,2638,377,8.687616804662278,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,2300,397,10.492929826879873,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_026,Total:!!Female:,175756,38,0.01314339422345057,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,9317,20,0.13049323506757754,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,9981,647,3.9406178730469352,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,10042,647,3.9166806403984724,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,6492,2,0.01872774909310875,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,3486,12,0.20926083840354906,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,1788,326,11.083685223339657,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,1614,318,11.977265793606852,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,5994,343,3.4786559609254644,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,11448,38,0.2017846257107598,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,12912,46,0.21657005758880313,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,11896,725,3.7048544324367416,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,12701,723,3.460465142993073,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,10800,12,0.06754474839581223,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,11311,30,0.16123315415851208,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,11050,542,2.9817491644775753,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,4364,420,5.850576281763754,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,7269,602,5.0344950723415955,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,3811,408,6.508116402766269,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,6045,468,4.7063437591920785,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,8955,549,3.7268408913870266,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,5589,432,4.6987651057956334,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,4175,500,7.280272282183353,High
+51087,"Henrico County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,4716,432,5.568574676906657,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_001,Total:,25105,NA,NA,NA
+51127,"New Kent County, Virginia",2024,B01001,B01001_002,Total:!!Male:,13084,187,0.8688307211109139,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,589,57,5.882929698990098,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,703,175,15.132713900910987,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,827,158,11.614103049437121,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,503,110,13.294095608718509,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,282,151,32.55082023755632,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,195,124,38.656379081911,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,101,84,50.55824731409311,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,426,154,21.975826590750174,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,733,153,12.688829268899513,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,1040,167,9.761515080664017,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,1157,233,12.242120776665361,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,641,179,16.97575501804267,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,788,74,5.708731273047074,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,960,121,7.662107396149949,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,1012,172,10.331943726948351,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,338,115,20.68308123954605,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,522,128,14.906427232179247,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,440,172,23.76347057198121,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,591,165,16.971903784734543,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,531,150,17.17239365995226,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,397,128,19.59988668815508,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,218,96,26.770028722009982,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,90,63,42.55319148936171,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_026,Total:!!Female:,12021,187,0.9456601909171614,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,665,81,7.404529560984528,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,724,136,11.419167408352786,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,514,141,16.67593107281823,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,362,44,7.388873028934155,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,145,12,5.030919190860497,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,114,74,39.46035301018504,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,80,65,49.39209726443769,Low
+51127,"New Kent County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,320,144,27.35562310030395,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,698,88,7.664103256372963,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,831,117,8.558919381563209,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,825,169,12.452795431518835,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,563,167,18.03192839056941,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,1000,172,10.455927051671733,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,828,150,11.012730716708514,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,770,193,15.237042592665691,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,661,177,16.278182177689693,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,552,148,16.298841460728603,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,381,134,21.38030618513111,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,588,157,16.23141657878957,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,496,134,16.42317874301402,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,565,121,13.018801947440622,High
+51127,"New Kent County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,169,74,26.618226290894047,Medium
+51127,"New Kent County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,170,79,28.249597711424997,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_001,Total:,31555,NA,NA,NA
+51145,"Powhatan County, Virginia",2024,B01001,B01001_002,Total:!!Male:,16327,136,0.5063684206313112,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,768,115,9.102710233029383,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,732,147,12.207882804325077,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,940,163,10.541292116665588,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,553,44,4.8368391256314,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,339,79,14.166464929033184,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,157,85,32.91193154318239,Low
+51145,"Powhatan County, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,217,132,36.978415250794896,Low
+51145,"Powhatan County, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,491,140,17.33327555574815,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,1010,101,6.079027355623101,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,1040,153,8.943184475099368,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,1212,205,10.282183233520922,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,926,218,14.311317100710971,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,1106,81,4.452090558819812,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,1215,90,4.502983226387482,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,1393,215,9.382561963093803,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,561,170,18.4212950170397,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,629,204,19.715764396615462,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,394,135,20.829154644901486,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,702,175,15.154270473419409,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,771,157,12.378823538687767,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,672,174,15.740338688666956,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,395,139,21.392020314724327,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,104,77,45.00818330605565,Low
+51145,"Powhatan County, Virginia",2024,B01001,B01001_026,Total:!!Female:,15228,136,0.5429128712665758,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,666,56,5.111494473196601,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,542,172,19.291378324117588,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,1046,207,12.03019753933061,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,523,85,9.87987237529567,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,239,46,11.700220015006805,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,157,107,41.43031382494724,Low
+51145,"Powhatan County, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,75,65,52.68490374873353,Low
+51145,"Powhatan County, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,344,123,21.7360571145826,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,759,110,8.810184573366811,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,766,49,3.8886728515082494,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,1031,206,12.146262223650423,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,1068,195,11.099347699873638,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,1043,93,5.420417488714749,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,1172,61,3.1639988796331835,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,1215,227,11.357524359888426,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,695,189,16.53145568651462,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,668,186,16.926633056076298,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,444,146,19.989594457679562,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,562,151,16.333329727741784,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,962,165,10.426606171287021,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,682,151,13.459430068901588,High
+51145,"Powhatan County, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,359,123,20.827865313137643,Medium
+51145,"Powhatan County, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,210,109,31.553046750615138,Low
+51760,"Richmond city, Virginia",2024,B01001,B01001_001,Total:,229359,NA,NA,NA
+51760,"Richmond city, Virginia",2024,B01001,B01001_002,Total:!!Male:,108768,190,0.10619071763463418,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,6810,13,0.11604604349941307,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,5691,528,5.640004294094178,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,4939,528,6.498737484853202,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,2918,159,3.3124240902812643,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,3559,104,1.7763946192323754,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,1836,327,10.827025845799314,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,1178,236,12.178696569839149,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,5191,342,4.005061367025815,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,11700,31,0.16106824617462917,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,11812,29,0.1492480471665001,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,9954,536,3.2734163779525636,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,6045,535,5.38011519480291,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,5410,57,0.6404890189843193,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,5763,61,0.6434507525473002,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,5659,434,4.662127358792058,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,2627,354,8.19176126338248,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,3941,439,6.77161382674078,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,2253,281,7.581920492366138,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,2728,312,6.9525532806246595,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,4330,347,4.8716454789866415,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,2092,235,6.828735318219066,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,1236,193,9.492332359508563,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,1096,199,11.037650034388658,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_026,Total:!!Female:,120591,190,0.09577955216959716,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,6588,37,0.3414147118367558,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,5817,541,5.653693999298775,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,4712,528,6.811813335672744,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,2721,165,3.686290017191516,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,4579,123,1.6329337513466726,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,2205,284,7.829676956902315,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,1901,315,10.073085833883622,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,5627,382,4.126867691217388,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,13460,39,0.17613823690141225,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,12742,35,0.16698003252771035,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,9360,478,3.1044605512690615,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,6623,478,4.38740008453547,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,5586,16,0.17412180037588543,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,6021,33,0.3331803732528854,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,6914,452,3.974139954789761,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,2655,356,8.15116285725734,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,4571,423,5.625527393193113,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,2433,397,9.91933358069203,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,3788,417,6.692065489162706,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,5065,446,5.35290464088431,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,3585,277,4.6970448466041805,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,1557,269,10.502622727441322,High
+51760,"Richmond city, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,2081,321,9.377067665329243,High
+51,Virginia,2024,B01001,B01001_001,Total:,8705170,NA,NA,NA
+51,Virginia,2024,B01001,B01001_002,Total:!!Male:,4300735,1783,0.02520244975585798,High
+51,Virginia,2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,249268,1093,0.2665555506401162,High
+51,Virginia,2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,268023,3167,0.718306997356882,High
+51,Virginia,2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,280618,3155,0.6834676074589258,High
+51,Virginia,2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,171646,909,0.3219321083078777,High
+51,Virginia,2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,122193,1373,0.6830591408076172,High
+51,Virginia,2024,B01001,B01001_008,Total:!!Male:!!20 years,59532,1991,2.0330819500513324,High
+51,Virginia,2024,B01001,B01001_009,Total:!!Male:!!21 years,59958,1990,2.0176230757680322,High
+51,Virginia,2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,171499,2306,0.8173946834714412,High
+51,Virginia,2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,292100,1186,0.24682391111841823,High
+51,Virginia,2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,301246,1009,0.20361228370911838,High
+51,Virginia,2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,300846,3091,0.6245811330790837,High
+51,Virginia,2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,289861,3366,0.7059247735648244,High
+51,Virginia,2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,263667,1084,0.24992379226431222,High
+51,Virginia,2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,275178,1086,0.23991102879614964,High
+51,Virginia,2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,274865,2823,0.6243462872655308,High
+51,Virginia,2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,111550,2036,1.1095382963737006,High
+51,Virginia,2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,156988,2325,0.9003069407740533,High
+51,Virginia,2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,95411,2012,1.2819279789032374,High
+51,Virginia,2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,129796,2313,1.0832991982461888,High
+51,Virginia,2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,178155,2389,0.815177589884291,High
+51,Virginia,2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,122274,1801,0.8953929917625336,High
+51,Virginia,2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,71032,1402,1.1998530736264763,High
+51,Virginia,2024,B01001,B01001_025,Total:!!Male:!!85 years and over,55029,1728,1.9089133494188009,High
+51,Virginia,2024,B01001,B01001_026,Total:!!Female:,4404435,1783,0.02460907193561941,High
+51,Virginia,2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,240192,1121,0.28371426465716987,High
+51,Virginia,2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,250883,3022,0.732246531996708,High
+51,Virginia,2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,267178,3113,0.708292305431387,High
+51,Virginia,2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,163025,903,0.33671901255191905,High
+51,Virginia,2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,116299,1157,0.6047717220660476,High
+51,Virginia,2024,B01001,B01001_032,Total:!!Female:!!20 years,55414,2011,2.2061074840578296,High
+51,Virginia,2024,B01001,B01001_033,Total:!!Female:!!21 years,54749,1768,1.9630898034195403,High
+51,Virginia,2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,167015,2396,0.8720982872240787,High
+51,Virginia,2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,282475,1111,0.2390937035878313,High
+51,Virginia,2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,298106,1005,0.20494127902159687,High
+51,Virginia,2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,300229,3451,0.6987573953300754,High
+51,Virginia,2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,290341,3315,0.6940795713967569,High
+51,Virginia,2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,267801,1115,0.2531026957150928,High
+51,Virginia,2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,277920,789,0.17258033187919639,High
+51,Virginia,2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,286209,3033,0.6442037102119382,High
+51,Virginia,2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,117153,2545,1.3205914163581634,High
+51,Virginia,2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,167400,2825,1.0258812592374706,High
+51,Virginia,2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,105147,2246,1.2985149781476868,High
+51,Virginia,2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,145014,2469,1.035011691356244,High
+51,Virginia,2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,207749,2560,0.7490919345168995,High
+51,Virginia,2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,153488,2239,0.8867756599369411,High
+51,Virginia,2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,95892,2264,1.4352519431371438,High
+51,Virginia,2024,B01001,B01001_049,Total:!!Female:!!85 years and over,94756,2100,1.3472452875605252,High
+5103368,"Ashland town, Virginia",2024,B01001,B01001_001,Total:,7772,37,0.2894030007180323,High
+5103368,"Ashland town, Virginia",2024,B01001,B01001_002,Total:!!Male:,3458,270,4.746493308323415,High
+5103368,"Ashland town, Virginia",2024,B01001,B01001_003,Total:!!Male:!!Under 5 years,208,122,35.65583352817395,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_004,Total:!!Male:!!5 to 9 years,228,129,34.39449688049912,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_005,Total:!!Male:!!10 to 14 years,173,81,28.46249802343764,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_006,Total:!!Male:!!15 to 17 years,109,62,34.577953765929564,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_007,Total:!!Male:!!18 and 19 years,213,90,25.686031080097603,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_008,Total:!!Male:!!20 years,357,126,21.45539066690506,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_009,Total:!!Male:!!21 years,176,132,45.59270516717325,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_010,Total:!!Male:!!22 to 24 years,132,83,38.22418716035737,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_011,Total:!!Male:!!25 to 29 years,207,88,25.843208081875986,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_012,Total:!!Male:!!30 to 34 years,161,80,30.20634710868621,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_013,Total:!!Male:!!35 to 39 years,55,39,43.10583033987289,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_014,Total:!!Male:!!40 to 44 years,122,80,39.862474463102295,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_015,Total:!!Male:!!45 to 49 years,248,119,29.16952642415923,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_016,Total:!!Male:!!50 to 54 years,211,138,39.75856753914634,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_017,Total:!!Male:!!55 to 59 years,123,55,27.18264264709516,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_018,Total:!!Male:!!60 and 61 years,68,48,42.91078133381012,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_019,Total:!!Male:!!62 to 64 years,122,58,28.900293985749165,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_020,Total:!!Male:!!65 and 66 years,113,66,35.505823493019875,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_021,Total:!!Male:!!67 to 69 years,138,77,33.91921060746223,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_022,Total:!!Male:!!70 to 74 years,106,53,30.3951367781155,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_023,Total:!!Male:!!75 to 79 years,110,52,28.73722022658193,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_024,Total:!!Male:!!80 to 84 years,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B01001,B01001_025,Total:!!Male:!!85 years and over,78,84,65.46644844517185,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_026,Total:!!Female:,4314,268,3.776493582074619,High
+5103368,"Ashland town, Virginia",2024,B01001,B01001_027,Total:!!Female:!!Under 5 years,157,98,37.94552107331617,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_028,Total:!!Female:!!5 to 9 years,256,103,24.458586626139816,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_029,Total:!!Female:!!10 to 14 years,203,121,36.23459655322144,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_030,Total:!!Female:!!15 to 17 years,19,24,76.78771396576548,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_031,Total:!!Female:!!18 and 19 years,286,109,23.168321040661468,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_032,Total:!!Female:!!20 years,194,103,32.275248331400995,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_033,Total:!!Female:!!21 years,182,95,31.731186746384317,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_034,Total:!!Female:!!22 to 24 years,342,126,22.396416573348265,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_035,Total:!!Female:!!25 to 29 years,330,112,20.63185041908446,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_036,Total:!!Female:!!30 to 34 years,317,92,17.642603051019723,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_037,Total:!!Female:!!35 to 39 years,187,69,22.430635697218925,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_038,Total:!!Female:!!40 to 44 years,121,70,35.16792685071215,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_039,Total:!!Female:!!45 to 49 years,182,79,26.38698687330906,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_040,Total:!!Female:!!50 to 54 years,201,95,28.73172133254699,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_041,Total:!!Female:!!55 to 59 years,218,82,22.866066200050195,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_042,Total:!!Female:!!60 and 61 years,136,94,42.01680672268907,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_043,Total:!!Female:!!62 to 64 years,120,63,31.914893617021278,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_044,Total:!!Female:!!65 and 66 years,133,59,26.967113833215254,Medium
+5103368,"Ashland town, Virginia",2024,B01001,B01001_045,Total:!!Female:!!67 to 69 years,131,75,34.803591730666604,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_046,Total:!!Female:!!70 to 74 years,245,143,35.481669871596054,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_047,Total:!!Female:!!75 to 79 years,104,61,35.65583352817395,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_048,Total:!!Female:!!80 to 84 years,153,161,63.96884995132805,Low
+5103368,"Ashland town, Virginia",2024,B01001,B01001_049,Total:!!Female:!!85 years and over,97,75,47.00278883213737,Low
+51036,"Charles City County, Virginia",2024,B01003,B01003_001,Total,6627,NA,NA,NA
+51041,"Chesterfield County, Virginia",2024,B01003,B01003_001,Total,377869,NA,NA,NA
+51075,"Goochland County, Virginia",2024,B01003,B01003_001,Total,26410,NA,NA,NA
+51085,"Hanover County, Virginia",2024,B01003,B01003_001,Total,112879,NA,NA,NA
+51087,"Henrico County, Virginia",2024,B01003,B01003_001,Total,335744,NA,NA,NA
+51127,"New Kent County, Virginia",2024,B01003,B01003_001,Total,25105,NA,NA,NA
+51145,"Powhatan County, Virginia",2024,B01003,B01003_001,Total,31555,NA,NA,NA
+51760,"Richmond city, Virginia",2024,B01003,B01003_001,Total,229359,NA,NA,NA
+51,Virginia,2024,B01003,B01003_001,Total,8705170,NA,NA,NA
+5103368,"Ashland town, Virginia",2024,B01003,B01003_001,Total,7772,37,0.2894030007180323,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_001,Total:,6627,NA,NA,NA
+51036,"Charles City County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,6489,NA,NA,NA
+51036,"Charles City County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,2956,11,0.22621549699544688,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,2687,87,1.968274581091216,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,366,39,6.477652100254123,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,70,31,26.921406860616585,Medium
+51036,"Charles City County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,19,NA,NA
+51036,"Charles City County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,30,21,42.5531914893617,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,380,87,13.917773156294993,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,0,19,NA,NA
+51036,"Charles City County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",380,87,13.917773156294993,High
+51036,"Charles City County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,138,NA,NA,NA
+51036,"Charles City County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,21,20,57.8954986249819,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,14,14,60.790273556231,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,1,3,182.370820668693,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,1,7,425.531914893617,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,4,6,91.1854103343465,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,11,22,121.580547112462,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,86,42,29.688273132112812,Medium
+51036,"Charles City County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,78,42,32.733224222585925,Low
+51036,"Charles City County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",8,18,136.77811550151975,Low
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_001,Total:,377869,NA,NA,NA
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,333073,NA,NA,NA
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,213256,798,0.22747607709922507,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,86294,1290,0.9087474550668412,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,121,54,27.129543570549373,Medium
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,13612,663,2.9609132653380223,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,157,96,37.17112268406482,Low
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,3044,600,11.982314104381931,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,16589,1472,5.394133623170296,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,2420,627,15.750207239568942,Medium
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",14169,1452,6.2296193947101,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,44796,NA,NA,NA
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,5506,954,10.532858876252158,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,2079,633,18.50901546950179,Medium
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,1155,485,25.526651666469295,Medium
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,75,83,67.27456940222896,Low
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,79,77,59.25127928898465,Low
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,21204,1559,4.469535770334094,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,14698,1595,6.59684898096261,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,12455,1496,7.301665936581419,High
+51041,"Chesterfield County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",2243,571,15.475366117078867,Medium
+51075,"Goochland County, Virginia",2024,B03002,B03002_001,Total:,26410,NA,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,25406,NA,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,20485,165,0.4896458450953437,High
+51075,"Goochland County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,3610,170,2.8626998627588005,High
+51075,"Goochland County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,16,22,83.58662613981764,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,501,125,15.16723392121532,Medium
+51075,"Goochland County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,40,43,65.34954407294833,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,754,261,21.042787000233808,Medium
+51075,"Goochland County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,191,162,51.560336733557186,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",563,211,22.782855631198476,Medium
+51075,"Goochland County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,1004,NA,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,218,166,46.28984133180892,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,1,8,486.322188449848,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,437,241,33.52507077128529,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,348,230,40.177479649233135,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,288,233,49.18101992570077,Low
+51075,"Goochland County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",60,59,59.77710233029382,Low
+51085,"Hanover County, Virginia",2024,B03002,B03002_001,Total:,112879,NA,NA,NA
+51085,"Hanover County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,108405,NA,NA,NA
+51085,"Hanover County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,91069,562,0.3751455900317542,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,9355,431,2.8007063498381144,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,99,56,34.38641736514077,Low
+51085,"Hanover County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,2414,249,6.270413469553239,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,93,42,27.453671928620455,Medium
+51085,"Hanover County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,657,298,27.573061673906906,Medium
+51085,"Hanover County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,4718,580,7.473157834381938,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,881,420,28.98060714371966,Medium
+51085,"Hanover County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",3837,474,7.509666318908911,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,4474,NA,NA,NA
+51085,"Hanover County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,913,292,19.44223425894792,Medium
+51085,"Hanover County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,142,142,60.790273556231,Low
+51085,"Hanover County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,68,84,75.09386733416771,Low
+51085,"Hanover County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,0,31,NA,NA
+51085,"Hanover County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,31,NA,NA
+51085,"Hanover County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,1294,341,16.019693417832126,Medium
+51085,"Hanover County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,2057,317,9.368262866954414,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,1821,354,11.817549060354626,High
+51085,"Hanover County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",236,128,32.97099582710834,Low
+51087,"Henrico County, Virginia",2024,B03002,B03002_001,Total:,335744,NA,NA,NA
+51087,"Henrico County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,312551,NA,NA,NA
+51087,"Henrico County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,166119,669,0.24481662548605843,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,97727,1108,0.6892222528093971,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,298,112,22.847351135227758,Medium
+51087,"Henrico County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,31599,770,1.481328859720177,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,169,49,17.625582273700115,Medium
+51087,"Henrico County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,1883,544,17.562351999251018,Medium
+51087,"Henrico County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,14756,1413,5.821134218958688,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,2941,693,14.324263711141816,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",11815,1217,6.261681161060781,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,23193,NA,NA,NA
+51087,"Henrico County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,3459,740,13.00514669893349,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,857,305,21.634811475671476,Medium
+51087,"Henrico County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,447,228,31.007119397809102,Low
+51087,"Henrico County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,14,29,125.92270950933565,Low
+51087,"Henrico County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,31,NA,NA
+51087,"Henrico County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,9845,1168,7.212091367565039,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,8571,975,6.915239378990225,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,7298,920,7.663339500100373,High
+51087,"Henrico County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",1273,418,19.96098534682212,Medium
+51127,"New Kent County, Virginia",2024,B03002,B03002_001,Total:,25105,NA,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,24141,NA,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,18996,170,0.5440275060307049,High
+51127,"New Kent County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,3308,311,5.715167798061621,High
+51127,"New Kent County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,160,84,31.914893617021278,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,336,59,10.67448255898104,High
+51127,"New Kent County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,37,40,65.71921465538486,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,20,27,82.06686930091186,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,1284,384,18.180268727097122,Medium
+51127,"New Kent County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,249,168,41.01512432709561,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",1035,316,18.56012216789275,Medium
+51127,"New Kent County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,964,NA,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,291,259,54.10543247788257,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,43,74,104.61581960839754,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,476,291,37.16380169088912,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,154,118,46.5795602573718,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,107,115,65.33534073800529,Low
+51127,"New Kent County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",47,78,100.88598590183018,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_001,Total:,31555,NA,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,30636,NA,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,26740,219,0.4978709763954595,High
+51145,"Powhatan County, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,2262,342,9.191102367918216,High
+51145,"Powhatan County, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,40,54,82.06686930091186,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,90,68,45.93042890915232,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,204,187,55.72441742654508,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,1300,396,18.517652560205754,Medium
+51145,"Powhatan County, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,331,202,37.09859594670291,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",969,347,21.769065969052797,Medium
+51145,"Powhatan County, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,919,NA,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,92,83,54.8433989692084,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,44,43,59.40867642995302,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,125,128,62.24924012158054,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,181,189,63.47713647584342,Low
+51145,"Powhatan County, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,477,212,27.017899358324886,Medium
+51145,"Powhatan County, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,456,214,28.52876873033648,Medium
+51145,"Powhatan County, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",21,45,130.2648719062093,Low
+51760,"Richmond city, Virginia",2024,B03002,B03002_001,Total:,229359,NA,NA,NA
+51760,"Richmond city, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,204820,NA,NA,NA
+51760,"Richmond city, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,94895,444,0.28442891046911395,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,93026,1067,0.6972590661159083,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,244,91,22.671782350889433,Medium
+51760,"Richmond city, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,4775,314,3.9975174652683845,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,114,25,13.331200341278729,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,1157,425,22.330048626964718,Medium
+51760,"Richmond city, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,10609,1077,6.171281423325552,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,1547,370,14.53936730174885,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",9062,1036,6.949759810666004,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,24539,NA,NA,NA
+51760,"Richmond city, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,3193,1053,20.047653634422563,Medium
+51760,"Richmond city, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,967,452,28.41489518864158,Medium
+51760,"Richmond city, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,325,264,49.38040682721533,Low
+51760,"Richmond city, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,82,73,54.11817036103491,Low
+51760,"Richmond city, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,18,28,94.56264775413712,Low
+51760,"Richmond city, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,12015,1286,6.506557785544159,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,7939,1220,9.341747542335536,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,6189,1122,11.020631270009886,High
+51760,"Richmond city, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",1750,667,23.16977854971776,Medium
+51,Virginia,2024,B03002,B03002_001,Total:,8705170,NA,NA,NA
+51,Virginia,2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,7746081,188,0.0014754004545745685,High
+51,Virginia,2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,5079778,4083,0.04886171933696535,High
+51,Virginia,2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,1589523,5578,0.21332698293554517,High
+51,Virginia,2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,9936,690,4.221546774738264,High
+51,Virginia,2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,599863,3420,0.34658369588107624,High
+51,Virginia,2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,4960,554,6.789881360917738,High
+51,Virginia,2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,54752,3178,3.528482783491053,High
+51,Virginia,2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,407269,6881,1.0270800683097057,High
+51,Virginia,2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,67286,3285,2.9678692243887115,High
+51,Virginia,2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",339983,6233,1.114484474447216,High
+51,Virginia,2024,B03002,B03002_012,Total:!!Hispanic or Latino:,959089,187,0.011852686408680735,High
+51,Virginia,2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,160251,5822,2.208541429659577,High
+51,Virginia,2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,26733,2063,4.691218132888361,High
+51,Virginia,2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,21050,2374,6.855872181591089,High
+51,Virginia,2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,4642,812,10.633714374765095,High
+51,Virginia,2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,750,284,23.019250253292807,Medium
+51,Virginia,2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,329321,8086,1.4926170878130574,High
+51,Virginia,2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,416342,7780,1.1359611287534699,High
+51,Virginia,2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,359415,7783,1.3163910774123113,High
+51,Virginia,2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",56927,3450,3.6841295653907107,High
+5103368,"Ashland town, Virginia",2024,B03002,B03002_001,Total:,7772,37,0.2894030007180323,High
+5103368,"Ashland town, Virginia",2024,B03002,B03002_002,Total:!!Not Hispanic or Latino:,6890,266,2.3469104159589906,High
+5103368,"Ashland town, Virginia",2024,B03002,B03002_003,Total:!!Not Hispanic or Latino:!!White alone,4988,332,4.046185008153307,High
+5103368,"Ashland town, Virginia",2024,B03002,B03002_004,Total:!!Not Hispanic or Latino:!!Black or African American alone,1494,239,9.724816184698264,High
+5103368,"Ashland town, Virginia",2024,B03002,B03002_005,Total:!!Not Hispanic or Latino:!!American Indian and Alaska Native alone,4,9,136.77811550151975,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_006,Total:!!Not Hispanic or Latino:!!Asian alone,90,89,60.114826072272876,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_007,Total:!!Not Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B03002,B03002_008,Total:!!Not Hispanic or Latino:!!Some other race alone,19,30,95.98464245720685,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_009,Total:!!Not Hispanic or Latino:!!Two or more races:,295,123,25.34645304208954,Medium
+5103368,"Ashland town, Virginia",2024,B03002,B03002_010,Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races including Some other race,4,10,151.9756838905775,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_011,"Total:!!Not Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",291,123,25.69485789490177,Medium
+5103368,"Ashland town, Virginia",2024,B03002,B03002_012,Total:!!Hispanic or Latino:,882,269,18.54034420252397,Medium
+5103368,"Ashland town, Virginia",2024,B03002,B03002_013,Total:!!Hispanic or Latino:!!White alone,28,32,69.4745983499783,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_014,Total:!!Hispanic or Latino:!!Black or African American alone,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B03002,B03002_015,Total:!!Hispanic or Latino:!!American Indian and Alaska Native alone,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B03002,B03002_016,Total:!!Hispanic or Latino:!!Asian alone,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B03002,B03002_017,Total:!!Hispanic or Latino:!!Native Hawaiian and Other Pacific Islander alone,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B03002,B03002_018,Total:!!Hispanic or Latino:!!Some other race alone,518,272,31.92076140404408,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_019,Total:!!Hispanic or Latino:!!Two or more races:,336,221,39.98407873787813,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_020,Total:!!Hispanic or Latino:!!Two or more races:!!Two races including Some other race,319,223,42.49602195310192,Low
+5103368,"Ashland town, Virginia",2024,B03002,B03002_021,"Total:!!Hispanic or Latino:!!Two or more races:!!Two races excluding Some other race, and three or more races",17,23,82.24566422313606,Low
+51036,"Charles City County, Virginia",2024,B11001,B11001_001,Total:,2911,215,4.489834700992672,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,1828,365,12.138101667409364,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,1274,455,21.710811984368213,Medium
+51036,"Charles City County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,554,119,13.057838543666946,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",147,46,19.022806691065483,Medium
+51036,"Charles City County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",407,100,14.936185148951106,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,1083,190,10.664960273022983,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,930,204,13.334640651044221,High
+51036,"Charles City County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,153,50,19.866102469356537,Medium
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_001,Total:,140155,557,0.24159096978930944,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,101180,1391,0.8357310784415628,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,76837,1503,1.189111771087044,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,24343,1379,3.4436917074330426,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",5860,727,7.541728477027293,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",18483,1139,3.746151684279993,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,38975,1337,2.085352039632607,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,32037,1176,2.2314624247628574,High
+51041,"Chesterfield County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,6938,673,5.896779201980897,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_001,Total:,10342,258,1.5165239390357377,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,7671,441,3.494786942810308,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,6816,426,3.7993920972644375,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,855,209,14.859844647078688,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",252,104,25.088049404158824,Medium
+51075,"Goochland County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",603,163,16.432528341070736,Medium
+51075,"Goochland County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,2671,390,8.876153757742452,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,2160,371,10.441292356185974,High
+51075,"Goochland County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,511,181,21.53236695435971,Medium
+51085,"Hanover County, Virginia",2024,B11001,B11001_001,Total:,42688,384,0.5468390424848366,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,30755,693,1.369782460558221,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,24893,789,1.9267876847252747,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,5862,537,5.568812163032421,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",1669,313,11.400452740024146,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",4193,405,5.871705411465193,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,11933,654,3.331671742711395,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,9854,713,4.3985655617609805,High
+51085,"Hanover County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,2079,372,10.877336105299632,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_001,Total:,137365,837,0.3704106502134121,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,86590,1392,0.9772498070247552,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,61167,1526,1.5166013936731981,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,25423,1063,2.5417952558814285,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",6214,620,6.065331445906537,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",19209,974,3.082395046268364,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,50775,1477,1.7683354808971579,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,41982,1478,2.1401558838575916,High
+51087,"Henrico County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,8793,819,5.662144210457544,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_001,Total:,9263,232,1.5225459856467225,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,7422,355,2.907645797960389,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,6266,440,4.268707367497868,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,1156,289,15.19756838905775,Medium
+51127,"New Kent County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",255,136,32.42147922998987,Low
+51127,"New Kent County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",901,254,17.137324620735487,Medium
+51127,"New Kent County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,1841,319,10.533458590134542,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,1497,253,10.273840487459216,High
+51127,"New Kent County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,344,129,22.79635258358663,Medium
+51145,"Powhatan County, Virginia",2024,B11001,B11001_001,Total:,11325,245,1.3151096707529002,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_002,Total:!!Family households:,8657,373,2.619241311825594,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,7235,427,3.5877604434707173,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,1422,284,12.140954774943463,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",650,232,21.697451484685526,Medium
+51145,"Powhatan County, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",772,191,15.040080633730726,Medium
+51145,"Powhatan County, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,2668,366,8.339295397893759,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,2039,322,9.600033391420492,High
+51145,"Powhatan County, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,629,202,19.522472588805503,Medium
+51760,"Richmond city, Virginia",2024,B11001,B11001_001,Total:,104321,766,0.4463660197282709,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_002,Total:!!Family households:,45734,1293,1.7186737155771785,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,25638,1170,2.774187536500128,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,20096,983,2.973568814976865,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",4840,621,7.799743776532944,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",15256,857,3.414870505878996,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,58587,1381,1.4329350842534183,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,44982,1268,1.7136202674247678,High
+51760,"Richmond city, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,13605,730,3.2618081364240084,High
+51,Virginia,2024,B11001,B11001_001,Total:,3365732,7402,0.13369145400264248,High
+51,Virginia,2024,B11001,B11001_002,Total:!!Family households:,2181475,9035,0.25177465777996405,High
+51,Virginia,2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,1638116,10855,0.40282765045508834,High
+51,Virginia,2024,B11001,B11001_004,Total:!!Family households:!!Other family:,543359,6376,0.7133382978740187,High
+51,Virginia,2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",154457,3417,1.3448426729875715,High
+51,Virginia,2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",388902,4933,0.7710899389894821,High
+51,Virginia,2024,B11001,B11001_007,Total:!!Nonfamily households:,1184257,6750,0.34649096142523056,High
+51,Virginia,2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,958467,6997,0.44378110469421317,High
+51,Virginia,2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,225790,3741,1.0072032126040134,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_001,Total:,2809,215,4.652868926518215,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_002,Total:!!Family households:,1586,154,5.90271256472861,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_003,Total:!!Family households:!!Married-couple family,960,168,10.638297872340425,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_004,Total:!!Family households:!!Other family:,626,160,15.537450110218787,Medium
+5103368,"Ashland town, Virginia",2024,B11001,B11001_005,"Total:!!Family households:!!Other family:!!Male householder, no spouse present",204,135,40.228857500446985,Low
+5103368,"Ashland town, Virginia",2024,B11001,B11001_006,"Total:!!Family households:!!Other family:!!Female householder, no spouse present",422,126,18.150650398305938,Medium
+5103368,"Ashland town, Virginia",2024,B11001,B11001_007,Total:!!Nonfamily households:,1223,238,11.829995998677823,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_008,Total:!!Nonfamily households:!!Householder living alone,1010,230,13.843329621715972,High
+5103368,"Ashland town, Virginia",2024,B11001,B11001_009,Total:!!Nonfamily households:!!Householder not living alone,213,82,23.402828317422262,Medium
+51036,"Charles City County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.28,0.15,3.9993601023836187,High
+51036,"Charles City County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.25,0.16,4.322863897331983,High
+51036,"Charles City County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.42,0.29,7.284784847647517,High
+51041,"Chesterfield County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.66,0.01,0.22853486299334963,High
+51041,"Chesterfield County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.72,0.02,0.446987305560522,High
+51041,"Chesterfield County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.48,0.07,1.7158544955387784,High
+51075,"Goochland County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.46,0.06,1.4826895989324633,High
+51075,"Goochland County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.53,0.08,1.9222220887345771,High
+51075,"Goochland County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.06,0.23,6.787263552394723,High
+51085,"Hanover County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.59,0.02,0.46942296182417764,High
+51085,"Hanover County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.64,0.04,0.9210647508519848,High
+51085,"Hanover County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.34,0.13,3.3772374197906116,High
+51087,"Henrico County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.42,0.01,0.2511994775050868,High
+51087,"Henrico County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.51,0.03,0.7265769747756693,High
+51087,"Henrico County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.25,0.05,1.3508949679162445,High
+51127,"New Kent County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.63,0.06,1.386850347290441,High
+51127,"New Kent County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.59,0.07,1.642980366384622,High
+51127,"New Kent County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,3.09,0.45,8.85295245964529,High
+51145,"Powhatan County, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.67,0.06,1.366073563061371,High
+51145,"Powhatan County, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.72,0.06,1.340961916681566,High
+51145,"Powhatan County, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,1.96,0.34,10.545251535264562,High
+51760,"Richmond city, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.1,0.02,0.5789549862498191,High
+51760,"Richmond city, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.25,0.04,1.0807159743329957,High
+51760,"Richmond city, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,1.98,0.03,0.9210647508519848,High
+51,Virginia,2024,B25010,B25010_001,Average household size --!!Total:,2.52,0.01,0.24123124427075796,High
+51,Virginia,2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.62,0.01,0.2320239448711107,High
+51,Virginia,2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.29,0.01,0.26545970985253714,High
+5103368,"Ashland town, Virginia",2024,B25010,B25010_001,Average household size --!!Total:,2.22,0.16,4.381280977025657,High
+5103368,"Ashland town, Virginia",2024,B25010,B25010_002,Average household size --!!Total:!!Owner occupied,2.18,0.18,5.019380385376872,High
+5103368,"Ashland town, Virginia",2024,B25010,B25010_003,Average household size --!!Total:!!Renter occupied,2.27,0.29,7.766158295729951,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_001,Total:,2911,215,4.489834700992672,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,1332,100,4.563834351068393,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,446,105,14.311611487453488,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,886,161,11.046539551414437,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,832,164,11.982698152910919,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,54,25,28.14364516492176,Medium
+51036,"Charles City County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,1579,142,5.466889705500192,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,484,131,16.453565776583183,Medium
+51036,"Charles City County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,1095,240,13.32389557396844,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,996,220,13.427570464227731,High
+51036,"Charles City County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,99,43,26.40385619109023,Medium
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_001,Total:,140155,557,0.24159096978930944,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,42926,583,0.8256238522872541,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,14509,765,3.205221536323435,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,28417,696,1.4888985605495575,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,26954,755,1.7027771957763005,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,1463,312,12.96415950071365,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,97229,665,0.41577648556391217,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,17528,998,3.461244466517489,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,79701,1060,0.8084928667093871,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,74226,1223,1.0016234817890026,High
+51041,"Chesterfield County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,5475,631,7.00614842264507,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_001,Total:,10342,258,1.5165239390357377,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,4102,165,2.4452450357820856,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,1076,228,12.881210381803596,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,3026,203,4.078131372080269,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,2904,215,4.500657305299472,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,122,64,31.889979570481835,Low
+51075,"Goochland County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,6240,210,2.0458265139116203,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,1084,249,13.96381744972465,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,5156,309,3.6431719412093444,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,4767,327,4.1700061784953935,High
+51075,"Goochland County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,389,172,26.878989850055866,Medium
+51085,"Hanover County, Virginia",2024,B11007,B11007_001,Total:,42688,384,0.5468390424848366,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,15091,377,1.5186490710157767,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,5053,535,6.436334128751947,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,10038,373,2.2588934086943775,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,9617,384,2.427312576228835,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,421,186,26.857460526030803,Medium
+51085,"Hanover County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,27597,474,1.0441203632878027,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,4801,550,6.964101323875662,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,22796,560,1.4933564305794595,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,21138,553,1.5903596024503617,High
+51085,"Hanover County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,1658,328,12.026061354911803,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_001,Total:,137365,837,0.3704106502134121,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,42098,682,0.9848203374352592,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,17600,885,3.0567836418900245,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,24498,846,2.0992967355935765,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,23059,859,2.2645754362636037,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,1439,284,11.997524454461157,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,95267,847,0.5404742639332366,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,24382,1126,2.8073926677186494,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,70885,1158,0.9930893246542357,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,63531,1241,1.187463277506771,High
+51087,"Henrico County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,7354,699,5.7781345139795315,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_001,Total:,9263,232,1.5225459856467225,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,3076,188,3.71540033438603,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,768,184,14.564336372847011,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,2308,195,5.136093303061111,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,2264,196,5.262762198330952,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,44,49,67.69825918762089,Low
+51127,"New Kent County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,6187,253,2.4858476175410447,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,729,193,16.093995605421927,Medium
+51127,"New Kent County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,5458,296,3.2967975398762146,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,5158,325,3.8303293729691887,High
+51127,"New Kent County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,300,120,24.316109422492403,Medium
+51145,"Powhatan County, Virginia",2024,B11007,B11007_001,Total:,11325,245,1.3151096707529002,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,4401,173,2.389619933021578,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,1007,206,12.435746129675856,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,3394,188,3.367286808653927,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,3140,196,3.794552107331617,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,254,132,31.59179570638776,Low
+51145,"Powhatan County, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,6924,241,2.11589484792774,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,1032,275,16.19895855422822,Medium
+51145,"Powhatan County, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,5892,321,3.311893722259021,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,5517,324,3.5700650049336313,High
+51145,"Powhatan County, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,375,166,26.90982776089159,Medium
+51760,"Richmond city, Virginia",2024,B11007,B11007_001,Total:,104321,766,0.4463660197282709,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,25496,561,1.3375958371919359,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,13126,788,3.649454179667075,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,12370,669,3.2876873895811265,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,11609,677,3.545095632489309,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,761,211,16.855121840163918,Medium
+51760,"Richmond city, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,78825,811,0.6254476606927161,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,31856,1186,2.2632240217758026,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,46969,1112,1.4392212777476394,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,34125,1082,1.9274747542224746,High
+51760,"Richmond city, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,12844,713,3.3746079917154086,High
+51,Virginia,2024,B11007,B11007_001,Total:,3365732,7402,0.13369145400264248,High
+51,Virginia,2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,1038421,4368,0.2557073815857124,High
+51,Virginia,2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,386204,5655,0.890122828765332,High
+51,Virginia,2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,652217,3898,0.3633154093226464,High
+51,Virginia,2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,618944,3777,0.3709622570408381,High
+51,Virginia,2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,33273,1473,2.6911932482291427,High
+51,Virginia,2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,2327311,5471,0.1429046597666319,High
+51,Virginia,2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,572263,6022,0.6397041698583048,High
+51,Virginia,2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,1755048,7809,0.27048334074088454,High
+51,Virginia,2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,1562531,8392,0.32649078686047867,High
+51,Virginia,2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,192517,3522,1.112126947049069,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_001,Total:,2809,215,4.652868926518215,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_002,Total:!!Households with one or more people 65 years and over:,1010,207,12.458996659544376,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_003,Total:!!Households with one or more people 65 years and over:!!1-person household,503,174,21.02884214470019,Medium
+5103368,"Ashland town, Virginia",2024,B11007,B11007_004,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:,507,142,17.026072672553852,Medium
+5103368,"Ashland town, Virginia",2024,B11007,B11007_005,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Family households,493,141,17.38626485076789,Medium
+5103368,"Ashland town, Virginia",2024,B11007,B11007_006,Total:!!Households with one or more people 65 years and over:!!2-or-more-person household:!!Nonfamily households,14,18,78.15892314372557,Low
+5103368,"Ashland town, Virginia",2024,B11007,B11007_007,Total:!!Households with no people 65 years and over:,1799,195,6.589273676189575,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_008,Total:!!Households with no people 65 years and over:!!1-person households,507,167,20.023620678285166,Medium
+5103368,"Ashland town, Virginia",2024,B11007,B11007_009,Total:!!Households with no people 65 years and over:!!2-or-more-person household:,1292,165,7.763463728156436,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_010,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Family households,1093,169,9.399411007322085,High
+5103368,"Ashland town, Virginia",2024,B11007,B11007_011,Total:!!Households with no people 65 years and over:!!2-or-more-person household:!!Nonfamily households,199,76,23.21638588077164,Medium
