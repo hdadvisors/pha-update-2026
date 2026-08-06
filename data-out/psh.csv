@@ -1,0 +1,133 @@
+year,geoid,name,program_label,total_units,pct_occupied,number_reported
+2020,51036,Charles City County,Summary of All HUD Programs,1,NA,-4
+2020,51036,Charles City County,Housing Choice Vouchers,1,NA,-4
+2020,51041,Chesterfield County,Summary of All HUD Programs,1484,92,1398
+2020,51041,Chesterfield County,Housing Choice Vouchers,1166,91,1096
+2020,51041,Chesterfield County,Project Based Section 8,209,96,205
+2020,51041,Chesterfield County,202/PRAC,82,97,79
+2020,51041,Chesterfield County,811/PRAC,27,88,18
+2020,51075,Goochland County,Summary of All HUD Programs,23,90,21
+2020,51075,Goochland County,Housing Choice Vouchers,23,90,21
+2020,51085,Hanover County,Summary of All HUD Programs,485,93,457
+2020,51085,Hanover County,Housing Choice Vouchers,317,91,293
+2020,51085,Hanover County,Project Based Section 8,100,95,96
+2020,51085,Hanover County,202/PRAC,68,100,68
+2020,51087,Henrico County,Summary of All HUD Programs,4169,92,3852
+2020,51087,Henrico County,Housing Choice Vouchers,1887,91,1775
+2020,51087,Henrico County,Project Based Section 8,2280,94,2075
+2020,51087,Henrico County,202/PRAC,2,NA,-4
+2020,51127,New Kent County,Summary of All HUD Programs,4,NA,-4
+2020,51127,New Kent County,Housing Choice Vouchers,3,NA,-4
+2020,51127,New Kent County,Project Based Section 8,1,NA,-4
+2020,51145,Powhatan County,Summary of All HUD Programs,5,NA,-4
+2020,51145,Powhatan County,Housing Choice Vouchers,4,NA,-4
+2020,51145,Powhatan County,Project Based Section 8,1,NA,-4
+2020,51760,Richmond city,Summary of All HUD Programs,9506,93,8935
+2020,51760,Richmond city,Public Housing,3706,92,3422
+2020,51760,Richmond city,Housing Choice Vouchers,2509,91,2379
+2020,51760,Richmond city,Project Based Section 8,3178,95,3029
+2020,51760,Richmond city,202/PRAC,72,97,71
+2020,51760,Richmond city,811/PRAC,41,97,34
+2021,51036,Charles City County,Summary of All HUD Programs,1,NA,-4
+2021,51036,Charles City County,Housing Choice Vouchers,1,NA,-4
+2021,51041,Chesterfield County,Summary of All HUD Programs,1478,90,1382
+2021,51041,Chesterfield County,Housing Choice Vouchers,1160,89,1096
+2021,51041,Chesterfield County,Project Based Section 8,211,94,176
+2021,51041,Chesterfield County,202/PRAC,82,96,84
+2021,51041,Chesterfield County,811/PRAC,25,88,26
+2021,51075,Goochland County,Summary of All HUD Programs,21,88,19
+2021,51075,Goochland County,Housing Choice Vouchers,21,88,19
+2021,51085,Hanover County,Summary of All HUD Programs,477,92,449
+2021,51085,Hanover County,Housing Choice Vouchers,310,88,288
+2021,51085,Hanover County,Project Based Section 8,100,96,94
+2021,51085,Hanover County,202/PRAC,67,100,67
+2021,51087,Henrico County,Summary of All HUD Programs,4160,90,3974
+2021,51087,Henrico County,Housing Choice Vouchers,1907,89,1823
+2021,51087,Henrico County,Project Based Section 8,2250,92,2149
+2021,51087,Henrico County,202/PRAC,2,NA,-4
+2021,51127,New Kent County,Summary of All HUD Programs,4,NA,-4
+2021,51127,New Kent County,Housing Choice Vouchers,3,NA,-4
+2021,51127,New Kent County,Project Based Section 8,1,NA,-4
+2021,51145,Powhatan County,Summary of All HUD Programs,4,NA,-4
+2021,51145,Powhatan County,Housing Choice Vouchers,4,NA,-4
+2021,51760,Richmond city,Summary of All HUD Programs,9577,91,8938
+2021,51760,Richmond city,Public Housing,3499,89,3126
+2021,51760,Richmond city,Housing Choice Vouchers,2788,89,2705
+2021,51760,Richmond city,Project Based Section 8,3179,94,3005
+2021,51760,Richmond city,202/PRAC,72,97,68
+2021,51760,Richmond city,811/PRAC,38,95,34
+2022,51041,Chesterfield County,Summary of All HUD Programs,1429,88,1330
+2022,51041,Chesterfield County,Housing Choice Vouchers,1113,88,1040
+2022,51041,Chesterfield County,Project Based Section 8,210,81,183
+2022,51041,Chesterfield County,202/PRAC,82,96,82
+2022,51041,Chesterfield County,811/PRAC,25,94,25
+2022,51075,Goochland County,Summary of All HUD Programs,20,88,18
+2022,51075,Goochland County,Housing Choice Vouchers,20,88,18
+2022,51085,Hanover County,Summary of All HUD Programs,460,91,430
+2022,51085,Hanover County,Housing Choice Vouchers,293,88,271
+2022,51085,Hanover County,Project Based Section 8,100,96,94
+2022,51085,Hanover County,202/PRAC,67,99,65
+2022,51087,Henrico County,Summary of All HUD Programs,4113,91,3869
+2022,51087,Henrico County,Housing Choice Vouchers,1860,89,1761
+2022,51087,Henrico County,Project Based Section 8,2250,93,2106
+2022,51087,Henrico County,202/PRAC,2,NA,-4
+2022,51127,New Kent County,Summary of All HUD Programs,3,NA,-4
+2022,51127,New Kent County,Housing Choice Vouchers,3,NA,-4
+2022,51145,Powhatan County,Summary of All HUD Programs,8,NA,-4
+2022,51145,Powhatan County,Housing Choice Vouchers,8,NA,-4
+2022,51760,Richmond city,Summary of All HUD Programs,9801,90,8989
+2022,51760,Richmond city,Public Housing,3497,87,3038
+2022,51760,Richmond city,Housing Choice Vouchers,3032,89,2911
+2022,51760,Richmond city,Project Based Section 8,3161,93,2937
+2022,51760,Richmond city,202/PRAC,72,95,70
+2022,51760,Richmond city,811/PRAC,38,95,33
+2023,51041,Chesterfield County,Summary of All HUD Programs,1455,87,1310
+2023,51041,Chesterfield County,Housing Choice Vouchers,1139,87,1027
+2023,51041,Chesterfield County,Project Based Section 8,210,85,179
+2023,51041,Chesterfield County,202/PRAC,82,97,80
+2023,51041,Chesterfield County,811/PRAC,24,96,24
+2023,51075,Goochland County,Summary of All HUD Programs,18,87,16
+2023,51075,Goochland County,Housing Choice Vouchers,18,87,16
+2023,51085,Hanover County,Summary of All HUD Programs,464,91,432
+2023,51085,Hanover County,Housing Choice Vouchers,297,87,268
+2023,51085,Hanover County,Project Based Section 8,100,97,97
+2023,51085,Hanover County,202/PRAC,67,99,67
+2023,51087,Henrico County,Summary of All HUD Programs,4096,89,3698
+2023,51087,Henrico County,Housing Choice Vouchers,1840,85,1642
+2023,51087,Henrico County,Project Based Section 8,2254,92,2054
+2023,51087,Henrico County,202/PRAC,2,NA,-4
+2023,51127,New Kent County,Summary of All HUD Programs,3,NA,-4
+2023,51127,New Kent County,Housing Choice Vouchers,3,NA,-4
+2023,51145,Powhatan County,Summary of All HUD Programs,7,NA,-4
+2023,51145,Powhatan County,Housing Choice Vouchers,7,NA,-4
+2023,51760,Richmond city,Summary of All HUD Programs,9899,88,8817
+2023,51760,Richmond city,Public Housing,3234,87,2788
+2023,51760,Richmond city,Housing Choice Vouchers,3338,84,2956
+2023,51760,Richmond city,Project Based Section 8,3213,92,2961
+2023,51760,Richmond city,202/PRAC,71,97,72
+2023,51760,Richmond city,811/PRAC,44,93,40
+2024,51041,Chesterfield County,Summary of All HUD Programs,1424,88,1258
+2024,51041,Chesterfield County,Housing Choice Vouchers,1116,88,999
+2024,51041,Chesterfield County,Project Based Section 8,201,80,153
+2024,51041,Chesterfield County,202/PRAC,82,98,81
+2024,51041,Chesterfield County,811/PRAC,25,96,25
+2024,51075,Goochland County,Summary of All HUD Programs,18,88,16
+2024,51075,Goochland County,Housing Choice Vouchers,18,88,16
+2024,51085,Hanover County,Summary of All HUD Programs,449,92,416
+2024,51085,Hanover County,Housing Choice Vouchers,282,88,248
+2024,51085,Hanover County,Project Based Section 8,100,98,100
+2024,51085,Hanover County,202/PRAC,67,100,68
+2024,51087,Henrico County,Summary of All HUD Programs,4094,88,3707
+2024,51087,Henrico County,Housing Choice Vouchers,1843,87,1652
+2024,51087,Henrico County,Project Based Section 8,2249,89,2053
+2024,51087,Henrico County,202/PRAC,2,NA,-4
+2024,51127,New Kent County,Summary of All HUD Programs,3,NA,-4
+2024,51127,New Kent County,Housing Choice Vouchers,3,NA,-4
+2024,51145,Powhatan County,Summary of All HUD Programs,6,NA,-4
+2024,51145,Powhatan County,Housing Choice Vouchers,6,NA,-4
+2024,51760,Richmond city,Summary of All HUD Programs,10107,88,9011
+2024,51760,Richmond city,Public Housing,3226,86,2744
+2024,51760,Richmond city,Housing Choice Vouchers,3554,86,3233
+2024,51760,Richmond city,Project Based Section 8,3213,91,2923
+2024,51760,Richmond city,202/PRAC,71,99,68
+2024,51760,Richmond city,811/PRAC,44,92,43
