@@ -1,0 +1,154 @@
+geoid,name,year,table,variable,label,value
+51036,"Charles City County, Virginia",2000,P001,P001001,Total population,6926
+51041,"Chesterfield County, Virginia",2000,P001,P001001,Total population,259903
+51075,"Goochland County, Virginia",2000,P001,P001001,Total population,16863
+51085,"Hanover County, Virginia",2000,P001,P001001,Total population,86320
+51087,"Henrico County, Virginia",2000,P001,P001001,Total population,262300
+51127,"New Kent County, Virginia",2000,P001,P001001,Total population,13462
+51145,"Powhatan County, Virginia",2000,P001,P001001,Total population,22377
+51760,"Richmond city, Virginia",2000,P001,P001001,Total population,197790
+51036,"Charles City County, Virginia",2000,H001,H001001,Total housing units,2895
+51041,"Chesterfield County, Virginia",2000,H001,H001001,Total housing units,97707
+51075,"Goochland County, Virginia",2000,H001,H001001,Total housing units,6555
+51085,"Hanover County, Virginia",2000,H001,H001001,Total housing units,32196
+51087,"Henrico County, Virginia",2000,H001,H001001,Total housing units,112570
+51127,"New Kent County, Virginia",2000,H001,H001001,Total housing units,5203
+51145,"Powhatan County, Virginia",2000,H001,H001001,Total housing units,7509
+51760,"Richmond city, Virginia",2000,H001,H001001,Total housing units,92282
+51036,"Charles City County, Virginia",2000,H004,H004001,Total,2670
+51041,"Chesterfield County, Virginia",2000,H004,H004001,Total,93772
+51075,"Goochland County, Virginia",2000,H004,H004001,Total,6158
+51085,"Hanover County, Virginia",2000,H004,H004001,Total,31121
+51087,"Henrico County, Virginia",2000,H004,H004001,Total,108121
+51127,"New Kent County, Virginia",2000,H004,H004001,Total,4925
+51145,"Powhatan County, Virginia",2000,H004,H004001,Total,7258
+51760,"Richmond city, Virginia",2000,H004,H004001,Total,84549
+51036,"Charles City County, Virginia",2000,H004,H004002,Owner occupied,2268
+51041,"Chesterfield County, Virginia",2000,H004,H004002,Owner occupied,75874
+51075,"Goochland County, Virginia",2000,H004,H004002,Owner occupied,5334
+51085,"Hanover County, Virginia",2000,H004,H004002,Owner occupied,26233
+51087,"Henrico County, Virginia",2000,H004,H004002,Owner occupied,71089
+51127,"New Kent County, Virginia",2000,H004,H004002,Owner occupied,4369
+51145,"Powhatan County, Virginia",2000,H004,H004002,Owner occupied,6448
+51760,"Richmond city, Virginia",2000,H004,H004002,Owner occupied,39008
+51036,"Charles City County, Virginia",2000,H004,H004003,Renter occupied,402
+51041,"Chesterfield County, Virginia",2000,H004,H004003,Renter occupied,17898
+51075,"Goochland County, Virginia",2000,H004,H004003,Renter occupied,824
+51085,"Hanover County, Virginia",2000,H004,H004003,Renter occupied,4888
+51087,"Henrico County, Virginia",2000,H004,H004003,Renter occupied,37032
+51127,"New Kent County, Virginia",2000,H004,H004003,Renter occupied,556
+51145,"Powhatan County, Virginia",2000,H004,H004003,Renter occupied,810
+51760,"Richmond city, Virginia",2000,H004,H004003,Renter occupied,45541
+5103368,"Ashland town, Virginia",2000,P001,P001001,Total population,6619
+5103368,"Ashland town, Virginia",2000,H001,H001001,Total housing units,2445
+5103368,"Ashland town, Virginia",2000,H004,H004001,Total,2282
+5103368,"Ashland town, Virginia",2000,H004,H004002,Owner occupied,1368
+5103368,"Ashland town, Virginia",2000,H004,H004003,Renter occupied,914
+51036,"Charles City County, Virginia",2010,P001,P001001,Total population,7256
+51041,"Chesterfield County, Virginia",2010,P001,P001001,Total population,316236
+51085,"Hanover County, Virginia",2010,P001,P001001,Total population,99863
+51075,"Goochland County, Virginia",2010,P001,P001001,Total population,21717
+51087,"Henrico County, Virginia",2010,P001,P001001,Total population,306935
+51127,"New Kent County, Virginia",2010,P001,P001001,Total population,18429
+51145,"Powhatan County, Virginia",2010,P001,P001001,Total population,28046
+51760,"Richmond city, Virginia",2010,P001,P001001,Total population,204214
+51036,"Charles City County, Virginia",2010,H001,H001001,Total housing units,3229
+51041,"Chesterfield County, Virginia",2010,H001,H001001,Total housing units,122555
+51085,"Hanover County, Virginia",2010,H001,H001001,Total housing units,38360
+51075,"Goochland County, Virginia",2010,H001,H001001,Total housing units,8618
+51087,"Henrico County, Virginia",2010,H001,H001001,Total housing units,132778
+51127,"New Kent County, Virginia",2010,H001,H001001,Total housing units,7295
+51145,"Powhatan County, Virginia",2010,H001,H001001,Total housing units,10043
+51760,"Richmond city, Virginia",2010,H001,H001001,Total housing units,98349
+51036,"Charles City County, Virginia",2010,H004,H004001,Total,2955
+51041,"Chesterfield County, Virginia",2010,H004,H004001,Total,115680
+51085,"Hanover County, Virginia",2010,H004,H004001,Total,36589
+51075,"Goochland County, Virginia",2010,H004,H004001,Total,7998
+51087,"Henrico County, Virginia",2010,H004,H004001,Total,124601
+51127,"New Kent County, Virginia",2010,H004,H004001,Total,6813
+51145,"Powhatan County, Virginia",2010,H004,H004001,Total,9494
+51760,"Richmond city, Virginia",2010,H004,H004001,Total,87151
+51036,"Charles City County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,1531
+51041,"Chesterfield County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,72949
+51085,"Hanover County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,22698
+51075,"Goochland County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,5011
+51087,"Henrico County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,63958
+51127,"New Kent County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,4568
+51145,"Powhatan County, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,6558
+51760,"Richmond city, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,28548
+51036,"Charles City County, Virginia",2010,H004,H004003,Owned free and clear,917
+51041,"Chesterfield County, Virginia",2010,H004,H004003,Owned free and clear,16654
+51085,"Hanover County, Virginia",2010,H004,H004003,Owned free and clear,7473
+51075,"Goochland County, Virginia",2010,H004,H004003,Owned free and clear,2012
+51087,"Henrico County, Virginia",2010,H004,H004003,Owned free and clear,16481
+51127,"New Kent County, Virginia",2010,H004,H004003,Owned free and clear,1453
+51145,"Powhatan County, Virginia",2010,H004,H004003,Owned free and clear,1845
+51760,"Richmond city, Virginia",2010,H004,H004003,Owned free and clear,9048
+51036,"Charles City County, Virginia",2010,H004,H004004,Renter occupied,507
+51041,"Chesterfield County, Virginia",2010,H004,H004004,Renter occupied,26077
+51085,"Hanover County, Virginia",2010,H004,H004004,Renter occupied,6418
+51075,"Goochland County, Virginia",2010,H004,H004004,Renter occupied,975
+51087,"Henrico County, Virginia",2010,H004,H004004,Renter occupied,44162
+51127,"New Kent County, Virginia",2010,H004,H004004,Renter occupied,792
+51145,"Powhatan County, Virginia",2010,H004,H004004,Renter occupied,1091
+51760,"Richmond city, Virginia",2010,H004,H004004,Renter occupied,49555
+5103368,"Ashland town, Virginia",2010,P001,P001001,Total population,7225
+5103368,"Ashland town, Virginia",2010,H001,H001001,Total housing units,2863
+5103368,"Ashland town, Virginia",2010,H004,H004001,Total,2670
+5103368,"Ashland town, Virginia",2010,H004,H004002,Owned with a mortgage or a loan,937
+5103368,"Ashland town, Virginia",2010,H004,H004003,Owned free and clear,518
+5103368,"Ashland town, Virginia",2010,H004,H004004,Renter occupied,1215
+51036,"Charles City County, Virginia",2020,P1,P1_001N,Total population,6773
+51041,"Chesterfield County, Virginia",2020,P1,P1_001N,Total population,364548
+51075,"Goochland County, Virginia",2020,P1,P1_001N,Total population,24727
+51085,"Hanover County, Virginia",2020,P1,P1_001N,Total population,109979
+51087,"Henrico County, Virginia",2020,P1,P1_001N,Total population,334389
+51127,"New Kent County, Virginia",2020,P1,P1_001N,Total population,22945
+51145,"Powhatan County, Virginia",2020,P1,P1_001N,Total population,30333
+51760,"Richmond city, Virginia",2020,P1,P1_001N,Total population,226610
+51036,"Charles City County, Virginia",2020,H1,H1_001N,Total housing units,3245
+51041,"Chesterfield County, Virginia",2020,H1,H1_001N,Total housing units,138691
+51075,"Goochland County, Virginia",2020,H1,H1_001N,Total housing units,10550
+51085,"Hanover County, Virginia",2020,H1,H1_001N,Total housing units,43184
+51087,"Henrico County, Virginia",2020,H1,H1_001N,Total housing units,140739
+51127,"New Kent County, Virginia",2020,H1,H1_001N,Total housing units,9059
+51145,"Powhatan County, Virginia",2020,H1,H1_001N,Total housing units,11591
+51760,"Richmond city, Virginia",2020,H1,H1_001N,Total housing units,111963
+5103368,"Ashland town, Virginia",2020,P1,P1_001N,Total population,7565
+5103368,"Ashland town, Virginia",2020,H1,H1_001N,Total housing units,2997
+51760,"Richmond city, Virginia",2020,H4,H4_001N,Total,102359
+51127,"New Kent County, Virginia",2020,H4,H4_001N,Total,8580
+51145,"Powhatan County, Virginia",2020,H4,H4_001N,Total,11055
+51036,"Charles City County, Virginia",2020,H4,H4_001N,Total,2966
+51041,"Chesterfield County, Virginia",2020,H4,H4_001N,Total,133482
+51075,"Goochland County, Virginia",2020,H4,H4_001N,Total,9780
+51085,"Hanover County, Virginia",2020,H4,H4_001N,Total,41417
+51087,"Henrico County, Virginia",2020,H4,H4_001N,Total,134234
+51760,"Richmond city, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,28440
+51127,"New Kent County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,5769
+51145,"Powhatan County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,7330
+51036,"Charles City County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,1437
+51041,"Chesterfield County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,78337
+51075,"Goochland County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,5499
+51085,"Hanover County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,24557
+51087,"Henrico County, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,64257
+51760,"Richmond city, Virginia",2020,H4,H4_003N,Owned free and clear,9806
+51127,"New Kent County, Virginia",2020,H4,H4_003N,Owned free and clear,1846
+51145,"Powhatan County, Virginia",2020,H4,H4_003N,Owned free and clear,2585
+51036,"Charles City County, Virginia",2020,H4,H4_003N,Owned free and clear,981
+51041,"Chesterfield County, Virginia",2020,H4,H4_003N,Owned free and clear,22091
+51075,"Goochland County, Virginia",2020,H4,H4_003N,Owned free and clear,2644
+51085,"Hanover County, Virginia",2020,H4,H4_003N,Owned free and clear,9392
+51087,"Henrico County, Virginia",2020,H4,H4_003N,Owned free and clear,19902
+51760,"Richmond city, Virginia",2020,H4,H4_004N,Renter occupied,64113
+51127,"New Kent County, Virginia",2020,H4,H4_004N,Renter occupied,965
+51145,"Powhatan County, Virginia",2020,H4,H4_004N,Renter occupied,1140
+51036,"Charles City County, Virginia",2020,H4,H4_004N,Renter occupied,548
+51041,"Chesterfield County, Virginia",2020,H4,H4_004N,Renter occupied,33054
+51075,"Goochland County, Virginia",2020,H4,H4_004N,Renter occupied,1637
+51085,"Hanover County, Virginia",2020,H4,H4_004N,Renter occupied,7468
+51087,"Henrico County, Virginia",2020,H4,H4_004N,Renter occupied,50075
+5103368,"Ashland town, Virginia",2020,H4,H4_001N,Total,2786
+5103368,"Ashland town, Virginia",2020,H4,H4_002N,Owned with a mortgage or a loan,936
+5103368,"Ashland town, Virginia",2020,H4,H4_003N,Owned free and clear,542
+5103368,"Ashland town, Virginia",2020,H4,H4_004N,Renter occupied,1308

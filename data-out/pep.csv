@@ -1,0 +1,681 @@
+geoid,name,year,variable,label,value
+51036,"Charles City County, Virginia",2020,POPESTIMATE,Total population,6747
+51036,"Charles City County, Virginia",2021,POPESTIMATE,Total population,6614
+51036,"Charles City County, Virginia",2022,POPESTIMATE,Total population,6582
+51036,"Charles City County, Virginia",2023,POPESTIMATE,Total population,6652
+51036,"Charles City County, Virginia",2024,POPESTIMATE,Total population,6582
+51036,"Charles City County, Virginia",2025,POPESTIMATE,Total population,6623
+51036,"Charles City County, Virginia",2020,NPOPCHG,Net population change,-25
+51036,"Charles City County, Virginia",2021,NPOPCHG,Net population change,-133
+51036,"Charles City County, Virginia",2022,NPOPCHG,Net population change,-32
+51036,"Charles City County, Virginia",2023,NPOPCHG,Net population change,70
+51036,"Charles City County, Virginia",2024,NPOPCHG,Net population change,-70
+51036,"Charles City County, Virginia",2025,NPOPCHG,Net population change,41
+51041,"Chesterfield County, Virginia",2020,POPESTIMATE,Total population,365330
+51041,"Chesterfield County, Virginia",2021,POPESTIMATE,Total population,371042
+51041,"Chesterfield County, Virginia",2022,POPESTIMATE,Total population,378739
+51041,"Chesterfield County, Virginia",2023,POPESTIMATE,Total population,385138
+51041,"Chesterfield County, Virginia",2024,POPESTIMATE,Total population,391243
+51041,"Chesterfield County, Virginia",2025,POPESTIMATE,Total population,397148
+51041,"Chesterfield County, Virginia",2020,NPOPCHG,Net population change,1246
+51041,"Chesterfield County, Virginia",2021,NPOPCHG,Net population change,5712
+51041,"Chesterfield County, Virginia",2022,NPOPCHG,Net population change,7697
+51041,"Chesterfield County, Virginia",2023,NPOPCHG,Net population change,6399
+51041,"Chesterfield County, Virginia",2024,NPOPCHG,Net population change,6105
+51041,"Chesterfield County, Virginia",2025,NPOPCHG,Net population change,5905
+51075,"Goochland County, Virginia",2020,POPESTIMATE,Total population,24866
+51075,"Goochland County, Virginia",2021,POPESTIMATE,Total population,25551
+51075,"Goochland County, Virginia",2022,POPESTIMATE,Total population,26212
+51075,"Goochland County, Virginia",2023,POPESTIMATE,Total population,27272
+51075,"Goochland County, Virginia",2024,POPESTIMATE,Total population,28263
+51075,"Goochland County, Virginia",2025,POPESTIMATE,Total population,29187
+51075,"Goochland County, Virginia",2020,NPOPCHG,Net population change,122
+51075,"Goochland County, Virginia",2021,NPOPCHG,Net population change,685
+51075,"Goochland County, Virginia",2022,NPOPCHG,Net population change,661
+51075,"Goochland County, Virginia",2023,NPOPCHG,Net population change,1060
+51075,"Goochland County, Virginia",2024,NPOPCHG,Net population change,991
+51075,"Goochland County, Virginia",2025,NPOPCHG,Net population change,924
+51085,"Hanover County, Virginia",2020,POPESTIMATE,Total population,110211
+51085,"Hanover County, Virginia",2021,POPESTIMATE,Total population,111827
+51085,"Hanover County, Virginia",2022,POPESTIMATE,Total population,112955
+51085,"Hanover County, Virginia",2023,POPESTIMATE,Total population,114263
+51085,"Hanover County, Virginia",2024,POPESTIMATE,Total population,115553
+51085,"Hanover County, Virginia",2025,POPESTIMATE,Total population,116423
+51085,"Hanover County, Virginia",2020,NPOPCHG,Net population change,229
+51085,"Hanover County, Virginia",2021,NPOPCHG,Net population change,1616
+51085,"Hanover County, Virginia",2022,NPOPCHG,Net population change,1128
+51085,"Hanover County, Virginia",2023,NPOPCHG,Net population change,1308
+51085,"Hanover County, Virginia",2024,NPOPCHG,Net population change,1290
+51085,"Hanover County, Virginia",2025,NPOPCHG,Net population change,870
+51087,"Henrico County, Virginia",2020,POPESTIMATE,Total population,334929
+51087,"Henrico County, Virginia",2021,POPESTIMATE,Total population,334546
+51087,"Henrico County, Virginia",2022,POPESTIMATE,Total population,335033
+51087,"Henrico County, Virginia",2023,POPESTIMATE,Total population,336037
+51087,"Henrico County, Virginia",2024,POPESTIMATE,Total population,340024
+51087,"Henrico County, Virginia",2025,POPESTIMATE,Total population,342775
+51087,"Henrico County, Virginia",2020,NPOPCHG,Net population change,-32
+51087,"Henrico County, Virginia",2021,NPOPCHG,Net population change,-383
+51087,"Henrico County, Virginia",2022,NPOPCHG,Net population change,487
+51087,"Henrico County, Virginia",2023,NPOPCHG,Net population change,1004
+51087,"Henrico County, Virginia",2024,NPOPCHG,Net population change,3987
+51087,"Henrico County, Virginia",2025,NPOPCHG,Net population change,2751
+51127,"New Kent County, Virginia",2020,POPESTIMATE,Total population,23118
+51127,"New Kent County, Virginia",2021,POPESTIMATE,Total population,23952
+51127,"New Kent County, Virginia",2022,POPESTIMATE,Total population,24972
+51127,"New Kent County, Virginia",2023,POPESTIMATE,Total population,26178
+51127,"New Kent County, Virginia",2024,POPESTIMATE,Total population,27196
+51127,"New Kent County, Virginia",2025,POPESTIMATE,Total population,28022
+51127,"New Kent County, Virginia",2020,NPOPCHG,Net population change,176
+51127,"New Kent County, Virginia",2021,NPOPCHG,Net population change,834
+51127,"New Kent County, Virginia",2022,NPOPCHG,Net population change,1020
+51127,"New Kent County, Virginia",2023,NPOPCHG,Net population change,1206
+51127,"New Kent County, Virginia",2024,NPOPCHG,Net population change,1018
+51127,"New Kent County, Virginia",2025,NPOPCHG,Net population change,826
+51145,"Powhatan County, Virginia",2020,POPESTIMATE,Total population,30453
+51145,"Powhatan County, Virginia",2021,POPESTIMATE,Total population,31250
+51145,"Powhatan County, Virginia",2022,POPESTIMATE,Total population,31592
+51145,"Powhatan County, Virginia",2023,POPESTIMATE,Total population,32102
+51145,"Powhatan County, Virginia",2024,POPESTIMATE,Total population,32362
+51145,"Powhatan County, Virginia",2025,POPESTIMATE,Total population,32591
+51145,"Powhatan County, Virginia",2020,NPOPCHG,Net population change,112
+51145,"Powhatan County, Virginia",2021,NPOPCHG,Net population change,797
+51145,"Powhatan County, Virginia",2022,NPOPCHG,Net population change,342
+51145,"Powhatan County, Virginia",2023,NPOPCHG,Net population change,510
+51145,"Powhatan County, Virginia",2024,NPOPCHG,Net population change,260
+51145,"Powhatan County, Virginia",2025,NPOPCHG,Net population change,229
+51760,"Richmond city, Virginia",2020,POPESTIMATE,Total population,226927
+51760,"Richmond city, Virginia",2021,POPESTIMATE,Total population,227229
+51760,"Richmond city, Virginia",2022,POPESTIMATE,Total population,228936
+51760,"Richmond city, Virginia",2023,POPESTIMATE,Total population,230804
+51760,"Richmond city, Virginia",2024,POPESTIMATE,Total population,234807
+51760,"Richmond city, Virginia",2025,POPESTIMATE,Total population,237257
+51760,"Richmond city, Virginia",2020,NPOPCHG,Net population change,405
+51760,"Richmond city, Virginia",2021,NPOPCHG,Net population change,302
+51760,"Richmond city, Virginia",2022,NPOPCHG,Net population change,1707
+51760,"Richmond city, Virginia",2023,NPOPCHG,Net population change,1868
+51760,"Richmond city, Virginia",2024,NPOPCHG,Net population change,4003
+51760,"Richmond city, Virginia",2025,NPOPCHG,Net population change,2450
+51036,"Charles City County, Virginia",2020,BIRTHS,Births,19
+51036,"Charles City County, Virginia",2021,BIRTHS,Births,29
+51036,"Charles City County, Virginia",2022,BIRTHS,Births,39
+51036,"Charles City County, Virginia",2023,BIRTHS,Births,34
+51036,"Charles City County, Virginia",2024,BIRTHS,Births,44
+51036,"Charles City County, Virginia",2025,BIRTHS,Births,45
+51036,"Charles City County, Virginia",2020,DEATHS,Deaths,26
+51036,"Charles City County, Virginia",2021,DEATHS,Deaths,118
+51036,"Charles City County, Virginia",2022,DEATHS,Deaths,108
+51036,"Charles City County, Virginia",2023,DEATHS,Deaths,78
+51036,"Charles City County, Virginia",2024,DEATHS,Deaths,89
+51036,"Charles City County, Virginia",2025,DEATHS,Deaths,88
+51036,"Charles City County, Virginia",2020,NATURALCHG,Natural change,-7
+51036,"Charles City County, Virginia",2021,NATURALCHG,Natural change,-89
+51036,"Charles City County, Virginia",2022,NATURALCHG,Natural change,-69
+51036,"Charles City County, Virginia",2023,NATURALCHG,Natural change,-44
+51036,"Charles City County, Virginia",2024,NATURALCHG,Natural change,-45
+51036,"Charles City County, Virginia",2025,NATURALCHG,Natural change,-43
+51036,"Charles City County, Virginia",2020,INTERNATIONALMIG,Net international migration,0
+51036,"Charles City County, Virginia",2021,INTERNATIONALMIG,Net international migration,0
+51036,"Charles City County, Virginia",2022,INTERNATIONALMIG,Net international migration,0
+51036,"Charles City County, Virginia",2023,INTERNATIONALMIG,Net international migration,0
+51036,"Charles City County, Virginia",2024,INTERNATIONALMIG,Net international migration,0
+51036,"Charles City County, Virginia",2025,INTERNATIONALMIG,Net international migration,-1
+51036,"Charles City County, Virginia",2020,DOMESTICMIG,Net domestic migration,-17
+51036,"Charles City County, Virginia",2021,DOMESTICMIG,Net domestic migration,-47
+51036,"Charles City County, Virginia",2022,DOMESTICMIG,Net domestic migration,39
+51036,"Charles City County, Virginia",2023,DOMESTICMIG,Net domestic migration,115
+51036,"Charles City County, Virginia",2024,DOMESTICMIG,Net domestic migration,-26
+51036,"Charles City County, Virginia",2025,DOMESTICMIG,Net domestic migration,87
+51036,"Charles City County, Virginia",2020,NETMIG,Net migration,-17
+51036,"Charles City County, Virginia",2021,NETMIG,Net migration,-47
+51036,"Charles City County, Virginia",2022,NETMIG,Net migration,39
+51036,"Charles City County, Virginia",2023,NETMIG,Net migration,115
+51036,"Charles City County, Virginia",2024,NETMIG,Net migration,-26
+51036,"Charles City County, Virginia",2025,NETMIG,Net migration,86
+51036,"Charles City County, Virginia",2020,RESIDUAL,Residual,-1
+51036,"Charles City County, Virginia",2021,RESIDUAL,Residual,3
+51036,"Charles City County, Virginia",2022,RESIDUAL,Residual,-2
+51036,"Charles City County, Virginia",2023,RESIDUAL,Residual,-1
+51036,"Charles City County, Virginia",2024,RESIDUAL,Residual,1
+51036,"Charles City County, Virginia",2025,RESIDUAL,Residual,-2
+51036,"Charles City County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",4.340992441
+51036,"Charles City County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",5.910882086
+51036,"Charles City County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",5.138280187
+51036,"Charles City County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",6.649539066
+51036,"Charles City County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",6.815600152
+51036,"Charles City County, Virginia",2021,RDEATH,"Death rate (per 1,000)",17.66334855
+51036,"Charles City County, Virginia",2022,RDEATH,"Death rate (per 1,000)",16.36859654
+51036,"Charles City County, Virginia",2023,RDEATH,"Death rate (per 1,000)",11.78781925
+51036,"Charles City County, Virginia",2024,RDEATH,"Death rate (per 1,000)",13.45020402
+51036,"Charles City County, Virginia",2025,RDEATH,"Death rate (per 1,000)",13.32828474
+51036,"Charles City County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",-13.32235611
+51036,"Charles City County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",-10.45771446
+51036,"Charles City County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",-6.649539066
+51036,"Charles City County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",-6.800664954
+51036,"Charles City County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",-6.512684589
+51036,"Charles City County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0
+51036,"Charles City County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0
+51036,"Charles City County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0
+51036,"Charles City County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0
+51036,"Charles City County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",-0.151457781
+51036,"Charles City County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-7.035401542
+51036,"Charles City County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",5.910882086
+51036,"Charles City County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",17.3794771
+51036,"Charles City County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-3.929273084
+51036,"Charles City County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",13.17682696
+51036,"Charles City County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",-7.035401542
+51036,"Charles City County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",5.910882086
+51036,"Charles City County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",17.3794771
+51036,"Charles City County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",-3.929273084
+51036,"Charles City County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",13.02536918
+51041,"Chesterfield County, Virginia",2020,BIRTHS,Births,985
+51041,"Chesterfield County, Virginia",2021,BIRTHS,Births,3941
+51041,"Chesterfield County, Virginia",2022,BIRTHS,Births,4135
+51041,"Chesterfield County, Virginia",2023,BIRTHS,Births,4177
+51041,"Chesterfield County, Virginia",2024,BIRTHS,Births,4062
+51041,"Chesterfield County, Virginia",2025,BIRTHS,Births,3988
+51041,"Chesterfield County, Virginia",2020,DEATHS,Deaths,792
+51041,"Chesterfield County, Virginia",2021,DEATHS,Deaths,3205
+51041,"Chesterfield County, Virginia",2022,DEATHS,Deaths,3252
+51041,"Chesterfield County, Virginia",2023,DEATHS,Deaths,3140
+51041,"Chesterfield County, Virginia",2024,DEATHS,Deaths,3069
+51041,"Chesterfield County, Virginia",2025,DEATHS,Deaths,3005
+51041,"Chesterfield County, Virginia",2020,NATURALCHG,Natural change,193
+51041,"Chesterfield County, Virginia",2021,NATURALCHG,Natural change,736
+51041,"Chesterfield County, Virginia",2022,NATURALCHG,Natural change,883
+51041,"Chesterfield County, Virginia",2023,NATURALCHG,Natural change,1037
+51041,"Chesterfield County, Virginia",2024,NATURALCHG,Natural change,993
+51041,"Chesterfield County, Virginia",2025,NATURALCHG,Natural change,983
+51041,"Chesterfield County, Virginia",2020,INTERNATIONALMIG,Net international migration,17
+51041,"Chesterfield County, Virginia",2021,INTERNATIONALMIG,Net international migration,357
+51041,"Chesterfield County, Virginia",2022,INTERNATIONALMIG,Net international migration,1422
+51041,"Chesterfield County, Virginia",2023,INTERNATIONALMIG,Net international migration,1869
+51041,"Chesterfield County, Virginia",2024,INTERNATIONALMIG,Net international migration,3071
+51041,"Chesterfield County, Virginia",2025,INTERNATIONALMIG,Net international migration,1360
+51041,"Chesterfield County, Virginia",2020,DOMESTICMIG,Net domestic migration,964
+51041,"Chesterfield County, Virginia",2021,DOMESTICMIG,Net domestic migration,4494
+51041,"Chesterfield County, Virginia",2022,DOMESTICMIG,Net domestic migration,5364
+51041,"Chesterfield County, Virginia",2023,DOMESTICMIG,Net domestic migration,3542
+51041,"Chesterfield County, Virginia",2024,DOMESTICMIG,Net domestic migration,2075
+51041,"Chesterfield County, Virginia",2025,DOMESTICMIG,Net domestic migration,3584
+51041,"Chesterfield County, Virginia",2020,NETMIG,Net migration,981
+51041,"Chesterfield County, Virginia",2021,NETMIG,Net migration,4851
+51041,"Chesterfield County, Virginia",2022,NETMIG,Net migration,6786
+51041,"Chesterfield County, Virginia",2023,NETMIG,Net migration,5411
+51041,"Chesterfield County, Virginia",2024,NETMIG,Net migration,5146
+51041,"Chesterfield County, Virginia",2025,NETMIG,Net migration,4944
+51041,"Chesterfield County, Virginia",2020,RESIDUAL,Residual,72
+51041,"Chesterfield County, Virginia",2021,RESIDUAL,Residual,125
+51041,"Chesterfield County, Virginia",2022,RESIDUAL,Residual,28
+51041,"Chesterfield County, Virginia",2023,RESIDUAL,Residual,-49
+51041,"Chesterfield County, Virginia",2024,RESIDUAL,Residual,-34
+51041,"Chesterfield County, Virginia",2025,RESIDUAL,Residual,-22
+51041,"Chesterfield County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",10.70382904
+51041,"Chesterfield County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",11.02988739
+51041,"Chesterfield County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",10.93631566
+51041,"Chesterfield County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",10.46393459
+51041,"Chesterfield County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",10.11680752
+51041,"Chesterfield County, Virginia",2021,RDEATH,"Death rate (per 1,000)",8.704839402
+51041,"Chesterfield County, Virginia",2022,RDEATH,"Death rate (per 1,000)",8.674532964
+51041,"Chesterfield County, Virginia",2023,RDEATH,"Death rate (per 1,000)",8.221218861
+51041,"Chesterfield County, Virginia",2024,RDEATH,"Death rate (per 1,000)",7.905912175
+51041,"Chesterfield County, Virginia",2025,RDEATH,"Death rate (per 1,000)",7.623121015
+51041,"Chesterfield County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",1.998989641
+51041,"Chesterfield County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",2.35535443
+51041,"Chesterfield County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",2.715096802
+51041,"Chesterfield County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",2.558022414
+51041,"Chesterfield County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",2.493686508
+51041,"Chesterfield County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.969618617
+51041,"Chesterfield County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",3.793107587
+51041,"Chesterfield County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",4.893457978
+51041,"Chesterfield County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",7.911064284
+51041,"Chesterfield County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",3.450064752
+51041,"Chesterfield County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",12.20578729
+51041,"Chesterfield County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",14.30817799
+51041,"Chesterfield County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",9.273744333
+51041,"Chesterfield County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",5.345313706
+51041,"Chesterfield County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",9.091935347
+51041,"Chesterfield County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",13.17540591
+51041,"Chesterfield County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",18.10128558
+51041,"Chesterfield County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",14.16720231
+51041,"Chesterfield County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",13.25637799
+51041,"Chesterfield County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",12.5420001
+51075,"Goochland County, Virginia",2020,BIRTHS,Births,35
+51075,"Goochland County, Virginia",2021,BIRTHS,Births,193
+51075,"Goochland County, Virginia",2022,BIRTHS,Births,198
+51075,"Goochland County, Virginia",2023,BIRTHS,Births,183
+51075,"Goochland County, Virginia",2024,BIRTHS,Births,160
+51075,"Goochland County, Virginia",2025,BIRTHS,Births,159
+51075,"Goochland County, Virginia",2020,DEATHS,Deaths,55
+51075,"Goochland County, Virginia",2021,DEATHS,Deaths,267
+51075,"Goochland County, Virginia",2022,DEATHS,Deaths,273
+51075,"Goochland County, Virginia",2023,DEATHS,Deaths,266
+51075,"Goochland County, Virginia",2024,DEATHS,Deaths,281
+51075,"Goochland County, Virginia",2025,DEATHS,Deaths,290
+51075,"Goochland County, Virginia",2020,NATURALCHG,Natural change,-20
+51075,"Goochland County, Virginia",2021,NATURALCHG,Natural change,-74
+51075,"Goochland County, Virginia",2022,NATURALCHG,Natural change,-75
+51075,"Goochland County, Virginia",2023,NATURALCHG,Natural change,-83
+51075,"Goochland County, Virginia",2024,NATURALCHG,Natural change,-121
+51075,"Goochland County, Virginia",2025,NATURALCHG,Natural change,-131
+51075,"Goochland County, Virginia",2020,INTERNATIONALMIG,Net international migration,0
+51075,"Goochland County, Virginia",2021,INTERNATIONALMIG,Net international migration,3
+51075,"Goochland County, Virginia",2022,INTERNATIONALMIG,Net international migration,54
+51075,"Goochland County, Virginia",2023,INTERNATIONALMIG,Net international migration,54
+51075,"Goochland County, Virginia",2024,INTERNATIONALMIG,Net international migration,48
+51075,"Goochland County, Virginia",2025,INTERNATIONALMIG,Net international migration,5
+51075,"Goochland County, Virginia",2020,DOMESTICMIG,Net domestic migration,158
+51075,"Goochland County, Virginia",2021,DOMESTICMIG,Net domestic migration,798
+51075,"Goochland County, Virginia",2022,DOMESTICMIG,Net domestic migration,660
+51075,"Goochland County, Virginia",2023,DOMESTICMIG,Net domestic migration,1041
+51075,"Goochland County, Virginia",2024,DOMESTICMIG,Net domestic migration,1023
+51075,"Goochland County, Virginia",2025,DOMESTICMIG,Net domestic migration,1045
+51075,"Goochland County, Virginia",2020,NETMIG,Net migration,158
+51075,"Goochland County, Virginia",2021,NETMIG,Net migration,801
+51075,"Goochland County, Virginia",2022,NETMIG,Net migration,714
+51075,"Goochland County, Virginia",2023,NETMIG,Net migration,1095
+51075,"Goochland County, Virginia",2024,NETMIG,Net migration,1071
+51075,"Goochland County, Virginia",2025,NETMIG,Net migration,1050
+51075,"Goochland County, Virginia",2020,RESIDUAL,Residual,-16
+51075,"Goochland County, Virginia",2021,RESIDUAL,Residual,-42
+51075,"Goochland County, Virginia",2022,RESIDUAL,Residual,22
+51075,"Goochland County, Virginia",2023,RESIDUAL,Residual,48
+51075,"Goochland County, Virginia",2024,RESIDUAL,Residual,41
+51075,"Goochland County, Virginia",2025,RESIDUAL,Residual,5
+51075,"Goochland County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",7.656147728
+51075,"Goochland County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",7.650252111
+51075,"Goochland County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",6.84316805
+51075,"Goochland County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",5.762131989
+51075,"Goochland County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",5.535248042
+51075,"Goochland County, Virginia",2021,RDEATH,"Death rate (per 1,000)",10.59166551
+51075,"Goochland County, Virginia",2022,RDEATH,"Death rate (per 1,000)",10.54807488
+51075,"Goochland County, Virginia",2023,RDEATH,"Death rate (per 1,000)",9.946900008
+51075,"Goochland County, Virginia",2024,RDEATH,"Death rate (per 1,000)",10.11974431
+51075,"Goochland County, Virginia",2025,RDEATH,"Death rate (per 1,000)",10.09573542
+51075,"Goochland County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",-2.935517782
+51075,"Goochland County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",-2.897822769
+51075,"Goochland County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",-3.103731957
+51075,"Goochland County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",-4.357612317
+51075,"Goochland County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",-4.56048738
+51075,"Goochland County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.119007478
+51075,"Goochland County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",2.086432394
+51075,"Goochland County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",2.01929549
+51075,"Goochland County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",1.728639597
+51075,"Goochland County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.174064404
+51075,"Goochland County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",31.65598905
+51075,"Goochland County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",25.50084037
+51075,"Goochland County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",38.92752973
+51075,"Goochland County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",36.8416314
+51075,"Goochland County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",36.3794604
+51075,"Goochland County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",31.77499653
+51075,"Goochland County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",27.58727276
+51075,"Goochland County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",40.94682522
+51075,"Goochland County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",38.570271
+51075,"Goochland County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",36.5535248
+51085,"Hanover County, Virginia",2020,BIRTHS,Births,267
+51085,"Hanover County, Virginia",2021,BIRTHS,Births,978
+51085,"Hanover County, Virginia",2022,BIRTHS,Births,1117
+51085,"Hanover County, Virginia",2023,BIRTHS,Births,1059
+51085,"Hanover County, Virginia",2024,BIRTHS,Births,1061
+51085,"Hanover County, Virginia",2025,BIRTHS,Births,1041
+51085,"Hanover County, Virginia",2020,DEATHS,Deaths,272
+51085,"Hanover County, Virginia",2021,DEATHS,Deaths,1218
+51085,"Hanover County, Virginia",2022,DEATHS,Deaths,1269
+51085,"Hanover County, Virginia",2023,DEATHS,Deaths,1180
+51085,"Hanover County, Virginia",2024,DEATHS,Deaths,1104
+51085,"Hanover County, Virginia",2025,DEATHS,Deaths,1090
+51085,"Hanover County, Virginia",2020,NATURALCHG,Natural change,-5
+51085,"Hanover County, Virginia",2021,NATURALCHG,Natural change,-240
+51085,"Hanover County, Virginia",2022,NATURALCHG,Natural change,-152
+51085,"Hanover County, Virginia",2023,NATURALCHG,Natural change,-121
+51085,"Hanover County, Virginia",2024,NATURALCHG,Natural change,-43
+51085,"Hanover County, Virginia",2025,NATURALCHG,Natural change,-49
+51085,"Hanover County, Virginia",2020,INTERNATIONALMIG,Net international migration,1
+51085,"Hanover County, Virginia",2021,INTERNATIONALMIG,Net international migration,39
+51085,"Hanover County, Virginia",2022,INTERNATIONALMIG,Net international migration,85
+51085,"Hanover County, Virginia",2023,INTERNATIONALMIG,Net international migration,132
+51085,"Hanover County, Virginia",2024,INTERNATIONALMIG,Net international migration,247
+51085,"Hanover County, Virginia",2025,INTERNATIONALMIG,Net international migration,96
+51085,"Hanover County, Virginia",2020,DOMESTICMIG,Net domestic migration,202
+51085,"Hanover County, Virginia",2021,DOMESTICMIG,Net domestic migration,1823
+51085,"Hanover County, Virginia",2022,DOMESTICMIG,Net domestic migration,1235
+51085,"Hanover County, Virginia",2023,DOMESTICMIG,Net domestic migration,1306
+51085,"Hanover County, Virginia",2024,DOMESTICMIG,Net domestic migration,1082
+51085,"Hanover County, Virginia",2025,DOMESTICMIG,Net domestic migration,819
+51085,"Hanover County, Virginia",2020,NETMIG,Net migration,203
+51085,"Hanover County, Virginia",2021,NETMIG,Net migration,1862
+51085,"Hanover County, Virginia",2022,NETMIG,Net migration,1320
+51085,"Hanover County, Virginia",2023,NETMIG,Net migration,1438
+51085,"Hanover County, Virginia",2024,NETMIG,Net migration,1329
+51085,"Hanover County, Virginia",2025,NETMIG,Net migration,915
+51085,"Hanover County, Virginia",2020,RESIDUAL,Residual,31
+51085,"Hanover County, Virginia",2021,RESIDUAL,Residual,-6
+51085,"Hanover County, Virginia",2022,RESIDUAL,Residual,-40
+51085,"Hanover County, Virginia",2023,RESIDUAL,Residual,-9
+51085,"Hanover County, Virginia",2024,RESIDUAL,Residual,4
+51085,"Hanover County, Virginia",2025,RESIDUAL,Residual,4
+51085,"Hanover County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",8.809302912
+51085,"Hanover County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",9.938518209
+51085,"Hanover County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",9.321444604
+51085,"Hanover County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",9.233473736
+51085,"Hanover County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",8.975066386
+51085,"Hanover County, Virginia",2021,RDEATH,"Death rate (per 1,000)",10.97109504
+51085,"Hanover County, Virginia",2022,RDEATH,"Death rate (per 1,000)",11.29093967
+51085,"Hanover County, Virginia",2023,RDEATH,"Death rate (per 1,000)",10.38650107
+51085,"Hanover County, Virginia",2024,RDEATH,"Death rate (per 1,000)",9.607686149
+51085,"Hanover County, Virginia",2025,RDEATH,"Death rate (per 1,000)",9.397523882
+51085,"Hanover County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",-2.161792126
+51085,"Hanover County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",-1.352421457
+51085,"Hanover County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",-1.065056466
+51085,"Hanover County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",-0.374212413
+51085,"Hanover County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",-0.422457496
+51085,"Hanover County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.35129122
+51085,"Hanover County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.756288315
+51085,"Hanover County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",1.161879781
+51085,"Hanover County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",2.149545724
+51085,"Hanover County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.827671828
+51085,"Hanover County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",16.42061269
+51085,"Hanover County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",10.98842434
+51085,"Hanover County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",11.49556813
+51085,"Hanover County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",9.416228635
+51085,"Hanover County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",7.061075284
+51085,"Hanover County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",16.77190391
+51085,"Hanover County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",11.74471266
+51085,"Hanover County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",12.65744791
+51085,"Hanover County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",11.56577436
+51085,"Hanover County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",7.888747112
+51087,"Henrico County, Virginia",2020,BIRTHS,Births,884
+51087,"Henrico County, Virginia",2021,BIRTHS,Births,3575
+51087,"Henrico County, Virginia",2022,BIRTHS,Births,3718
+51087,"Henrico County, Virginia",2023,BIRTHS,Births,3672
+51087,"Henrico County, Virginia",2024,BIRTHS,Births,3583
+51087,"Henrico County, Virginia",2025,BIRTHS,Births,3505
+51087,"Henrico County, Virginia",2020,DEATHS,Deaths,886
+51087,"Henrico County, Virginia",2021,DEATHS,Deaths,3548
+51087,"Henrico County, Virginia",2022,DEATHS,Deaths,3423
+51087,"Henrico County, Virginia",2023,DEATHS,Deaths,3295
+51087,"Henrico County, Virginia",2024,DEATHS,Deaths,3254
+51087,"Henrico County, Virginia",2025,DEATHS,Deaths,3195
+51087,"Henrico County, Virginia",2020,NATURALCHG,Natural change,-2
+51087,"Henrico County, Virginia",2021,NATURALCHG,Natural change,27
+51087,"Henrico County, Virginia",2022,NATURALCHG,Natural change,295
+51087,"Henrico County, Virginia",2023,NATURALCHG,Natural change,377
+51087,"Henrico County, Virginia",2024,NATURALCHG,Natural change,329
+51087,"Henrico County, Virginia",2025,NATURALCHG,Natural change,310
+51087,"Henrico County, Virginia",2020,INTERNATIONALMIG,Net international migration,48
+51087,"Henrico County, Virginia",2021,INTERNATIONALMIG,Net international migration,798
+51087,"Henrico County, Virginia",2022,INTERNATIONALMIG,Net international migration,2173
+51087,"Henrico County, Virginia",2023,INTERNATIONALMIG,Net international migration,2470
+51087,"Henrico County, Virginia",2024,INTERNATIONALMIG,Net international migration,4018
+51087,"Henrico County, Virginia",2025,INTERNATIONALMIG,Net international migration,2255
+51087,"Henrico County, Virginia",2020,DOMESTICMIG,Net domestic migration,-168
+51087,"Henrico County, Virginia",2021,DOMESTICMIG,Net domestic migration,-1415
+51087,"Henrico County, Virginia",2022,DOMESTICMIG,Net domestic migration,-1881
+51087,"Henrico County, Virginia",2023,DOMESTICMIG,Net domestic migration,-1795
+51087,"Henrico County, Virginia",2024,DOMESTICMIG,Net domestic migration,-330
+51087,"Henrico County, Virginia",2025,DOMESTICMIG,Net domestic migration,164
+51087,"Henrico County, Virginia",2020,NETMIG,Net migration,-120
+51087,"Henrico County, Virginia",2021,NETMIG,Net migration,-617
+51087,"Henrico County, Virginia",2022,NETMIG,Net migration,292
+51087,"Henrico County, Virginia",2023,NETMIG,Net migration,675
+51087,"Henrico County, Virginia",2024,NETMIG,Net migration,3688
+51087,"Henrico County, Virginia",2025,NETMIG,Net migration,2419
+51087,"Henrico County, Virginia",2020,RESIDUAL,Residual,90
+51087,"Henrico County, Virginia",2021,RESIDUAL,Residual,207
+51087,"Henrico County, Virginia",2022,RESIDUAL,Residual,-100
+51087,"Henrico County, Virginia",2023,RESIDUAL,Residual,-48
+51087,"Henrico County, Virginia",2024,RESIDUAL,Residual,-30
+51087,"Henrico County, Virginia",2025,RESIDUAL,Residual,22
+51087,"Henrico County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",10.68001046
+51087,"Henrico County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",11.10548569
+51087,"Henrico County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",10.94371675
+51087,"Henrico County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",10.59963524
+51087,"Henrico County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",10.26656454
+51087,"Henrico County, Virginia",2021,RDEATH,"Death rate (per 1,000)",10.59935024
+51087,"Henrico County, Virginia",2022,RDEATH,"Death rate (per 1,000)",10.22433499
+51087,"Henrico County, Virginia",2023,RDEATH,"Death rate (per 1,000)",9.820137989
+51087,"Henrico County, Virginia",2024,RDEATH,"Death rate (per 1,000)",9.626350285
+51087,"Henrico County, Virginia",2025,RDEATH,"Death rate (per 1,000)",9.358537432
+51087,"Henrico County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",0.080660219
+51087,"Henrico County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",0.881150693
+51087,"Henrico County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",1.123578762
+51087,"Henrico County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",0.973284955
+51087,"Henrico County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",0.908027106
+51087,"Henrico County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",2.383957579
+51087,"Henrico County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",6.490645615
+51087,"Henrico County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",7.361378098
+51087,"Henrico County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",11.88650137
+51087,"Henrico County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",6.605164917
+51087,"Henrico County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-4.22719295
+51087,"Henrico County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-5.618455776
+51087,"Henrico County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-5.34966546
+51087,"Henrico County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-0.976243268
+51087,"Henrico County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",0.48037563
+51087,"Henrico County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",-1.843235371
+51087,"Henrico County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",0.872189839
+51087,"Henrico County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",2.011712638
+51087,"Henrico County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",10.9102581
+51087,"Henrico County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",7.085540547
+51127,"New Kent County, Virginia",2020,BIRTHS,Births,56
+51127,"New Kent County, Virginia",2021,BIRTHS,Births,241
+51127,"New Kent County, Virginia",2022,BIRTHS,Births,284
+51127,"New Kent County, Virginia",2023,BIRTHS,Births,280
+51127,"New Kent County, Virginia",2024,BIRTHS,Births,293
+51127,"New Kent County, Virginia",2025,BIRTHS,Births,287
+51127,"New Kent County, Virginia",2020,DEATHS,Deaths,45
+51127,"New Kent County, Virginia",2021,DEATHS,Deaths,243
+51127,"New Kent County, Virginia",2022,DEATHS,Deaths,230
+51127,"New Kent County, Virginia",2023,DEATHS,Deaths,241
+51127,"New Kent County, Virginia",2024,DEATHS,Deaths,251
+51127,"New Kent County, Virginia",2025,DEATHS,Deaths,252
+51127,"New Kent County, Virginia",2020,NATURALCHG,Natural change,11
+51127,"New Kent County, Virginia",2021,NATURALCHG,Natural change,-2
+51127,"New Kent County, Virginia",2022,NATURALCHG,Natural change,54
+51127,"New Kent County, Virginia",2023,NATURALCHG,Natural change,39
+51127,"New Kent County, Virginia",2024,NATURALCHG,Natural change,42
+51127,"New Kent County, Virginia",2025,NATURALCHG,Natural change,35
+51127,"New Kent County, Virginia",2020,INTERNATIONALMIG,Net international migration,0
+51127,"New Kent County, Virginia",2021,INTERNATIONALMIG,Net international migration,1
+51127,"New Kent County, Virginia",2022,INTERNATIONALMIG,Net international migration,2
+51127,"New Kent County, Virginia",2023,INTERNATIONALMIG,Net international migration,12
+51127,"New Kent County, Virginia",2024,INTERNATIONALMIG,Net international migration,4
+51127,"New Kent County, Virginia",2025,INTERNATIONALMIG,Net international migration,-9
+51127,"New Kent County, Virginia",2020,DOMESTICMIG,Net domestic migration,182
+51127,"New Kent County, Virginia",2021,DOMESTICMIG,Net domestic migration,884
+51127,"New Kent County, Virginia",2022,DOMESTICMIG,Net domestic migration,911
+51127,"New Kent County, Virginia",2023,DOMESTICMIG,Net domestic migration,1123
+51127,"New Kent County, Virginia",2024,DOMESTICMIG,Net domestic migration,949
+51127,"New Kent County, Virginia",2025,DOMESTICMIG,Net domestic migration,801
+51127,"New Kent County, Virginia",2020,NETMIG,Net migration,182
+51127,"New Kent County, Virginia",2021,NETMIG,Net migration,885
+51127,"New Kent County, Virginia",2022,NETMIG,Net migration,913
+51127,"New Kent County, Virginia",2023,NETMIG,Net migration,1135
+51127,"New Kent County, Virginia",2024,NETMIG,Net migration,953
+51127,"New Kent County, Virginia",2025,NETMIG,Net migration,792
+51127,"New Kent County, Virginia",2020,RESIDUAL,Residual,-17
+51127,"New Kent County, Virginia",2021,RESIDUAL,Residual,-49
+51127,"New Kent County, Virginia",2022,RESIDUAL,Residual,53
+51127,"New Kent County, Virginia",2023,RESIDUAL,Residual,32
+51127,"New Kent County, Virginia",2024,RESIDUAL,Residual,23
+51127,"New Kent County, Virginia",2025,RESIDUAL,Residual,-1
+51127,"New Kent County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",10.24006798
+51127,"New Kent County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",11.60984384
+51127,"New Kent County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",10.94819159
+51127,"New Kent County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",10.97912842
+51127,"New Kent County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",10.395161
+51127,"New Kent County, Virginia",2021,RDEATH,"Death rate (per 1,000)",10.3250478
+51127,"New Kent County, Virginia",2022,RDEATH,"Death rate (per 1,000)",9.402338321
+51127,"New Kent County, Virginia",2023,RDEATH,"Death rate (per 1,000)",9.423264907
+51127,"New Kent County, Virginia",2024,RDEATH,"Death rate (per 1,000)",9.405328437
+51127,"New Kent County, Virginia",2025,RDEATH,"Death rate (per 1,000)",9.127458438
+51127,"New Kent County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",-0.084979817
+51127,"New Kent County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",2.207505519
+51127,"New Kent County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",1.524926686
+51127,"New Kent County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",1.573799978
+51127,"New Kent County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",1.267702561
+51127,"New Kent County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.042489909
+51127,"New Kent County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.081759464
+51127,"New Kent County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.469208211
+51127,"New Kent County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.149885712
+51127,"New Kent County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",-0.325980658
+51127,"New Kent County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",37.56107924
+51127,"New Kent County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",37.2414357
+51127,"New Kent County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",43.91006843
+51127,"New Kent County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",35.56038521
+51127,"New Kent County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",29.01227861
+51127,"New Kent County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",37.60356915
+51127,"New Kent County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",37.32319516
+51127,"New Kent County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",44.37927664
+51127,"New Kent County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",35.71027092
+51127,"New Kent County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",28.68629795
+51145,"Powhatan County, Virginia",2020,BIRTHS,Births,53
+51145,"Powhatan County, Virginia",2021,BIRTHS,Births,291
+51145,"Powhatan County, Virginia",2022,BIRTHS,Births,275
+51145,"Powhatan County, Virginia",2023,BIRTHS,Births,262
+51145,"Powhatan County, Virginia",2024,BIRTHS,Births,253
+51145,"Powhatan County, Virginia",2025,BIRTHS,Births,248
+51145,"Powhatan County, Virginia",2020,DEATHS,Deaths,69
+51145,"Powhatan County, Virginia",2021,DEATHS,Deaths,294
+51145,"Powhatan County, Virginia",2022,DEATHS,Deaths,316
+51145,"Powhatan County, Virginia",2023,DEATHS,Deaths,289
+51145,"Powhatan County, Virginia",2024,DEATHS,Deaths,282
+51145,"Powhatan County, Virginia",2025,DEATHS,Deaths,285
+51145,"Powhatan County, Virginia",2020,NATURALCHG,Natural change,-16
+51145,"Powhatan County, Virginia",2021,NATURALCHG,Natural change,-3
+51145,"Powhatan County, Virginia",2022,NATURALCHG,Natural change,-41
+51145,"Powhatan County, Virginia",2023,NATURALCHG,Natural change,-27
+51145,"Powhatan County, Virginia",2024,NATURALCHG,Natural change,-29
+51145,"Powhatan County, Virginia",2025,NATURALCHG,Natural change,-37
+51145,"Powhatan County, Virginia",2020,INTERNATIONALMIG,Net international migration,0
+51145,"Powhatan County, Virginia",2021,INTERNATIONALMIG,Net international migration,1
+51145,"Powhatan County, Virginia",2022,INTERNATIONALMIG,Net international migration,19
+51145,"Powhatan County, Virginia",2023,INTERNATIONALMIG,Net international migration,21
+51145,"Powhatan County, Virginia",2024,INTERNATIONALMIG,Net international migration,45
+51145,"Powhatan County, Virginia",2025,INTERNATIONALMIG,Net international migration,22
+51145,"Powhatan County, Virginia",2020,DOMESTICMIG,Net domestic migration,130
+51145,"Powhatan County, Virginia",2021,DOMESTICMIG,Net domestic migration,831
+51145,"Powhatan County, Virginia",2022,DOMESTICMIG,Net domestic migration,367
+51145,"Powhatan County, Virginia",2023,DOMESTICMIG,Net domestic migration,514
+51145,"Powhatan County, Virginia",2024,DOMESTICMIG,Net domestic migration,249
+51145,"Powhatan County, Virginia",2025,DOMESTICMIG,Net domestic migration,247
+51145,"Powhatan County, Virginia",2020,NETMIG,Net migration,130
+51145,"Powhatan County, Virginia",2021,NETMIG,Net migration,832
+51145,"Powhatan County, Virginia",2022,NETMIG,Net migration,386
+51145,"Powhatan County, Virginia",2023,NETMIG,Net migration,535
+51145,"Powhatan County, Virginia",2024,NETMIG,Net migration,294
+51145,"Powhatan County, Virginia",2025,NETMIG,Net migration,269
+51145,"Powhatan County, Virginia",2020,RESIDUAL,Residual,-2
+51145,"Powhatan County, Virginia",2021,RESIDUAL,Residual,-32
+51145,"Powhatan County, Virginia",2022,RESIDUAL,Residual,-3
+51145,"Powhatan County, Virginia",2023,RESIDUAL,Residual,2
+51145,"Powhatan County, Virginia",2024,RESIDUAL,Residual,-5
+51145,"Powhatan County, Virginia",2025,RESIDUAL,Residual,-3
+51145,"Powhatan County, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",9.43228044
+51145,"Powhatan County, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",8.752108463
+51145,"Powhatan County, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",8.226834553
+51145,"Powhatan County, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",7.849342269
+51145,"Powhatan County, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",7.636290857
+51145,"Powhatan County, Virginia",2021,RDEATH,"Death rate (per 1,000)",9.529520445
+51145,"Powhatan County, Virginia",2022,RDEATH,"Death rate (per 1,000)",10.05696827
+51145,"Powhatan County, Virginia",2023,RDEATH,"Death rate (per 1,000)",9.074638114
+51145,"Powhatan County, Virginia",2024,RDEATH,"Death rate (per 1,000)",8.749069248
+51145,"Powhatan County, Virginia",2025,RDEATH,"Death rate (per 1,000)",8.775576186
+51145,"Powhatan County, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",-0.097240005
+51145,"Powhatan County, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",-1.304859807
+51145,"Powhatan County, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",-0.847803561
+51145,"Powhatan County, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",-0.899726979
+51145,"Powhatan County, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",-1.139285329
+51145,"Powhatan County, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.032413335
+51145,"Powhatan County, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.60469113
+51145,"Powhatan County, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.65940277
+51145,"Powhatan County, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",1.396128072
+51145,"Powhatan County, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",0.677412899
+51145,"Powhatan County, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",26.93548126
+51145,"Powhatan County, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",11.68008657
+51145,"Powhatan County, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",16.13966779
+51145,"Powhatan County, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",7.725241996
+51145,"Powhatan County, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",7.605499361
+51145,"Powhatan County, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",26.96789459
+51145,"Powhatan County, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",12.2847777
+51145,"Powhatan County, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",16.79907056
+51145,"Powhatan County, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",9.121370067
+51145,"Powhatan County, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",8.28291226
+51760,"Richmond city, Virginia",2020,BIRTHS,Births,765
+51760,"Richmond city, Virginia",2021,BIRTHS,Births,2872
+51760,"Richmond city, Virginia",2022,BIRTHS,Births,2981
+51760,"Richmond city, Virginia",2023,BIRTHS,Births,2927
+51760,"Richmond city, Virginia",2024,BIRTHS,Births,2876
+51760,"Richmond city, Virginia",2025,BIRTHS,Births,2805
+51760,"Richmond city, Virginia",2020,DEATHS,Deaths,473
+51760,"Richmond city, Virginia",2021,DEATHS,Deaths,2350
+51760,"Richmond city, Virginia",2022,DEATHS,Deaths,2339
+51760,"Richmond city, Virginia",2023,DEATHS,Deaths,2089
+51760,"Richmond city, Virginia",2024,DEATHS,Deaths,2017
+51760,"Richmond city, Virginia",2025,DEATHS,Deaths,2008
+51760,"Richmond city, Virginia",2020,NATURALCHG,Natural change,292
+51760,"Richmond city, Virginia",2021,NATURALCHG,Natural change,522
+51760,"Richmond city, Virginia",2022,NATURALCHG,Natural change,642
+51760,"Richmond city, Virginia",2023,NATURALCHG,Natural change,838
+51760,"Richmond city, Virginia",2024,NATURALCHG,Natural change,859
+51760,"Richmond city, Virginia",2025,NATURALCHG,Natural change,797
+51760,"Richmond city, Virginia",2020,INTERNATIONALMIG,Net international migration,21
+51760,"Richmond city, Virginia",2021,INTERNATIONALMIG,Net international migration,482
+51760,"Richmond city, Virginia",2022,INTERNATIONALMIG,Net international migration,1440
+51760,"Richmond city, Virginia",2023,INTERNATIONALMIG,Net international migration,1858
+51760,"Richmond city, Virginia",2024,INTERNATIONALMIG,Net international migration,2759
+51760,"Richmond city, Virginia",2025,INTERNATIONALMIG,Net international migration,1348
+51760,"Richmond city, Virginia",2020,DOMESTICMIG,Net domestic migration,83
+51760,"Richmond city, Virginia",2021,DOMESTICMIG,Net domestic migration,-853
+51760,"Richmond city, Virginia",2022,DOMESTICMIG,Net domestic migration,-336
+51760,"Richmond city, Virginia",2023,DOMESTICMIG,Net domestic migration,-794
+51760,"Richmond city, Virginia",2024,DOMESTICMIG,Net domestic migration,374
+51760,"Richmond city, Virginia",2025,DOMESTICMIG,Net domestic migration,312
+51760,"Richmond city, Virginia",2020,NETMIG,Net migration,104
+51760,"Richmond city, Virginia",2021,NETMIG,Net migration,-371
+51760,"Richmond city, Virginia",2022,NETMIG,Net migration,1104
+51760,"Richmond city, Virginia",2023,NETMIG,Net migration,1064
+51760,"Richmond city, Virginia",2024,NETMIG,Net migration,3133
+51760,"Richmond city, Virginia",2025,NETMIG,Net migration,1660
+51760,"Richmond city, Virginia",2020,RESIDUAL,Residual,9
+51760,"Richmond city, Virginia",2021,RESIDUAL,Residual,151
+51760,"Richmond city, Virginia",2022,RESIDUAL,Residual,-39
+51760,"Richmond city, Virginia",2023,RESIDUAL,Residual,-34
+51760,"Richmond city, Virginia",2024,RESIDUAL,Residual,11
+51760,"Richmond city, Virginia",2025,RESIDUAL,Residual,-7
+51760,"Richmond city, Virginia",2021,RBIRTH,"Birth rate (per 1,000)",12.6476365
+51760,"Richmond city, Virginia",2022,RBIRTH,"Birth rate (per 1,000)",13.06983219
+51760,"Richmond city, Virginia",2023,RBIRTH,"Birth rate (per 1,000)",12.73328403
+51760,"Richmond city, Virginia",2024,RBIRTH,"Birth rate (per 1,000)",12.35366003
+51760,"Richmond city, Virginia",2025,RBIRTH,"Birth rate (per 1,000)",11.88398183
+51760,"Richmond city, Virginia",2021,RDEATH,"Death rate (per 1,000)",10.34886691
+51760,"Richmond city, Virginia",2022,RDEATH,"Death rate (per 1,000)",10.25506122
+51760,"Richmond city, Virginia",2023,RDEATH,"Death rate (per 1,000)",9.087745247
+51760,"Richmond city, Virginia",2024,RDEATH,"Death rate (per 1,000)",8.663884659
+51760,"Richmond city, Virginia",2025,RDEATH,"Death rate (per 1,000)",8.507321041
+51760,"Richmond city, Virginia",2021,RNATURALCHG,"Natural change rate (per 1,000)",2.298769586
+51760,"Richmond city, Virginia",2022,RNATURALCHG,"Natural change rate (per 1,000)",2.814770971
+51760,"Richmond city, Virginia",2023,RNATURALCHG,"Natural change rate (per 1,000)",3.645538783
+51760,"Richmond city, Virginia",2024,RNATURALCHG,"Natural change rate (per 1,000)",3.68977537
+51760,"Richmond city, Virginia",2025,RNATURALCHG,"Natural change rate (per 1,000)",3.376660792
+51760,"Richmond city, Virginia",2021,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",2.12261866
+51760,"Richmond city, Virginia",2022,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",6.313504982
+51760,"Richmond city, Virginia",2023,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",8.082829425
+51760,"Richmond city, Virginia",2024,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",11.85109458
+51760,"Richmond city, Virginia",2025,RINTERNATIONALMIG,"Net international migration rate (per 1,000)",5.711090022
+51760,"Richmond city, Virginia",2021,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-3.756418499
+51760,"Richmond city, Virginia",2022,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-1.473151162
+51760,"Richmond city, Virginia",2023,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",-3.454126245
+51760,"Richmond city, Virginia",2024,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",1.606491256
+51760,"Richmond city, Virginia",2025,RDOMESTICMIG,"Net domestic migration rate (per 1,000)",1.321854664
+51760,"Richmond city, Virginia",2021,RNETMIG,"Net migration rate (per 1,000)",-1.63379984
+51760,"Richmond city, Virginia",2022,RNETMIG,"Net migration rate (per 1,000)",4.840353819
+51760,"Richmond city, Virginia",2023,RNETMIG,"Net migration rate (per 1,000)",4.62870318
+51760,"Richmond city, Virginia",2024,RNETMIG,"Net migration rate (per 1,000)",13.45758584
+51760,"Richmond city, Virginia",2025,RNETMIG,"Net migration rate (per 1,000)",7.032944686
+51036,Charles City County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",6772
+51041,Chesterfield County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",364084
+51075,Goochland County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",24744
+51085,Hanover County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",109982
+51087,Henrico County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",334961
+51127,New Kent County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",22942
+51145,Powhatan County,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",30341
+51760,Richmond city,2020,ESTIMATESBASE,"Estimates base (April 1, 2020)",226522

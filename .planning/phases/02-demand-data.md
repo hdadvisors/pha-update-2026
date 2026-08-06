@@ -68,23 +68,23 @@ Running both in one session makes the cross-check possible: PEP's estimates base
 
 ## Verify
 
-- [ ] `r/geo.R`, `r/wcoop.R`, `r/acs_demographics.R`, `r/acs_income.R`, `r/decennial.R`, and `r/pep.R` all exist and are tracked by git.
-- [ ] Each of the six scripts carries the anatomy `/new-data-script` emits: a header stating what, source, and output; numbered `## N. Setup ----` sections; the `.Renviron` fallback in each script that needs a key; and a validation block.
-- [ ] Each of the six scripts runs clean end to end under the locked renv environment, and re-running it produces the same output — Jonathan runs them and pastes back the console output.
-- [ ] `data/` holds `geo_localities.rds`, `geo_ashland.rds`, `geo_pumas.rds`, `acs_demographics.rds`, `acs_income.rds`, `decennial.rds`, `pep.rds`, and `wcoop.rds`.
-- [ ] `data-out/` holds `acs_demographics.csv`, `acs_income.csv`, `decennial.csv`, `pep.csv`, and `wcoop.csv`, and `git check-ignore` exits 1 for each of the five.
-- [ ] Session 3A's Verify: `geo_localities.rds` has 8 rows, `geo_ashland.rds` has 1, and `geo_pumas.rds` has 9 rows matching `puma_region`.
-- [ ] Session 3A's Verify: `wcoop.rds` covers all 8 `rr` localities plus Ashland, and the log entry names the projection years present in the frame.
-- [ ] Session 3B's Verify: `acs_demographics.rds` and `acs_income.rds` each contain rows for all 8 `rr` GEOIDs, Virginia, and place 5103368, with no all-NA column.
-- [ ] Session 3B's Verify: every row for a `secondary` locality or Ashland carries a non-NA `reliability` value, and the log entry reports how many of those rows are Low.
-- [ ] Session 3B's Verify: `grep -n "moe / 1.645" r/acs_demographics.R r/acs_income.R` matches in both files.
-- [ ] Session 3C's Verify: `decennial.rds` has rows for 2000, 2010, and 2020 for all 8 `rr` localities and Ashland.
-- [ ] Session 3C's Verify: the PEP-base-equals-2020-decennial-count `stopifnot()` passes for all 8 localities, and the log entry states whether PEP came from the API or the FTP fallback.
-- [ ] Each script's `stopifnot()` block asserts structure only, plus any same-vintage published benchmark it uses; no `stopifnot()` compares against `baseline_2022`.
-- [ ] The `.planning/LOG.md` entry for each session records a percentage change against every `section == "demand"` metric in `baseline_2022` that the session's frames reproduce, and names any that were not reproduced and why.
-- [ ] PLAN.md Section 4's Weldon Cooper vintage row reads 2025, and `grep -n "release = 2024" _common.R` returns nothing.
-- [ ] PLAN.md Section 5 row 2 is unchanged, confirming S1701 for `r/acs_income.R`.
-- [ ] `phases/02-demand-data.md` updated with ticked Verify lines.
+- [x] `r/geo.R`, `r/wcoop.R`, `r/acs_demographics.R`, `r/acs_income.R`, `r/decennial.R`, and `r/pep.R` all exist and are tracked by git.
+- [x] Each of the six scripts carries the anatomy `/new-data-script` emits: a header stating what, source, and output; numbered `## N. Setup ----` sections; the `.Renviron` fallback in each script that needs a key; and a validation block.
+- [ ] Each of the six scripts runs clean end to end under the locked renv environment, and re-running it produces the same output — Jonathan runs them and pastes back the console output. — **half evidenced.** All six ran clean end to end on 2026-08-06. Only `decennial.R` and `pep.R` were re-run within the session (each several times, identical output); the other four ran once, so the idempotency clause is unevidenced for them.
+- [x] `data/` holds `geo_localities.rds`, `geo_ashland.rds`, `geo_pumas.rds`, `acs_demographics.rds`, `acs_income.rds`, `decennial.rds`, `pep.rds`, and `wcoop.rds`.
+- [x] `data-out/` holds `acs_demographics.csv`, `acs_income.csv`, `decennial.csv`, `pep.csv`, and `wcoop.csv`, and `git check-ignore` exits 1 for each of the five.
+- [x] Session 3A's Verify: `geo_localities.rds` has 8 rows, `geo_ashland.rds` has 1, and `geo_pumas.rds` has 9 rows matching `puma_region`.
+- [x] Session 3A's Verify: `wcoop.rds` covers all 8 `rr` localities plus Ashland, and the log entry names the projection years present in the frame.
+- [x] Session 3B's Verify: `acs_demographics.rds` and `acs_income.rds` each contain rows for all 8 `rr` GEOIDs, Virginia, and place 5103368, with no all-NA column.
+- [ ] Session 3B's Verify: every row for a `secondary` locality or Ashland carries a non-NA `reliability` value, and the log entry reports how many of those rows are Low. — **fails as written, and the line is the problem, not the scripts.** 38 of 470 demographics rows and 151 of 1,030 income rows carry `NA` reliability because their estimate is 0, which leaves the CV mathematically undefined. Low counts are logged (101 and 332). Needs Jonathan's ruling: amend the line to permit `NA` on zero-estimate cells, or suppress those cells at the script.
+- [x] Session 3B's Verify: `grep -n "moe / 1.645" r/acs_demographics.R r/acs_income.R` matches in both files.
+- [x] Session 3C's Verify: `decennial.rds` has rows for 2000, 2010, and 2020 for all 8 `rr` localities and Ashland.
+- [ ] Session 3C's Verify: the PEP-base-equals-2020-decennial-count `stopifnot()` passes for all 8 localities, and the log entry states whether PEP came from the API or the FTP fallback. — **unsatisfiable as written; superseded by the 2026-08-06 ruling below.** The estimates base is not the decennial count. Route is logged: API for the series, FTP for the base.
+- [x] Each script's `stopifnot()` block asserts structure only, plus any same-vintage published benchmark it uses; no `stopifnot()` compares against `baseline_2022`.
+- [x] The `.planning/LOG.md` entry for each session records a percentage change against every `section == "demand"` metric in `baseline_2022` that the session's frames reproduce, and names any that were not reproduced and why.
+- [x] PLAN.md Section 4's Weldon Cooper vintage row reads 2025, and `grep -n "release = 2024" _common.R` returns nothing.
+- [x] PLAN.md Section 5 row 2 is unchanged, confirming S1701 for `r/acs_income.R`.
+- [x] `phases/02-demand-data.md` updated with ticked Verify lines.
 
 ## Phase Decisions
 
@@ -98,9 +98,13 @@ Phase-local. A decision that constrains work outside this phase moves to PLAN.md
 | 2026-08-06 | The CV column is computed in the script as `moe / 1.645 / estimate * 100`, and `flag_reliability()` is applied in the script rather than in the chapter | One formula in one place, and the reliability tier travels with the frame so no chapter can forget to apply it | active — promote when Phase 3 writes its first ACS script |
 | 2026-08-06 | `r/geo.R` writes `.rds` only, with no paired `export_csv()` | A CSV of an `sf` geometry column is not usable in Azure or PowerBI, which is the reason the pairing rule exists. This is the one documented exception to it | active |
 | 2026-08-06 | Boundaries stay in the CRS `tigris` returns; no reprojection | No figure in this cycle needs a projected CRS, and picking one now would be a guess about a figure that does not exist | active |
+| 2026-08-06 | The PEP estimates base is **not** asserted to equal the 2020 decennial count. `r/pep.R` gates on structure only and logs the base-versus-count difference as a published adjustment. Supersedes this phase's PEP Verify line | The premise was factually wrong: Census revises the base for Count Question Resolution, legal boundary updates, and geographic program changes, so the two are different quantities by definition (+572 Henrico, -464 Chesterfield, +44 across the 8). The Vintage 2025 county file ships no census-count column to substitute, so Phase 2 has no valid same-vintage published benchmark at all. Ruled by Jonathan in session | active |
+| 2026-08-06 | `r/pep.R` reads the 4/1/2020 estimates base from the Census FTP county file, and carries it in the frame as variable `ESTIMATESBASE` | Vintage 2025's API exposes `POPESTIMATE` and `NPOPCHG` only; its year-2020 row is the 7/1/2020 estimate. The base is the anchor every 2020-2025 change figure counts forward from. This is the FTP fallback the PLAN.md decision of 2026-07-15 anticipated, applied to the one column the API omits | active |
+| 2026-08-06 | `r/decennial.R` resolves tenure variables per vintage from `load_variables()` rather than hardcoding codes, and keeps the published rows verbatim rather than pre-summing owner | 2010 and 2020 split owner into "Owned with a mortgage or a loan" and "Owned free and clear"; 2000 does not. A hardcoded offset is valid syntax and silently wrong data — it labelled mortgage-holders "owner" and free-and-clear owners "renter" for 2010. Consequence for Phase 6: a 2000-to-2020 owner series is one row in 2000 and the sum of two rows in 2010 and 2020 | active — promote if Phase 3 pulls decennial tenure |
 
 ## Open questions
 
 - The `demand.qmd` figure list is not fixed by this phase. PLAN.md Section 7 fixes the themes; the figure list is drafted in the Phase 6 phase file, once the actual numbers are in hand.
-- Whether the AgeSex Weldon Cooper file resolves to individual localities or only to larger aggregates is unverified. Session 3A checks it and logs the answer; if it is state-level only, the age detail drops and the demand chapter uses B01001 alone.
-- Whether `get_estimates(vintage = 2025)` exposes components of change at the county level for Virginia is unverified. Session 3C confirms it against the API and falls back to the FTP tables if not.
+- ~~Whether the AgeSex Weldon Cooper file resolves to individual localities or only to larger aggregates.~~ **Closed 2026-08-06:** county-level, all 8 `rr` localities across 2030/2040/2050, 18 age bands × Total/Female/Male. No town rows, so Ashland has no age detail — the demand chapter uses B01001 for Ashland.
+- ~~Whether `get_estimates(vintage = 2025)` exposes components of change at the county level for Virginia.~~ **Closed 2026-08-06:** it does — 576 rows across the 8 localities, counts plus the R-prefixed per-1,000 rates, 2020 through 2025.
+- **New, needs a ruling:** the reliability Verify line requires a non-NA `reliability` on every secondary-locality and Ashland row, but a zero estimate leaves the CV undefined. Amend the line to permit `NA` on zero-estimate cells, or suppress those cells in the scripts.

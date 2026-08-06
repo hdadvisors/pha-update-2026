@@ -108,7 +108,7 @@ As of July 2026. Record the actuals used in `data-notes.qmd`.
 | PEP | Vintage 2025 (county totals and components; FTP fallback) |
 | CHAS | 2018–2022, including race tables |
 | HUD Income Limits / FMR / SAFMR | FY2026 |
-| Weldon Cooper projections | 2024 official release |
+| Weldon Cooper projections | 2025 official release (July 2025; published series 2030-2050) |
 | Bright MLS | 2016 to present, monthly |
 | CoStar | 2015 to present, quarterly |
 | OEWS | latest release (2024), Richmond MSA |
@@ -129,7 +129,7 @@ This is the streamlined data plan, exported to a Google Doc for PHA in Phase 1. 
 | 2 | ACS income and poverty: B19013 median (trend), B19001 distribution, S1701 poverty | tidycensus | rr + VA (+Ashland) | `r/acs_income.R` | 2 |
 | 3 | PEP: county totals and components of change | tidycensus `get_estimates(vintage=2025)`; FTP fallback | rr | `r/pep.R` | 2 |
 | 4 | Decennial 2000/2010/2020: pop, units, tenure | tidycensus | rr (+Ashland) | `r/decennial.R` | 2 |
-| 5 | Weldon Cooper 2024 projections | manual xlsx or package | rr | `r/wcoop.R` | 2 |
+| 5 | Weldon Cooper 2025 projections | manual xlsx or package | rr | `r/wcoop.R` | 2 |
 | 6 | ACS housing stock: B25001 units, B25002/04 occ/vac, B25024 structure, B25034-36 year built, B25041/42 bedrooms | tidycensus | rr + VA (+Ashland) | `r/acs_stock.R` | 3 |
 | 7 | ACS tenure and racial homeownership: B25003 plus B25003A–I | tidycensus | rr + VA (+Ashland) | `r/acs_tenure.R` | 3 |
 | 8 | ACS costs and burden: B25064 rent (trend), B25077 value (trend), B25070 rent burden, B25091 owner burden, B25106 tenure×income×burden | tidycensus | rr + VA (+Ashland) | `r/acs_costs.R` | 3 / 5 |
@@ -234,7 +234,7 @@ Cost burden trend and by AMI band from ACS and CHAS; burden by race, ethnicity, 
 | Phase | Delivers | Status | Issue | Plan |
 |---|---|---|---|---|
 | 1 | Scaffold, scaffolding skills, and the transcribed 2022 baseline | complete | | [phases/01-setup-baselines.md](phases/01-setup-baselines.md) |
-| 2 | Demand data scripts: geo, ACS demographics, ACS income, PEP, decennial, Weldon Cooper | planned | [#2](https://github.com/hdadvisors/pha-update-2026/issues/2) | [phases/02-demand-data.md](phases/02-demand-data.md) |
+| 2 | Demand data scripts: geo, ACS demographics, ACS income, PEP, decennial, Weldon Cooper | in progress | [#2](https://github.com/hdadvisors/pha-update-2026/issues/2) | [phases/02-demand-data.md](phases/02-demand-data.md) |
 | 3 | Market data scripts: MLS, CoStar, BPS, ACS stock and tenure, FMR, FRED, NHPD, assistance | not planned | [#3](https://github.com/hdadvisors/pha-update-2026/issues/3) | |
 | 4 | PUMS engine, AMI and affordability calculators, and the gap methodology | not planned | [#4](https://github.com/hdadvisors/pha-update-2026/issues/4) | |
 | 5 | Burden and instability data: CHAS, burden trend, OEWS, evictions, PIT | not planned | [#5](https://github.com/hdadvisors/pha-update-2026/issues/5) | |
