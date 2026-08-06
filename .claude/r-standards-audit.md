@@ -227,7 +227,7 @@ Rules real in `crc`'s conventions or in the `hdatools` exported API but absent f
 
 **Tier 1** — `renv.lock` governs every tier at once.
 
-`renv.lock` pins `hdatools` **0.1.7**, dated 2024-11-19, `RemoteSha 7ac3e5f`. The installed copy at `renv/library/windows/R-4.6/x86_64-w64-mingw32/hdatools` confirms it. Its `NAMESPACE` exports **25** names. The current package at `R:\hda\hdatools\NAMESPACE` exports **69**.
+`renv.lock` pins `hdatools` **0.1.7**, dated 2024-11-19, `RemoteSha 7ac3e5f`. The installed copy at `renv/library/windows/R-4.6/x86_64-w64-mingw32/hdatools` confirms it. Its `NAMESPACE` carries **24** `export()` entries. The `v0.5.0` tag carries **66** — counted, not inherited; the architecture doc's "69 exports" is wrong, though its own breakdown (4 themes, a 36-function scale matrix, 8 color accessors, 4 focus palettes, 4 span helpers, 10 utilities) sums to 66 correctly.
 
 Exports the planned hdatools-usage rules depend on that **do not exist** at the pin:
 
@@ -374,7 +374,7 @@ Written in the rulings-sitting decision template rather than as narrative. **Nei
 
 **Layer:** universal for the floor itself; project for each repo's pin.
 
-**Evidence:** G1. This repo pins `hdatools` 0.1.7 (25 exports) while the planned hdatools-usage rules are written against the current package (69 exports). Three of this audit's six pre-confirmed findings — 1, 2, and 3 — trace directly to that gap, and two of them could only be fixed in a version-appropriate form rather than the form specified. The upgrade is a genuine migration: the font mechanism changes (showtext → systemfonts), the accessor and scale surface changes, and the pinned version already emits ggplot2 4.0 deprecation warnings. It is not a lockfile bump, and it needs a re-render the maintainer runs.
+**Evidence:** G1. This repo pins `hdatools` 0.1.7 (24 exports) while the planned hdatools-usage rules are written against the current package (66 exports at the `v0.5.0` tag). Three of this audit's six pre-confirmed findings — 1, 2, and 3 — trace directly to that gap, and two of them could only be fixed in a version-appropriate form rather than the form specified. The upgrade is a genuine migration: the font mechanism changes (showtext → systemfonts), the accessor and scale surface changes, and the pinned version already emits ggplot2 4.0 deprecation warnings. It is not a lockfile bump, and it needs a re-render the maintainer runs.
 
 **Options:**
 - **(a)** The standard states a minimum `hdatools` version; a repo below it is non-compliant until it upgrades.
