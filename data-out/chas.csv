@@ -1,0 +1,271 @@
+geoid,name,tenure,income_band,burden,estimate,moe,cv,reliability
+5103368,Ashland town,Owner,0-30% AMI,Not cost-burdened,14,37.456641600656084,162.64282067154184,Low
+5103368,Ashland town,Owner,0-30% AMI,Cost-burdened,20,53.03772242470448,161.20888274986166,Low
+5103368,Ashland town,Owner,0-30% AMI,Severely cost-burdened,70,64.9307323229917,56.38795685887251,Low
+5103368,Ashland town,Owner,30-50% AMI,Not cost-burdened,260,180.01388835309348,42.08882121886684,Low
+5103368,Ashland town,Owner,30-50% AMI,Cost-burdened,15,42.941821107167776,174.02967014049756,Low
+5103368,Ashland town,Owner,30-50% AMI,Severely cost-burdened,90,113.55615351005862,76.70121817633138,Low
+5103368,Ashland town,Owner,50-80% AMI,Not cost-burdened,144,60.975404877704584,25.741052379983365,Medium
+5103368,Ashland town,Owner,50-80% AMI,Cost-burdened,54,55.59676249567055,62.587822239863286,Low
+5103368,Ashland town,Owner,50-80% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Owner,80-100% AMI,Not cost-burdened,164,69.21704992268884,25.65684999728996,Medium
+5103368,Ashland town,Owner,80-100% AMI,Cost-burdened,20,45.12205669071391,137.1491084824131,Low
+5103368,Ashland town,Owner,80-100% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Owner,100%+ AMI,Not cost-burdened,560,127.03149215844077,13.789784211728264,High
+5103368,Ashland town,Owner,100%+ AMI,Cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Owner,100%+ AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Renter,0-30% AMI,Not cost-burdened,45,48.948953002081666,66.12489429528087,Low
+5103368,Ashland town,Renter,0-30% AMI,Cost-burdened,65,52.306787322488084,48.919137079717636,Low
+5103368,Ashland town,Renter,0-30% AMI,Severely cost-burdened,215,100.39920318408906,28.38741872738787,Medium
+5103368,Ashland town,Renter,30-50% AMI,Not cost-burdened,130,94.64142856064674,44.255987168878534,Low
+5103368,Ashland town,Renter,30-50% AMI,Cost-burdened,85,62,44.341140711603785,Low
+5103368,Ashland town,Renter,30-50% AMI,Severely cost-burdened,4,38.118237105091836,579.3045152749519,Low
+5103368,Ashland town,Renter,50-80% AMI,Not cost-burdened,184,93.33809511662427,30.837219213897278,Low
+5103368,Ashland town,Renter,50-80% AMI,Cost-burdened,74,76.51143705355429,62.85339444143128,Low
+5103368,Ashland town,Renter,50-80% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Renter,80-100% AMI,Not cost-burdened,259,156.83749551685656,36.81156083530449,Low
+5103368,Ashland town,Renter,80-100% AMI,Cost-burdened,10,43.41658669218482,263.9306181895734,Low
+5103368,Ashland town,Renter,80-100% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+5103368,Ashland town,Renter,100%+ AMI,Not cost-burdened,185,96.95359714832658,31.858571313012924,Low
+5103368,Ashland town,Renter,100%+ AMI,Cost-burdened,35,61.220911460055866,106.3324558576741,Low
+5103368,Ashland town,Renter,100%+ AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Owner,0-30% AMI,Not cost-burdened,123,50.90186637049765,25.157222611262338,Medium
+51036,Charles City County,Owner,0-30% AMI,Cost-burdened,58,41.66533331199932,43.66977603186177,Low
+51036,Charles City County,Owner,0-30% AMI,Severely cost-burdened,179,57.0087712549569,19.360775417281726,Medium
+51036,Charles City County,Owner,30-50% AMI,Not cost-burdened,165,53.50700888668698,19.713367923620513,Medium
+51036,Charles City County,Owner,30-50% AMI,Cost-burdened,54,31.670175244226233,35.6525669753757,Low
+51036,Charles City County,Owner,30-50% AMI,Severely cost-burdened,24,39.84971769034255,100.93646831393757,Low
+51036,Charles City County,Owner,50-80% AMI,Not cost-burdened,355,73.55949972641196,12.596343974726992,High
+51036,Charles City County,Owner,50-80% AMI,Cost-burdened,105,48.96937818678118,28.35106567479009,Medium
+51036,Charles City County,Owner,50-80% AMI,Severely cost-burdened,4,38.3275357934736,582.4853464053739,Low
+51036,Charles City County,Owner,80-100% AMI,Not cost-burdened,309,72.17340230306452,14.19883776533076,High
+51036,Charles City County,Owner,80-100% AMI,Cost-burdened,4,38.2099463490856,580.6982727824559,Low
+51036,Charles City County,Owner,80-100% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Owner,100%+ AMI,Not cost-burdened,1050,114.46833623321342,6.6272014029939745,High
+51036,Charles City County,Owner,100%+ AMI,Cost-burdened,12,27.568097504180443,139.65601572533154,Low
+51036,Charles City County,Owner,100%+ AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Renter,0-30% AMI,Not cost-burdened,42,36.932370625238775,53.45545031877085,Low
+51036,Charles City County,Renter,0-30% AMI,Cost-burdened,19,42.36744032862972,135.55412039235233,Low
+51036,Charles City County,Renter,0-30% AMI,Severely cost-burdened,84,42.790185790669334,30.966989282580208,Low
+51036,Charles City County,Renter,30-50% AMI,Not cost-burdened,33,29.32575659723036,54.021841387547866,Low
+51036,Charles City County,Renter,30-50% AMI,Cost-burdened,14,39.84971769034255,173.03394568103582,Low
+51036,Charles City County,Renter,30-50% AMI,Severely cost-burdened,14,37.93415347678132,164.7162547841134,Low
+51036,Charles City County,Renter,50-80% AMI,Not cost-burdened,98,37.960505792204614,23.547240116744998,Medium
+51036,Charles City County,Renter,50-80% AMI,Cost-burdened,19,38.2099463490856,122.25226795420123,Low
+51036,Charles City County,Renter,50-80% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Renter,80-100% AMI,Not cost-burdened,44,36.98648401781386,51.10042003013796,Low
+51036,Charles City County,Renter,80-100% AMI,Cost-burdened,4,38.01315561749642,577.7075321807966,Low
+51036,Charles City County,Renter,80-100% AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Renter,100%+ AMI,Not cost-burdened,83,40.08740450565489,29.36053356696443,Medium
+51036,Charles City County,Renter,100%+ AMI,Cost-burdened,0,42.485291572496,NA,NA
+51036,Charles City County,Renter,100%+ AMI,Severely cost-burdened,0,42.485291572496,NA,NA
+51041,Chesterfield County,Owner,0-30% AMI,Not cost-burdened,1005,236.43815258963602,14.30163181597399,High
+51041,Chesterfield County,Owner,0-30% AMI,Cost-burdened,1080,304.94261755287664,17.164393648141203,Medium
+51041,Chesterfield County,Owner,0-30% AMI,Severely cost-burdened,3415,450.6373264610911,8.021776383665681,High
+51041,Chesterfield County,Owner,30-50% AMI,Not cost-burdened,3420,430.275493143637,7.648118401387102,High
+51041,Chesterfield County,Owner,30-50% AMI,Cost-burdened,2285,407.2579035451614,10.834713069780088,High
+51041,Chesterfield County,Owner,30-50% AMI,Severely cost-burdened,1925,343.75281817026604,10.855494988205615,High
+51041,Chesterfield County,Owner,50-80% AMI,Not cost-burdened,9810,793.1475272608495,4.91494955684355,High
+51041,Chesterfield County,Owner,50-80% AMI,Cost-burdened,4415,695.5760202882212,9.577408052655823,High
+51041,Chesterfield County,Owner,50-80% AMI,Severely cost-burdened,980,294.1411225925406,18.245836027079005,Medium
+51041,Chesterfield County,Owner,80-100% AMI,Not cost-burdened,9960,918.9303564471031,5.608637324050629,High
+51041,Chesterfield County,Owner,80-100% AMI,Cost-burdened,1755,424.9023417210124,14.717908597096004,High
+51041,Chesterfield County,Owner,80-100% AMI,Severely cost-burdened,245,111.90621073023605,27.766568011968502,Medium
+51041,Chesterfield County,Owner,100%+ AMI,Not cost-burdened,61275,1755.5922077749149,1.7417042931672722,High
+51041,Chesterfield County,Owner,100%+ AMI,Cost-burdened,1680,281.1974395331508,10.175041233649978,High
+51041,Chesterfield County,Owner,100%+ AMI,Severely cost-burdened,54,59.65735495309862,67.1590171711118,Low
+51041,Chesterfield County,Renter,0-30% AMI,Not cost-burdened,350,143.32829448507368,24.894189228844755,Medium
+51041,Chesterfield County,Renter,0-30% AMI,Cost-burdened,345,183.97554185271477,32.41716961415176,Low
+51041,Chesterfield County,Renter,0-30% AMI,Severely cost-burdened,4310,547.7864547430869,7.726238615830675,High
+51041,Chesterfield County,Renter,30-50% AMI,Not cost-burdened,770,290.86594850549284,22.963403347846114,Medium
+51041,Chesterfield County,Renter,30-50% AMI,Cost-burdened,2485,432.7955637480588,10.587428858820005,High
+51041,Chesterfield County,Renter,30-50% AMI,Severely cost-burdened,1765,340.90907878787857,11.74161821944354,High
+51041,Chesterfield County,Renter,50-80% AMI,Not cost-burdened,3085,501.1686342938871,9.875584562894032,High
+51041,Chesterfield County,Renter,50-80% AMI,Cost-burdened,3540,481.0218290265006,8.260296207073319,High
+51041,Chesterfield County,Renter,50-80% AMI,Severely cost-burdened,250,99.5941765365827,24.2174289450657,Medium
+51041,Chesterfield County,Renter,80-100% AMI,Not cost-burdened,3390,533.0497162554352,9.558772292105965,High
+51041,Chesterfield County,Renter,80-100% AMI,Cost-burdened,380,166.41213898030395,26.621682767605815,Medium
+51041,Chesterfield County,Renter,80-100% AMI,Severely cost-burdened,30,69.77105417004964,141.38004897679764,Low
+51041,Chesterfield County,Renter,100%+ AMI,Not cost-burdened,8795,902.8975578657858,6.240749236601936,High
+51041,Chesterfield County,Renter,100%+ AMI,Cost-burdened,225,122.38463955905577,33.06575874611436,Low
+51041,Chesterfield County,Renter,100%+ AMI,Severely cost-burdened,75,76.62897624267207,62.110619041679485,Low
+51075,Goochland County,Owner,0-30% AMI,Not cost-burdened,70,67.07458535093602,58.24974845934522,Low
+51075,Goochland County,Owner,0-30% AMI,Cost-burdened,119,81.55366331440912,41.66108825542598,Low
+51075,Goochland County,Owner,0-30% AMI,Severely cost-burdened,314,133.27040181525678,25.801096125153773,Medium
+51075,Goochland County,Owner,30-50% AMI,Not cost-burdened,485,169.38713056191725,21.231113409822612,Medium
+51075,Goochland County,Owner,30-50% AMI,Cost-burdened,40,52.44997616777342,79.71120998141858,Low
+51075,Goochland County,Owner,30-50% AMI,Severely cost-burdened,60,68.90573270780887,69.81330568167058,Low
+51075,Goochland County,Owner,50-80% AMI,Not cost-burdened,575,158.0442975877333,16.708793190192498,Medium
+51075,Goochland County,Owner,50-80% AMI,Cost-burdened,235,106.67239567948214,27.59423027342227,Medium
+51075,Goochland County,Owner,50-80% AMI,Severely cost-burdened,95,57.57603668193913,36.84276863345969,Low
+51075,Goochland County,Owner,80-100% AMI,Not cost-burdened,800,255.46819762937224,19.41247702350853,Medium
+51075,Goochland County,Owner,80-100% AMI,Cost-burdened,220,114.93911431710269,31.759910007489,Low
+51075,Goochland County,Owner,80-100% AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51075,Goochland County,Owner,100%+ AMI,Not cost-burdened,4950,425.9730038394452,5.231316248680669,High
+51075,Goochland County,Owner,100%+ AMI,Cost-burdened,285,185.17829246431668,39.498382651163375,Low
+51075,Goochland County,Owner,100%+ AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51075,Goochland County,Renter,0-30% AMI,Not cost-burdened,39,51.146847410177685,79.72386783598735,Low
+51075,Goochland County,Renter,0-30% AMI,Cost-burdened,30,63.41135544995076,128.49312147913022,Low
+51075,Goochland County,Renter,0-30% AMI,Severely cost-burdened,150,98.7471518576612,40.019109162172725,Low
+51075,Goochland County,Renter,30-50% AMI,Not cost-burdened,175,95.11571899533746,33.04063186985235,Low
+51075,Goochland County,Renter,30-50% AMI,Cost-burdened,124,95.26804291051643,46.70459991691167,Low
+51075,Goochland County,Renter,30-50% AMI,Severely cost-burdened,10,52.20153254455275,317.3345443437857,Low
+51075,Goochland County,Renter,50-80% AMI,Not cost-burdened,110,76.34133873596926,42.18918968553151,Low
+51075,Goochland County,Renter,50-80% AMI,Cost-burdened,90,71.2460525222275,48.12296691808679,Low
+51075,Goochland County,Renter,50-80% AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51075,Goochland County,Renter,80-100% AMI,Not cost-burdened,175,126.39620247459969,43.90662699942672,Low
+51075,Goochland County,Renter,80-100% AMI,Cost-burdened,80,84.5103543951864,64.21759452521762,Low
+51075,Goochland County,Renter,80-100% AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51075,Goochland County,Renter,100%+ AMI,Not cost-burdened,440,168.00595227550718,23.211654086143575,Medium
+51075,Goochland County,Renter,100%+ AMI,Cost-burdened,24,61.83849933496123,156.63247045329592,Low
+51075,Goochland County,Renter,100%+ AMI,Severely cost-burdened,20,60.4648658313239,183.7837867213492,Low
+51085,Hanover County,Owner,0-30% AMI,Not cost-burdened,513,259.5168587972658,30.752633213917274,Low
+51085,Hanover County,Owner,0-30% AMI,Cost-burdened,215,101.95587280779857,28.827559993722645,Medium
+51085,Hanover County,Owner,0-30% AMI,Severely cost-burdened,790,194.1082172397655,14.936571677870456,High
+51085,Hanover County,Owner,30-50% AMI,Not cost-burdened,1470,290.115494243241,11.997415141461076,High
+51085,Hanover County,Owner,30-50% AMI,Cost-burdened,569,211.20606051910536,22.564629517909133,Medium
+51085,Hanover County,Owner,30-50% AMI,Severely cost-burdened,510,177.01694834111225,21.099821007343973,Medium
+51085,Hanover County,Owner,50-80% AMI,Not cost-burdened,3065,390.39211057602074,7.742917845386846,High
+51085,Hanover County,Owner,50-80% AMI,Cost-burdened,1415,278.11148843584294,11.948037781728244,High
+51085,Hanover County,Owner,50-80% AMI,Severely cost-burdened,510,163.03373883954205,19.433069770491933,Medium
+51085,Hanover County,Owner,80-100% AMI,Not cost-burdened,2650,348.0833233580718,7.984936017848756,High
+51085,Hanover County,Owner,80-100% AMI,Cost-burdened,500,135.86390249069103,16.518407597652406,Medium
+51085,Hanover County,Owner,80-100% AMI,Severely cost-burdened,8,56.74504383644443,431.19334222222216,Low
+51085,Hanover County,Owner,100%+ AMI,Not cost-burdened,21600,929.3653748660964,2.6155729338795912,High
+51085,Hanover County,Owner,100%+ AMI,Cost-burdened,450,173.78722622793657,23.47682893994415,Medium
+51085,Hanover County,Owner,100%+ AMI,Severely cost-burdened,8,54.954526656136345,417.5875885724646,Low
+51085,Hanover County,Renter,0-30% AMI,Not cost-burdened,345,171.572142260916,30.231644819332367,Low
+51085,Hanover County,Renter,0-30% AMI,Cost-burdened,155,84.08923831264022,32.979405162325804,Low
+51085,Hanover County,Renter,0-30% AMI,Severely cost-burdened,1145,328.33976305041097,17.432195646482576,Medium
+51085,Hanover County,Renter,30-50% AMI,Not cost-burdened,319,131.26309458488322,25.014167484804002,Medium
+51085,Hanover County,Renter,30-50% AMI,Cost-burdened,390,149.89996664442592,23.36528199585783,Medium
+51085,Hanover County,Renter,30-50% AMI,Severely cost-burdened,315,129.53377937819926,24.99807581959748,Medium
+51085,Hanover County,Renter,50-80% AMI,Not cost-burdened,755,198.55981466550577,15.987424438133276,Medium
+51085,Hanover County,Renter,50-80% AMI,Cost-burdened,530,173.1733235807409,19.862742854933867,Medium
+51085,Hanover County,Renter,50-80% AMI,Severely cost-burdened,35,68.26419266350405,118.56568417456197,Low
+51085,Hanover County,Renter,80-100% AMI,Not cost-burdened,700,240.67820840283815,20.90127732547444,Medium
+51085,Hanover County,Renter,80-100% AMI,Cost-burdened,35,64.53681120105021,112.09172592453358,Low
+51085,Hanover County,Renter,80-100% AMI,Severely cost-burdened,40,76.60939890117922,116.42765790452769,Low
+51085,Hanover County,Renter,100%+ AMI,Not cost-burdened,2070,340.3395363456911,9.994847109398737,High
+51085,Hanover County,Renter,100%+ AMI,Cost-burdened,90,70.12845356914696,47.36808751715431,Low
+51085,Hanover County,Renter,100%+ AMI,Severely cost-burdened,20,70.2353187506115,213.48121200793767,Low
+51087,Henrico County,Owner,0-30% AMI,Not cost-burdened,1154,403.685521167158,21.265297454455126,Medium
+51087,Henrico County,Owner,0-30% AMI,Cost-burdened,725,176.60124574872057,14.807776606118484,High
+51087,Henrico County,Owner,0-30% AMI,Severely cost-burdened,3220,511.8261423569531,9.66274882208373,High
+51087,Henrico County,Owner,30-50% AMI,Not cost-burdened,3140,543.2844558792383,10.517965188454461,High
+51087,Henrico County,Owner,30-50% AMI,Cost-burdened,2125,362.37963518939637,10.366662190292047,High
+51087,Henrico County,Owner,30-50% AMI,Severely cost-burdened,1820,426.18892524325406,14.23524250119423,High
+51087,Henrico County,Owner,50-80% AMI,Not cost-burdened,8095,811.9002401773262,6.097052217510724,High
+51087,Henrico County,Owner,50-80% AMI,Cost-burdened,3900,536.510950494023,8.362730114473118,High
+51087,Henrico County,Owner,50-80% AMI,Severely cost-burdened,849,352.8200674564869,25.2626954261575,Medium
+51087,Henrico County,Owner,80-100% AMI,Not cost-burdened,7620,683.6658540544496,5.454098988060931,High
+51087,Henrico County,Owner,80-100% AMI,Cost-burdened,935,228.14907407219516,14.833416710641234,High
+51087,Henrico County,Owner,80-100% AMI,Severely cost-burdened,134,71.35124385741288,32.36911666171251,Low
+51087,Henrico County,Owner,100%+ AMI,Not cost-burdened,50825,1590.4801161913342,1.9023260472015204,High
+51087,Henrico County,Owner,100%+ AMI,Cost-burdened,1390,302.50785113778454,13.229881311923403,High
+51087,Henrico County,Owner,100%+ AMI,Severely cost-burdened,84,72.65672714897086,52.5812180843616,Low
+51087,Henrico County,Renter,0-30% AMI,Not cost-burdened,1065,279.748100976575,15.968040925072419,Medium
+51087,Henrico County,Renter,0-30% AMI,Cost-burdened,529,206.2183309019836,23.697672491192716,Medium
+51087,Henrico County,Renter,0-30% AMI,Severely cost-burdened,6520,716.2087684467427,6.677688183627116,High
+51087,Henrico County,Renter,30-50% AMI,Not cost-burdened,1290,378.84957436956427,17.8529994283624,Medium
+51087,Henrico County,Renter,30-50% AMI,Cost-burdened,4015,588.8590663308157,8.915791713154935,High
+51087,Henrico County,Renter,30-50% AMI,Severely cost-burdened,3300,537.6523040032471,9.904251708634927,High
+51087,Henrico County,Renter,50-80% AMI,Not cost-burdened,5400,672.0602651548446,7.5656902527844725,High
+51087,Henrico County,Renter,50-80% AMI,Cost-burdened,6185,768.782153799111,7.556099827743963,High
+51087,Henrico County,Renter,50-80% AMI,Severely cost-burdened,270,135.97058505426827,30.61366318907312,Low
+51087,Henrico County,Renter,80-100% AMI,Not cost-burdened,5120,648.2815746263348,7.697112160742006,High
+51087,Henrico County,Renter,80-100% AMI,Cost-burdened,805,233.15231073270536,17.60669906796091,Medium
+51087,Henrico County,Renter,80-100% AMI,Severely cost-burdened,120,93.92017887546851,47.57861138574899,Low
+51087,Henrico County,Renter,100%+ AMI,Not cost-burdened,11910,868.8693802868185,4.4348284896950965,High
+51087,Henrico County,Renter,100%+ AMI,Cost-burdened,395,175.37958832201653,26.99081810196091,Medium
+51087,Henrico County,Renter,100%+ AMI,Severely cost-burdened,120,73.96620850090939,37.47021707239584,Low
+51127,New Kent County,Owner,0-30% AMI,Not cost-burdened,210,161.01242188104618,46.60947224809558,Low
+51127,New Kent County,Owner,0-30% AMI,Cost-burdened,30,59.16079783099616,119.88003613170449,Low
+51127,New Kent County,Owner,0-30% AMI,Severely cost-burdened,325,141.9506956657839,26.551451141600918,Medium
+51127,New Kent County,Owner,30-50% AMI,Not cost-burdened,300,148.17557153593165,30.02544509340053,Low
+51127,New Kent County,Owner,30-50% AMI,Cost-burdened,209,127.79671357276759,37.17127836208537,Low
+51127,New Kent County,Owner,30-50% AMI,Severely cost-burdened,130,88.14760348415605,41.21936099329252,Low
+51127,New Kent County,Owner,50-80% AMI,Not cost-burdened,459,159.53056133543816,21.128336523225215,Medium
+51127,New Kent County,Owner,50-80% AMI,Cost-burdened,179,100.16985574512923,34.01873146834974,Low
+51127,New Kent County,Owner,50-80% AMI,Severely cost-burdened,75,82.46211251235322,66.83859170200867,Low
+51127,New Kent County,Owner,80-100% AMI,Not cost-burdened,780,215.8564337702261,16.823040586877568,Medium
+51127,New Kent County,Owner,80-100% AMI,Cost-burdened,264,161.22654868228122,37.12502272319269,Low
+51127,New Kent County,Owner,80-100% AMI,Severely cost-burdened,35,75.82216034906945,131.69285340698124,Low
+51127,New Kent County,Owner,100%+ AMI,Not cost-burdened,4750,500.7414502515245,6.408465208786109,High
+51127,New Kent County,Owner,100%+ AMI,Cost-burdened,250,111.72287142747452,27.166655666255203,Medium
+51127,New Kent County,Owner,100%+ AMI,Severely cost-burdened,4,50.15974481593781,762.3061522178998,Low
+51127,New Kent County,Renter,0-30% AMI,Not cost-burdened,0,55.90169943749474,NA,NA
+51127,New Kent County,Renter,0-30% AMI,Cost-burdened,45,78.10249675906654,105.50826985351777,Low
+51127,New Kent County,Renter,0-30% AMI,Severely cost-burdened,30,60.4648658313239,122.52252448089949,Low
+51127,New Kent County,Renter,30-50% AMI,Not cost-burdened,25,62.20128616033595,151.2493280494491,Low
+51127,New Kent County,Renter,30-50% AMI,Cost-burdened,40,61.318838867023565,93.18972472192031,Low
+51127,New Kent County,Renter,30-50% AMI,Severely cost-burdened,85,135.5249054602142,96.92465972480902,Low
+51127,New Kent County,Renter,50-80% AMI,Not cost-burdened,93,85.07643622061282,55.61096592516444,Low
+51127,New Kent County,Renter,50-80% AMI,Cost-burdened,25,64.03124237432849,155.69906960323036,Low
+51127,New Kent County,Renter,50-80% AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51127,New Kent County,Renter,80-100% AMI,Not cost-burdened,4,50.08991914547278,761.2449718156956,Low
+51127,New Kent County,Renter,80-100% AMI,Cost-burdened,10,54.62600113499065,332.0729552279067,Low
+51127,New Kent County,Renter,80-100% AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51127,New Kent County,Renter,100%+ AMI,Not cost-burdened,265,115.71948841919411,26.545733421848738,Medium
+51127,New Kent County,Renter,100%+ AMI,Cost-burdened,50,86.02325267042627,104.58754124063985,Low
+51127,New Kent County,Renter,100%+ AMI,Severely cost-burdened,0,55.90169943749474,NA,NA
+51145,Powhatan County,Owner,0-30% AMI,Not cost-burdened,155,111.30139262381222,43.65188454703882,Low
+51145,Powhatan County,Owner,0-30% AMI,Cost-burdened,135,85.70880934886448,38.594533085157934,Low
+51145,Powhatan County,Owner,0-30% AMI,Severely cost-burdened,205,103.47463457292324,30.684152886922156,Low
+51145,Powhatan County,Owner,30-50% AMI,Not cost-burdened,350,165.00909065866645,28.65985074401502,Medium
+51145,Powhatan County,Owner,30-50% AMI,Cost-burdened,185,110.8692924122816,36.431214133666835,Low
+51145,Powhatan County,Owner,30-50% AMI,Severely cost-burdened,124,140.71247279470288,68.98346543519114,Low
+51145,Powhatan County,Owner,50-80% AMI,Not cost-burdened,1050,309.22483729480723,17.902726142411765,Medium
+51145,Powhatan County,Owner,50-80% AMI,Cost-burdened,250,159.30160074525304,38.7359515489977,Low
+51145,Powhatan County,Owner,50-80% AMI,Severely cost-burdened,14,52.61178575186362,228.44891772411472,Low
+51145,Powhatan County,Owner,80-100% AMI,Not cost-burdened,980,258.58460897740997,16.040233793028346,Medium
+51145,Powhatan County,Owner,80-100% AMI,Cost-burdened,34,53.563046963368315,95.76800815907083,Low
+51145,Powhatan County,Owner,80-100% AMI,Severely cost-burdened,4,56.88585061331157,864.5266050655254,Low
+51145,Powhatan County,Owner,100%+ AMI,Not cost-burdened,6305,566.3214634816519,5.460243724950786,High
+51145,Powhatan County,Owner,100%+ AMI,Cost-burdened,170,97.67804256842989,34.92867604807076,Low
+51145,Powhatan County,Owner,100%+ AMI,Severely cost-burdened,70,86.86771552193599,75.43874556833346,Low
+51145,Powhatan County,Renter,0-30% AMI,Not cost-burdened,50,78.40918313565064,95.33031384273633,Low
+51145,Powhatan County,Renter,0-30% AMI,Cost-burdened,10,60.166435825965294,365.7534092763848,Low
+51145,Powhatan County,Renter,0-30% AMI,Severely cost-burdened,75,78.70196947980399,63.790856721219036,Low
+51145,Powhatan County,Renter,30-50% AMI,Not cost-burdened,70,73.68174807915459,63.98762316904436,Low
+51145,Powhatan County,Renter,30-50% AMI,Cost-burdened,115,106.78014796768171,56.4451687420017,Low
+51145,Powhatan County,Renter,30-50% AMI,Severely cost-burdened,55,79.25276020429824,87.59630859828488,Low
+51145,Powhatan County,Renter,50-80% AMI,Not cost-burdened,199,152.66630276521403,46.63631310510425,Low
+51145,Powhatan County,Renter,50-80% AMI,Cost-burdened,60,72.86288492778748,73.82257844760638,Low
+51145,Powhatan County,Renter,50-80% AMI,Severely cost-burdened,0,62.609903369994115,NA,NA
+51145,Powhatan County,Renter,80-100% AMI,Not cost-burdened,75,106.268527796333,86.13457166876027,Low
+51145,Powhatan County,Renter,80-100% AMI,Cost-burdened,0,62.609903369994115,NA,NA
+51145,Powhatan County,Renter,80-100% AMI,Severely cost-burdened,0,62.609903369994115,NA,NA
+51145,Powhatan County,Renter,100%+ AMI,Not cost-burdened,260,142.67795905464865,33.35935446683391,Low
+51145,Powhatan County,Renter,100%+ AMI,Cost-burdened,0,62.609903369994115,NA,NA
+51145,Powhatan County,Renter,100%+ AMI,Severely cost-burdened,0,62.609903369994115,NA,NA
+51760,Richmond city,Owner,0-30% AMI,Not cost-burdened,479,191.07590114925534,24.249595617675546,Medium
+51760,Richmond city,Owner,0-30% AMI,Cost-burdened,505,169.5346572238255,20.40803601960041,Medium
+51760,Richmond city,Owner,0-30% AMI,Severely cost-burdened,2910,505.7242331547896,10.56464415034186,High
+51760,Richmond city,Owner,30-50% AMI,Not cost-burdened,1780,324.52118574909713,11.08299531262925,High
+51760,Richmond city,Owner,30-50% AMI,Cost-burdened,1215,235.54405108174564,11.785010123293965,High
+51760,Richmond city,Owner,30-50% AMI,Severely cost-burdened,1144,269.63308402345587,14.327857462933654,High
+51760,Richmond city,Owner,50-80% AMI,Not cost-burdened,4000,449.78995097712,6.835713540685714,High
+51760,Richmond city,Owner,50-80% AMI,Cost-burdened,2705,481.4426237881312,10.819603993238486,High
+51760,Richmond city,Owner,50-80% AMI,Severely cost-burdened,570,197.2663174492797,21.038374388021087,Medium
+51760,Richmond city,Owner,80-100% AMI,Not cost-burdened,3395,501.65526011395514,8.982550955301784,High
+51760,Richmond city,Owner,80-100% AMI,Cost-burdened,575,202.48703662210082,21.40737799625752,Medium
+51760,Richmond city,Owner,80-100% AMI,Severely cost-burdened,199,110.19981851164728,33.66370408628164,Low
+51760,Richmond city,Owner,100%+ AMI,Not cost-burdened,23035,881.4034263604833,2.32605840685275,High
+51760,Richmond city,Owner,100%+ AMI,Cost-burdened,680,182.34308322500198,16.301008691668333,Medium
+51760,Richmond city,Owner,100%+ AMI,Severely cost-burdened,120,88,44.57953394123607,Low
+51760,Richmond city,Renter,0-30% AMI,Not cost-burdened,2450,421.7226576791909,10.46393294905256,High
+51760,Richmond city,Renter,0-30% AMI,Cost-burdened,2220,389.97051170569296,10.678564903356964,High
+51760,Richmond city,Renter,0-30% AMI,Severely cost-burdened,11060,853.658011149664,4.692052804815205,High
+51760,Richmond city,Renter,30-50% AMI,Not cost-burdened,1895,420.68634396661844,13.495323446491517,High
+51760,Richmond city,Renter,30-50% AMI,Cost-burdened,4995,592.7857960511537,7.214336476916476,High
+51760,Richmond city,Renter,30-50% AMI,Severely cost-burdened,2780,433.47433603386486,9.478785419821671,High
+51760,Richmond city,Renter,50-80% AMI,Not cost-burdened,7160,817.1676694534605,6.937967341813354,High
+51760,Richmond city,Renter,50-80% AMI,Cost-burdened,5205,700.5390781391143,8.181741056081968,High
+51760,Richmond city,Renter,50-80% AMI,Severely cost-burdened,775,382.71399242776585,30.019726830298332,Low
+51760,Richmond city,Renter,80-100% AMI,Not cost-burdened,5085,655.3647839180863,7.834769811897874,High
+51760,Richmond city,Renter,80-100% AMI,Cost-burdened,920,249.70382456021773,16.499525872883424,Medium
+51760,Richmond city,Renter,80-100% AMI,Severely cost-burdened,25,60.45659600076736,147.00692036660757,Low
+51760,Richmond city,Renter,100%+ AMI,Not cost-burdened,11040,789.2014951835811,4.345631773840256,High
+51760,Richmond city,Renter,100%+ AMI,Cost-burdened,275,152.21038072352357,33.64694793556752,Low
+51760,Richmond city,Renter,100%+ AMI,Severely cost-burdened,15,66.12866246946176,267.9986320950831,Low
