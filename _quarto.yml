@@ -21,13 +21,25 @@ book:
     search: true
   chapters:
     - index.qmd
-    - demand.qmd
-    - ownership.qmd
-    - rental.qmd
-    - gaps.qmd
-    - burden.qmd
+    - part: "Regional Findings"
+      chapters:
+        - demand.qmd
+        - ownership.qmd
+        - rental.qmd
+        - gaps.qmd
+        - burden.qmd
+    - part: "Local Summaries"
+      chapters:
+        - local-ashland.qmd
+        - local-charles-city.qmd
+        - local-chesterfield.qmd
+        - local-goochland.qmd
+        - local-hanover.qmd
+        - local-henrico.qmd
+        - local-new-kent.qmd
+        - local-powhatan.qmd
+        - local-richmond.qmd
   appendices:
-    - local-summaries.qmd
     - data-notes.qmd
 
 knitr:

@@ -1,0 +1,19 @@
+{
+  "hash": "582d81086f931c80d8d2535b5ef33517",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Charles City County\"\nsubtitle: \"Secondary locality\"\n---\n\n\n\n\n::: {.cell layout-align=\"left\"}\n::: {.cell-output-display}\n`````{=html}\n<table class=\"table table-condensed table-striped\" style=\"width: auto !important; margin-left: auto; margin-right: auto;\">\n <thead>\n  <tr>\n   <th style=\"text-align:left;\"> Metric </th>\n   <th style=\"text-align:right;\"> 2022 ref. </th>\n   <th style=\"text-align:right;\"> 2024/25 </th>\n   <th style=\"text-align:right;\"> Change </th>\n  </tr>\n </thead>\n<tbody>\n  <tr>\n   <td style=\"text-align:left;\"> Population </td>\n   <td style=\"text-align:right;\"> 6,582 </td>\n   <td style=\"text-align:right;\"> 6,623 </td>\n   <td style=\"text-align:right;\"> +1% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Net migration (2020–2025) </td>\n   <td style=\"text-align:right;\"> — </td>\n   <td style=\"text-align:right;\"> 167 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Median household income </td>\n   <td style=\"text-align:right;\"> $66k </td>\n   <td style=\"text-align:right;\"> $75k </td>\n   <td style=\"text-align:right;\"> +15% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Homeownership rate </td>\n   <td style=\"text-align:right;\"> 85% </td>\n   <td style=\"text-align:right;\"> 86% </td>\n   <td style=\"text-align:right;\"> +1.6 pp </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Median home value </td>\n   <td style=\"text-align:right;\"> $199k </td>\n   <td style=\"text-align:right;\"> $241k </td>\n   <td style=\"text-align:right;\"> +21% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Median gross rent </td>\n   <td style=\"text-align:right;\"> $927 </td>\n   <td style=\"text-align:right;\"> $1,099 </td>\n   <td style=\"text-align:right;\"> +19% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Cost-burdened renters </td>\n   <td style=\"text-align:right;\"> 46% </td>\n   <td style=\"text-align:right;\"> 44% </td>\n   <td style=\"text-align:right;\"> -2.2 pp </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Cost-burdened homeowners </td>\n   <td style=\"text-align:right;\"> 19% </td>\n   <td style=\"text-align:right;\"> 20% </td>\n   <td style=\"text-align:right;\"> +0.8 pp </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Single-family permits </td>\n   <td style=\"text-align:right;\"> 21 </td>\n   <td style=\"text-align:right;\"> 30 </td>\n   <td style=\"text-align:right;\"> +43% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Multifamily permits </td>\n   <td style=\"text-align:right;\"> 0 </td>\n   <td style=\"text-align:right;\"> 0 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Severely burdened renters (CHAS) </td>\n   <td style=\"text-align:right;\"> — </td>\n   <td style=\"text-align:right;\"> 98 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Population projection (2050) </td>\n   <td style=\"text-align:right;\"> — </td>\n   <td style=\"text-align:right;\"> 5,485 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n</tbody>\n</table>\n\n`````\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"site_libs/kePrint-0.0.1/kePrint.js\"></script>\n<link href=\"site_libs/lightable-0.0.1/lightable.css\" rel=\"stylesheet\" />\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,28 @@
+---
+title: "Chesterfield County"
+subtitle: "Primary locality"
+---
+
+```{r}
+#| label: setup
+#| include: false
+source("_common.R")
+local_stats <- read_rds("data/local_stats.rds")
+```
+
+```{r}
+#| label: table
+loc <- local_stats |> filter(geoid == "51041")
+
+tbl <- loc |>
+  select(
+    `Metric`    = metric_label,
+    `2022 ref.` = value_2022_fmt,
+    `2024/25`   = value_current_fmt,
+    `Change`    = change_fmt
+  ) |>
+  mutate(across(where(is.character), \(x) replace_na(x, "—")))
+
+kbl(tbl, format = "html", align = c("l", "r", "r", "r")) |>
+  kable_styling(c("condensed", "striped"), full_width = FALSE)
+```

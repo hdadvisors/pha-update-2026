@@ -1,0 +1,19 @@
+{
+  "hash": "812e2261b862c40838cdbd9991b576e0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Town of Ashland\"\nsubtitle: \"Town\"\n---\n\n\n\n\n::: {.cell layout-align=\"left\"}\n::: {.cell-output-display}\n`````{=html}\n<table class=\"table table-condensed table-striped\" style=\"width: auto !important; margin-left: auto; margin-right: auto;\">\n <thead>\n  <tr>\n   <th style=\"text-align:left;\"> Metric </th>\n   <th style=\"text-align:right;\"> 2022 ref. </th>\n   <th style=\"text-align:right;\"> 2024/25 </th>\n   <th style=\"text-align:right;\"> Change </th>\n  </tr>\n </thead>\n<tbody>\n  <tr>\n   <td style=\"text-align:left;\"> Median household income </td>\n   <td style=\"text-align:right;\"> $59k </td>\n   <td style=\"text-align:right;\"> $61k </td>\n   <td style=\"text-align:right;\"> +4% </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Severely burdened renters (CHAS) </td>\n   <td style=\"text-align:right;\"> — </td>\n   <td style=\"text-align:right;\"> 219 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n  <tr>\n   <td style=\"text-align:left;\"> Population projection (2050) </td>\n   <td style=\"text-align:right;\"> — </td>\n   <td style=\"text-align:right;\"> 9,592 </td>\n   <td style=\"text-align:right;\"> — </td>\n  </tr>\n</tbody>\n</table>\n\n`````\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"site_libs/kePrint-0.0.1/kePrint.js\"></script>\n<link href=\"site_libs/lightable-0.0.1/lightable.css\" rel=\"stylesheet\" />\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
