@@ -134,7 +134,7 @@ dec_cap <- function(years = "2000-2020")
 pep_cap <- function(vintage = 2025)
   paste0("**Source:** U.S. Census Bureau, Population Estimates Program, Vintage ", vintage, ".")
 
-wc_cap <- function(release = 2024)
+wc_cap <- function(release = 2025)
   paste0("**Source:** University of Virginia Weldon Cooper Center for Public Service, ",
          "Virginia Population Projections, ", release, " release.")
 
