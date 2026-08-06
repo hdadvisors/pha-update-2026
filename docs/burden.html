@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cb6652906b203ffd9788d5b3a5f7dbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aaad69cf263e66a3aa3e9012e6f891f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -182,8 +185,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade" id="toc-half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade" class="nav-link active" data-scroll-target="#half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade"><span class="header-section-number">5.1</span> Half of the region’s renters are cost-burdened — a share that has not moved in a decade</a></li>
+  <li><a href="#renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike" id="toc-renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike" class="nav-link" data-scroll-target="#renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike"><span class="header-section-number">5.2</span> Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike</a></li>
+  <li><a href="#the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up" id="toc-the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up" class="nav-link" data-scroll-target="#the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up"><span class="header-section-number">5.3</span> The city-county gap in severe renter burden has narrowed as the counties catch up</a></li>
+  <li><a href="#planned-content" id="toc-planned-content" class="nav-link" data-scroll-target="#planned-content"><span class="header-section-number">5.4</span> Planned content</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -211,9 +223,133 @@ ul.task-list li input[type="checkbox"] {
      income (ACS + CHAS + PUMS), wage affordability (OEWS), evictions, delinquency, and PIT
      homelessness counts. Theme-based takeaway H2s; static ggplot only; "Since 2022" callout
      per section; fig-alt throughout. Built in Task 11. -->
-<p><em>Section stub — content built in Phase C, Task 11 (see PLAN.md §9).</em></p>
+<section id="half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade"><span class="header-section-number">5.1</span> Half of the region’s renters are cost-burdened — a share that has not moved in a decade</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-burden-trend" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Two stacked bar charts of cost burden shares for renters and owners in the Richmond region across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Renter bars show about half of households cost-burdened in all three periods, split roughly evenly between cost-burdened and severely cost-burdened. Owner bars show the burdened share falling from 26 percent to 20 percent over the decade.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-burden-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="burden_files/figure-html/fig-burden-trend-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Two stacked bar charts of cost burden shares for renters and owners in the Richmond region across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Renter bars show about half of households cost-burdened in all three periods, split roughly evenly between cost-burdened and severely cost-burdened. Owner bars show the burdened share falling from 26 percent to 20 percent over the decade.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-burden-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Half of the region’s renters are cost-burdened — a share that has not moved in a decade
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>51.3% of the region’s renters spent 30 percent or more of their income on housing in 2020–2024 — statistically unchanged from 51.2 percent in 2010–2014.</strong></li>
+<li>Severe burden is half the renter problem: 26% of renters pay 50 percent or more of income toward housing, roughly matching the share paying 30–49 percent.</li>
+<li>Owners have moved in the opposite direction: the burdened owner share fell from 26 percent in 2010–2014 to 20% in 2020–2024, driven by locked-in low mortgage rates and rising incomes among existing owners.</li>
+<li>Because the renter population grew while the burdened share held flat, the count of cost-burdened renter households rose from 63,418 to 73,767 over the decade.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Since 2022
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The 2022 Framework reported cost-burdened renters up by almost 1,900 households and cost-burdened owners down by more than 7,200 since 2015 (Fig 10.1). This update finds the same split, larger on the renter side: burdened renter households up 10,349 (+16.3%) and burdened owner households down 7,742 (-11.4%) from 2010–2014 to 2020–2024. <strong>Caveat:</strong> the 2022 figures rode on the 2016–2020 ACS with a 2015 base year; this update compares non-overlapping 2010–2014 and 2020–2024 windows, so the magnitudes are directionally comparable but not measured on the same yardstick.</p>
+</div>
+</div>
+</section>
+<section id="renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike"><span class="header-section-number">5.2</span> Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-burden-locality" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Dodged bar chart of 2020-2024 renter cost burden shares for Virginia and the four primary localities. Each geography shows two bars: cost-burdened (30-49 percent of income) and severely cost-burdened (50 percent or more). Shares cluster between 22 and 28 percent for both categories everywhere; Richmond has the highest severe share at 28 percent, and Hanover is lowest overall.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-burden-locality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="burden_files/figure-html/fig-burden-locality-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Dodged bar chart of 2020-2024 renter cost burden shares for Virginia and the four primary localities. Each geography shows two bars: cost-burdened (30-49 percent of income) and severely cost-burdened (50 percent or more). Shares cluster between 22 and 28 percent for both categories everywhere; Richmond has the highest severe share at 28 percent, and Hanover is lowest overall.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-burden-locality-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Total renter cost burden is nearly uniform across the three largest localities: 52 percent in Chesterfield, 52 percent in Richmond, and 52 percent in Henrico — this is a regional condition, not a city problem.</strong></li>
+<li>Richmond has the largest severe tilt: 28 percent of city renters pay half or more of their income toward housing, against 24 percent in Henrico and 25 percent in Chesterfield.</li>
+<li>Hanover is the outlier at 45 percent total renter burden, still well above the owner rate anywhere in the region.</li>
+<li>The three largest localities all exceed the statewide renter burden rate of 49 percent; Hanover sits below it.</li>
+<li>Estimates for Charles City, Goochland, New Kent, and Powhatan are suppressed: every renter burden cell in those localities carries a CV above 30 (Low reliability). Their small renter counts (roughly 300–1,300 renter households each) cannot support reliable shares at this cut; CHAS tables in Phase 5 will cover them at coarser cuts.</li>
+</ul>
+</section>
+<section id="the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up"><span class="header-section-number">5.3</span> The city-county gap in severe renter burden has narrowed as the counties catch up</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-severe-trend" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Line chart of the severely cost-burdened renter share for the four primary localities across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Richmond starts highest near 29 percent and edges down to 28 percent. Chesterfield rises from 23 to 25 percent, Henrico holds near 24 percent, and Hanover rises from 21 to 22 percent. Each line is labeled directly at its endpoint.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-severe-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="burden_files/figure-html/fig-severe-trend-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Line chart of the severely cost-burdened renter share for the four primary localities across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Richmond starts highest near 29 percent and edges down to 28 percent. Chesterfield rises from 23 to 25 percent, Henrico holds near 24 percent, and Hanover rises from 21 to 22 percent. Each line is labeled directly at its endpoint.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-severe-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: The city-county gap in severe renter burden has narrowed as the counties catch up
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Severe renter burden converged across the region over the decade: Richmond eased from 29 percent to 28 percent while Chesterfield climbed from 23 percent to 25 percent, narrowing the city-county gap from 7 points to 3.</strong></li>
+<li>Chesterfield added the most severely burdened renter households of any locality — up about 1,900 (from 5,700 to 7,600), a one-third increase since 2010–2014.</li>
+<li>Henrico’s severe share held near 24 percent, but its count still grew by roughly 850 households to 11,300.</li>
+<li>Richmond holds the largest severe caseload in absolute terms — about 15,800 renter households, up 2,100 over the decade — even as its share edged down.</li>
+</ul>
+</section>
+<section id="planned-content" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="planned-content"><span class="header-section-number">5.4</span> Planned content</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Cost burden by income band and race/ethnicity (CHAS).</strong> HUD CHAS 2018–2022 tables will break renter and owner burden by AMI band and by race/ethnicity, the cuts the ACS tables above cannot support. Pending Phase 5.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Evictions.</strong> Eviction filings and judgments for the region’s general district courts, trended against the 2022 Framework’s pre-pandemic baseline. Pending Phase 5.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Homelessness.</strong> Greater Richmond CoC Point-in-Time counts, sheltered and unsheltered, updating the 2022 Framework’s 2019–2021 series. Pending Phase 5.</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -9,4 +9,67 @@
 source("_common.R")
 ```
 
-*Appendix stub — content built in Phase E, Task 14 (see PLAN.md §9).*
+This appendix records every data source and vintage used in the update, defines the geographies, and explains the reliability and comparison rules applied throughout the report.
+
+## Sources and vintages
+
+The table below lists each source, the vintage used this cycle, and its current status in the build pipeline.
+
+| Source | Vintage | Access | Status |
+|---|---|---|---|
+| ACS 5-year estimates (anchor) | 2020–2024, trend tables back to ~2010 | tidycensus API | Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending Phases 3 and 5 |
+| ACS PUMS | 2020–2024 5-year | tidycensus `get_pums()` | Pending Phase 4 |
+| Population Estimates Program (PEP) | Vintage 2025 | Census API (FTP fallback) | Loaded (Phase 2) |
+| Decennial Census | 2000 / 2010 / 2020 | tidycensus API | Loaded (Phase 2) |
+| Weldon Cooper population projections | 2025 official release (2030–2050 series) | UVA published xlsx | Loaded (Phase 2) |
+| CHAS | 2018–2022 | huduser.gov download | Raw tables staged (county and place levels); processing pending Phase 5 |
+| HUD Fair Market Rents and Small Area FMRs | FY2026 | huduser.gov download | Raw files staged; processing pending Phase 3 |
+| HUD Income Limits | FY2026 | huduser.gov download | Raw file staged; processing pending Phase 4 |
+| BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending Phase 5 |
+| Bright MLS for-sale market | Monthly summary exports, nominal dollars | Manual export by HDAdvisors | Monthly median price series loaded; transaction-level detail pending Phase 3 |
+| CoStar multifamily market | Quarterly, Richmond market | Manual export by HDAdvisors | Regional asking rent and vacancy loaded; submarket detail pending Phase 3 |
+| National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Raw file staged; processing pending Phase 3 |
+| Point-in-Time homelessness counts | Greater Richmond CoC (VA-500), 2020–2025 | HUD CoC reports | Raw reports staged; processing pending Phase 5 |
+
+Notes on status:
+
+- **Loaded** means an `r/` script has produced the tidy `data/*.rds` file chapters read.
+- **Raw files staged** means the source download sits in `data/raw/` awaiting its processing script.
+- MLS and CoStar are licensed sources: their derived exports are delivered to PHA privately and are excluded from this public repository.
+
+## Geography definitions
+
+The study area is the PlanRVA region, held constant across every source through vectors defined once in the project's shared setup file.
+
+- **Region (8 localities):** Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties, plus Richmond city. This is the full regional analysis universe.
+- **Primary localities (4):** Chesterfield, Hanover, Henrico, and Richmond city carry the core regional narrative.
+- **Secondary localities (4):** Charles City, Goochland, New Kent, and Powhatan appear in local summaries only, always with reliability flags (see below).
+- **Town of Ashland:** a Census place (not a county) inside Hanover County, so it is pulled at the place level (summary level 160) in ACS and CHAS scripts and treated as a ninth local-summary geography.
+- **Virginia** serves as the statewide benchmark.
+
+### PUMS geography
+
+Microdata estimates use 2020-vintage PUMAs, which do not follow county lines everywhere.
+
+- **Core-3 (the regional PUMS default):** Chesterfield (3 PUMAs), Henrico (2), and Richmond city (2) — the three localities that tile cleanly into whole PUMAs.
+- **Hanover cannot be isolated in PUMS.** It is split across two multi-county PUMAs — one covering eastern Hanover with King William, New Kent, and Charles City; the other covering western Hanover with Goochland and Powhatan — so no PUMA combination yields Hanover alone. Hanover enters the analysis only through county-level ACS tables.
+- A **full-region PUMA set** (core-3 plus the two mixed outer PUMAs) exists for region-wide totals where the extra counties are acceptable; it is used sparingly and labeled when it appears.
+
+## Estimate reliability
+
+ACS estimates for small geographies carry sampling error, flagged consistently from each estimate's coefficient of variation (CV, on a 0–100 scale).
+
+- **High reliability:** CV at or below 15 — reported without qualification.
+- **Medium reliability:** CV above 15 and at or below 30 — reported with a footnote identifying the cell as medium-reliability.
+- **Low reliability:** CV above 30 — the cell is suppressed rather than reported.
+- Reliability treatment applies to every secondary-locality and Ashland ACS estimate in the report.
+- Small PIT and eviction counts are reported as counts with a volatility caveat, never converted to rates.
+
+## Comparing to the 2022 Framework
+
+Every section compares its findings to the 2022 Richmond Regional Housing Framework, but the two cycles rest on different survey windows.
+
+- This update's anchor is the 2020–2024 ACS 5-year; the 2022 Framework used the 2016–2020 ACS 5-year. Overlapping multi-year windows differ by construction, so some movement between the two reports is structural rather than real-world change.
+- Changes since 2022 are therefore **logged and narrated, never gated**: a large swing prompts human review but never fails a build.
+- The 2022 baseline figures are transcribed from the published 2022 report, not recomputed, so the comparison is always against the numbers PHA actually published.
+- The 2022 report defined "the region" as the four primary localities only; regional comparisons against the 2022 baseline carry that narrower scope rather than the full 8-locality region.

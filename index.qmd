@@ -15,6 +15,12 @@ HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the
 Framework with the latest available data and reorganizes the findings around the region's
 most pressing housing themes.
 
+::: {.callout-note}
+This is a **preliminary working draft for PHA review**. Figures and findings are subject to
+revision as the analysis develops, and the site is not yet indexed for search. Reviewers
+can comment inline using Hypothesis.
+:::
+
 **The update covers the PlanRVA region** — Charles City, Chesterfield, Goochland, Hanover,
 Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland.
 Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover,
@@ -31,7 +37,15 @@ Henrico, and Richmond); the five secondary localities receive individual local s
 Each section leads with what changed since the 2022 Framework and organizes its findings
 by takeaway rather than by data source.
 
-::: {.callout-note}
-This is a **preliminary draft for PHA review**. Content is under active development and
-the site is not yet indexed for search. Reviewers can comment inline using Hypothesis.
-:::
+## Status of this update
+
+As of August 6, 2026:
+
+| Section | Status |
+|---|---|
+| Housing demand | Preliminary figures loaded |
+| Homeownership market | First figures loaded |
+| Rental market | First figures loaded |
+| Housing gap | Structure outlined; analysis pending |
+| Cost burden and instability | First figures loaded |
+| Data notes | Drafted |

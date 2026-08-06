@@ -9,6 +9,194 @@
 #| label: setup
 #| include: false
 source("_common.R")
+
+burden_raw <- read_rds("data/acs_burden.rds")
+baseline   <- read_rds("data/baseline_2022.rds")
+
+# Palette anchors — match ggtext subtitle spans to cb_pal fills
+red    <- cb_pal[["Severely cost-burdened"]]
+orange <- cb_pal[["Cost-burdened"]]
+grey   <- cb_pal[["Not cost-burdened"]]
+
+# Regional shares: sum estimates across the 8 rr localities (never average locality
+# shares), excluding Virginia and the "Not computed" households from the denominator.
+burden_reg <- burden_raw |>
+  filter(name != "Virginia", burden != "Not computed") |>
+  summarise(estimate = sum(estimate), .by = c(year, tenure, burden)) |>
+  mutate(share = estimate / sum(estimate), .by = c(year, tenure))
+
+# Inline scalars for bullets and the Since-2022 callout
+renter_burd_2024 <- burden_reg |>
+  filter(year == 2024, tenure == "Renter", burden != "Not cost-burdened") |>
+  summarise(share = sum(share)) |> pull(share)
+
+owner_burd_2024 <- burden_reg |>
+  filter(year == 2024, tenure == "Owner", burden != "Not cost-burdened") |>
+  summarise(share = sum(share)) |> pull(share)
+
+renter_sev_2024 <- burden_reg |>
+  filter(year == 2024, tenure == "Renter", burden == "Severely cost-burdened") |>
+  pull(share)
+
+# Burdened counts by tenure for 2014 and 2024 (regional totals)
+burd_counts <- burden_reg |>
+  filter(burden != "Not cost-burdened") |>
+  summarise(estimate = sum(estimate), .by = c(year, tenure))
+
+renter_ct_2014 <- burd_counts |> filter(year == 2014, tenure == "Renter") |> pull(estimate)
+renter_ct_2024 <- burd_counts |> filter(year == 2024, tenure == "Renter") |> pull(estimate)
+owner_ct_2014  <- burd_counts |> filter(year == 2014, tenure == "Owner")  |> pull(estimate)
+owner_ct_2024  <- burd_counts |> filter(year == 2024, tenure == "Owner")  |> pull(estimate)
+
+# 2022 framework baselines (Fig 10.1): change in cost-burdened households since 2015
+base_renter_chg <- baseline |>
+  filter(metric == "cost_burdened_renters_change") |> pull(value)
+base_owner_chg  <- baseline |>
+  filter(metric == "cost_burdened_owners_change") |> pull(value)
 ```
 
-*Section stub — content built in Phase C, Task 11 (see PLAN.md §9).*
+## Half of the region's renters are cost-burdened — a share that has not moved in a decade
+
+```{r}
+#| label: fig-burden-trend
+#| fig-cap: "Half of the region's renters are cost-burdened — a share that has not moved in a decade"
+#| fig-alt: "Two stacked bar charts of cost burden shares for renters and owners in the Richmond region across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Renter bars show about half of households cost-burdened in all three periods, split roughly evenly between cost-burdened and severely cost-burdened. Owner bars show the burdened share falling from 26 percent to 20 percent over the decade."
+
+trend_df <- burden_reg |>
+  mutate(
+    period = recode_values(year, 2014 ~ "2010–14", 2019 ~ "2015–19", 2024 ~ "2020–24"),
+    burden = fct_rev(burden)
+  )
+
+ggplot(trend_df, aes(x = period, y = share, fill = burden)) +
+  geom_col() +
+  facet_wrap(~tenure) +
+  scale_fill_manual(values = cb_pal) +
+  scale_y_continuous(labels = label_percent(accuracy = 1)) +
+  labs(
+    title = "Half of the region's renters are cost-burdened — a share that has not moved in a decade",
+    subtitle = paste0(
+      "Share of households by cost burden, 8-locality Richmond region, three non-overlapping ACS periods<br>",
+      "<span style='color:", orange, "'>**Cost-burdened**</span> = 30–49% of income on housing; ",
+      "<span style='color:", red, "'>**severely cost-burdened**</span> = 50% or more; ",
+      "<span style='color:", grey, "'>**not cost-burdened**</span> = under 30%"
+    ),
+    caption = acs_cap("B25070 & B25091", year = "2010-2014, 2015-2019 & 2020-2024"),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **`r label_percent(accuracy = 0.1)(renter_burd_2024)` of the region's renters spent 30 percent or more of their income on housing in 2020–2024 — statistically unchanged from 51.2 percent in 2010–2014.**
+- Severe burden is half the renter problem: `r label_percent(accuracy = 1)(renter_sev_2024)` of renters pay 50 percent or more of income toward housing, roughly matching the share paying 30–49 percent.
+- Owners have moved in the opposite direction: the burdened owner share fell from 26 percent in 2010–2014 to `r label_percent(accuracy = 1)(owner_burd_2024)` in 2020–2024, driven by locked-in low mortgage rates and rising incomes among existing owners.
+- Because the renter population grew while the burdened share held flat, the count of cost-burdened renter households rose from `r label_comma()(renter_ct_2014)` to `r label_comma()(renter_ct_2024)` over the decade.
+
+::: {.callout-important}
+## Since 2022
+The 2022 Framework reported cost-burdened renters up by almost `r label_comma()(base_renter_chg)` households and cost-burdened owners down by more than `r label_comma()(abs(base_owner_chg))` since 2015 (Fig 10.1). This update finds the same split, larger on the renter side: burdened renter households up `r label_comma()(renter_ct_2024 - renter_ct_2014)` (+`r label_percent(accuracy = 0.1)((renter_ct_2024 - renter_ct_2014) / renter_ct_2014)`) and burdened owner households down `r label_comma()(abs(owner_ct_2024 - owner_ct_2014))` (`r label_percent(accuracy = 0.1)((owner_ct_2024 - owner_ct_2014) / owner_ct_2014)`) from 2010–2014 to 2020–2024. **Caveat:** the 2022 figures rode on the 2016–2020 ACS with a 2015 base year; this update compares non-overlapping 2010–2014 and 2020–2024 windows, so the magnitudes are directionally comparable but not measured on the same yardstick.
+:::
+
+## Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike
+
+```{r}
+#| label: fig-burden-locality
+#| fig-cap: "Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike"
+#| fig-alt: "Dodged bar chart of 2020-2024 renter cost burden shares for Virginia and the four primary localities. Each geography shows two bars: cost-burdened (30-49 percent of income) and severely cost-burdened (50 percent or more). Shares cluster between 22 and 28 percent for both categories everywhere; Richmond has the highest severe share at 28 percent, and Hanover is lowest overall."
+
+loc_df <- burden_raw |>
+  filter(year == 2024, tenure == "Renter",
+         burden %in% c("Cost-burdened", "Severely cost-burdened")) |>
+  # Reliability treatment: suppress estimates with CV > 30 (Low). In 2020-2024 this
+  # removes all four secondary localities' renter burden cells — see footnote bullet.
+  filter(reliability != "Low") |>
+  mutate(
+    locality = str_remove(name, ", Virginia"),
+    locality = fct_reorder(locality, share, .fun = sum) |> fct_relevel("Virginia")
+  )
+
+ggplot(loc_df, aes(x = locality, y = share, fill = burden)) +
+  geom_col(position = position_dodge2(reverse = TRUE)) +
+  coord_flip() +
+  scale_fill_manual(values = cb_pal) +
+  scale_y_continuous(labels = label_percent(accuracy = 1)) +
+  labs(
+    title = "Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike",
+    subtitle = paste0(
+      "Share of renter households <span style='color:", orange, "'>**cost-burdened**</span> ",
+      "(30–49% of income) and <span style='color:", red, "'>**severely cost-burdened**</span> ",
+      "(50%+), 2020–2024"
+    ),
+    caption = acs_cap("B25070"),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **Total renter cost burden is nearly uniform across the three largest localities: 52 percent in Chesterfield, 52 percent in Richmond, and 52 percent in Henrico — this is a regional condition, not a city problem.**
+- Richmond has the largest severe tilt: 28 percent of city renters pay half or more of their income toward housing, against 24 percent in Henrico and 25 percent in Chesterfield.
+- Hanover is the outlier at 45 percent total renter burden, still well above the owner rate anywhere in the region.
+- The three largest localities all exceed the statewide renter burden rate of 49 percent; Hanover sits below it.
+- Estimates for Charles City, Goochland, New Kent, and Powhatan are suppressed: every renter burden cell in those localities carries a CV above 30 (Low reliability). Their small renter counts (roughly 300–1,300 renter households each) cannot support reliable shares at this cut; CHAS tables in Phase 5 will cover them at coarser cuts.
+
+## The city-county gap in severe renter burden has narrowed as the counties catch up
+
+```{r}
+#| label: fig-severe-trend
+#| fig-cap: "The city-county gap in severe renter burden has narrowed as the counties catch up"
+#| fig-alt: "Line chart of the severely cost-burdened renter share for the four primary localities across the 2010-2014, 2015-2019, and 2020-2024 ACS periods. Richmond starts highest near 29 percent and edges down to 28 percent. Chesterfield rises from 23 to 25 percent, Henrico holds near 24 percent, and Hanover rises from 21 to 22 percent. Each line is labeled directly at its endpoint."
+
+sev_df <- burden_raw |>
+  filter(geoid %in% pha, tenure == "Renter", burden == "Severely cost-burdened") |>
+  mutate(
+    locality = str_remove(name, " County, Virginia|, Virginia"),
+    period = recode_values(year, 2014 ~ "2010–14", 2019 ~ "2015–19", 2024 ~ "2020–24")
+  )
+
+loc_pal <- c("Richmond city" = pha_pal[4], "Chesterfield" = pha_pal[6],
+             "Henrico" = pha_pal[2], "Hanover" = pha_pal[1])
+
+ggplot(sev_df, aes(x = period, y = share, color = locality, group = locality)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2) +
+  ggtext::geom_richtext(
+    data = sev_df |> filter(year == 2024),
+    aes(label = paste0("**", locality, "**")),
+    hjust = 0, nudge_x = 0.08, size = 3.2, label.color = NA, fill = NA
+  ) +
+  scale_color_manual(values = loc_pal) +
+  scale_y_continuous(labels = label_percent(accuracy = 1), limits = c(0, NA)) +
+  scale_x_discrete(expand = expansion(mult = c(0.05, 0.35))) +
+  labs(
+    title = "The city-county gap in severe renter burden has narrowed as the counties catch up",
+    subtitle = "Share of renter households paying 50% or more of income on housing, primary localities, three ACS periods",
+    caption = acs_cap("B25070", year = "2010-2014, 2015-2019 & 2020-2024"),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **Severe renter burden converged across the region over the decade: Richmond eased from 29 percent to 28 percent while Chesterfield climbed from 23 percent to 25 percent, narrowing the city-county gap from 7 points to 3.**
+- Chesterfield added the most severely burdened renter households of any locality — up about 1,900 (from 5,700 to 7,600), a one-third increase since 2010–2014.
+- Henrico's severe share held near 24 percent, but its count still grew by roughly 850 households to 11,300.
+- Richmond holds the largest severe caseload in absolute terms — about 15,800 renter households, up 2,100 over the decade — even as its share edged down.
+
+## Planned content
+
+::: {.callout-note title="Planned content"}
+**Cost burden by income band and race/ethnicity (CHAS).** HUD CHAS 2018–2022 tables will break renter and owner burden by AMI band and by race/ethnicity, the cuts the ACS tables above cannot support. Pending Phase 5.
+:::
+
+::: {.callout-note title="Planned content"}
+**Evictions.** Eviction filings and judgments for the region's general district courts, trended against the 2022 Framework's pre-pandemic baseline. Pending Phase 5.
+:::
+
+::: {.callout-note title="Planned content"}
+**Homelessness.** Greater Richmond CoC Point-in-Time counts, sheltered and unsheltered, updating the 2022 Framework's 2019–2021 series. Pending Phase 5.
+:::

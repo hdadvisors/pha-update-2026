@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "Richmond Regional Housing Framework",
     "section": "",
-    "text": "About this update\nThis is the 2026 Data Update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest available data and reorganizes the findings around the region’s most pressing housing themes.\nThe update covers the PlanRVA region — Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland. Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover, Henrico, and Richmond); the five secondary localities receive individual local summaries.\nFive preliminary-findings sections anchor the update:\n\nHousing demand\nHomeownership market\nRental market\nHousing gap\nCost burden and instability\n\nEach section leads with what changed since the 2022 Framework and organizes its findings by takeaway rather than by data source.\n\n\n\n\n\n\nNote\n\n\n\nThis is a preliminary draft for PHA review. Content is under active development and the site is not yet indexed for search. Reviewers can comment inline using Hypothesis.",
+    "text": "About this update\nThis is the 2026 Data Update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest available data and reorganizes the findings around the region’s most pressing housing themes.\nThe update covers the PlanRVA region — Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland. Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover, Henrico, and Richmond); the five secondary localities receive individual local summaries.\nFive preliminary-findings sections anchor the update:\nEach section leads with what changed since the 2022 Framework and organizes its findings by takeaway rather than by data source.",
+    "crumbs": [
+      "About this update"
+    ]
+  },
+  {
+    "objectID": "index.html#status-of-this-update",
+    "href": "index.html#status-of-this-update",
+    "title": "Richmond Regional Housing Framework",
+    "section": "Status of this update",
+    "text": "Status of this update\nAs of August 6, 2026:\n\n\n\nSection\nStatus\n\n\n\n\nHousing demand\nPreliminary figures loaded\n\n\nHomeownership market\nFirst figures loaded\n\n\nRental market\nFirst figures loaded\n\n\nHousing gap\nStructure outlined; analysis pending\n\n\nCost burden and instability\nFirst figures loaded\n\n\nData notes\nDrafted",
     "crumbs": [
       "About this update"
     ]
@@ -14,7 +24,57 @@
     "href": "demand.html",
     "title": "1  Housing demand",
     "section": "",
-    "text": "Section stub — content built in Phase C, Task 7 (see PLAN.md §9).",
+    "text": "1.1 The region keeps growing steadily, adding residents every single year\nFigure 1.1: The Richmond region has added more than 320,000 residents since 2000",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
+    ]
+  },
+  {
+    "objectID": "demand.html#the-region-keeps-growing-steadily-adding-residents-every-single-year",
+    "href": "demand.html#the-region-keeps-growing-steadily-adding-residents-every-single-year",
+    "title": "1  Housing demand",
+    "section": "",
+    "text": "The 8-locality region grew from 865,941 residents in 2000 to 1,120,304 in the 2020 census, a gain of 254,363 (+29%).\nGrowth has not slowed since the census: Vintage 2025 estimates put the region at 1,190,026 as of July 2025, roughly 70,000 more residents in just five years.\nEvery year from 2020 to 2025 added population, with the largest single-year gains in 2024 (+17,600) and 2025 (+14,000).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
+    ]
+  },
+  {
+    "objectID": "demand.html#migration-not-natural-increase-now-powers-the-regions-growth",
+    "href": "demand.html#migration-not-natural-increase-now-powers-the-regions-growth",
+    "title": "1  Housing demand",
+    "section": "1.2 Migration, not natural increase, now powers the region’s growth",
+    "text": "1.2 Migration, not natural increase, now powers the region’s growth\n\n\n\n\n\n\n\n\nFigure 1.2: Migration, not births, is driving the region’s population growth\n\n\n\n\n\n\nNet migration has delivered the large majority of the region’s growth every year since 2021, peaking at roughly 15,500 net movers in 2024.\nNatural change (births minus deaths) has stayed small — under about 2,100 residents per year regionwide — reflecting an aging population and post-pandemic mortality patterns.\nThe region’s demand pressure is therefore driven by households arriving from elsewhere, who need housing immediately upon arrival.\nThe 2020 estimate period covers only April-June 2020 and is omitted from the chart.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
+    ]
+  },
+  {
+    "objectID": "demand.html#every-primary-locality-is-projected-to-keep-growing-through-2050",
+    "href": "demand.html#every-primary-locality-is-projected-to-keep-growing-through-2050",
+    "title": "1  Housing demand",
+    "section": "1.3 Every primary locality is projected to keep growing through 2050",
+    "text": "1.3 Every primary locality is projected to keep growing through 2050\n\n\n\n\n\n\n\n\nFigure 1.3: Chesterfield is projected to pass 500,000 residents by 2050\n\n\n\n\n\n\nChesterfield is projected to grow 43% by 2050, reaching about 520,000 residents — up from the 38% growth projected in the 2022 Framework.\nHenrico (+25%, to 416,000), Hanover (+27%, to 139,000), and Richmond city (+22%, to 276,000) all continue growing, with no primary locality projected to plateau.\nThe full 8-locality region is projected to reach about 1,472,000 residents by 2050, growth of 31% over the 2020 census.\nAmong secondary localities, New Kent has the fastest projected growth rate (+72%), while Charles City is the only locality projected to lose population (-19%).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
+    ]
+  },
+  {
+    "objectID": "demand.html#the-region-is-aging-and-more-seniors-are-living-alone",
+    "href": "demand.html#the-region-is-aging-and-more-seniors-are-living-alone",
+    "title": "1  Housing demand",
+    "section": "1.4 The region is aging, and more seniors are living alone",
+    "text": "1.4 The region is aging, and more seniors are living alone\n\n\n\n\n\n\n\n\nFigure 1.4: Nearly one in three residents is now 55 or older\n\n\n\n\n\n\nResidents 55 and older make up 30% of the region’s population, and residents 65 and older make up 17%.\nThe 25-34 age group is the region’s single largest — prime household-formation years, which converts directly into near-term housing demand.\n53,585 households — 12% of all households regionwide — are seniors 65+ living alone, a group with distinct needs for smaller, accessible, and lower-maintenance homes.\nWomen outnumber men in the 75+ group, so older single-person households are disproportionately older women.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
+    ]
+  },
+  {
+    "objectID": "demand.html#incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide",
+    "href": "demand.html#incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide",
+    "title": "1  Housing demand",
+    "section": "1.5 Incomes have risen sharply everywhere, but the gap between localities remains wide",
+    "text": "1.5 Incomes have risen sharply everywhere, but the gap between localities remains wide\n\n\n\n\n\n\n\n\nFigure 1.5: Median household incomes have climbed sharply in every locality since 2014\n\n\n\n\n\n\nEvery locality’s median household income rose at least 40% in nominal terms between the 2014 and 2024 ACS vintages.\nRichmond city’s median rose 56% — from $41,331 to $64,587 — yet it remains the lowest in the region, at roughly half of New Kent’s $123,314.\nThe fastest nominal growth was in New Kent (+69%); the slowest was in Chesterfield (+41%).\nEach vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation over the decade.\n\n\n\n\n\n\n\nNoteData caveats\n\n\n\nPopulation estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked to the 2020 census. ACS income medians are 5-year averages in each vintage’s own survey-year dollars — comparisons across vintages are nominal, not inflation-adjusted. The 2022 Framework baseline used 2016-2020 ACS and the prior Weldon Cooper release, so “Since 2022” comparisons reflect both real change and vintage revisions.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
     ]
@@ -24,7 +84,37 @@
     "href": "ownership.html",
     "title": "2  Homeownership market",
     "section": "",
-    "text": "Section stub — content built in Phase C, Task 8 (see PLAN.md §9).",
+    "text": "2.1 Homeownership rates held steady or rose across most of the region\nFigure 2.1: Homeownership rates held steady or rose across most of the region",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Homeownership market</span>"
+    ]
+  },
+  {
+    "objectID": "ownership.html#homeownership-rates-held-steady-or-rose-across-most-of-the-region",
+    "href": "ownership.html#homeownership-rates-held-steady-or-rose-across-most-of-the-region",
+    "title": "2  Homeownership market",
+    "section": "",
+    "text": "The region as a whole is 67.0% owner-occupied in 2024, just above the statewide rate of 67.3 percent.\nThe three smallest counties posted the largest gains: Charles City (+5.8 points), Powhatan (+5.4), and New Kent (+4.7) all now exceed 86 percent owner occupancy.\nGoochland is the only locality where the owner share fell, from 87.6 to 84.9 percent.\nThe four core localities barely moved over the decade — Richmond city (43.5 percent) remains the region’s only majority-renter jurisdiction, and Hanover (82.1 percent) the highest among them.\nAll plotted owner-household estimates are High reliability (CV at or below 15); the dataset’s few Medium cells are renter counts in New Kent and Powhatan and do not appear in this figure.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Homeownership market</span>"
+    ]
+  },
+  {
+    "objectID": "ownership.html#the-regions-typical-sale-price-has-more-than-doubled-since-2016",
+    "href": "ownership.html#the-regions-typical-sale-price-has-more-than-doubled-since-2016",
+    "title": "2  Homeownership market",
+    "section": "2.2 The region’s typical sale price has more than doubled since 2016",
+    "text": "2.2 The region’s typical sale price has more than doubled since 2016\n\n\n\n\n\n\n\n\nFigure 2.2: The region’s typical sale price has more than doubled since 2016\n\n\n\n\n\n\nThe median sale price reached $435,000 in July 2026, up 105% from $212,500 in January 2016 (nominal dollars).\nThe steepest appreciation came in 2020-2022, when the 12-month average rose from roughly $270,000 to over $360,000.\nPrice growth has flattened since 2025 — the 12-month average has held near $415,000 while monthly medians oscillate around it.\nMonthly medians are seasonal and noisy; the 12-month average is the better read on trend.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Homeownership market</span>"
+    ]
+  },
+  {
+    "objectID": "ownership.html#home-values-are-up-more-than-50-percent-in-every-locality-since-2014",
+    "href": "ownership.html#home-values-are-up-more-than-50-percent-in-every-locality-since-2014",
+    "title": "2  Homeownership market",
+    "section": "2.3 Home values are up more than 50 percent in every locality since 2014",
+    "text": "2.3 Home values are up more than 50 percent in every locality since 2014\n\n\n\n\n\n\n\n\nFigure 2.3: Home values are up more than 50 percent in every locality since 2014\n\n\n\n\n\n\n2024 median home values span more than a two-to-one range across the region, from $241,400 in Charles City to $500,600 in Goochland.\nRichmond city posted the fastest growth — up 81 percent, from $195,000 to $353,000 — eroding its historical role as the region’s lower-cost ownership market.\nEvery locality gained at least 54 percent over the decade, and the four core localities all now exceed the $350,000 mark.\nFour of the eight localities sit above the statewide median of $383,700: Goochland, Powhatan, Hanover, and New Kent.\nMedians are locality-level ACS estimates and do not sum or average to a regional figure; all plotted values are High reliability.\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nBuilding permits (BPS). Single-family and multifamily permitting trends by locality — pending Phase 3 (market data).\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nMortgage rates (FRED). 30-year fixed rate trend (Freddie Mac PMMS) and its interaction with sale prices and affordability — pending Phase 3 (market data).\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nSales inventory and months of supply. Active listings, new listings, and months-of-supply trends from MLS — pending Phase 3 (market data).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Homeownership market</span>"
     ]
@@ -34,7 +124,37 @@
     "href": "rental.html",
     "title": "3  Rental market",
     "section": "",
-    "text": "Section stub — content built in Phase C, Task 9 (see PLAN.md §9).",
+    "text": "3.1 Rents climbed in every locality, with the sharpest gains since 2019\nFigure 3.1: Median gross rent rose in every Richmond-area locality between 2014 and 2024.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rental market</span>"
+    ]
+  },
+  {
+    "objectID": "rental.html#rents-climbed-in-every-locality-with-the-sharpest-gains-since-2019",
+    "href": "rental.html#rents-climbed-in-every-locality-with-the-sharpest-gains-since-2019",
+    "title": "3  Rental market",
+    "section": "",
+    "text": "Every locality posted a higher median gross rent in 2024 than in 2014, and in all eight the 2019-to-2024 increase outpaced the 2014-to-2019 increase.\nNew Kent had the region’s highest 2024 median rent at $1,721; Charles City had the lowest at $1,099.\nRichmond city’s median rent rose 54% over the decade, from $893 to $1,372 — yet stayed below the statewide median of $1,579.\nSmall-county medians (New Kent, Powhatan, Goochland, Charles City) carry wide margins of error and describe small renter stocks; New Kent’s 2014 estimate is Medium reliability (CV 15–30).\nAll figures are nominal dollars; inflation-adjusted comparisons come with the cost-burden analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rental market</span>"
+    ]
+  },
+  {
+    "objectID": "rental.html#renter-households-are-growing-again-led-by-richmond-city",
+    "href": "rental.html#renter-households-are-growing-again-led-by-richmond-city",
+    "title": "3  Rental market",
+    "section": "3.2 Renter households are growing again, led by Richmond city",
+    "text": "3.2 Renter households are growing again, led by Richmond city\n\n\n\n\n\n\n\n\nFigure 3.2: Renter shares held steady in the urban core while shrinking in most outer counties.\n\n\n\n\n\n\nThe region added roughly 20,309 renter households between 2014 and 2024, a 15% increase.\nRichmond city drove the gain, adding about 9,705 renter households — nearly half the regional increase — though its renter share held near 56% because total households grew just as fast.\nChesterfield and Hanover renter counts grew steadily, but both counties remain more than three-quarters owner-occupied.\nThe three smallest counties — Charles City, New Kent, and Powhatan — each had fewer renter households in 2024 than in 2014, deepening the ownership tilt of the outer region.\nSmall-county renter counts are less precise: New Kent (2014 and 2024) and Powhatan (2024) estimates are Medium reliability (CV 15–30).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rental market</span>"
+    ]
+  },
+  {
+    "objectID": "rental.html#market-asking-rents-surged-after-2020-and-are-still-rising-but-at-a-third-of-the-pandemic-era-pace",
+    "href": "rental.html#market-asking-rents-surged-after-2020-and-are-still-rising-but-at-a-third-of-the-pandemic-era-pace",
+    "title": "3  Rental market",
+    "section": "3.3 Market asking rents surged after 2020 and are still rising, but at a third of the pandemic-era pace",
+    "text": "3.3 Market asking rents surged after 2020 and are still rising, but at a third of the pandemic-era pace\n\n\n\n\n\n\n\n\nFigure 3.3: Regional average asking rent surged from 2020 through 2023 and has kept rising more slowly since.\n\n\n\n\n\n\nRegional average asking rent reached $1,583 in 2026 Q2, up 44% from $1,096 in 2016 Q1.\nRent growth ran about 6% per year from 2020 to 2023, then slowed to roughly 2% per year — still rising, but at a third of the pandemic-era pace.\nMultifamily vacancy stood at 8.5% in 2026 Q2, up from a low near 5% in late 2021 as new deliveries caught up with demand.\nCoStar coverage is professionally managed multifamily; New Kent and Charles City have only a handful of tracked properties, so locality-level trends there are not meaningful.\n\n\n\n\n\n\n\nNoteSince 2022\n\n\n\nThe 2022 Framework flagged a regional average asking rent of $1,395 in early 2022 as a two-decade high with vacancy near 5%. Rents have since risen another 11% to $1,583, but the market has loosened: vacancy is now 8.5%, and rent growth has slowed sharply. The 2022 Framework also reported a net loss of renter households from 2016 to 2020 (with a COVID-era data caveat); the 2020–2024 ACS instead shows renter households growing across the region.\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nAssisted rental stock (NHPD). Inventory of dedicated affordable rental properties and units, subsidy expirations, and preservation risk from the National Housing Preservation Database — pending Phase 3 (market data).\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nRental assistance. Housing Choice Voucher utilization, project-based assistance, and LIHTC production from HUD Picture of Subsidized Households and the LIHTC database — pending Phase 3 (market data).\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nSubmarket rents and vacancy. CoStar submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above — pending Phase 3 (market data).",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rental market</span>"
     ]
@@ -44,7 +164,57 @@
     "href": "gaps.html",
     "title": "4  Housing gap",
     "section": "",
-    "text": "Section stub — content built in Phase C, Task 10 (see PLAN.md §9).",
+    "text": "4.1 How large is the affordable-and-available rental gap by income band?\nThis section quantifies the region’s housing shortfall three ways: rental units affordable and available by income band, renters positioned to become owners, and the income required to buy at today’s prices. All findings below are pending the Phase 4 PUMS engine and gap methodology — headings pose the questions the data will answer.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
+    ]
+  },
+  {
+    "objectID": "gaps.html#how-large-is-the-affordable-and-available-rental-gap-by-income-band",
+    "href": "gaps.html#how-large-is-the-affordable-and-available-rental-gap-by-income-band",
+    "title": "4  Housing gap",
+    "section": "",
+    "text": "NotePlanned content\n\n\n\nAn NLIHC-style bar chart of the surplus or deficit of rental units that are both affordable to and available to each AMI band (30/50/80/100/120% AMI), for the core-3 PUMS region (Chesterfield, Henrico, Richmond city). Built from the 2020–2024 ACS PUMS via r/pums/pums_gap.R, with AMI bands assigned from HUD FY2026 Income Limits by household size. Pending Phase 4 (PUMS engine and gap methodology).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
+    ]
+  },
+  {
+    "objectID": "gaps.html#where-along-the-income-spectrum-do-renters-compete-for-the-same-units",
+    "href": "gaps.html#where-along-the-income-spectrum-do-renters-compete-for-the-same-units",
+    "title": "4  Housing gap",
+    "section": "4.2 Where along the income spectrum do renters compete for the same units?",
+    "text": "4.2 Where along the income spectrum do renters compete for the same units?\n\n\n\n\n\n\nNotePlanned content\n\n\n\nA table of renter households versus affordable units versus affordable-and-available units by AMI band, showing how higher-income occupancy of low-cost units compounds the shortage at the bottom. Source: 2020–2024 ACS PUMS (r/pums/pums_gap.R) with HUD FY2026 Income Limits. Pending Phase 4 (PUMS engine and gap methodology).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
+    ]
+  },
+  {
+    "objectID": "gaps.html#how-many-renter-households-could-afford-to-buy-a-starter-home",
+    "href": "gaps.html#how-many-renter-households-could-afford-to-buy-a-starter-home",
+    "title": "4  Housing gap",
+    "section": "4.3 How many renter households could afford to buy a starter home?",
+    "text": "4.3 How many renter households could afford to buy a starter home?\n\n\n\n\n\n\nNotePlanned content\n\n\n\nThe starter-home gap: renter households whose income supports a mortgage on an entry-level home (via r/affordcalc.R, payment at or below 28% of monthly income) against the supply of entry-level for-sale units. Sources: 2020–2024 ACS PUMS income distribution, MLS entry-level inventory, and current PMMS mortgage rates. Pending Phase 4 (PUMS engine and gap methodology).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
+    ]
+  },
+  {
+    "objectID": "gaps.html#what-income-does-homeownership-require-by-price-point-unit-size-and-type",
+    "href": "gaps.html#what-income-does-homeownership-require-by-price-point-unit-size-and-type",
+    "title": "4  Housing gap",
+    "section": "4.4 What income does homeownership require by price point, unit size, and type?",
+    "text": "4.4 What income does homeownership require by price point, unit size, and type?\n\n\n\n\n\n\nNotePlanned content\n\n\n\nA minimum-income table (or heat-style chart) by representative price point, unit size, and structure type — down-payment, rate, tax, and insurance assumptions documented in Appendix A — set against the PUMS household-income distribution to show how many households can afford each segment. Sources: r/affordcalc.R, r/gaps.R, 2020–2024 ACS PUMS, Freddie Mac PMMS. Pending Phase 4 (PUMS engine and gap methodology).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
+    ]
+  },
+  {
+    "objectID": "gaps.html#how-has-the-housing-gap-changed-since-2022",
+    "href": "gaps.html#how-has-the-housing-gap-changed-since-2022",
+    "title": "4  Housing gap",
+    "section": "4.5 How has the housing gap changed since 2022?",
+    "text": "4.5 How has the housing gap changed since 2022?\n\n\n\n\n\n\nNotePlanned content\n\n\n\nThe per-section “Since 2022” comparison: this cycle’s gap counts against the 2022 Framework’s published gap figures from baseline_2022, with the vintage-shift caveat (2020–2024 PUMS versus the 2022 report’s inputs) stated alongside. Deltas are narrative, never a validation gate. Pending Phase 4 (PUMS engine and gap methodology).",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Housing gap</span>"
     ]
@@ -54,7 +224,47 @@
     "href": "burden.html",
     "title": "5  Cost burden and instability",
     "section": "",
-    "text": "Section stub — content built in Phase C, Task 11 (see PLAN.md §9).",
+    "text": "5.1 Half of the region’s renters are cost-burdened — a share that has not moved in a decade\nFigure 5.1: Half of the region’s renters are cost-burdened — a share that has not moved in a decade",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cost burden and instability</span>"
+    ]
+  },
+  {
+    "objectID": "burden.html#half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade",
+    "href": "burden.html#half-of-the-regions-renters-are-cost-burdened-a-share-that-has-not-moved-in-a-decade",
+    "title": "5  Cost burden and instability",
+    "section": "",
+    "text": "51.3% of the region’s renters spent 30 percent or more of their income on housing in 2020–2024 — statistically unchanged from 51.2 percent in 2010–2014.\nSevere burden is half the renter problem: 26% of renters pay 50 percent or more of income toward housing, roughly matching the share paying 30–49 percent.\nOwners have moved in the opposite direction: the burdened owner share fell from 26 percent in 2010–2014 to 20% in 2020–2024, driven by locked-in low mortgage rates and rising incomes among existing owners.\nBecause the renter population grew while the burdened share held flat, the count of cost-burdened renter households rose from 63,418 to 73,767 over the decade.\n\n\n\n\n\n\n\nImportantSince 2022\n\n\n\nThe 2022 Framework reported cost-burdened renters up by almost 1,900 households and cost-burdened owners down by more than 7,200 since 2015 (Fig 10.1). This update finds the same split, larger on the renter side: burdened renter households up 10,349 (+16.3%) and burdened owner households down 7,742 (-11.4%) from 2010–2014 to 2020–2024. Caveat: the 2022 figures rode on the 2016–2020 ACS with a 2015 base year; this update compares non-overlapping 2010–2014 and 2020–2024 windows, so the magnitudes are directionally comparable but not measured on the same yardstick.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cost burden and instability</span>"
+    ]
+  },
+  {
+    "objectID": "burden.html#renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike",
+    "href": "burden.html#renter-cost-burden-tops-50-percent-in-richmond-henrico-and-chesterfield-alike",
+    "title": "5  Cost burden and instability",
+    "section": "5.2 Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike",
+    "text": "5.2 Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike\n\n\n\n\n\n\n\n\nFigure 5.2: Renter cost burden tops 50 percent in Richmond, Henrico, and Chesterfield alike\n\n\n\n\n\n\nTotal renter cost burden is nearly uniform across the three largest localities: 52 percent in Chesterfield, 52 percent in Richmond, and 52 percent in Henrico — this is a regional condition, not a city problem.\nRichmond has the largest severe tilt: 28 percent of city renters pay half or more of their income toward housing, against 24 percent in Henrico and 25 percent in Chesterfield.\nHanover is the outlier at 45 percent total renter burden, still well above the owner rate anywhere in the region.\nThe three largest localities all exceed the statewide renter burden rate of 49 percent; Hanover sits below it.\nEstimates for Charles City, Goochland, New Kent, and Powhatan are suppressed: every renter burden cell in those localities carries a CV above 30 (Low reliability). Their small renter counts (roughly 300–1,300 renter households each) cannot support reliable shares at this cut; CHAS tables in Phase 5 will cover them at coarser cuts.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cost burden and instability</span>"
+    ]
+  },
+  {
+    "objectID": "burden.html#the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up",
+    "href": "burden.html#the-city-county-gap-in-severe-renter-burden-has-narrowed-as-the-counties-catch-up",
+    "title": "5  Cost burden and instability",
+    "section": "5.3 The city-county gap in severe renter burden has narrowed as the counties catch up",
+    "text": "5.3 The city-county gap in severe renter burden has narrowed as the counties catch up\n\n\n\n\n\n\n\n\nFigure 5.3: The city-county gap in severe renter burden has narrowed as the counties catch up\n\n\n\n\n\n\nSevere renter burden converged across the region over the decade: Richmond eased from 29 percent to 28 percent while Chesterfield climbed from 23 percent to 25 percent, narrowing the city-county gap from 7 points to 3.\nChesterfield added the most severely burdened renter households of any locality — up about 1,900 (from 5,700 to 7,600), a one-third increase since 2010–2014.\nHenrico’s severe share held near 24 percent, but its count still grew by roughly 850 households to 11,300.\nRichmond holds the largest severe caseload in absolute terms — about 15,800 renter households, up 2,100 over the decade — even as its share edged down.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cost burden and instability</span>"
+    ]
+  },
+  {
+    "objectID": "burden.html#planned-content",
+    "href": "burden.html#planned-content",
+    "title": "5  Cost burden and instability",
+    "section": "5.4 Planned content",
+    "text": "5.4 Planned content\n\n\n\n\n\n\nNotePlanned content\n\n\n\nCost burden by income band and race/ethnicity (CHAS). HUD CHAS 2018–2022 tables will break renter and owner burden by AMI band and by race/ethnicity, the cuts the ACS tables above cannot support. Pending Phase 5.\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nEvictions. Eviction filings and judgments for the region’s general district courts, trended against the 2022 Framework’s pre-pandemic baseline. Pending Phase 5.\n\n\n\n\n\n\n\n\nNotePlanned content\n\n\n\nHomelessness. Greater Richmond CoC Point-in-Time counts, sheltered and unsheltered, updating the 2022 Framework’s 2019–2021 series. Pending Phase 5.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Cost burden and instability</span>"
     ]
@@ -64,7 +274,51 @@
     "href": "data-notes.html",
     "title": "Appendix A — Data notes",
     "section": "",
-    "text": "Appendix stub — content built in Phase E, Task 14 (see PLAN.md §9).",
+    "text": "A.1 Sources and vintages\nThis appendix records every data source and vintage used in the update, defines the geographies, and explains the reliability and comparison rules applied throughout the report.\nThe table below lists each source, the vintage used this cycle, and its current status in the build pipeline.\nNotes on status:",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"
+    ]
+  },
+  {
+    "objectID": "data-notes.html#sources-and-vintages",
+    "href": "data-notes.html#sources-and-vintages",
+    "title": "Appendix A — Data notes",
+    "section": "",
+    "text": "Source\nVintage\nAccess\nStatus\n\n\n\n\nACS 5-year estimates (anchor)\n2020–2024, trend tables back to ~2010\ntidycensus API\nDemographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending Phases 3 and 5\n\n\nACS PUMS\n2020–2024 5-year\ntidycensus get_pums()\nPending Phase 4\n\n\nPopulation Estimates Program (PEP)\nVintage 2025\nCensus API (FTP fallback)\nLoaded (Phase 2)\n\n\nDecennial Census\n2000 / 2010 / 2020\ntidycensus API\nLoaded (Phase 2)\n\n\nWeldon Cooper population projections\n2025 official release (2030–2050 series)\nUVA published xlsx\nLoaded (Phase 2)\n\n\nCHAS\n2018–2022\nhuduser.gov download\nRaw tables staged (county and place levels); processing pending Phase 5\n\n\nHUD Fair Market Rents and Small Area FMRs\nFY2026\nhuduser.gov download\nRaw files staged; processing pending Phase 3\n\n\nHUD Income Limits\nFY2026\nhuduser.gov download\nRaw file staged; processing pending Phase 4\n\n\nBLS OEWS wages\nLatest release (May 2025 files), Richmond MSA\nManual download\nRaw files staged; processing pending Phase 5\n\n\nBright MLS for-sale market\nMonthly summary exports, nominal dollars\nManual export by HDAdvisors\nMonthly median price series loaded; transaction-level detail pending Phase 3\n\n\nCoStar multifamily market\nQuarterly, Richmond market\nManual export by HDAdvisors\nRegional asking rent and vacancy loaded; submarket detail pending Phase 3\n\n\nNational Housing Preservation Database (NHPD)\nLatest Virginia extract\nNHPD account download\nRaw file staged; processing pending Phase 3\n\n\nPoint-in-Time homelessness counts\nGreater Richmond CoC (VA-500), 2020–2025\nHUD CoC reports\nRaw reports staged; processing pending Phase 5\n\n\n\n\n\nLoaded means an r/ script has produced the tidy data/*.rds file chapters read.\nRaw files staged means the source download sits in data/raw/ awaiting its processing script.\nMLS and CoStar are licensed sources: their derived exports are delivered to PHA privately and are excluded from this public repository.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"
+    ]
+  },
+  {
+    "objectID": "data-notes.html#geography-definitions",
+    "href": "data-notes.html#geography-definitions",
+    "title": "Appendix A — Data notes",
+    "section": "A.2 Geography definitions",
+    "text": "A.2 Geography definitions\nThe study area is the PlanRVA region, held constant across every source through vectors defined once in the project’s shared setup file.\n\nRegion (8 localities): Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties, plus Richmond city. This is the full regional analysis universe.\nPrimary localities (4): Chesterfield, Hanover, Henrico, and Richmond city carry the core regional narrative.\nSecondary localities (4): Charles City, Goochland, New Kent, and Powhatan appear in local summaries only, always with reliability flags (see below).\nTown of Ashland: a Census place (not a county) inside Hanover County, so it is pulled at the place level (summary level 160) in ACS and CHAS scripts and treated as a ninth local-summary geography.\nVirginia serves as the statewide benchmark.\n\n\nPUMS geography\nMicrodata estimates use 2020-vintage PUMAs, which do not follow county lines everywhere.\n\nCore-3 (the regional PUMS default): Chesterfield (3 PUMAs), Henrico (2), and Richmond city (2) — the three localities that tile cleanly into whole PUMAs.\nHanover cannot be isolated in PUMS. It is split across two multi-county PUMAs — one covering eastern Hanover with King William, New Kent, and Charles City; the other covering western Hanover with Goochland and Powhatan — so no PUMA combination yields Hanover alone. Hanover enters the analysis only through county-level ACS tables.\nA full-region PUMA set (core-3 plus the two mixed outer PUMAs) exists for region-wide totals where the extra counties are acceptable; it is used sparingly and labeled when it appears.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"
+    ]
+  },
+  {
+    "objectID": "data-notes.html#estimate-reliability",
+    "href": "data-notes.html#estimate-reliability",
+    "title": "Appendix A — Data notes",
+    "section": "A.3 Estimate reliability",
+    "text": "A.3 Estimate reliability\nACS estimates for small geographies carry sampling error, flagged consistently from each estimate’s coefficient of variation (CV, on a 0–100 scale).\n\nHigh reliability: CV at or below 15 — reported without qualification.\nMedium reliability: CV above 15 and at or below 30 — reported with a footnote identifying the cell as medium-reliability.\nLow reliability: CV above 30 — the cell is suppressed rather than reported.\nReliability treatment applies to every secondary-locality and Ashland ACS estimate in the report.\nSmall PIT and eviction counts are reported as counts with a volatility caveat, never converted to rates.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"
+    ]
+  },
+  {
+    "objectID": "data-notes.html#comparing-to-the-2022-framework",
+    "href": "data-notes.html#comparing-to-the-2022-framework",
+    "title": "Appendix A — Data notes",
+    "section": "A.4 Comparing to the 2022 Framework",
+    "text": "A.4 Comparing to the 2022 Framework\nEvery section compares its findings to the 2022 Richmond Regional Housing Framework, but the two cycles rest on different survey windows.\n\nThis update’s anchor is the 2020–2024 ACS 5-year; the 2022 Framework used the 2016–2020 ACS 5-year. Overlapping multi-year windows differ by construction, so some movement between the two reports is structural rather than real-world change.\nChanges since 2022 are therefore logged and narrated, never gated: a large swing prompts human review but never fails a build.\nThe 2022 baseline figures are transcribed from the published 2022 report, not recomputed, so the comparison is always against the numbers PHA actually published.\nThe 2022 report defined “the region” as the four primary localities only; regional comparisons against the 2022 baseline carry that narrower scope rather than the full 8-locality region.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"

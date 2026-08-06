@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cb6652906b203ffd9788d5b3a5f7dbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aaad69cf263e66a3aa3e9012e6f891f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -182,8 +185,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-region-keeps-growing-steadily-adding-residents-every-single-year" id="toc-the-region-keeps-growing-steadily-adding-residents-every-single-year" class="nav-link active" data-scroll-target="#the-region-keeps-growing-steadily-adding-residents-every-single-year"><span class="header-section-number">1.1</span> The region keeps growing steadily, adding residents every single year</a></li>
+  <li><a href="#migration-not-natural-increase-now-powers-the-regions-growth" id="toc-migration-not-natural-increase-now-powers-the-regions-growth" class="nav-link" data-scroll-target="#migration-not-natural-increase-now-powers-the-regions-growth"><span class="header-section-number">1.2</span> Migration, not natural increase, now powers the region’s growth</a></li>
+  <li><a href="#every-primary-locality-is-projected-to-keep-growing-through-2050" id="toc-every-primary-locality-is-projected-to-keep-growing-through-2050" class="nav-link" data-scroll-target="#every-primary-locality-is-projected-to-keep-growing-through-2050"><span class="header-section-number">1.3</span> Every primary locality is projected to keep growing through 2050</a></li>
+  <li><a href="#the-region-is-aging-and-more-seniors-are-living-alone" id="toc-the-region-is-aging-and-more-seniors-are-living-alone" class="nav-link" data-scroll-target="#the-region-is-aging-and-more-seniors-are-living-alone"><span class="header-section-number">1.4</span> The region is aging, and more seniors are living alone</a></li>
+  <li><a href="#incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide" id="toc-incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide" class="nav-link" data-scroll-target="#incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide"><span class="header-section-number">1.5</span> Incomes have risen sharply everywhere, but the gap between localities remains wide</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,10 +222,150 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- Purpose: who lives in the region and how demand is changing — population, components
      of change, households by type/size/age, projections. Theme-based takeaway H2s; static
-     ggplot only; "Since 2022" callout per section; fig-alt throughout. Built in Task 7. -->
-<p><em>Section stub — content built in Phase C, Task 7 (see PLAN.md §9).</em></p>
+     ggplot only; "Since 2022" callout; fig-alt throughout. Narrative rule: takeaway titles
+     + bullet findings + callouts only — no drafted prose. Built in Task 7. -->
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Since 2022
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The 2022 Framework projected the four-locality region would reach <strong>1,338,306 residents by 2050</strong>, growth of <strong>+29%</strong> from 2020. The Weldon Cooper Center’s updated 2025-release projections now put the 2050 total at <strong>1,351,819</strong> (<strong>30.5%</strong> growth), a 1.0% upward revision of the 2050 figure. The region’s growth outlook has strengthened, not softened, since the Framework was published.</p>
+</div>
+</div>
+<section id="the-region-keeps-growing-steadily-adding-residents-every-single-year" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="the-region-keeps-growing-steadily-adding-residents-every-single-year"><span class="header-section-number">1.1</span> The region keeps growing steadily, adding residents every single year</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-pop-trend" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Line chart of total population in the 8-locality Richmond region from 2000 to 2025. Decennial census counts rise from about 866,000 in 2000 to 1,003,000 in 2010 and 1,120,000 in 2020; annual estimates continue upward each year to 1,190,000 in 2025.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pop-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="demand_files/figure-html/fig-pop-trend-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Line chart of total population in the 8-locality Richmond region from 2000 to 2025. Decennial census counts rise from about 866,000 in 2000 to 1,003,000 in 2010 and 1,120,000 in 2020; annual estimates continue upward each year to 1,190,000 in 2025.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pop-trend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: The Richmond region has added more than 320,000 residents since 2000
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>The 8-locality region grew from 865,941 residents in 2000 to 1,120,304 in the 2020 census, a gain of 254,363 (+29%).</strong></li>
+<li>Growth has not slowed since the census: Vintage 2025 estimates put the region at 1,190,026 as of July 2025, roughly 70,000 more residents in just five years.</li>
+<li>Every year from 2020 to 2025 added population, with the largest single-year gains in 2024 (+17,600) and 2025 (+14,000).</li>
+</ul>
+</section>
+<section id="migration-not-natural-increase-now-powers-the-regions-growth" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="migration-not-natural-increase-now-powers-the-regions-growth"><span class="header-section-number">1.2</span> Migration, not natural increase, now powers the region’s growth</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-components" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Grouped bar chart of annual components of population change in the 8-locality region, 2021 to 2025. Net migration bars range from about 8,200 in 2021 to 15,500 in 2024, while natural change (births minus deaths) bars stay below about 2,100 every year.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="demand_files/figure-html/fig-components-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Grouped bar chart of annual components of population change in the 8-locality region, 2021 to 2025. Net migration bars range from about 8,200 in 2021 to 15,500 in 2024, while natural change (births minus deaths) bars stay below about 2,100 every year.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Migration, not births, is driving the region’s population growth
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Net migration has delivered the large majority of the region’s growth every year since 2021, peaking at roughly 15,500 net movers in 2024.</strong></li>
+<li>Natural change (births minus deaths) has stayed small — under about 2,100 residents per year regionwide — reflecting an aging population and post-pandemic mortality patterns.</li>
+<li>The region’s demand pressure is therefore driven by households arriving from elsewhere, who need housing immediately upon arrival.</li>
+<li>The 2020 estimate period covers only April-June 2020 and is omitted from the chart.</li>
+</ul>
+</section>
+<section id="every-primary-locality-is-projected-to-keep-growing-through-2050" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="every-primary-locality-is-projected-to-keep-growing-through-2050"><span class="header-section-number">1.3</span> Every primary locality is projected to keep growing through 2050</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-projections" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Line chart of projected total population for the four primary localities from the 2020 census to 2050. Chesterfield rises from about 365,000 to 520,000, Henrico from 334,000 to 416,000, Richmond city from 227,000 to 276,000, and Hanover from 110,000 to 139,000. All four lines rise across the whole period.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-projections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="demand_files/figure-html/fig-projections-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Line chart of projected total population for the four primary localities from the 2020 census to 2050. Chesterfield rises from about 365,000 to 520,000, Henrico from 334,000 to 416,000, Richmond city from 227,000 to 276,000, and Hanover from 110,000 to 139,000. All four lines rise across the whole period.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-projections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: Chesterfield is projected to pass 500,000 residents by 2050
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Chesterfield is projected to grow 43% by 2050, reaching about 520,000 residents — up from the 38% growth projected in the 2022 Framework.</strong></li>
+<li>Henrico (+25%, to 416,000), Hanover (+27%, to 139,000), and Richmond city (+22%, to 276,000) all continue growing, with no primary locality projected to plateau.</li>
+<li>The full 8-locality region is projected to reach about 1,472,000 residents by 2050, growth of 31% over the 2020 census.</li>
+<li>Among secondary localities, New Kent has the fastest projected growth rate (+72%), while Charles City is the only locality projected to lose population (-19%).</li>
+</ul>
+</section>
+<section id="the-region-is-aging-and-more-seniors-are-living-alone" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="the-region-is-aging-and-more-seniors-are-living-alone"><span class="header-section-number">1.4</span> The region is aging, and more seniors are living alone</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-age" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Population pyramid of the 8-locality region by age group and sex from the 2020-2024 ACS. The 25-34 age group is the largest; bars for 55-64, 65-74, and 75 and over together account for about 30 percent of residents. Male and female bars are roughly symmetric, with women outnumbering men at ages 75 and over.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-age-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="demand_files/figure-html/fig-age-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Population pyramid of the 8-locality region by age group and sex from the 2020-2024 ACS. The 25-34 age group is the largest; bars for 55-64, 65-74, and 75 and over together account for about 30 percent of residents. Male and female bars are roughly symmetric, with women outnumbering men at ages 75 and over.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-age-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: Nearly one in three residents is now 55 or older
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Residents 55 and older make up 30% of the region’s population, and residents 65 and older make up 17%.</strong></li>
+<li>The 25-34 age group is the region’s single largest — prime household-formation years, which converts directly into near-term housing demand.</li>
+<li>53,585 households — 12% of all households regionwide — are seniors 65+ living alone, a group with distinct needs for smaller, accessible, and lower-maintenance homes.</li>
+<li>Women outnumber men in the 75+ group, so older single-person households are disproportionately older women.</li>
+</ul>
+</section>
+<section id="incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="incomes-have-risen-sharply-everywhere-but-the-gap-between-localities-remains-wide"><span class="header-section-number">1.5</span> Incomes have risen sharply everywhere, but the gap between localities remains wide</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-income" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Dot plot of median household income for the eight localities at three ACS vintages: 2014, 2019, and 2024. Every locality's dots move right over time. In 2024, New Kent is highest at about $123,000 and Richmond city lowest at about $65,000. Richmond city rose from about $41,000 in 2014.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="demand_files/figure-html/fig-income-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Dot plot of median household income for the eight localities at three ACS vintages: 2014, 2019, and 2024. Every locality's dots move right over time. In 2024, New Kent is highest at about $123,000 and Richmond city lowest at about $65,000. Richmond city rose from about $41,000 in 2014.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Median household incomes have climbed sharply in every locality since 2014
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Every locality’s median household income rose at least 40% in nominal terms between the 2014 and 2024 ACS vintages.</strong></li>
+<li>Richmond city’s median rose 56% — from $41,331 to $64,587 — yet it remains the lowest in the region, at roughly half of New Kent’s $123,314.</li>
+<li>The fastest nominal growth was in New Kent (+69%); the slowest was in Chesterfield (+41%).</li>
+<li>Each vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation over the decade.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Data caveats
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Population estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked to the 2020 census. ACS income medians are 5-year averages in each vintage’s own survey-year dollars — comparisons across vintages are nominal, not inflation-adjusted. The 2022 Framework baseline used 2016-2020 ACS and the prior Weldon Cooper release, so “Since 2022” comparisons reflect both real change and vintage revisions.</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

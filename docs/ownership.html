@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cb6652906b203ffd9788d5b3a5f7dbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aaad69cf263e66a3aa3e9012e6f891f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -182,8 +185,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#homeownership-rates-held-steady-or-rose-across-most-of-the-region" id="toc-homeownership-rates-held-steady-or-rose-across-most-of-the-region" class="nav-link active" data-scroll-target="#homeownership-rates-held-steady-or-rose-across-most-of-the-region"><span class="header-section-number">2.1</span> Homeownership rates held steady or rose across most of the region</a></li>
+  <li><a href="#the-regions-typical-sale-price-has-more-than-doubled-since-2016" id="toc-the-regions-typical-sale-price-has-more-than-doubled-since-2016" class="nav-link" data-scroll-target="#the-regions-typical-sale-price-has-more-than-doubled-since-2016"><span class="header-section-number">2.2</span> The region’s typical sale price has more than doubled since 2016</a></li>
+  <li><a href="#home-values-are-up-more-than-50-percent-in-every-locality-since-2014" id="toc-home-values-are-up-more-than-50-percent-in-every-locality-since-2014" class="nav-link" data-scroll-target="#home-values-are-up-more-than-50-percent-in-every-locality-since-2014"><span class="header-section-number">2.3</span> Home values are up more than 50 percent in every locality since 2014</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,10 +220,120 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- Purpose: for-sale market conditions and homeownership access — sales prices, listings,
      production, homeownership rate by race/ethnicity (B25003A-I). Theme-based takeaway H2s;
-     static ggplot only; "Since 2022" callout per section; fig-alt throughout. Built in Task 8. -->
-<p><em>Section stub — content built in Phase C, Task 8 (see PLAN.md §9).</em></p>
+     static ggplot only; "Since 2022" callout per section; fig-alt throughout. Built in Task 8.
+     Narrative rule: takeaway titles + bullet findings + callouts only — no drafted prose. -->
+<section id="homeownership-rates-held-steady-or-rose-across-most-of-the-region" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="homeownership-rates-held-steady-or-rose-across-most-of-the-region"><span class="header-section-number">2.1</span> Homeownership rates held steady or rose across most of the region</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-owner-share" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Dumbbell chart comparing the owner-occupied share of households in 2014 and 2024 for the eight Richmond region localities and Virginia. Powhatan, New Kent, and Charles City rose about five percentage points to over 85 percent; Goochland slipped from 88 to 85 percent; Hanover, Chesterfield, Henrico, and Richmond were nearly unchanged. Richmond city is lowest at about 44 percent.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-owner-share-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ownership_files/figure-html/fig-owner-share-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Dumbbell chart comparing the owner-occupied share of households in 2014 and 2024 for the eight Richmond region localities and Virginia. Powhatan, New Kent, and Charles City rose about five percentage points to over 85 percent; Goochland slipped from 88 to 85 percent; Hanover, Chesterfield, Henrico, and Richmond were nearly unchanged. Richmond city is lowest at about 44 percent.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-owner-share-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Homeownership rates held steady or rose across most of the region
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>The region as a whole is 67.0% owner-occupied in 2024, just above the statewide rate of 67.3 percent.</strong></li>
+<li>The three smallest counties posted the largest gains: Charles City (+5.8 points), Powhatan (+5.4), and New Kent (+4.7) all now exceed 86 percent owner occupancy.</li>
+<li>Goochland is the only locality where the owner share fell, from 87.6 to 84.9 percent.</li>
+<li>The four core localities barely moved over the decade — Richmond city (43.5 percent) remains the region’s only majority-renter jurisdiction, and Hanover (82.1 percent) the highest among them.</li>
+<li>All plotted owner-household estimates are High reliability (CV at or below 15); the dataset’s few Medium cells are renter counts in New Kent and Powhatan and do not appear in this figure.</li>
+</ul>
+</section>
+<section id="the-regions-typical-sale-price-has-more-than-doubled-since-2016" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="the-regions-typical-sale-price-has-more-than-doubled-since-2016"><span class="header-section-number">2.2</span> The region’s typical sale price has more than doubled since 2016</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-mls-price" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Line chart of the PHA region's monthly median home sale price from January 2016 through July 2026 in nominal dollars, with a 12-month rolling average. The trend climbs steadily from about 212,500 dollars in early 2016 to roughly 435,000 dollars by mid-2026, with the steepest run-up between 2020 and 2022 and a flatter plateau from 2025 onward.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mls-price-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ownership_files/figure-html/fig-mls-price-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Line chart of the PHA region's monthly median home sale price from January 2016 through July 2026 in nominal dollars, with a 12-month rolling average. The trend climbs steadily from about 212,500 dollars in early 2016 to roughly 435,000 dollars by mid-2026, with the steepest run-up between 2020 and 2022 and a flatter plateau from 2025 onward.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mls-price-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: The region’s typical sale price has more than doubled since 2016
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>The median sale price reached $435,000 in July 2026, up 105% from $212,500 in January 2016 (nominal dollars).</strong></li>
+<li>The steepest appreciation came in 2020-2022, when the 12-month average rose from roughly $270,000 to over $360,000.</li>
+<li>Price growth has flattened since 2025 — the 12-month average has held near $415,000 while monthly medians oscillate around it.</li>
+<li>Monthly medians are seasonal and noisy; the 12-month average is the better read on trend.</li>
+</ul>
+</section>
+<section id="home-values-are-up-more-than-50-percent-in-every-locality-since-2014" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="home-values-are-up-more-than-50-percent-in-every-locality-since-2014"><span class="header-section-number">2.3</span> Home values are up more than 50 percent in every locality since 2014</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-home-value" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Horizontal grouped bar chart of median owner-occupied home values in 2014 and 2024 for the eight Richmond region localities and Virginia, in nominal dollars. Goochland is highest in 2024 at 500,600 dollars and Charles City lowest at 241,400 dollars. Every locality shows a large increase, with Richmond city rising the most in percentage terms, from 195,000 to 353,000 dollars.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-home-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ownership_files/figure-html/fig-home-value-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Horizontal grouped bar chart of median owner-occupied home values in 2014 and 2024 for the eight Richmond region localities and Virginia, in nominal dollars. Goochland is highest in 2024 at 500,600 dollars and Charles City lowest at 241,400 dollars. Every locality shows a large increase, with Richmond city rising the most in percentage terms, from 195,000 to 353,000 dollars.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-home-value-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Home values are up more than 50 percent in every locality since 2014
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>2024 median home values span more than a two-to-one range across the region, from $241,400 in Charles City to $500,600 in Goochland.</strong></li>
+<li>Richmond city posted the fastest growth — up 81 percent, from $195,000 to $353,000 — eroding its historical role as the region’s lower-cost ownership market.</li>
+<li>Every locality gained at least 54 percent over the decade, and the four core localities all now exceed the $350,000 mark.</li>
+<li>Four of the eight localities sit above the statewide median of $383,700: Goochland, Powhatan, Hanover, and New Kent.</li>
+<li>Medians are locality-level ACS estimates and do not sum or average to a regional figure; all plotted values are High reliability.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Building permits (BPS).</strong> Single-family and multifamily permitting trends by locality — pending Phase 3 (market data).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Mortgage rates (FRED).</strong> 30-year fixed rate trend (Freddie Mac PMMS) and its interaction with sale prices and affordability — pending Phase 3 (market data).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Sales inventory and months of supply.</strong> Active listings, new listings, and months-of-supply trends from MLS — pending Phase 3 (market data).</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cb6652906b203ffd9788d5b3a5f7dbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aaad69cf263e66a3aa3e9012e6f891f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -182,8 +185,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-large-is-the-affordable-and-available-rental-gap-by-income-band" id="toc-how-large-is-the-affordable-and-available-rental-gap-by-income-band" class="nav-link active" data-scroll-target="#how-large-is-the-affordable-and-available-rental-gap-by-income-band"><span class="header-section-number">4.1</span> How large is the affordable-and-available rental gap by income band?</a></li>
+  <li><a href="#where-along-the-income-spectrum-do-renters-compete-for-the-same-units" id="toc-where-along-the-income-spectrum-do-renters-compete-for-the-same-units" class="nav-link" data-scroll-target="#where-along-the-income-spectrum-do-renters-compete-for-the-same-units"><span class="header-section-number">4.2</span> Where along the income spectrum do renters compete for the same units?</a></li>
+  <li><a href="#how-many-renter-households-could-afford-to-buy-a-starter-home" id="toc-how-many-renter-households-could-afford-to-buy-a-starter-home" class="nav-link" data-scroll-target="#how-many-renter-households-could-afford-to-buy-a-starter-home"><span class="header-section-number">4.3</span> How many renter households could afford to buy a starter home?</a></li>
+  <li><a href="#what-income-does-homeownership-require-by-price-point-unit-size-and-type" id="toc-what-income-does-homeownership-require-by-price-point-unit-size-and-type" class="nav-link" data-scroll-target="#what-income-does-homeownership-require-by-price-point-unit-size-and-type"><span class="header-section-number">4.4</span> What income does homeownership require by price point, unit size, and type?</a></li>
+  <li><a href="#how-has-the-housing-gap-changed-since-2022" id="toc-how-has-the-housing-gap-changed-since-2022" class="nav-link" data-scroll-target="#how-has-the-housing-gap-changed-since-2022"><span class="header-section-number">4.5</span> How has the housing gap changed since 2022?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -211,9 +224,89 @@ ul.task-list li input[type="checkbox"] {
      starter-home gap (renters who could buy), and minimum income for homeownership by
      price/size/type vs household income profiles. Theme-based takeaway H2s; static ggplot
      only; "Since 2022" callout per section; fig-alt throughout. Built in Task 10. -->
-<p><em>Section stub — content built in Phase C, Task 10 (see PLAN.md §9).</em></p>
+<p>This section quantifies the region’s housing shortfall three ways: rental units affordable and available by income band, renters positioned to become owners, and the income required to buy at today’s prices. All findings below are pending the Phase 4 PUMS engine and gap methodology — headings pose the questions the data will answer.</p>
+<section id="how-large-is-the-affordable-and-available-rental-gap-by-income-band" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="how-large-is-the-affordable-and-available-rental-gap-by-income-band"><span class="header-section-number">4.1</span> How large is the affordable-and-available rental gap by income band?</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>An NLIHC-style bar chart of the surplus or deficit of rental units that are both affordable to and available to each AMI band (30/50/80/100/120% AMI), for the core-3 PUMS region (Chesterfield, Henrico, Richmond city). Built from the 2020–2024 ACS PUMS via <code>r/pums/pums_gap.R</code>, with AMI bands assigned from HUD FY2026 Income Limits by household size. Pending Phase 4 (PUMS engine and gap methodology).</p>
+</div>
+</div>
+</section>
+<section id="where-along-the-income-spectrum-do-renters-compete-for-the-same-units" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="where-along-the-income-spectrum-do-renters-compete-for-the-same-units"><span class="header-section-number">4.2</span> Where along the income spectrum do renters compete for the same units?</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A table of renter households versus affordable units versus affordable-and-available units by AMI band, showing how higher-income occupancy of low-cost units compounds the shortage at the bottom. Source: 2020–2024 ACS PUMS (<code>r/pums/pums_gap.R</code>) with HUD FY2026 Income Limits. Pending Phase 4 (PUMS engine and gap methodology).</p>
+</div>
+</div>
+</section>
+<section id="how-many-renter-households-could-afford-to-buy-a-starter-home" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="how-many-renter-households-could-afford-to-buy-a-starter-home"><span class="header-section-number">4.3</span> How many renter households could afford to buy a starter home?</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The starter-home gap: renter households whose income supports a mortgage on an entry-level home (via <code>r/affordcalc.R</code>, payment at or below 28% of monthly income) against the supply of entry-level for-sale units. Sources: 2020–2024 ACS PUMS income distribution, MLS entry-level inventory, and current PMMS mortgage rates. Pending Phase 4 (PUMS engine and gap methodology).</p>
+</div>
+</div>
+</section>
+<section id="what-income-does-homeownership-require-by-price-point-unit-size-and-type" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="what-income-does-homeownership-require-by-price-point-unit-size-and-type"><span class="header-section-number">4.4</span> What income does homeownership require by price point, unit size, and type?</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A minimum-income table (or heat-style chart) by representative price point, unit size, and structure type — down-payment, rate, tax, and insurance assumptions documented in <a href="data-notes.html" class="quarto-xref"><span>Appendix A</span></a> — set against the PUMS household-income distribution to show how many households can afford each segment. Sources: <code>r/affordcalc.R</code>, <code>r/gaps.R</code>, 2020–2024 ACS PUMS, Freddie Mac PMMS. Pending Phase 4 (PUMS engine and gap methodology).</p>
+</div>
+</div>
+</section>
+<section id="how-has-the-housing-gap-changed-since-2022" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="how-has-the-housing-gap-changed-since-2022"><span class="header-section-number">4.5</span> How has the housing gap changed since 2022?</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Planned content">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Planned content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The per-section “Since 2022” comparison: this cycle’s gap counts against the 2022 Framework’s published gap figures from <code>baseline_2022</code>, with the vintage-shift caveat (2020–2024 PUMS versus the 2022 report’s inputs) stated alongside. Deltas are narrative, never a validation gate. Pending Phase 4 (PUMS engine and gap methodology).</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
