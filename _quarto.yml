@@ -27,6 +27,7 @@ book:
     - gaps.qmd
     - burden.qmd
   appendices:
+    - local-summaries.qmd
     - data-notes.qmd
 
 knitr:

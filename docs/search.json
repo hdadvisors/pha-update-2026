@@ -363,5 +363,115 @@
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Data notes</span>"
     ]
+  },
+  {
+    "objectID": "local-summaries.html",
+    "href": "local-summaries.html",
+    "title": "Appendix A — Local summaries",
+    "section": "",
+    "text": "The tables below present a uniform set of key housing indicators for each of the nine localities in the Richmond regional planning area. These are preliminary — the final version will curate a subset of metrics based on local context and add narrative.\nColumn notes. “2022 ref.” is the 2022 annual value for PEP (population), BPS (permits), and PSH (HUD units); the 2018–2022 ACS 5-year estimate for income, tenure, home value, rent, and cost burden; and “—” where no comparable prior figure is available. “2024/25” is the 2025 value for PEP and the 2024 value for all other sources. “Change” is percent change for counts and dollar values; percentage-point difference for rates and shares.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#chesterfield-primary",
+    "href": "local-summaries.html#chesterfield-primary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.1 Chesterfield (primary)",
+    "text": "A.1 Chesterfield (primary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n378,739\n\n\n397,148\n\n\n+5%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n27,138\n\n\n—\n\n\n\n\nMedian household income\n\n\n$96k\n\n\n$102k\n\n\n+6%\n\n\n\n\nHomeownership rate\n\n\n77%\n\n\n77%\n\n\n-0.7 pp\n\n\n\n\nMedian home value\n\n\n$306k\n\n\n$366k\n\n\n+19%\n\n\n\n\nMedian gross rent\n\n\n$1,460\n\n\n$1,629\n\n\n+12%\n\n\n\n\nCost-burdened renters\n\n\n49%\n\n\n52%\n\n\n+2.8 pp\n\n\n\n\nCost-burdened homeowners\n\n\n19%\n\n\n20%\n\n\n+0.7 pp\n\n\n\n\nSingle-family permits\n\n\n1,385\n\n\n1,845\n\n\n+33%\n\n\n\n\nMultifamily permits\n\n\n1,848\n\n\n462\n\n\n-75%\n\n\n\n\nHUD-assisted housing units\n\n\n1,429\n\n\n1,424\n\n\n0%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n6,430\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n520,158\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#hanover-primary",
+    "href": "local-summaries.html#hanover-primary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.2 Hanover (primary)",
+    "text": "A.2 Hanover (primary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n112,955\n\n\n116,423\n\n\n+3%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n6,864\n\n\n—\n\n\n\n\nMedian household income\n\n\n$105k\n\n\n$113k\n\n\n+8%\n\n\n\n\nHomeownership rate\n\n\n83%\n\n\n82%\n\n\n-0.9 pp\n\n\n\n\nMedian home value\n\n\n$348k\n\n\n$400k\n\n\n+15%\n\n\n\n\nMedian gross rent\n\n\n$1,392\n\n\n$1,591\n\n\n+14%\n\n\n\n\nCost-burdened renters\n\n\n45%\n\n\n44%\n\n\n-1 pp\n\n\n\n\nCost-burdened homeowners\n\n\n15%\n\n\n16%\n\n\n+0.8 pp\n\n\n\n\nSingle-family permits\n\n\n474\n\n\n443\n\n\n-7%\n\n\n\n\nMultifamily permits\n\n\n90\n\n\n4\n\n\n-96%\n\n\n\n\nHUD-assisted housing units\n\n\n460\n\n\n449\n\n\n-2%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n1,555\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n139,441\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#henrico-primary",
+    "href": "local-summaries.html#henrico-primary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.3 Henrico (primary)",
+    "text": "A.3 Henrico (primary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n335,033\n\n\n342,775\n\n\n+2%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n6,457\n\n\n—\n\n\n\n\nMedian household income\n\n\n$82k\n\n\n$89k\n\n\n+8%\n\n\n\n\nHomeownership rate\n\n\n65%\n\n\n64%\n\n\n-0.1 pp\n\n\n\n\nMedian home value\n\n\n$310k\n\n\n$359k\n\n\n+16%\n\n\n\n\nMedian gross rent\n\n\n$1,380\n\n\n$1,541\n\n\n+12%\n\n\n\n\nCost-burdened renters\n\n\n51%\n\n\n52%\n\n\n+0.8 pp\n\n\n\n\nCost-burdened homeowners\n\n\n19%\n\n\n19%\n\n\n+0.2 pp\n\n\n\n\nSingle-family permits\n\n\n712\n\n\n921\n\n\n+29%\n\n\n\n\nMultifamily permits\n\n\n1,674\n\n\n905\n\n\n-46%\n\n\n\n\nHUD-assisted housing units\n\n\n4,113\n\n\n4,094\n\n\n0%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n10,330\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n416,467\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#richmond-primary",
+    "href": "local-summaries.html#richmond-primary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.4 Richmond (primary)",
+    "text": "A.4 Richmond (primary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n228,936\n\n\n237,257\n\n\n+4%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n6,590\n\n\n—\n\n\n\n\nMedian household income\n\n\n$60k\n\n\n$65k\n\n\n+8%\n\n\n\n\nHomeownership rate\n\n\n43%\n\n\n44%\n\n\n+0.3 pp\n\n\n\n\nMedian home value\n\n\n$308k\n\n\n$353k\n\n\n+14%\n\n\n\n\nMedian gross rent\n\n\n$1,227\n\n\n$1,372\n\n\n+12%\n\n\n\n\nCost-burdened renters\n\n\n53%\n\n\n52%\n\n\n-1.2 pp\n\n\n\n\nCost-burdened homeowners\n\n\n26%\n\n\n26%\n\n\n+0.1 pp\n\n\n\n\nSingle-family permits\n\n\n457\n\n\n380\n\n\n-17%\n\n\n\n\nMultifamily permits\n\n\n2,192\n\n\n2,160\n\n\n-1%\n\n\n\n\nHUD-assisted housing units\n\n\n9,801\n\n\n10,107\n\n\n+3%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n14,655\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n275,754\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#charles-city-secondary",
+    "href": "local-summaries.html#charles-city-secondary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.5 Charles City (secondary)",
+    "text": "A.5 Charles City (secondary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n6,582\n\n\n6,623\n\n\n+1%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n167\n\n\n—\n\n\n\n\nMedian household income\n\n\n$66k\n\n\n$75k\n\n\n+15%\n\n\n\n\nHomeownership rate\n\n\n85%\n\n\n86%\n\n\n+1.6 pp\n\n\n\n\nMedian home value\n\n\n$199k\n\n\n$241k\n\n\n+21%\n\n\n\n\nMedian gross rent\n\n\n$927\n\n\n$1,099\n\n\n+19%\n\n\n\n\nCost-burdened renters\n\n\n46%\n\n\n44%\n\n\n-2.2 pp\n\n\n\n\nCost-burdened homeowners\n\n\n19%\n\n\n20%\n\n\n+0.8 pp\n\n\n\n\nSingle-family permits\n\n\n21\n\n\n30\n\n\n+43%\n\n\n\n\nMultifamily permits\n\n\n0\n\n\n0\n\n\n—\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n98\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n5,485\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#goochland-secondary",
+    "href": "local-summaries.html#goochland-secondary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.6 Goochland (secondary)",
+    "text": "A.6 Goochland (secondary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n26,212\n\n\n29,187\n\n\n+11%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n4,731\n\n\n—\n\n\n\n\nMedian household income\n\n\n$106k\n\n\n$119k\n\n\n+13%\n\n\n\n\nHomeownership rate\n\n\n85%\n\n\n85%\n\n\n+0.4 pp\n\n\n\n\nMedian home value\n\n\n$434k\n\n\n$501k\n\n\n+15%\n\n\n\n\nMedian gross rent\n\n\n$1,407\n\n\n$1,614\n\n\n+15%\n\n\n\n\nCost-burdened renters\n\n\n41%\n\n\n34%\n\n\n-7.6 pp\n\n\n\n\nCost-burdened homeowners\n\n\n17%\n\n\n17%\n\n\n-0.9 pp\n\n\n\n\nSingle-family permits\n\n\n325\n\n\n322\n\n\n-1%\n\n\n\n\nMultifamily permits\n\n\n0\n\n\n0\n\n\n—\n\n\n\n\nHUD-assisted housing units\n\n\n20\n\n\n18\n\n\n-10%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n180\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n36,311\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#new-kent-secondary",
+    "href": "local-summaries.html#new-kent-secondary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.7 New Kent (secondary)",
+    "text": "A.7 New Kent (secondary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n24,972\n\n\n28,022\n\n\n+12%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n4,678\n\n\n—\n\n\n\n\nMedian household income\n\n\n$113k\n\n\n$123k\n\n\n+9%\n\n\n\n\nHomeownership rate\n\n\n92%\n\n\n93%\n\n\n+0.3 pp\n\n\n\n\nMedian home value\n\n\n$354k\n\n\n$394k\n\n\n+11%\n\n\n\n\nMedian gross rent\n\n\n$1,391\n\n\n$1,721\n\n\n+24%\n\n\n\n\nCost-burdened renters\n\n\n50%\n\n\n39%\n\n\n-11.5 pp\n\n\n\n\nCost-burdened homeowners\n\n\n20%\n\n\n17%\n\n\n-2.9 pp\n\n\n\n\nSingle-family permits\n\n\n356\n\n\n453\n\n\n+27%\n\n\n\n\nMultifamily permits\n\n\n0\n\n\n0\n\n\n—\n\n\n\n\nHUD-assisted housing units\n\n\n3\n\n\n3\n\n\n+0%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n115\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n39,536\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#powhatan-secondary",
+    "href": "local-summaries.html#powhatan-secondary",
+    "title": "Appendix A — Local summaries",
+    "section": "A.8 Powhatan (secondary)",
+    "text": "A.8 Powhatan (secondary)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nPopulation\n\n\n31,592\n\n\n32,591\n\n\n+3%\n\n\n\n\nNet migration (2020–2025)\n\n\n—\n\n\n2,316\n\n\n—\n\n\n\n\nMedian household income\n\n\n$108k\n\n\n$111k\n\n\n+2%\n\n\n\n\nHomeownership rate\n\n\n91%\n\n\n93%\n\n\n+2.1 pp\n\n\n\n\nMedian home value\n\n\n$356k\n\n\n$416k\n\n\n+17%\n\n\n\n\nMedian gross rent\n\n\n$1,170\n\n\n$1,168\n\n\n0%\n\n\n\n\nCost-burdened renters\n\n\n39%\n\n\n44%\n\n\n+4.8 pp\n\n\n\n\nCost-burdened homeowners\n\n\n14%\n\n\n17%\n\n\n+3.2 pp\n\n\n\n\nSingle-family permits\n\n\n216\n\n\n115\n\n\n-47%\n\n\n\n\nMultifamily permits\n\n\n0\n\n\n0\n\n\n—\n\n\n\n\nHUD-assisted housing units\n\n\n8\n\n\n6\n\n\n-25%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n130\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n38,889\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
+  },
+  {
+    "objectID": "local-summaries.html#ashland-town",
+    "href": "local-summaries.html#ashland-town",
+    "title": "Appendix A — Local summaries",
+    "section": "A.9 Ashland (town)",
+    "text": "A.9 Ashland (town)\n\n\n\n\nMetric\n\n\n2022 ref.\n\n\n2024/25\n\n\nChange\n\n\n\n\n\n\nMedian household income\n\n\n$59k\n\n\n$61k\n\n\n+4%\n\n\n\n\nSeverely burdened renters (CHAS)\n\n\n—\n\n\n219\n\n\n—\n\n\n\n\nPopulation projection (2050)\n\n\n—\n\n\n9,592\n\n\n—",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Local summaries</span>"
+    ]
   }
 ]

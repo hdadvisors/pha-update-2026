@@ -1,0 +1,54 @@
+# Local summaries {#sec-local-summaries}
+
+<!-- Purpose: one stats table per locality — a preliminary scaffold for Phase 7 editing.
+     Same metric set for all nine localities; the final edited summaries will curate a
+     subset based on local context. No narrative text, no charts. Built in Task 12 pre-work. -->
+
+```{r}
+#| label: setup
+#| include: false
+source("_common.R")
+local_stats <- read_rds("data/local_stats.rds")
+```
+
+The tables below present a uniform set of key housing indicators for each of the nine localities in the Richmond regional planning area. These are preliminary — the final version will curate a subset of metrics based on local context and add narrative.
+
+**Column notes.** "2022 ref." is the 2022 annual value for PEP (population), BPS (permits), and PSH (HUD units); the 2018–2022 ACS 5-year estimate for income, tenure, home value, rent, and cost burden; and "—" where no comparable prior figure is available. "2024/25" is the 2025 value for PEP and the 2024 value for all other sources. "Change" is percent change for counts and dollar values; percentage-point difference for rates and shares.
+
+```{r}
+#| label: tables
+#| results: asis
+
+loc_order <- unique(local_stats$geoid)
+
+for (geo in loc_order) {
+  loc <- local_stats |> filter(geoid == geo)
+  nm  <- unique(loc$short_name)
+  grp <- unique(loc$group)
+
+  grp_label <- switch(grp,
+    primary   = " *(primary)*",
+    secondary = " *(secondary)*",
+    ashland   = " *(town)*",
+    ""
+  )
+
+  cat("\n\n##", nm, grp_label, "\n\n")
+
+  tbl <- loc |>
+    select(
+      `Metric`      = metric_label,
+      `2022 ref.`   = value_2022_fmt,
+      `2024/25`     = value_current_fmt,
+      `Change`      = change_fmt
+    ) |>
+    mutate(across(where(is.character), \(x) replace_na(x, "—")))
+
+  print(
+    kbl(tbl, format = "html", align = c("l", "r", "r", "r")) |>
+      kable_styling(c("condensed", "striped"), full_width = FALSE)
+  )
+
+  cat("\n\n")
+}
+```
