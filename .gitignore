@@ -19,6 +19,9 @@
 !/data/raw/
 /data/raw/*
 !/data/raw/README.md
+# Temporary exception: MLS raw drops are public in this repo for now.
+!/data/raw/mls/
+!/data/raw/mls/**
 
 # Processed data exports (Azure/PowerBI-ready CSVs written by export_csv()).
 # Public-source CSVs ARE committed to this public repo. MLS/CoStar-derived exports are
