@@ -235,6 +235,17 @@ pit_cap <- function() {
   )
 }
 
+eviction_cap <- function() {
+  "**Source:** Eviction filing records, general district courts, monthly."
+}
+
+vdoe_cap <- function() {
+  paste0(
+    "**Source:** Virginia Department of Education, McKinney-Vento homeless student ",
+    "counts, by school division."
+  )
+}
+
 cpi_cap <- function() {
   "Inflation-adjusted to the latest period using BLS CPI-U via FRED."
 }

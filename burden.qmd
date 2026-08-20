@@ -88,6 +88,51 @@ chas_high_renter <- chas_reg |> filter(tenure == "Renter", income_band == "100%+
 chas_high_owner <- chas_reg |> filter(tenure == "Owner", income_band == "100%+ AMI",
                                        burden != "Not cost-burdened") |>
   summarise(share = sum(share)) |> pull(share)
+
+# Eviction filings, annual totals by locality (2016-2025; 2026 excluded as a partial year)
+evictions_raw <- read_rds("data/evictions.rds")
+evict_annual <- evictions_raw |>
+  filter(year %in% 2016:2025) |>
+  summarise(filings = sum(filings_count), .by = c(locality, year))
+evict_reg <- evict_annual |> summarise(filings = sum(filings), .by = year)
+
+evict_reg_2019 <- evict_reg |> filter(year == 2019) |> pull(filings)
+evict_reg_2021 <- evict_reg |> filter(year == 2021) |> pull(filings)
+evict_reg_2025 <- evict_reg |> filter(year == 2025) |> pull(filings)
+
+evict_ches_2019 <- evict_annual |> filter(locality == "Chesterfield", year == 2019) |> pull(filings)
+evict_ches_2025 <- evict_annual |> filter(locality == "Chesterfield", year == 2025) |> pull(filings)
+evict_rich_2019 <- evict_annual |> filter(locality == "Richmond city", year == 2019) |> pull(filings)
+evict_rich_2025 <- evict_annual |> filter(locality == "Richmond city", year == 2025) |> pull(filings)
+
+base_evict_chg <- baseline |> filter(metric == "eviction_filings_pct_chg") |> pull(value)
+
+# PIT homelessness counts, Greater Richmond CoC (2020-2025)
+pit_raw <- read_rds("data/pit_homeless.rds")
+pit_2025 <- pit_raw |> filter(year == 2025) |> pull(total_persons)
+pit_2021 <- pit_raw |> filter(year == 2021) |> pull(total_persons)
+pit_unsh_2024 <- pit_raw |> filter(year == 2024) |> pull(unsheltered)
+
+base_pit_2019 <- baseline |> filter(metric == "pit_count", note == "2019") |> pull(value)
+base_pit_2021 <- baseline |> filter(metric == "pit_count", str_detect(note, "^2021")) |> pull(value)
+
+# VDOE McKinney-Vento homeless student counts (2020-21 through 2024-25)
+vdoe_raw <- read_rds("data/vdoe_homeless.rds")
+vdoe_reg <- vdoe_raw |> summarise(mv_count = sum(mv_count), .by = school_year)
+vdoe_reg_2021 <- vdoe_reg |> filter(school_year == "2020-21") |> pull(mv_count)
+vdoe_reg_2025 <- vdoe_reg |> filter(school_year == "2024-25") |> pull(mv_count)
+
+vdoe_rich_2021 <- vdoe_raw |> filter(locality == "Richmond city", school_year == "2020-21") |> pull(mv_count)
+vdoe_rich_2025 <- vdoe_raw |> filter(locality == "Richmond city", school_year == "2024-25") |> pull(mv_count)
+vdoe_henrico_2021 <- vdoe_raw |> filter(locality == "Henrico", school_year == "2020-21") |> pull(mv_count)
+vdoe_henrico_2025 <- vdoe_raw |> filter(locality == "Henrico", school_year == "2024-25") |> pull(mv_count)
+vdoe_hanover_2025 <- vdoe_raw |> filter(locality == "Hanover", school_year == "2024-25") |> pull(mv_count)
+
+base_student_chg <- baseline |> filter(metric == "student_homelessness_pct_chg") |> pull(value)
+
+# Shared locality color scale, used by fig-severe-trend and the three trend charts below.
+loc_pal <- c("Richmond city" = pha_pal[4], "Chesterfield" = pha_pal[6],
+             "Henrico" = pha_pal[2], "Hanover" = pha_pal[1])
 ```
 
 ## Renter cost burden is climbing again since 2019
@@ -226,9 +271,6 @@ sev_df <- burden_raw |>
     is_recent = year >= 2019
   )
 
-loc_pal <- c("Richmond city" = pha_pal[4], "Chesterfield" = pha_pal[6],
-             "Henrico" = pha_pal[2], "Hanover" = pha_pal[1])
-
 label_df <- sev_df |>
   filter(year == 2024) |>
   mutate(label_y = case_when(
@@ -270,16 +312,126 @@ ggplot(sev_df, aes(x = period, y = share, color = locality, group = locality)) +
 - All four localities had dipped in 2015–19 before this recent runup, so the full-decade change looks smaller than the last five years alone.
 - Chesterfield added the most severely burdened renter households of any locality since 2015–19 — up about 1,600 (from 5,962 to 7,599), a 27 percent increase in five years.
 
+## Eviction filings have nearly recovered regionally, but Richmond still files fewer than before the pandemic
+
+```{r}
+#| label: fig-eviction-trend
+#| fig-cap: "Eviction filings have nearly recovered regionally, but Richmond still files fewer than before the pandemic"
+#| fig-alt: "Line chart of annual eviction filings for the four primary localities, 2016 through 2025. All four localities drop sharply in 2020-2021, then recover. By 2025 Chesterfield filings exceed their 2019 level, Henrico and Hanover are near their 2019 level, and Richmond remains below its 2019 level."
+
+ggplot(evict_annual, aes(x = year, y = filings, color = locality, group = locality)) +
+  geom_line(linewidth = 1) +
+  geom_point(data = filter(evict_annual, year == 2025), size = 2.5) +
+  ggtext::geom_richtext(
+    data = filter(evict_annual, year == 2025),
+    aes(label = paste0("**", locality, "**")),
+    hjust = 0, nudge_x = 0.2, size = 3.2, label.color = NA, fill = NA
+  ) +
+  scale_color_manual(values = loc_pal) +
+  scale_x_continuous(breaks = seq(2016, 2025, 3), expand = expansion(mult = c(0.02, 0.2))) +
+  scale_y_continuous(labels = label_comma()) +
+  labs(
+    title = "Eviction filings have nearly recovered regionally,<br>but Richmond still files fewer than before the pandemic",
+    subtitle = "Annual eviction filings, four primary localities, 2016–2025",
+    caption = eviction_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **Regional filings fell `r label_percent(accuracy = 1)(abs(evict_reg_2021 - evict_reg_2019) / evict_reg_2019)` from `r label_comma()(evict_reg_2019)` in 2019 to `r label_comma()(evict_reg_2021)` at the 2021 pandemic-era low, then rebounded to `r label_comma()(evict_reg_2025)` by 2025 — within `r label_percent(accuracy = 1)(abs(evict_reg_2025 - evict_reg_2019) / evict_reg_2019)` of the pre-pandemic total.**
+- The recovery is uneven by locality: Chesterfield filings now exceed 2019, up from `r label_comma()(evict_ches_2019)` to `r label_comma()(evict_ches_2025)`, while Richmond remains below 2019, down from `r label_comma()(evict_rich_2019)` to `r label_comma()(evict_rich_2025)`.
+- Henrico and Hanover filings are both within 1 percent of their 2019 totals.
+
+::: {.callout-important}
+## Since 2022
+The 2022 Framework reported Richmond's average annual filings down `r abs(base_evict_chg)` percent by 2017–2019, a pre-pandemic decline. This update finds filings fell much further through the pandemic before rebounding; Richmond's 2025 total remains `r label_percent(accuracy = 1)(abs(evict_rich_2025 - evict_rich_2019) / evict_rich_2019)` below 2019.
+:::
+
+## Homelessness eased from its pandemic-era peak but remains above 2019 levels
+
+```{r}
+#| label: fig-pit-trend
+#| fig-cap: "Homelessness eased from its pandemic-era peak but remains above 2019 levels"
+#| fig-alt: "Stacked bar chart of sheltered and unsheltered persons counted in the Greater Richmond Continuum of Care's annual point-in-time count, 2020 through 2025. The total rises sharply from 546 in 2020 to a peak of 834 in 2021, then declines to 659 by 2025. Unsheltered persons trend upward across the period even as the sheltered total falls back."
+
+pit_pal <- c("Sheltered" = pha_pal[2], "Unsheltered" = pha_pal[4])
+
+pit_plot <- pit_raw |>
+  pivot_longer(c(sheltered, unsheltered), names_to = "status", values_to = "persons") |>
+  mutate(status = str_to_title(status), status = fct_relevel(status, "Sheltered", "Unsheltered"))
+
+ggplot(pit_plot, aes(x = factor(year), y = persons, fill = status)) +
+  geom_col() +
+  scale_fill_manual(values = pit_pal) +
+  scale_y_continuous(labels = label_comma()) +
+  labs(
+    title = "Homelessness eased from its pandemic-era peak<br>but remains above 2019 levels",
+    subtitle = paste0(
+      "Point-in-time count of persons experiencing homelessness, Greater Richmond CoC<br>",
+      "<span style='color:", pha_pal[2], "'>**Sheltered**</span> and ",
+      "<span style='color:", pha_pal[4], "'>**unsheltered**</span>"
+    ),
+    caption = pit_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **The point-in-time count fell to `r label_comma()(pit_2025)` in 2025, down `r label_percent(accuracy = 1)(abs(pit_2025 - pit_2021) / pit_2021)` from the 2021 peak of `r label_comma()(pit_2021)`, but still `r label_percent(accuracy = 1)((pit_2025 - base_pit_2019) / base_pit_2019)` above the 2019 count of `r label_comma()(base_pit_2019)`.**
+- Unsheltered homelessness trended upward even as the total eased, peaking at `r label_comma()(pit_unsh_2024)` persons in 2024.
+- Sheltered persons made up the large majority of the count in every year, ranging from about 70 to 88 percent of the total.
+
+::: {.callout-important}
+## Since 2022
+The 2022 Framework flagged the COVID-era jump in the point-in-time count from `r label_comma()(base_pit_2019)` in 2019 to `r label_comma()(base_pit_2021)` in 2021 (+68 percent). This update finds the count has since eased but not returned to baseline: `r label_comma()(pit_2025)` in 2025 remains `r label_percent(accuracy = 1)((pit_2025 - base_pit_2019) / base_pit_2019)` above 2019.
+:::
+
+## Homeless student counts have nearly doubled regionally since the pandemic
+
+```{r}
+#| label: fig-vdoe-trend
+#| fig-cap: "Homeless student counts have nearly doubled regionally since the pandemic"
+#| fig-alt: "Line chart of McKinney-Vento identified homeless student counts for the four primary localities' school divisions, 2020-21 through 2024-25. All four localities rise over the period. Henrico grows fastest, more than doubling from 551 to 1,219 students; Richmond, Chesterfield, and Hanover each grow at a slower but still substantial pace."
+
+ggplot(vdoe_raw, aes(x = school_year, y = mv_count, color = locality, group = locality)) +
+  geom_line(linewidth = 1) +
+  geom_point(data = filter(vdoe_raw, school_year == "2024-25"), size = 2.5) +
+  ggtext::geom_richtext(
+    data = filter(vdoe_raw, school_year == "2024-25"),
+    aes(label = paste0("**", locality, "**")),
+    hjust = 0, nudge_x = 0.1, size = 3.2, label.color = NA, fill = NA
+  ) +
+  scale_color_manual(values = loc_pal) +
+  scale_x_discrete(expand = expansion(mult = c(0.02, 0.22))) +
+  scale_y_continuous(labels = label_comma()) +
+  labs(
+    title = "Homeless student counts have nearly doubled<br>regionally since the pandemic",
+    subtitle = "McKinney-Vento identified homeless students, four primary localities' school divisions",
+    caption = vdoe_cap(),
+    x = NULL, y = NULL
+  ) +
+  theme_pha() +
+  theme(legend.position = "none") +
+  add_zero_line("y")
+```
+
+- **Henrico's count more than doubled, from `r label_comma()(vdoe_henrico_2021)` in 2020-21 to `r label_comma()(vdoe_henrico_2025)` in 2024-25 (+`r label_percent(accuracy = 1)((vdoe_henrico_2025 - vdoe_henrico_2021) / vdoe_henrico_2021)`), the largest increase in the region.**
+- Richmond's count rose `r label_percent(accuracy = 1)((vdoe_rich_2025 - vdoe_rich_2021) / vdoe_rich_2021)` over the same span, from `r label_comma()(vdoe_rich_2021)` to `r label_comma()(vdoe_rich_2025)` students.
+- Regional totals rose from `r label_comma()(vdoe_reg_2021)` to `r label_comma()(vdoe_reg_2025)` identified homeless students — a `r label_percent(accuracy = 1)((vdoe_reg_2025 - vdoe_reg_2021) / vdoe_reg_2021)` increase in five school years.
+- Hanover remains the smallest count in the region at `r label_comma()(vdoe_hanover_2025)` students in 2024-25, though it grew at a similar rate to Chesterfield and Richmond.
+
+::: {.callout-important}
+## Since 2022
+The 2022 Framework found Richmond Public Schools' homeless student count had fallen `r abs(base_student_chg)` percent from 2017-18 to 2019-20, a pre-pandemic decline. This update finds the opposite direction since the pandemic: Richmond's count climbed `r label_percent(accuracy = 1)((vdoe_rich_2025 - vdoe_rich_2021) / vdoe_rich_2021)` from 2020-21 to 2024-25, reaching `r label_comma()(vdoe_rich_2025)` students. **Caveat:** the two periods are not directly comparable — the 2022 figure covers a pre-pandemic two-year window, while this update covers five post-pandemic school years.
+:::
+
 ## Planned content
 
 ::: {.callout-note title="Planned content"}
 **Cost burden by race and ethnicity (CHAS).** HUD's CHAS tables will further break burden down by race and ethnicity, complementing the income-band cut above.
-:::
-
-::: {.callout-note title="To be added"}
-**Evictions.** Eviction filings and judgments for the region's general district courts, trended against the 2022 Framework's pre-pandemic baseline.
-:::
-
-::: {.callout-note title="To be added"}
-**Homelessness.** Greater Richmond CoC Point-in-Time counts, sheltered and unsheltered, updating the 2022 Framework's 2019–2021 series.
 :::
