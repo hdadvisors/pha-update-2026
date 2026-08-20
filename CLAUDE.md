@@ -95,13 +95,13 @@ Use forward slashes in R paths, and keep every path relative to the project root
 
 ## API keys
 
-`CENSUS_API_KEY` and `FRED_API_KEY` are both required. They live in your user `.Renviron` at `%USERPROFILE%\Documents\.Renviron`. Never print or commit their values.
+`CENSUS_API_KEY`, `FRED_API_KEY`, and `GEOCODIO_API_KEY` are all required (the last for MLS geocoding, `r/mls_geocode.R`). They live in your user `.Renviron` at `%USERPROFILE%\Documents\.Renviron`. Never print or commit their values.
 
 R's HOME on Windows may be `C:\Users\<you>` rather than the Documents folder, so that file is not always loaded automatically. Scripts include an `.Renviron` fallback derived from the current user — `readRenviron(file.path(Sys.getenv("USERPROFILE"), "Documents", ".Renviron"))` when the key is empty — never a hardcoded username. Verify visibility with a TRUE or FALSE check only.
 
 ## Data-fetch rule
 
-tidycensus, tigris, and fredr package downloads are approved. Direct fetches from census.gov file servers (BPS, the PEP FTP) and from huduser.gov (CHAS zips, Income Limits) are approved with a manual fallback. Anything else on a government host, especially BLS OEWS, requires Jonathan's approval or a manual download.
+tidycensus, tigris, and fredr package downloads are approved. Direct fetches from census.gov file servers (BPS, the PEP FTP) and from huduser.gov (CHAS zips, Income Limits) are approved with a manual fallback. Geocodio via `tidygeocoder` (`r/mls_geocode.R`) is approved for MLS address geocoding only. Anything else on a government host, especially BLS OEWS, requires Jonathan's approval or a manual download.
 
 ## Publishing status
 
@@ -113,6 +113,7 @@ Public repo, with GitHub Pages live from the start on `main`/`docs` at `https://
 - **huduser.gov** — send a browser User-Agent and Referer or the server returns 202 or an empty body. The CHAS data dictionary is a separate download from the table zips.
 - **gridtext and `theme_pha`** — an `@fig`, `@tbl`, or `@sec` cross-reference inside `labs(caption=)` or a kbl `footnote()` throws a gridtext `<a>`-tag error. Keep cross-references in markdown bullets.
 - **ggplot2 4.0 (S7)** — override strip text with `ggtext::element_markdown()`, never a raw `element_text()`. `theme_pha`'s strip element is a ggtext markdown element and ggplot2 4.0 only merges theme elements of the same class, so an `element_text()` override is the thing that clashes. Faceting is fine; the override just has to match the class. Documented at `hdatools/R/themes.R`, `theme_pha`'s `@details`.
+- **`dplyr::join_by(a == b)` on differently-named columns** — the joined result keeps only `a`, silently dropping `b`. A downstream `mutate()` or `select()` that expects `b` to survive gets a column-not-found error, or worse, an `NA` after a `bind_rows()` masks the missing column with a same-named one from another frame. Join on the equal-named keys only and enforce the cross-name equality with a `filter()` immediately after, so both columns survive. Found while building `r/mls_clean.R`'s cross-MLS price-tolerance match.
 
 ## Repo map
 
