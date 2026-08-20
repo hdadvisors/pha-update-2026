@@ -10,7 +10,7 @@
 ## 1. Setup ----
 library(tidyverse)
 library(janitor)
-source("_common.R")   # export_csv()
+source("_common.R") # export_csv()
 
 dir.create("data", showWarnings = FALSE, recursive = TRUE)
 
@@ -20,14 +20,24 @@ pid_placeholders <- c("NO TAX RECORD", "TBD", "NOT YET ASSIGNED")
 # The three outside-tolerance cross-MLS pairs data-notes.md confirmed by hand as the
 # same sale -- drop the REIN/BRT twin even though price/sqft fall outside the auto-resolve
 # tolerance.
-confirmed_outside_tolerance <- c("REIN10401157", "BRTVAHA2000158", "REIN10611370")
+confirmed_outside_tolerance <- c(
+  "REIN10401157",
+  "BRTVAHA2000158",
+  "REIN10611370"
+)
 
 # Address-less BRTVA records confirmed as duplicates of a CVR record (data-notes.md
 # manual-research table). Everything else in that address-less bucket (same-property-
 # not-duplicate, or genuinely unrecoverable) needs no action -- it's kept by default.
 addressless_confirmed_duplicates <- c(
-  "BRTVAGO2000096", "BRTVANK2000050", "BRTVACF2000588", "BRTVACF2000976",
-  "BRTVARC2000104", "BRTVACF2000312", "BRTVAHA2000768", "BRTVAHA2000808",
+  "BRTVAGO2000096",
+  "BRTVANK2000050",
+  "BRTVACF2000588",
+  "BRTVACF2000976",
+  "BRTVARC2000104",
+  "BRTVACF2000312",
+  "BRTVAHA2000768",
+  "BRTVAHA2000808",
   "BRTVAHN2000180"
 )
 
@@ -53,27 +63,59 @@ message("Combined ", length(mls_files), " files: ", nrow(mls_raw), " rows")
 mls0 <- mls_raw |>
   mutate(
     address_raw = coalesce(address, address_line),
-    street      = str_squish(str_split_i(address_raw, ",", 1)),
-    sales_date  = mdy(sales_date),
-    list_price  = parse_number(list_price),
+    street = str_squish(str_split_i(address_raw, ",", 1)),
+    sales_date = mdy(sales_date),
+    list_price = parse_number(list_price),
     sales_price = parse_number(sales_price),
     # 0 is not a valid sqft/bed/bath count for a completed residential sale -- treat as
     # missing rather than real (acres is left alone: 0 is a legitimate value for a condo
     # with no dedicated land).
-    sqft_total  = na_if(parse_number(sq_ft_total), 0),
-    acres       = parse_number(acres),
-    beds        = na_if(parse_number(number_bedrooms), 0),
+    sqft_total = na_if(parse_number(sq_ft_total), 0),
+    acres = parse_number(acres),
+    beds = na_if(parse_number(number_bedrooms), 0),
     baths_total = na_if(parse_number(total_baths), 0),
     days_on_market = parse_number(days_on_market),
-    year_built  = parse_number(year_built),
+    year_built = parse_number(year_built),
+    type = recode_values(
+      type,
+      "Single Family Residence" ~ "Single Family",
+      default = type
+    ),
+    new_resale = recode_values(
+      new_resale,
+      "Resale (occupied at least once)" ~ "Resale",
+      "New (never occupied)" ~ "New",
+      default = new_resale
+    ),
     is_cross_mls = !str_detect(ml_number, "^[0-9]+$"),
-    row_id      = row_number()
+    row_id = row_number()
   ) |>
   select(
-    row_id, ml_number, pid, status, street, county = county_city, zip,
-    property_type = type, sales_date, list_price, sales_price, days_on_market,
-    new_resale, year_built, subdivision, sqft_total, acres, beds, baths_total,
-    water, sewer, sold_terms, owned_by, is_cross_mls, source_file
+    row_id,
+    ml_number,
+    pid,
+    status,
+    street,
+    county = county_city,
+    zip,
+    property_type = type,
+    sales_date,
+    list_price,
+    sales_price,
+    days_on_market,
+    new_resale,
+    year_built,
+    subdivision,
+    sqft_total,
+    acres,
+    beds,
+    baths_total,
+    water,
+    sewer,
+    sold_terms,
+    owned_by,
+    is_cross_mls,
+    source_file
   )
 
 ## 4. Dedupe ----
@@ -94,18 +136,29 @@ mls1 <- mls1 |>
       NA_character_,
       str_to_upper(str_remove_all(pid, "[^A-Za-z0-9]"))
     ),
-    pid_norm   = na_if(pid_norm, ""),
-    street_norm = na_if(str_to_upper(str_remove_all(street, "[^A-Za-z0-9]")), "")
+    pid_norm = na_if(pid_norm, ""),
+    street_norm = na_if(
+      str_to_upper(str_remove_all(street, "[^A-Za-z0-9]")),
+      ""
+    )
   )
 
-cvr   <- mls1 |> filter(!is_cross_mls)
+cvr <- mls1 |> filter(!is_cross_mls)
 cross <- mls1 |> filter(is_cross_mls)
 
 # Candidate CVR match columns, reused across passes. Renamed away from `ml_number` up
 # front so the join never has to disambiguate two same-named columns.
 cvr_keyed <- cvr |>
-  select(cvr_row_id = row_id, cvr_ml_number = ml_number, pid_norm, street_norm, zip,
-         sales_date, cvr_price = sales_price, cvr_sqft = sqft_total)
+  select(
+    cvr_row_id = row_id,
+    cvr_ml_number = ml_number,
+    pid_norm,
+    street_norm,
+    zip,
+    sales_date,
+    cvr_price = sales_price,
+    cvr_sqft = sqft_total
+  )
 
 within_tolerance <- function(price, cvr_price, sqft, cvr_sqft) {
   abs(price - cvr_price) <= 1000 & abs(sqft - cvr_sqft) <= 100
@@ -159,10 +212,15 @@ matches <- bind_rows(pass1, pass2, pass3) |>
   distinct(row_id, .keep_all = TRUE)
 
 message(
-  "Cross-MLS matches found: ", nrow(matches),
-  " (", sum(matches$matched_on == "pid_date"), " by PID+date, ",
-  sum(matches$matched_on == "street_date_price"), " by street+date+price, ",
-  sum(matches$matched_on == "zip_date_price"), " by zip+date+price)"
+  "Cross-MLS matches found: ",
+  nrow(matches),
+  " (",
+  sum(matches$matched_on == "pid_date"),
+  " by PID+date, ",
+  sum(matches$matched_on == "street_date_price"),
+  " by street+date+price, ",
+  sum(matches$matched_on == "zip_date_price"),
+  " by zip+date+price)"
 )
 
 auto_drop_ml <- matches |>
@@ -184,8 +242,11 @@ manual_review_matches <- matches |>
 n_before_cross <- nrow(mls1)
 mls2 <- mls1 |> filter(!(ml_number %in% auto_drop_ml))
 message(
-  "Dropped ", n_before_cross - nrow(mls2), " cross-MLS duplicate rows (",
-  length(auto_drop_ml), " ML#s)"
+  "Dropped ",
+  n_before_cross - nrow(mls2),
+  " cross-MLS duplicate rows (",
+  length(auto_drop_ml),
+  " ML#s)"
 )
 
 ## 5. Analysis-window filter ----
@@ -198,16 +259,42 @@ message("Filtered to analysis window: ", nrow(mls3), " rows")
 ## 6. Final columns ----
 mls_transactions <- mls3 |>
   select(
-    ml_number, pid, status, street, county, zip, property_type, sales_date,
-    list_price, sales_price, days_on_market, new_resale, year_built, subdivision,
-    sqft_total, acres, beds, baths_total, water, sewer, sold_terms, owned_by,
+    ml_number,
+    pid,
+    street,
+    county,
+    zip,
+    property_type,
+    sales_date,
+    list_price,
+    sales_price,
+    days_on_market,
+    new_resale,
+    year_built,
+    subdivision,
+    sqft_total,
+    acres,
+    beds,
+    baths_total,
+    water,
+    sewer,
+    sold_terms,
+    owned_by,
     is_cross_mls
   )
 
 mls_manual_review <- manual_review_matches |>
   select(
-    ml_number, cvr_ml_number, street, zip, sales_date, sales_price,
-    cvr_price, sqft_total, cvr_sqft, matched_on
+    ml_number,
+    cvr_ml_number,
+    street,
+    zip,
+    sales_date,
+    sales_price,
+    cvr_price,
+    sqft_total,
+    cvr_sqft,
+    matched_on
   )
 
 ## 7. Write output ----
@@ -222,7 +309,8 @@ message(
 ## 8. Validate ----
 d <- read_rds("data/mls_transactions.rds")
 stopifnot(
-  nrow(d) > 100000, nrow(d) < 110450,
+  nrow(d) > 100000,
+  nrow(d) < 110450,
   !anyNA(d$sales_date),
   !anyNA(d$sales_price),
   min(d$sales_date) >= ymd("2020-01-01"),
@@ -231,8 +319,14 @@ stopifnot(
   !any(c("REIN10401157", "BRTVAHA2000158", "REIN10611370") %in% d$ml_number)
 )
 message(
-  "mls_clean.R validation passed. Rows: ", nrow(d),
-  " | date range: ", format(min(d$sales_date)), " - ", format(max(d$sales_date)),
-  " | cross-MLS share: ", scales::label_percent(accuracy = 0.1)(mean(d$is_cross_mls)),
-  " | manual review rows: ", nrow(mls_manual_review)
+  "mls_clean.R validation passed. Rows: ",
+  nrow(d),
+  " | date range: ",
+  format(min(d$sales_date)),
+  " - ",
+  format(max(d$sales_date)),
+  " | cross-MLS share: ",
+  scales::label_percent(accuracy = 0.1)(mean(d$is_cross_mls)),
+  " | manual review rows: ",
+  nrow(mls_manual_review)
 )

@@ -53,12 +53,25 @@ to_geocode <- distinct_addresses |>
 message(nrow(to_geocode), " new addresses to geocode (", nrow(geocode_cache), " already cached)")
 
 if (nrow(to_geocode) > 0) {
-  geocoded_new <- to_geocode |>
-    geocode(address = full_address, method = "geocodio", lat = lat, long = long)
+  chunk_size   <- 9000L   # Geocodio batch limit is 10,000; stay comfortably under it
+  chunks       <- split(to_geocode, ceiling(seq_len(nrow(to_geocode)) / chunk_size))
+  n_chunks     <- length(chunks)
+  running_total <- 0L
 
-  geocode_cache <- bind_rows(geocode_cache, geocoded_new |> select(full_address, lat, long))
-  write_rds(geocode_cache, cache_path)
-  message("Wrote ", cache_path, " (", nrow(geocode_cache), " cached addresses)")
+  for (i in seq_along(chunks)) {
+    chunk <- chunks[[i]]
+    message("Chunk ", i, " of ", n_chunks, ": geocoding ", nrow(chunk), " addresses ...")
+
+    geocoded_chunk <- chunk |>
+      geocode(address = full_address, method = "geocodio", lat = lat, long = long)
+
+    geocode_cache <- bind_rows(geocode_cache, geocoded_chunk |> select(full_address, lat, long))
+    write_rds(geocode_cache, cache_path)
+
+    running_total <- running_total + nrow(chunk)
+    message("  Chunk ", i, " done. Running total this run: ", running_total,
+            " | Cache total: ", nrow(geocode_cache))
+  }
 }
 
 ## 4. Join lat/long back onto every transaction ----
