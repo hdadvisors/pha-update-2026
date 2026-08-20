@@ -141,7 +141,7 @@ This is the streamlined data plan, exported to a Google Doc for PHA in Phase 1. 
 | 14 | CHAS 2018–2022, sumlevels 050 (×8) and 160 (Ashland): T7/T8 (income×tenure×burden), T9 (race), T14/T15 (unit affordability for the rental gap), T18 (distributions) | huduser.gov (script with manual fallback) | rr + Ashland | `r/chas.R` | 5 |
 | 15 | PUMS pipeline — collect, prep, AMI assignment, affordable-and-available gap, starter-home gap, burden×race×income, income distributions, labels, PUMA geography | tidycensus `get_pums` | `puma_core3` (+`puma_region` for totals) | `r/pums/{pums_collect,pums_prep,pums_ami,pums_gap,pums_labels,rva_puma}.R` | 4 |
 | 16 | OEWS wage affordability | BLS OEWS (Jonathan's OK or manual) | Richmond MSA | `r/oews.R` | 5 |
-| 17 | Evictions and delinquency (instability) | latest sources; refresh the 2022 report's inline logic | rr | `r/evictions.R` | 5 |
+| 17 | Eviction filings (instability) | LSC Civil Court Data Initiative (`civilcourtdata.lsc.gov`); 4 primary localities only; monthly 2016–2026-06; staged in `data/raw/evictions/` 2026-08-20. Secondary localities not used in this report. Ashland is not separable from Hanover (shared county court system). Delinquency data source TBD. | 4 primary | `r/evictions.R` | 5 |
 | 18 | PIT homelessness — Greater Richmond CoC | CoC report, likely transcribed | CoC region | `r/pit.R` | 5 |
 | 19 | Boundaries (rr, places, PUMAs, tracts if needed) | tigris + sf | study area | `r/geo.R` | 2 |
 
