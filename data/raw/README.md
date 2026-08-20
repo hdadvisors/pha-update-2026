@@ -95,6 +95,26 @@ data/raw/costar/costar_submarkets_quarterly.xlsx # submarket breakdown, if pulle
 
 ---
 
+---
+
+## 3. Eviction filings — LSC Civil Court Data Initiative
+
+**Folder:** `data/raw/evictions/`
+
+**Source:** Legal Services Corporation Civil Court Data Initiative, `civilcourtdata.lsc.gov`. Methodology: https://civilcourtdata.lsc.gov/about/methodology.
+
+**Coverage:** 4 primary localities only (Chesterfield, Henrico, Hanover, Richmond city). Eviction data for the 4 secondary localities is not used in this report. Ashland cannot be separated from Hanover County — the town uses the same county court system and no town-level extract exists.
+
+**Fields:** `month_start_date`, `jurisdiction`, `filings_count`, `percent_of_historical_average`, `defaults_count`, `defaults_comparison`.
+
+**Date range:** monthly, 2016-01 through 2026-06.
+
+**Downloaded:** 2026-08-20. One CSV per locality, named `<locality>-virginia-8-20-2026.csv`.
+
+**Needed by:** Phase 5 (`r/evictions.R`). Note in `data-notes.qmd` that eviction figures cover the 4 primary localities only and that Ashland is not separable from Hanover.
+
+---
+
 ## Checklist before handing off to Task 4
 
 - [ ] MLS: all 8 localities + regional total, monthly 2016–latest, metrics above
