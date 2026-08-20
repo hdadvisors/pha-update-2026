@@ -115,6 +115,41 @@ data/raw/costar/costar_submarkets_quarterly.xlsx # submarket breakdown, if pulle
 
 ---
 
+---
+
+## 4. Virginia Housing LIHTC — property listing and project rankings
+
+**Folder:** `data/raw/lihtc/`
+
+**Source:** Virginia Housing (VHDA), internal data request. Not publicly downloadable; Jonathan obtained directly.
+
+**Files:**
+
+| File | Description |
+|---|---|
+| `vh-lihtc-property-listing.xlsx` | Full statewide LIHTC property listing as of 2025-02-13. One row per property, 1,479 statewide. |
+| `2025 FINAL RANKINGS- Board Approved.pdf` | Virginia Housing Board-approved project rankings for the 2025 competitive LIHTC cycle. |
+| `2024 Final Rankings.pdf` | Board-approved rankings for the 2024 cycle. |
+| `2023 Final Rankings.pdf` | Board-approved rankings for the 2023 cycle. |
+
+**Property listing columns (xlsx, one header row — read with `skip=1`):**
+
+`Property Name`, `VHDA#`, `Street Address`, `City`, `Zip`, `Jurisdiction`, `Tax Credit Units`, `Total Units`, `Target Type`, `Cycle Name`, `Building Type`, `Has Rental Assistance?*`
+
+- `Tax Credit Units` — units receiving the tax credit subsidy.
+- `Total Units` — all units in the development (may exceed tax credit units).
+- `Target Type` — General, Elderly, PWD (persons with disabilities), or Homeless.
+- `Cycle Name` — year and credit type, e.g. "2024 9% Competitive" or "2024 4% Tax Exempt". Goes back to 1990.
+- `Has Rental Assistance?*` — logical; indicates layered project-based rental assistance.
+
+**Region coverage:** 231 properties in the 4 primary localities (Chesterfield 37, Hanover 10, Henrico 56, Richmond City 128). The 4 secondary localities (Charles City, Goochland, New Kent, Powhatan) have no LIHTC properties in the listing. `Jurisdiction` values use the full locality name ("Chesterfield County", "Richmond City", etc.).
+
+**Rankings PDFs purpose:** The 2023–2025 rankings capture recently funded projects that are not yet in NHPD. `r/assistance.R` uses the property listing for the unit inventory; the rankings PDFs are reference documents for identifying pipeline projects and confirming regional credits. They are not machine-read by a script — relevant regional projects should be noted in the data-notes caveat on NHPD recency.
+
+**Needed by:** Phase 3 Session 4D (`r/lihtc.R` and `r/assistance.R`, PLAN.md Section 5 row 24).
+
+---
+
 ## Checklist before handing off to Task 4
 
 - [ ] MLS: all 8 localities + regional total, monthly 2016–latest, metrics above

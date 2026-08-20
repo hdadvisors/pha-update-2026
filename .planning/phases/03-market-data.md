@@ -26,7 +26,7 @@ None of the above is rebuilt or re-verified by this phase; sessions below build 
 ## Don't
 
 - Rebuild or re-verify any script in "What is already done" — reopen only if a session below finds it insufficient for a specific new figure.
-- Scope a session for row 24 (consolidated rental assistance). No LIHTC database file exists anywhere under `data/raw/` — `r/psh.R` covers program-mix and voucher/public-housing counts only, and Section 5 row 24's "consolidated" scope needs LIHTC production data this repo does not have. Blocked on a manual drop from Jonathan; do not substitute PSH alone for it.
+- ~~Scope a session for row 24 (consolidated rental assistance)~~ — unblocked. Virginia Housing property listing and 2023–2025 rankings dropped to `data/raw/lihtc/` on 2026-08-20; see Session 4D below.
 - Pull CHAS Tables 8, 9, 14, 15, or 18, or B25106 (tenure × income × burden). Both are Phase 5 scope for `burden.qmd`.
 - Build the sales-inventory/months-of-supply figure. It needs an active-listings source the closed-sales MLS export doesn't carry; still open per `ownership.qmd`'s existing callout.
 - Guess at a numeric Since-2022 percentage change for racial homeownership. The only 2022 baseline race figure is qualitative ("white households... above 70 pct," no exact value) — the callout in Session 4A is narrative, not a computed delta.
@@ -34,13 +34,14 @@ None of the above is rebuilt or re-verified by this phase; sessions below build 
 
 ## Tasks
 
-Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task-4-s4a`, `task-4-s4b`, `task-4-s4c`.
+Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task-4-s4a`, `task-4-s4b`, `task-4-s4c`, `task-4-s4d`.
 
 | Session | Scripts / output | Model | Why this grouping |
 |---|---|---|---|
 | 4A | `r/acs_tenure_race.R` → `data/acs_tenure_race.rds`; `ownership.qmd` racial-homeownership section; `data-notes.qmd` crosswalk | Opus | The reliability design (region-pooled vs. locality-level cut) and the chapter narrative are judgment calls, not a mechanical pull — matches the model policy for gap analysis and chapter-adjacent work |
 | 4B | `r/acs_stock.R` → `data/acs_stock.rds` | Sonnet | A mechanical multi-table ACS pull following the same trend-year and CV conventions as every prior Phase 2/3 ACS script |
 | 4C | `r/fmr.R` → `data/fmr.rds` | Sonnet | Processes two already-staged local xlsx files; no API call, no CV (administrative figures, not survey estimates) |
+| 4D | `r/lihtc.R` → `data/lihtc.rds`; `r/assistance.R` → `data/assistance.rds` | Sonnet | Mechanical read of the VH xlsx, region filter, join to NHPD, and consolidated count — no API, no CV |
 
 ### Session 4A: Racial and ethnic homeownership (B25003A–I)
 
@@ -62,6 +63,24 @@ Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task
 
 **`r/fmr.R`** reads the two staged xlsx files (`data/raw/hud/hud_fmr_fy2026.xlsx`, `hud_safmr_fy2026.xlsx`) into one tidy frame: region-level FMR by bedroom count and zip-level SAFMR. No API call, no CV — these are administrative HUD figures, not ACS survey estimates, so the validation block checks structure (all 8 localities present in the FMR frame, no all-NA SAFMR column) rather than reliability.
 
+### Session 4D: LIHTC inventory and consolidated rental assistance
+
+**Context:** Virginia Housing dropped two data sources to `data/raw/lihtc/` on 2026-08-20: (1) a statewide LIHTC property listing (`vh-lihtc-property-listing.xlsx`, 1,479 properties as of 2025-02-13) and (2) Board-approved project rankings for the 2023, 2024, and 2025 competitive cycles (PDFs). These unblock PLAN.md Section 5 row 24.
+
+**`r/lihtc.R`** reads the VH property listing with `read_excel(..., skip=1)`, applies `janitor::clean_names()`, filters to the `rr` jurisdiction names ("Chesterfield County", "Hanover County", "Henrico County", "Richmond City" — the 4 secondary localities have no LIHTC properties in the listing), and writes `data/lihtc.rds`. Key columns to retain: `property_name`, `vhda_number`, `jurisdiction`, `tax_credit_units`, `total_units`, `target_type`, `cycle_name`, `building_type`, `has_rental_assistance`. Parse `cycle_year` as `as.integer(substr(cycle_name, 1, 4))` and `credit_type` ("9% Competitive", "4% Tax Exempt", "9% Accessible Supportive Housing", etc.) from `cycle_name`. Validation: expect 231 rows for the 4 primary localities; flag if jurisdiction count deviates.
+
+**`r/assistance.R`** consolidates the three rental assistance programs tracked in this report into a single `data/assistance.rds` frame for `rental.qmd`. It reads:
+
+- `data/lihtc.rds` — VH LIHTC units by jurisdiction and cycle year.
+- `data/nhpd.rds` — NHPD preservation extract (already built by `r/nhpd.R`). NHPD covers HUD-assisted properties including older LIHTC; VH data adds recent cycles not yet in NHPD. The join is by property name and locality — expect imperfect overlap; document the dedup approach in the validation block and in `data-notes.qmd`.
+- `data/psh.rds` — HUD PSH program-mix and voucher/public-housing counts (already built by `r/psh.R`).
+
+Produce two output frames: a property-level frame (`assistance_properties.rds`) and a locality × program-type summary count (`assistance_summary.rds`). The summary frame drives the `rental.qmd` consolidated-assistance table.
+
+**Rankings PDFs** (2023–2025) are reference documents, not machine-read. Before writing the session, scan each for Richmond-region projects; list any regional project names and unit counts in a comment block at the top of `r/lihtc.R` so the script notes which recent pipeline deals are captured by the VH listing but not yet in NHPD. The 2025 rankings may include deals with cycle year 2025 in the VH listing (only 1 row in the region at listing date); check and note the lag in `data-notes.qmd`.
+
+**Note in `data-notes.qmd`:** Add a caveat to the NHPD/LIHTC section noting that (1) the VH listing covers all properties with active Virginia Housing credits through 2025-02-13 but does not include properties whose credits have expired and been de-listed; (2) the 4 secondary localities have no LIHTC properties in this listing; (3) the 2023–2025 rankings identify pipeline projects that may not yet appear in NHPD but are in the VH listing if their credit agreement was executed by the listing date.
+
 ## Verify
 
 - [ ] `r/acs_tenure_race.R`, `r/acs_stock.R`, and `r/fmr.R` exist, are git-tracked, and follow the `/new-data-script` anatomy (header, numbered setup sections, `.Renviron` fallback, `write_rds()` + `export_csv()`, validation block).
@@ -72,6 +91,9 @@ Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task
 - [x] `ownership.qmd` gains the racial-homeownership H2 with its region-pooled figure, a locality-level figure only if ≥3 categories clear CV-30 there, and a narrative (not computed) Since-2022 callout.
 - [x] `data-notes.qmd` gains the race/ethnicity crosswalk subsection and an updated ACS sources-table status row.
 - [x] `quarto render` still exits 0 after the `ownership.qmd` and `data-notes.qmd` edits.
+- [ ] `r/lihtc.R` and `r/assistance.R` exist, are git-tracked, and follow the `/new-data-script` anatomy.
+- [ ] `data/lihtc.rds` covers 231 properties in the 4 primary localities; `data/assistance_summary.rds` has one row per locality × program type.
+- [ ] `data-notes.qmd` carries the NHPD/VH coverage caveat (expired credits, secondary locality absence, pipeline lag) from Session 4D.
 - [x] Row 24 (consolidated rental assistance) is recorded in this file as blocked on a missing LIHTC data drop, not silently dropped from scope.
 - [x] `.planning/PLAN.md` Section 9's Phase 3 row moves `not planned` → `planned`, linking this file.
 - [x] The `.planning/LOG.md` entry for each session records any `section == "ownership"` `baseline_2022` metric the session's frames reproduce, and states plainly that racial homeownership has no computable 2022 comparison.
@@ -88,10 +110,12 @@ Phase-local. A decision that constrains work outside this phase moves to PLAN.md
 | 2026-08-20 (4A) | Regional aggregates in the racial-homeownership figures pool the **4 primary localities**, not the 8 `rr` localities. `r/acs_tenure_race.R` writes that pooled row as `geoid == "region4"` | Jonathan's direction, 2026-08-20: every regional aggregate in this cycle is being standardized on the primary 4, matching the 2022 Framework's own definition of the region (PLAN.md Section 6). The 8 localities are still pulled and exported individually for the Phase 7 local summaries | active — applies to every regional aggregate, not just this figure |
 | 2026-08-20 (4A) | The nine published B25003 categories collapse to 6 report groups: White non-Hispanic (H), Black (B), Hispanic or Latino (I), Asian (D), Multiracial (G), Another race (C + E + F). B25003A is dropped in favor of H | Jonathan's direction, 2026-08-20. The collapse also fixes the reliability problem the raw categories had: AIAN, NHPI, and some-other-race each fail CV-30 at most grains alone, but combined they clear everywhere except one Hanover cell. All 6 groups clear CV-30 at the pooled region grain; 4 of 6 clear in all 4 primary localities | active |
 | 2026-08-20 (4A) | Suppression for a *rate* uses the worse of its owner and renter cell tiers, carried as `rate_reliability` in `data/acs_tenure_race_group.rds` | Filtering on the single-cell `reliability` column plotted Hanover's Asian rate, whose owner count is High (CV 11.4) while its renter count is Low (CV 65.4). A rate is only as reliable as its weaker input | active — applies to any rate built from two ACS cells |
-| 2026-08-20 | Row 24 (consolidated rental assistance) is not scoped into a Phase 3 session | No LIHTC database file exists under `data/raw/`; `r/psh.R` alone does not satisfy Section 5 row 24's "consolidated" scope, which needs LIHTC production data | active — revisit once Jonathan drops a LIHTC source |
+| 2026-08-20 | Row 24 (consolidated rental assistance) is not scoped into a Phase 3 session | No LIHTC database file exists under `data/raw/`; `r/psh.R` alone does not satisfy Section 5 row 24's "consolidated" scope, which needs LIHTC production data | superseded 2026-08-20 — VH data dropped; see Session 4D |
+| 2026-08-20 | VH LIHTC property listing is the primary source for row 24; NHPD remains for preservation risk; PSH for voucher/public-housing counts | Virginia Housing provided their full credit portfolio (1,479 properties statewide; 231 in the 4 primary localities) plus 2023–2025 rankings PDFs. The secondary 4 localities have zero LIHTC properties in the listing. HUD's public LIHTC database is not used — VH is more current and directly regional | active |
 
 ## Open questions
 
 - ~~Which of the 9 B25003A–I categories clear CV-30 at the locality level~~ — answered by the 4A run, then superseded by the 6-group collapse. At the published 9-category grain: 2 of 9 clear across all 8 `rr` localities, 6 of 9 across the 4 primary localities. At the 6-group grain the report actually uses: 6 of 6 clear pooled, 4 of 6 clear in all 4 primary localities, and only 2 of 24 locality cells suppress. See the 4A rows in Phase Decisions.
 - Whether `r/acs_stock.R`'s five table groups belong in one output frame or split by concept (occupancy vs. structure vs. age vs. bedrooms) — deferred to the session that writes it, once the actual `load_variables()` output is in hand.
-- Where the LIHTC source for row 24 will come from (HUD's public LIHTC database vs. a state QAP list) — Jonathan's call once he's ready to unblock it.
+- ~~Where the LIHTC source for row 24 will come from~~ — resolved 2026-08-20: VH property listing (not HUD's public database). See Session 4D and Phase Decisions.
+- How many recent pipeline projects (2023–2025 rankings) are present in the VH listing vs. still pending credit agreement execution — to be determined in Session 4D when the PDFs are scanned against the listing.
