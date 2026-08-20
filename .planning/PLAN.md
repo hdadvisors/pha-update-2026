@@ -78,8 +78,8 @@ Constants are defined once in `_common.R`.
 | Set | Members (GEOID) | Role |
 |---|---|---|
 | `rr` (region, 8) | Hanover 51085, Richmond 51760, Goochland 51075, Powhatan 51145, Henrico 51087, New Kent 51127, Charles City 51036, Chesterfield 51041 | Full regional analysis universe |
-| `pha` (primary, 4) | Chesterfield 51041, Hanover 51085, Henrico 51087, Richmond 51760 | Core regional narrative |
-| `secondary` (4) | Charles City 51036, Goochland 51075, New Kent 51127, Powhatan 51145 | Local summaries only |
+| `pha` (primary, 4) | Chesterfield 51041, Hanover 51085, Henrico 51087, Richmond 51760 | Core regional narrative. Use `pha` (or `c(pha, "51")` with Virginia) in all `.qmd` data filters and inline scalars. |
+| `secondary` (4) | Charles City 51036, Goochland 51075, New Kent 51127, Powhatan 51145 | Local summaries only. Never plotted or named as a finding in regional chapters. |
 | `ashland` (place, sumlev 160) | Ashland town 5103368 | Local summary; place-level ACS with reliability flags |
 | `virginia` | 51 | Statewide benchmark |
 

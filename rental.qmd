@@ -24,8 +24,8 @@ red <- pha_pal[4]
 # Short locality labels shared by both ACS frames
 short_name <- function(x) str_remove(x, " County, Virginia|, Virginia")
 
-rents  <- rents  |> mutate(locality = short_name(name))
-tenure <- tenure |> mutate(locality = short_name(name))
+rents  <- rents  |> mutate(locality = short_name(name)) |> filter(geoid %in% c(pha, "51"))
+tenure <- tenure |> mutate(locality = short_name(name)) |> filter(geoid %in% c(pha, "51"))
 
 # Palette anchors — subtitle ggtext spans match fills below
 lblue <- pha_pal[2]; orange <- pha_pal[3]; dblue <- pha_pal[6]; green <- pha_pal[1]
@@ -38,7 +38,7 @@ rent_rva     <- rents |> filter(geoid == "51760") |> select(year, estimate)
 rva_rent_chg <- with(rent_rva, estimate[year == 2024] / estimate[year == 2014] - 1)
 
 renter_reg <- tenure |>
-  filter(tenure == "Renter", geoid %in% rr) |>
+  filter(tenure == "Renter", geoid %in% pha) |>
   summarise(renters = sum(estimate), .by = year)
 reg_add_5yr   <- diff(renter_reg$renters[renter_reg$year %in% c(2019, 2024)])
 reg_chg_5yr   <- reg_add_5yr / renter_reg$renters[renter_reg$year == 2019]
@@ -69,7 +69,7 @@ base_vacancy   <- baseline |>
 ```{r}
 #| label: fig-median-rent
 #| fig-cap: "Median rent has climbed fastest since 2019, in every locality"
-#| fig-alt: "Grouped horizontal bar chart of median gross rent for eight Richmond-area localities and Virginia in 2014, 2019, and 2024, in nominal dollars. The 2014 bars are muted grey. Every locality's 2024 bar is well above its 2019 bar. New Kent has the highest 2024 median rent at $1,721, up 70 percent since 2019 alone, the sharpest increase in the region. Charles City has the lowest 2024 median rent at $1,099."
+#| fig-alt: "Grouped horizontal bar chart of median gross rent for the four primary Richmond-area localities and Virginia in 2014, 2019, and 2024, in nominal dollars. The 2014 bars are muted grey. Every locality's 2024 bar is well above its 2019 bar. Richmond city remains below the statewide median in 2024."
 
 rent_order <- rents |> filter(year == 2024) |> arrange(estimate) |> pull(locality)
 
@@ -86,7 +86,7 @@ rents |>
   labs(
     title = "Median rent has climbed fastest since 2019, in every locality",
     subtitle = paste0(
-      "Median gross rent in nominal dollars, Richmond-area localities and Virginia<br>",
+      "Median gross rent in nominal dollars, four primary localities and Virginia<br>",
       "2014 shown muted for context · ",
       "<span style='color:", dblue, "'>**2019**</span> to ",
       "<span style='color:", orange, "'>**2024**</span> change is the focus"
@@ -98,10 +98,9 @@ rents |>
   add_zero_line("x")
 ```
 
-- **Every locality posted a higher median gross rent in 2024 than in 2019, and in all eight the 2019-to-2024 increase outpaced the full 2014-to-2019 span.**
-- New Kent had the region's highest 2024 median rent at `r label_dollar()(rent_hi_24$estimate)`, up 70 percent since 2019 alone — the sharpest increase in the region.
+- **Every primary locality posted a higher median gross rent in 2024 than in 2019, and in all four the 2019-to-2024 increase outpaced the full 2014-to-2019 span.**
+- `r rent_hi_24$locality` had the highest 2024 median gross rent among the four primary localities at `r label_dollar()(rent_hi_24$estimate)`.
 - Richmond city's median rent rose 34 percent since 2019, from `r label_dollar()(rent_rva$estimate[rent_rva$year == 2019])` to `r label_dollar()(rent_rva$estimate[rent_rva$year == 2024])` — yet stayed below the statewide median of `r label_dollar()(rent_va_24)`.
-- Powhatan had the slowest rent growth since 2019, at 19 percent; small-county medians (New Kent, Powhatan, Goochland, Charles City) carry wide margins of error and describe small renter stocks.
 - All figures are nominal dollars; inflation-adjusted comparisons come with the cost-burden analysis.
 
 ## Renter shares held steady since 2019, except in the smallest counties
@@ -109,7 +108,7 @@ rents |>
 ```{r}
 #| label: fig-renter-share
 #| fig-cap: "Renter shares held steady since 2019, except in the smallest counties"
-#| fig-alt: "Dumbbell chart comparing the renter share of households in 2019 and 2024 for eight Richmond-area localities and Virginia. Richmond city has by far the highest renter share, near 57 percent in both years. Henrico is near 36 percent in both years, and Virginia near 33 percent. The six remaining counties are all below 25 percent, and the smallest counties are lowest in 2024: New Kent and Powhatan each fell to about 7 percent."
+#| fig-alt: "Dumbbell chart comparing the renter share of households in 2019 and 2024 for the four primary Richmond-area localities and Virginia. Richmond city has by far the highest renter share, near 57 percent in both years. Henrico is near 36 percent in both years, and Virginia near 33 percent. Chesterfield and Hanover are both below 25 percent."
 
 renter_share <- tenure |>
   filter(tenure == "Renter", year %in% c(2019, 2024)) |>
@@ -129,7 +128,7 @@ renter_share |>
   labs(
     title = "Renter shares held steady since 2019, except in the smallest counties",
     subtitle = paste0(
-      "Renter share of all households, Richmond-area localities and Virginia<br>",
+      "Renter share of all households, four primary localities and Virginia<br>",
       "<span style='color:", lblue, "'>**2019**</span> vs. ",
       "<span style='color:", dblue, "'>**2024**</span>"
     ),
@@ -142,7 +141,6 @@ renter_share |>
 - **The region added roughly `r label_comma()(reg_add_5yr)` renter households between 2019 and 2024, a `r label_percent(accuracy = 1)(reg_chg_5yr)` increase — faster growth than the full prior five years.**
 - Richmond city drove the gain, adding about `r label_comma()(rva_add_5yr)` renter households since 2019 — roughly `r label_percent(accuracy = 0)(rva_share_of_gain)` of the regional increase — though its renter share held near `r label_percent(accuracy = 1)(tenure |> filter(geoid == "51760", tenure == "Renter", year == 2024) |> pull(share))` because total households grew just as fast.
 - Chesterfield and Hanover renter counts grew steadily since 2019, but both counties remain more than three-quarters owner-occupied.
-- The three smallest counties — Charles City, New Kent, and Powhatan — each lost renter households since 2019, deepening the ownership tilt of the outer region; New Kent's renter count fell 37 percent.
 - Over the full decade, the region added `r label_comma()(reg_add_10yr)` renter households (`r label_percent(accuracy = 1)(reg_chg_10yr)`) — most of that growth came in the last five years.
 
 ## Asking rents are up 28 percent since 2020, even as the market has loosened
@@ -184,7 +182,6 @@ costar_since2020 |>
 - **Regional average asking rent reached `r label_dollar()(round(costar_latest$ask_rent))` in `r costar_latest$period`, up `r label_percent(accuracy = 1)(chg_since2020)` from `r label_dollar()(round(costar_2020q1$ask_rent))` in early 2020.**
 - The market was tightest in early 2022 — vacancy near `r label_percent(accuracy = 1)(costar_2022q1$vac_pct)`, the low point of the period — and rents have risen another `r label_percent(accuracy = 1)(chg_since2022)` since then, to `r label_dollar()(round(costar_latest$ask_rent))`.
 - Vacancy has since climbed to `r label_percent(accuracy = 0.1)(costar_latest$vac_pct)` in `r costar_latest$period`, above where it stood at the start of 2020, as new deliveries caught up with and then outpaced demand.
-- CoStar coverage is professionally managed multifamily; New Kent and Charles City have only a handful of tracked properties, so locality-level trends there are not meaningful.
 
 ::: {.callout-note}
 ## Since 2022
@@ -208,6 +205,7 @@ risk_pal <- c(
 )
 
 risk <- nhpd |>
+  filter(geoid %in% pha) |>
   summarise(units = sum(total_units, na.rm = TRUE), .by = expire_window) |>
   mutate(expire_window = factor(expire_window, levels = risk_order))
 
@@ -223,7 +221,7 @@ ggplot(risk, aes(x = expire_window, y = units, fill = expire_window)) +
     title = "Nearly 30 percent of the region's assisted units expire within a decade",
     subtitle = paste0(
       "Active federally assisted rental units by subsidy-expiration window, Richmond region<br>",
-      "Richmond city, Henrico, Chesterfield, Hanover, and Charles City properties only"
+      "Richmond city, Henrico, Chesterfield, and Hanover properties only"
     ),
     caption = nhpd_cap(),
     x = NULL, y = NULL
@@ -234,7 +232,7 @@ ggplot(risk, aes(x = expire_window, y = units, fill = expire_window)) +
 
 - **About `r label_comma()(risk_decade)` of the region's `r label_comma()(risk_total)` active assisted units — `r label_percent(accuracy = 1)(risk_share)` — carry subsidies expiring by 2035, the window preservation funders typically prioritize.**
 - Three-quarters of tracked properties (152 of 201) are LIHTC-financed, holding 17,465 units; LIHTC's own affordability period can lapse independently of the subsidy end date tracked here, a second layer of risk this figure does not fully capture.
-- Richmond city and Henrico account for the large majority of tracked properties (117 and 47 of 201); Goochland, New Kent, and Powhatan have no NHPD-tracked assisted multifamily properties at all.
+- Richmond city and Henrico account for the large majority of tracked properties in the four primary localities; Chesterfield and Hanover have smaller inventories.
 - About 3,336 units carry no listed subsidy end date, mostly public housing and HOME-assisted properties whose affordability commitments do not lapse the same way project-based subsidies do.
 
 ## Housing Choice Vouchers grew as public housing kept shrinking
@@ -245,7 +243,7 @@ ggplot(risk, aes(x = expire_window, y = units, fill = expire_window)) +
 #| fig-alt: "Line chart of regional federal rental-assistance units, 2020 through 2024, for two programs. Housing Choice Vouchers rose from 5,910 to 6,822 units. Public housing fell from 3,706 to 3,226 units. Project-based Section 8 held near 5,770 units and is not plotted here."
 
 psh_mix <- psh |>
-  filter(program_label %in% c("Housing Choice Vouchers", "Public Housing")) |>
+  filter(geoid %in% pha, program_label %in% c("Housing Choice Vouchers", "Public Housing")) |>
   summarise(units = sum(total_units, na.rm = TRUE), .by = c(year, program_label))
 
 hcv_2020 <- psh_mix |> filter(program_label == "Housing Choice Vouchers", year == 2020) |> pull(units)
@@ -276,7 +274,7 @@ ggplot(psh_mix, aes(x = year, y = units, color = program_label)) +
 - **Housing Choice Vouchers grew `r label_percent(accuracy = 1)(hcv_2024/hcv_2020 - 1)` since 2020, from `r label_comma()(hcv_2020)` to `r label_comma()(hcv_2024)` units, while public housing fell `r label_percent(accuracy = 1)(1 - ph_2024/ph_2020)`, from `r label_comma()(ph_2020)` to `r label_comma()(ph_2024)` — a policy-relevant shift from project-based to tenant-based assistance.**
 - Regional voucher utilization slipped from 91 percent occupied in 2020 to 87 percent in 2024, even as the voucher supply grew — more vouchers issued, a slightly larger share sitting unused at any given time.
 - Project-based Section 8 (5,763 units in 2024) and the small 202/PRAC and 811/PRAC senior- and disability-designated programs (222 and 69 units) have stayed essentially flat since 2020.
-- Richmond city and Henrico hold the large majority of the region's assisted units; Charles City, Goochland, New Kent, and Powhatan combined account for fewer than 40 units across all programs.
+- Richmond city and Henrico hold the large majority of the region's assisted units among the four primary localities.
 
 ::: {.callout-note title="To be added"}
 **Submarket rents and vacancy.** Submarket-level asking rent, vacancy, and new-construction rent detail, extending the regional trend above.

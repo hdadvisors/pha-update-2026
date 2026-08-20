@@ -66,6 +66,7 @@ Script anatomy: a header comment stating what, source, and output → numbered `
 
 - **Palettes:** `pha_pal`, the 6 brand hexes, and `cb_pal` for cost-burden fills.
 - **Geography:** `rr` (8), `pha` (4 primary), `secondary` (4), `ashland` (place 5103368, sumlev 160), `virginia`; and the PUMS sets `puma_core3`, `puma_region`, `puma_locality`.
+- **Regional chapter geography rule:** Regional findings chapters (`demand.qmd`, `ownership.qmd`, `rental.qmd`, `gaps.qmd`, `burden.qmd`) filter all chart data and inline scalars with `pha` (or `c(pha, "51")` when Virginia appears as a reference). Use `rr` only in `r/` data-collection scripts and in `index.qmd` / `data-notes.qmd` scope statements. Secondary localities are never plotted or named as findings in regional chapters.
 - **Caption helpers:** `acs_cap`, `pums_cap`, `chas_cap`, `dec_cap`, `pep_cap`, `wc_cap`, `bps_cap`, `mls_cap`, `costar_cap`, `fmr_cap`, `ami_cap`, `nhpd_cap`, `posh_cap`, `lihtc_cap`, `oews_cap`, `pit_cap`, `cpi_cap`, `pmms_cap`.
 - **`flag_reliability(df, cv_col = cv)`** — High at or below 15, Medium at or below 30, Low above 30, from a **0 to 100** CV. Use it for secondary-locality and Ashland ACS estimates. Do not use `hdatools::add_reliability()`, which assumes a 0 to 1 scale and mislabels small cells as Low.
 - **`export_csv(df, name)`** — writes `data-out/<name>.csv`. **Naming is commit policy:** name public-source exports plainly, and prefix MLS and CoStar derivatives `mls_` or `costar_` so `.gitignore` keeps them private.
