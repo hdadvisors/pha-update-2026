@@ -1,0 +1,730 @@
+geoid,name,year,table,race,race_group,variable,tenure,estimate,moe,cv,reliability,total_hh,owner_rate
+51036,"Charles City County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,1327,58,2.6569976384788228,High,1327,0.8003014318010551
+51036,"Charles City County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,1062,66,3.7779266051894975,High,1327,0.8003014318010551
+51036,"Charles City County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,265,65,14.910821815679304,High,1327,0.8003014318010551
+51041,"Chesterfield County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,84280,800,0.5770315477572947,High,84280,0.8038680588514475
+51041,"Chesterfield County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,67750,822,0.7375587433685887,High,84280,0.8038680588514475
+51041,"Chesterfield County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,16530,685,2.5191371679381875,High,84280,0.8038680588514475
+51075,"Goochland County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,6730,186,1.6800877981365476,High,6730,0.9032689450222883
+51075,"Goochland County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,6079,236,2.36001062004779,High,6730,0.9032689450222883
+51075,"Goochland County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,651,152,14.19373514676976,High,6730,0.9032689450222883
+51085,"Hanover County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,32692,365,0.6787119126399216,High,32692,0.8395020188425303
+51085,"Hanover County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,27445,485,1.074267905803317,High,32692,0.8395020188425303
+51085,"Hanover County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,5247,505,5.850788668933992,High,32692,0.8395020188425303
+51087,"Henrico County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,77319,891,0.7005281203662983,High,77319,0.7179218562061072
+51087,"Henrico County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,55509,973,1.0655738019098302,High,77319,0.7179218562061072
+51087,"Henrico County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,21810,946,2.636753726923179,High,77319,0.7179218562061072
+51127,"New Kent County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,6082,197,1.96903714083813,High,6082,0.870437356132851
+51127,"New Kent County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,5294,281,3.2266843349642826,High,6082,0.870437356132851
+51127,"New Kent County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,788,218,16.81761375032787,Medium,6082,0.870437356132851
+51145,"Powhatan County, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,8727,223,1.5533666784736466,High,8727,0.8872464764523892
+51145,"Powhatan County, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,7743,254,1.994153362170047,High,8727,0.8872464764523892
+51145,"Powhatan County, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,984,205,12.664640324214794,High,8727,0.8872464764523892
+51760,"Richmond city, Virginia",2014,B25003A,White alone,NA,B25003A_001,Total,41732,920,1.3401478882328315,High,41732,0.516150675740439
+51760,"Richmond city, Virginia",2014,B25003A,White alone,NA,B25003A_002,Owner,21540,553,1.5606787964993383,High,41732,0.516150675740439
+51760,"Richmond city, Virginia",2014,B25003A,White alone,NA,B25003A_003,Renter,20192,900,2.7095506240396148,High,41732,0.516150675740439
+51,Virginia,2014,B25003A,White alone,NA,B25003A_001,Total,2225551,7144,0.19513626705733292,High,2225551,0.722305622293086
+51,Virginia,2014,B25003A,White alone,NA,B25003A_002,Owner,1607528,9011,0.340759946336983,High,2225551,0.722305622293086
+51,Virginia,2014,B25003A,White alone,NA,B25003A_003,Renter,618023,4597,0.4521723099916895,High,2225551,0.722305622293086
+51036,"Charles City County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,1342,63,2.853790785426642,High,1342,0.8263785394932935
+51036,"Charles City County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,1109,64,3.5081853089258646,High,1342,0.8263785394932935
+51036,"Charles City County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,233,54,14.088732927195169,High,1342,0.8263785394932935
+51041,"Chesterfield County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,88560,595,0.40842607007630355,High,88560,0.8098125564588979
+51041,"Chesterfield County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,71717,746,0.6323402271839079,High,88560,0.8098125564588979
+51041,"Chesterfield County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,16843,823,2.970396908910415,High,88560,0.8098125564588979
+51075,"Goochland County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,7133,241,2.0538982093160905,High,7133,0.8648534978270013
+51075,"Goochland County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,6169,229,2.2566011743194845,High,7133,0.8648534978270013
+51075,"Goochland County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,964,215,13.557996695632434,High,7133,0.8648534978270013
+51085,"Hanover County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,34282,428,0.7589474675359333,High,34282,0.8427454640919433
+51085,"Hanover County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,28891,485,1.020500594467898,High,34282,0.8427454640919433
+51085,"Hanover County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,5391,503,5.6719546649571875,High,34282,0.8427454640919433
+51087,"Henrico County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,77503,861,0.6753341874755157,High,77503,0.7060758938363676
+51087,"Henrico County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,54723,962,1.0686593052481448,High,77503,0.7060758938363676
+51087,"Henrico County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,22780,909,2.425740064206057,High,77503,0.7060758938363676
+51127,"New Kent County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,6645,225,2.058361407095858,High,6645,0.8641083521444696
+51127,"New Kent County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,5742,315,3.334889615153738,High,6645,0.8641083521444696
+51127,"New Kent County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,903,218,14.67583569796053,High,6645,0.8641083521444696
+51145,"Powhatan County, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,9477,247,1.5843829870622623,High,9477,0.9125250606732088
+51145,"Powhatan County, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,8648,331,2.326732255679054,High,9477,0.9125250606732088
+51145,"Powhatan County, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,829,234,17.159136323471717,Medium,9477,0.9125250606732088
+51760,"Richmond city, Virginia",2019,B25003A,White alone,NA,B25003A_001,Total,45506,865,1.155530844858696,High,45506,0.516547268492067
+51760,"Richmond city, Virginia",2019,B25003A,White alone,NA,B25003A_002,Owner,23506,581,1.5025588758687234,High,45506,0.516547268492067
+51760,"Richmond city, Virginia",2019,B25003A,White alone,NA,B25003A_003,Renter,22000,846,2.3376623376623376,High,45506,0.516547268492067
+51,Virginia,2019,B25003A,White alone,NA,B25003A_001,Total,2255668,5977,0.16108020552917926,High,2255668,0.7203861561187196
+51,Virginia,2019,B25003A,White alone,NA,B25003A_002,Owner,1624952,8448,0.31604393914591905,High,2255668,0.7203861561187196
+51,Virginia,2019,B25003A,White alone,NA,B25003A_003,Renter,630716,5484,0.5285641400921663,High,2255668,0.7203861561187196
+51036,"Charles City County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,1411,137,5.90238658908834,High,1411,0.8674698795180723
+51036,"Charles City County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,1224,137,6.804140095754614,High,1411,0.8674698795180723
+51036,"Charles City County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,187,45,14.628675454707995,High,1411,0.8674698795180723
+51041,"Chesterfield County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,88727,893,0.6118285785129024,High,88727,0.8358109707304429
+51041,"Chesterfield County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,74159,1108,0.9082595922316099,High,88727,0.8358109707304429
+51041,"Chesterfield County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,14568,987,4.118616144975288,High,88727,0.8358109707304429
+51075,"Goochland County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,8344,280,2.0399420656453353,High,8344,0.8517497603068073
+51075,"Goochland County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,7107,308,2.634501794754348,High,8344,0.8517497603068073
+51075,"Goochland County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,1237,223,10.958957965270423,High,8344,0.8517497603068073
+51085,"Hanover County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,35904,500,0.8465668665918978,High,35904,0.8390430035650623
+51085,"Hanover County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,30125,641,1.2934959452130812,High,35904,0.8390430035650623
+51085,"Hanover County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,5779,495,5.206988304262735,High,35904,0.8390430035650623
+51087,"Henrico County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,75225,950,0.7677070106802187,High,75225,0.7367231638418079
+51087,"Henrico County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,55420,1172,1.2855683978329617,High,75225,0.7367231638418079
+51087,"Henrico County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,19805,950,2.9159686886351657,High,75225,0.7367231638418079
+51127,"New Kent County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,7389,255,2.0979184946324136,High,7389,0.9280010826904859
+51127,"New Kent County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,6857,279,2.4734557856480164,High,7389,0.9280010826904859
+51127,"New Kent County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,532,176,20.111067943414767,Medium,7389,0.9280010826904859
+51145,"Powhatan County, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,10118,281,1.6882849248172478,High,10118,0.9330895433880213
+51145,"Powhatan County, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,9441,294,1.8930558654307716,High,10118,0.9330895433880213
+51145,"Powhatan County, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,677,210,18.856657971652158,Medium,10118,0.9330895433880213
+51760,"Richmond city, Virginia",2024,B25003A,White alone,NA,B25003A_001,Total,51225,889,1.0550034786039897,High,51225,0.5229673011224988
+51760,"Richmond city, Virginia",2024,B25003A,White alone,NA,B25003A_002,Owner,26789,736,1.6701497382278552,High,51225,0.5229673011224988
+51760,"Richmond city, Virginia",2024,B25003A,White alone,NA,B25003A_003,Renter,24436,872,2.1693042454179667,High,51225,0.5229673011224988
+51,Virginia,2024,B25003A,White alone,NA,B25003A_001,Total,2192706,7069,0.19597996437689183,High,2192706,0.7402930443023369
+51,Virginia,2024,B25003A,White alone,NA,B25003A_002,Owner,1623245,9282,0.347609460770824,High,2192706,0.7402930443023369
+51,Virginia,2024,B25003A,White alone,NA,B25003A_003,Renter,569461,5978,0.6381547732314398,High,2192706,0.7402930443023369
+51036,"Charles City County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,1278,71,3.3772374197906116,High,1278,0.7926447574334898
+51036,"Charles City County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,1013,77,4.620780911974124,High,1278,0.7926447574334898
+51036,"Charles City County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,265,62,14.222630039571026,High,1278,0.7926447574334898
+51041,"Chesterfield County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,23871,600,1.5279696759138117,High,23871,0.6585396506220937
+51041,"Chesterfield County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,15720,584,2.2583663967454775,High,23871,0.6585396506220937
+51041,"Chesterfield County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,8151,599,4.467350491986551,High,23871,0.6585396506220937
+51075,"Goochland County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,1385,168,7.373838236423688,High,1385,0.7350180505415163
+51075,"Goochland County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,1018,131,7.8227169311063465,High,1385,0.7350180505415163
+51075,"Goochland County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,367,127,21.036416189758413,Medium,1385,0.7350180505415163
+51085,"Hanover County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,3370,220,3.9685045051545456,High,3370,0.7127596439169139
+51085,"Hanover County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,2402,226,5.719651050669528,High,3370,0.7127596439169139
+51085,"Hanover County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,968,205,12.873973222135698,High,3370,0.7127596439169139
+51087,"Henrico County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,36221,570,0.9566399582300785,High,36221,0.5048176472212252
+51087,"Henrico County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,18285,664,2.207533040270024,High,36221,0.5048176472212252
+51087,"Henrico County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,17936,818,2.772437765889661,High,36221,0.5048176472212252
+51127,"New Kent County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,781,106,8.250664528758625,High,781,0.9218950064020487
+51127,"New Kent County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,720,88,7.429922323539345,High,781,0.9218950064020487
+51127,"New Kent County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,61,54,53.8143405251881,Low,781,0.9218950064020487
+51145,"Powhatan County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,748,166,13.490889586008484,High,748,0.7807486631016043
+51145,"Powhatan County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,584,156,16.238497730774036,Medium,748,0.7807486631016043
+51145,"Powhatan County, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,164,86,31.877826377047963,Low,748,0.7807486631016043
+51760,"Richmond city, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_001,Total,39399,775,1.1957781163501364,High,39399,0.35648112896266404
+51760,"Richmond city, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,14045,587,2.5406828463871554,High,39399,0.35648112896266404
+51760,"Richmond city, Virginia",2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,25354,798,1.9133327403120748,High,39399,0.35648112896266404
+51,Virginia,2014,B25003B,Black or African American alone,Black,B25003B_001,Total,565192,3269,0.351603356479425,High,565192,0.4868151000014154
+51,Virginia,2014,B25003B,Black or African American alone,Black,B25003B_002,Owner,275144,3304,0.7299852580095776,High,565192,0.4868151000014154
+51,Virginia,2014,B25003B,Black or African American alone,Black,B25003B_003,Renter,290048,2866,0.6006761777780162,High,565192,0.4868151000014154
+51036,"Charles City County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,1284,65,3.077389237659669,High,1284,0.8457943925233645
+51036,"Charles City County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,1086,75,4.198223311894407,High,1284,0.8457943925233645
+51036,"Charles City County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,198,60,18.4212950170397,Medium,1284,0.8457943925233645
+51041,"Chesterfield County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,27237,542,1.209690063791064,High,27237,0.60917134779895
+51041,"Chesterfield County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,16592,605,2.2166173759353756,High,27237,0.60917134779895
+51041,"Chesterfield County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,10645,570,3.2550921490889313,High,27237,0.60917134779895
+51075,"Goochland County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,1143,148,7.871356505968668,High,1143,0.7847769028871391
+51075,"Goochland County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,897,117,7.929166116030132,High,1143,0.7847769028871391
+51075,"Goochland County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,246,103,25.452838115007285,Medium,1143,0.7847769028871391
+51085,"Hanover County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,3490,221,3.849470044678239,High,3490,0.6908309455587393
+51085,"Hanover County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,2411,176,4.437614328451538,High,3490,0.6908309455587393
+51085,"Hanover County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,1079,220,12.394680428517905,High,3490,0.6908309455587393
+51087,"Henrico County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,37170,739,1.2086094204480686,High,37170,0.5037664783427496
+51087,"Henrico County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,18725,685,2.2238364425109873,High,37170,0.5037664783427496
+51087,"Henrico County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,18445,930,3.0650558095578657,High,37170,0.5037664783427496
+51127,"New Kent County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,880,149,10.292898590770932,High,880,0.8079545454545455
+51127,"New Kent County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,711,144,12.311954137970835,High,880,0.8079545454545455
+51127,"New Kent County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,169,76,27.337637812269566,Medium,880,0.8079545454545455
+51145,"Powhatan County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,596,104,10.607698741355746,High,596,0.7533557046979866
+51145,"Powhatan County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,449,127,17.194576262007434,Medium,596,0.7533557046979866
+51145,"Powhatan County, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,147,86,35.5643777267746,Low,596,0.7533557046979866
+51760,"Richmond city, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_001,Total,39435,856,1.3195505049862744,High,39435,0.3383542538354254
+51760,"Richmond city, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,13343,597,2.7199125618728854,High,39435,0.3383542538354254
+51760,"Richmond city, Virginia",2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,26092,910,2.1201574787739617,High,39435,0.3383542538354254
+51,Virginia,2019,B25003B,Black or African American alone,Black,B25003B_001,Total,590176,3129,0.32229837532777816,High,590176,0.47824886135661226
+51,Virginia,2019,B25003B,Black or African American alone,Black,B25003B_002,Owner,282251,3401,0.7324959711913923,High,590176,0.47824886135661226
+51,Virginia,2019,B25003B,Black or African American alone,Black,B25003B_003,Renter,307925,3591,0.7089319553151758,High,590176,0.47824886135661226
+51036,"Charles City County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,1134,88,4.7174109990726,High,1134,0.8527336860670194
+51036,"Charles City County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,967,81,5.092049801504355,High,1134,0.8527336860670194
+51036,"Charles City County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,167,58,21.112789618331725,Medium,1134,0.8527336860670194
+51041,"Chesterfield County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,32078,809,1.5331171303382656,High,32078,0.6331130369723799
+51041,"Chesterfield County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,20309,749,2.2419575012859827,High,32078,0.6331130369723799
+51041,"Chesterfield County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,11769,960,4.9586764053005155,High,32078,0.6331130369723799
+51075,"Goochland County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,1203,163,8.23675360736962,High,1203,0.8079800498753117
+51075,"Goochland County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,972,158,9.88154652457253,High,1203,0.8079800498753117
+51075,"Goochland County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,231,106,27.895103882945826,Medium,1203,0.8079800498753117
+51085,"Hanover County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,3694,300,4.93694695908752,High,3694,0.6884136437466162
+51085,"Hanover County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,2543,258,6.167475649826032,High,3694,0.6884136437466162
+51085,"Hanover County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,1151,242,12.78127384935526,High,3694,0.6884136437466162
+51087,"Henrico County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,41489,928,1.359718813665848,High,41489,0.5079659668827882
+51087,"Henrico County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,21075,1064,3.069079528532849,High,41489,0.5079659668827882
+51087,"Henrico County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,20414,1059,3.1535661651831406,High,41489,0.5079659668827882
+51127,"New Kent County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,1222,215,10.695506394917894,High,1222,0.955810147299509
+51127,"New Kent County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,1168,214,11.137943956364241,High,1222,0.955810147299509
+51127,"New Kent County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,54,48,54.035798716649786,Low,1222,0.955810147299509
+51145,"Powhatan County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,546,94,10.465724751439035,High,546,0.945054945054945
+51145,"Powhatan County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,516,94,11.074197120708748,High,546,0.945054945054945
+51145,"Powhatan County, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,30,31,62.81661600810538,Low,546,0.945054945054945
+51760,"Richmond city, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_001,Total,40152,917,1.3883413242444669,High,40152,0.36282127913927076
+51760,"Richmond city, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,14568,799,3.334117831646662,High,40152,0.36282127913927076
+51760,"Richmond city, Virginia",2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,25584,1052,2.4996625930720375,High,40152,0.36282127913927076
+51,Virginia,2024,B25003B,Black or African American alone,Black,B25003B_001,Total,629973,2958,0.2854370412372138,High,629973,0.4939354543766161
+51,Virginia,2024,B25003B,Black or African American alone,Black,B25003B_002,Owner,311166,3879,0.7578124574170059,High,629973,0.4939354543766161
+51,Virginia,2024,B25003B,Black or African American alone,Black,B25003B_003,Renter,318807,3895,0.7427004912110453,High,629973,0.4939354543766161
+51036,"Charles City County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,156,27,10.521393500116904,High,156,0.8782051282051282
+51036,"Charles City County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,137,27,11.980564861446986,High,156,0.8782051282051282
+51036,"Charles City County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,19,12,38.39385698288274,Low,156,0.8782051282051282
+51041,"Chesterfield County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,307,119,23.56365652505371,Medium,307,0.6351791530944625
+51041,"Chesterfield County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,195,98,30.551009274413527,Low,307,0.6351791530944625
+51041,"Chesterfield County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,112,73,39.62223187147199,Low,307,0.6351791530944625
+51075,"Goochland County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,17,27,96.54925800107277,Low,17,1
+51075,"Goochland County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,17,27,96.54925800107277,Low,17,1
+51075,"Goochland County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,22,NA,NA,17,1
+51085,"Hanover County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,35,35,60.790273556231,Low,35,0.2857142857142857
+51085,"Hanover County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,10,13,79.0273556231003,Low,35,0.2857142857142857
+51085,"Hanover County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,25,30,72.94832826747721,Low,35,0.2857142857142857
+51087,"Henrico County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,309,78,15.345117596718506,Medium,309,0.8349514563106796
+51087,"Henrico County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,258,75,17.67159115006715,Medium,309,0.8349514563106796
+51087,"Henrico County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,51,51,60.790273556231,Low,309,0.8349514563106796
+51127,"New Kent County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,52,47,54.94505494505494,Low,52,1
+51127,"New Kent County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,52,47,54.94505494505494,Low,52,1
+51127,"New Kent County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,19,NA,NA,52,1
+51145,"Powhatan County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,13,16,74.81879822305353,Low,13,1
+51145,"Powhatan County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,13,16,74.81879822305353,Low,13,1
+51145,"Powhatan County, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,22,NA,NA,13,1
+51760,"Richmond city, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,272,80,17.879492222420883,Medium,272,0.4889705882352941
+51760,"Richmond city, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,133,62,28.338323011175355,Medium,272,0.4889705882352941
+51760,"Richmond city, Virginia",2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,139,64,27.989766241717874,Medium,272,0.4889705882352941
+51,Virginia,2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,8502,528,3.775260460796279,High,8502,0.5831569042578217
+51,Virginia,2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,4958,411,5.0392905267468615,High,8502,0.5831569042578217
+51,Virginia,2014,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,3544,429,7.358642030367692,High,8502,0.5831569042578217
+51036,"Charles City County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,197,20,6.171601376267106,High,197,0.934010152284264
+51036,"Charles City County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,184,19,6.277256508523854,High,197,0.934010152284264
+51036,"Charles City County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,13,8,37.40939911152677,Low,197,0.934010152284264
+51041,"Chesterfield County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,370,114,18.72997617678469,Medium,370,0.6054054054054054
+51041,"Chesterfield County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,224,89,24.153278332609638,Medium,370,0.6054054054054054
+51041,"Chesterfield County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,146,74,30.811508514802018,Low,370,0.6054054054054054
+51075,"Goochland County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,0,23,NA,NA,0,NA
+51075,"Goochland County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,0,23,NA,NA,0,NA
+51075,"Goochland County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,23,NA,NA,0,NA
+51085,"Hanover County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,89,61,41.66524367337181,Low,89,0.39325842696629215
+51085,"Hanover County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,35,28,48.632218844984806,Low,89,0.39325842696629215
+51085,"Hanover County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,54,61,68.67049420240909,Low,89,0.39325842696629215
+51087,"Henrico County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,321,108,20.452802317984265,Medium,321,0.5264797507788161
+51087,"Henrico County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,169,85,30.574989658459383,Low,321,0.5264797507788161
+51087,"Henrico County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,152,87,34.79443289073748,Low,321,0.5264797507788161
+51127,"New Kent County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,97,78,48.882900385422865,Low,97,0.9690721649484536
+51127,"New Kent County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,94,77,49.79628791308285,Low,97,0.9690721649484536
+51127,"New Kent County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,3,6,121.580547112462,Low,97,0.9690721649484536
+51145,"Powhatan County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,14,27,117.23838471558837,Low,14,1
+51145,"Powhatan County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,14,27,117.23838471558837,Low,14,1
+51145,"Powhatan County, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,23,NA,NA,14,1
+51760,"Richmond city, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,299,135,27.44711347856584,Medium,299,0.21739130434782608
+51760,"Richmond city, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,65,39,36.474164133738604,Low,299,0.21739130434782608
+51760,"Richmond city, Virginia",2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,234,132,34.2919491855662,Low,299,0.21739130434782608
+51,Virginia,2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,8621,580,4.089822371257857,High,8621,0.5981904651432548
+51,Virginia,2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,5157,453,5.339925134956883,High,8621,0.5981904651432548
+51,Virginia,2019,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,3464,425,7.45839095305952,High,8621,0.5981904651432548
+51036,"Charles City County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,180,26,8.78081729145559,High,180,0.8722222222222222
+51036,"Charles City County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,157,27,10.45437825489323,High,180,0.8722222222222222
+51036,"Charles City County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,23,15,39.64583058015066,Low,180,0.8722222222222222
+51041,"Chesterfield County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,374,139,22.593176535604574,Medium,374,0.7513368983957219
+51041,"Chesterfield County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,281,125,27.041936635334075,Medium,374,0.7513368983957219
+51041,"Chesterfield County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,93,77,50.3317318691375,Low,374,0.7513368983957219
+51075,"Goochland County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,4,8,121.580547112462,Low,4,1
+51075,"Goochland County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,4,8,121.580547112462,Low,4,1
+51075,"Goochland County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,25,NA,NA,4,1
+51085,"Hanover County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,85,63,45.056320400500624,Low,85,1
+51085,"Hanover County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,85,63,45.056320400500624,Low,85,1
+51085,"Hanover County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,0,31,NA,NA,85,1
+51087,"Henrico County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,227,96,25.708661944485357,Medium,227,0.5903083700440529
+51087,"Henrico County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,134,78,35.38538311482103,Low,227,0.5903083700440529
+51087,"Henrico County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,93,65,42.48782560381737,Low,227,0.5903083700440529
+51127,"New Kent County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,72,62,52.34718000675448,Low,72,0.9722222222222222
+51127,"New Kent County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,70,61,52.97438124185844,Low,72,0.9722222222222222
+51127,"New Kent County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,2,5,151.9756838905775,Low,72,0.9722222222222222
+51145,"Powhatan County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,79,85,65.40725635797007,Low,79,0.25316455696202533
+51145,"Powhatan County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,20,27,82.06686930091186,Low,79,0.25316455696202533
+51145,"Powhatan County, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,59,80,82.42748956777083,Low,79,0.25316455696202533
+51760,"Richmond city, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,232,113,29.609055654543546,Medium,232,0.14224137931034483
+51760,"Richmond city, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,33,26,47.895367044303214,Low,232,0.14224137931034483
+51760,"Richmond city, Virginia",2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,199,109,33.29718501321196,Low,232,0.14224137931034483
+51,Virginia,2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_001,Total,9847,801,4.944958781206564,High,9847,0.5309231237940489
+51,Virginia,2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_002,Owner,5228,526,6.116236398350709,High,9847,0.5309231237940489
+51,Virginia,2024,B25003C,American Indian and Alaska Native alone,Another race,B25003C_003,Renter,4619,516,6.791032941116086,High,9847,0.5309231237940489
+51036,"Charles City County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,6,7,70.92198581560284,Low,6,1
+51036,"Charles City County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,6,7,70.92198581560284,Low,6,1
+51036,"Charles City County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,0,17,NA,NA,6,1
+51041,"Chesterfield County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,2868,209,4.429974607131199,High,2868,0.7887029288702929
+51041,"Chesterfield County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,2262,231,6.208025283593882,High,2868,0.7887029288702929
+51041,"Chesterfield County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,606,156,15.648981311505011,Medium,2868,0.7887029288702929
+51075,"Goochland County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,30,33,66.8693009118541,Low,30,1
+51075,"Goochland County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,30,33,66.8693009118541,Low,30,1
+51075,"Goochland County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,0,22,NA,NA,30,1
+51085,"Hanover County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,423,72,10.347280605315914,High,423,0.7801418439716312
+51085,"Hanover County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,330,58,10.684351109883023,High,423,0.7801418439716312
+51085,"Hanover County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,93,57,37.25855476027062,Low,423,0.7801418439716312
+51087,"Henrico County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,6810,306,2.7315453316015694,High,6810,0.5462555066079295
+51087,"Henrico County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,3720,313,5.114880543844167,High,6810,0.5462555066079295
+51087,"Henrico County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,3090,282,5.547850208044382,High,6810,0.5462555066079295
+51127,"New Kent County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,37,34,55.86133245707714,Low,37,1
+51127,"New Kent County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,37,34,55.86133245707714,Low,37,1
+51127,"New Kent County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,0,19,NA,NA,37,1
+51145,"Powhatan County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,35,19,33.00043421623969,Low,35,1
+51145,"Powhatan County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,35,19,33.00043421623969,Low,35,1
+51145,"Powhatan County, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,0,22,NA,NA,35,1
+51760,"Richmond city, Virginia",2014,B25003D,Asian alone,Asian,B25003D_001,Total,1568,183,7.094783202034613,High,1568,0.2302295918367347
+51760,"Richmond city, Virginia",2014,B25003D,Asian alone,Asian,B25003D_002,Owner,361,106,17.84977561484899,Medium,1568,0.2302295918367347
+51760,"Richmond city, Virginia",2014,B25003D,Asian alone,Asian,B25003D_003,Renter,1207,165,8.310186525913931,High,1568,0.2302295918367347
+51,Virginia,2014,B25003D,Asian alone,Asian,B25003D_001,Total,142424,1656,0.7068239412537111,High,142424,0.6505294051564343
+51,Virginia,2014,B25003D,Asian alone,Asian,B25003D_002,Owner,92651,1573,1.0320784481975518,High,142424,0.6505294051564343
+51,Virginia,2014,B25003D,Asian alone,Asian,B25003D_003,Renter,49773,1411,1.723325417150703,High,142424,0.6505294051564343
+51036,"Charles City County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,19,15,47.99232122860342,Low,19,0.5789473684210527
+51036,"Charles City County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,11,9,49.73749654600718,Low,19,0.5789473684210527
+51036,"Charles City County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,8,14,106.38297872340425,Low,19,0.5789473684210527
+51041,"Chesterfield County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,4229,220,3.16241669008532,High,4229,0.7682667297233389
+51041,"Chesterfield County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,3249,263,4.920850090886042,High,4229,0.7682667297233389
+51041,"Chesterfield County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,980,201,12.468209168165748,High,4229,0.7682667297233389
+51075,"Goochland County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,89,44,30.053618387350163,Low,89,0.7865168539325843
+51075,"Goochland County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,70,34,29.526704298740775,Medium,89,0.7865168539325843
+51075,"Goochland County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,19,37,118.38105903055511,Low,89,0.7865168539325843
+51085,"Hanover County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,463,73,9.584643562861475,High,463,0.8747300215982722
+51085,"Hanover County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,405,77,11.557656947727871,High,463,0.8747300215982722
+51085,"Hanover County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,58,51,53.453516402892774,Low,463,0.8747300215982722
+51087,"Henrico County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,9054,441,2.960957658305486,High,9054,0.5814004859730506
+51087,"Henrico County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,5264,318,3.67236075054739,High,9054,0.5814004859730506
+51087,"Henrico County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,3790,411,6.5922961560978734,High,9054,0.5814004859730506
+51127,"New Kent County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,137,53,23.517405098395937,Medium,137,1
+51127,"New Kent County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,137,53,23.517405098395937,Medium,137,1
+51127,"New Kent County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,0,23,NA,NA,137,1
+51145,"Powhatan County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,34,27,48.274629000536386,Low,34,1
+51145,"Powhatan County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,34,27,48.274629000536386,Low,34,1
+51145,"Powhatan County, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,0,23,NA,NA,34,1
+51760,"Richmond city, Virginia",2019,B25003D,Asian alone,Asian,B25003D_001,Total,1594,234,8.924042667602293,High,1594,0.4027603513174404
+51760,"Richmond city, Virginia",2019,B25003D,Asian alone,Asian,B25003D_002,Owner,642,132,12.49893474987927,High,1594,0.4027603513174404
+51760,"Richmond city, Virginia",2019,B25003D,Asian alone,Asian,B25003D_003,Renter,952,203,12.962631861255138,High,1594,0.4027603513174404
+51,Virginia,2019,B25003D,Asian alone,Asian,B25003D_001,Total,168700,1851,0.6669993856110468,High,168700,0.6720035566093657
+51,Virginia,2019,B25003D,Asian alone,Asian,B25003D_002,Owner,113367,1565,0.8391928701959258,High,168700,0.6720035566093657
+51,Virginia,2019,B25003D,Asian alone,Asian,B25003D_003,Renter,55333,1513,1.6622211680295214,High,168700,0.6720035566093657
+51036,"Charles City County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,48,28,35.46099290780142,Low,48,0.9791666666666666
+51036,"Charles City County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,47,29,37.50889219427019,Low,48,0.9791666666666666
+51036,"Charles City County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,1,7,425.531914893617,Low,48,0.9791666666666666
+51041,"Chesterfield County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,4266,306,4.360483757198004,High,4266,0.8607594936708861
+51041,"Chesterfield County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,3672,266,4.403652714040699,High,4266,0.8607594936708861
+51041,"Chesterfield County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,594,200,20.46810557448855,Medium,4266,0.8607594936708861
+51075,"Goochland County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,206,74,21.83728273379172,Medium,206,0.9514563106796117
+51075,"Goochland County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,196,79,24.50220209664413,Medium,206,0.9514563106796117
+51075,"Goochland County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,10,19,115.50151975683892,Low,206,0.9514563106796117
+51085,"Hanover County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,668,122,11.102415230329614,High,668,0.9206586826347305
+51085,"Hanover County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,615,115,11.367286925148887,High,668,0.9206586826347305
+51085,"Hanover County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,53,57,65.37821873028618,Low,668,0.9206586826347305
+51087,"Henrico County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,10370,436,2.555888068516559,High,10370,0.6880424300867888
+51087,"Henrico County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,7135,497,4.234445123678599,High,10370,0.6880424300867888
+51087,"Henrico County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,3235,424,7.967565993150524,High,10370,0.6880424300867888
+51127,"New Kent County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,52,26,30.3951367781155,Low,52,0.5769230769230769
+51127,"New Kent County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,30,23,46.605876393110435,Low,52,0.5769230769230769
+51127,"New Kent County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,22,15,41.44791378833933,Low,52,0.5769230769230769
+51145,"Powhatan County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,40,56,85.1063829787234,Low,40,1
+51145,"Powhatan County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,40,56,85.1063829787234,Low,40,1
+51145,"Powhatan County, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,0,28,NA,NA,40,1
+51760,"Richmond city, Virginia",2024,B25003D,Asian alone,Asian,B25003D_001,Total,2001,194,5.89370968011435,High,2001,0.4027986006996502
+51760,"Richmond city, Virginia",2024,B25003D,Asian alone,Asian,B25003D_002,Owner,806,147,11.08705981732749,High,2001,0.4027986006996502
+51760,"Richmond city, Virginia",2024,B25003D,Asian alone,Asian,B25003D_003,Renter,1195,195,9.919751751853594,High,2001,0.4027986006996502
+51,Virginia,2024,B25003D,Asian alone,Asian,B25003D_001,Total,201429,2112,0.6373911291361217,High,201429,0.7053204851337196
+51,Virginia,2024,B25003D,Asian alone,Asian,B25003D_002,Owner,142072,2063,0.8827237903774463,High,201429,0.7053204851337196
+51,Virginia,2024,B25003D,Asian alone,Asian,B25003D_003,Renter,59357,1549,1.5864031830887988,High,201429,0.7053204851337196
+51036,"Charles City County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,1,3,182.370820668693,Low,1,0
+51036,"Charles City County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,17,NA,NA,1,0
+51036,"Charles City County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,1,3,182.370820668693,Low,1,0
+51041,"Chesterfield County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,21,24,69.4745983499783,Low,21,0.9047619047619048
+51041,"Chesterfield County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,19,25,79.98720204767237,Low,21,0.9047619047619048
+51041,"Chesterfield County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,2,4,121.580547112462,Low,21,0.9047619047619048
+51075,"Goochland County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,22,NA,NA,0,NA
+51075,"Goochland County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,22,NA,NA,0,NA
+51075,"Goochland County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,22,NA,NA,0,NA
+51085,"Hanover County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,28,NA,NA,0,NA
+51085,"Hanover County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,28,NA,NA,0,NA
+51085,"Hanover County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,28,NA,NA,0,NA
+51087,"Henrico County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,53,53,60.790273556231,Low,53,0.7924528301886793
+51087,"Henrico County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,42,49,70.92198581560284,Low,53,0.7924528301886793
+51087,"Henrico County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,11,18,99.47499309201436,Low,53,0.7924528301886793
+51127,"New Kent County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,22,NA,NA,0,NA
+51127,"New Kent County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,19,NA,NA,0,NA
+51127,"New Kent County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,19,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,22,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,22,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,22,NA,NA,0,NA
+51760,"Richmond city, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,28,NA,NA,0,NA
+51760,"Richmond city, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,28,NA,NA,0,NA
+51760,"Richmond city, Virginia",2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,28,NA,NA,0,NA
+51,Virginia,2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,1592,292,11.149974798002168,High,1592,0.5760050251256281
+51,Virginia,2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,917,209,13.855144136589182,High,1592,0.5760050251256281
+51,Virginia,2014,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,675,172,15.490262298772937,Medium,1592,0.5760050251256281
+51036,"Charles City County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,17,NA,NA,0,NA
+51036,"Charles City County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,17,NA,NA,0,NA
+51036,"Charles City County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,17,NA,NA,0,NA
+51041,"Chesterfield County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,106,63,36.13006824568446,Low,106,0.8113207547169812
+51041,"Chesterfield County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,86,60,42.41181876016117,Low,106,0.8113207547169812
+51041,"Chesterfield County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,20,32,97.2644376899696,Low,106,0.8113207547169812
+51075,"Goochland County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,23,NA,NA,0,NA
+51075,"Goochland County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,23,NA,NA,0,NA
+51075,"Goochland County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,23,NA,NA,0,NA
+51085,"Hanover County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,29,NA,NA,0,NA
+51085,"Hanover County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,29,NA,NA,0,NA
+51085,"Hanover County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,29,NA,NA,0,NA
+51087,"Henrico County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,31,20,39.219531326600645,Low,31,0.8709677419354839
+51087,"Henrico County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,27,19,42.77834065068107,Low,31,0.8709677419354839
+51087,"Henrico County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,4,7,106.38297872340425,Low,31,0.8709677419354839
+51127,"New Kent County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,23,NA,NA,0,NA
+51127,"New Kent County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,23,NA,NA,0,NA
+51127,"New Kent County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,23,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,23,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,23,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,23,NA,NA,0,NA
+51760,"Richmond city, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,6,9,91.1854103343465,Low,6,0
+51760,"Richmond city, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,29,NA,NA,6,0
+51760,"Richmond city, Virginia",2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,6,9,91.1854103343465,Low,6,0
+51,Virginia,2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,1841,292,9.641911938304972,High,1841,0.5372080391091798
+51,Virginia,2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,989,231,14.198739324053955,High,1841,0.5372080391091798
+51,Virginia,2019,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,852,198,14.127317094053685,High,1841,0.5372080391091798
+51036,"Charles City County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,19,NA,NA,0,NA
+51036,"Charles City County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,19,NA,NA,0,NA
+51036,"Charles City County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,19,NA,NA,0,NA
+51041,"Chesterfield County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,61,56,55.80746424834322,Low,61,1
+51041,"Chesterfield County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,61,56,55.80746424834322,Low,61,1
+51041,"Chesterfield County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,31,NA,NA,61,1
+51075,"Goochland County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,25,NA,NA,0,NA
+51075,"Goochland County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,25,NA,NA,0,NA
+51075,"Goochland County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,25,NA,NA,0,NA
+51085,"Hanover County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,20,15,45.59270516717325,Low,20,1
+51085,"Hanover County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,20,15,45.59270516717325,Low,20,1
+51085,"Hanover County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,31,NA,NA,20,1
+51087,"Henrico County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,49,37,45.9028596240928,Low,49,0.5918367346938775
+51087,"Henrico County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,29,32,67.07892254480662,Low,49,0.5918367346938775
+51087,"Henrico County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,20,27,82.06686930091186,Low,49,0.5918367346938775
+51127,"New Kent County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,25,NA,NA,0,NA
+51127,"New Kent County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,25,NA,NA,0,NA
+51127,"New Kent County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,25,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,0,28,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,0,28,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,0,28,NA,NA,0,NA
+51760,"Richmond city, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,58,36,37.731893931453726,Low,58,0.1724137931034483
+51760,"Richmond city, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,10,16,97.2644376899696,Low,58,0.1724137931034483
+51760,"Richmond city, Virginia",2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,48,34,43.059777102330294,Low,58,0.1724137931034483
+51,Virginia,2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_001,Total,2007,273,8.268931081639792,High,2007,0.4623816641753862
+51,Virginia,2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_002,Owner,928,192,12.577297977151241,High,2007,0.4623816641753862
+51,Virginia,2024,B25003E,Native Hawaiian and Other Pacific Islander alone,Another race,B25003E_003,Renter,1079,249,14.02852466682254,High,2007,0.4623816641753862
+51036,"Charles City County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,7,6,52.10594876248372,Low,7,1
+51036,"Charles City County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,7,6,52.10594876248372,Low,7,1
+51036,"Charles City County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,17,NA,NA,7,1
+51041,"Chesterfield County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,1858,280,9.161074594049882,High,1858,0.5667384284176534
+51041,"Chesterfield County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,1053,227,13.104835799871262,High,1858,0.5667384284176534
+51041,"Chesterfield County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,805,212,16.009363967603694,Medium,1858,0.5667384284176534
+51075,"Goochland County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,26,35,81.83306055646482,Low,26,1
+51075,"Goochland County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,26,35,81.83306055646482,Low,26,1
+51075,"Goochland County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,22,NA,NA,26,1
+51085,"Hanover County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,125,76,36.96048632218845,Low,125,0.584
+51085,"Hanover County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,73,64,53.29558229587376,Low,125,0.584
+51085,"Hanover County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,52,44,51.437923778349315,Low,125,0.584
+51087,"Henrico County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,1145,283,15.025019577653604,Medium,1145,0.3615720524017467
+51087,"Henrico County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,414,171,25.109026034095415,Medium,1145,0.3615720524017467
+51087,"Henrico County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,731,203,16.881567075122973,Medium,1145,0.3615720524017467
+51127,"New Kent County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,13,22,102.87584755669863,Low,13,1
+51127,"New Kent County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,13,22,102.87584755669863,Low,13,1
+51127,"New Kent County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,19,NA,NA,13,1
+51145,"Powhatan County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,0,22,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,0,22,NA,NA,0,NA
+51145,"Powhatan County, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,22,NA,NA,0,NA
+51760,"Richmond city, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_001,Total,792,175,13.432194283258111,High,792,0.11742424242424243
+51760,"Richmond city, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,93,53,34.643919338497234,Low,792,0.11742424242424243
+51760,"Richmond city, Virginia",2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,699,178,15.480212722473702,Medium,792,0.11742424242424243
+51,Virginia,2014,B25003F,Some other race alone,Another race,B25003F_001,Total,44833,1619,2.195245753965561,High,44833,0.4083822184551558
+51,Virginia,2014,B25003F,Some other race alone,Another race,B25003F_002,Owner,18309,995,3.30363876718826,High,44833,0.4083822184551558
+51,Virginia,2014,B25003F,Some other race alone,Another race,B25003F_003,Renter,26524,1348,3.08947703038001,High,44833,0.4083822184551558
+51036,"Charles City County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,2,3,91.1854103343465,Low,2,1
+51036,"Charles City County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,2,3,91.1854103343465,Low,2,1
+51036,"Charles City County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,17,NA,NA,2,1
+51041,"Chesterfield County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,2280,383,10.211699461419506,High,2280,0.5464912280701755
+51041,"Chesterfield County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,1246,254,12.39223875062815,High,2280,0.5464912280701755
+51041,"Chesterfield County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,1034,236,13.874762629855434,High,2280,0.5464912280701755
+51075,"Goochland County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,26,35,81.83306055646482,Low,26,0
+51075,"Goochland County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,0,23,NA,NA,26,0
+51075,"Goochland County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,26,35,81.83306055646482,Low,26,0
+51085,"Hanover County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,208,118,34.48678980593874,Low,208,0.3605769230769231
+51085,"Hanover County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,75,45,36.474164133738604,Low,208,0.3605769230769231
+51085,"Hanover County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,133,110,50.27766985853691,Low,208,0.3605769230769231
+51087,"Henrico County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,1876,346,11.211852159091645,High,1876,0.244136460554371
+51087,"Henrico County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,458,165,21.900426062834313,Medium,1876,0.244136460554371
+51087,"Henrico County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,1418,292,12.51816634585293,High,1876,0.244136460554371
+51127,"New Kent County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,96,77,48.758865248226954,Low,96,1
+51127,"New Kent County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,96,77,48.758865248226954,Low,96,1
+51127,"New Kent County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,23,NA,NA,96,1
+51145,"Powhatan County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,17,30,107.27695333452532,Low,17,1
+51145,"Powhatan County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,17,30,107.27695333452532,Low,17,1
+51145,"Powhatan County, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,23,NA,NA,17,1
+51760,"Richmond city, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_001,Total,966,222,13.970435537767372,High,966,0.2670807453416149
+51760,"Richmond city, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,258,95,22.384015456751722,Medium,966,0.2670807453416149
+51760,"Richmond city, Virginia",2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,708,185,15.884464135455842,Medium,966,0.2670807453416149
+51,Virginia,2019,B25003F,Some other race alone,Another race,B25003F_001,Total,55426,1756,1.9259502826244297,High,55426,0.4373218345180962
+51,Virginia,2019,B25003F,Some other race alone,Another race,B25003F_002,Owner,24239,1172,2.9393209541607632,High,55426,0.4373218345180962
+51,Virginia,2019,B25003F,Some other race alone,Another race,B25003F_003,Renter,31187,1429,2.7854330622327925,High,55426,0.4373218345180962
+51036,"Charles City County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,17,14,50.06257822277848,Low,17,1
+51036,"Charles City County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,17,14,50.06257822277848,Low,17,1
+51036,"Charles City County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,19,NA,NA,17,1
+51041,"Chesterfield County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,5986,521,5.290967678382284,High,5986,0.50417641162713
+51041,"Chesterfield County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,3018,446,8.983585820437053,High,5986,0.50417641162713
+51041,"Chesterfield County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,2968,462,9.462636921488787,High,5986,0.50417641162713
+51075,"Goochland County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,194,198,62.04368125842134,Low,194,1
+51075,"Goochland County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,194,198,62.04368125842134,Low,194,1
+51075,"Goochland County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,25,NA,NA,194,1
+51085,"Hanover County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,662,177,16.253592778629738,Medium,662,0.6948640483383686
+51085,"Hanover County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,460,177,23.391040042288886,Medium,662,0.6948640483383686
+51085,"Hanover County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,202,98,29.492310933220985,Medium,662,0.6948640483383686
+51087,"Henrico County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,3080,415,8.1908972486480085,High,3080,0.36948051948051946
+51087,"Henrico County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,1138,234,12.49993322685242,High,3080,0.36948051948051946
+51087,"Henrico County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,1942,372,11.644686798618915,High,3080,0.36948051948051946
+51127,"New Kent County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,162,96,36.02386581109985,Low,162,0.5864197530864198
+51127,"New Kent County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,95,83,53.11150215965446,Low,162,0.5864197530864198
+51127,"New Kent County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,67,82,74.40003629270063,Low,162,0.5864197530864198
+51145,"Powhatan County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,42,45,65.13243595310465,Low,42,1
+51145,"Powhatan County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,42,45,65.13243595310465,Low,42,1
+51145,"Powhatan County, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,0,28,NA,NA,42,1
+51760,"Richmond city, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_001,Total,3596,459,7.759381413323145,High,3596,0.20689655172413793
+51760,"Richmond city, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,744,253,20.671961303395758,Medium,3596,0.20689655172413793
+51760,"Richmond city, Virginia",2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,2852,491,10.465646674652671,High,3596,0.20689655172413793
+51,Virginia,2024,B25003F,Some other race alone,Another race,B25003F_001,Total,103935,2464,1.4411625924140394,High,103935,0.5059989416462212
+51,Virginia,2024,B25003F,Some other race alone,Another race,B25003F_002,Owner,52591,1776,2.0528897688932757,High,103935,0.5059989416462212
+51,Virginia,2024,B25003F,Some other race alone,Another race,B25003F_003,Renter,51344,1916,2.268505845546483,High,103935,0.5059989416462212
+51036,"Charles City County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,57,20,21.329920546045962,Medium,57,0.9473684210526315
+51036,"Charles City County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,54,20,22.514916131937408,Medium,57,0.9473684210526315
+51036,"Charles City County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,3,4,81.05369807497466,Low,57,0.9473684210526315
+51041,"Chesterfield County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,1800,353,11.921648091860858,High,1800,0.5872222222222222
+51041,"Chesterfield County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,1057,227,13.055243232984331,High,1800,0.5872222222222222
+51041,"Chesterfield County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,743,232,18.981619737611833,Medium,1800,0.5872222222222222
+51075,"Goochland County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,24,26,65.85612968591693,Low,24,1
+51075,"Goochland County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,24,26,65.85612968591693,Low,24,1
+51075,"Goochland County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,0,22,NA,NA,24,1
+51085,"Hanover County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,396,92,14.1229928463971,High,396,0.5808080808080808
+51085,"Hanover County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,230,83,21.93735958768336,Medium,396,0.5808080808080808
+51085,"Hanover County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,166,68,24.902039770022338,Medium,396,0.5808080808080808
+51087,"Henrico County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,1964,295,9.130921944545898,High,1964,0.42617107942973526
+51087,"Henrico County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,837,194,14.08997977288986,High,1964,0.42617107942973526
+51087,"Henrico County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,1127,238,12.837697521191641,High,1964,0.42617107942973526
+51127,"New Kent County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,141,65,28.023884972730606,Medium,141,0.9716312056737588
+51127,"New Kent County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,137,64,28.398375967874333,Medium,141,0.9716312056737588
+51127,"New Kent County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,4,7,106.38297872340425,Low,141,0.9716312056737588
+51145,"Powhatan County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,67,49,44.45855827246745,Low,67,0.746268656716418
+51145,"Powhatan County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,50,27,32.82674772036474,Low,67,0.746268656716418
+51145,"Powhatan County, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,17,39,139.46003933488288,Low,67,0.746268656716418
+51760,"Richmond city, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,2150,300,8.482363752032231,High,2150,0.2474418604651163
+51760,"Richmond city, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,532,138,15.768905546541124,Medium,2150,0.2474418604651163
+51760,"Richmond city, Virginia",2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,1618,289,10.85808965250356,High,2150,0.2474418604651163
+51,Virginia,2014,B25003G,Two or more races,Multiracial,B25003G_001,Total,53616,1678,1.9025305697432784,High,53616,0.5359780662488809
+51,Virginia,2014,B25003G,Two or more races,Multiracial,B25003G_002,Owner,28737,1202,2.542711793666342,High,53616,0.5359780662488809
+51,Virginia,2014,B25003G,Two or more races,Multiracial,B25003G_003,Renter,24879,1062,2.5949302832395724,High,53616,0.5359780662488809
+51036,"Charles City County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,52,22,25.718961889174658,Medium,52,0.7307692307692307
+51036,"Charles City County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,38,17,27.195648696208607,Medium,52,0.7307692307692307
+51036,"Charles City County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,14,15,65.13243595310465,Low,52,0.7307692307692307
+51041,"Chesterfield County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,2189,343,9.525383202278316,High,2189,0.7236180904522613
+51041,"Chesterfield County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,1584,272,10.438733842989162,High,2189,0.7236180904522613
+51041,"Chesterfield County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,605,170,17.081564470345903,Medium,2189,0.7236180904522613
+51075,"Goochland County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,115,90,47.57499669618078,Low,115,0.7304347826086957
+51075,"Goochland County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,84,72,52.10594876248371,Low,115,0.7304347826086957
+51075,"Goochland County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,31,37,72.55613295421121,Low,115,0.7304347826086957
+51085,"Hanover County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,455,139,18.571094558936505,Medium,455,0.7846153846153846
+51085,"Hanover County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,357,121,20.60398627536121,Medium,455,0.7846153846153846
+51085,"Hanover County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,98,66,40.94038831338006,Low,455,0.7846153846153846
+51087,"Henrico County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,2509,390,9.4492653196214,High,2509,0.4475886807493025
+51087,"Henrico County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,1123,248,13.424744293807025,High,2509,0.4475886807493025
+51087,"Henrico County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,1386,296,12.982626964389882,High,2509,0.4475886807493025
+51127,"New Kent County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,106,70,40.14452027298274,Low,106,1
+51127,"New Kent County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,106,70,40.14452027298274,Low,106,1
+51127,"New Kent County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,0,23,NA,NA,106,1
+51145,"Powhatan County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,127,63,30.15580499246105,Low,127,0.7165354330708661
+51145,"Powhatan County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,91,53,35.40532415912355,Low,127,0.7165354330708661
+51145,"Powhatan County, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,36,42,70.92198581560284,Low,127,0.7165354330708661
+51760,"Richmond city, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,2495,390,9.502287249270577,High,2495,0.2725450901803607
+51760,"Richmond city, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,680,154,13.76720901126408,High,2495,0.2725450901803607
+51760,"Richmond city, Virginia",2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,1815,355,11.890108601907441,High,2495,0.2725450901803607
+51,Virginia,2019,B25003G,Two or more races,Multiracial,B25003G_001,Total,70613,1955,1.6830468157765794,High,70613,0.5205273816436067
+51,Virginia,2019,B25003G,Two or more races,Multiracial,B25003G_002,Owner,36756,1438,2.3782896227516646,High,70613,0.5205273816436067
+51,Virginia,2019,B25003G,Two or more races,Multiracial,B25003G_003,Renter,33857,1410,2.531656251714142,High,70613,0.5205273816436067
+51036,"Charles City County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,121,47,23.612750885478157,Medium,121,0.8181818181818182
+51036,"Charles City County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,99,46,28.2459856927942,Medium,121,0.8181818181818182
+51036,"Charles City County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,22,17,46.97430229345123,Low,121,0.8181818181818182
+51041,"Chesterfield County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,8663,735,5.157664904055153,High,8663,0.6969871868867598
+51041,"Chesterfield County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,6038,604,6.081040945340101,High,8663,0.6969871868867598
+51041,"Chesterfield County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,2625,478,11.06961933709654,High,8663,0.6969871868867598
+51075,"Goochland County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,391,202,31.40571677329581,Low,391,0.7953964194373402
+51075,"Goochland County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,311,187,36.55235098075626,Low,391,0.7953964194373402
+51075,"Goochland County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,80,85,64.58966565349544,Low,391,0.7953964194373402
+51085,"Hanover County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,1655,307,11.276503916473061,High,1655,0.7293051359516616
+51085,"Hanover County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,1207,256,12.893380306872523,High,1655,0.7293051359516616
+51085,"Hanover County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,448,188,25.510204081632654,Medium,1655,0.7293051359516616
+51087,"Henrico County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,6925,676,5.934184104550492,High,6925,0.5256317689530686
+51087,"Henrico County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,3640,471,7.865994188182637,High,6925,0.5256317689530686
+51087,"Henrico County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,3285,563,10.418546122422544,High,6925,0.5256317689530686
+51127,"New Kent County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,366,198,32.886541432059396,Low,366,0.9890710382513661
+51127,"New Kent County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,362,197,33.08199969772792,Low,366,0.9890710382513661
+51127,"New Kent County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,4,9,136.77811550151975,Low,366,0.9890710382513661
+51145,"Powhatan County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,500,151,18.358662613981764,Medium,500,1
+51145,"Powhatan County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,500,151,18.358662613981764,Medium,500,1
+51145,"Powhatan County, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,0,28,NA,NA,500,1
+51760,"Richmond city, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,7057,722,6.219438501856141,High,7057,0.3481649426101743
+51760,"Richmond city, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,2457,398,9.847183099462734,High,7057,0.3481649426101743
+51760,"Richmond city, Virginia",2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,4600,649,8.576714682172591,High,7057,0.3481649426101743
+51,Virginia,2024,B25003G,Two or more races,Multiracial,B25003G_001,Total,225835,3981,1.0716057255401317,High,225835,0.5817477361790688
+51,Virginia,2024,B25003G,Two or more races,Multiracial,B25003G_002,Owner,131379,2898,1.340931296219011,High,225835,0.5817477361790688
+51,Virginia,2024,B25003G,Two or more races,Multiracial,B25003G_003,Renter,94456,3009,1.9365411739931722,High,225835,0.5817477361790688
+51036,"Charles City County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,1295,59,2.769595474762648,High,1295,0.7984555984555984
+51036,"Charles City County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1034,69,4.056604328220444,High,1295,0.7984555984555984
+51036,"Charles City County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,261,65,15.139340157682051,Medium,1295,0.7984555984555984
+51041,"Chesterfield County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,80092,730,0.554074061030423,High,80092,0.8183588872796285
+51041,"Chesterfield County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,65544,774,0.7178639041334491,High,80092,0.8183588872796285
+51041,"Chesterfield County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,14548,608,2.540588831604925,High,80092,0.8183588872796285
+51075,"Goochland County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,6656,173,1.5800356558335282,High,6656,0.9035456730769231
+51075,"Goochland County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,6014,223,2.2541122386164805,High,6656,0.9035456730769231
+51075,"Goochland County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,642,153,14.487401641905517,High,6656,0.9035456730769231
+51085,"Hanover County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,32273,367,0.6912908745743123,High,32273,0.8408886685464629
+51085,"Hanover County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,27138,477,1.0685002758612347,High,32273,0.8408886685464629
+51085,"Hanover County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,5135,493,5.83633979809579,High,32273,0.8408886685464629
+51087,"Henrico County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,74243,877,0.7180888421644409,High,74243,0.7299543391296149
+51087,"Henrico County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,54194,971,1.089186176017646,High,74243,0.7299543391296149
+51087,"Henrico County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,20049,835,2.5317910329419364,High,74243,0.7299543391296149
+51127,"New Kent County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,6015,190,1.9202247673622428,High,6015,0.8689941812136326
+51127,"New Kent County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,5227,280,3.256414118183409,High,6015,0.8689941812136326
+51127,"New Kent County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,788,218,16.81761375032787,Medium,6015,0.8689941812136326
+51145,"Powhatan County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,8662,218,1.5299329987599122,High,8662,0.8888247517894251
+51145,"Powhatan County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,7699,252,1.989758272005483,High,8662,0.8888247517894251
+51145,"Powhatan County, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,963,202,12.751438482200065,High,8662,0.8888247517894251
+51760,"Richmond city, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,39453,915,1.409857306261916,High,39453,0.5340531771981852
+51760,"Richmond city, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,21070,545,1.572410967638628,High,39453,0.5340531771981852
+51760,"Richmond city, Virginia",2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,18383,874,2.8902082950631507,High,39453,0.5340531771981852
+51,Virginia,2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,2111460,6422,0.1848934560816286,High,2111460,0.735668210622034
+51,Virginia,2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1553334,8080,0.3162136477630352,High,2111460,0.735668210622034
+51,Virginia,2014,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,558126,4468,0.4866480727456527,High,2111460,0.735668210622034
+51036,"Charles City County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,1305,60,2.7949551060336097,High,1305,0.8275862068965517
+51036,"Charles City County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1080,62,3.4898120004502986,High,1305,0.8275862068965517
+51036,"Charles City County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,225,54,14.589665653495443,High,1305,0.8275862068965517
+51041,"Chesterfield County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,83785,580,0.4208194624648085,High,83785,0.8244673867637405
+51041,"Chesterfield County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,69078,684,0.6019361752289007,High,83785,0.8244673867637405
+51041,"Chesterfield County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,14707,706,2.9181976698646284,High,83785,0.8244673867637405
+51075,"Goochland County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,6939,243,2.128842264615093,High,6939,0.8721717826776193
+51075,"Goochland County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,6052,237,2.380584076805477,High,6939,0.8721717826776193
+51075,"Goochland County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,887,207,14.18668165291975,High,6939,0.8721717826776193
+51085,"Hanover County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,33600,422,0.7634968881169488,High,33600,0.8447916666666667
+51085,"Hanover County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,28385,483,1.0344090938051638,High,33600,0.8447916666666667
+51085,"Hanover County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,5215,501,5.840062713647504,High,33600,0.8447916666666667
+51087,"Henrico County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,74547,760,0.6197514038490557,High,74547,0.7174265899365501
+51087,"Henrico County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,53482,922,1.0479905803605885,High,74547,0.7174265899365501
+51087,"Henrico County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,21065,861,2.484710445379297,High,74547,0.7174265899365501
+51127,"New Kent County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,6514,211,1.969104654646107,High,6514,0.8719680687749463
+51127,"New Kent County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,5680,309,3.307076501562567,High,6514,0.8719680687749463
+51127,"New Kent County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,834,227,16.546033689765512,Medium,6514,0.8719680687749463
+51145,"Powhatan County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,9350,248,1.6124051167855924,High,9350,0.914331550802139
+51145,"Powhatan County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,8549,324,2.3039008810643167,High,9350,0.914331550802139
+51145,"Powhatan County, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,801,230,17.455384416895296,Medium,9350,0.914331550802139
+51760,"Richmond city, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,43171,858,1.2081734199172176,High,43171,0.5351972388872159
+51760,"Richmond city, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,23105,569,1.497064083682988,High,43171,0.5351972388872159
+51760,"Richmond city, Virginia",2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,20066,811,2.4569376983007745,High,43171,0.5351972388872159
+51,Virginia,2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,2124497,5077,0.14527307821332994,High,2124497,0.7327117901319701
+51,Virginia,2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1556644,7249,0.2830889355620929,High,2124497,0.7327117901319701
+51,Virginia,2019,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,567853,5042,0.5397603944515864,High,2124497,0.7327117901319701
+51036,"Charles City County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,1400,143,6.20929222752931,High,1400,0.8664285714285714
+51036,"Charles City County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1213,143,7.166536783628222,High,1400,0.8664285714285714
+51036,"Charles City County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,187,45,14.628675454707995,High,1400,0.8664285714285714
+51041,"Chesterfield County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,87052,877,0.6124278581631046,High,87052,0.839394844460782
+51041,"Chesterfield County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,73071,1110,0.9234471082565779,High,87052,0.839394844460782
+51041,"Chesterfield County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,13981,966,4.20022918641865,High,87052,0.839394844460782
+51075,"Goochland County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,8292,267,1.9574292136413023,High,8292,0.852990834539315
+51075,"Goochland County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,7073,297,2.5526242395306955,High,8292,0.852990834539315
+51075,"Goochland County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,1219,221,11.021042211589052,High,8292,0.852990834539315
+51085,"Hanover County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,35554,507,0.8668692325198041,High,35554,0.8415649434662766
+51085,"Hanover County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,29921,653,1.3266952519039752,High,35554,0.8415649434662766
+51085,"Hanover County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,5633,486,5.244820335226037,High,35554,0.8415649434662766
+51087,"Henrico County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,73975,968,0.7954712376131344,High,73975,0.739790469753295
+51087,"Henrico County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,54726,1166,1.295206281594952,High,73975,0.739790469753295
+51087,"Henrico County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,19249,927,2.9275590205530753,High,73975,0.739790469753295
+51127,"New Kent County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,7315,257,2.135762174156031,High,7315,0.9272727272727272
+51127,"New Kent County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,6783,278,2.491478114202008,High,7315,0.9272727272727272
+51127,"New Kent County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,532,176,20.111067943414767,Medium,7315,0.9272727272727272
+51145,"Powhatan County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,10097,284,1.709858144990552,High,10097,0.9329503813013766
+51145,"Powhatan County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,9420,290,1.8714627740240968,High,10097,0.9329503813013766
+51145,"Powhatan County, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,677,210,18.856657971652158,Medium,10097,0.9329503813013766
+51760,"Richmond city, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,49921,864,1.0521182739244725,High,49921,0.526351635584223
+51760,"Richmond city, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,26276,690,1.596334630605853,High,49921,0.526351635584223
+51760,"Richmond city, Virginia",2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,23645,915,2.3524254727828873,High,49921,0.526351635584223
+51,Virginia,2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_001,Total,2141493,6516,0.18496881497740184,High,2141493,0.7444964797923691
+51,Virginia,2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_002,Owner,1594334,8677,0.3308448566281698,High,2141493,0.7444964797923691
+51,Virginia,2024,B25003H,"White alone, not Hispanic or Latino","White, non-Hispanic",B25003H_003,Renter,547159,5744,0.6381679389482598,High,2141493,0.7444964797923691
+51036,"Charles City County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,41,17,25.20572318185188,Medium,41,0.9024390243902439
+51036,"Charles City County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,37,18,29.573646594923186,Medium,41,0.9024390243902439
+51036,"Charles City County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,4,6,91.1854103343465,Low,41,0.9024390243902439
+51041,"Chesterfield County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,6533,321,2.986939815023749,High,6533,0.5340578600949027
+51041,"Chesterfield County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,3489,296,5.157329026266661,High,6533,0.5340578600949027
+51041,"Chesterfield County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,3044,323,6.450479092858941,High,6533,0.5340578600949027
+51075,"Goochland County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,112,56,30.3951367781155,Low,112,0.9196428571428571
+51075,"Goochland County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,103,56,33.051022516009084,Low,112,0.9196428571428571
+51075,"Goochland County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,9,14,94.56264775413712,Low,112,0.9196428571428571
+51085,"Hanover County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,560,77,8.358662613981764,High,560,0.6982142857142857
+51085,"Hanover County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,391,102,15.858332232060263,Medium,560,0.6982142857142857
+51085,"Hanover County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,169,91,32.733224222585925,Low,560,0.6982142857142857
+51087,"Henrico County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,4560,296,3.9460353010185036,High,4560,0.4070175438596491
+51087,"Henrico County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,1856,272,8.90891940048213,High,4560,0.4070175438596491
+51087,"Henrico County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,2704,329,7.396449704142012,High,4560,0.4070175438596491
+51127,"New Kent County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,67,60,54.439050945878506,Low,67,1
+51127,"New Kent County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,67,60,54.439050945878506,Low,67,1
+51127,"New Kent County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,0,19,NA,NA,67,1
+51145,"Powhatan County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,79,33,25.393405409564846,Medium,79,0.7341772151898734
+51145,"Powhatan County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,58,28,29.347028613352897,Medium,79,0.7341772151898734
+51145,"Powhatan County, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,21,30,86.84324793747287,Low,79,0.7341772151898734
+51760,"Richmond city, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,3446,272,4.7983036585301315,High,3446,0.1819500870574579
+51760,"Richmond city, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,627,155,15.027898566532386,Medium,3446,0.1819500870574579
+51760,"Richmond city, Virginia",2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,2819,242,5.218604540832885,High,3446,0.1819500870574579
+51,Virginia,2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,173980,2225,0.7774362493540291,High,173980,0.45480515001724336
+51,Virginia,2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,79127,2213,1.7001639816995362,High,173980,0.45480515001724336
+51,Virginia,2014,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,94853,1852,1.186926998894498,High,173980,0.45480515001724336
+51036,"Charles City County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,58,15,15.721622471439053,Medium,58,0.8620689655172413
+51036,"Charles City County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,50,19,23.10030395136778,Medium,58,0.8620689655172413
+51036,"Charles City County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,8,11,83.58662613981764,Low,58,0.8620689655172413
+51041,"Chesterfield County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,7623,367,2.926673277598948,High,7623,0.5623770169224714
+51041,"Chesterfield County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,4287,357,5.062311093905871,High,7623,0.5623770169224714
+51041,"Chesterfield County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,3336,349,6.359653918202824,High,7623,0.5623770169224714
+51075,"Goochland County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,220,78,21.552915169936444,Medium,220,0.5318181818181819
+51075,"Goochland County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,117,83,43.1247239757878,Low,220,0.5318181818181819
+51075,"Goochland County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,103,53,31.280432024080028,Low,220,0.5318181818181819
+51085,"Hanover County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,952,133,8.492758805649919,High,952,0.5756302521008403
+51085,"Hanover County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,548,152,16.861535730925386,Medium,952,0.5756302521008403
+51085,"Hanover County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,404,149,22.420175148213907,Medium,952,0.5756302521008403
+51087,"Henrico County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,5276,364,4.194021905699031,High,5276,0.3743366186504928
+51087,"Henrico County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,1975,292,8.98772652071871,High,5276,0.3743366186504928
+51087,"Henrico County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,3301,289,5.3221414897760555,High,5276,0.3743366186504928
+51127,"New Kent County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,227,80,21.423884953737797,Medium,227,0.6960352422907489
+51127,"New Kent County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,158,79,30.3951367781155,Low,227,0.6960352422907489
+51127,"New Kent County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,69,60,52.86110744020087,Low,227,0.6960352422907489
+51145,"Powhatan County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,180,70,23.64066193853428,Medium,180,0.6444444444444445
+51145,"Powhatan County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,116,76,39.82811026097893,Low,180,0.6444444444444445
+51145,"Powhatan County, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,64,54,51.29179331306991,Low,180,0.6444444444444445
+51760,"Richmond city, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,3392,303,5.430263233354362,High,3392,0.1928066037735849
+51760,"Richmond city, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,654,152,14.128626269949713,High,3392,0.1928066037735849
+51760,"Richmond city, Virginia",2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,2738,272,6.039062968332664,High,3392,0.1928066037735849
+51,Virginia,2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,204880,2175,0.6453477400663922,High,204880,0.4923809058961343
+51,Virginia,2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,100879,2245,1.352850089054596,High,204880,0.4923809058961343
+51,Virginia,2019,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,104001,1911,1.1170105361098204,High,204880,0.4923809058961343
+51036,"Charles City County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,34,24,42.91078133381012,Low,34,0.9705882352941176
+51036,"Charles City County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,33,22,40.52684903748734,Low,34,0.9705882352941176
+51036,"Charles City County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,1,7,425.531914893617,Low,34,0.9705882352941176
+51041,"Chesterfield County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,12041,635,3.205865269346955,High,12041,0.591728261772278
+51041,"Chesterfield County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,7125,570,4.86322188449848,High,12041,0.591728261772278
+51041,"Chesterfield County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,4916,579,7.159798289067891,High,12041,0.591728261772278
+51075,"Goochland County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,418,170,24.72331699655328,Medium,418,0.9569377990430622
+51075,"Goochland County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,400,180,27.35562310030395,Medium,418,0.9569377990430622
+51075,"Goochland County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,18,27,91.1854103343465,Low,418,0.9569377990430622
+51085,"Hanover County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,1378,167,7.367181192953975,High,1378,0.6538461538461539
+51085,"Hanover County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,901,208,14.033714650051108,High,1378,0.6538461538461539
+51085,"Hanover County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,477,178,22.684840027272784,Medium,1378,0.6538461538461539
+51087,"Henrico County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,6761,426,3.830299738937199,High,6761,0.4518562342848691
+51087,"Henrico County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,3055,405,8.058939702217204,High,6761,0.4518562342848691
+51087,"Henrico County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,3706,418,6.856539219240301,High,6761,0.4518562342848691
+51127,"New Kent County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,272,122,27.266225639191845,Medium,272,0.7536764705882353
+51127,"New Kent County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,205,148,43.887612128400924,Low,272,0.7536764705882353
+51127,"New Kent County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,67,82,74.40003629270063,Low,272,0.7536764705882353
+51145,"Powhatan County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,214,113,32.099536971280855,Low,214,0.7242990654205608
+51145,"Powhatan County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,155,83,32.55221100107853,Low,214,0.7242990654205608
+51145,"Powhatan County, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,59,80,82.42748956777083,Low,214,0.7242990654205608
+51760,"Richmond city, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,7311,467,3.883060833095319,High,7311,0.29872794419368076
+51760,"Richmond city, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,2184,421,11.71827159669105,High,7311,0.29872794419368076
+51760,"Richmond city, Virginia",2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,5127,520,6.165582650524697,High,7311,0.29872794419368076
+51,Virginia,2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_001,Total,269179,2814,0.6355021371921066,High,269179,0.5327830179917453
+51,Virginia,2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_002,Owner,143414,3048,1.2919851186034286,High,269179,0.5327830179917453
+51,Virginia,2024,B25003I,Hispanic or Latino,Hispanic or Latino,B25003I_003,Renter,125765,2601,1.2572297659901948,High,269179,0.5327830179917453

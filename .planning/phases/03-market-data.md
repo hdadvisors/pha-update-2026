@@ -66,15 +66,15 @@ Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task
 
 - [ ] `r/acs_tenure_race.R`, `r/acs_stock.R`, and `r/fmr.R` exist, are git-tracked, and follow the `/new-data-script` anatomy (header, numbered setup sections, `.Renviron` fallback, `write_rds()` + `export_csv()`, validation block).
 - [ ] Each of the three scripts runs clean end to end under the locked renv environment — Jonathan runs them and pastes back console output.
-- [ ] `data/acs_tenure_race.rds` covers all 9 B25003A–I categories × 8 `rr` localities × Virginia × 3 years (2014/2019/2024), with every cell carrying a computed reliability tier or a logged reason it's genuinely NA (absent/zero estimate only).
+- [x] `data/acs_tenure_race.rds` covers all 9 B25003A–I categories × 8 `rr` localities × Virginia × 3 years (2014/2019/2024), with every cell carrying a computed reliability tier or a logged reason it's genuinely NA (absent/zero estimate only).
 - [ ] `data/acs_stock.rds` covers all 5 table groups × 8 `rr` localities × Virginia × Ashland, no all-NA estimate column.
 - [ ] `data/fmr.rds` covers all 8 `rr` localities at the region-FMR grain and all region zip codes at the SAFMR grain.
-- [ ] `ownership.qmd` gains the racial-homeownership H2 with its region-pooled figure, a locality-level figure only if ≥3 categories clear CV-30 there, and a narrative (not computed) Since-2022 callout.
-- [ ] `data-notes.qmd` gains the race/ethnicity crosswalk subsection and an updated ACS sources-table status row.
-- [ ] `quarto render` still exits 0 after the `ownership.qmd` and `data-notes.qmd` edits.
-- [ ] Row 24 (consolidated rental assistance) is recorded in this file as blocked on a missing LIHTC data drop, not silently dropped from scope.
-- [ ] `.planning/PLAN.md` Section 9's Phase 3 row moves `not planned` → `planned`, linking this file.
-- [ ] The `.planning/LOG.md` entry for each session records any `section == "ownership"` `baseline_2022` metric the session's frames reproduce, and states plainly that racial homeownership has no computable 2022 comparison.
+- [x] `ownership.qmd` gains the racial-homeownership H2 with its region-pooled figure, a locality-level figure only if ≥3 categories clear CV-30 there, and a narrative (not computed) Since-2022 callout.
+- [x] `data-notes.qmd` gains the race/ethnicity crosswalk subsection and an updated ACS sources-table status row.
+- [x] `quarto render` still exits 0 after the `ownership.qmd` and `data-notes.qmd` edits.
+- [x] Row 24 (consolidated rental assistance) is recorded in this file as blocked on a missing LIHTC data drop, not silently dropped from scope.
+- [x] `.planning/PLAN.md` Section 9's Phase 3 row moves `not planned` → `planned`, linking this file.
+- [x] The `.planning/LOG.md` entry for each session records any `section == "ownership"` `baseline_2022` metric the session's frames reproduce, and states plainly that racial homeownership has no computable 2022 comparison.
 
 ## Phase Decisions
 
@@ -85,10 +85,13 @@ Phase-local. A decision that constrains work outside this phase moves to PLAN.md
 | 2026-08-20 | `r/acs_tenure_race.R` pulls `rr` + Virginia only, no Ashland place | Ashland's ~7,500 population suppresses nearly every B25003A–I race category on CV-30 alone; pulling it would add rows the reliability rule immediately drops, matching `acs_tenure_value.R`'s existing geography choice | active |
 | 2026-08-20 | The region-pooled-vs-locality-level cut for the racial-homeownership figure is decided at execution from the real CV values, not assumed at planning time | Which of the 9 categories clear CV-30 at the locality grain can't be known before the script runs; scoping a fixed figure list now risks committing to a chart the data can't support | active |
 | 2026-08-20 | Racial homeownership's Since-2022 callout is narrative, never a computed percentage change | The only 2022 baseline race figure is qualitative with no exact value ("white households... above 70 pct"); this cycle's disaggregation is genuinely net-new per PLAN.md Section 7, not a trend continuation | active |
+| 2026-08-20 (4A) | Regional aggregates in the racial-homeownership figures pool the **4 primary localities**, not the 8 `rr` localities. `r/acs_tenure_race.R` writes that pooled row as `geoid == "region4"` | Jonathan's direction, 2026-08-20: every regional aggregate in this cycle is being standardized on the primary 4, matching the 2022 Framework's own definition of the region (PLAN.md Section 6). The 8 localities are still pulled and exported individually for the Phase 7 local summaries | active — applies to every regional aggregate, not just this figure |
+| 2026-08-20 (4A) | The nine published B25003 categories collapse to 6 report groups: White non-Hispanic (H), Black (B), Hispanic or Latino (I), Asian (D), Multiracial (G), Another race (C + E + F). B25003A is dropped in favor of H | Jonathan's direction, 2026-08-20. The collapse also fixes the reliability problem the raw categories had: AIAN, NHPI, and some-other-race each fail CV-30 at most grains alone, but combined they clear everywhere except one Hanover cell. All 6 groups clear CV-30 at the pooled region grain; 4 of 6 clear in all 4 primary localities | active |
+| 2026-08-20 (4A) | Suppression for a *rate* uses the worse of its owner and renter cell tiers, carried as `rate_reliability` in `data/acs_tenure_race_group.rds` | Filtering on the single-cell `reliability` column plotted Hanover's Asian rate, whose owner count is High (CV 11.4) while its renter count is Low (CV 65.4). A rate is only as reliable as its weaker input | active — applies to any rate built from two ACS cells |
 | 2026-08-20 | Row 24 (consolidated rental assistance) is not scoped into a Phase 3 session | No LIHTC database file exists under `data/raw/`; `r/psh.R` alone does not satisfy Section 5 row 24's "consolidated" scope, which needs LIHTC production data | active — revisit once Jonathan drops a LIHTC source |
 
 ## Open questions
 
-- Which of the 9 B25003A–I categories clear CV-30 at the locality level, once `r/acs_tenure_race.R` actually runs. Fixes Session 4A's second-figure scope; not knowable before the pull.
+- ~~Which of the 9 B25003A–I categories clear CV-30 at the locality level~~ — answered by the 4A run, then superseded by the 6-group collapse. At the published 9-category grain: 2 of 9 clear across all 8 `rr` localities, 6 of 9 across the 4 primary localities. At the 6-group grain the report actually uses: 6 of 6 clear pooled, 4 of 6 clear in all 4 primary localities, and only 2 of 24 locality cells suppress. See the 4A rows in Phase Decisions.
 - Whether `r/acs_stock.R`'s five table groups belong in one output frame or split by concept (occupancy vs. structure vs. age vs. bedrooms) — deferred to the session that writes it, once the actual `load_variables()` output is in hand.
 - Where the LIHTC source for row 24 will come from (HUD's public LIHTC database vs. a state QAP list) — Jonathan's call once he's ready to unblock it.
