@@ -17,14 +17,14 @@ The table below lists each source, the vintage used this cycle, and its current 
 
 | Source | Vintage | Access | Status |
 |---|---|---|---|
-| ACS 5-year estimates (anchor) | 2020–2024, trend tables back to ~2010 | tidycensus API | Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending |
+| ACS 5-year estimates (anchor) | 2020–2024, trend tables back to ~2010 | tidycensus API | Demographics, income, tenure, homeownership by race and ethnicity, home value, gross rent, and cost burden loaded; remaining stock tables pending |
 | ACS PUMS | 2020–2024 5-year | tidycensus `get_pums()` | Pending |
 | Population Estimates Program (PEP) | Vintage 2025 | Census API (FTP fallback) | Loaded |
 | Decennial Census | 2000 / 2010 / 2020 | tidycensus API | Loaded |
 | Weldon Cooper population projections | 2025 official release (2030–2050 series) | UVA published xlsx | Loaded |
 | CHAS | 2018–2022 | huduser.gov download | Cost burden by income band loaded; race and unit-affordability tables pending |
 | HUD Fair Market Rents and Small Area FMRs | FY2026 | huduser.gov download | Raw files staged; processing pending |
-| HUD Income Limits | FY2026 | huduser.gov download | Raw file staged; processing pending |
+| HUD Income Limits | FY2026 | huduser.gov download | Loaded — household-size income limits at 30/50/80% for the region's HUD area, extended to 100/120% (`r/hud_ami.R`) |
 | BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending |
 | Bright MLS for-sale market | Monthly summary exports, nominal dollars | Manual export by HDAdvisors | Monthly median price series loaded; transaction-level detail pending |
 | CoStar multifamily market | Quarterly, Richmond market | Manual export by HDAdvisors | Regional asking rent and vacancy loaded; submarket detail pending |
@@ -67,6 +67,36 @@ ACS estimates for small geographies carry sampling error, flagged consistently f
 - **Low reliability:** CV above 30 — the cell is suppressed rather than reported.
 - Reliability treatment applies to every secondary-locality and Ashland ACS estimate in the report.
 - Small PIT and eviction counts are reported as counts with a volatility caveat, never converted to rates.
+
+### Race and ethnicity crosswalk
+
+Homeownership by race and ethnicity comes from the nine letter-suffix versions of ACS Table B25003, each carrying the same total, owner-occupied, and renter-occupied structure as B25003 itself. All nine are pulled and exported at the published grain; the report collapses them to six groups.
+
+| Report group | Source tables | 2024 households (region) |
+|---|---|---|
+| White, non-Hispanic | B25003H | 246,502 |
+| Black | B25003B | 117,413 |
+| Hispanic or Latino | B25003I | 27,491 |
+| Multiracial | B25003G | 24,300 |
+| Asian | B25003D | 17,305 |
+| Another race | B25003C + B25003E + B25003F | 14,430 |
+
+- **Another race combines three published categories** — American Indian and Alaska Native alone, Native Hawaiian and Other Pacific Islander alone, and some other race alone. Each is too small to report on its own: Native Hawaiian and Other Pacific Islander alone is under 200 households region-wide, with a CV above 40 at every grain and in every year. Combined counts add and their margins of error combine in quadrature.
+- **B25003A (White alone) is not used.** The report's White group is B25003H, which excludes Hispanic or Latino householders. B25003A remains in the row-level export for anyone who needs it.
+- **The six groups overlap, and do not sum to the household total.** Only the White group excludes Hispanic or Latino householders, so a Hispanic Black household is counted in both Black and Hispanic or Latino. B25003 publishes no race-alone-not-Hispanic tables, so the overlap cannot be removed at this table's grain. Rates by group are still valid; a sum across groups is not.
+- **Regional figures pool the four primary localities,** matching every other regional aggregate in this update. The nine published categories are also carried for each of the eight region localities and Virginia. There is no Ashland: at the town's size nearly every group falls below the CV-30 threshold.
+- **Years are 2010-2014, 2015-2019, and 2020-2024** — the same non-overlapping windows used for overall tenure, so a rate by group can be read against the overall rate for the same period.
+- Reliability is computed per geography, group, and year. Because an ownership rate rests on the owner and the renter count together, the export also carries a rate-level tier taking the worse of the two; the figures suppress on that, not on the single-cell tier.
+
+## Ownership and rental affordability
+
+The housing-gap chapter's income-needed and maximum-affordable-price figures use a standard rule set, applied consistently through `r/affordcalc.R`.
+
+- **Rental affordability:** a household can afford a rent at or below 30 percent of its gross monthly income. Income needed for a given rent is `rent × 12 / 0.30`.
+- **Ownership affordability:** a household can afford a home priced so that the monthly principal, interest, tax, and insurance (PITI) payment is at or below 28 percent of its gross monthly income.
+- **Ownership assumptions are provisional placeholders, pending PHA input:** a 10 percent down payment, a 30-year fixed term at the current Freddie Mac PMMS rate, property tax at 1.0 percent of home value annually, and $1,500/year in homeowners insurance — one regional figure rather than a per-locality rate. Private mortgage insurance is not modeled. PHA review of these figures against local lending norms is expected to refine them.
+- **AMI bands** come from HUD's FY2026 Section 8 Income Limits for the region's single HUD area ("Richmond, VA HUD Metro FMR Area," confirmed to cover all 8 `rr` counties identically rather than assumed). HUD publishes 30, 50, and 80 percent limits by household size; 100 and 120 percent are derived by applying the same household-size scaling factor embedded in the 50 percent limits to the published median family income (`r/hud_ami.R`). The gaps chapter's price-point figures reference the 4-person limit as the headline "area median income," the same convention HUD and NLIHC use for headline AMI reporting.
+- **The starter-home cut in `gaps.qmd`** compares a current-dollar (FY2026) income threshold against CHAS 2018-2022 renter households grouped by relative-AMI band — a vintage mismatch (current income limits vs. a 2018-2022 area median) stated as a caveat in the chapter, not resolved, pending the PUMS-based rebuild.
 
 ## Comparing to the 2022 Framework
 

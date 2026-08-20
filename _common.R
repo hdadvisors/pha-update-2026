@@ -5,12 +5,12 @@
 # ---- Global knitr chunk options -------------------------------------------
 
 knitr::opts_chunk$set(
-  echo      = FALSE,
-  warning   = FALSE,
-  error     = FALSE,
-  message   = FALSE,
-  fig.show  = "hold",
-  fig.asp   = 0.618,
+  echo = FALSE,
+  warning = FALSE,
+  error = FALSE,
+  message = FALSE,
+  fig.show = "hold",
+  fig.asp = 0.618,
   fig.align = "left"
 )
 
@@ -20,7 +20,7 @@ library(tidyverse)
 library(scales)
 library(kableExtra)
 library(formattable)
-library(hdatools)   # theme_pha(), scale_fill_pha(), scale_color_pha(), add_zero_line()
+library(hdatools) # theme_pha(), scale_fill_pha(), scale_color_pha(), add_zero_line()
 library(ggtext)
 
 # ---- Color palettes -------------------------------------------------------
@@ -39,9 +39,9 @@ pha_pal <- pha_pal_discrete()(6)
 
 # Cost-burden fill scale (severe / cost-burdened / not), used across burden charts.
 cb_pal <- c(
-  "Severely cost-burdened" = pha_pal[4],  # Red
-  "Cost-burdened"          = pha_pal[3],  # Orange
-  "Not cost-burdened"      = "grey80"
+  "Severely cost-burdened" = pha_pal[4], # Red
+  "Cost-burdened" = pha_pal[3], # Orange
+  "Not cost-burdened" = "grey80"
 )
 
 # ---- Geography constants --------------------------------------------------
@@ -51,30 +51,30 @@ cb_pal <- c(
 # Region: 8 localities in the PlanRVA / PHA planning area (regional analysis universe).
 # Order matches the SOH deck's `rr` vector.
 rr <- c(
-  hanover      = "51085",
-  richmond     = "51760",
-  goochland    = "51075",
-  powhatan     = "51145",
-  henrico      = "51087",
-  new_kent     = "51127",
+  hanover = "51085",
+  richmond = "51760",
+  goochland = "51075",
+  powhatan = "51145",
+  henrico = "51087",
+  new_kent = "51127",
   charles_city = "51036",
   chesterfield = "51041"
 )
 
 # Primary localities: the 4 core jurisdictions carrying the regional narrative.
 pha <- c(
-  hanover      = "51085",
-  richmond     = "51760",
-  henrico      = "51087",
+  hanover = "51085",
+  richmond = "51760",
+  henrico = "51087",
   chesterfield = "51041"
 )
 
 # Secondary localities: local summaries only (outer counties + Ashland town).
 secondary <- c(
   charles_city = "51036",
-  goochland    = "51075",
-  new_kent     = "51127",
-  powhatan     = "51145"
+  goochland = "51075",
+  new_kent = "51127",
+  powhatan = "51145"
 )
 
 # Ashland is a town (Census place, summary level 160) inside Hanover County.
@@ -89,17 +89,21 @@ virginia <- "51"
 # split across two multi-county PUMAs (08501 east, 14501 west) — so it is excluded from
 # regional PUMS estimates and only enters via the county-level ACS tables.
 puma_core3 <- c(
-  "04101", "04102", "04103",  # Chesterfield County (E / Central / W)
-  "08701", "08702",           # Henrico County (S&E / W)
-  "76001", "76002"            # Richmond city (N&W / S&E)
+  "04101",
+  "04102",
+  "04103", # Chesterfield County (E / Central / W)
+  "08701",
+  "08702", # Henrico County (S&E / W)
+  "76001",
+  "76002" # Richmond city (N&W / S&E)
 )
 
 # Full-region PUMA set: core-3 plus the two mixed outer PUMAs. Use only for region-wide
 # totals where the extra counties are acceptable; note 08501 also includes King William.
 puma_region <- c(
   puma_core3,
-  "08501",  # King William, New Kent, Charles City & Eastern Hanover Counties
-  "14501"   # Goochland, Powhatan & Western Hanover Counties
+  "08501", # King William, New Kent, Charles City & Eastern Hanover Counties
+  "14501" # Goochland, Powhatan & Western Hanover Counties
 )
 
 # PUMA -> locality label lookup for the clean-tiling core-3 (recode in PUMS prep).
@@ -116,71 +120,128 @@ puma_locality <- c(
 # ---- Caption helpers ------------------------------------------------------
 # Bold-markdown source lines for chart/table captions. Vintages default to this project's.
 
-acs_cap <- function(table, year = "2020-2024")
-  paste0("**Source:** U.S. Census Bureau, ", year,
-         " American Community Survey 5-year estimates, Table ", table, ".")
-
-pums_cap <- function(year = "2020-2024")
-  paste0("**Source:** U.S. Census Bureau, ", year,
-         " American Community Survey 5-year Public Use Microdata Sample (PUMS).")
-
-chas_cap <- function(table, year = "2018-2022")
-  paste0("**Source:** HUD Comprehensive Housing Affordability Strategy (CHAS), ", year,
-         " estimates, Table ", table, ".")
-
-dec_cap <- function(years = "2000-2020")
-  paste0("**Source:** U.S. Census Bureau, Decennial Census, ", years, ".")
-
-pep_cap <- function(vintage = 2025)
-  paste0("**Source:** U.S. Census Bureau, Population Estimates Program, Vintage ", vintage, ".")
-
-wc_cap <- function(release = 2025)
-  paste0("**Source:** University of Virginia Weldon Cooper Center for Public Service, ",
-         "Virginia Population Projections, ", release, " release.")
-
-bps_cap <- function(years = "2000-2025")
-  paste0("**Source:** U.S. Census Bureau, Building Permits Survey, ", years, " annual.")
-
-mls_cap <- function(year_range = NULL) {
-  base <- "**Source:** Bright MLS residential sales and listings data"
-  if (!is.null(year_range)) paste0(base, ", ", year_range, ".") else paste0(base, ".")
+acs_cap <- function(table, year = "2020-2024") {
+  paste0(
+    "**Source:** U.S. Census Bureau, ",
+    year,
+    " American Community Survey 5-year estimates, Table ",
+    table,
+    "."
+  )
 }
 
-costar_cap <- function()
+pums_cap <- function(year = "2020-2024") {
+  paste0(
+    "**Source:** U.S. Census Bureau, ",
+    year,
+    " American Community Survey 5-year Public Use Microdata Sample (PUMS)."
+  )
+}
+
+chas_cap <- function(table, year = "2018-2022") {
+  paste0(
+    "**Source:** HUD Comprehensive Housing Affordability Strategy (CHAS), ",
+    year,
+    " estimates, Table ",
+    table,
+    "."
+  )
+}
+
+dec_cap <- function(years = "2000-2020") {
+  paste0("**Source:** U.S. Census Bureau, Decennial Census, ", years, ".")
+}
+
+pep_cap <- function(vintage = 2025) {
+  paste0(
+    "**Source:** U.S. Census Bureau, Population Estimates Program, Vintage ",
+    vintage,
+    "."
+  )
+}
+
+wc_cap <- function(release = 2025) {
+  paste0(
+    "**Source:** University of Virginia Weldon Cooper Center for Public Service, ",
+    "Virginia Population Projections, ",
+    release,
+    " release."
+  )
+}
+
+bps_cap <- function(years = "2000-2025") {
+  paste0(
+    "**Source:** U.S. Census Bureau, Building Permits Survey, ",
+    years,
+    " annual."
+  )
+}
+
+mls_cap <- function(year_range = NULL) {
+  base <- "**Source:** CVR MLS residential sales and listings data"
+  if (!is.null(year_range)) {
+    paste0(base, ", ", year_range, ".")
+  } else {
+    paste0(base, ".")
+  }
+}
+
+costar_cap <- function() {
   "**Source:** CoStar multifamily market data, quarterly."
+}
 
-fmr_cap <- function(year = "FY2026")
+fmr_cap <- function(year = "FY2026") {
   paste0("**Source:** HUD Fair Market Rents and Small Area FMRs, ", year, ".")
+}
 
-ami_cap <- function(year = "FY2026")
-  paste0("**Source:** HUD Section 8 Income Limits, ", year,
-         "; 100/120% AMI derived from published MFI.")
+ami_cap <- function(year = "FY2026") {
+  paste0(
+    "**Source:** HUD Section 8 Income Limits, ",
+    year,
+    "; 100/120% AMI derived from published MFI."
+  )
+}
 
-nhpd_cap <- function()
+nhpd_cap <- function() {
   "**Source:** National Housing Preservation Database (NHPD)."
+}
 
 # Subsidized housing / rental assistance sources (assistance.R consolidates these).
-posh_cap <- function()
-  paste0("**Source:** HUD Picture of Subsidized Households and Housing Choice Voucher ",
-         "administrative data.")
+posh_cap <- function() {
+  paste0(
+    "**Source:** HUD Picture of Subsidized Households and Housing Choice Voucher ",
+    "administrative data."
+  )
+}
 
-lihtc_cap <- function()
+lihtc_cap <- function() {
   "**Source:** HUD Low-Income Housing Tax Credit (LIHTC) database."
+}
 
 # Wage affordability (OEWS only this cycle; QCEW omitted — EXECUTION-PLAN §7).
-oews_cap <- function(year = 2024)
-  paste0("**Source:** U.S. Bureau of Labor Statistics, Occupational Employment and Wage ",
-         "Statistics (OEWS), ", year, ", Richmond MSA.")
+oews_cap <- function(year = 2024) {
+  paste0(
+    "**Source:** U.S. Bureau of Labor Statistics, Occupational Employment and Wage ",
+    "Statistics (OEWS), ",
+    year,
+    ", Richmond MSA."
+  )
+}
 
-pit_cap <- function()
-  paste0("**Source:** Greater Richmond Continuum of Care Point-in-Time Count ",
-         "(single-night counts).")
+pit_cap <- function() {
+  paste0(
+    "**Source:** Greater Richmond Continuum of Care Point-in-Time Count ",
+    "(single-night counts)."
+  )
+}
 
-cpi_cap <- function()
+cpi_cap <- function() {
   "Inflation-adjusted to the latest period using BLS CPI-U via FRED."
+}
 
-pmms_cap <- function()
+pmms_cap <- function() {
   "**Source:** Freddie Mac Primary Mortgage Market Survey (PMMS), 30-year fixed rate, via FRED."
+}
 
 # ---- Reliability tiering --------------------------------------------------
 # High/Medium/Low from a 0-100 CV column (thresholds 15/30). The .rds frames store `cv`
@@ -188,12 +249,14 @@ pmms_cap <- function()
 # this thin wrapper avoids mislabeling small-geography (secondary-locality/Ashland) cells.
 flag_reliability <- function(df, cv_col = cv) {
   df |>
-    mutate(reliability = case_when(
-      {{ cv_col }} <= 15 ~ "High",
-      {{ cv_col }} <= 30 ~ "Medium",
-      {{ cv_col }} >  30 ~ "Low",
-      TRUE               ~ NA_character_
-    ))
+    mutate(
+      reliability = case_when(
+        {{ cv_col }} <= 15 ~ "High",
+        {{ cv_col }} <= 30 ~ "Medium",
+        {{ cv_col }} > 30 ~ "Low",
+        TRUE ~ NA_character_
+      )
+    )
 }
 
 # ---- Utilities ------------------------------------------------------------

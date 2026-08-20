@@ -78,6 +78,10 @@ ul.task-list li input[type="checkbox"] {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -263,11 +267,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-large-is-the-affordable-and-available-rental-gap-by-income-band" id="toc-how-large-is-the-affordable-and-available-rental-gap-by-income-band" class="nav-link active" data-scroll-target="#how-large-is-the-affordable-and-available-rental-gap-by-income-band"><span class="header-section-number">4.1</span> How large is the affordable-and-available rental gap by income band?</a></li>
-  <li><a href="#where-along-the-income-spectrum-do-renters-compete-for-the-same-units" id="toc-where-along-the-income-spectrum-do-renters-compete-for-the-same-units" class="nav-link" data-scroll-target="#where-along-the-income-spectrum-do-renters-compete-for-the-same-units"><span class="header-section-number">4.2</span> Where along the income spectrum do renters compete for the same units?</a></li>
-  <li><a href="#how-many-renter-households-could-afford-to-buy-a-starter-home" id="toc-how-many-renter-households-could-afford-to-buy-a-starter-home" class="nav-link" data-scroll-target="#how-many-renter-households-could-afford-to-buy-a-starter-home"><span class="header-section-number">4.3</span> How many renter households could afford to buy a starter home?</a></li>
-  <li><a href="#what-income-does-homeownership-require-by-price-point-unit-size-and-type" id="toc-what-income-does-homeownership-require-by-price-point-unit-size-and-type" class="nav-link" data-scroll-target="#what-income-does-homeownership-require-by-price-point-unit-size-and-type"><span class="header-section-number">4.4</span> What income does homeownership require by price point, unit size, and type?</a></li>
-  <li><a href="#how-has-the-housing-gap-changed-since-2022" id="toc-how-has-the-housing-gap-changed-since-2022" class="nav-link" data-scroll-target="#how-has-the-housing-gap-changed-since-2022"><span class="header-section-number">4.5</span> How has the housing gap changed since 2022?</a></li>
+  <li><a href="#affordable-and-available-rental-gap-by-income" id="toc-affordable-and-available-rental-gap-by-income" class="nav-link active" data-scroll-target="#affordable-and-available-rental-gap-by-income"><span class="header-section-number">4.1</span> Affordable-and-available rental gap by income</a></li>
+  <li><a href="#competition-for-limited-supply-of-affordable-rentals" id="toc-competition-for-limited-supply-of-affordable-rentals" class="nav-link" data-scroll-target="#competition-for-limited-supply-of-affordable-rentals"><span class="header-section-number">4.2</span> Competition for limited supply of affordable rentals</a></li>
+  <li><a href="#starter-homes-out-of-reach-for-most-renters" id="toc-starter-homes-out-of-reach-for-most-renters" class="nav-link" data-scroll-target="#starter-homes-out-of-reach-for-most-renters"><span class="header-section-number">4.3</span> Starter homes out of reach for most renters</a></li>
+  <li><a href="#what-renters-need-to-buy-their-first-home" id="toc-what-renters-need-to-buy-their-first-home" class="nav-link" data-scroll-target="#what-renters-need-to-buy-their-first-home"><span class="header-section-number">4.4</span> What renters need to buy their first home</a></li>
   </ul>
 </nav>
     </div>
@@ -296,10 +299,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- Purpose: the affordable-and-available rental gap by AMI (PUMS, NLIHC-style), the
      starter-home gap (renters who could buy), and minimum income for homeownership by
      price/size/type vs household income profiles. Theme-based takeaway H2s; static ggplot
-     only; "Since 2022" callout per section; fig-alt throughout. Built in Task 10. -->
+     only; "Since 2022" callout per section; fig-alt throughout.
+     Sections 3-4 built from MLS + FRED + ACS + CHAS + HUD income limits (r/gaps.R,
+     r/affordcalc.R, r/hud_ami.R) -- a preliminary draft ahead of the PUMS pipeline
+     (Section 5 row 15), which still gates sections 1-2. -->
 <p>This section quantifies the region’s housing shortfall three ways: rental units affordable and available by income band, renters positioned to become owners, and the income required to buy at today’s prices.</p>
-<section id="how-large-is-the-affordable-and-available-rental-gap-by-income-band" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="how-large-is-the-affordable-and-available-rental-gap-by-income-band"><span class="header-section-number">4.1</span> How large is the affordable-and-available rental gap by income band?</h2>
+<section id="affordable-and-available-rental-gap-by-income" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="affordable-and-available-rental-gap-by-income"><span class="header-section-number">4.1</span> Affordable-and-available rental gap by income</h2>
 <div class="callout callout-style-default callout-note callout-titled" title="To be added">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -314,8 +320,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="where-along-the-income-spectrum-do-renters-compete-for-the-same-units" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="where-along-the-income-spectrum-do-renters-compete-for-the-same-units"><span class="header-section-number">4.2</span> Where along the income spectrum do renters compete for the same units?</h2>
+<section id="competition-for-limited-supply-of-affordable-rentals" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="competition-for-limited-supply-of-affordable-rentals"><span class="header-section-number">4.2</span> Competition for limited supply of affordable rentals</h2>
 <div class="callout callout-style-default callout-note callout-titled" title="To be added">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -330,53 +336,168 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="how-many-renter-households-could-afford-to-buy-a-starter-home" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="how-many-renter-households-could-afford-to-buy-a-starter-home"><span class="header-section-number">4.3</span> How many renter households could afford to buy a starter home?</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="To be added">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="starter-homes-out-of-reach-for-most-renters" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="starter-homes-out-of-reach-for-most-renters"><span class="header-section-number">4.3</span> Starter homes out of reach for most renters</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-starter-gap" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Column chart of renter households in the four primary localities by HUD AMI band, from HUD CHAS 2018-2022 data. Households in the 0-30, 30-50, and 50-80 percent AMI bands are shaded red, marking incomes below what buying the region's entry-level home requires. The 80-100 percent AMI band is shaded orange, since the entry-level threshold falls inside that band. The 100 percent and above band is shaded green. Band sizes are roughly 30,500, 24,300, 33,200, 16,700, and 35,000 households.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-starter-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="gaps_files/figure-html/fig-starter-gap-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Column chart of renter households in the four primary localities by HUD AMI band, from HUD CHAS 2018-2022 data. Households in the 0-30, 30-50, and 50-80 percent AMI bands are shaded red, marking incomes below what buying the region's entry-level home requires. The 80-100 percent AMI band is shaded orange, since the entry-level threshold falls inside that band. The 100 percent and above band is shaded green. Band sizes are roughly 30,500, 24,300, 33,200, 16,700, and 35,000 households.">
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>To be added
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-starter-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Most renter households fall short of the income a starter home now requires
+</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The starter-home gap: renter households whose income supports a mortgage on an entry-level home (payment at or below 28% of monthly income) against the supply of entry-level for-sale units. Sources: Census microdata income distribution, MLS entry-level inventory, and current mortgage rates.</p>
 </div>
-</div>
+<p><em>Below the entry-level threshold: household income under 80 percent of the region’s AMI (the 0-30, 30-50, and 50-80 percent bands) — too low to reach the price a starter home requires. Straddles the threshold: the 80-100 percent AMI band, which contains the actual entry-level income threshold (about 88 percent of AMI) — some households in this band clear it, others don’t. At or above the threshold: the 100 percent and higher AMI band, which fully clears it.</em></p>
+<ul>
+<li><strong>Only about 33% of the region’s 139,683 renter households — roughly 45,408 — had income at or above the $99,400 needed to buy the region’s entry-level home over the past 12 months.</strong></li>
+<li>That leaves roughly 94,275 renter households priced out of even the least expensive quarter of homes sold regionally, concentrated in the 30,494 households below 30 percent AMI and 24,319 more in the 30-50 percent band.</li>
+<li>The entry-level threshold (88 percent of the region’s 4-person area median income) falls inside the 80-100 percent AMI band, so even moderate-income renter households only partially clear it.</li>
+</ul>
 </section>
-<section id="what-income-does-homeownership-require-by-price-point-unit-size-and-type" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="what-income-does-homeownership-require-by-price-point-unit-size-and-type"><span class="header-section-number">4.4</span> What income does homeownership require by price point, unit size, and type?</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="To be added">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="what-renters-need-to-buy-their-first-home" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="what-renters-need-to-buy-their-first-home"><span class="header-section-number">4.4</span> What renters need to buy their first home</h2>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div id="fig-min-income" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Column chart showing the share of four-primary-locality households with income at or above what's needed to buy the region's entry-level, typical, and upper-quartile home, using trailing-12-month MLS sale prices and the current 30-year mortgage rate. Entry-level (25th percentile, $335,000) requires about $99,000 and 45 percent of households qualify. Typical (median, $420,000) requires about $123,000 and 35 percent qualify. Upper quartile ($560,000) requires about $162,000 and 23 percent qualify.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-min-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="gaps_files/figure-html/fig-min-income-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="Column chart showing the share of four-primary-locality households with income at or above what's needed to buy the region's entry-level, typical, and upper-quartile home, using trailing-12-month MLS sale prices and the current 30-year mortgage rate. Entry-level (25th percentile, $335,000) requires about $99,000 and 45 percent of households qualify. Typical (median, $420,000) requires about $123,000 and 35 percent qualify. Upper quartile ($560,000) requires about $162,000 and 23 percent qualify.">
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>To be added
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A minimum-income table (or heat-style chart) by representative price point, unit size, and structure type — down-payment, rate, tax, and insurance assumptions documented in <a href="data-notes.html" class="quarto-xref"><span>Appendix A</span></a> — set against the region’s household-income distribution to show how many households can afford each segment. Sources: Census microdata and Freddie Mac mortgage rates.</p>
-</div>
-</div>
-</section>
-<section id="how-has-the-housing-gap-changed-since-2022" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="how-has-the-housing-gap-changed-since-2022"><span class="header-section-number">4.5</span> How has the housing gap changed since 2022?</h2>
-<div class="callout callout-style-default callout-note callout-titled" title="To be added">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>To be added
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-min-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Even entry-level homes now require six-figure household income across the board
+</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The per-section “Since 2022” comparison: this cycle’s gap counts against the 2022 Framework’s published gap figures, with the vintage-shift caveat stated alongside. Deltas are narrative, never a validation gate.</p>
+</div>
+<div class="cell" data-layout-align="left">
+<div id="tbl-min-income" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-layout-align="left">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-min-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: Minimum income needed to buy, by structure type and price point
+</figcaption>
+<div aria-describedby="tbl-min-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="table table-condensed table-striped cell caption-top table-sm small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Structure type</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Price point</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Sale price</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Income needed</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Share of households qualifying</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">All types</td>
+<td style="text-align: left;">Entry-level (25th pct.)</td>
+<td style="text-align: left;">$335,000</td>
+<td style="text-align: left;">$99,400</td>
+<td style="text-align: left;">45%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All types</td>
+<td style="text-align: left;">Typical (median)</td>
+<td style="text-align: left;">$420,000</td>
+<td style="text-align: left;">$123,200</td>
+<td style="text-align: left;">35%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">All types</td>
+<td style="text-align: left;">Upper (75th pct.)</td>
+<td style="text-align: left;">$560,000</td>
+<td style="text-align: left;">$162,500</td>
+<td style="text-align: left;">23%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Single Family</td>
+<td style="text-align: left;">Entry-level (25th pct.)</td>
+<td style="text-align: left;">$345,000</td>
+<td style="text-align: left;">$102,100</td>
+<td style="text-align: left;">44%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Single Family</td>
+<td style="text-align: left;">Typical (median)</td>
+<td style="text-align: left;">$439,000</td>
+<td style="text-align: left;">$128,500</td>
+<td style="text-align: left;">33%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Single Family</td>
+<td style="text-align: left;">Upper (75th pct.)</td>
+<td style="text-align: left;">$599,000</td>
+<td style="text-align: left;">$173,400</td>
+<td style="text-align: left;">21%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Townhouse</td>
+<td style="text-align: left;">Entry-level (25th pct.)</td>
+<td style="text-align: left;">$325,000</td>
+<td style="text-align: left;">$96,500</td>
+<td style="text-align: left;">46%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Townhouse</td>
+<td style="text-align: left;">Typical (median)</td>
+<td style="text-align: left;">$385,000</td>
+<td style="text-align: left;">$113,400</td>
+<td style="text-align: left;">39%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Townhouse</td>
+<td style="text-align: left;">Upper (75th pct.)</td>
+<td style="text-align: left;">$457,600</td>
+<td style="text-align: left;">$133,700</td>
+<td style="text-align: left;">32%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Condominium</td>
+<td style="text-align: left;">Entry-level (25th pct.)</td>
+<td style="text-align: left;">$280,000</td>
+<td style="text-align: left;">$83,900</td>
+<td style="text-align: left;">53%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Condominium</td>
+<td style="text-align: left;">Typical (median)</td>
+<td style="text-align: left;">$350,000</td>
+<td style="text-align: left;">$103,600</td>
+<td style="text-align: left;">43%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Condominium</td>
+<td style="text-align: left;">Upper (75th pct.)</td>
+<td style="text-align: left;">$430,000</td>
+<td style="text-align: left;">$126,000</td>
+<td style="text-align: left;">34%</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
+</figure>
+</div>
+</div>
+<ul>
+<li><strong>Buying the region’s median-priced home ($420,000) now takes about $123,200 in household income — only 35% of area households clear that bar.</strong></li>
+<li>Even the entry-level quartile ($335,000) needs about $99,400, out of reach for more than half of the region’s households.</li>
+<li>Condominiums are the most attainable entry point by structure type; single-family entry-level homes need the most income among the three types at this price tier.</li>
+<li><strong>Assumptions (preliminary):</strong> 10 percent down payment, 30-year fixed term at the current PMMS rate, 1.0 percent of value in annual property tax, and $1,500/year insurance. Not locality-specific. Actual qualifying income will vary with real per-locality tax rates, buyer down payments, and loan products.</li>
+</ul>
+<!-- ## Change in housing gap since 2022 -->
+<!-- ::: {.callout-note} -->
+<!-- ## Since 2022 -->
+<!-- The 2022 Framework estimated the region's most common occupations outside business and financial operations could afford homes priced below about $140,000 (2021 wages, Fig 9.8). -->
+<!-- Today's entry-level home price is $335,000 — more than double — while the income needed to buy it, $99,400, sits well above what most of those same occupations pay. -->
+<!-- The 2022 Framework also put the region's affordable-and-available rental gap at 38,778 units at 80 percent AMI and 24,000 units at 30 percent AMI. A comparable current-cycle figure awaits the PUMS-based rebuild of sections 1-2 above; it is not estimated here. -->
+<!-- ::: -->
 
 
 </section>

@@ -55,11 +55,11 @@ mls_latest <- sale |> slice_max(month, n = 1) |> pull(price)
 mls_first  <- sale |> slice_min(month, n = 1) |> pull(price)
 ```
 
-## Homeownership rates rose almost everywhere since 2019
+## Homeownership rates remain stable
 
 ```{r}
 #| label: fig-owner-share
-#| fig-cap: "Homeownership rates rose almost everywhere since 2019"
+#| fig-cap: "No significant changes to homeownership rates"
 #| fig-alt: "Dumbbell chart comparing the owner-occupied share of households in 2019 and 2024 for the four primary Richmond region localities and Virginia. Hanover dipped slightly, the only primary locality where the owner share fell since 2019. Richmond city is lowest at about 44 percent, the only majority-renter locality."
 
 own <- tenure |>
@@ -83,9 +83,9 @@ ggplot(own, aes(x = share, y = locality)) +
   scale_color_manual(values = c("2019" = lblue, "2024" = dblue), guide = "none") +
   scale_x_continuous(labels = label_percent(accuracy = 1)) +
   labs(
-    title = "Homeownership rates rose almost everywhere since 2019",
+    title = "No significant changes to homeownership rates",
     subtitle = paste0(
-      "Owner-occupied share of households, four primary localities and Virginia<br>",
+      "Owner-occupied share of households, ",
       "<span style='color:", lblue, "'>**2019**</span> vs ",
       "<span style='color:", dblue, "'>**2024**</span>"
     ),
@@ -95,7 +95,7 @@ ggplot(own, aes(x = share, y = locality)) +
   theme_pha()
 ```
 
-- **The region as a whole is `r label_percent(accuracy = 0.1)(owner_share_24)` owner-occupied in 2024, just above the statewide rate of 67.3 percent.**
+- **The region as a whole is `r label_percent(accuracy = 0.1)(owner_share_24)` owner-occupied in 2024, just below the statewide rate of 67.3 percent.**
 - Hanover is the only primary locality where the owner share fell since 2019, dipping slightly from 82.5 to 82.1 percent.
 - The four core localities barely moved since 2019 — Richmond city (43.5 percent) remains the region's only majority-renter jurisdiction, and Hanover (82.1 percent) the highest among them.
 
@@ -112,16 +112,14 @@ race_plot <- race_rate_24 |>
 
 ggplot(race_plot, aes(x = owner_rate, y = race_group)) +
   geom_col(fill = dblue, width = 0.7) +
-  geom_vline(xintercept = region_rate_24, color = "grey40", linetype = "22") +
+  #geom_vline(xintercept = region_rate_24, color = "grey40", linetype = "22") +
   geom_text(aes(label = label_percent(accuracy = 0.1)(owner_rate)),
             hjust = -0.15, size = 3.2, color = "grey20") +
   scale_x_continuous(labels = label_percent(accuracy = 1),
                      expand = expansion(mult = c(0, 0.12))) +
   labs(
     title = "Racial homeownership gap remains high across region",
-    subtitle = paste0(
-      "Owner-occupied share of households by race and ethnicity of householder", label_percent(accuracy = 0.1)(region_rate_24)
-    ),
+    subtitle = "Owner-occupied share of households by race and ethnicity of householder", 
     caption = acs_cap("B25003B-I"),
     x = NULL, y = NULL
   ) +
@@ -133,11 +131,10 @@ ggplot(race_plot, aes(x = owner_rate, y = race_group)) +
 - Two groups sit above the region-wide rate of `r label_percent(accuracy = 0.1)(region_rate_24)`: White, non-Hispanic and Asian (`r label_percent(accuracy = 0.1)(race_rate("Asian"))`).
 - Another race is the lowest group at `r label_percent(accuracy = 0.1)(race_rate("Another race"))`, and multiracial households sit between the two poles at `r label_percent(accuracy = 0.1)(race_rate("Multiracial"))`.
 - Black and Hispanic or Latino households are the region's two largest groups after White, non-Hispanic — `r label_comma()(race_rate_24$total_hh[race_rate_24$race_group == "Black"])` and `r label_comma()(race_rate_24$total_hh[race_rate_24$race_group == "Hispanic or Latino"])` households — so the two lowest large-group rates cover roughly a third of all households in the four localities.
-- Every group is High reliability at this grain, the worst cell at a CV of 6.2. The six groups overlap: only the White group excludes Hispanic or Latino householders, so a Hispanic Black household is counted in both Black and Hispanic or Latino. See @sec-data-notes.
 
 ```{r}
 #| label: fig-owner-race-local
-#| fig-cap: "The ownership gap by race holds in all four primary localities"
+#| fig-cap: "The ownership gap by race holds in each locality"
 #| fig-alt: "Four small horizontal bar charts, one per primary locality, of the 2024 homeownership rate by race and ethnicity of householder. White, non-Hispanic households own at 84.2 percent in Hanover, 83.9 in Chesterfield, 74.0 in Henrico, and 52.6 in Richmond city. Black households trail White, non-Hispanic households by 23.2 points in Henrico, 20.6 in Chesterfield, 16.4 in Richmond city, and 15.3 in Hanover. Richmond city posts the lowest rate for every group, from 52.6 percent for White, non-Hispanic households down to 20.3 percent for another race. Two Hanover cells, Asian and another race, are suppressed for low reliability."
 
 # Two of the 24 locality cells fail CV-30, both in Hanover (Asian renter count
@@ -159,7 +156,7 @@ ggplot(race_local, aes(x = owner_rate, y = fct_wrap(race_group, 20))) +
   scale_x_continuous(labels = label_percent(accuracy = 1),
                      expand = expansion(mult = c(0, 0.18))) +
   labs(
-    title = "The ownership gap by race holds in all four primary localities",
+    title = "The ownership gap by race holds in each locality",
     subtitle = paste0(
       "Owner-occupied share of households by race and ethnicity of householder"
     ),
@@ -176,7 +173,7 @@ ggplot(race_local, aes(x = owner_rate, y = fct_wrap(race_group, 20))) +
 - Hispanic or Latino households own at 65.4 percent in Hanover and 59.2 in Chesterfield, but 29.9 percent in Richmond city.
 - Rates for two groups in Hanover (Asian and Another race) have low data reliability due to limited number of households
 
-## Home prices are up 65 percent since the start of 2020
+## Home prices surged, then started to cool
 
 ```{r}
 #| label: fig-mls-price
@@ -211,12 +208,12 @@ ggplot(sale_recent, aes(x = month)) +
   add_zero_line("y")
 ```
 
-- **The median sale price reached `r label_dollar()(mls_latest_r$price)` in July 2026, up `r label_percent(accuracy = 1)(mls_latest_r$price / mls_2020$price - 1)` from `r label_dollar()(mls_2020$price)` in January 2020 (nominal dollars).**
+- **The median sale price reached `r label_dollar()(mls_latest_r$price)` in July 2026, up `r label_percent(accuracy = 1)(mls_latest_r$price / mls_2020$price - 1)` from `r label_dollar()(mls_2020$price)` in January 2020.**
 - Prices kept climbing after 2022: the 12-month average is up `r label_percent(accuracy = 1)(mls_latest_r$roll12 / since_2022$roll12 - 1)` since January 2022, from about `r label_dollar()(round(since_2022$roll12))` to `r label_dollar()(round(mls_latest_r$roll12))`.
 - The steepest appreciation came in 2020-2022, when the 12-month average rose from roughly `r label_dollar()(round(mls_2020$roll12))` to `r label_dollar()(round(since_2022$roll12))` — growth has continued since, but at roughly half that pace.
 - Monthly medians are seasonal and noisy; the 12-month average, shown here since 2020, is the better read on trend.
 
-## Home values are up at least a third in every locality since 2019
+## Home values on the rise to reflect market
 
 ```{r}
 #| label: fig-home-value
@@ -237,7 +234,7 @@ ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
   labs(
     title = "Home values are up at least a third in every locality since 2019",
     subtitle = paste0(
-      "Median value of owner-occupied homes, four primary localities and Virginia<br>",
+      "Median value of owner-occupied homes, four primary localities and Virginia, ",
       "<span style='color:", lblue, "'>**2019**</span> vs ",
       "<span style='color:", dblue, "'>**2024**</span>, nominal dollars"
     ),
@@ -253,11 +250,11 @@ ggplot(val, aes(x = estimate, y = locality, fill = factor(year))) +
 - Hanover is the only primary locality above the statewide median home value of $383,700; Chesterfield and Henrico sit between $350,000 and the statewide median.
 - Medians are locality-level ACS estimates and do not sum or average to a regional figure; all plotted values are High reliability.
 
-## Multifamily permits have outpaced single-family in three of the last four years
+## Multifamily permits beginning to outpace single-family
 
 ```{r}
 #| label: fig-bps-permits
-#| fig-cap: "Multifamily permits have outpaced single-family in three of the last four years"
+#| fig-cap: "New residential permits shifting away from single-family"
 #| fig-alt: "Overlapping line chart of annual building permits by structure type (single-family and multifamily) for the Richmond region, 2000 through 2025, with 2000-2019 shown in muted grey and 2020-2025 shown in color. Single-family permits fell from about 4,825 units in 2020 to 3,792 in 2025. Multifamily permits rose from about 2,770 units in 2020 to 4,677 in 2025, exceeding single-family in 2022, 2023, and 2025."
 
 bps_reg <- bps |>
@@ -278,7 +275,7 @@ ggplot(bps_reg, aes(x = year, y = units, group = structure)) +
   scale_color_manual(values = c("Single-family" = dblue, "Multifamily" = orange), guide = "none") +
   scale_y_continuous(labels = label_comma()) +
   labs(
-    title = "Multifamily permits have outpaced single-family in three of the last four years",
+    title = "New residential permits shifting away from single-family",
     subtitle = paste0(
       "Annual building permits, four primary localities<br>",
       "2000-2019 shown muted for context · ",
@@ -295,9 +292,8 @@ ggplot(bps_reg, aes(x = year, y = units, group = structure)) +
 - **Since 2020, multifamily permits are up `r label_percent(accuracy = 1)(mf_2025/mf_2020 - 1)`, from `r label_comma()(mf_2020)` to `r label_comma()(mf_2025)` units, while single-family permits fell `r label_percent(accuracy = 1)(1 - sf_2025/sf_2020)`, from `r label_comma()(sf_2020)` to `r label_comma()(sf_2025)`.**
 - 2022 was the first year in the 2000-2025 record that regional multifamily volume exceeded single-family (5,804 vs 3,946 units) — a pattern that repeated in 2023 and again in `r bps_latest_yr`.
 - Total regional permitting peaked in 2022 at 9,750 units, more than double the post-recession low of 2,186 in 2009, and has eased only modestly since.
-- The 2022 Framework's Fig 5.4 baseline for Chesterfield single-family permits — 545 in 2010, 2,202 in 2020 — matches this pull exactly; same metric, same years, no vintage shift.
 
-## Mortgage rates have more than doubled since their 2020-2021 low
+## Rising mortgage rates lock many buyers on the sidelines
 
 ```{r}
 #| label: fig-pmms-price
@@ -341,6 +337,6 @@ ggplot(rate_price, aes(x = month)) +
 - Higher rates and higher prices are compounding rather than offsetting — a fixed monthly housing budget buys much less home today than it did when rates sat near 3 percent.
 - The mortgage rate is Freddie Mac's national PMMS survey, not Richmond-specific; both series here are nominal, unadjusted for inflation.
 
-::: {.callout-note title="To be added"}
-**Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from the regional MLS.
-:::
+<!-- ::: {.callout-note title="To be added"} -->
+<!-- **Sales inventory and months of supply.** Active listings, new listings, and months-of-supply trends from the regional MLS. -->
+<!-- ::: -->

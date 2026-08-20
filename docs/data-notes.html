@@ -267,8 +267,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#pums-geography" id="toc-pums-geography" class="nav-link" data-scroll-target="#pums-geography">PUMS geography</a></li>
   </ul></li>
-  <li><a href="#estimate-reliability" id="toc-estimate-reliability" class="nav-link" data-scroll-target="#estimate-reliability"><span class="header-section-number">A.3</span> Estimate reliability</a></li>
-  <li><a href="#comparing-to-the-2022-framework" id="toc-comparing-to-the-2022-framework" class="nav-link" data-scroll-target="#comparing-to-the-2022-framework"><span class="header-section-number">A.4</span> Comparing to the 2022 Framework</a></li>
+  <li><a href="#estimate-reliability" id="toc-estimate-reliability" class="nav-link" data-scroll-target="#estimate-reliability"><span class="header-section-number">A.3</span> Estimate reliability</a>
+  <ul class="collapse">
+  <li><a href="#race-and-ethnicity-crosswalk" id="toc-race-and-ethnicity-crosswalk" class="nav-link" data-scroll-target="#race-and-ethnicity-crosswalk">Race and ethnicity crosswalk</a></li>
+  </ul></li>
+  <li><a href="#ownership-and-rental-affordability" id="toc-ownership-and-rental-affordability" class="nav-link" data-scroll-target="#ownership-and-rental-affordability"><span class="header-section-number">A.4</span> Ownership and rental affordability</a></li>
+  <li><a href="#comparing-to-the-2022-framework" id="toc-comparing-to-the-2022-framework" class="nav-link" data-scroll-target="#comparing-to-the-2022-framework"><span class="header-section-number">A.5</span> Comparing to the 2022 Framework</a></li>
   </ul>
 </nav>
     </div>
@@ -320,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
 <td>ACS 5-year estimates (anchor)</td>
 <td>2020–2024, trend tables back to ~2010</td>
 <td>tidycensus API</td>
-<td>Demographics, income, tenure, home value, gross rent, and cost burden loaded; remaining stock tables pending</td>
+<td>Demographics, income, tenure, homeownership by race and ethnicity, home value, gross rent, and cost burden loaded; remaining stock tables pending</td>
 </tr>
 <tr class="even">
 <td>ACS PUMS</td>
@@ -362,7 +366,7 @@ ul.task-list li input[type="checkbox"] {
 <td>HUD Income Limits</td>
 <td>FY2026</td>
 <td>huduser.gov download</td>
-<td>Raw file staged; processing pending</td>
+<td>Loaded — household-size income limits at 30/50/80% for the region’s HUD area, extended to 100/120% (<code>r/hud_ami.R</code>)</td>
 </tr>
 <tr class="odd">
 <td>BLS OEWS wages</td>
@@ -451,9 +455,73 @@ ul.task-list li input[type="checkbox"] {
 <li>Reliability treatment applies to every secondary-locality and Ashland ACS estimate in the report.</li>
 <li>Small PIT and eviction counts are reported as counts with a volatility caveat, never converted to rates.</li>
 </ul>
+<section id="race-and-ethnicity-crosswalk" class="level3">
+<h3 class="anchored" data-anchor-id="race-and-ethnicity-crosswalk">Race and ethnicity crosswalk</h3>
+<p>Homeownership by race and ethnicity comes from the nine letter-suffix versions of ACS Table B25003, each carrying the same total, owner-occupied, and renter-occupied structure as B25003 itself. All nine are pulled and exported at the published grain; the report collapses them to six groups.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Report group</th>
+<th>Source tables</th>
+<th>2024 households (region)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>White, non-Hispanic</td>
+<td>B25003H</td>
+<td>246,502</td>
+</tr>
+<tr class="even">
+<td>Black</td>
+<td>B25003B</td>
+<td>117,413</td>
+</tr>
+<tr class="odd">
+<td>Hispanic or Latino</td>
+<td>B25003I</td>
+<td>27,491</td>
+</tr>
+<tr class="even">
+<td>Multiracial</td>
+<td>B25003G</td>
+<td>24,300</td>
+</tr>
+<tr class="odd">
+<td>Asian</td>
+<td>B25003D</td>
+<td>17,305</td>
+</tr>
+<tr class="even">
+<td>Another race</td>
+<td>B25003C + B25003E + B25003F</td>
+<td>14,430</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Another race combines three published categories</strong> — American Indian and Alaska Native alone, Native Hawaiian and Other Pacific Islander alone, and some other race alone. Each is too small to report on its own: Native Hawaiian and Other Pacific Islander alone is under 200 households region-wide, with a CV above 40 at every grain and in every year. Combined counts add and their margins of error combine in quadrature.</li>
+<li><strong>B25003A (White alone) is not used.</strong> The report’s White group is B25003H, which excludes Hispanic or Latino householders. B25003A remains in the row-level export for anyone who needs it.</li>
+<li><strong>The six groups overlap, and do not sum to the household total.</strong> Only the White group excludes Hispanic or Latino householders, so a Hispanic Black household is counted in both Black and Hispanic or Latino. B25003 publishes no race-alone-not-Hispanic tables, so the overlap cannot be removed at this table’s grain. Rates by group are still valid; a sum across groups is not.</li>
+<li><strong>Regional figures pool the four primary localities,</strong> matching every other regional aggregate in this update. The nine published categories are also carried for each of the eight region localities and Virginia. There is no Ashland: at the town’s size nearly every group falls below the CV-30 threshold.</li>
+<li><strong>Years are 2010-2014, 2015-2019, and 2020-2024</strong> — the same non-overlapping windows used for overall tenure, so a rate by group can be read against the overall rate for the same period.</li>
+<li>Reliability is computed per geography, group, and year. Because an ownership rate rests on the owner and the renter count together, the export also carries a rate-level tier taking the worse of the two; the figures suppress on that, not on the single-cell tier.</li>
+</ul>
 </section>
-<section id="comparing-to-the-2022-framework" class="level2" data-number="A.4">
-<h2 data-number="A.4" class="anchored" data-anchor-id="comparing-to-the-2022-framework"><span class="header-section-number">A.4</span> Comparing to the 2022 Framework</h2>
+</section>
+<section id="ownership-and-rental-affordability" class="level2" data-number="A.4">
+<h2 data-number="A.4" class="anchored" data-anchor-id="ownership-and-rental-affordability"><span class="header-section-number">A.4</span> Ownership and rental affordability</h2>
+<p>The housing-gap chapter’s income-needed and maximum-affordable-price figures use a standard rule set, applied consistently through <code>r/affordcalc.R</code>.</p>
+<ul>
+<li><strong>Rental affordability:</strong> a household can afford a rent at or below 30 percent of its gross monthly income. Income needed for a given rent is <code>rent × 12 / 0.30</code>.</li>
+<li><strong>Ownership affordability:</strong> a household can afford a home priced so that the monthly principal, interest, tax, and insurance (PITI) payment is at or below 28 percent of its gross monthly income.</li>
+<li><strong>Ownership assumptions are provisional placeholders, pending PHA input:</strong> a 10 percent down payment, a 30-year fixed term at the current Freddie Mac PMMS rate, property tax at 1.0 percent of home value annually, and $1,500/year in homeowners insurance — one regional figure rather than a per-locality rate. Private mortgage insurance is not modeled. PHA review of these figures against local lending norms is expected to refine them.</li>
+<li><strong>AMI bands</strong> come from HUD’s FY2026 Section 8 Income Limits for the region’s single HUD area (“Richmond, VA HUD Metro FMR Area,” confirmed to cover all 8 <code>rr</code> counties identically rather than assumed). HUD publishes 30, 50, and 80 percent limits by household size; 100 and 120 percent are derived by applying the same household-size scaling factor embedded in the 50 percent limits to the published median family income (<code>r/hud_ami.R</code>). The gaps chapter’s price-point figures reference the 4-person limit as the headline “area median income,” the same convention HUD and NLIHC use for headline AMI reporting.</li>
+<li><strong>The starter-home cut in <code>gaps.qmd</code></strong> compares a current-dollar (FY2026) income threshold against CHAS 2018-2022 renter households grouped by relative-AMI band — a vintage mismatch (current income limits vs.&nbsp;a 2018-2022 area median) stated as a caveat in the chapter, not resolved, pending the PUMS-based rebuild.</li>
+</ul>
+</section>
+<section id="comparing-to-the-2022-framework" class="level2" data-number="A.5">
+<h2 data-number="A.5" class="anchored" data-anchor-id="comparing-to-the-2022-framework"><span class="header-section-number">A.5</span> Comparing to the 2022 Framework</h2>
 <p>Every section compares its findings to the 2022 Richmond Regional Housing Framework, but the two cycles rest on different survey windows.</p>
 <ul>
 <li>This update’s anchor is the 2020–2024 ACS 5-year; the 2022 Framework used the 2016–2020 ACS 5-year. Overlapping multi-year windows differ by construction, so some movement between the two reports is structural rather than real-world change.</li>

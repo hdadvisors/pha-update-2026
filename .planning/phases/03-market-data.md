@@ -34,7 +34,7 @@ None of the above is rebuilt or re-verified by this phase; sessions below build 
 
 ## Tasks
 
-Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task-4-s4a`, `task-4-s4b`, `task-4-s4c`, `task-4-s4d`.
+Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task-4-s4a`, `task-4-s4b`, `task-4-s4c`, `task-4-s4d`, `task-4-s4e`.
 
 | Session | Scripts / output | Model | Why this grouping |
 |---|---|---|---|
@@ -42,6 +42,7 @@ Phase 3 is Task 4 in the project's continuous numbering. Commit scopes are `task
 | 4B | `r/acs_stock.R` → `data/acs_stock.rds` | Sonnet | A mechanical multi-table ACS pull following the same trend-year and CV conventions as every prior Phase 2/3 ACS script |
 | 4C | `r/fmr.R` → `data/fmr.rds` | Sonnet | Processes two already-staged local xlsx files; no API call, no CV (administrative figures, not survey estimates) |
 | 4D | `r/lihtc.R` → `data/lihtc.rds`; `r/assistance.R` → `data/assistance.rds` | Sonnet | Mechanical read of the VH xlsx, region filter, join to NHPD, and consolidated count — no API, no CV |
+| 4E | `r/mls_stats.R` → `data/mls_stats.rds` | Sonnet | Mechanical summarize of the clean transaction file; no API, no CV |
 
 ### Session 4A: Racial and ethnic homeownership (B25003A–I)
 
@@ -80,6 +81,14 @@ Produce two output frames: a property-level frame (`assistance_properties.rds`) 
 **Rankings PDFs** (2023–2025) are reference documents, not machine-read. Before writing the session, scan each for Richmond-region projects; list any regional project names and unit counts in a comment block at the top of `r/lihtc.R` so the script notes which recent pipeline deals are captured by the VH listing but not yet in NHPD. The 2025 rankings may include deals with cycle year 2025 in the VH listing (only 1 row in the region at listing date); check and note the lag in `data-notes.qmd`.
 
 **Note in `data-notes.qmd`:** Add a caveat to the NHPD/LIHTC section noting that (1) the VH listing covers all properties with active Virginia Housing credits through 2025-02-13 but does not include properties whose credits have expired and been de-listed; (2) the 4 secondary localities have no LIHTC properties in this listing; (3) the 2023–2025 rankings identify pipeline projects that may not yet appear in NHPD but are in the VH listing if their credit agreement was executed by the listing date.
+
+### Session 4E: MLS transaction-level summary stats
+
+**`r/mls_stats.R`** reads `data/mls.rds` and produces a tidy locality × month × new_resale summary frame. Each row is one combination of month (floored to month start), county (10 levels: the 8 RR localities plus "PHA Primary" and "Richmond Region" aggregates), and new_resale ("All", "New", "Resale"). Computed columns: `n_sales`, `med_sales_price`, `med_price_per_sqft` (median of sales_price / sqft_total, NAs where sqft is missing), `med_dom`, `pct_under_7_dom` (share DOM ≤ 7, NAs excluded from denominator), `pct_cash` (share with cash sold_terms), and `pct_new` (share tagged New, populated only for new_resale == "All" rows; NA otherwise).
+
+The script must inspect `count(sold_terms, sort = TRUE)` before writing the cash-detection regex and document the actual values in a comment. Aggregate rows for "PHA Primary" (Richmond City, Henrico, Chesterfield, Hanover) and "Richmond Region" (all 8) are built by filtering to each set and grouping by month only, then labelled with `mutate(county = ...)`. The grid is completed with `tidyr::complete()` so sparse month/locality/new_resale cells appear as `n_sales = 0`, all stat columns NA — downstream charting should not gap on missing rows. Coverage: 2020-01 through 2026-06 (78 months).
+
+Validation: `n_distinct(month) == 78`, `n_distinct(county) == 10`, all `new_resale` values in the expected three, and `min(med_sales_price, na.rm = TRUE) > 50000`. Log the 2022 regional median sales price as a percentage-change baseline — do not gate on it.
 
 ## Verify
 
