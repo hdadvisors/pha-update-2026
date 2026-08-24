@@ -1,7 +1,7 @@
 project:
   type: book
-  execute-dir: project   # fhfh setting; scripts + chapters resolve paths from repo root
-  output-dir: docs        # GitHub Pages serves from docs/
+  execute-dir: project
+  output-dir: docs
 
 execute:
   freeze: auto
@@ -17,7 +17,7 @@ book:
   date: today
   date-format: long
   sidebar:
-    logo: "img/pha_logo.jpg"
+    logo: "img/pha-logo-horizontal.png"
     search: true
   chapters:
     - index.qmd
