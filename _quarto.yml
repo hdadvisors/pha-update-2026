@@ -9,7 +9,7 @@ execute:
 book:
   title: "Richmond Regional Housing Framework"
   subtitle: "2026 Data Update"
-  repo-url: https://github.com/hdadvisors/pha-update-2026
+  # repo-url: https://github.com/hdadvisors/pha-update-2026
   output-file: "rrhf-2026-data-update"
   author:
     - name: HDAdvisors
@@ -69,9 +69,23 @@ format:
     comments:
       hypothesis: true
     # Keep the live-from-the-start site out of search indexes until final (removed in Task 14).
+    # Sidebar subtitle: Quarto's book format has no native sidebar subtitle key, so this
+    # script inserts one under the title on every page. Keep the text in sync with
+    # book.subtitle above if that ever changes.
     include-in-header:
       text: |
         <meta name="robots" content="noindex, nofollow">
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var title = document.querySelector(".sidebar-title");
+          if (title) {
+            var subtitle = document.createElement("div");
+            subtitle.className = "sidebar-subtitle";
+            subtitle.textContent = "2026 Data Update";
+            title.insertAdjacentElement("afterend", subtitle);
+          }
+        });
+        </script>
 
 # PDF route (downloads: pdf + scrreprt, per rrh-framework) deferred to Task 14 — Assembly.
 # HTML-only here guarantees a clean skeleton render without a LaTeX/typst toolchain.

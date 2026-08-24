@@ -37,10 +37,10 @@ proj_2050_4loc <- wcoop |>
 cur_proj_pct <- proj_2050_4loc / pop_2020_4loc - 1
 ```
 
-::: {.callout-important}
+::: {.callout-note}
 ## Since 2022
 
-The 2022 Framework projected the four-locality region would reach
+The 2022 Data Update projected the primary region would reach
 **`r label_comma()(base_proj_2050)` residents by 2050**, growth of
 **+`r base_proj_pct`%** from 2020. The Weldon Cooper Center's updated 2025-release
 projections now put the 2050 total at **`r label_comma()(round(proj_2050_4loc))`**
@@ -284,10 +284,7 @@ ggplot(mhi, aes(estimate, locality)) +
 ::: {.callout-note}
 ## Data caveats
 
-Population estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be
-revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked
-to the 2020 census. ACS income medians are 5-year averages in each vintage's own
-survey-year dollars — comparisons across vintages are nominal, not inflation-adjusted.
-The 2022 Framework baseline used 2016-2020 ACS and the prior Weldon Cooper release, so
-"Since 2022" comparisons reflect both real change and vintage revisions.
+- Population estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked to the 2020 census.
+- ACS income medians are 5-year averages in each vintage's own survey-year dollars. Comparisons across vintages are nominal, not inflation-adjusted.
+- The 2022 Data Update baseline used 2016-2020 ACS and the prior Weldon Cooper release, so "Since 2022" comparisons reflect both real change and vintage revisions.
 :::

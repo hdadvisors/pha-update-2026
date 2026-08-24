@@ -3,5 +3,15 @@
 // Fonts 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
 
-// Fonts 
+// Fonts
 $body-color: #383c3d;
+
+/*-- scss:rules --*/
+
+.sidebar-subtitle {
+  padding: 0em;
+  margin-top: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #6c757d;
+}

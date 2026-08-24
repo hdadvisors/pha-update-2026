@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cb6652906b203ffd9788d5b3a5f7dbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aeddc29676b851ba24e8d04ba852dc56.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +80,17 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <meta name="robots" content="noindex, nofollow">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var title = document.querySelector(".sidebar-title");
+  if (title) {
+    var subtitle = document.createElement("div");
+    subtitle.className = "sidebar-subtitle";
+    subtitle.textContent = "2026 Data Update";
+    title.insertAdjacentElement("afterend", subtitle);
+  }
+});
+</script>
 
 
 </head>
@@ -113,9 +124,6 @@ ul.task-list li input[type="checkbox"] {
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Richmond Regional Housing Framework</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/hdadvisors/pha-update-2026" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -264,7 +272,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-this-update" id="toc-about-this-update" class="nav-link active" data-scroll-target="#about-this-update">About this update</a></li>
+  <li><a href="#about-this-update" id="toc-about-this-update" class="nav-link active" data-scroll-target="#about-this-update">About this update</a>
+  <ul class="collapse">
+  <li><a href="#geographies-covered" id="toc-geographies-covered" class="nav-link" data-scroll-target="#geographies-covered">Geographies covered</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -319,7 +330,6 @@ Note
 </div>
 </div>
 <p>This is the 2026 Data Update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest available data and reorganizes the findings around the region’s most pressing housing themes.</p>
-<p><strong>The update covers the PlanRVA region</strong> — Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland. Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover, Henrico, and Richmond); the five secondary localities receive individual local summaries.</p>
 <p><strong>Five findings sections anchor the update:</strong></p>
 <ul>
 <li>Housing demand</li>
@@ -328,9 +338,30 @@ Note
 <li>Housing gap</li>
 <li>Cost burden and instability</li>
 </ul>
-<p>Each section leads with what changed since the 2022 Framework and organizes its findings by major takeaways.</p>
+<p>Each section leads with what changed since the <a href="https://hdadvisors.github.io/rrh-framework/">2022 Data Update</a> and organizes its findings by major takeaways.</p>
+<section id="geographies-covered" class="level2">
+<h2 class="anchored" data-anchor-id="geographies-covered">Geographies covered</h2>
+<p>This update includes all nine jurisdictions in the PlanRVA region.</p>
+<p><strong>Regional findings</strong></p>
+<p>Unless noted otherwise, the regional analysis only covers these four primary localities:</p>
+<ul>
+<li>Chesterfield County</li>
+<li>Hanover County</li>
+<li>Henrico County</li>
+<li>City of Richmond</li>
+</ul>
+<p><strong>Local summaries</strong></p>
+<p>Locality-level summaries are provided for the jurisdictions listed above, and for the five remaining secondary localities:</p>
+<ul>
+<li>Charles City County</li>
+<li>Goochland County</li>
+<li>New Kent County</li>
+<li>Powhatan County</li>
+<li>Town of Ashland</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

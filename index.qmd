@@ -15,11 +15,6 @@ HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the
 Framework with the latest available data and reorganizes the findings around the region's
 most pressing housing themes.
 
-**The update covers the PlanRVA region** — Charles City, Chesterfield, Goochland, Hanover,
-Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland.
-Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover,
-Henrico, and Richmond); the five secondary localities receive individual local summaries.
-
 **Five findings sections anchor the update:**
 
 - Housing demand
@@ -28,5 +23,28 @@ Henrico, and Richmond); the five secondary localities receive individual local s
 - Housing gap
 - Cost burden and instability
 
-Each section leads with what changed since the 2022 Framework and organizes its findings
+Each section leads with what changed since the [2022 Data Update](https://hdadvisors.github.io/rrh-framework/) and organizes its findings
 by major takeaways.
+
+## Geographies covered
+
+This update includes all nine jurisdictions in the PlanRVA region. 
+
+**Regional findings**
+
+Unless noted otherwise, the regional analysis only covers these four primary localities:
+
+- Chesterfield County
+- Hanover County
+- Henrico County
+- City of Richmond
+
+**Local summaries**
+
+Locality-level summaries are provided for the jurisdictions listed above, and for the five remaining secondary localities:
+
+- Charles City County
+- Goochland County
+- New Kent County
+- Powhatan County
+- Town of Ashland

@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "Richmond Regional Housing Framework",
     "section": "",
-    "text": "About this update\n\n\n\n\n\n\nNote\n\n\n\nThis is a preliminary working draft for PHA review. Figures and findings are subject to revision as the analysis develops, and the site is not yet indexed for search. Reviewers can comment inline using Hypothesis.\n\n\nThis is the 2026 Data Update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest available data and reorganizes the findings around the region’s most pressing housing themes.\nThe update covers the PlanRVA region — Charles City, Chesterfield, Goochland, Hanover, Henrico, New Kent, and Powhatan counties; the City of Richmond; and the Town of Ashland. Regional analysis centers on the four primary jurisdictions (Chesterfield, Hanover, Henrico, and Richmond); the five secondary localities receive individual local summaries.\nFive findings sections anchor the update:\n\nHousing demand\nHomeownership market\nRental market\nHousing gap\nCost burden and instability\n\nEach section leads with what changed since the 2022 Framework and organizes its findings by major takeaways.",
+    "text": "About this update\nThis is the 2026 Data Update to the Richmond Regional Housing Framework, produced by HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022 Framework with the latest available data and reorganizes the findings around the region’s most pressing housing themes.\nFive findings sections anchor the update:\nEach section leads with what changed since the 2022 Data Update and organizes its findings by major takeaways.",
+    "crumbs": [
+      "About this update"
+    ]
+  },
+  {
+    "objectID": "index.html#geographies-covered",
+    "href": "index.html#geographies-covered",
+    "title": "Richmond Regional Housing Framework",
+    "section": "Geographies covered",
+    "text": "Geographies covered\nThis update includes all nine jurisdictions in the PlanRVA region.\nRegional findings\nUnless noted otherwise, the regional analysis only covers these four primary localities:\n\nChesterfield County\nHanover County\nHenrico County\nCity of Richmond\n\nLocal summaries\nLocality-level summaries are provided for the jurisdictions listed above, and for the five remaining secondary localities:\n\nCharles City County\nGoochland County\nNew Kent County\nPowhatan County\nTown of Ashland",
     "crumbs": [
       "About this update"
     ]
@@ -69,7 +79,7 @@
     "href": "demand.html#median-household-incomes-continue-to-rise",
     "title": "1  Housing demand",
     "section": "1.5 Median household incomes continue to rise",
-    "text": "1.5 Median household incomes continue to rise\n\n\n\n\n\n\n\n\nFigure 1.5: Households in every locality have seen incomes grow\n\n\n\n\n\n\nEvery locality’s median household income rose at least 23 percent since 2019.\nRichmond city’s median rose 37 percent since 2019 — from $47,250 to $64,587 — yet it remains the lowest among the four primary localities.\nThe slowest income growth among the four primary localities since 2019 was in Chesterfield (+23%).\nGoing back to 2014, every primary locality’s median has risen at least 40% in nominal terms — a full decade of income growth that predates this recent acceleration.\nEach vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation.\n\n\n\n\n\n\n\nNoteData caveats\n\n\n\nPopulation estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked to the 2020 census. ACS income medians are 5-year averages in each vintage’s own survey-year dollars — comparisons across vintages are nominal, not inflation-adjusted. The 2022 Framework baseline used 2016-2020 ACS and the prior Weldon Cooper release, so “Since 2022” comparisons reflect both real change and vintage revisions.",
+    "text": "1.5 Median household incomes continue to rise\n\n\n\n\n\n\n\n\nFigure 1.5: Households in every locality have seen incomes grow\n\n\n\n\n\n\nEvery locality’s median household income rose at least 23 percent since 2019.\nRichmond city’s median rose 37 percent since 2019 — from $47,250 to $64,587 — yet it remains the lowest among the four primary localities.\nThe slowest income growth among the four primary localities since 2019 was in Chesterfield (+23%).\nGoing back to 2014, every primary locality’s median has risen at least 40% in nominal terms — a full decade of income growth that predates this recent acceleration.\nEach vintage is expressed in its own survey-year dollars, so these changes are nominal; part of the increase reflects inflation.\n\n\n\n\n\n\n\nNoteData caveats\n\n\n\n\nPopulation estimates for 2020-2025 are Census Bureau Vintage 2025 figures and will be revised in future vintages. Weldon Cooper projections are the 2025 release, benchmarked to the 2020 census.\nACS income medians are 5-year averages in each vintage’s own survey-year dollars. Comparisons across vintages are nominal, not inflation-adjusted.\nThe 2022 Data Update baseline used 2016-2020 ACS and the prior Weldon Cooper release, so “Since 2022” comparisons reflect both real change and vintage revisions.",
     "crumbs": [
       "Regional Findings",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Housing demand</span>"
