@@ -4,6 +4,20 @@ Append-only dev log, newest first. A correction is a new entry at the top saying
 
 Entries dated before 2026-08-26 reference a phase-gate/`.planning/` workflow (phase numbers, `PLAN.md` sections, Issue numbers, a "kickoff prompt" block) that this repo retired on 2026-08-26 in favor of [TODO.md](TODO.md) as the punch list. Read them as historical records of what happened, not as current process.
 
+## 2026-08-26 (fmr.R — HUD FY2026 FMR and SAFMR)
+
+**Built:** `r/fmr.R` — reads HUD FY2026 FMR and SAFMR from staged Excel files. Outputs: `data/fmr.rds` (40 rows: 8 localities × 5 bedroom sizes) and `data/safmr.rds` (590 rows: 118 ZIP codes × 5 bedroom sizes), each with a paired `data-out/` CSV. Validation passed.
+
+**Column-name surprises.** The FMR file's `fips` column is 10 characters (`SSCCC99999`), not a standard 5-digit county FIPS. `str_sub(fips, 1, 5) %in% rr` is the filter. The SAFMR file column names carry embedded newlines before `clean_names()` (e.g. `"SAFMR\n0BR"`); `clean_names()` resolves them cleanly to `safmr_0br` through `safmr_4br`. Both are documented in the script header.
+
+**Single area-wide FMR.** All 8 `rr` localities share one HUD area ("Richmond, VA HUD Metro FMR Area", code `METRO40060M40060`). FMR values are identical across all localities: 0BR $1,442 / 1BR $1,507 / **2BR $1,655** / 3BR $2,072 / 4BR $2,553. The locality-level frame repeats these rates across counties for downstream joins.
+
+**SAFMR coverage.** 118 ZIP codes in the Richmond HUD metro area. 2BR SAFMR ranges from $970 to $2,480 across those ZIPs. The SAFMR file carries no county FIPS — ZIP-to-county attribution requires a separate crosswalk, which was not built. The per-locality validation check in the task spec cannot be done from source data alone; the validation block checks for ≥ 30 ZIP codes instead and documents the limitation.
+
+**No 2022 baseline comparison.** The 2022 Framework (SOH deck) did not publish FMR or SAFMR values for the Richmond area in a form that maps to these outputs. No percentage-change comparison is possible.
+
+**Left open.** Chapters consuming FMR and SAFMR (rental.qmd affordability callouts, burden.qmd) are out of scope for this session.
+
 ## 2026-08-26 (acs_stock.R — housing stock pull)
 
 **Built:** `r/acs_stock.R` — ACS 5-year 2020-2024 housing stock snapshot for the 8 `rr` localities + Virginia + Ashland place (sumlev 160). Nine tables pulled: B25001 (total units), B25002/B25004 (occupancy/vacancy), B25024 (structure type), B25034/B25035/B25036 (year built), B25041/B25042 (bedrooms). Outputs: `data/acs_stock.rds` (800 rows) and `data-out/acs_stock.csv`.
