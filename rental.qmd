@@ -18,8 +18,9 @@ nhpd     <- read_rds("data/nhpd.rds")
 psh      <- read_rds("data/psh.rds")
 baseline <- read_rds("data/baseline_2022.rds")
 
-# Palette anchor for the PSH figure, added alongside the others below
-red <- pha_pal[4]
+# Palette anchor for the PSH figure, added alongside the others below. Named
+# lookup, not pha_pal[n] position, so the mapping survives a palette reorder.
+red <- unname(pha_color("Orange Deep"))
 
 # Short locality labels shared by both ACS frames
 short_name <- function(x) str_remove(x, " County, Virginia|, Virginia")
@@ -27,8 +28,10 @@ short_name <- function(x) str_remove(x, " County, Virginia|, Virginia")
 rents  <- rents  |> mutate(locality = short_name(name)) |> filter(geoid %in% c(pha, "51"))
 tenure <- tenure |> mutate(locality = short_name(name)) |> filter(geoid %in% c(pha, "51"))
 
-# Palette anchors — subtitle ggtext spans match fills below
-lblue <- pha_pal[2]; orange <- pha_pal[3]; dblue <- pha_pal[6]; green <- pha_pal[1]
+# Palette anchors — subtitle ggtext spans match fills below. Named lookups,
+# not pha_pal[n] position, so the mapping survives a palette reorder.
+lblue <- unname(pha_color("Blue")); orange <- unname(pha_color("Orange"))
+dblue <- unname(pha_color("Navy")); green <- unname(pha_color("Teal"))
 
 # Inline scalars for bullets and callouts
 rent_va_24   <- rents |> filter(geoid == "51", year == 2024) |> pull(estimate)
@@ -197,10 +200,10 @@ The 2022 Framework flagged a regional average asking rent of `r label_dollar()(b
 
 risk_order <- levels(nhpd$expire_window)
 risk_pal <- c(
-  "2026-2030"             = pha_pal[4],  # Red -- nearest-term risk
-  "2031-2035"              = pha_pal[3],  # Orange
-  "2036-2040"              = pha_pal[2],  # Light blue
-  "2041 and later"         = pha_pal[6],  # Dark blue
+  "2026-2030"             = unname(pha_color("Orange Deep")),  # nearest-term risk
+  "2031-2035"              = unname(pha_color("Orange")),
+  "2036-2040"              = unname(pha_color("Blue")),
+  "2041 and later"         = unname(pha_color("Navy")),
   "No listed expiration"   = "grey70"
 )
 

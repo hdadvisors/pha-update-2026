@@ -2027,7 +2027,7 @@
     },
     "hdatools": {
       "Package": "hdatools",
-      "Version": "0.5.0",
+      "Version": "0.6.0",
       "Source": "GitHub",
       "Type": "Package",
       "Title": "Tools and Themes for 'HDAdvisors' Projects",
@@ -2060,7 +2060,7 @@
         "withr"
       ],
       "Config/testthat/edition": "3",
-      "Config/roxygen2/version": "8.0.0",
+      "Config/roxygen2/version": "8.1.0",
       "Roxygen": "list(markdown = TRUE)",
       "Author": "Jonathan Knopf [cre], Kyle Walker [aut]",
       "Maintainer": "Jonathan Knopf <jonathan@hdadvisors.net>",
@@ -2068,8 +2068,8 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "hdadvisors",
       "RemoteRepo": "hdatools",
-      "RemoteRef": "main",
-      "RemoteSha": "954940ceb9271efe1708e02cfa612c7a16faadba"
+      "RemoteRef": "v0.6.0",
+      "RemoteSha": "b79aa96571b6eabd9535c809ec37a656ac859d4c"
     },
     "here": {
       "Package": "here",

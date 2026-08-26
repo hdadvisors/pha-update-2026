@@ -17,7 +17,9 @@ income_table  <- read_rds("data/gaps_income_table.rds")
 starter       <- read_rds("data/gaps_starter.rds")
 baseline      <- read_rds("data/baseline_2022.rds")
 
-green <- pha_pal[1]; orange <- pha_pal[3]; red <- pha_pal[4]; dblue <- pha_pal[6]
+# Named lookups, not pha_pal[n] position, so the mapping survives a palette reorder.
+green <- unname(pha_color("Teal")); orange <- unname(pha_color("Orange"))
+red <- unname(pha_color("Orange Deep")); dblue <- unname(pha_color("Navy"))
 
 entry_all <- income_table |> filter(structure_type == "All types", price_tier == "Entry-level (25th pct.)")
 median_all <- income_table |> filter(structure_type == "All types", price_tier == "Typical (median)")
@@ -49,7 +51,7 @@ A table of renter households versus affordable units versus affordable-and-avail
 ```{r}
 #| label: fig-starter-gap
 #| fig-cap: "Most renter households fall short of the income a starter home now requires"
-#| fig-alt: "Column chart of renter households in the four primary localities by HUD AMI band, from HUD CHAS 2018-2022 data. Households in the 0-30, 30-50, and 50-80 percent AMI bands are shaded red, marking incomes below what buying the region's entry-level home requires. The 80-100 percent AMI band is shaded orange, since the entry-level threshold falls inside that band. The 100 percent and above band is shaded green. Band sizes are roughly 30,500, 24,300, 33,200, 16,700, and 35,000 households."
+#| fig-alt: "Column chart of renter households in the four primary localities by HUD AMI band, from HUD CHAS 2018-2022 data. Households in the 0-30, 30-50, and 50-80 percent AMI bands are shaded dark orange, marking incomes below what buying the region's entry-level home requires. The 80-100 percent AMI band is shaded orange, since the entry-level threshold falls inside that band. The 100 percent and above band is shaded teal. Band sizes are roughly 30,500, 24,300, 33,200, 16,700, and 35,000 households."
 
 bands_plot <- bands |>
   mutate(status = case_when(

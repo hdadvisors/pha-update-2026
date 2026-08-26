@@ -17,8 +17,10 @@ mls         <- read_rds("data/mls_monthly.rds")
 bps         <- read_rds("data/bps.rds")
 fred        <- read_rds("data/fred.rds")
 
-# Palette anchors — match ggtext subtitle spans to point/line colors
-lblue <- pha_pal[2]; dblue <- pha_pal[6]; green <- pha_pal[1]; orange <- pha_pal[3]
+# Palette anchors — match ggtext subtitle spans to point/line colors. Named
+# lookups, not pha_pal[n] position, so the mapping survives a palette reorder.
+lblue <- unname(pha_color("Blue")); dblue <- unname(pha_color("Navy"))
+green <- unname(pha_color("Teal")); orange <- unname(pha_color("Orange"))
 
 clean_name <- function(x) str_remove(x, " County, Virginia| city, Virginia|, Virginia")
 

@@ -25,17 +25,21 @@ library(ggtext)
 
 # ---- Color palettes -------------------------------------------------------
 
-# PHA brand hexes, read from hdatools rather than re-typed. Order is unchanged: 1 Green,
-# 2 Light blue, 3 Orange, 4 Red, 5 Purple, 6 Dark blue.
-#
-# pha_colors is a named vector; unname() it here so cb_pal below can name its own keys from
-# these values without concatenating the two name sets.
+# PHA brand hexes, read from hdatools rather than re-typed. pha_pal is a bare,
+# unnamed vector -- safe only where color identity carries no meaning (e.g.
+# assigning N distinct locality lines with no inherent order). Anywhere a chart
+# depends on a *specific* hue (severity, before/after pairs, a color named in
+# fig-alt text), look it up by name with pha_color() instead: position in
+# pha_colors is not stable across hdatools releases (0.6.0 reordered it under
+# the PHA rebrand, silently breaking every pha_pal[n] semantic reference).
 pha_pal <- unname(pha_colors)
 
 # Cost-burden fill scale (severe / cost-burdened / not), used across burden charts.
+# Single warm hue family scaled by severity: Cost-burdened uses Orange, Severely
+# cost-burdened the darker Orange Deep tint.
 cb_pal <- c(
-  "Severely cost-burdened" = pha_pal[4], # Red
-  "Cost-burdened" = pha_pal[3], # Orange
+  "Severely cost-burdened" = unname(pha_color("Orange Deep")),
+  "Cost-burdened" = unname(pha_color("Orange")),
   "Not cost-burdened" = "grey80"
 )
 

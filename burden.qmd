@@ -131,8 +131,9 @@ vdoe_hanover_2025 <- vdoe_raw |> filter(locality == "Hanover", school_year == "2
 base_student_chg <- baseline |> filter(metric == "student_homelessness_pct_chg") |> pull(value)
 
 # Shared locality color scale, used by fig-severe-trend and the three trend charts below.
-loc_pal <- c("Richmond city" = pha_pal[4], "Chesterfield" = pha_pal[6],
-             "Henrico" = pha_pal[2], "Hanover" = pha_pal[1])
+# Named lookups, not pha_pal[n] position, so the mapping survives a palette reorder.
+loc_pal <- c("Richmond city" = unname(pha_color("Orange Deep")), "Chesterfield" = unname(pha_color("Navy")),
+             "Henrico" = unname(pha_color("Blue")), "Hanover" = unname(pha_color("Teal")))
 ```
 
 ## Renter cost burden is climbing again since 2019
@@ -357,7 +358,7 @@ The 2022 Framework reported Richmond's average annual filings down `r abs(base_e
 #| fig-cap: "Homelessness eased from its pandemic-era peak but remains above 2019 levels"
 #| fig-alt: "Stacked bar chart of sheltered and unsheltered persons counted in the Greater Richmond Continuum of Care's annual point-in-time count, 2020 through 2025. The total rises sharply from 546 in 2020 to a peak of 834 in 2021, then declines to 659 by 2025. Unsheltered persons trend upward across the period even as the sheltered total falls back."
 
-pit_pal <- c("Sheltered" = pha_pal[2], "Unsheltered" = pha_pal[4])
+pit_pal <- c("Sheltered" = unname(pha_color("Blue")), "Unsheltered" = unname(pha_color("Orange Deep")))
 
 pit_plot <- pit_raw |>
   pivot_longer(c(sheltered, unsheltered), names_to = "status", values_to = "persons") |>
@@ -371,8 +372,8 @@ ggplot(pit_plot, aes(x = factor(year), y = persons, fill = status)) +
     title = "Homelessness eased from its pandemic-era peak<br>but remains above 2019 levels",
     subtitle = paste0(
       "Point-in-time count of persons experiencing homelessness, Greater Richmond CoC<br>",
-      "<span style='color:", pha_pal[2], "'>**Sheltered**</span> and ",
-      "<span style='color:", pha_pal[4], "'>**unsheltered**</span>"
+      "<span style='color:", pit_pal[["Sheltered"]], "'>**Sheltered**</span> and ",
+      "<span style='color:", pit_pal[["Unsheltered"]], "'>**unsheltered**</span>"
     ),
     caption = pit_cap(),
     x = NULL, y = NULL

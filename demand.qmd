@@ -17,8 +17,10 @@ demog     <- read_rds("data/acs_demographics.rds")
 income    <- read_rds("data/acs_income.rds")
 baseline  <- read_rds("data/baseline_2022.rds")
 
-# Palette anchors — match ggtext subtitle spans to fills
-green <- pha_pal[1]; lblue <- pha_pal[2]; orange <- pha_pal[3]; dblue <- pha_pal[6]
+# Palette anchors — match ggtext subtitle spans to fills. Named lookups, not
+# pha_pal[n] position, so the mapping survives a palette reorder.
+green <- unname(pha_color("Teal")); lblue <- unname(pha_color("Blue"))
+orange <- unname(pha_color("Orange")); dblue <- unname(pha_color("Navy"))
 
 # Inline scalars — Since-2022 callout (baseline projections cover the 4-locality region)
 pha4 <- unname(pha)
@@ -55,7 +57,7 @@ the Framework was published.
 ```{r}
 #| label: fig-pop-trend
 #| fig-cap: "Over 50,000 new residents since the 2020 census"
-#| fig-alt: "Line chart of total population in the four primary Richmond region localities. Annual population estimates from 2020 to 2025 are highlighted in green, showing continued growth. Decennial census counts for 2000, 2010, and 2020 are shown muted in the background for long-term context."
+#| fig-alt: "Line chart of total population in the four primary Richmond region localities. Annual population estimates from 2020 to 2025 are highlighted in teal, showing continued growth. Decennial census counts for 2000, 2010, and 2020 are shown muted in the background for long-term context."
 
 pop_hist <- decennial |>
   filter(label == "Total population", geoid %in% pha) |>
@@ -160,7 +162,7 @@ ggplot(proj, aes(year, pop, color = locality)) +
     hjust = 0, nudge_x = 1.5, size = 3.2, fontface = "bold", lineheight = 0.9,
     show.legend = FALSE
   ) +
-  scale_color_manual(values = unname(pha_pal[c(1, 3, 5, 6)])) +
+  scale_color_manual(values = unname(pha_colors[c("Orange", "Teal", "Blue", "Navy")])) +
   scale_y_continuous(labels = label_comma(), limits = c(0, NA)) +
   scale_x_continuous(breaks = c(2020, 2030, 2040, 2050), limits = c(2020, 2058)) +
   labs(
