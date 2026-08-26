@@ -25,17 +25,12 @@ library(ggtext)
 
 # ---- Color palettes -------------------------------------------------------
 
-# PHA brand hexes, read from hdatools rather than re-typed. These were hand-copied from the
-# delivered SOH deck scripts and duplicated the package's own palette exactly, so any future
-# brand change would have had to be made in two places. Order is unchanged: 1 Green,
+# PHA brand hexes, read from hdatools rather than re-typed. Order is unchanged: 1 Green,
 # 2 Light blue, 3 Orange, 4 Red, 5 Purple, 6 Dark blue.
 #
-# pha_pal_discrete() is the accessor the pinned hdatools 0.1.7 exports; it returns a
-# palette function, hence the second call. hdatools 0.5.0 replaces it with the `pha_colors`
-# vector, which is what the house standard will assume -- see .claude/r-standards-audit.md
-# findings 2 and G1. Keep this unnamed: cb_pal below builds its keys from these values, and
-# a named source vector would concatenate the two sets of names.
-pha_pal <- pha_pal_discrete()(6)
+# pha_colors is a named vector; unname() it here so cb_pal below can name its own keys from
+# these values without concatenating the two name sets.
+pha_pal <- unname(pha_colors)
 
 # Cost-burden fill scale (severe / cost-burdened / not), used across burden charts.
 cb_pal <- c(

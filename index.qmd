@@ -10,10 +10,8 @@ revision as the analysis develops, and the site is not yet indexed for search. R
 can comment inline using Hypothesis.
 :::
 
-This is the 2026 Data Update to the Richmond Regional Housing Framework, produced by
-HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the 2022
-Framework with the latest available data and reorganizes the findings around the region's
-most pressing housing themes.
+This is the 2026 Data Update to the Richmond Regional Housing Framework (RRHF), produced by
+HDAdvisors for the Partnership for Housing Affordability (PHA). It refreshes the [2022 RRHF Framework Data Update](https://hdadvisors.github.io/rrh-framework/) with the latest available data and reorganizes the findings around the region's most pressing housing themes.
 
 **Five findings sections anchor the update:**
 
@@ -23,7 +21,7 @@ most pressing housing themes.
 - Housing gap
 - Cost burden and instability
 
-Each section leads with what changed since the [2022 Data Update](https://hdadvisors.github.io/rrh-framework/) and organizes its findings
+Each section leads with what changed since the 2022 Data Update and organizes its findings
 by major takeaways.
 
 ## Geographies covered
