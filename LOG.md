@@ -4,6 +4,20 @@ Append-only dev log, newest first. A correction is a new entry at the top saying
 
 Entries dated before 2026-08-26 reference a phase-gate/`.planning/` workflow (phase numbers, `PLAN.md` sections, Issue numbers, a "kickoff prompt" block) that this repo retired on 2026-08-26 in favor of [TODO.md](TODO.md) as the punch list. Read them as historical records of what happened, not as current process.
 
+## 2026-08-26 (oews.R — BLS OEWS May 2024, Richmond MSA wages)
+
+**Built:** `r/oews.R` — reads the BLS OEWS May 2024 MSA-level Excel file. Outputs: `data/oews.rds` and `data-out/oews.csv` (621 rows: 1 total + 22 major-group + 598 detailed SOC occupations, all cross-industry, Richmond MSA).
+
+**Column-name notes.** The staged file (`MSA_M2025_dl.xlsx`) is already filtered to a single MSA — all 621 rows carry `area = "40060"` (Richmond, VA). No area-name column exists in this file; the area code is the filter key. Wage columns arrive as character because BLS uses `"*"` (suppressed for confidentiality) and `"#"` (wage above the $239,200 annual cap). Both are coerced to `NA_real_`. Six occupations have suppressed medians across all five percentile columns — consistent with low employment counts in those detailed SOC cells.
+
+**Headline number.** All-Occupations annual median wage, Richmond MSA (May 2024): **$51,460**. Detailed occupations with a non-suppressed median: 592 of 598.
+
+**affordcalc linkage.** The output column `annual_wage_median` is the annual income input to `max_affordable_rent(income)` and `max_affordable_price(income, rate_annual)` in `r/affordcalc.R`. Downstream scripts (e.g. `gaps.R`) source both and join on that column.
+
+**No 2022 baseline comparison.** The 2022 Framework did not publish SOC-level OEWS wage figures in a form that maps to these rows.
+
+**Left open.** Chapter figures consuming this data are out of scope for this session.
+
 ## 2026-08-26 (fmr.R — HUD FY2026 FMR and SAFMR)
 
 **Built:** `r/fmr.R` — reads HUD FY2026 FMR and SAFMR from staged Excel files. Outputs: `data/fmr.rds` (40 rows: 8 localities × 5 bedroom sizes) and `data/safmr.rds` (590 rows: 118 ZIP codes × 5 bedroom sizes), each with a paired `data-out/` CSV. Validation passed.

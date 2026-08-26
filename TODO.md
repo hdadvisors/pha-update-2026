@@ -6,7 +6,7 @@ What's left to finish the report. Start every session here. See [LOG.md](LOG.md)
 
 - [x] `r/acs_stock.R` — housing stock (B25001, B25002/04, B25024, B25034-36, B25041/42): units, occupancy/vacancy, structure type, year built, bedrooms.
 - [x] `r/fmr.R` — HUD FY2026 FMR and SAFMR by locality/zip. Files already staged under `data/raw/`.
-- [ ] `r/oews.R` — OEWS wage affordability, Richmond MSA, latest (2024) release.
+- [x] `r/oews.R` — OEWS wage affordability, Richmond MSA, latest (2024) release.
 - [ ] `r/pums/*` (`pums_collect`, `pums_prep`, `pums_ami`, `pums_gap`, `pums_labels`, `rva_puma`) — the PUMS engine. Blocks `gaps.qmd` sections 1-2 (AMI-banded rental gap, renter-competition table) and the race/ethnicity cost-burden cut in `burden.qmd`. The single biggest remaining build.
 - [ ] Consolidated rental assistance (LIHTC piece) — blocked on Jonathan sourcing a LIHTC database file. `r/psh.R` already covers the voucher/public-housing program-mix half.
 
