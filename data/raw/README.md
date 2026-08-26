@@ -146,7 +146,7 @@ data/raw/costar/costar_submarkets_quarterly.xlsx # submarket breakdown, if pulle
 
 **Rankings PDFs purpose:** The 2023–2025 rankings capture recently funded projects that are not yet in NHPD. `r/assistance.R` uses the property listing for the unit inventory; the rankings PDFs are reference documents for identifying pipeline projects and confirming regional credits. They are not machine-read by a script — relevant regional projects should be noted in the data-notes caveat on NHPD recency.
 
-**Needed by:** Phase 3 Session 4D (`r/lihtc.R` and `r/assistance.R`, PLAN.md Section 5 row 24).
+**Needed by:** `r/lihtc.R` and `r/assistance.R` (see TODO.md, consolidated rental assistance).
 
 ---
 

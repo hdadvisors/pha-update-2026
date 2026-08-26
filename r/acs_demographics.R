@@ -4,8 +4,7 @@
 #         seniors living alone -- for the demand chapter's population and
 #         household-composition figures.
 # Source: tidycensus ACS 5-year 2020-2024 (2024 endpoint; profile tables are
-#         not trended -- see the phase-file decision on trend vs. profile
-#         tables in .planning/phases/02-demand-data.md, Session 3B)
+#         not trended -- see the 2026-08-06 LOG.md entry for that decision)
 # Tables: B01001 (sex by age), B01003 (total population), B03002
 #         (race/ethnicity), B11001 (household type), B25010 (average
 #         household size), B11007 (seniors living alone)

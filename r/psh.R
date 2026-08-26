@@ -1,9 +1,9 @@
 # psh.R ----
 # What:   Federal rental-assistance program mix and utilization by locality, annual,
 #         2020-2024 -- HCV, public housing, project-based Section 8, 202/PRAC,
-#         811/PRAC, Mod Rehab, and S236/BMIR. Net-new scope, not in PLAN.md Section 5;
-#         see .planning/PLAN.md Section 12, decision dated 2026-08-06. Feeds
-#         rental.qmd's federal-assistance-utilization figure.
+#         811/PRAC, Mod Rehab, and S236/BMIR. Net-new scope; see the 2026-08-06
+#         LOG.md entry for the scoping decision. Feeds rental.qmd's
+#         federal-assistance-utilization figure.
 # Source: HUD Picture of Subsidized Households (PSH), county-level annual extracts,
 #         manually dropped in data/raw/psh/ (not yet in data/raw/README.md). One file
 #         per year-end quarter; 2022-2024 use the "_2020census" geography-vintage

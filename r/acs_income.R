@@ -11,8 +11,8 @@
 # Tables: B19013 (median household income, trend), B19001 (household income
 #         distribution), S1701 (poverty status). B25074 (income by rent
 #         burden) is explicitly NOT pulled here -- it belongs to
-#         r/acs_costs.R in Phase 3/5 per the PLAN.md Section 5 / phase-file
-#         decision confirming this split.
+#         r/acs_costs.R, per the decision confirming this split (LOG.md,
+#         2026-08-06).
 # Output: data/acs_income.rds  (+ data-out/acs_income.csv)
 
 ## 1. Setup ----

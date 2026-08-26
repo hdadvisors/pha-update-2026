@@ -2,7 +2,7 @@
 # What:   ACS 5-year homeownership by householder race and ethnicity -- owner,
 #         renter, and total occupied households for each of the nine B25003
 #         letter tables, converted to an ownership rate per group per geography.
-#         Net-new scope this cycle (PLAN.md Section 5 row 7, Section 7).
+#         Net-new scope this cycle.
 # Source: tidycensus ACS 5-year, three non-overlapping windows ending 2014,
 #         2019, and 2024 (overlapping 5-year samples are not independent).
 # Tables: B25003A White alone, B25003B Black alone, B25003C American Indian and

@@ -43,12 +43,12 @@ idiom when needed.
 
 ## Step 1 — Populate the project-config block
 
-Read the target project's `CLAUDE.md`, `PLAN.md` (chapter-anatomy + section-content plan +
-narrative rule), and `_common.R` (theme, palette, caption helpers, `flag_reliability()`),
-and fill:
+Read the target project's `CLAUDE.md` (chapter anatomy + narrative rule), `METHODOLOGY.md`
+(or equivalent internal conventions file, for scope and geography rules), and `_common.R`
+(theme, palette, caption helpers, `flag_reliability()`), and fill:
 
 ```
-### PROJECT CONFIG (fill from CLAUDE.md / PLAN.md / _common.R before scaffolding)
+### PROJECT CONFIG (fill from CLAUDE.md / METHODOLOGY.md / _common.R before scaffolding)
 Setup source        : <e.g. source("_common.R")>
 Theme + palette      : <e.g. theme_pha() + pha_pal (6 hexes) ; add_zero_line()>
 Palette anchors      : <named hexes for ggtext subtitle spans, e.g. pha_pal[1] green, [6] dark blue>

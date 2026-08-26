@@ -37,15 +37,15 @@ Read these sources in the target project root and fill the block:
 - **`CLAUDE.md`** — quick-start run commands, R version + bin path, data-flow rule,
   script anatomy, validation semantics, `_common.R` provisions, API-key handling,
   Windows R rule, commit style.
-- **`PLAN.md`** (`.planning/PLAN.md`, or equivalent) — geography constants, the dataset
-  inventory row for this script (tables, geography, output name, phase), vintages,
-  `data-out/` commit policy. Code style and validation semantics may live in `CLAUDE.md`
-  instead; take whichever file states them.
+- **`METHODOLOGY.md`** (or equivalent internal conventions file) — geography and PUMS
+  scope rules, out-of-scope datasets, `data-out/` commit policy. Code style and
+  validation semantics may live in `CLAUDE.md` instead; take whichever file states them.
 - **`_common.R`** — the actual names of palettes, geography constants, caption helpers,
   `flag_reliability()`, `export_csv()` (source these; don't redefine them).
+- **`TODO.md`** (or equivalent punch list) — which dataset this script is meant to cover, if it's not obvious from the ask.
 
 ```
-### PROJECT CONFIG (fill from CLAUDE.md / PLAN.md / _common.R before scaffolding)
+### PROJECT CONFIG (fill from CLAUDE.md / METHODOLOGY.md / _common.R before scaffolding)
 Project root        : <local clone path, e.g. C:\repos\hda\pha-update-2026>
 R version + bin path: <R 4.6.x — your local bin, e.g. C:\Program Files\R\R-4.6.1\bin ; NOT on PATH — prepend first>
 Run a script        : <e.g. Rscript r/<name>.R  (from project root; .Rprofile activates renv)>

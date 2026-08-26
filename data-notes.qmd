@@ -31,7 +31,7 @@ The table below lists each source, the vintage used this cycle, and its current 
 | Building Permits Survey (BPS) | 2000–2025 annual | census.gov file server | Loaded |
 | FRED 30-year mortgage rate (PMMS) | Weekly, resampled to monthly, 2000–present | FRED API (`fredr`) | Loaded |
 | National Housing Preservation Database (NHPD) | Latest Virginia extract | NHPD account download | Loaded |
-| HUD Picture of Subsidized Households (PSH) | County extracts, 2020–2024 | Manual download | Program-mix and voucher/public-housing unit counts loaded; LIHTC production not covered by this source — net-new scope, see `.planning/PLAN.md` Decisions |
+| HUD Picture of Subsidized Households (PSH) | County extracts, 2020–2024 | Manual download | Program-mix and voucher/public-housing unit counts loaded; LIHTC production not covered by this source — net-new scope, see `METHODOLOGY.md` |
 | Point-in-Time homelessness counts | Greater Richmond CoC (VA-500), 2020–2025 | HUD CoC reports | Raw reports staged; processing pending |
 
 Notes on status:

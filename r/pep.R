@@ -61,7 +61,7 @@ pull_pep <- function(product) {
       stop(
         "get_estimates(product = \"", product, "\", vintage = 2025) failed: ",
         conditionMessage(e), "\n",
-        "Per the PLAN.md decision of 2026-07-15, the documented fallback is the ",
+        "Per the 2026-07-15 decision, the documented fallback is the ",
         "Census FTP tables (https://www2.census.gov/programs-surveys/popest/). ",
         "Do NOT silently substitute a different vintage in this script. Whether to ",
         "wait for Vintage 2025 or switch to the FTP fallback is Jonathan's call."
@@ -170,9 +170,9 @@ if (anyNA(pep_comp$year)) {
 
 ## 4b. April 1, 2020 estimates base, from the Census FTP ----
 # The API does not publish the estimates base for Vintage 2025, so it is read from the
-# published county file. This is the FTP fallback the PLAN.md decision of 2026-07-15
-# anticipated, applied narrowly to the one column the API omits rather than to the whole
-# product. CLAUDE.md's data-fetch rule pre-approves census.gov file-server fetches with a
+# published county file. This is the FTP fallback the 2026-07-15 decision anticipated,
+# applied narrowly to the one column the API omits rather than to the whole product.
+# CLAUDE.md's data-fetch rule pre-approves census.gov file-server fetches with a
 # manual fallback, so a local drop is checked first and the failure message says exactly
 # what to download and where to put it.
 ftp_url   <- paste0("https://www2.census.gov/programs-surveys/popest/datasets/",

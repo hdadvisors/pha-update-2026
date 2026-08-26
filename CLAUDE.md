@@ -1,47 +1,38 @@
 # CLAUDE.md — Richmond Regional Housing Framework 2026 Data Update
 
-Conventions for all Claude sessions on this project. **This is a report repo** under the HDA four-type taxonomy, which settles the commit vocabulary below. **`.planning/PLAN.md` is the source of truth** — this file is the quick reference for running a session.
+Conventions for all Claude sessions on this project. **This is a report repo** under the HDA four-type taxonomy, which settles the commit vocabulary below. [**TODO.md**](TODO.md) **is the punch list** — start every session there. [METHODOLOGY.md](METHODOLOGY.md) holds the internal data/geography/scope conventions; `data-notes.qmd` holds the public-facing methodology.
 
 ## Start-of-session checklist
 
-1. Read this file, then `.planning/PLAN.md` Sections 1 through 4, then only the phase file for the phase being run, then the top entry of `.planning/LOG.md`.
-2. Read only the Section 5 through 8 rows that your phase touches. Do not read the reference repos unless a task sends you there.
-3. Verify that the prerequisite raw files exist under `data/raw/`. If any are missing, do the work that does not need them and record the blocker in the log entry.
-
-A phase whose row in the Section 9 table reads `not planned` cannot be executed. Plan it first, in a planning-only session whose sole output is the phase file. That session must not run in Claude Code plan mode, because plan mode confines edits to a scratch file outside the repo and cannot write the phase file the session exists to produce.
+1.  Read this file, then [TODO.md](TODO.md), then the top entry of [LOG.md](LOG.md).
+2.  Read [METHODOLOGY.md](METHODOLOGY.md) and `_common.R` for the geography/PUMS/scope rules that bear on the task at hand. Do not read the reference repos unless the task sends you there.
+3.  Verify that the prerequisite raw files exist under `data/raw/`. If any are missing, do the work that does not need them and record the blocker in the log entry.
 
 ## End-of-session checklist
 
-1. Tick the `Verify` lines that passed.
-2. Write the `.planning/LOG.md` entry and overwrite the kickoff-prompt block for the next session.
-3. Update README.md or this file if a convention changed — same session, not a follow-up.
-4. Commit the work and the log entry together — `hda-git:commit`.
-5. Update the Issue last, so its comment can cite the SHA — `hda-git:pr`.
-
-Steps 1 and 2 are automated by `hda-docs:wrap`. Steps 3 through 5 are run by the session itself after wrap returns.
-
-Every log entry records deviations from the phase file, data surprises, the 2022 percentage changes, and what was left open.
+1.  Update [TODO.md](TODO.md) — check off what landed, add anything new that surfaced.
+2.  Append a [LOG.md](LOG.md) entry: what changed, data surprises, any 2022 percentage change, what was left open.
+3.  Update README.md or this file if a convention changed — same session, not a follow-up.
+4.  Commit the work and the log entry together — `hda-git:commit`.
 
 ## Commit conventions
 
 `hda-git:commit` owns the full grammar, the staging rules, and the branch-or-main decision. What is specific to this repo:
 
 | Setting | Value |
-|---|---|
+|------------------------------------|------------------------------------|
 | Repo type | Report |
-| Commit types | `fix`, `docs`, `chore`, `data`, `content`, `infra`, `plan` |
-| Scope | `task-N`, or `task-N-sN` for a session within a multi-session task. Optional on `docs`, `chore`, and `plan` commits outside the task cadence |
-| Versioned | No. Git history plus `.planning/LOG.md` is the release record |
-
-Tasks are numbered 1 through 14 inside the phase files, carrying forward the numbering used in existing commits. A `plan` commit changes a planning artifact: a `.planning/phases/` file, or a PLAN.md scope or methodology amendment.
+| Commit types | `fix`, `docs`, `chore`, `data`, `content`, `infra` |
+| Scope | A component noun (`docs(readme)`, `data(acs-tenure)`, `content(gaps)`). Optional on `docs` and `chore` commits. |
+| Versioned | No. Git history plus [LOG.md](LOG.md) is the release record |
 
 ## Token efficiency and model policy
 
-- **One phase focus per session.** Start narrow, per the checklist above. Do not read whole files when a block will do.
-- **Model by session type.** Sonnet for mechanical data pulls, geography swaps, and QA sweeps. Opus for phase planning, PUMS methodology, gap analysis, and chapter builds. Fable for meta-level investigation and critique only, never for core output, with one sanctioned exception: the Phase 4 gap-methodology design if Opus stalls.
-- **Jonathan runs long jobs** — PUMS, CHAS, and tigris pulls, and any full render over roughly two minutes. Claude writes the script; Jonathan runs it and pastes back errors and validation output. Never babysit a long `Rscript` run.
-- **Manual data drops** for MLS and CoStar go straight into `data/raw/`. Jonathan provides them.
-- **Skills carry the boilerplate.** Invoke `/new-data-script` before writing a new `r/*.R` pull or prep script, and `/new-chapter` before a new section `.qmd`. Never regenerate the anatomy from scratch in context. Both live in-repo at `.claude/skills/`. Each reads a project-config block from this file, PLAN.md, and `_common.R` at invocation and emits a pha-shaped scaffold; full exemplars and a conventions digest are in each skill's `references/`. They stay project-level until phases 2 through 6 exercise them, at which point promote them to the `hda-claude` marketplace with any evidence-based revisions.
+- **Start narrow.** Read TODO.md and only the LOG.md/METHODOLOGY.md sections that bear on the task. Do not read whole files when a block will do.
+- **Model by session type.** Sonnet for mechanical data pulls, geography swaps, and QA sweeps. Opus for PUMS methodology, gap analysis, and chapter builds. Fable for meta-level investigation and critique only, never for core output.
+- **User runs long jobs** — PUMS, CHAS, and tigris pulls, and any full render over roughly two minutes. Claude writes the script; user runs it and pastes back errors and validation output. Never babysit a long `Rscript` run.
+- **Manual data drops** for MLS and CoStar go straight into `data/raw/`. User provides them.
+- **Skills carry the boilerplate.** Invoke `/new-data-script` before writing a new `r/*.R` pull or prep script, and `/new-chapter` before a new section `.qmd`. Never regenerate the anatomy from scratch in context. Both live in-repo at `.claude/skills/`. Each reads a project-config block from this file, [METHODOLOGY.md](METHODOLOGY.md), and `_common.R` at invocation and creates a pha-shaped scaffold. Full exemplars and a conventions digest are in each skill's `references/`.
 
 ## Data flow rule
 
@@ -59,7 +50,7 @@ Script anatomy: a header comment stating what, source, and output → numbered `
 ## Validation semantics
 
 - `stopifnot()` fires only on structural expectations (row counts, all geographies present, no all-NA columns) and on **same-vintage** published benchmarks — a HUD-published MFI, a Census-published table total, or the State of Housing deck numbers, which are current as of January 2026.
-- 2022 baselines are compared as a **logged percentage change in the session's log entry**, never as a `stopifnot()` gate. Implausible swings are flagged for human review; they never fail a build, because 2020-2024 ACS and 2016-2020 ACS differ by construction.
+- 2022 baselines are compared as a **logged percentage change in the session's log entry**, never as a `stopifnot()` gate. Implausible swings are flagged for human review. They never fail a build, because 2020-2024 ACS and 2016-2020 ACS differ by construction.
 - Every data phase logs its benchmark results, both passes and variances.
 
 ## What `_common.R` provides
@@ -77,6 +68,7 @@ Script anatomy: a header comment stating what, source, and output → numbered `
 - `theme_pha()` with `pha_pal`, plus `add_zero_line()`.
 - Titles are takeaway sentences. The subtitle carries geography, units, and years. Captions come from a `_common.R` source helper.
 - For 2 or 3 series, prefer color-coded bold words in the subtitle, as ggtext spans using `pha_pal` hexes, over a legend.
+- Keep subtitle length to 50 characters to avoid wrapping text onto a new row.
 - Currency uses `scales::label_dollar()`, and the subtitle notes whether a series is nominal or inflation-adjusted. Percentages use `label_percent(accuracy = 1)` unless precision matters.
 - Tables use `kbl() |> kable_styling(c("condensed","striped"))` with `formattable::comma` and `percent`.
 - Secondary-locality and Ashland ACS estimates always carry reliability treatment through `flag_reliability()`. Suppress cells with a CV above 30 and footnote the Medium cells.
@@ -118,4 +110,41 @@ Public repo, with GitHub Pages live from the start on `main`/`docs` at `https://
 
 ## Repo map
 
-See `.planning/PLAN.md` Section 2 for the annotated tree.
+```         
+pha-update-2026/
+├── _quarto.yml            # book config: freeze auto, execute-dir project, output-dir docs, noindex meta, Hypothesis
+├── _common.R              # sourced by every chapter: libs, pha_pal/cb_pal, geo+PUMA constants, caption helpers, flag_reliability(), export_csv()
+├── .Rprofile              # source("renv/activate.R")
+├── renv.lock / renv/      # R pinned 4.6.1; dplyr 1.2.1; hdatools from GitHub hdadvisors/hdatools
+├── CLAUDE.md              # this file
+├── METHODOLOGY.md         # internal data/geography/scope conventions
+├── TODO.md                # the punch list — start here
+├── LOG.md                 # append-only dev log
+├── README.md              # purpose, quick start, plain-language renv guide, status
+├── rrh-framework.scss     # brand styling (Noto Sans; from rrh)
+├── img/pha_logo.jpg       # sidebar logo (from rrh)
+├── index.qmd              # About this update
+├── demand.qmd             # Section 1 Housing demand
+├── ownership.qmd          # Section 2 Homeownership market
+├── rental.qmd             # Section 3 Rental market
+├── gaps.qmd               # Section 4 Housing gap
+├── burden.qmd             # Section 5 Cost burden and instability
+├── data-notes.qmd         # Appendix: data and methodology (public-facing; doubles as PHA training doc)
+├── local-*.qmd            # 9 local summaries — stubs, not yet built
+│                          # + tracker.qmd, exec-sum.qmd — not yet started
+├── r/                     # collection and prep scripts — committed (r/pums/ not yet built)
+├── data/                  # .rds outputs and raw drops — gitignored (except data/raw/README.md)
+│   └── raw/{mls,costar}/  # Jonathan's manual drops (spec: data/raw/README.md)
+├── data-out/              # tidy CSV exports; public-source committed, mls_*/costar_* gitignored
+├── docs/                  # rendered site — committed; GitHub Pages serves this
+├── _freeze/               # committed (keeps renders fast and reproducible)
+└── archive/soh-2026/      # archived State of Housing deliverables (committed; retained)
+```
+
+- Repo: `hdadvisors/pha-update-2026`, public. Pages serves `docs/` on `main`.
+- Theming: `hdatools::theme_pha()` and `pha_pal` everywhere. Static ggplot2 and kableExtra tables. No leaflet, no ggiraph — see [METHODOLOGY.md](METHODOLOGY.md).
+- Chapter anatomy: `# Title {#sec-slug}` → setup chunk (`source("_common.R")`, `read_rds()` stubs, inline-scalar block) → theme-based takeaway H2s → alternating figure and table blocks with bullets → a per-section "Since 2022" callout → a closing summary callout. The `/new-chapter` skill emits this shape.
+
+## Geography and vintages
+
+Geography and PUMS constants are defined once in `_common.R` (`rr`, `pha`, `secondary`, `ashland`, `virginia`, `puma_core3`, `puma_region`, `puma_locality`). The geography table, vintage table, and dataset inventory that used to live here now live in git history (`.planning/PLAN.md`, removed 2026-08-26) — [METHODOLOGY.md](METHODOLOGY.md) carries forward only the conventions still worth stating explicitly; the rest is legible directly from `_common.R` and the `r/` scripts.

@@ -1,12 +1,12 @@
 # baseline.R ----
 # What:   Transcribed 2022 headline figures from the 2022 Richmond Regional Housing
 #         Framework (rrh-framework) predecessor report, keyed by metric x geography.
-#         Feeds each chapter's "Since 2022" callout (PLAN.md S6) and the Task 12 local
-#         summaries. This is a DATA DROP, not a computation: every value below was read
-#         by hand off the rendered site and typed in as an R literal -- never recomputed,
-#         never re-fetched (decision 4, PLAN.md S1). If a number looks odd, it is
+#         Feeds each chapter's "Since 2022" callout and the local summaries. This is a
+#         DATA DROP, not a computation: every value below was read by hand off the
+#         rendered site and typed in as an R literal -- never recomputed, never
+#         re-fetched (see METHODOLOGY.md, Baselines). If a number looks odd, it is
 #         transcribed faithfully from the source page; see the `note` column and the
-#         Task 2 Session 2B S11 log entry for flagged inconsistencies.
+#         2026-07-17 LOG.md entry for flagged inconsistencies.
 # Source: <hda>\rrh-framework\docs\ (rendered HTML, confirmed reachable at
 #         R:\hda\rrh-framework\docs\ this session) --
 #           part-1-1..4 = S1 Housing demand
@@ -20,9 +20,9 @@
 #
 # IMPORTANT geography note: the 2022 rrh report defines "the region" as the 4 primary
 # localities only (Chesterfield, Hanover, Henrico, Richmond city) -- it predates this
-# update's 8-locality + Ashland PlanRVA study area (PLAN.md S1/S4). Region-wide rows below
-# use geography = "region" and mean rrh's 4-locality scope, NOT the 8-locality `rr` set.
-# This distinction belongs in data-notes.qmd's vintage-comparison caveats (Task 14).
+# update's 8-locality + Ashland PlanRVA study area. Region-wide rows below use
+# geography = "region" and mean rrh's 4-locality scope, NOT the 8-locality `rr` set.
+# This distinction belongs in data-notes.qmd's vintage-comparison caveats.
 
 ## 1. Setup ----
 library(tidyverse)
@@ -244,7 +244,8 @@ message("Wrote data/baseline_2022.rds + data-out/baseline_2022.csv (", nrow(base
 
 ## 10. Validate ----
 # Structural stopifnot() only -- this frame IS the 2022 vintage, so no same-vintage
-# benchmark applies, and 2022 numbers are never a stopifnot() gate regardless (PLAN.md S3).
+# benchmark applies, and 2022 numbers are never a stopifnot() gate regardless
+# (see CLAUDE.md, Validation semantics).
 
 expected_sections <- c("demand", "ownership", "rental", "gaps", "burden", "local")
 expected_local_geos <- c(names(pha), names(secondary), names(ashland))

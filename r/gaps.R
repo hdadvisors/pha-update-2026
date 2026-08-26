@@ -15,7 +15,7 @@
 #         input. The starter-home cut compares a dollar income threshold (FY2026 HUD
 #         income limits) against CHAS 2018-2022 AMI-relative household counts -- a
 #         vintage mismatch (current-dollar limits vs. 2018-2022 HAMFI bands) logged as
-#         a narrative caveat, never a validation gate, per PLAN.md Section 6.
+#         a narrative caveat, never a validation gate (see CLAUDE.md, Validation semantics).
 # Output: data/gaps_income_table.rds (+ data-out/gaps_income_table.csv)
 #         data/gaps_starter.rds       (+ data-out/gaps_starter.csv)
 

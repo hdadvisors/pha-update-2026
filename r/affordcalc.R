@@ -18,8 +18,8 @@
 # Property tax: 1.00% of home value annually, a single regional placeholder -- real
 # rates vary by locality and are not yet pulled into this project.
 # Homeowners insurance: $1,500/year flat, a single regional placeholder.
-# Loan term: 30-year fixed. Front-end ratio: 28% of gross monthly income (PLAN.md
-# Section 8: "payment at or below 28 percent of monthly income").
+# Loan term: 30-year fixed. Front-end ratio: 28% of gross monthly income (payment
+# at or below 28 percent of monthly income, per the ownership-affordability method).
 default_down_pct    <- 0.10
 default_tax_rate    <- 0.0100
 default_annual_ins  <- 1500
