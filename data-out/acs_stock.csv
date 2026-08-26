@@ -1,0 +1,801 @@
+geoid,name,year,table,variable,label,estimate,moe,cv,reliability
+51036,"Charles City County, Virginia",2024,B25001,B25001_001,Total,3270,198,3.680878949276373,High
+51041,"Chesterfield County, Virginia",2024,B25001,B25001_001,Total,145709,144,0.06007727314096772,High
+51075,"Goochland County, Virginia",2024,B25001,B25001_001,Total,11208,27,0.14644337848128453,High
+51085,"Hanover County, Virginia",2024,B25001,B25001_001,Total,44589,96,0.13088129945498164,High
+51087,"Henrico County, Virginia",2024,B25001,B25001_001,Total,144916,115,0.04824092204426402,High
+51127,"New Kent County, Virginia",2024,B25001,B25001_001,Total,9795,45,0.279281501789729,High
+51145,"Powhatan County, Virginia",2024,B25001,B25001_001,Total,12021,30,0.15171019105622913,High
+51760,"Richmond city, Virginia",2024,B25001,B25001_001,Total,114293,103,0.05478374157902753,High
+51,Virginia,2024,B25001,B25001_001,Total,3684756,486,0.008017918404455619,High
+5103368,"Ashland town, Virginia",2024,B25001,B25001_001,Total,3164,238,4.572719692282863,High
+51036,"Charles City County, Virginia",2024,B25002,B25002_001,Total:,3270,198,3.680878949276373,High
+51036,"Charles City County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,2911,215,4.489834700992672,High
+51036,"Charles City County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,359,73,12.361253397228031,High
+51041,"Chesterfield County, Virginia",2024,B25002,B25002_001,Total:,145709,144,0.06007727314096772,High
+51041,"Chesterfield County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,140155,557,0.24159096978930944,High
+51041,"Chesterfield County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,5554,569,6.227883625044192,High
+51075,"Goochland County, Virginia",2024,B25002,B25002_001,Total:,11208,27,0.14644337848128453,High
+51075,"Goochland County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,10342,258,1.5165239390357377,High
+51075,"Goochland County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,866,259,18.18092477028156,Medium
+51085,"Hanover County, Virginia",2024,B25002,B25002_001,Total:,44589,96,0.13088129945498164,High
+51085,"Hanover County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,42688,384,0.5468390424848366,High
+51085,"Hanover County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,1901,380,12.15165910119294,High
+51087,"Henrico County, Virginia",2024,B25002,B25002_001,Total:,144916,115,0.04824092204426402,High
+51087,"Henrico County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,137365,837,0.3704106502134121,High
+51087,"Henrico County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,7551,864,6.955740478424525,High
+51127,"New Kent County, Virginia",2024,B25002,B25002_001,Total:,9795,45,0.279281501789729,High
+51127,"New Kent County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,9263,232,1.5225459856467225,High
+51127,"New Kent County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,532,225,25.710172086751832,Medium
+51145,"Powhatan County, Virginia",2024,B25002,B25002_001,Total:,12021,30,0.15171019105622913,High
+51145,"Powhatan County, Virginia",2024,B25002,B25002_002,Total:!!Occupied,11325,245,1.3151096707529002,High
+51145,"Powhatan County, Virginia",2024,B25002,B25002_003,Total:!!Vacant,696,239,20.874820948188518,Medium
+51760,"Richmond city, Virginia",2024,B25002,B25002_001,Total:,114293,103,0.05478374157902753,High
+51760,"Richmond city, Virginia",2024,B25002,B25002_002,Total:!!Occupied,104321,766,0.4463660197282709,High
+51760,"Richmond city, Virginia",2024,B25002,B25002_003,Total:!!Vacant,9972,780,4.754955211979562,High
+51,Virginia,2024,B25002,B25002_001,Total:,3684756,486,0.008017918404455619,High
+51,Virginia,2024,B25002,B25002_002,Total:!!Occupied,3365732,7402,0.13369145400264248,High
+51,Virginia,2024,B25002,B25002_003,Total:!!Vacant,319024,7226,1.3769199706521305,High
+5103368,"Ashland town, Virginia",2024,B25002,B25002_001,Total:,3164,238,4.572719692282863,High
+5103368,"Ashland town, Virginia",2024,B25002,B25002_002,Total:!!Occupied,2809,215,4.652868926518215,High
+5103368,"Ashland town, Virginia",2024,B25002,B25002_003,Total:!!Vacant,355,157,26.884712530502163,Medium
+51036,"Charles City County, Virginia",2024,B25004,B25004_001,Total:,359,73,12.361253397228031,High
+51036,"Charles City County, Virginia",2024,B25004,B25004_002,Total:!!For rent,3,4,81.05369807497466,Low
+51036,"Charles City County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",0,19,NA,NA
+51036,"Charles City County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,5,5,60.790273556231,Low
+51036,"Charles City County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",3,4,81.05369807497466,Low
+51036,"Charles City County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",38,27,43.193089105743084,Low
+51036,"Charles City County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,19,NA,NA
+51036,"Charles City County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,310,75,14.707324247475242,High
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_001,Total:,5554,569,6.227883625044192,High
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_002,Total:!!For rent,1830,418,13.885428604647299,High
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",388,222,34.78206373578166,Low
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,661,259,23.819486915376444,Medium
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",402,193,29.185380090429312,Medium
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",90,82,55.386693684566026,Low
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,31,NA,NA
+51041,"Chesterfield County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,2183,494,13.75647967786446,High
+51075,"Goochland County, Virginia",2024,B25004,B25004_001,Total:,866,259,18.18092477028156,Medium
+51075,"Goochland County, Virginia",2024,B25004,B25004_002,Total:!!For rent,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,12,20,101.31712259371832,Low
+51075,"Goochland County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",134,144,65.3268611350542,Low
+51075,"Goochland County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",221,151,41.53543577823928,Low
+51075,"Goochland County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,499,174,21.197410017603595,Medium
+51085,"Hanover County, Virginia",2024,B25004,B25004_001,Total:,1901,380,12.15165910119294,High
+51085,"Hanover County, Virginia",2024,B25004,B25004_002,Total:!!For rent,197,138,42.58404949624303,Low
+51085,"Hanover County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",30,50,101.31712259371832,Low
+51085,"Hanover County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,271,121,27.142520665328234,Medium
+51085,"Hanover County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",72,67,56.56872678149274,Low
+51085,"Hanover County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",116,82,42.97243475526674,Low
+51085,"Hanover County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,31,NA,NA
+51085,"Hanover County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,1215,355,17.761767170750623,Medium
+51087,"Henrico County, Virginia",2024,B25004,B25004_001,Total:,7551,864,6.955740478424525,High
+51087,"Henrico County, Virginia",2024,B25004,B25004_002,Total:!!For rent,2924,463,9.625819649977755,High
+51087,"Henrico County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",546,195,21.710811984368217,Medium
+51087,"Henrico County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,500,194,23.58662613981763,Medium
+51087,"Henrico County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",697,307,26.775629816015662,Medium
+51087,"Henrico County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",274,134,29.729549841368446,Medium
+51087,"Henrico County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,31,NA,NA
+51087,"Henrico County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,2610,487,11.342859471986397,High
+51127,"New Kent County, Virginia",2024,B25004,B25004_001,Total:,532,225,25.710172086751832,Medium
+51127,"New Kent County, Virginia",2024,B25004,B25004_002,Total:!!For rent,120,118,59.77710233029382,Low
+51127,"New Kent County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,72,110,92.87402904424181,Low
+51127,"New Kent County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",39,39,60.790273556231,Low
+51127,"New Kent County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,301,184,37.16083167556978,Low
+51145,"Powhatan County, Virginia",2024,B25004,B25004_001,Total:,696,239,20.874820948188518,Medium
+51145,"Powhatan County, Virginia",2024,B25004,B25004_002,Total:!!For rent,24,38,96.25126646403243,Low
+51145,"Powhatan County, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25004,B25004_004,Total:!!For sale only,8,12,91.1854103343465,Low
+51145,"Powhatan County, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",13,25,116.90437222352115,Low
+51145,"Powhatan County, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",114,97,51.72505732416146,Low
+51145,"Powhatan County, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,537,226,25.58398849852552,Medium
+51760,"Richmond city, Virginia",2024,B25004,B25004_001,Total:,9972,780,4.754955211979562,High
+51760,"Richmond city, Virginia",2024,B25004,B25004_002,Total:!!For rent,3911,535,8.315723945943132,High
+51760,"Richmond city, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",992,243,14.89116580056868,High
+51760,"Richmond city, Virginia",2024,B25004,B25004_004,Total:!!For sale only,436,153,21.332366637851706,Medium
+51760,"Richmond city, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",1205,318,16.042578415669258,Medium
+51760,"Richmond city, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",457,141,18.75586120662707,Medium
+51760,"Richmond city, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,31,NA,NA
+51760,"Richmond city, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,2971,391,8.000335563946928,High
+51,Virginia,2024,B25004,B25004_001,Total:,319024,7226,1.3769199706521305,High
+51,Virginia,2024,B25004,B25004_002,Total:!!For rent,55766,2671,2.9116454590376395,High
+51,Virginia,2024,B25004,B25004_003,"Total:!!Rented, not occupied",16901,1287,4.629139226487741,High
+51,Virginia,2024,B25004,B25004_004,Total:!!For sale only,18455,1282,4.222873513903449,High
+51,Virginia,2024,B25004,B25004_005,"Total:!!Sold, not occupied",16698,1345,4.896569525280315,High
+51,Virginia,2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",75332,1976,1.594562477394898,High
+51,Virginia,2024,B25004,B25004_007,Total:!!For migrant workers,637,250,23.85803514765738,Medium
+51,Virginia,2024,B25004,B25004_008,Total:!!Other vacant,135235,4110,1.8475100699974816,High
+5103368,"Ashland town, Virginia",2024,B25004,B25004_001,Total:,355,157,26.884712530502163,Medium
+5103368,"Ashland town, Virginia",2024,B25004,B25004_002,Total:!!For rent,86,82,57.96281897222026,Low
+5103368,"Ashland town, Virginia",2024,B25004,B25004_003,"Total:!!Rented, not occupied",30,50,101.31712259371832,Low
+5103368,"Ashland town, Virginia",2024,B25004,B25004_004,Total:!!For sale only,100,90,54.7112462006079,Low
+5103368,"Ashland town, Virginia",2024,B25004,B25004_005,"Total:!!Sold, not occupied",32,47,89.28571428571428,Low
+5103368,"Ashland town, Virginia",2024,B25004,B25004_006,"Total:!!For seasonal, recreational, or occasional use",32,48,91.1854103343465,Low
+5103368,"Ashland town, Virginia",2024,B25004,B25004_007,Total:!!For migrant workers,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B25004,B25004_008,Total:!!Other vacant,75,73,59.169199594731516,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_001,Total:,3270,198,3.680878949276373,High
+51036,"Charles City County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",2827,222,4.77376750247021,High
+51036,"Charles City County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",44,27,37.30312240950539,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_004,Total:!!2,40,36,54.7112462006079,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,26,25,58.452186111760575,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,14,25,108.55405992184106,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,0,19,NA,NA
+51036,"Charles City County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,8,9,68.38905775075987,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,11,12,66.31666206134291,Low
+51036,"Charles City County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,300,65,13.171225937183383,High
+51036,"Charles City County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",0,19,NA,NA
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_001,Total:,145709,144,0.06007727314096772,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",113169,1098,0.589805692060031,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",9174,746,4.94326837507612,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_004,Total:!!2,949,249,15.950240374606448,Medium
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,3293,477,8.805636345679376,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,4654,608,7.941660146581102,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,6218,684,6.687125621174333,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,2244,469,12.705275533811204,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,4514,569,7.662752692400407,High
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,1482,370,15.177058850071168,Medium
+51041,"Chesterfield County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",12,20,101.31712259371832,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_001,Total:,11208,27,0.14644337848128453,High
+51075,"Goochland County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",9731,303,1.892863311842359,High
+51075,"Goochland County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",220,127,35.09256700746062,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_004,Total:!!2,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,79,122,93.87865030202762,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,29,37,77.56000419243266,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,142,104,44.52245387216919,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,121,80,40.19191640081388,Low
+51075,"Goochland County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,431,180,25.38804928102455,Medium
+51075,"Goochland County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,455,156,20.842379504993485,Medium
+51075,"Goochland County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",0,25,NA,NA
+51085,"Hanover County, Virginia",2024,B25024,B25024_001,Total:,44589,96,0.13088129945498164,High
+51085,"Hanover County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",37917,503,0.8064326713290659,High
+51085,"Hanover County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",2066,253,7.444307458725288,High
+51085,"Hanover County, Virginia",2024,B25024,B25024_004,Total:!!2,180,90,30.3951367781155,Low
+51085,"Hanover County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,336,178,32.204371110146184,Low
+51085,"Hanover County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,865,232,16.304443312191435,Medium
+51085,"Hanover County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,1184,204,10.473999835701964,High
+51085,"Hanover County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,350,128,22.23187147199305,Medium
+51085,"Hanover County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,832,256,18.704699555763384,Medium
+51085,"Hanover County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,831,208,15.215856678334594,Medium
+51085,"Hanover County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",28,28,60.790273556231,Low
+51087,"Henrico County, Virginia",2024,B25024,B25024_001,Total:,144916,115,0.04824092204426402,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",91142,1126,0.7510242042561729,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",15512,968,3.7935137185683097,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_004,Total:!!2,2095,414,12.012970526147798,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,6200,579,5.677027159525443,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,9267,884,5.798921098921788,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,9834,910,5.625294787082592,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,2829,529,11.367286925148887,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,7593,623,4.987796710856304,High
+51087,"Henrico County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,444,185,25.329280648429588,Medium
+51087,"Henrico County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",0,31,NA,NA
+51127,"New Kent County, Virginia",2024,B25024,B25024_001,Total:,9795,45,0.279281501789729,High
+51127,"New Kent County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",9073,229,1.5343296202333185,High
+51127,"New Kent County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",252,126,30.395136778115507,Low
+51127,"New Kent County, Virginia",2024,B25024,B25024_004,Total:!!2,1,4,243.161094224924,Low
+51127,"New Kent County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,16,27,102.58358662613982,Low
+51127,"New Kent County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,94,95,61.43697859406324,Low
+51127,"New Kent County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,359,164,27.77048708418352,Medium
+51127,"New Kent County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",0,25,NA,NA
+51145,"Powhatan County, Virginia",2024,B25024,B25024_001,Total:,12021,30,0.15171019105622913,High
+51145,"Powhatan County, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",11421,206,1.0964710929501433,High
+51145,"Powhatan County, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",174,117,40.87621842574154,Low
+51145,"Powhatan County, Virginia",2024,B25024,B25024_004,Total:!!2,103,92,54.298108419157785,Low
+51145,"Powhatan County, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,27,31,69.79624000900597,Low
+51145,"Powhatan County, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25024,B25024_009,Total:!!50 or more,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,296,165,33.886470056682825,Low
+51145,"Powhatan County, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",0,28,NA,NA
+51760,"Richmond city, Virginia",2024,B25024,B25024_001,Total:,114293,103,0.05478374157902753,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",50829,1256,1.5021460895674938,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",8845,683,4.694150010051529,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_004,Total:!!2,5783,538,5.655398093247843,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,7883,791,6.099848583404633,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,8751,752,5.223892779600698,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,6743,684,6.166475917612637,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,7453,927,7.5610604570811955,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_009,Total:!!50 or more,17267,1109,3.9043501114183226,High
+51760,"Richmond city, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,712,287,24.50394453741334,Medium
+51760,"Richmond city, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",27,44,99.0656309805246,Low
+51,Virginia,2024,B25024,B25024_001,Total:,3684756,486,0.008017918404455619,High
+51,Virginia,2024,B25024,B25024_002,"Total:!!1, detached",2256932,6910,0.18612026869819573,High
+51,Virginia,2024,B25024,B25024_003,"Total:!!1, attached",417697,4382,0.6377421401719531,High
+51,Virginia,2024,B25024,B25024_004,Total:!!2,60093,1803,1.823920643367522,High
+51,Virginia,2024,B25024,B25024_005,Total:!!3 or 4,106039,2896,1.6602253153919313,High
+51,Virginia,2024,B25024,B25024_006,Total:!!5 to 9,163814,3653,1.3556037292350585,High
+51,Virginia,2024,B25024,B25024_007,Total:!!10 to 19,192765,3551,1.1198415760027822,High
+51,Virginia,2024,B25024,B25024_008,Total:!!20 to 49,81372,2017,1.5068325930654025,High
+51,Virginia,2024,B25024,B25024_009,Total:!!50 or more,246085,3755,0.9275960631637338,High
+51,Virginia,2024,B25024,B25024_010,Total:!!Mobile home,158497,2977,1.1418048567285166,High
+51,Virginia,2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",1462,273,11.351398550513723,High
+5103368,"Ashland town, Virginia",2024,B25024,B25024_001,Total:,3164,238,4.572719692282863,High
+5103368,"Ashland town, Virginia",2024,B25024,B25024_002,"Total:!!1, detached",1723,212,7.479708644179323,High
+5103368,"Ashland town, Virginia",2024,B25024,B25024_003,"Total:!!1, attached",263,105,24.26988107758272,Medium
+5103368,"Ashland town, Virginia",2024,B25024,B25024_004,Total:!!2,96,73,46.22593718338399,Low
+5103368,"Ashland town, Virginia",2024,B25024,B25024_005,Total:!!3 or 4,125,87,42.31003039513678,Low
+5103368,"Ashland town, Virginia",2024,B25024,B25024_006,Total:!!5 to 9,256,96,22.796352583586625,Medium
+5103368,"Ashland town, Virginia",2024,B25024,B25024_007,Total:!!10 to 19,90,77,52.00945626477542,Low
+5103368,"Ashland town, Virginia",2024,B25024,B25024_008,Total:!!20 to 49,163,90,33.565181718164354,Low
+5103368,"Ashland town, Virginia",2024,B25024,B25024_009,Total:!!50 or more,48,53,67.1225937183384,Low
+5103368,"Ashland town, Virginia",2024,B25024,B25024_010,Total:!!Mobile home,397,135,20.671755491413563,Medium
+5103368,"Ashland town, Virginia",2024,B25024,B25024_011,"Total:!!Boat, RV, van, etc.",3,6,121.580547112462,Low
+51036,"Charles City County, Virginia",2024,B25034,B25034_001,Total:,3270,198,3.680878949276373,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,41,29,42.99799836904144,Low
+51036,"Charles City County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,358,81,13.754223905180757,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,489,87,10.815447442519627,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,658,100,9.238643397603495,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,482,89,11.22476005498871,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,364,70,11.690437222352115,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,299,54,10.978845391426335,High
+51036,"Charles City County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,207,64,18.79506042318253,Medium
+51036,"Charles City County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,138,52,22.90647989075371,Medium
+51036,"Charles City County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,234,75,19.484062037253523,Medium
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_001,Total:,145709,144,0.06007727314096772,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,5286,521,5.991625524554739,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,19762,1106,3.4021881668450304,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,25290,958,2.302771137480004,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,22975,1229,3.251849671408396,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,29850,1233,2.5110354202624063,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,23791,1083,2.7672593107224657,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,10047,865,5.23375999065789,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,5154,646,7.619425051867526,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,1460,345,14.364824915684723,High
+51041,"Chesterfield County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,2094,500,14.515347076463945,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_001,Total:,11208,27,0.14644337848128453,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,624,169,16.46403242147923,Medium
+51075,"Goochland County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,2332,362,9.436569051181657,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,2660,370,8.455789930753937,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,1588,265,10.144472602267768,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,1583,310,11.904601896671895,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,995,219,13.379969757602602,High
+51075,"Goochland County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,548,168,18.636434228917533,Medium
+51075,"Goochland County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,313,135,26.2194470609942,Medium
+51075,"Goochland County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,132,75,34.539928156949436,Low
+51075,"Goochland County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,433,179,25.130390223014665,Medium
+51085,"Hanover County, Virginia",2024,B25034,B25034_001,Total:,44589,96,0.13088129945498164,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,1227,224,11.097816851341275,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,5426,508,5.69138572918639,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,7023,556,4.81267152175202,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,9119,601,4.006465007927934,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,7415,552,4.525452596498923,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,5972,528,5.374625659358668,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,3703,490,8.044081566987089,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,1876,330,10.693385007226135,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,1001,241,14.635820106944728,High
+51085,"Hanover County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,1827,366,12.178018676289298,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_001,Total:,144916,115,0.04824092204426402,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,2361,383,9.861361614585547,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,13330,866,3.9493155963762976,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,21150,1053,3.026579577054905,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,23525,1167,3.015611019771374,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,24595,1153,2.8498144098529923,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,18615,1091,3.5628358017645994,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,14603,1024,4.262770671888005,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,16063,922,3.4893003933788824,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,6692,714,6.485991530058119,High
+51087,"Henrico County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,3982,531,8.10638755860338,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_001,Total:,9795,45,0.279281501789729,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,846,204,14.658647524197546,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,1858,333,10.895135142209325,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,1792,315,10.685790273556231,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,1304,258,12.027523449008896,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,1239,256,12.560379362707938,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,1171,257,13.341674042657017,High
+51127,"New Kent County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,426,179,25.543330907430402,Medium
+51127,"New Kent County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,352,171,29.531638574191767,Medium
+51127,"New Kent County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,422,183,26.36165891182529,Medium
+51127,"New Kent County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,385,202,31.895156515217305,Low
+51145,"Powhatan County, Virginia",2024,B25034,B25034_001,Total:,12021,30,0.15171019105622913,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,305,145,28.900293985749165,Medium
+51145,"Powhatan County, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,1801,330,11.138695321241661,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,2765,395,8.684324793747287,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,2761,428,9.42348318799959,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,1611,277,10.452455478011165,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,1577,250,9.637012294900286,High
+51145,"Powhatan County, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,403,170,25.643539713546577,Medium
+51145,"Powhatan County, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,323,177,33.31231708808943,Low
+51145,"Powhatan County, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,90,77,52.00945626477542,Low
+51145,"Powhatan County, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,385,120,18.94761773181226,Medium
+51760,"Richmond city, Virginia",2024,B25034,B25034_001,Total:,114293,103,0.05478374157902753,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,2268,393,10.53376433315643,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,10338,1082,6.362456566825493,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,6439,666,6.287672338631752,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,6226,692,6.756644603423041,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,7971,820,6.25367260269846,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,9400,757,4.895557136390092,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,13175,891,4.11112969552955,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,15374,766,3.0288376183213837,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,10657,843,4.808689181561672,High
+51760,"Richmond city, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,32445,1010,1.8923771395220623,High
+51,Virginia,2024,B25034,B25034_001,Total:,3684756,486,0.008017918404455619,High
+51,Virginia,2024,B25034,B25034_002,Total:!!Built 2020 or later,61023,1827,1.8200322794230708,High
+51,Virginia,2024,B25034,B25034_003,Total:!!Built 2010 to 2019,365075,3926,0.6537358460090746,High
+51,Virginia,2024,B25034,B25034_004,Total:!!Built 2000 to 2009,548525,5371,0.5952409813053493,High
+51,Virginia,2024,B25034,B25034_005,Total:!!Built 1990 to 1999,525903,5588,0.6459290945901028,High
+51,Virginia,2024,B25034,B25034_006,Total:!!Built 1980 to 1989,580863,5465,0.5719401046112464,High
+51,Virginia,2024,B25034,B25034_007,Total:!!Built 1970 to 1979,526245,4814,0.5560991114399111,High
+51,Virginia,2024,B25034,B25034_008,Total:!!Built 1960 to 1969,367862,4059,0.6707616453037869,High
+51,Virginia,2024,B25034,B25034_009,Total:!!Built 1950 to 1959,296321,4143,0.849936735308888,High
+51,Virginia,2024,B25034,B25034_010,Total:!!Built 1940 to 1949,153664,3579,1.4158709200447128,High
+51,Virginia,2024,B25034,B25034_011,Total:!!Built 1939 or earlier,259275,3441,0.8067855802024525,High
+5103368,"Ashland town, Virginia",2024,B25034,B25034_001,Total:,3164,238,4.572719692282863,High
+5103368,"Ashland town, Virginia",2024,B25034,B25034_002,Total:!!Built 2020 or later,88,56,38.684719535783366,Low
+5103368,"Ashland town, Virginia",2024,B25034,B25034_003,Total:!!Built 2010 to 2019,281,114,24.66224621142468,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_004,Total:!!Built 2000 to 2009,441,145,19.987731668148516,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_005,Total:!!Built 1990 to 1999,458,144,19.113099109382674,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_006,Total:!!Built 1980 to 1989,470,166,21.470607256030522,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_007,Total:!!Built 1970 to 1979,310,135,26.473183645455435,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_008,Total:!!Built 1960 to 1969,261,117,27.250812283827692,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_009,Total:!!Built 1950 to 1959,268,111,25.17806106246881,Medium
+5103368,"Ashland town, Virginia",2024,B25034,B25034_010,Total:!!Built 1940 to 1949,143,78,33.158331030671455,Low
+5103368,"Ashland town, Virginia",2024,B25034,B25034_011,Total:!!Built 1939 or earlier,444,170,23.275555190448806,Medium
+51036,"Charles City County, Virginia",2024,B25035,B25035_001,Median year structure built,1988,2,0.061157216857375254,High
+51041,"Chesterfield County, Virginia",2024,B25035,B25035_001,Median year structure built,1990,1,0.030547876158910053,High
+51075,"Goochland County, Virginia",2024,B25035,B25035_001,Median year structure built,2000,2,0.060790273556231,High
+51085,"Hanover County, Virginia",2024,B25035,B25035_001,Median year structure built,1991,2,0.061065066354827724,High
+51087,"Henrico County, Virginia",2024,B25035,B25035_001,Median year structure built,1985,1,0.030624822950242315,High
+51127,"New Kent County, Virginia",2024,B25035,B25035_001,Median year structure built,1997,3,0.09132239392523435,High
+51145,"Powhatan County, Virginia",2024,B25035,B25035_001,Median year structure built,1996,2,0.06091209775173447,High
+51760,"Richmond city, Virginia",2024,B25035,B25035_001,Median year structure built,1959,1,0.03103127797663655,High
+51,Virginia,2024,B25035,B25035_001,Median year structure built,1984,1,0.030640258848906754,High
+5103368,"Ashland town, Virginia",2024,B25035,B25035_001,Median year structure built,1983,4,0.1226228412631992,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_001,Total:,2911,215,4.489834700992672,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,2511,213,5.156642081830825,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,20,16,48.6322188449848,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,305,77,15.347052668294387,Medium
+51036,"Charles City County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,411,82,12.128473069612998,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,549,104,11.51582595600733,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,402,75,11.341468947058022,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,293,62,12.863470854902124,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,208,47,13.736263736263735,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,151,48,19.324060468205882,Medium
+51036,"Charles City County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,53,28,32.11561621838619,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,119,51,26.05297438124186,Medium
+51036,"Charles City County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,400,76,11.55015197568389,High
+51036,"Charles City County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,21,24,69.4745983499783,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,20,14,42.5531914893617,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,28,20,43.42162396873643,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,62,33,32.35611334444553,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,52,29,33.90226794482113,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,55,33,36.4741641337386,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,56,28,30.3951367781155,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,16,10,37.993920972644375,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,46,25,33.038192150125546,Low
+51036,"Charles City County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,44,23,31.776733904393478,Low
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_001,Total:,140155,557,0.24159096978930944,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,107538,1185,0.6698699451741127,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,3756,391,6.328273951141193,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,14436,871,3.66779774643095,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,19024,899,2.872711097931648,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,16967,927,3.3213050973434397,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,23146,1071,2.81285677778983,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,17075,956,3.403543280805671,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,7278,707,5.905293130565446,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,3418,492,8.75038460786005,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,1082,299,16.79879093651855,Medium
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,1356,402,18.021895257820695,Medium
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,32617,1192,2.221602418340968,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,1248,395,19.24051126178786,Medium
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,4533,717,9.615403957603712,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,5749,690,7.2961017140023285,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,5616,667,7.219927432693391,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,5722,751,7.978590604811164,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,5408,682,7.666229024657829,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,2060,443,13.072859798742881,High
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,1284,379,17.94354647804638,Medium
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,280,133,28.87537993920973,Medium
+51041,"Chesterfield County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,717,275,23.31565582700631,Medium
+51075,"Goochland County, Virginia",2024,B25036,B25036_001,Total:,10342,258,1.5165239390357377,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,8784,334,2.311469873381279,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,402,135,20.41464410470444,Medium
+51075,"Goochland County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,1616,313,11.774353727166028,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,2380,349,8.914203979464126,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,1508,267,10.763264615062122,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,1326,256,11.736282074204476,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,714,171,14.559015095399863,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,301,106,21.407870421795636,Medium
+51075,"Goochland County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,226,105,28.243268687629445,Medium
+51075,"Goochland County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,132,75,34.539928156949436,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,179,93,31.583773411896555,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,1558,249,9.71551868774167,High
+51075,"Goochland County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,222,128,35.05024781620526,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,622,171,16.71243855002492,Medium
+51075,"Goochland County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,96,73,46.22593718338399,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,42,39,56.44811115935736,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,230,150,39.64583058015065,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,64,49,46.54255319148936,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,207,119,34.94706547435502,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,45,36,48.6322188449848,Low
+51075,"Goochland County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,30,26,52.68490374873353,Low
+51085,"Hanover County, Virginia",2024,B25036,B25036_001,Total:,42688,384,0.5468390424848366,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,35055,611,1.059559467775129,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,1067,213,12.135265480297285,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,4604,474,6.258598971688421,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,5972,553,5.62910604095709,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,7221,510,4.293455132762472,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,5717,549,5.837652646907613,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,4625,469,6.1644623346751,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,2876,407,8.602796014390131,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,1338,297,13.49380511674186,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,711,196,16.757937576682526,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,924,174,11.44751904630324,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,7633,544,4.332491656568802,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,160,70,26.595744680851062,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,676,173,15.55727414974551,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,918,251,16.621305732694967,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,1410,314,13.537692125288322,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,1407,351,15.165164192066156,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,1238,278,13.65080456270777,High
+51085,"Hanover County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,550,178,19.6739430781984,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,440,208,28.73722022658193,Medium
+51085,"Hanover County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,201,104,31.453673879840917,Low
+51085,"Hanover County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,633,219,21.03170601708466,Medium
+51087,"Henrico County, Virginia",2024,B25036,B25036_001,Total:,137365,837,0.3704106502134121,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,88571,1494,1.0253996081449812,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,1466,293,12.149761358782868,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,8594,812,5.74374006605301,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,12850,773,3.656877934549927,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,15075,909,3.665562763689153,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,14941,955,3.8855974329831073,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,8925,720,4.904089295292585,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,8218,764,5.651468605130261,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,11487,807,4.270719139886691,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,4341,403,5.643510767832549,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,2674,414,9.411807498982661,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,48794,1353,1.685642499520034,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,693,207,18.158133659653416,Medium
+51087,"Henrico County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,4002,466,7.078527605498162,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,7261,695,5.818653094832742,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,7472,792,6.44350865317652,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,8542,754,5.3659407938888055,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,8315,794,5.804867973980446,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,5656,719,7.7277593152280915,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,3648,461,7.682104196661868,High
+51087,"Henrico County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,2013,497,15.008825612243818,Medium
+51087,"Henrico County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,1192,291,14.840578527569818,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_001,Total:,9263,232,1.5225459856467225,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,8582,296,2.096704844167371,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,774,185,14.529974945610771,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,1721,330,11.656473139777008,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,1757,311,10.760259007392056,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,1187,268,13.725183920025197,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,1118,239,12.995416261126305,High
+51127,"New Kent County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,910,230,15.364574635091351,Medium
+51127,"New Kent County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,397,176,26.949844196213242,Medium
+51127,"New Kent County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,238,132,33.71561390513652,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,283,138,29.643313606925364,Medium
+51127,"New Kent County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,197,158,48.755650872510145,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,681,208,18.567366959906092,Medium
+51127,"New Kent County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,0,25,NA,NA
+51127,"New Kent County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,127,103,49.30234784481727,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,35,38,66.00086843247938,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,27,42,94.56264775413712,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,66,52,47.895367044303214,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,212,111,31.828869645007746,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,28,32,69.4745983499783,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,11,19,105.00138159712628,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,118,101,52.03235278965535,Low
+51127,"New Kent County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,57,63,67.1892497200448,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_001,Total:,11325,245,1.3151096707529002,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,10559,298,1.7156455648978917,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,282,141,30.3951367781155,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,1620,319,11.970430410146722,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,2493,376,9.168529024124691,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,2523,427,10.288326123071993,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,1370,278,12.335544561045415,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,1380,212,9.338795647768821,High
+51145,"Powhatan County, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,352,160,27.631942525559545,Medium
+51145,"Powhatan County, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,159,120,45.8794517405517,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,50,53,64.43768996960486,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,330,113,20.816063369254856,Medium
+51145,"Powhatan County, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,766,226,17.935511519201313,Medium
+51145,"Powhatan County, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,23,35,92.50693802035153,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,96,102,64.58966565349544,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,81,66,49.532815490262294,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,186,107,34.970748766218904,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,146,92,38.306199775159264,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,4,7,106.38297872340425,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,40,60,91.1854103343465,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,129,127,59.84778869489409,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,40,60,91.1854103343465,Low
+51145,"Powhatan County, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,21,27,78.15892314372557,Low
+51760,"Richmond city, Virginia",2024,B25036,B25036_001,Total:,104321,766,0.4463660197282709,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,45407,1051,1.4070644946285549,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,319,109,20.771598174386142,Medium
+51760,"Richmond city, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,1841,440,14.528908400185573,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,2386,449,11.43957788212394,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,1606,273,10.333589465038022,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,2695,514,11.594137516847026,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,1939,364,11.411892508750947,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,4921,557,6.880752361475445,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,7975,580,4.421110804089528,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,5638,543,5.854756747256728,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,16087,687,2.596066260529042,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,58914,1197,1.235121659483459,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,1516,295,11.829241885942048,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,7449,923,7.532477177124609,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,3348,470,8.533879501621437,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,4167,564,8.227913195515786,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,4730,606,7.788352172320505,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,6530,653,6.079027355623101,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,7006,794,6.889448644540025,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,6386,659,6.273221151512094,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,4493,580,7.847397877278875,High
+51760,"Richmond city, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,13289,697,3.1884130234549635,High
+51,Virginia,2024,B25036,B25036_001,Total:,3365732,7402,0.13369145400264248,High
+51,Virginia,2024,B25036,B25036_002,Total:!!Owner occupied:,2266609,13049,0.3499731447440905,High
+51,Virginia,2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,39444,1471,2.267074647632487,High
+51,Virginia,2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,209001,3162,0.9197029917789984,High
+51,Virginia,2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,369411,4583,0.7541784725094993,High
+51,Virginia,2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,349340,4924,0.8568480763464861,High
+51,Virginia,2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,367212,4465,0.7391604071451136,High
+51,Virginia,2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,312679,3343,0.649937746054197,High
+51,Virginia,2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,215138,3133,0.8852732992389617,High
+51,Virginia,2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,184963,3418,1.1233660516708615,High
+51,Virginia,2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,84541,2404,1.728626555507734,High
+51,Virginia,2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,134880,2807,1.2651119355897125,High
+51,Virginia,2024,B25036,B25036_013,Total:!!Renter occupied:,1099123,8702,0.4812900471433336,High
+51,Virginia,2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,16706,916,3.333167160152496,High
+51,Virginia,2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,133538,3199,1.4562752557802496,High
+51,Virginia,2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,141325,3388,1.4573320135044092,High
+51,Virginia,2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,141222,3062,1.3180652988144859,High
+51,Virginia,2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,170886,3494,1.2429410004650534,High
+51,Virginia,2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,165766,3832,1.405284125016452,High
+51,Virginia,2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,119687,2826,1.4353548260872846,High
+51,Virginia,2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,81068,2591,1.9429071740291424,High
+51,Virginia,2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,50015,1922,2.3360772923138255,High
+51,Virginia,2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,78910,2182,1.6809577607362316,High
+5103368,"Ashland town, Virginia",2024,B25036,B25036_001,Total:,2809,215,4.652868926518215,High
+5103368,"Ashland town, Virginia",2024,B25036,B25036_002,Total:!!Owner occupied:,1567,200,7.758809643424505,High
+5103368,"Ashland town, Virginia",2024,B25036,B25036_003,Total:!!Owner occupied:!!Built 2020 or later,88,56,38.684719535783366,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_004,Total:!!Owner occupied:!!Built 2010 to 2019,172,71,25.093659433095354,Medium
+5103368,"Ashland town, Virginia",2024,B25036,B25036_005,Total:!!Owner occupied:!!Built 2000 to 2009,232,85,22.272298501205327,Medium
+5103368,"Ashland town, Virginia",2024,B25036,B25036_006,Total:!!Owner occupied:!!Built 1990 to 1999,199,111,33.90814253639016,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_007,Total:!!Owner occupied:!!Built 1980 to 1989,265,155,35.55657509892757,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_008,Total:!!Owner occupied:!!Built 1970 to 1979,104,90,52.606967500584524,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_009,Total:!!Owner occupied:!!Built 1960 to 1969,122,80,39.862474463102295,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_010,Total:!!Owner occupied:!!Built 1950 to 1959,114,67,35.72761691462699,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_011,Total:!!Owner occupied:!!Built 1940 to 1949,102,64,38.14291674116455,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_012,Total:!!Owner occupied:!!Built 1939 or earlier,169,67,24.100285966079745,Medium
+5103368,"Ashland town, Virginia",2024,B25036,B25036_013,Total:!!Renter occupied:,1242,209,10.22960319907591,High
+5103368,"Ashland town, Virginia",2024,B25036,B25036_014,Total:!!Renter occupied:!!Built 2020 or later,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B25036,B25036_015,Total:!!Renter occupied:!!Built 2010 to 2019,85,78,55.784015733953154,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_016,Total:!!Renter occupied:!!Built 2000 to 2009,160,80,30.3951367781155,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_017,Total:!!Renter occupied:!!Built 1990 to 1999,232,107,28.036893407399642,Medium
+5103368,"Ashland town, Virginia",2024,B25036,B25036_018,Total:!!Renter occupied:!!Built 1980 to 1989,108,74,41.652594844084206,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_019,Total:!!Renter occupied:!!Built 1970 to 1979,127,71,33.9851135629323,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_020,Total:!!Renter occupied:!!Built 1960 to 1969,139,82,35.86188799720102,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_021,Total:!!Renter occupied:!!Built 1950 to 1959,130,85,39.7474865559972,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_022,Total:!!Renter occupied:!!Built 1940 to 1949,41,47,69.68641114982577,Low
+5103368,"Ashland town, Virginia",2024,B25036,B25036_023,Total:!!Renter occupied:!!Built 1939 or earlier,220,151,41.72423321359492,Low
+51036,"Charles City County, Virginia",2024,B25041,B25041_001,Total:,3270,198,3.680878949276373,High
+51036,"Charles City County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,7,9,78.15892314372557,Low
+51036,"Charles City County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,87,45,31.443244942878106,Low
+51036,"Charles City County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,690,100,8.810184573366811,High
+51036,"Charles City County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,1915,165,5.237804248970295,High
+51036,"Charles City County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,504,110,13.267718434891687,High
+51036,"Charles City County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,67,34,30.848795535997827,Low
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_001,Total:,145709,144,0.06007727314096772,High
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,974,276,17.22599127466094,Medium
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,7239,803,6.743278030895635,High
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,19637,1236,3.8262859966136133,High
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,56576,1735,1.8642379210276585,High
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,44591,1306,1.7804511507801504,High
+51041,"Chesterfield County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,16692,1062,3.8676773614136906,High
+51075,"Goochland County, Virginia",2024,B25041,B25041_001,Total:,11208,27,0.14644337848128453,High
+51075,"Goochland County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,37,30,49.28941099153866,Low
+51075,"Goochland County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,576,224,23.64066193853428,Medium
+51075,"Goochland County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,1167,241,12.553946809812915,High
+51075,"Goochland County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,5222,469,5.459716257731202,High
+51075,"Goochland County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,3100,377,7.3928816550642225,High
+51075,"Goochland County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,1106,280,15.389942672463544,Medium
+51085,"Hanover County, Virginia",2024,B25041,B25041_001,Total:,44589,96,0.13088129945498164,High
+51085,"Hanover County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,502,234,28.33650201625111,Medium
+51085,"Hanover County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,1196,301,15.29922436490429,Medium
+51085,"Hanover County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,5668,481,5.158807618304007,High
+51085,"Hanover County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,19099,720,2.291690505287519,High
+51085,"Hanover County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,14199,716,3.0654155832284946,High
+51085,"Hanover County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,3925,428,6.628850211991559,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_001,Total:,144916,115,0.04824092204426402,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,2730,449,9.998107262544952,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,11843,830,4.260400831856095,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,33493,1262,2.290548031766743,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,51433,1502,1.7752608419003162,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,33896,1115,1.9996800511918094,High
+51087,"Henrico County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,11521,905,4.775210274141919,High
+51127,"New Kent County, Virginia",2024,B25041,B25041_001,Total:,9795,45,0.279281501789729,High
+51127,"New Kent County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,17,25,89.39746111210441,Low
+51127,"New Kent County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,320,175,33.244680851063826,Low
+51127,"New Kent County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,951,281,17.9622154251324,Medium
+51127,"New Kent County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,4743,412,5.280538204757995,High
+51127,"New Kent County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,2804,360,7.804742681969744,High
+51127,"New Kent County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,960,267,16.907294832826747,Medium
+51145,"Powhatan County, Virginia",2024,B25041,B25041_001,Total:,12021,30,0.15171019105622913,High
+51145,"Powhatan County, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,40,47,71.42857142857142,Low
+51145,"Powhatan County, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,152,98,39.193729003359465,Low
+51145,"Powhatan County, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,945,261,16.789694601244754,Medium
+51145,"Powhatan County, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,6231,479,4.673173011303907,High
+51145,"Powhatan County, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,3676,436,7.2101630224474205,High
+51145,"Powhatan County, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,977,253,15.742005332370976,Medium
+51760,"Richmond city, Virginia",2024,B25041,B25041_001,Total:,114293,103,0.05478374157902753,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,4941,727,8.944450288480052,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,22553,1201,3.2372242513649376,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,36921,1541,2.537250116469001,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,34035,1238,2.211204896800763,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,13500,928,4.178768434087583,High
+51760,"Richmond city, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,2343,327,8.484173902214058,High
+51,Virginia,2024,B25041,B25041_001,Total:,3684756,486,0.008017918404455619,High
+51,Virginia,2024,B25041,B25041_002,Total:!!No bedroom,69785,2651,2.309307375475652,High
+51,Virginia,2024,B25041,B25041_003,Total:!!1 bedroom,319156,4408,0.8396004644621008,High
+51,Virginia,2024,B25041,B25041_004,Total:!!2 bedrooms,822130,7071,0.5228467813072257,High
+51,Virginia,2024,B25041,B25041_005,Total:!!3 bedrooms,1416270,7997,0.34325362934269543,High
+51,Virginia,2024,B25041,B25041_006,Total:!!4 bedrooms,776599,6494,0.5083344640852797,High
+51,Virginia,2024,B25041,B25041_007,Total:!!5 or more bedrooms,280816,4287,0.9280379420530251,High
+5103368,"Ashland town, Virginia",2024,B25041,B25041_001,Total:,3164,238,4.572719692282863,High
+5103368,"Ashland town, Virginia",2024,B25041,B25041_002,Total:!!No bedroom,135,87,39.17595406957109,Low
+5103368,"Ashland town, Virginia",2024,B25041,B25041_003,Total:!!1 bedroom,241,105,26.485388893793594,Medium
+5103368,"Ashland town, Virginia",2024,B25041,B25041_004,Total:!!2 bedrooms,1101,239,13.196072098037428,High
+5103368,"Ashland town, Virginia",2024,B25041,B25041_005,Total:!!3 bedrooms,1280,212,10.06838905775076,High
+5103368,"Ashland town, Virginia",2024,B25041,B25041_006,Total:!!4 bedrooms,266,95,21.710811984368213,Medium
+5103368,"Ashland town, Virginia",2024,B25041,B25041_007,Total:!!5 or more bedrooms,141,70,30.179568432171422,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_001,Total:,2911,215,4.489834700992672,High
+51036,"Charles City County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,2511,213,5.156642081830825,High
+51036,"Charles City County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,2,3,91.1854103343465,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,42,37,53.55333622810827,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,319,57,10.86221188935789,High
+51036,"Charles City County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,1675,160,5.806832100893708,High
+51036,"Charles City County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,418,113,16.433734238885414,Medium
+51036,"Charles City County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,55,30,33.158331030671455,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,400,76,11.55015197568389,High
+51036,"Charles City County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,5,9,109.4224924012158,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,33,26,47.895367044303214,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,145,53,22.219893092967194,Medium
+51036,"Charles City County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,173,47,16.515276630883566,Medium
+51036,"Charles City County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,33,21,38.684719535783366,Low
+51036,"Charles City County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,11,16,88.42221608179055,Low
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_001,Total:,140155,557,0.24159096978930944,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,107538,1185,0.6698699451741127,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,94,116,75.01778438854038,Low
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,465,281,36.735627675915936,Low
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,6201,719,7.048573889200144,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,44680,1383,1.881668494365879,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,40215,1437,2.172214922300235,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,15883,1047,4.00726666331133,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,32617,1192,2.221602418340968,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,687,239,21.14829021825212,Medium
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,5984,699,7.1010028769728395,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,12042,1058,5.340982346993224,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,9804,1000,6.200558298269176,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,3481,563,9.83192301412182,High
+51041,"Chesterfield County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,619,252,24.7482212215997,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_001,Total:,10342,258,1.5165239390357377,High
+51075,"Goochland County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,8784,334,2.311469873381279,High
+51075,"Goochland County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,0,25,NA,NA
+51075,"Goochland County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,100,102,62.00607902735562,Low
+51075,"Goochland County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,475,139,17.789153735402337,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,4270,471,6.705437668614707,High
+51075,"Goochland County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,2970,377,7.716475801582185,High
+51075,"Goochland County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,969,269,16.875731255548132,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,1558,249,9.71551868774167,High
+51075,"Goochland County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,37,30,49.28941099153866,Low
+51075,"Goochland County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,377,155,24.993348544339007,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,568,176,18.83642279207158,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,491,179,22.161830889135132,Medium
+51075,"Goochland County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,85,79,56.49919542284999,Low
+51075,"Goochland County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,0,25,NA,NA
+51085,"Hanover County, Virginia",2024,B25042,B25042_001,Total:,42688,384,0.5468390424848366,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,35055,611,1.059559467775129,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,130,63,29.459901800327337,Medium
+51085,"Hanover County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,118,67,34.516511256504046,Low
+51085,"Hanover County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,2275,319,8.523998797555029,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,15926,695,2.6528469246251754,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,12968,698,3.2720242861080537,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,3638,386,6.449985044723795,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,7633,544,4.332491656568802,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,276,196,43.16990440949738,Low
+51085,"Hanover County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,994,257,15.717404732345438,Medium
+51085,"Hanover County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,2840,384,8.219529945631235,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,2476,383,9.403341991937186,High
+51085,"Hanover County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,860,250,17.67159115006715,Medium
+51085,"Hanover County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,187,109,35.433902768070475,Low
+51087,"Henrico County, Virginia",2024,B25042,B25042_001,Total:,137365,837,0.3704106502134121,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,88571,1494,1.0253996081449812,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,146,66,27.480534621309904,Medium
+51087,"Henrico County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,610,151,15.048084109821119,Medium
+51087,"Henrico County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,10115,798,4.795910854955249,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,37523,1411,2.2859333205725005,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,29655,1088,2.2303091427812958,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,10522,846,4.887718250196866,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,48794,1353,1.685642499520034,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,2121,371,10.633282173202122,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,10129,792,4.753272451035142,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,20421,995,2.961966710173343,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,11756,914,4.726293810002988,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,3598,553,9.343252161366243,High
+51087,"Henrico County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,769,266,21.02758487120604,Medium
+51127,"New Kent County, Virginia",2024,B25042,B25042_001,Total:,9263,232,1.5225459856467225,High
+51127,"New Kent County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,8582,296,2.096704844167371,High
+51127,"New Kent County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,14,24,104.21189752496744,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,69,86,75.76758733095458,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,706,227,19.545881157598355,Medium
+51127,"New Kent County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,4286,413,5.857765510668083,High
+51127,"New Kent County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,2606,334,7.79123229769039,High
+51127,"New Kent County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,901,251,16.93491527482129,Medium
+51127,"New Kent County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,681,208,18.567366959906092,Medium
+51127,"New Kent County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,1,2,121.580547112462,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,171,129,45.85932917399883,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,145,109,45.69751598364951,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,286,115,24.443641464918063,Medium
+51127,"New Kent County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,78,61,47.541111370898605,Low
+51127,"New Kent County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,0,25,NA,NA
+51145,"Powhatan County, Virginia",2024,B25042,B25042_001,Total:,11325,245,1.3151096707529002,High
+51145,"Powhatan County, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,10559,298,1.7156455648978917,High
+51145,"Powhatan County, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,40,47,71.42857142857142,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,34,52,92.97335955658859,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,523,194,22.549355774204233,Medium
+51145,"Powhatan County, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,5546,440,4.822885027901486,High
+51145,"Powhatan County, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,3487,424,7.391762543114982,High
+51145,"Powhatan County, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,929,239,15.639263056985154,Medium
+51145,"Powhatan County, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,766,226,17.935511519201313,Medium
+51145,"Powhatan County, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,0,28,NA,NA
+51145,"Powhatan County, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,41,50,74.13447994662317,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,364,184,30.729149270182702,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,243,125,31.270716849913065,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,105,66,38.21102909248806,Low
+51145,"Powhatan County, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,13,23,107.55202244563947,Low
+51760,"Richmond city, Virginia",2024,B25042,B25042_001,Total:,104321,766,0.4463660197282709,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,45407,1051,1.4070644946285549,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,117,101,52.4770737536695,Low
+51760,"Richmond city, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,974,220,13.73086261023698,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,8863,719,4.931536351904557,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,23072,903,2.3792309735296726,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,10375,775,4.540960193357015,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,2006,273,8.273053180882883,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,58914,1197,1.235121659483459,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,4228,636,9.144421471561712,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,18452,1099,3.620665003159434,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,24520,1295,3.210579292631287,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,9216,713,4.703066953731847,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,2397,390,9.890782931551978,High
+51760,"Richmond city, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,101,51,30.696078726413678,Low
+51,Virginia,2024,B25042,B25042_001,Total:,3365732,7402,0.13369145400264248,High
+51,Virginia,2024,B25042,B25042_002,Total:!!Owner occupied:,2266609,13049,0.3499731447440905,High
+51,Virginia,2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,6409,667,6.326589555625851,High
+51,Virginia,2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,36112,1179,1.9847068155404397,High
+51,Virginia,2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,286454,4312,0.9150776724167513,High
+51,Virginia,2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,1023700,8586,0.5098615695553379,High
+51,Virginia,2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,661457,6535,0.6005899668307533,High
+51,Virginia,2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,252477,4069,0.9797154715094998,High
+51,Virginia,2024,B25042,B25042_009,Total:!!Renter occupied:,1099123,8702,0.4812900471433336,High
+51,Virginia,2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,51637,2360,2.7783381217480714,High
+51,Virginia,2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,242443,3850,0.9653508378938117,High
+51,Virginia,2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,431869,5225,0.7354757561466718,High
+51,Virginia,2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,278037,5924,1.295228982283338,High
+51,Virginia,2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,77517,2169,1.7009701529143935,High
+51,Virginia,2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,17620,1188,4.098685867468924,High
+5103368,"Ashland town, Virginia",2024,B25042,B25042_001,Total:,2809,215,4.652868926518215,High
+5103368,"Ashland town, Virginia",2024,B25042,B25042_002,Total:!!Owner occupied:,1567,200,7.758809643424505,High
+5103368,"Ashland town, Virginia",2024,B25042,B25042_003,Total:!!Owner occupied:!!No bedroom,93,60,39.219531326600645,Low
+5103368,"Ashland town, Virginia",2024,B25042,B25042_004,Total:!!Owner occupied:!!1 bedroom,12,20,101.31712259371832,Low
+5103368,"Ashland town, Virginia",2024,B25042,B25042_005,Total:!!Owner occupied:!!2 bedrooms,249,106,25.878590349238902,Medium
+5103368,"Ashland town, Virginia",2024,B25042,B25042_006,Total:!!Owner occupied:!!3 bedrooms,880,176,12.158054711246201,High
+5103368,"Ashland town, Virginia",2024,B25042,B25042_007,Total:!!Owner occupied:!!4 bedrooms,236,78,20.091700582144146,Medium
+5103368,"Ashland town, Virginia",2024,B25042,B25042_008,Total:!!Owner occupied:!!5 or more bedrooms,97,49,30.708488703663082,Low
+5103368,"Ashland town, Virginia",2024,B25042,B25042_009,Total:!!Renter occupied:,1242,209,10.22960319907591,High
+5103368,"Ashland town, Virginia",2024,B25042,B25042_010,Total:!!Renter occupied:!!No bedroom,42,65,94.0801852655956,Low
+5103368,"Ashland town, Virginia",2024,B25042,B25042_011,Total:!!Renter occupied:!!1 bedroom,201,99,29.94147802023318,Medium
+5103368,"Ashland town, Virginia",2024,B25042,B25042_012,Total:!!Renter occupied:!!2 bedrooms,684,195,17.33056044366235,Medium
+5103368,"Ashland town, Virginia",2024,B25042,B25042_013,Total:!!Renter occupied:!!3 bedrooms,295,105,21.63721601153985,Medium
+5103368,"Ashland town, Virginia",2024,B25042,B25042_014,Total:!!Renter occupied:!!4 bedrooms,0,19,NA,NA
+5103368,"Ashland town, Virginia",2024,B25042,B25042_015,Total:!!Renter occupied:!!5 or more bedrooms,20,31,94.22492401215806,Low

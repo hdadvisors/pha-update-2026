@@ -4,6 +4,34 @@ Append-only dev log, newest first. A correction is a new entry at the top saying
 
 Entries dated before 2026-08-26 reference a phase-gate/`.planning/` workflow (phase numbers, `PLAN.md` sections, Issue numbers, a "kickoff prompt" block) that this repo retired on 2026-08-26 in favor of [TODO.md](TODO.md) as the punch list. Read them as historical records of what happened, not as current process.
 
+## 2026-08-26 (acs_stock.R — housing stock pull)
+
+**Built:** `r/acs_stock.R` — ACS 5-year 2020-2024 housing stock snapshot for the 8 `rr` localities + Virginia + Ashland place (sumlev 160). Nine tables pulled: B25001 (total units), B25002/B25004 (occupancy/vacancy), B25024 (structure type), B25034/B25035/B25036 (year built), B25041/B25042 (bedrooms). Outputs: `data/acs_stock.rds` (800 rows) and `data-out/acs_stock.csv`.
+
+**Frame-structure decision: one combined long frame.** All nine tables share the same column schema from `get_acs()`, all 10 geographies are present for every table, and no awkward joins arise in long format. Variable counts range from 1 (B25001 total units; B25035 median year) to 23 (B25036 year built by tenure). Splitting by concept group would add frames without removing complexity — the chapter filters by the `table` column to access individual concept slices. Per-table shape diagnostics that drove this decision:
+
+| Table  | Rows | Variables | Concept                    |
+|--------|------|-----------|----------------------------|
+| B25001 |   10 |         1 | Total housing units        |
+| B25002 |   30 |         3 | Occupancy status           |
+| B25004 |   80 |         8 | Vacancy type               |
+| B25024 |  110 |        11 | Structure type             |
+| B25034 |  110 |        11 | Year built (all units)     |
+| B25035 |   10 |         1 | Median year built          |
+| B25036 |  230 |        23 | Year built by tenure       |
+| B25041 |   70 |         7 | Bedrooms (occupied units)  |
+| B25042 |  150 |        15 | Bedrooms by tenure         |
+
+**Validation passed.** B25002 arithmetic balance (total = occupied + vacant) checked against all 10 geographies — max gap 0 units. Virginia total housing units: 3,684,756 (B25001_001, 2020-2024 ACS 5-year). Virginia occupied units: 3,365,732. Implied vacancy rate: 8.7%.
+
+**Secondary/Ashland reliability.** 400 rows across those 5 geographies: High 133, Medium 83, Low 152, NA 32. The Low and NA cells are concentrated in detailed vacancy type (B25004) and bedrooms-by-tenure (B25042) categories — expected for small geographies at this level of cross-tabulation. No secondary or Ashland figure suppresses the entire table; the counts (`estimate`) are all non-NA at the higher-level rows (B25001, B25002, B25024 totals).
+
+**Infrastructure note.** `renv::restore()` was run for the first time on this laptop (jonat) to bring `hdatools` from 0.1.7 to 0.6.0. The memory entry `laptop-setup-pha.md` noted this as outstanding since 2026-08-06. Also: `cache_table = TRUE` in `get_acs()` and `cache = TRUE` in `load_variables()` are now deprecated and ignored by the pinned tidycensus — both arguments were kept for consistency with every other ACS script in this repo; a repo-wide removal sweep is a separate task.
+
+**No 2022 baseline comparison.** `data/baseline_2022.rds` has 0 rows under `section == "stock"` — the 2022 Framework recorded total units and vacancy rate at the region level but not as discrete variable-level data rows that map to this script's B25xxx pulls. Comparison is narrative in the chapter.
+
+**Left open.** Chapter figures consuming this data are out of scope for this session. The `baseline_2022.rds` stock section is empty — if PHA wants a Since-2022 callout with numbers, the 2022 Framework's total-units and vacancy-rate figures can be transcribed manually from the rendered SOH deck and compared against this pull's B25001/B25002 outputs.
+
 ## 2026-08-20 (gaps.qmd preliminary draft, PUMS-free)
 
 **Phase:** None — a sanctioned deviation from the phase gate, run at Jonathan's direction while he was away, same terms as the recurring 2026-08-06/08-18/08-20 deviations. Phase 4 (PUMS engine, AMI, gap methodology) and Phase 6 (chapter builds) both stay `not planned` — no phase file exists for either, so this session built only what it could support without one, per CLAUDE.md's phase gate.
