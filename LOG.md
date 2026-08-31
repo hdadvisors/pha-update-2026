@@ -4,6 +4,24 @@ Append-only dev log, newest first. A correction is a new entry at the top saying
 
 Entries dated before 2026-08-26 reference a phase-gate/`.planning/` workflow (phase numbers, `PLAN.md` sections, Issue numbers, a "kickoff prompt" block) that this repo retired on 2026-08-26 in favor of [TODO.md](TODO.md) as the punch list. Read them as historical records of what happened, not as current process.
 
+## 2026-08-31 (r/pums/ — PUMS collect and prep)
+
+**Built:** `r/pums/pums_collect.R` and `r/pums/pums_prep.R`. Outputs: `data/pums_raw.rds` (51,318 person records across the 9 `puma_region` PUMAs), `data/pums_wgt.rds` (166 columns), `data/pums_vars.rds`, and `data/pums_hh.rds` (21,066 households with 80 housing replicate weights). `pums_ami.R` is written locally but unrun, so it is not committed.
+
+**Geography benchmark passed exactly.** Core-3 weighted households 381,842 against ACS `B25003` 381,841 for Chesterfield, Henrico, and Richmond city, SE 823. PUMS household weights are controlled to the same housing-unit totals as the published table, so the match confirms the seven core-3 PUMAs tile the three localities with no leakage.
+
+**Defect found and fixed: the dollar adjustment.** The first pull omitted `ADJINC` and `ADJHSG`. A 2020-2024 5-year file mixes five survey years of nominal dollars, so banding income against the FY2026 HUD limits unadjusted would have pushed roughly a tenth of households one AMI tier too low. Adding both factors moved median household income from $87,300 to $97,464 in 2024 dollars, an **11.6% lift**. Cost burden stays on nominal dollars, where the factors cancel; its `GRPIP`/`OCPIP` cross-check holds at 100% of 19,700 households within one percentage point. Both gotchas are now in CLAUDE.md, including that tidycensus scales `ADJINC` but leaves `ADJHSG` as a raw integer.
+
+**Data surprise: 2020 is undersampled.** Household records by `ADJINC` factor run 4,492 / 4,449 / 4,416 / 4,455 / 3,254. `ADJHSG = 1.000000` marks the final year, so the factors ascend backward in time and the 3,254 group is 2020 — a 27% shortfall from the pandemic-shortened collection. Weighting corrects the totals; standard errors on 2020-heavy cells are wider than the other years suggest.
+
+**Cost burden, core-3.** Renters 68,799 of 133,122 with a defined ratio are cost-burdened (51.7%), 34,928 of those severe. Owners 49,305 of 240,820 (20.5%). 431 households have no defined ratio: zero or negative income, plus 3,390 no-cash-rent renters excluded by definition rather than counted as unburdened.
+
+**Race groups diverge from the ACS frame by construction.** `race_group` carries the same six labels and order as `acs_tenure_race.R`, but the PUMS version is mutually exclusive where the ACS version overlaps: the nine `B25003` letter tables put a Hispanic Black householder in both "Black" and "Hispanic or Latino", and a PUMS household is one row. `HHLDRHISP` takes precedence, so PUMS group shares sum to 100% and the ACS ones do not. Weighted core-3: White non-Hispanic 210,667 (CV 0.6), Black 113,335 (0.9), Hispanic or Latino 26,335 (2.2), Asian 16,588 (2.7), Multiracial 12,484 (5.5), Another race 2,433 (12.1). All six clear CV-15 undivided; the AMI-banded cut will not.
+
+**No 2022 baseline comparison.** The 2022 Framework published no PUMS-derived tenure or AMI figures that map to these outputs.
+
+**Left open.** Run `pums_ami.R`, then build `pums_gap.R`, `pums_labels.R`, and `rva_puma.R`. `data-notes.qmd` needs the race-group caveat and a note that 2024-dollar incomes are banded against FY2026 limits.
+
 ## 2026-08-26 (oews.R — BLS OEWS May 2024, Richmond MSA wages)
 
 **Built:** `r/oews.R` — reads the BLS OEWS May 2024 MSA-level Excel file. Outputs: `data/oews.rds` and `data-out/oews.csv` (621 rows: 1 total + 22 major-group + 598 detailed SOC occupations, all cross-industry, Richmond MSA).

@@ -7,7 +7,14 @@ What's left to finish the report. Start every session here. See [LOG.md](LOG.md)
 - [x] `r/acs_stock.R` — housing stock (B25001, B25002/04, B25024, B25034-36, B25041/42): units, occupancy/vacancy, structure type, year built, bedrooms.
 - [x] `r/fmr.R` — HUD FY2026 FMR and SAFMR by locality/zip. Files already staged under `data/raw/`.
 - [x] `r/oews.R` — OEWS wage affordability, Richmond MSA, latest (2024) release.
-- [ ] `r/pums/*` (`pums_collect`, `pums_prep`, `pums_ami`, `pums_gap`, `pums_labels`, `rva_puma`) — the PUMS engine. Blocks `gaps.qmd` sections 1-2 (AMI-banded rental gap, renter-competition table) and the race/ethnicity cost-burden cut in `burden.qmd`. The single biggest remaining build.
+- [ ] `r/pums/*` — the PUMS engine. Blocks `gaps.qmd` sections 1-2 (AMI-banded rental gap, renter-competition table) and the race/ethnicity cost-burden cut in `burden.qmd`. The single biggest remaining build.
+  - [x] `pums_collect.R` — ACS 2020-2024 5-year PUMS pull, VA statewide filtered to `puma_region`.
+  - [x] `pums_prep.R` — household frame, replicate weights, 2024-dollar adjustment, derived variables.
+  - [ ] `pums_ami.R` — six-band AMI banding on HUD FY2026 limits, plus band cross-tabs. Written locally, needs a first run before it is committed.
+  - [ ] `pums_gap.R` — AMI-banded rental gap and renter-competition tables.
+  - [ ] `pums_labels.R` — variable-label lookup from the PUMS data dictionary.
+  - [ ] `rva_puma.R` — PUMA map and coverage validation against `_common.R`.
+- [ ] `data-notes.qmd` — two PUMS caveats from the 2026-08-31 session: the mutually exclusive PUMS race groups against the overlapping ACS ones, and 2024-dollar incomes banded against FY2026 HUD limits.
 - [ ] Consolidated rental assistance (LIHTC piece) — blocked on Jonathan sourcing a LIHTC database file. `r/psh.R` already covers the voucher/public-housing program-mix half.
 
 ## MLS pipeline — needs a live run
