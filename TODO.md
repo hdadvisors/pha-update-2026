@@ -9,9 +9,10 @@ What's left to finish the report. Start every session here. See [LOG.md](LOG.md)
 - [x] `r/oews.R` — OEWS wage affordability, Richmond MSA, latest (2024) release.
 - [ ] `r/pums/*` — the PUMS engine. Blocks `gaps.qmd` sections 1-2 (AMI-banded rental gap, renter-competition table) and the race/ethnicity cost-burden cut in `burden.qmd`. The single biggest remaining build.
   - [x] `pums_collect.R` — ACS 2020-2024 5-year PUMS pull, VA statewide filtered to `puma_region`.
-  - [x] `pums_prep.R` — household frame, replicate weights, 2024-dollar adjustment, derived variables.
+  - [ ] `pums_collect.R` re-pull — add `RNTP` (vacant-unit asking rent) and `VACS` (vacancy status) to the variable list and re-run the whole-state pull (decided 2026-08-31, blocks `pums_gap.R` below).
+  - [ ] `pums_prep.R` amendment — stop dropping `TEN == "b"` vacant-for-rent records; carry them into `pums_hh.rds` with their asking rent so `pums_gap.R` can count them as available supply.
   - [x] `pums_ami.R` — six-band AMI banding on HUD FY2026 limits, plus band cross-tabs.
-  - [ ] `pums_gap.R` — AMI-banded rental gap and renter-competition tables.
+  - [ ] `pums_gap.R` — AMI-banded rental gap and renter-competition tables. Cross-tabs each occupied unit's rent-implied AMI band against the household's actual income band (NLIHC-style affordable-and-available method, using PUMS `GRNTP`/`hh_income` alone — no FMR or CoStar needed). Blocked on the `pums_collect.R` re-pull and `pums_prep.R` amendment above.
   - [ ] `pums_labels.R` — variable-label lookup from the PUMS data dictionary.
   - [ ] `rva_puma.R` — PUMA map and coverage validation against `_common.R`.
 - [ ] `data-notes.qmd` — two PUMS caveats from the 2026-08-31 session: the mutually exclusive PUMS race groups against the overlapping ACS ones, and 2024-dollar incomes banded against FY2026 HUD limits.
