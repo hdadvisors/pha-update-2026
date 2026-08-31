@@ -4,6 +4,22 @@ Append-only dev log, newest first. A correction is a new entry at the top saying
 
 Entries dated before 2026-08-26 reference a phase-gate/`.planning/` workflow (phase numbers, `PLAN.md` sections, Issue numbers, a "kickoff prompt" block) that this repo retired on 2026-08-26 in favor of [TODO.md](TODO.md) as the punch list. Read them as historical records of what happened, not as current process.
 
+## 2026-08-31 (pums_ami.R — AMI banding, first run)
+
+**Built:** `r/pums/pums_ami.R`, run clean on its first execution. Outputs: `data/pums_ami.rds` (21,066 households + `ami_band`), `data/pums_ami_bands.rds` + `data-out/pums_ami_bands.csv` (band × tenure × locality, 48 rows), `data/pums_ami_race.rds` + `data-out/pums_ami_race.csv` (band × tenure × race group, regional grain, 72 rows).
+
+**Benchmark passed exactly.** Region-wide banded household total 381,842 against ACS B25003 381,841, a 0.00% difference — ties to the same figure `pums_prep.R` already validated, confirming the banding step neither dropped nor duplicated a household.
+
+**Reliability: clean at tenure/locality, thinner at tenure/race.** 0 of 48 `pums_ami_bands` cells clear above CV-30. `pums_ami_race` has 12 of 72 cells above CV-30 — worst is Another race's share at or below 50% AMI among renters (34.1%, CV 51.9), which needs a footnote or suppression rather than a clean citation in the chapter.
+
+**Data surprise: Richmond city concentrates the deepest-poverty renters.** 28.6% of Richmond city renter households sit Below 30% AMI, against 20.2% in Henrico and 18.7% in Chesterfield — the region-level figure (23.4%) was masking an 8-10 point locality gap.
+
+**Regional AMI band distribution, core-3, by tenure.** Owner: Below 30% AMI 7.0%, 30-50% 8.2%, 50-80% 15.9%, 80-100% 10.8%, 100-120% 10.0%, Above 120% 48.1%. Renter: Below 30% AMI 23.4%, 30-50% 16.5%, 50-80% 23.9%, 80-100% 10.7%, 100-120% 7.6%, Above 120% 17.8%. Renters at or below 80% AMI: 63.8% (89,031 of 139,491) — the headline input `pums_gap.R` will read.
+
+**No 2022 baseline comparison,** by design — no same-vintage AMI-banded benchmark exists for this region (HUD CHAS is 2018-2022, a different sample and set of income limits), logged as narrative rather than gated, per the script's own note.
+
+**Left open.** Build `pums_gap.R`, `pums_labels.R`, and `rva_puma.R`. Two scoping questions on `pums_gap.R`'s gap definition and geography filter were put to Jonathan this session; answers pending.
+
 ## 2026-08-31 (r/pums/ — PUMS collect and prep)
 
 **Built:** `r/pums/pums_collect.R` and `r/pums/pums_prep.R`. Outputs: `data/pums_raw.rds` (51,318 person records across the 9 `puma_region` PUMAs), `data/pums_wgt.rds` (166 columns), `data/pums_vars.rds`, and `data/pums_hh.rds` (21,066 households with 80 housing replicate weights). `pums_ami.R` is written locally but unrun, so it is not committed.
