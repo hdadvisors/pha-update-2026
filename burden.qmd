@@ -11,7 +11,7 @@
 source("_common.R")
 
 burden_raw <- read_rds("data/acs_burden.rds")
-chas       <- read_rds("data/chas.rds")
+chas       <- read_rds("data/chas_cb.rds")
 baseline   <- read_rds("data/baseline_2022.rds")
 
 # Palette anchors — match ggtext subtitle spans to cb_pal fills

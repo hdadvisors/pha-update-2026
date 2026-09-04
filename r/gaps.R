@@ -8,7 +8,7 @@
 #         sections 1-2) need PUMS or CHAS Table 14/15 unit-affordability data, neither
 #         of which exists yet -- left as "Coming in a future draft" in the chapter.
 # Source: data/mls_transactions.rds (price points), data/fred.rds (mortgage rate),
-#         data/acs_income.rds (household income distribution), data/chas.rds (renter
+#         data/acs_income.rds (household income distribution), data/chas_cb.rds (renter
 #         households by AMI band), data/hud_ami.rds (AMI dollar thresholds).
 # Note:   Ownership affordability assumptions (down payment, tax, insurance) live in
 #         r/affordcalc.R and are provisional -- flagged there and in gaps.qmd for PHA
@@ -27,7 +27,7 @@ source("r/affordcalc.R") # income_needed_for_price()
 mls  <- read_rds("data/mls_transactions.rds")
 fred <- read_rds("data/fred.rds")
 inc  <- read_rds("data/acs_income.rds")
-chas <- read_rds("data/chas.rds")
+chas <- read_rds("data/chas_cb.rds")
 ami  <- read_rds("data/hud_ami.rds")
 
 pha_names <- c("CHESTERFIELD", "HANOVER", "HENRICO", "RICHMOND CITY")

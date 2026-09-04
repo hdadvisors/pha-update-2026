@@ -128,7 +128,7 @@ psh_wide <- read_rds("data/psh.rds") |>
   pivot_wider(names_from = year, values_from = total_units, names_prefix = "yr")
 
 ### 3h. CHAS — severely burdened renters ----
-chas_sev <- read_rds("data/chas.rds") |>
+chas_sev <- read_rds("data/chas_cb.rds") |>
   mutate(geoid = as.character(geoid)) |>
   filter(tenure == "Renter", burden == "Severely cost-burdened") |>
   summarise(value_current = sum(estimate, na.rm = TRUE), .by = geoid)

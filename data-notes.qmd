@@ -22,7 +22,7 @@ The table below lists each source, the vintage used this cycle, and its current 
 | Population Estimates Program (PEP) | Vintage 2025 | Census API (FTP fallback) | Loaded |
 | Decennial Census | 2000 / 2010 / 2020 | tidycensus API | Loaded |
 | Weldon Cooper population projections | 2025 official release (2030–2050 series) | UVA published xlsx | Loaded |
-| CHAS | 2018–2022 | huduser.gov download | Cost burden by income band loaded; race and unit-affordability tables pending |
+| CHAS | 2018–2022 | huduser.gov download | Cost burden by income band (Table 7) and renter-shortage/unit-affordability figures (Tables 8, 18C, 17B) loaded; race tables (Table 9) pending |
 | HUD Fair Market Rents and Small Area FMRs | FY2026 | huduser.gov download | Raw files staged; processing pending |
 | HUD Income Limits | FY2026 | huduser.gov download | Loaded — household-size income limits at 30/50/80% for the region's HUD area, extended to 100/120% (`r/hud_ami.R`) |
 | BLS OEWS wages | Latest release (May 2025 files), Richmond MSA | Manual download | Raw files staged; processing pending |
@@ -97,6 +97,7 @@ The housing-gap chapter's income-needed and maximum-affordable-price figures use
 - **Ownership assumptions are provisional placeholders, pending PHA input:** a 10 percent down payment, a 30-year fixed term at the current Freddie Mac PMMS rate, property tax at 1.0 percent of home value annually, and $1,500/year in homeowners insurance — one regional figure rather than a per-locality rate. Private mortgage insurance is not modeled. PHA review of these figures against local lending norms is expected to refine them.
 - **AMI bands** come from HUD's FY2026 Section 8 Income Limits for the region's single HUD area ("Richmond, VA HUD Metro FMR Area," confirmed to cover all 8 `rr` counties identically rather than assumed). HUD publishes 30, 50, and 80 percent limits by household size; 100 and 120 percent are derived by applying the same household-size scaling factor embedded in the 50 percent limits to the published median family income (`r/hud_ami.R`). The gaps chapter's price-point figures reference the 4-person limit as the headline "area median income," the same convention HUD and NLIHC use for headline AMI reporting.
 - **The starter-home cut in `gaps.qmd`** compares a current-dollar (FY2026) income threshold against CHAS 2018-2022 renter households grouped by relative-AMI band — a vintage mismatch (current income limits vs. a 2018-2022 area median) stated as a caveat in the chapter, not resolved, pending the PUMS-based rebuild.
+- **CHAS's renter-shortage figures compare two income concepts that are close but not identical.** A home's rent tier ("affordable at 30% of area median income," RHUD30) is priced against a *generic* household sized to the unit's bedroom count, while the household counts it's compared against use each household's *actual* size. A small and a large extremely-low-income household are measured against the same rent threshold even though their real affordability constraint differs by family size. This is how HUD itself defines these figures — not a processing choice made here — and is a caveat to carry into any figure built from `chas_gap`, not something further data work resolves.
 
 ## Comparing to the 2022 Framework
 

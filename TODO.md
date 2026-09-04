@@ -7,6 +7,7 @@ What's left to finish the report. Start every session here. See [LOG.md](LOG.md)
 - [x] `r/acs_stock.R` — housing stock (B25001, B25002/04, B25024, B25034-36, B25041/42): units, occupancy/vacancy, structure type, year built, bedrooms.
 - [x] `r/fmr.R` — HUD FY2026 FMR and SAFMR by locality/zip. Files already staged under `data/raw/`.
 - [x] `r/oews.R` — OEWS wage affordability, Richmond MSA, latest (2024) release.
+- [x] `r/chas.R` extended — Tables 8, 18C, and 17B added for a fact-sheet renter-shortage/cost-burden infographic (`data/chas_gap.rds`); existing Table 7 output renamed `data/chas_cb.rds`. Ran clean 2026-09-04 after correcting three validation tolerances for CHAS's nearest-5 cell rounding (see LOG.md). The infographic/chart itself is not built yet — this is data only.
 - [ ] `r/pums/*` — the PUMS engine. Blocks `gaps.qmd` sections 1-2 (AMI-banded rental gap, renter-competition table) and the race/ethnicity cost-burden cut in `burden.qmd`. The single biggest remaining build.
   - [x] `pums_collect.R` — ACS 2020-2024 5-year PUMS pull, VA statewide filtered to `puma_region`.
   - [ ] `pums_collect.R` re-pull — add `RNTP` (vacant-unit asking rent) and `VACS` (vacancy status) to the variable list and re-run the whole-state pull (decided 2026-08-31, blocks `pums_gap.R` below).

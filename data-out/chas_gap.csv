@@ -1,0 +1,118 @@
+geoid,name,source_table,measure,estimate,moe,cv,reliability
+5103368,Ashland town,T17B,homes_vacant_lowest_rent_tier,0,38,NA,NA
+5103368,Ashland town,T18C,homes_occupied_lowest_income,55,51.43928459844674,56.854694223207225,Low
+5103368,Ashland town,T18C,homes_occupied_lowest_rent_tier,100,57.63679380395825,35.03756462246702,Low
+5103368,Ashland town,T8,renters_income_not_computed,15,46.04345773288535,186.59962607045736,Low
+5103368,Ashland town,T8,renters_low_income,814,197.98989873223331,14.786068925433584,High
+5103368,Ashland town,T8,renters_low_income_burdened,449,141.98239327465924,19.22304794506661,Medium
+5103368,Ashland town,T8,renters_lowest_income,330,113.55175031676086,20.917702922862826,Medium
+5103368,Ashland town,derived,burden_rate,0.5515970515970516,NA,NA,Medium
+5103368,Ashland town,derived,homes_available_lowest_income,55,63.953107821277925,70.68594398593856,Low
+5103368,Ashland town,derived,homes_lowest_rent_tier,100,69.03622237637282,41.967308435484995,Low
+5103368,Ashland town,derived,homes_occupied_higher_income,45,77.25283166331187,104.36046155124872,Low
+5103368,Ashland town,derived,shortage_homes,230,132.89093272304171,35.12380936250607,Low
+5103368,Ashland town,derived,shortage_homes_available,275,130.3226764611593,28.808549646014765,Medium
+51036,Charles City County,T17B,homes_vacant_lowest_rent_tier,4,33.15116890850155,503.8171566641573,Low
+51036,Charles City County,T18C,homes_occupied_lowest_income,110,54.71745608121781,30.238992031620786,Low
+51036,Charles City County,T18C,homes_occupied_lowest_rent_tier,245,72.14568594171102,17.9010448338716,Medium
+51036,Charles City County,T8,renters_income_not_computed,4,39.84971769034255,605.6188098836253,Low
+51036,Charles City County,T8,renters_low_income,320,77.19455939378112,14.664619945627114,High
+51036,Charles City County,T8,renters_low_income_burdened,155,59.60704656330491,23.377604299756804,Medium
+51036,Charles City County,T8,renters_lowest_income,145,55.5517776493246,23.28970868853353,Medium
+51036,Charles City County,derived,burden_rate,0.484375,NA,NA,Medium
+51036,Charles City County,derived,homes_available_lowest_income,114,63.97655820689325,34.11537258406295,Low
+51036,Charles City County,derived,homes_lowest_rent_tier,249,79.39773296511683,19.383975528891696,Medium
+51036,Charles City County,derived,homes_occupied_higher_income,135,90.54832963671942,40.7737609531552,Low
+51036,Charles City County,derived,shortage_homes,-104,96.90201236300514,NA,NA
+51036,Charles City County,derived,shortage_homes_available,31,84.72897969408106,166.1515436691461,Low
+51041,Chesterfield County,T17B,homes_vacant_lowest_rent_tier,20,65.77993615077473,199.93901565585023,Low
+51041,Chesterfield County,T18C,homes_occupied_lowest_income,870,254.13775791881065,17.75759060327783,Medium
+51041,Chesterfield County,T18C,homes_occupied_lowest_rent_tier,2255,444.65829577328253,11.987095094946927,High
+51041,Chesterfield County,T8,renters_income_not_computed,530,213.21350801485352,24.455297128503013,Medium
+51041,Chesterfield County,T8,renters_low_income,16890,1051.7689860420871,3.7855135807849725,High
+51041,Chesterfield County,T8,renters_low_income_burdened,12680,900.3854730058677,4.316615079659554,High
+51041,Chesterfield County,T8,renters_lowest_income,5005,586.0443669211402,7.118041434810056,High
+51041,Chesterfield County,derived,burden_rate,0.7507400828892836,NA,NA,High
+51041,Chesterfield County,derived,homes_available_lowest_income,890,262.51285682800375,17.930593683822533,Medium
+51041,Chesterfield County,derived,homes_lowest_rent_tier,2275,449.49749721216466,12.011022337744471,High
+51041,Chesterfield County,derived,homes_occupied_higher_income,1385,512.1591549508805,22.47963547566219,Medium
+51041,Chesterfield County,derived,shortage_homes,2730,738.5770102027276,16.446263184090487,Medium
+51041,Chesterfield County,derived,shortage_homes_available,4115,642.153408462495,9.486435325759713,High
+51075,Goochland County,T17B,homes_vacant_lowest_rent_tier,0,50,NA,NA
+51075,Goochland County,T18C,homes_occupied_lowest_income,125,87.44712688247682,42.52747811913766,Low
+51075,Goochland County,T18C,homes_occupied_lowest_rent_tier,340,122.22929272478018,21.85397688624713,Medium
+51075,Goochland County,T8,renters_income_not_computed,55,75.07329751649384,82.9768416871996,Low
+51075,Goochland County,T8,renters_low_income,725,183.92117876960228,15.421543131294605,Medium
+51075,Goochland County,T8,renters_low_income_burdened,400,144.3606594609487,21.93930994847245,Medium
+51075,Goochland County,T8,renters_lowest_income,220,99.00505037623081,27.357018617361373,Medium
+51075,Goochland County,derived,burden_rate,0.5517241379310345,NA,NA,Medium
+51075,Goochland County,derived,homes_available_lowest_income,125,100.7323185477233,48.98836160375601,Low
+51075,Goochland County,derived,homes_lowest_rent_tier,340,132.06059215375342,23.6117633030133,Medium
+51075,Goochland County,derived,homes_occupied_higher_income,215,150.2897202073382,42.49373583299306,Low
+51075,Goochland County,derived,shortage_homes,-120,165.05150711217394,NA,NA
+51075,Goochland County,derived,shortage_homes_available,95,141.2409289122668,90.37973374645132,Low
+51085,Hanover County,T17B,homes_vacant_lowest_rent_tier,0,62,NA,NA
+51085,Hanover County,T18C,homes_occupied_lowest_income,625,210.04999404903586,20.430394557960934,Medium
+51085,Hanover County,T18C,homes_occupied_lowest_rent_tier,1145,264.4447012136942,14.039882731245626,High
+51085,Hanover County,T8,renters_income_not_computed,75,79.64923100695951,64.55864721942007,Low
+51085,Hanover County,T8,renters_low_income,3985,501.1127617612627,7.6443618243376585,High
+51085,Hanover County,T8,renters_low_income_burdened,2565,406.81322495710486,9.641437517128635,High
+51085,Hanover County,T8,renters_lowest_income,1640,362.15604371596504,13.424124980204798,High
+51085,Hanover County,derived,burden_rate,0.64366373902133,NA,NA,High
+51085,Hanover County,derived,homes_available_lowest_income,625,219.0091322296858,21.301800095288588,Medium
+51085,Hanover County,derived,homes_lowest_rent_tier,1145,271.6155371108214,14.420596334575933,High
+51085,Hanover County,derived,homes_occupied_higher_income,520,337.7158568974812,39.48046024052855,Low
+51085,Hanover County,derived,shortage_homes,495,452.6941572408462,55.594750820158566,Low
+51085,Hanover County,derived,shortage_homes_available,1015,423.2280709026753,25.34793123827543,Medium
+51087,Henrico County,T17B,homes_vacant_lowest_rent_tier,0,62,NA,NA
+51087,Henrico County,T18C,homes_occupied_lowest_income,1774,366.1283927804562,12.546248677467375,High
+51087,Henrico County,T18C,homes_occupied_lowest_rent_tier,3599,530.6496019031767,8.963138222339314,High
+51087,Henrico County,T8,renters_income_not_computed,490,204.6191584383046,25.385417584306758,Medium
+51087,Henrico County,T8,renters_low_income,28570,1557.647264306011,3.314308830986254,High
+51087,Henrico County,T8,renters_low_income_burdened,20810,1333.5182788398515,3.895480103936036,High
+51087,Henrico County,T8,renters_lowest_income,8115,848.7555596283302,6.358112464840188,High
+51087,Henrico County,derived,burden_rate,0.728386419320966,NA,NA,High
+51087,Henrico County,derived,homes_available_lowest_income,1774,371.34081380855514,12.724864517483375,High
+51087,Henrico County,derived,homes_lowest_rent_tier,3599,534.2593003402,9.024109201900899,High
+51087,Henrico County,derived,homes_occupied_higher_income,1825,644.7007057542282,21.474812199832723,Medium
+51087,Henrico County,derived,shortage_homes,4516,1002.9052796750049,13.50019625828873,High
+51087,Henrico County,derived,shortage_homes_available,6341,926.4340235548347,8.881592449723728,High
+51127,New Kent County,T17B,homes_vacant_lowest_rent_tier,0,50,NA,NA
+51127,New Kent County,T18C,homes_occupied_lowest_income,0,50,NA,NA
+51127,New Kent County,T18C,homes_occupied_lowest_rent_tier,115,83.4445923951936,44.10973563906097,Low
+51127,New Kent County,T8,renters_income_not_computed,0,55.90169943749474,NA,NA
+51127,New Kent County,T8,renters_low_income,335,179.67748885155314,32.60490656472406,Low
+51127,New Kent County,T8,renters_low_income_burdened,225,155.58277539625007,42.035197675447506,Low
+51127,New Kent County,T8,renters_lowest_income,75,73.35529974037323,59.457183173554796,Low
+51127,New Kent County,derived,burden_rate,0.6716417910447762,NA,NA,Low
+51127,New Kent County,derived,homes_available_lowest_income,0,70.71067811865476,NA,NA
+51127,New Kent County,derived,homes_lowest_rent_tier,115,97.2779522810796,51.42220287092882,Low
+51127,New Kent County,derived,homes_occupied_higher_income,115,97.2779522810796,51.42220287092882,Low
+51127,New Kent County,derived,shortage_homes,-40,121.83595528414426,NA,NA
+51127,New Kent County,derived,shortage_homes_available,75,101.88719252192594,82.58333740379003,Low
+51145,Powhatan County,T17B,homes_vacant_lowest_rent_tier,0,56,NA,NA
+51145,Powhatan County,T18C,homes_occupied_lowest_income,59,79.50471684120383,81.9171777252113,Low
+51145,Powhatan County,T18C,homes_occupied_lowest_rent_tier,185,98.27512401416749,32.292819851858205,Low
+51145,Powhatan County,T8,renters_income_not_computed,10,58.52349955359813,355.7659547331193,Low
+51145,Powhatan County,T8,renters_low_income,625,223.63139314505912,21.7513817040787,Medium
+51145,Powhatan County,T8,renters_low_income_burdened,315,141.61920773680384,27.330382155990513,Medium
+51145,Powhatan County,T8,renters_lowest_income,135,93.24162160752032,41.986545809983255,Low
+51145,Powhatan County,derived,burden_rate,0.504,NA,NA,Medium
+51145,Powhatan County,derived,homes_available_lowest_income,59,97.24710792614863,100.19793717598127,Low
+51145,Powhatan County,derived,homes_lowest_rent_tier,185,113.11056537742175,37.16768762915362,Low
+51145,Powhatan County,derived,homes_occupied_higher_income,126,126.40806936267953,60.98715171644692,Low
+51145,Powhatan County,derived,shortage_homes,-50,146.58785761446956,NA,NA
+51145,Powhatan County,derived,shortage_homes_available,76,134.72564715005083,107.76327559594532,Low
+51760,Richmond city,T17B,homes_vacant_lowest_rent_tier,85,63.56886030125127,45.46315773377527,Low
+51760,Richmond city,T18C,homes_occupied_lowest_income,6215,723.5730785483937,7.077426449377485,High
+51760,Richmond city,T18C,homes_occupied_lowest_rent_tier,8620,841.6038260369305,5.935188725145668,High
+51760,Richmond city,T8,renters_income_not_computed,1545,293.62050337127346,11.552926033435575,High
+51760,Richmond city,T8,renters_low_income,38545,1770.2542190318316,2.791911745726219,High
+51760,Richmond city,T8,renters_low_income_burdened,27030,1416.0914518490677,3.1847793835939755,High
+51760,Richmond city,T8,renters_lowest_income,15730,978.1211581394199,3.780054213250656,High
+51760,Richmond city,derived,burden_rate,0.7012582695550655,NA,NA,High
+51760,Richmond city,derived,homes_available_lowest_income,6300,726.3601035299226,7.008830062526392,High
+51760,Richmond city,derived,homes_lowest_rent_tier,8705,844.0011848332915,5.893976209971152,High
+51760,Richmond city,derived,homes_occupied_higher_income,2405,1109.8896341528737,28.054259657953573,Medium
+51760,Richmond city,derived,shortage_homes,7025,1291.9206631987895,11.179531747872142,High
+51760,Richmond city,derived,shortage_homes_available,9430,1218.326721368287,7.853914599453255,High
